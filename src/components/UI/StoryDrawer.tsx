@@ -1,17 +1,13 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import {
   X,
-  Volume2,
-  VolumeX,
   MapPin,
   Eye,
-  Radio,
   BookOpen,
   Sparkles,
 } from 'lucide-react';
 import type { GhostPin, SupportedLanguage } from '../../types/ghost';
 import { getTranslation } from '../../lib/i18n';
-import { audioEngine } from '../../lib/audio';
 
 interface StoryDrawerProps {
   pin: GhostPin | null;
@@ -27,7 +23,6 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
   language,
 }) => {
   const dialogRef = useRef<HTMLDialogElement>(null);
-  const [isPlayingSound, setIsPlayingSound] = useState(false);
   const t = getTranslation(language);
 
   // Modern HTML <dialog> lifecycle
@@ -39,13 +34,10 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
       if (!dialog.open) {
         dialog.showModal();
       }
-      setIsPlayingSound(true);
     } else {
       if (dialog.open) {
         dialog.close();
       }
-      // Background play: Don't stop preset sound when drawer closes
-      setIsPlayingSound(false);
     }
   }, [isOpen]);
 
@@ -82,16 +74,6 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
   }, [onClose]);
 
   if (!pin) return null;
-
-  const toggleSound = () => {
-    if (isPlayingSound) {
-      audioEngine.stopPresetSound();
-      setIsPlayingSound(false);
-    } else {
-      audioEngine.playPresetSound(pin.sound_preset);
-      setIsPlayingSound(true);
-    }
-  };
 
   const title = language === 'th' ? pin.title_th : pin.title_en;
   const province = language === 'th' ? pin.province_th : pin.province_en;
@@ -147,62 +129,6 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
 
         {/* Scrollable Content Body */}
         <div className="flex-1 overflow-y-auto p-6 space-y-6">
-          {/* Radio / Atmospheric Sound Player Card */}
-          <div className="p-4 rounded-2xl bg-gradient-to-r from-emerald-950/40 via-slate-900/80 to-slate-900 border border-emerald-500/30 shadow-lg">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-300">
-                  <Radio className="w-5 h-5 animate-pulse" />
-                </div>
-                <div>
-                  <h3 className="text-sm font-semibold text-white">
-                    {t.listenStory}
-                  </h3>
-                  <p className="text-xs text-slate-400">
-                    {t.soundPresets[pin.sound_preset]}
-                  </p>
-                </div>
-              </div>
-
-              <button
-                onClick={toggleSound}
-                className={`p-3 rounded-xl transition-all font-medium text-xs flex items-center gap-2 ${
-                  isPlayingSound
-                    ? 'bg-emerald-500 text-slate-950 font-bold shadow-[0_0_15px_rgba(16,185,129,0.5)]'
-                    : 'bg-slate-800 text-emerald-400 hover:bg-slate-700'
-                }`}
-              >
-                {isPlayingSound ? (
-                  <>
-                    <Volume2 className="w-4 h-4" />
-                    <span>กำลังเล่น</span>
-                  </>
-                ) : (
-                  <>
-                    <VolumeX className="w-4 h-4" />
-                    <span>เปิดฟัง</span>
-                  </>
-                )}
-              </button>
-            </div>
-
-            {/* Visualizer bars */}
-            {isPlayingSound && (
-              <div className="mt-3 flex items-center gap-1 h-3 justify-center">
-                {[40, 80, 55, 95, 30, 70, 85, 45, 65, 90, 50, 75, 35].map((h, i) => (
-                  <span
-                    key={i}
-                    className="w-1 bg-emerald-400 rounded-full animate-pulse"
-                    style={{
-                      height: `${h}%`,
-                      animationDelay: `${i * 70}ms`,
-                    }}
-                  />
-                ))}
-              </div>
-            )}
-          </div>
-
           {/* Story Image / Atmosphere Illustration */}
           {pin.image_url ? (
             <div className="relative rounded-2xl overflow-hidden border border-slate-800 aspect-video">

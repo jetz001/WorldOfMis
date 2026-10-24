@@ -6,7 +6,6 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 // returns the correct JS MIME type instead of an HTML 404 page.
 setWorkerUrl('/maplibre-gl-worker.mjs');
 import type { GhostPin, SupportedLanguage } from '../../types/ghost';
-import { audioEngine } from '../../lib/audio';
 
 // Shared world overview camera values, used both on init and when zooming out
 const WORLD_VIEW_CENTER: [number, number] = [100.5, 13.75]; // Centered on Thailand / Asia
@@ -35,8 +34,6 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
   // Smooth fly-to pin on click
   const flyToPin = useCallback((pin: GhostPin) => {
     if (!mapRef.current) return;
-    audioEngine.playRadioTuning();
-    audioEngine.playPresetSound(pin.sound_preset);
 
     mapRef.current.flyTo({
       center: [pin.lng, pin.lat],

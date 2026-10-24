@@ -1,7 +1,6 @@
 import { useState, useEffect, useMemo, useCallback } from 'react';
 import type { GhostPin, GhostCategory, SupportedLanguage } from './types/ghost';
 import { fetchPins, createPin, updatePin, deletePin } from './lib/api';
-import { audioEngine } from './lib/audio';
 import { GhostGlobe } from './components/Globe/GhostGlobe';
 import { Navbar } from './components/UI/Navbar';
 import { StoryDrawer } from './components/UI/StoryDrawer';
@@ -17,7 +16,6 @@ export function App() {
   const [language, setLanguage] = useState<SupportedLanguage>('th');
   const [selectedCategory, setSelectedCategory] = useState<GhostCategory | 'all'>('all');
   const [searchQuery, setSearchQuery] = useState('');
-  const [isMuted, setIsMuted] = useState(false);
   const [worldViewSignal, setWorldViewSignal] = useState(0);
   const t = getTranslation(language);
 
@@ -31,29 +29,6 @@ export function App() {
     });
   }, []);
 
-  // Ambient sound initialization on first user interaction
-  useEffect(() => {
-    const handleFirstInteraction = () => {
-      audioEngine.startAmbient();
-      window.removeEventListener('pointerdown', handleFirstInteraction);
-    };
-    window.addEventListener('pointerdown', handleFirstInteraction);
-    return () => window.removeEventListener('pointerdown', handleFirstInteraction);
-  }, []);
-
-  // Background Audio: Play preset sound when pin is selected
-  useEffect(() => {
-    if (selectedPin && !isMuted) {
-      audioEngine.playPresetSound(selectedPin.sound_preset);
-    }
-  }, [selectedPin, isMuted]);
-
-  const handleToggleMute = useCallback(() => {
-    const nextMuted = !isMuted;
-    setIsMuted(nextMuted);
-    audioEngine.setMute(nextMuted);
-  }, [isMuted]);
-
   const handleToggleLanguage = useCallback(() => {
     setLanguage((prev) => (prev === 'th' ? 'en' : 'th'));
   }, []);
@@ -63,7 +38,6 @@ export function App() {
     // NOTE: keep the selected pin so the Now Playing story indicator
     // remains available after zooming back out to the world view.
     setIsDrawerOpen(false);
-    audioEngine.stopPresetSound();
   }, []);
 
   const handleSelectPin = useCallback((pin: GhostPin) => {
@@ -129,8 +103,6 @@ export function App() {
       <Navbar
         language={language}
         onToggleLanguage={handleToggleLanguage}
-        isMuted={isMuted}
-        onToggleMute={handleToggleMute}
         searchQuery={searchQuery}
         onSearchChange={setSearchQuery}
         selectedCategory={selectedCategory}

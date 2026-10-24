@@ -1,8 +1,6 @@
 import React from 'react';
 import {
   Compass,
-  Volume2,
-  VolumeX,
   Languages,
   Search,
   Lock,
@@ -20,8 +18,6 @@ import { getTranslation } from '../../lib/i18n';
 interface NavbarProps {
   language: SupportedLanguage;
   onToggleLanguage: () => void;
-  isMuted: boolean;
-  onToggleMute: () => void;
   searchQuery: string;
   onSearchChange: (q: string) => void;
   selectedCategory: GhostCategory | 'all';
@@ -33,8 +29,6 @@ interface NavbarProps {
 export const Navbar: React.FC<NavbarProps> = ({
   language,
   onToggleLanguage,
-  isMuted,
-  onToggleMute,
   searchQuery,
   onSearchChange,
   selectedCategory,
@@ -107,20 +101,6 @@ export const Navbar: React.FC<NavbarProps> = ({
           >
             <ZoomOut className="w-4 h-4" />
             <span className="hidden sm:inline">{t.zoomOutWorld}</span>
-          </button>
-
-          {/* Sound Toggle */}
-          <button
-            onClick={onToggleMute}
-            aria-label={isMuted ? t.unmute : t.mute}
-            className={`p-2.5 rounded-xl border backdrop-blur-md transition-all shadow-lg flex items-center gap-2 text-xs font-medium ${
-              isMuted
-                ? 'bg-slate-950/80 border-slate-800 text-slate-400 hover:text-slate-200'
-                : 'bg-emerald-950/40 border-emerald-500/40 text-emerald-300 shadow-[0_0_15px_rgba(16,185,129,0.2)]'
-            }`}
-          >
-            {isMuted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4" />}
-            <span className="hidden sm:inline">{isMuted ? t.mute : t.soundTuning}</span>
           </button>
 
           {/* Language Switcher */}
