@@ -1,0 +1,23 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "worldofmys",
+  "pages_build_output_dir": "dist",
+  "compatibility_date": "2024-11-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "worldofmys-db",
+      "database_id": "worldofmys-db-local"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "MEDIA_BUCKET",
+      "bucket_name": "worldofmys-media"
+    }
+  ],
+  "vars": {
+    "JWT_SECRET": "worldofmys-super-secret-jwt-key-change-in-production"
+  }
+}

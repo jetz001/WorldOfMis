@@ -1,0 +1,360 @@
+import React, { useState } from 'react';
+import { X, Save, Sparkles } from 'lucide-react';
+import type { GhostPin, GhostCategory, SoundPreset, SupportedLanguage } from '../../types/ghost';
+import { getTranslation } from '../../lib/i18n';
+import { applyPrivacyJitter } from '../../lib/coordinates';
+
+interface PinFormModalProps {
+  pin: Partial<GhostPin> | null;
+  isOpen: boolean;
+  onClose: () => void;
+  onSave: (pinData: GhostPin) => void;
+  language: SupportedLanguage;
+}
+
+// Major Thailand province presets for quick accurate placement
+const PROVINCE_PRESETS = [
+  { nameTh: 'กรุงเทพมหานคร', nameEn: 'Bangkok', lat: 13.7563, lng: 100.5018 },
+  { nameTh: 'เชียงใหม่', nameEn: 'Chiang Mai', lat: 18.7883, lng: 98.9853 },
+  { nameTh: 'เชียงราย', nameEn: 'Chiang Rai', lat: 19.9105, lng: 99.8406 },
+  { nameTh: 'นครราชสีมา', nameEn: 'Nakhon Ratchasima', lat: 14.9799, lng: 102.0978 },
+  { nameTh: 'กาฬสินธุ์', nameEn: 'Kalasin', lat: 16.4322, lng: 103.5065 },
+  { nameTh: 'หนองคาย', nameEn: 'Nong Khai', lat: 17.8783, lng: 102.7420 },
+  { nameTh: 'ภูเก็ต', nameEn: 'Phuket', lat: 7.8804, lng: 98.3923 },
+  { nameTh: 'สุราษฎร์ธานี', nameEn: 'Surat Thani', lat: 9.1382, lng: 99.3217 },
+  { nameTh: 'นครศรีธรรมราช', nameEn: 'Nakhon Si Thammarat', lat: 8.4304, lng: 99.9631 },
+  { nameTh: 'กาญจนบุรี', nameEn: 'Kanchanaburi', lat: 14.0228, lng: 99.5328 },
+  { nameTh: 'พระนครศรีอยุธยา', nameEn: 'Phra Nakhon Si Ayutthaya', lat: 14.3532, lng: 100.5684 },
+  { nameTh: 'ลพบุรี', nameEn: 'Lopburi', lat: 14.7995, lng: 100.6534 },
+  { nameTh: 'ปราจีนบุรี', nameEn: 'Prachinburi', lat: 14.0509, lng: 101.3716 },
+];
+
+export const PinFormModal: React.FC<PinFormModalProps> = ({
+  pin,
+  isOpen,
+  onClose,
+  onSave,
+  language,
+}) => {
+  const t = getTranslation(language);
+
+  const [formData, setFormData] = useState<Partial<GhostPin>>(
+    pin || {
+      title_th: '',
+      title_en: '',
+      category: 'ghost',
+      province_th: 'กรุงเทพมหานคร',
+      province_en: 'Bangkok',
+      district_th: '',
+      district_en: '',
+      lat: 13.7563,
+      lng: 100.5018,
+      story_th: '',
+      story_en: '',
+      folklore_history_th: '',
+      folklore_history_en: '',
+      image_url: '',
+      sound_preset: 'whisper',
+      is_published: 1,
+      views_count: 0,
+    }
+  );
+
+  if (!isOpen) return null;
+
+  const handleProvinceSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const selected = PROVINCE_PRESETS.find((p) => p.nameTh === e.target.value);
+    if (selected) {
+      // Apply privacy jitter to make sure coordinates don't point to an exact home
+      const jittered = applyPrivacyJitter(selected.lat, selected.lng);
+      setFormData((prev) => ({
+        ...prev,
+        province_th: selected.nameTh,
+        province_en: selected.nameEn,
+        lat: jittered.lat,
+        lng: jittered.lng,
+      }));
+    }
+  };
+
+  const handleJitter = () => {
+    if (formData.lat && formData.lng) {
+      const jittered = applyPrivacyJitter(formData.lat, formData.lng);
+      setFormData((prev) => ({
+        ...prev,
+        lat: jittered.lat,
+        lng: jittered.lng,
+      }));
+    }
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const finalPin: GhostPin = {
+      id: formData.id || `pin-${Date.now()}`,
+      title_th: formData.title_th || 'ตำนานไร้ชื่อ',
+      title_en: formData.title_en || 'Untitled Folklore',
+      category: (formData.category as GhostCategory) || 'ghost',
+      province_th: formData.province_th || 'กรุงเทพมหานคร',
+      province_en: formData.province_en || 'Bangkok',
+      district_th: formData.district_th || '',
+      district_en: formData.district_en || '',
+      lat: Number(formData.lat) || 13.7563,
+      lng: Number(formData.lng) || 100.5018,
+      story_th: formData.story_th || '',
+      story_en: formData.story_en || '',
+      folklore_history_th: formData.folklore_history_th || '',
+      folklore_history_en: formData.folklore_history_en || '',
+      image_url: formData.image_url || '',
+      sound_preset: (formData.sound_preset as SoundPreset) || 'whisper',
+      views_count: formData.views_count || 0,
+      is_published: formData.is_published ?? 1,
+    };
+    onSave(finalPin);
+  };
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-md overflow-y-auto">
+      <div className="w-full max-w-2xl bg-slate-900 border border-emerald-500/30 rounded-3xl shadow-2xl overflow-hidden my-8">
+        {/* Header */}
+        <div className="flex items-center justify-between p-6 border-b border-slate-800 bg-slate-950/50">
+          <div className="flex items-center gap-2">
+            <Sparkles className="w-5 h-5 text-emerald-400" />
+            <h3 className="text-lg font-bold text-white">
+              {formData.id ? t.editPin : t.addPin}
+            </h3>
+          </div>
+          <button
+            onClick={onClose}
+            className="p-2 rounded-full hover:bg-slate-800 text-slate-400 hover:text-white"
+          >
+            <X className="w-5 h-5" />
+          </button>
+        </div>
+
+        {/* Form Body */}
+        <form onSubmit={handleSubmit} className="p-6 space-y-5 max-h-[80vh] overflow-y-auto">
+          {/* Titles */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label className="block text-xs font-semibold text-slate-300 mb-1.5">
+                ชื่อเรื่อง (ภาษาไทย) *
+              </label>
+              <input
+                required
+                type="text"
+                value={formData.title_th || ''}
+                onChange={(e) => setFormData({ ...formData, title_th: e.target.value })}
+                placeholder="เช่น แม่นาคพระโขนง"
+                className="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-sm text-white focus:outline-none focus:border-emerald-500"
+              />
+            </div>
+            <div>
+              <label className="block text-xs font-semibold text-slate-300 mb-1.5">
+                Title (English) *
+              </label>
+              <input
+                required
+                type="text"
+                value={formData.title_en || ''}
+                onChange={(e) => setFormData({ ...formData, title_en: e.target.value })}
+                placeholder="e.g. Mae Nak Phra Khanong"
+                className="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-sm text-white focus:outline-none focus:border-emerald-500"
+              />
+            </div>
+          </div>
+
+          {/* Category & Sound Preset */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label className="block text-xs font-semibold text-slate-300 mb-1.5">
+                หมวดหมู่
+              </label>
+              <select
+                value={formData.category}
+                onChange={(e) => setFormData({ ...formData, category: e.target.value as GhostCategory })}
+                className="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-sm text-white focus:outline-none focus:border-emerald-500"
+              >
+                <option value="ghost">วิญญาณและผีพราย (Ghost)</option>
+                <option value="curse">คุณไสยและคำสาป (Curse)</option>
+                <option value="legend">ตำนานลึกลับ (Legend)</option>
+                <option value="sacred">สิ่งศักดิ์สิทธิ์ (Sacred)</option>
+                <option value="monster">อมนุษย์และเสือสมิง (Monster)</option>
+              </select>
+            </div>
+            <div>
+              <label className="block text-xs font-semibold text-slate-300 mb-1.5">
+                {t.soundPreset}
+              </label>
+              <select
+                value={formData.sound_preset}
+                onChange={(e) => setFormData({ ...formData, sound_preset: e.target.value as SoundPreset })}
+                className="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-sm text-white focus:outline-none focus:border-emerald-500"
+              >
+                <option value="whisper">เสียงลมกระซิบ (Whisper)</option>
+                <option value="water_spirit">เสียงพรายน้ำ (Water Spirit)</option>
+                <option value="jungle_curse">เสียงป่าดงดิบอาถรรพ์ (Jungle Curse)</option>
+                <option value="temple_bell">เสียงระฆังโบราณ (Temple Bell)</option>
+                <option value="creepy_wind">เสียงลมหวีดหวิว (Howling Wind)</option>
+              </select>
+            </div>
+          </div>
+
+          {/* Province & District Preset */}
+          <div className="p-4 rounded-2xl bg-slate-950 border border-slate-800/80 space-y-4">
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-semibold text-emerald-400">
+                📍 พิกัดและจังหวัด (PDPA Privacy Safe)
+              </span>
+              <button
+                type="button"
+                onClick={handleJitter}
+                className="text-[11px] px-2.5 py-1 rounded-lg bg-emerald-500/20 text-emerald-300 hover:bg-emerald-500/30 border border-emerald-500/30 transition-colors"
+              >
+                สุ่มพิกัดปลอดภัย (Jitter Coordinates)
+              </button>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label className="block text-xs text-slate-400 mb-1">
+                  เลือกจังหวัด
+                </label>
+                <select
+                  value={formData.province_th}
+                  onChange={handleProvinceSelect}
+                  className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-sm text-white focus:outline-none"
+                >
+                  {PROVINCE_PRESETS.map((p) => (
+                    <option key={p.nameTh} value={p.nameTh}>
+                      {p.nameTh} ({p.nameEn})
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              <div>
+                <label className="block text-xs text-slate-400 mb-1">
+                  อำเภอ / ตำบล (ไม่ระบุบ้านเลขที่)
+                </label>
+                <input
+                  type="text"
+                  value={formData.district_th || ''}
+                  onChange={(e) => setFormData({ ...formData, district_th: e.target.value })}
+                  placeholder="เช่น พระโขนง"
+                  className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-sm text-white focus:outline-none"
+                />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <label className="block text-xs text-slate-400 mb-1">Latitude</label>
+                <input
+                  type="number"
+                  step="0.0001"
+                  value={formData.lat}
+                  onChange={(e) => setFormData({ ...formData, lat: parseFloat(e.target.value) })}
+                  className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-sm text-white focus:outline-none"
+                />
+              </div>
+              <div>
+                <label className="block text-xs text-slate-400 mb-1">Longitude</label>
+                <input
+                  type="number"
+                  step="0.0001"
+                  value={formData.lng}
+                  onChange={(e) => setFormData({ ...formData, lng: parseFloat(e.target.value) })}
+                  className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-sm text-white focus:outline-none"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Stories Bilingual */}
+          <div>
+            <label className="block text-xs font-semibold text-slate-300 mb-1.5">
+              เนื้อหาเรื่องเล่า (ภาษาไทย)
+            </label>
+            <textarea
+              rows={3}
+              value={formData.story_th || ''}
+              onChange={(e) => setFormData({ ...formData, story_th: e.target.value })}
+              className="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-sm text-white focus:outline-none focus:border-emerald-500"
+            />
+          </div>
+
+          <div>
+            <label className="block text-xs font-semibold text-slate-300 mb-1.5">
+              Story Content (English)
+            </label>
+            <textarea
+              rows={3}
+              value={formData.story_en || ''}
+              onChange={(e) => setFormData({ ...formData, story_en: e.target.value })}
+              className="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-sm text-white focus:outline-none focus:border-emerald-500"
+            />
+          </div>
+
+          {/* Folklore History */}
+          <div>
+            <label className="block text-xs font-semibold text-slate-300 mb-1.5">
+              ประวัติศาสตร์ท้องถิ่นและบริบทความเชื่อ (ภาษาไทย)
+            </label>
+            <textarea
+              rows={2}
+              value={formData.folklore_history_th || ''}
+              onChange={(e) => setFormData({ ...formData, folklore_history_th: e.target.value })}
+              className="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-sm text-white focus:outline-none focus:border-emerald-500"
+            />
+          </div>
+
+          {/* Media / R2 Image URL */}
+          <div>
+            <label className="block text-xs font-semibold text-slate-300 mb-1.5">
+              {t.imageUploadHelp}
+            </label>
+            <input
+              type="url"
+              value={formData.image_url || ''}
+              onChange={(e) => setFormData({ ...formData, image_url: e.target.value })}
+              placeholder="https://pub-r2.yourdomain.com/ghost-image.jpg"
+              className="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-sm text-white focus:outline-none focus:border-emerald-500 font-mono text-xs"
+            />
+          </div>
+
+          {/* Status */}
+          <div className="flex items-center gap-3">
+            <label className="flex items-center gap-2 cursor-pointer text-sm text-slate-300">
+              <input
+                type="checkbox"
+                checked={formData.is_published === 1}
+                onChange={(e) => setFormData({ ...formData, is_published: e.target.checked ? 1 : 0 })}
+                className="w-4 h-4 rounded text-emerald-500 focus:ring-0 bg-slate-950 border-slate-700"
+              />
+              <span>{t.published}</span>
+            </label>
+          </div>
+
+          {/* Buttons */}
+          <div className="flex items-center justify-end gap-3 pt-4 border-t border-slate-800">
+            <button
+              type="button"
+              onClick={onClose}
+              className="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-sm font-medium transition-colors"
+            >
+              {t.cancel}
+            </button>
+            <button
+              type="submit"
+              className="px-6 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-sm font-bold shadow-[0_0_20px_rgba(16,185,129,0.4)] transition-all flex items-center gap-2"
+            >
+              <Save className="w-4 h-4" />
+              <span>{t.save}</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  );
+};
