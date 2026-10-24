@@ -12,21 +12,27 @@ interface PinFormModalProps {
   language: SupportedLanguage;
 }
 
-// Major Thailand province presets for quick accurate placement
+// Global and Regional Presets for quick accurate pin placement
 const PROVINCE_PRESETS = [
-  { nameTh: 'กรุงเทพมหานคร', nameEn: 'Bangkok', lat: 13.7563, lng: 100.5018 },
-  { nameTh: 'เชียงใหม่', nameEn: 'Chiang Mai', lat: 18.7883, lng: 98.9853 },
-  { nameTh: 'เชียงราย', nameEn: 'Chiang Rai', lat: 19.9105, lng: 99.8406 },
-  { nameTh: 'นครราชสีมา', nameEn: 'Nakhon Ratchasima', lat: 14.9799, lng: 102.0978 },
-  { nameTh: 'กาฬสินธุ์', nameEn: 'Kalasin', lat: 16.4322, lng: 103.5065 },
-  { nameTh: 'หนองคาย', nameEn: 'Nong Khai', lat: 17.8783, lng: 102.7420 },
-  { nameTh: 'ภูเก็ต', nameEn: 'Phuket', lat: 7.8804, lng: 98.3923 },
-  { nameTh: 'สุราษฎร์ธานี', nameEn: 'Surat Thani', lat: 9.1382, lng: 99.3217 },
-  { nameTh: 'นครศรีธรรมราช', nameEn: 'Nakhon Si Thammarat', lat: 8.4304, lng: 99.9631 },
-  { nameTh: 'กาญจนบุรี', nameEn: 'Kanchanaburi', lat: 14.0228, lng: 99.5328 },
-  { nameTh: 'พระนครศรีอยุธยา', nameEn: 'Phra Nakhon Si Ayutthaya', lat: 14.3532, lng: 100.5684 },
-  { nameTh: 'ลพบุรี', nameEn: 'Lopburi', lat: 14.7995, lng: 100.6534 },
-  { nameTh: 'ปราจีนบุรี', nameEn: 'Prachinburi', lat: 14.0509, lng: 101.3716 },
+  // Global Landmarks
+  { nameTh: 'โตเกียว (ญี่ปุ่น)', nameEn: 'Tokyo (Japan)', lat: 35.6762, lng: 139.6503 },
+  { nameTh: 'ไฮแลนด์ (สกอตแลนด์, สหราชอาณาจักร)', nameEn: 'Highlands (Scotland, UK)', lat: 57.3229, lng: -4.4244 },
+  { nameTh: 'บราชอฟ / ทรานซิลเวเนีย (โรมาเนีย)', nameEn: 'Brasov, Transylvania (Romania)', lat: 45.5152, lng: 25.3672 },
+  { nameTh: 'มินนิโซตา (สหรัฐอเมริกา)', nameEn: 'Minnesota (USA)', lat: 46.7296, lng: -94.6859 },
+  { nameTh: 'ฮาลิสโก (เม็กซิโก)', nameEn: 'Jalisco (Mexico)', lat: 20.6597, lng: -103.3496 },
+  { nameTh: 'ลักซอร์ (อียิปต์)', nameEn: 'Luxor (Egypt)', lat: 25.7402, lng: 32.6014 },
+  { nameTh: 'วิกตอเรีย (ออสเตรเลีย)', nameEn: 'Victoria (Australia)', lat: -36.5000, lng: 145.0000 },
+  { nameTh: 'ปารีส (ฝรั่งเศส - สุสานใต้ดิน)', nameEn: 'Paris Catacombs (France)', lat: 48.8566, lng: 2.3522 },
+  { nameTh: 'ลอนดอน (สหราชอาณาจักร - หอคอยลอนดอน)', nameEn: 'Tower of London (UK)', lat: 51.5081, lng: -0.0759 },
+  // Thailand & Southeast Asia
+  { nameTh: 'กรุงเทพมหานคร (ไทย)', nameEn: 'Bangkok (Thailand)', lat: 13.7563, lng: 100.5018 },
+  { nameTh: 'เชียงใหม่ (ไทย)', nameEn: 'Chiang Mai (Thailand)', lat: 18.7883, lng: 98.9853 },
+  { nameTh: 'กาฬสินธุ์ (ไทย)', nameEn: 'Kalasin (Thailand)', lat: 16.4322, lng: 103.5065 },
+  { nameTh: 'หนองคาย (ไทย)', nameEn: 'Nong Khai (Thailand)', lat: 17.8783, lng: 102.7420 },
+  { nameTh: 'สุราษฎร์ธานี (ไทย)', nameEn: 'Surat Thani (Thailand)', lat: 9.1382, lng: 99.3217 },
+  { nameTh: 'นครศรีธรรมราช (ไทย)', nameEn: 'Nakhon Si Thammarat (Thailand)', lat: 8.4304, lng: 99.9631 },
+  { nameTh: 'กาญจนบุรี (ไทย)', nameEn: 'Kanchanaburi (Thailand)', lat: 14.0228, lng: 99.5328 },
+  { nameTh: 'ปราจีนบุรี (ไทย)', nameEn: 'Prachinburi (Thailand)', lat: 14.0509, lng: 101.3716 },
 ];
 
 export const PinFormModal: React.FC<PinFormModalProps> = ({
