@@ -57,6 +57,8 @@ export const translations = {
     actions: 'จัดการ',
     confirmDelete: 'คุณแน่ใจหรือไม่ว่าต้องการลบหมุดเรื่องเล่านี้?',
     imageUploadHelp: 'อัปโหลดภาพ หรือวาง URL รูปภาพ (จะถูกส่งไปยัง Cloudflare R2)',
+    nowPlaying: 'เรื่องเล่าที่กำลังเล่น',
+    readFullLegend: 'คลิกเพื่ออ่านตำนานฉบับเต็ม',
   },
   en: {
     appTitle: 'World of Mystery',
@@ -114,6 +116,8 @@ export const translations = {
     actions: 'Actions',
     confirmDelete: 'Are you sure you want to delete this folklore pin?',
     imageUploadHelp: 'Upload photo or paste image URL (hosted on Cloudflare R2)',
+    nowPlaying: 'Now Playing',
+    readFullLegend: 'Read Full Legend',
   },
 };
 

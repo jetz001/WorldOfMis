@@ -7,7 +7,13 @@ import {
   Search,
   Lock,
   ZoomOut,
+  Ghost,
+  Skull,
+  BookOpen,
+  Sparkles,
+  Flame,
 } from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
 import type { GhostCategory, SupportedLanguage } from '../../types/ghost';
 import { getTranslation } from '../../lib/i18n';
 
@@ -46,6 +52,15 @@ export const Navbar: React.FC<NavbarProps> = ({
     { id: 'sacred', label: t.categories.sacred },
     { id: 'monster', label: t.categories.monster },
   ];
+
+  const categoryIcons: Record<string, LucideIcon> = {
+    all: Compass,
+    ghost: Ghost,
+    curse: Skull,
+    legend: BookOpen,
+    sacred: Sparkles,
+    monster: Flame,
+  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-20 pointer-events-none p-4 md:p-6 flex flex-col gap-3">
@@ -133,17 +148,20 @@ export const Navbar: React.FC<NavbarProps> = ({
       <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-1 pointer-events-auto">
         {categories.map((cat) => {
           const isSelected = selectedCategory === cat.id;
+          const Icon = categoryIcons[cat.id];
           return (
             <button
               key={cat.id}
               onClick={() => onSelectCategory(cat.id)}
-              className={`px-3.5 py-1.5 rounded-xl text-xs font-medium whitespace-nowrap transition-all backdrop-blur-md shadow-md border ${
+              aria-label={cat.label}
+              title={cat.label}
+              className={`p-2.5 rounded-xl border backdrop-blur-md shadow-md transition-all active:scale-95 focus:outline-none focus:ring-1 focus:ring-emerald-500/40 ${
                 isSelected
-                  ? 'bg-emerald-500 text-slate-950 font-bold border-emerald-400 shadow-[0_0_15px_rgba(16,185,129,0.4)]'
+                  ? 'bg-emerald-500 text-slate-950 border-emerald-400 shadow-[0_0_15px_rgba(16,185,129,0.4)]'
                   : 'bg-slate-950/80 text-slate-300 border-slate-800/80 hover:border-slate-700 hover:text-white'
               }`}
             >
-              {cat.label}
+              <Icon className="w-4 h-4" />
             </button>
           );
         })}

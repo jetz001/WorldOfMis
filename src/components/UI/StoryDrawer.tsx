@@ -44,8 +44,8 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
       if (dialog.open) {
         dialog.close();
       }
+      // Background play: Don't stop preset sound when drawer closes
       setIsPlayingSound(false);
-      audioEngine.stopPresetSound();
     }
   }, [isOpen]);
 
