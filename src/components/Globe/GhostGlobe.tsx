@@ -1,14 +1,23 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
-import { Map, NavigationControl, Marker } from 'maplibre-gl';
+import { Map, NavigationControl, Marker, setWorkerUrl } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
+
+// Fix: point MapLibre to our bundled worker so Cloudflare Pages
+// returns the correct JS MIME type instead of an HTML 404 page.
+setWorkerUrl('/maplibre-gl-worker.mjs');
 import type { GhostPin, SupportedLanguage } from '../../types/ghost';
 import { audioEngine } from '../../lib/audio';
+
+// Shared world overview camera values, used both on init and when zooming out
+const WORLD_VIEW_CENTER: [number, number] = [100.5, 13.75]; // Centered on Thailand / Asia
+const WORLD_VIEW_ZOOM = 2.8;
 
 interface GhostGlobeProps {
   pins: GhostPin[];
   selectedPin: GhostPin | null;
   onSelectPin: (pin: GhostPin) => void;
   language: SupportedLanguage;
+  worldViewSignal: number;
 }
 
 export const GhostGlobe: React.FC<GhostGlobeProps> = ({
@@ -16,6 +25,7 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
   selectedPin,
   onSelectPin,
   language,
+  worldViewSignal,
 }) => {
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<Map | null>(null);
@@ -82,8 +92,8 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
           'fog-ground-blend': 0.5,
         },
       },
-      center: [100.5, 13.75], // Centered on Thailand / Asia
-      zoom: 2.8,
+      center: WORLD_VIEW_CENTER,
+      zoom: WORLD_VIEW_ZOOM,
       minZoom: 1,
       maxZoom: 18,
     });
@@ -107,6 +117,25 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
       mapRef.current = null;
     };
   }, []);
+
+  // Pull the camera back to the full-globe overview
+  const flyToWorldView = useCallback(() => {
+    if (!mapRef.current) return;
+    mapRef.current.flyTo({
+      center: WORLD_VIEW_CENTER,
+      zoom: WORLD_VIEW_ZOOM,
+      speed: 0.8,
+      curve: 1.4,
+      essential: true,
+    });
+  }, []);
+
+  // Each button press increments the signal and pulls the camera back
+  useEffect(() => {
+    if (worldViewSignal > 0) {
+      flyToWorldView();
+    }
+  }, [worldViewSignal, flyToWorldView]);
 
   // 2. Render Markers reliably whenever `pins` or `selectedPin` changes
   useEffect(() => {

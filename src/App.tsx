@@ -17,6 +17,7 @@ export function App() {
   const [selectedCategory, setSelectedCategory] = useState<GhostCategory | 'all'>('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [isMuted, setIsMuted] = useState(false);
+  const [worldViewSignal, setWorldViewSignal] = useState(0);
 
   // Load pins & set initial selected pin
   useEffect(() => {
@@ -46,6 +47,10 @@ export function App() {
 
   const handleToggleLanguage = useCallback(() => {
     setLanguage((prev) => (prev === 'th' ? 'en' : 'th'));
+  }, []);
+
+  const handleZoomOutToWorld = useCallback(() => {
+    setWorldViewSignal((prev) => prev + 1);
   }, []);
 
   const handleSelectPin = useCallback((pin: GhostPin) => {
@@ -116,6 +121,7 @@ export function App() {
         selectedCategory={selectedCategory}
         onSelectCategory={setSelectedCategory}
         onOpenAdmin={() => setIsAdminOpen(true)}
+        onZoomOut={handleZoomOutToWorld}
       />
 
       {/* Main 3D Three.js Earth Scene */}
@@ -125,6 +131,7 @@ export function App() {
           selectedPin={selectedPin}
           onSelectPin={handleSelectPin}
           language={language}
+          worldViewSignal={worldViewSignal}
         />
       </main>
 

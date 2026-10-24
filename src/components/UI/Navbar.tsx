@@ -6,6 +6,7 @@ import {
   Languages,
   Search,
   Lock,
+  ZoomOut,
 } from 'lucide-react';
 import type { GhostCategory, SupportedLanguage } from '../../types/ghost';
 import { getTranslation } from '../../lib/i18n';
@@ -20,6 +21,7 @@ interface NavbarProps {
   selectedCategory: GhostCategory | 'all';
   onSelectCategory: (cat: GhostCategory | 'all') => void;
   onOpenAdmin: () => void;
+  onZoomOut: () => void;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
@@ -32,6 +34,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   selectedCategory,
   onSelectCategory,
   onOpenAdmin,
+  onZoomOut,
 }) => {
   const t = getTranslation(language);
 
@@ -80,6 +83,17 @@ export const Navbar: React.FC<NavbarProps> = ({
 
         {/* Action Controls */}
         <div className="flex items-center gap-2">
+          {/* Zoom-Out To World View */}
+          <button
+            onClick={onZoomOut}
+            aria-label={t.zoomOutWorld}
+            title={t.zoomOutWorld}
+            className="p-2.5 rounded-xl bg-slate-950/80 border border-slate-800/80 hover:border-emerald-500/40 backdrop-blur-md text-slate-300 hover:text-emerald-300 transition-all shadow-lg flex items-center gap-1.5 text-xs font-medium"
+          >
+            <ZoomOut className="w-4 h-4" />
+            <span className="hidden sm:inline">{t.zoomOutWorld}</span>
+          </button>
+
           {/* Sound Toggle */}
           <button
             onClick={onToggleMute}
