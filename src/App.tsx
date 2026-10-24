@@ -5,9 +5,8 @@ import { audioEngine } from './lib/audio';
 import { GhostGlobe } from './components/Globe/GhostGlobe';
 import { Navbar } from './components/UI/Navbar';
 import { StoryDrawer } from './components/UI/StoryDrawer';
+import { RadioGardenPlayer } from './components/UI/RadioGardenPlayer';
 import { AdminPortal } from './components/Admin/AdminPortal';
-import { getTranslation } from './lib/i18n';
-import { Radio, ShieldAlert } from 'lucide-react';
 
 export function App() {
   const [pins, setPins] = useState<GhostPin[]>([]);
@@ -19,11 +18,14 @@ export function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const [isMuted, setIsMuted] = useState(false);
 
-  const t = getTranslation(language);
-
-  // Load pins
+  // Load pins & set initial selected pin
   useEffect(() => {
-    fetchPins().then((data) => setPins(data));
+    fetchPins().then((data) => {
+      setPins(data);
+      if (data.length > 0 && !selectedPin) {
+        setSelectedPin(data[0]);
+      }
+    });
   }, []);
 
   // Ambient sound initialization on first user interaction
@@ -48,7 +50,6 @@ export function App() {
 
   const handleSelectPin = useCallback((pin: GhostPin) => {
     setSelectedPin(pin);
-    setIsDrawerOpen(true);
   }, []);
 
   const handleCloseDrawer = useCallback(() => {
@@ -103,7 +104,7 @@ export function App() {
   };
 
   return (
-    <div className="relative w-screen h-screen overflow-hidden bg-[#05070c] text-slate-100 flex flex-col">
+    <div className="relative w-screen h-screen overflow-hidden bg-[#03060c] text-slate-100 flex flex-col">
       {/* Top Navigation & HUD */}
       <Navbar
         language={language}
@@ -127,22 +128,12 @@ export function App() {
         />
       </main>
 
-      {/* Bottom Floating Instruction & Radio Garden Status Banner */}
-      <footer className="fixed bottom-4 left-1/2 -translate-x-1/2 z-10 pointer-events-none w-full max-w-lg px-4">
-        <div className="pointer-events-auto flex items-center justify-between gap-3 px-4 py-2.5 rounded-2xl bg-slate-950/80 border border-slate-800/80 backdrop-blur-md shadow-2xl text-xs text-slate-300">
-          <div className="flex items-center gap-2">
-            <Radio className="w-4 h-4 text-emerald-400 animate-pulse" />
-            <span className="font-medium text-emerald-300">
-              {filteredPins.length} {language === 'th' ? 'เรื่องเล่ากำลังออนแอร์' : 'stories on air'}
-            </span>
-          </div>
-
-          <div className="flex items-center gap-1.5 text-[11px] text-slate-400">
-            <ShieldAlert className="w-3.5 h-3.5 text-amber-400" />
-            <span>{t.instruction}</span>
-          </div>
-        </div>
-      </footer>
+      {/* Radio Garden Style Bottom-Left Card Player */}
+      <RadioGardenPlayer
+        currentPin={selectedPin}
+        onOpenDrawer={() => setIsDrawerOpen(true)}
+        language={language}
+      />
 
       {/* Slide-out Story Drawer */}
       <StoryDrawer

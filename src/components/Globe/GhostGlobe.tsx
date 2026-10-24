@@ -12,12 +12,6 @@ interface GhostGlobeProps {
   language: SupportedLanguage;
 }
 
-interface HoveredPinInfo {
-  pin: GhostPin;
-  x: number;
-  y: number;
-}
-
 export const GhostGlobe: React.FC<GhostGlobeProps> = ({
   pins,
   selectedPin,
@@ -25,18 +19,16 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
   language,
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [hoveredPin, setHoveredPin] = useState<HoveredPinInfo | null>(null);
+  const [hoveredPin, setHoveredPin] = useState<{ pin: GhostPin; x: number; y: number } | null>(null);
 
-  // References across lifecycle
   const cameraRef = useRef<THREE.PerspectiveCamera | null>(null);
   const rendererRef = useRef<THREE.WebGLRenderer | null>(null);
   const controlsRef = useRef<OrbitControls | null>(null);
   const pinGroupRef = useRef<THREE.Group | null>(null);
-  const pinObjectsRef = useRef<Map<string, { group: THREE.Group; rings: THREE.Mesh[] }>>(new Map());
-  const cloudsMeshRef = useRef<THREE.Mesh | null>(null);
+  const pinMeshesRef = useRef<Map<string, THREE.Object3D>>(new Map());
   const animationFrameRef = useRef<number | null>(null);
 
-  // Camera animation
+  // Smooth camera animation
   const cameraAnimRef = useRef<{
     startPos: THREE.Vector3;
     endPos: THREE.Vector3;
@@ -44,21 +36,21 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     duration: number;
   } | null>(null);
 
-  // Smooth fly-to pin on click
+  // Fly camera to pin and center it in the Radio Garden circle
   const flyToPin = useCallback((pin: GhostPin) => {
     if (!cameraRef.current || !controlsRef.current) return;
 
     audioEngine.playRadioTuning();
     audioEngine.playPresetSound(pin.sound_preset);
 
-    // Zoom close to target location (Radio Garden style ~2.4 units, surface is 2.0)
-    const targetPos = latLngToVector3(pin.lat, pin.lng, EARTH_RADIUS * 1.25, 0);
+    // Camera flies right in front of the location, zooming close (Radio Garden style)
+    const targetPos = latLngToVector3(pin.lat, pin.lng, EARTH_RADIUS * 1.35, 0);
 
     cameraAnimRef.current = {
       startPos: cameraRef.current.position.clone(),
       endPos: targetPos,
       progress: 0,
-      duration: 55, // ~0.9s smooth slerp
+      duration: 50, // ~0.8s smooth transition
     };
   }, []);
 
@@ -74,95 +66,62 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     const width = container.clientWidth;
     const height = container.clientHeight;
 
-    // 1. Scene & Camera
+    // 1. Three.js Scene & Camera
     const scene = new THREE.Scene();
 
     const camera = new THREE.PerspectiveCamera(45, width / height, 0.05, 1000);
-    // Initial camera view (Asia / Global perspective)
-    camera.position.set(0, 1.2, 4.8);
+    // Initial camera position focused on Asia / Southeast Asia
+    const initialPos = latLngToVector3(15.0, 101.0, EARTH_RADIUS * 2.3, 0);
+    camera.position.copy(initialPos);
     camera.lookAt(0, 0, 0);
     cameraRef.current = camera;
 
-    // 2. WebGL Renderer
-    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: 'high-performance' });
+    // 2. High Performance WebGL Renderer
+    const renderer = new THREE.WebGLRenderer({
+      antialias: true,
+      alpha: true,
+      powerPreference: 'high-performance',
+    });
     renderer.setSize(width, height);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
-    renderer.toneMappingExposure = 1.35;
+    renderer.toneMappingExposure = 1.15;
     container.innerHTML = '';
     container.appendChild(renderer.domElement);
     rendererRef.current = renderer;
 
-    // 3. OrbitControls - UNRESTRICTED ZOOM (Like Radio Garden & Google Earth!)
+    // 3. OrbitControls - UNRESTRICTED FREE ZOOM (Radio Garden Style)
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.enableDamping = true;
     controls.dampingFactor = 0.05;
-    controls.rotateSpeed = 0.65;
-    controls.zoomSpeed = 0.85;
-    // FREE UNRESTRICTED ZOOM: Can zoom right down to surface!
-    controls.minDistance = 2.08;
+    controls.rotateSpeed = 0.7;
+    controls.zoomSpeed = 0.9;
+    // FREE UNRESTRICTED ZOOM: Can zoom all the way down to regional ground view!
+    controls.minDistance = 2.06;
     controls.maxDistance = 14.0;
     controls.enablePan = false;
     controlsRef.current = controls;
 
-    // 4. Photorealistic NASA Textures
+    // 4. Load Pristine Satellite Earth Texture (No purple noise, true satellite colors)
     const textureLoader = new THREE.TextureLoader();
 
-    // Day Surface Map (True-color Satellite Imagery)
-    const earthDayTex = textureLoader.load('/textures/earth_atmos_2048.jpg');
-    earthDayTex.colorSpace = THREE.SRGBColorSpace;
+    // High Definition Satellite Imagery
+    const satelliteTex = textureLoader.load('/textures/earth_satellite_hd.jpg');
+    satelliteTex.colorSpace = THREE.SRGBColorSpace;
+    satelliteTex.anisotropy = renderer.capabilities.getMaxAnisotropy();
 
-    // Normal / Topographic Relief Map
-    const earthNormalTex = textureLoader.load('/textures/earth_normal_2048.jpg');
-
-    // Specular / Water reflection map
-    const earthSpecularTex = textureLoader.load('/textures/earth_specular_2048.jpg');
-
-    // Night Lights Map
-    const earthNightTex = textureLoader.load('/textures/earth_lights_2048.png');
-
-    // Cloud Map
-    const cloudsTex = textureLoader.load('/textures/earth_clouds_1024.png');
-
-    // 5. Realistic Earth Sphere Mesh
-    const earthGeo = new THREE.SphereGeometry(EARTH_RADIUS, 96, 96);
+    // 5. Earth Sphere (Clean Photorealistic Satellite Earth)
+    const earthGeo = new THREE.SphereGeometry(EARTH_RADIUS, 128, 128);
     const earthMat = new THREE.MeshStandardMaterial({
-      map: earthDayTex,
-      normalMap: earthNormalTex,
-      normalScale: new THREE.Vector2(0.65, 0.65),
-      roughnessMap: earthSpecularTex,
-      roughness: 0.75,
-      metalness: 0.15,
+      map: satelliteTex,
+      roughness: 0.85,
+      metalness: 0.05,
     });
     const earthMesh = new THREE.Mesh(earthGeo, earthMat);
     scene.add(earthMesh);
 
-    // 6. Night Lights Sphere (Additive City Lights)
-    const nightGeo = new THREE.SphereGeometry(EARTH_RADIUS * 1.002, 96, 96);
-    const nightMat = new THREE.MeshBasicMaterial({
-      map: earthNightTex,
-      blending: THREE.AdditiveBlending,
-      transparent: true,
-      opacity: 0.85,
-    });
-    const nightMesh = new THREE.Mesh(nightGeo, nightMat);
-    scene.add(nightMesh);
-
-    // 7. Clouds Layer
-    const cloudsGeo = new THREE.SphereGeometry(EARTH_RADIUS * 1.014, 96, 96);
-    const cloudsMat = new THREE.MeshStandardMaterial({
-      map: cloudsTex,
-      transparent: true,
-      opacity: 0.38,
-      blending: THREE.AdditiveBlending,
-      depthWrite: false,
-    });
-    const cloudsMesh = new THREE.Mesh(cloudsGeo, cloudsMat);
-    scene.add(cloudsMesh);
-    cloudsMeshRef.current = cloudsMesh;
-
-    // 8. Ethereal Atmospheric Rayleigh Scattering Halo
-    const atmosGeo = new THREE.SphereGeometry(EARTH_RADIUS * 1.045, 64, 64);
+    // 6. Subtle Atmospheric Halo Rim (Soft Rayleigh scattering glow)
+    const atmosGeo = new THREE.SphereGeometry(EARTH_RADIUS * 1.018, 64, 64);
     const atmosMat = new THREE.ShaderMaterial({
       vertexShader: `
         varying vec3 vNormal;
@@ -174,9 +133,9 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
       fragmentShader: `
         varying vec3 vNormal;
         void main() {
-          float intensity = pow(0.68 - dot(vNormal, vec3(0.0, 0.0, 1.0)), 2.8);
-          // Soft atmospheric blue-cyan rim glow
-          gl_FragColor = vec4(0.2, 0.65, 1.0, 1.0) * intensity;
+          float intensity = pow(0.62 - dot(vNormal, vec3(0.0, 0.0, 1.0)), 2.6);
+          // Soft atmospheric sky-blue haze on the horizon
+          gl_FragColor = vec4(0.25, 0.65, 0.95, 1.0) * intensity;
         }
       `,
       blending: THREE.AdditiveBlending,
@@ -186,12 +145,12 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     const atmosMesh = new THREE.Mesh(atmosGeo, atmosMat);
     scene.add(atmosMesh);
 
-    // 9. Starfield Background
+    // 7. Starfield Background
     const starsGeo = new THREE.BufferGeometry();
-    const starCount = 2000;
+    const starCount = 1500;
     const starPositions = new Float32Array(starCount * 3);
     for (let i = 0; i < starCount * 3; i += 3) {
-      const r = 80 + Math.random() * 50;
+      const r = 90 + Math.random() * 40;
       const theta = Math.random() * Math.PI * 2;
       const phi = Math.acos(Math.random() * 2 - 1);
       starPositions[i] = r * Math.sin(phi) * Math.cos(theta);
@@ -200,23 +159,23 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     }
     starsGeo.setAttribute('position', new THREE.BufferAttribute(starPositions, 3));
     const starsMat = new THREE.PointsMaterial({
-      color: 0x93c5fd,
-      size: 0.9,
+      color: 0x88bbff,
+      size: 0.8,
       transparent: true,
-      opacity: 0.7,
+      opacity: 0.6,
     });
     const stars = new THREE.Points(starsGeo, starsMat);
     scene.add(stars);
 
-    // 10. Lighting (Sun & Ambient)
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.45);
+    // 8. Balanced Cinematic Lighting
+    const ambientLight = new THREE.AmbientLight(0xffffff, 1.4);
     scene.add(ambientLight);
 
-    const sunLight = new THREE.DirectionalLight(0xffffff, 2.5);
-    sunLight.position.set(6, 4, 7);
+    const sunLight = new THREE.DirectionalLight(0xffffff, 1.2);
+    sunLight.position.set(5, 3, 6);
     scene.add(sunLight);
 
-    // 11. Pins Group
+    // 9. Pins Group
     const pinGroup = new THREE.Group();
     scene.add(pinGroup);
     pinGroupRef.current = pinGroup;
@@ -287,24 +246,15 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     };
     window.addEventListener('resize', handleResize);
 
-    // 12. Render Animation Loop
-    const clock = new THREE.Clock();
-
+    // 10. Animation Loop
     const animate = () => {
       animationFrameRef.current = requestAnimationFrame(animate);
-      const elapsedTime = clock.getElapsedTime();
-
-      // Slow cloud rotation
-      if (cloudsMeshRef.current) {
-        cloudsMeshRef.current.rotation.y = elapsedTime * 0.012;
-      }
 
       // Smooth camera interpolation
       if (cameraAnimRef.current) {
         const anim = cameraAnimRef.current;
         anim.progress += 1 / anim.duration;
         const t = Math.min(anim.progress, 1.0);
-        // Smooth ease-out cubic
         const ease = 1 - Math.pow(1 - t, 3);
         camera.position.lerpVectors(anim.startPos, anim.endPos, ease);
         camera.lookAt(0, 0, 0);
@@ -313,18 +263,6 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
           cameraAnimRef.current = null;
         }
       }
-
-      // Radio Garden Sonar Ripple Wave Animation
-      pinObjectsRef.current.forEach(({ rings }) => {
-        rings.forEach((ring, idx) => {
-          // Staggered outward expansion
-          const cycle = (elapsedTime * 1.8 + idx * 0.5) % 1.5;
-          const scale = 1.0 + cycle * 3.2;
-          ring.scale.set(scale, scale, scale);
-          const mat = ring.material as THREE.MeshBasicMaterial;
-          mat.opacity = Math.max(0, 0.7 - cycle * 0.45);
-        });
-      });
 
       controls.update();
       renderer.render(scene, camera);
@@ -341,7 +279,7 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     };
   }, [onSelectPin, flyToPin]);
 
-  // Update 3D Pins with Radio Garden Sonar styling
+  // Update 3D Pins with exact Radio Garden signature green dots
   useEffect(() => {
     if (!pinGroupRef.current) return;
     const pinGroup = pinGroupRef.current;
@@ -349,100 +287,75 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     while (pinGroup.children.length > 0) {
       pinGroup.remove(pinGroup.children[0]);
     }
-    pinObjectsRef.current.clear();
+    pinMeshesRef.current.clear();
 
     pins.forEach((pin) => {
       const pinObj = new THREE.Group();
-      // Altitude slightly above surface (0.015)
-      const pos = latLngToVector3(pin.lat, pin.lng, EARTH_RADIUS, 0.015);
+      const pos = latLngToVector3(pin.lat, pin.lng, EARTH_RADIUS, 0.008);
       pinObj.position.copy(pos);
 
-      // Orient tangent to Earth surface
+      // Orient pin normal to surface
       const normal = pos.clone().normalize();
       pinObj.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), normal);
 
-      // Radio Garden Iconic Neon Green (or category glow)
-      let colorHex = 0x00ff88; // Radio Garden Signature Electric Green
-      if (pin.category === 'curse') colorHex = 0xff3366; // Crimson
-      if (pin.category === 'monster') colorHex = 0xffaa00; // Amber
-      if (pin.category === 'sacred') colorHex = 0x00ddff; // Cyan
-      if (pin.category === 'legend') colorHex = 0xbf55ec; // Purple
+      // Radio Garden Signature Electric Green (#00ff88)
+      const isSelected = selectedPin?.id === pin.id;
+      const dotColor = isSelected ? 0xffffff : 0x00ff88;
 
-      // 1. Central Core Dot
-      const dotGeo = new THREE.SphereGeometry(0.018, 16, 16);
-      const dotMat = new THREE.MeshBasicMaterial({ color: colorHex });
+      // 1. Tiny Crisp Glowing Core Dot (Radio Garden style: small, clean, precise)
+      const dotRadius = isSelected ? 0.014 : 0.009;
+      const dotGeo = new THREE.SphereGeometry(dotRadius, 16, 16);
+      const dotMat = new THREE.MeshBasicMaterial({ color: dotColor });
       const dot = new THREE.Mesh(dotGeo, dotMat);
-      dot.position.y = 0.015;
+      dot.position.y = 0.006;
       pinObj.add(dot);
 
-      // 2. Radio Garden Sonar Ripple Wave Rings (Concentric Pulsing Waves)
-      const rings: THREE.Mesh[] = [];
-      for (let r = 0; r < 2; r++) {
-        const ringGeo = new THREE.RingGeometry(0.015, 0.024, 32);
-        const ringMat = new THREE.MeshBasicMaterial({
-          color: colorHex,
-          side: THREE.DoubleSide,
-          transparent: true,
-          opacity: 0.6,
-        });
-        const ringMesh = new THREE.Mesh(ringGeo, ringMat);
-        ringMesh.rotation.x = Math.PI / 2;
-        ringMesh.position.y = 0.015;
-        pinObj.add(ringMesh);
-        rings.push(ringMesh);
-      }
-
-      // 3. Anchor Beam
-      const beamGeo = new THREE.CylinderGeometry(0.002, 0.002, 0.03, 8);
-      const beamMat = new THREE.MeshBasicMaterial({
-        color: colorHex,
+      // 2. Subtle Soft Halo (Clean & minimal, not giant discs)
+      const haloGeo = new THREE.RingGeometry(dotRadius * 1.2, dotRadius * 2.2, 32);
+      const haloMat = new THREE.MeshBasicMaterial({
+        color: 0x00ff88,
+        side: THREE.DoubleSide,
         transparent: true,
-        opacity: 0.8,
+        opacity: isSelected ? 0.8 : 0.45,
       });
-      const beam = new THREE.Mesh(beamGeo, beamMat);
-      beam.position.y = 0.008;
-      pinObj.add(beam);
+      const halo = new THREE.Mesh(haloGeo, haloMat);
+      halo.rotation.x = Math.PI / 2;
+      halo.position.y = 0.006;
+      pinObj.add(halo);
 
       pinObj.userData = { pin };
       pinGroup.add(pinObj);
-      pinObjectsRef.current.set(pin.id, { group: pinObj, rings });
+      pinMeshesRef.current.set(pin.id, pinObj);
     });
-  }, [pins]);
+  }, [pins, selectedPin]);
 
   return (
     <div className="relative w-full h-full select-none overflow-hidden bg-[#03060c]">
       {/* 3D Canvas Container */}
       <div ref={containerRef} className="w-full h-full cursor-grab active:cursor-grabbing" />
 
-      {/* Radio Garden Tactical Crosshair Center Indicator */}
+      {/* Radio Garden Signature White Center Reticle Circle (from Radio Garden screenshot!) */}
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-        <div className="relative w-12 h-12 flex items-center justify-center opacity-40">
-          <div className="w-3 h-3 border border-emerald-400 rounded-full" />
-          <div className="absolute w-full h-[1px] bg-emerald-400/40" />
-          <div className="absolute h-full w-[1px] bg-emerald-400/40" />
+        <div className="w-16 h-16 rounded-full border-2 border-white/80 shadow-[0_0_15px_rgba(255,255,255,0.4)] flex items-center justify-center transition-all duration-300">
+          <div className="w-1.5 h-1.5 rounded-full bg-white/70" />
         </div>
       </div>
 
       {/* Floating Tactical Tooltip on Pin Hover */}
       {hoveredPin && (
         <div
-          className="pointer-events-none fixed z-30 transform -translate-x-1/2 -translate-y-full mb-4 px-4 py-2.5 rounded-2xl bg-slate-950/95 border border-emerald-400/60 backdrop-blur-xl shadow-[0_0_30px_rgba(0,255,136,0.4)] animate-in fade-in duration-200"
-          style={{ left: hoveredPin.x, top: hoveredPin.y - 12 }}
+          className="pointer-events-none fixed z-30 transform -translate-x-1/2 -translate-y-full mb-5 px-3.5 py-2 rounded-xl bg-slate-950/90 border border-emerald-400/60 backdrop-blur-md shadow-[0_0_20px_rgba(0,255,136,0.3)] animate-in fade-in duration-150"
+          style={{ left: hoveredPin.x, top: hoveredPin.y - 10 }}
         >
           <div className="flex items-center gap-2">
-            <span className="w-2.5 h-2.5 rounded-full bg-[#00ff88] animate-ping" />
-            <p className="font-bold text-sm text-[#00ff88] tracking-wide">
+            <span className="w-2 h-2 rounded-full bg-[#00ff88] animate-ping" />
+            <p className="font-bold text-sm text-[#00ff88]">
               {language === 'th' ? hoveredPin.pin.title_th : hoveredPin.pin.title_en}
             </p>
           </div>
-          <p className="text-xs text-slate-300 mt-1 font-medium">
+          <p className="text-xs text-slate-300 mt-0.5">
             📍 {language === 'th' ? hoveredPin.pin.province_th : hoveredPin.pin.province_en}
-            {hoveredPin.pin.district_th && ` • ${language === 'th' ? hoveredPin.pin.district_th : hoveredPin.pin.district_en}`}
           </p>
-          <div className="mt-1 flex items-center justify-between text-[10px] text-slate-400 font-mono">
-            <span>{hoveredPin.pin.lat.toFixed(2)}°, {hoveredPin.pin.lng.toFixed(2)}°</span>
-            <span className="text-emerald-400 font-semibold uppercase">{hoveredPin.pin.category}</span>
-          </div>
         </div>
       )}
     </div>
