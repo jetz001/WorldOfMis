@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
-import { Map, NavigationControl } from 'maplibre-gl';
-import type { GeoJSONSource } from 'maplibre-gl';
+import { Map, NavigationControl, Marker } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import type { GhostPin, SupportedLanguage } from '../../types/ghost';
 import { audioEngine } from '../../lib/audio';
@@ -20,9 +19,10 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
 }) => {
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<Map | null>(null);
+  const markersRef = useRef<Marker[]>([]);
   const [hoveredPin, setHoveredPin] = useState<{ pin: GhostPin; x: number; y: number } | null>(null);
 
-  // Smooth fly-to selected pin
+  // Smooth fly-to pin on click
   const flyToPin = useCallback((pin: GhostPin) => {
     if (!mapRef.current) return;
     audioEngine.playRadioTuning();
@@ -43,10 +43,10 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     }
   }, [selectedPin, flyToPin]);
 
+  // 1. Initialize MapLibre GL Map
   useEffect(() => {
     if (!mapContainerRef.current) return;
 
-    // 1. Initialize MapLibre GL with Pure Satellite Imagery (Google & Esri satellite tiles)
     const map = new Map({
       container: mapContainerRef.current,
       style: {
@@ -55,11 +55,9 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
           'satellite-tiles': {
             type: 'raster',
             tiles: [
-              // Google Maps / Google Earth Satellite Tiles API
               'https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',
               'https://mt2.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',
               'https://mt3.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',
-              // Fallback to Esri World Imagery (Maxar / ArcGIS)
               'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
             ],
             tileSize: 256,
@@ -91,110 +89,92 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     });
 
     mapRef.current = map;
-
-    // Add navigation controls (zoom in/out, pitch)
     map.addControl(new NavigationControl({ showCompass: true }), 'top-right');
 
     map.on('style.load', () => {
-      // 2. Set 3D Globe Projection (Radio Garden exact engine)
       try {
         map.setProjection({ type: 'globe' });
       } catch (e) {
-        console.warn('Globe projection fallback:', e);
+        console.warn('Globe projection error:', e);
       }
-
-      // 3. Add Folklore Pins as GeoJSON layers
-      const geojsonFeatures = pins.map((p) => ({
-        type: 'Feature' as const,
-        geometry: {
-          type: 'Point' as const,
-          coordinates: [p.lng, p.lat],
-        },
-        properties: { ...p },
-      }));
-
-      map.addSource('ghost-pins', {
-        type: 'geojson',
-        data: {
-          type: 'FeatureCollection',
-          features: geojsonFeatures,
-        },
-      });
-
-      // Layer 1: Soft Radio Garden Green Glow Halo
-      map.addLayer({
-        id: 'pins-glow',
-        type: 'circle',
-        source: 'ghost-pins',
-        paint: {
-          'circle-radius': ['interpolate', ['linear'], ['zoom'], 2, 8, 8, 14],
-          'circle-color': '#00ff88',
-          'circle-opacity': 0.35,
-          'circle-blur': 0.7,
-        },
-      });
-
-      // Layer 2: Radio Garden Signature Neon Green Pin Dot
-      map.addLayer({
-        id: 'pins-core',
-        type: 'circle',
-        source: 'ghost-pins',
-        paint: {
-          'circle-radius': ['interpolate', ['linear'], ['zoom'], 2, 4.5, 8, 7],
-          'circle-color': '#00ff88',
-          'circle-stroke-width': 1.5,
-          'circle-stroke-color': '#ffffff',
-        },
-      });
-
-      // Handle Pin Click
-      map.on('click', 'pins-core', (e) => {
-        if (!e.features || e.features.length === 0) return;
-        const clickedPin = e.features[0].properties as GhostPin;
-        onSelectPin(clickedPin);
-        flyToPin(clickedPin);
-      });
-
-      // Handle Hover Tooltip
-      map.on('mouseenter', 'pins-core', (e) => {
-        map.getCanvas().style.cursor = 'pointer';
-        if (e.features && e.features[0] && e.point) {
-          const pin = e.features[0].properties as GhostPin;
-          setHoveredPin({ pin, x: e.point.x, y: e.point.y });
-        }
-      });
-
-      map.on('mouseleave', 'pins-core', () => {
-        map.getCanvas().style.cursor = '';
-        setHoveredPin(null);
-      });
     });
 
     return () => {
+      // Clear markers
+      markersRef.current.forEach((m) => m.remove());
+      markersRef.current = [];
       map.remove();
       mapRef.current = null;
     };
-  }, [onSelectPin, flyToPin]);
+  }, []);
 
-  // Update GeoJSON source when pins change
+  // 2. Render Markers reliably whenever `pins` or `selectedPin` changes
   useEffect(() => {
     if (!mapRef.current) return;
     const map = mapRef.current;
-    const source = map.getSource('ghost-pins') as GeoJSONSource | undefined;
-    if (source) {
-      source.setData({
-        type: 'FeatureCollection',
-        features: pins.map((p) => ({
-          type: 'Feature' as const,
-          geometry: {
-            type: 'Point' as const,
-            coordinates: [p.lng, p.lat],
-          },
-          properties: { ...p },
-        })),
+
+    // Remove existing markers
+    markersRef.current.forEach((m) => m.remove());
+    markersRef.current = [];
+
+    // Create high-visibility Radio Garden Green Dot Markers
+    pins.forEach((pin) => {
+      const isSelected = selectedPin?.id === pin.id;
+
+      const el = document.createElement('div');
+      el.className = 'cursor-pointer select-none group';
+      el.style.width = '24px';
+      el.style.height = '24px';
+      el.style.display = 'flex';
+      el.style.alignItems = 'center';
+      el.style.justifyContent = 'center';
+
+      // Inner Radio Garden glowing green dot and ping halo
+      el.innerHTML = `
+        <div style="position: relative; display: flex; align-items: center; justify-content: center;">
+          <span style="
+            position: absolute;
+            width: ${isSelected ? '22px' : '16px'};
+            height: ${isSelected ? '22px' : '16px'};
+            border-radius: 9999px;
+            background-color: #00ff88;
+            opacity: 0.75;
+            animation: ping 1.8s cubic-bezier(0, 0, 0.2, 1) infinite;
+          "></span>
+          <span style="
+            position: relative;
+            width: ${isSelected ? '12px' : '9px'};
+            height: ${isSelected ? '12px' : '9px'};
+            border-radius: 9999px;
+            background-color: #00ff88;
+            border: 2px solid #ffffff;
+            box-shadow: 0 0 12px #00ff88, 0 0 4px #ffffff;
+            transition: transform 0.2s;
+          "></span>
+        </div>
+      `;
+
+      el.addEventListener('mouseenter', (e) => {
+        setHoveredPin({ pin, x: e.clientX, y: e.clientY });
       });
-    }
-  }, [pins]);
+
+      el.addEventListener('mouseleave', () => {
+        setHoveredPin(null);
+      });
+
+      el.addEventListener('click', (e) => {
+        e.stopPropagation();
+        onSelectPin(pin);
+        flyToPin(pin);
+      });
+
+      const marker = new Marker({ element: el, anchor: 'center' })
+        .setLngLat([pin.lng, pin.lat])
+        .addTo(map);
+
+      markersRef.current.push(marker);
+    });
+  }, [pins, selectedPin, onSelectPin, flyToPin]);
 
   return (
     <div className="relative w-full h-full select-none overflow-hidden bg-[#03060c]">
@@ -212,7 +192,7 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
       {hoveredPin && (
         <div
           className="pointer-events-none fixed z-30 transform -translate-x-1/2 -translate-y-full mb-4 px-3.5 py-2 rounded-xl bg-slate-950/90 border border-emerald-400/60 backdrop-blur-md shadow-[0_0_20px_rgba(0,255,136,0.3)] animate-in fade-in duration-150"
-          style={{ left: hoveredPin.x, top: hoveredPin.y - 8 }}
+          style={{ left: hoveredPin.x, top: hoveredPin.y - 12 }}
         >
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-[#00ff88] animate-ping" />
