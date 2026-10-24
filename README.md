@@ -1,12 +1,12 @@
-# 🌍 World of Mystery (WorldOfMis) - Global Folklore & Supernatural 3D Globe
+# 🌍 World of Mystery (WorldOfMis) - Global Folklore & Supernatural Interactive Globe
 
 [![Cloudflare Pages](https://img.shields.io/badge/Cloudflare-Pages%20%26%20Workers-F38020?logo=cloudflare&logoColor=white)](https://pages.cloudflare.com/)
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-worldofmys.pages.dev-success?logo=cloudflare)](https://worldofmys.pages.dev/)
-[![Three.js](https://img.shields.io/badge/Three.js-WebGL%203D-black?logo=three.js)](https://threejs.org/)
+[![MapLibre GL](https://img.shields.io/badge/MapLibre-Globe%20Projection-3b82f6)](https://maplibre.org/)
 [![React](https://img.shields.io/badge/React%2019-Vite-61DAFB?logo=react&logoColor=black)](https://react.dev/)
 [![D1 & R2](https://img.shields.io/badge/Cloudflare-D1%20%26%20R2-orange)](https://developers.cloudflare.com/)
 
-แพลตฟอร์มเว็บแอปพลิเคชัน 3D Interactive Earth สำหรับสำรวจตำนานผี ประวัติศาสตร์ท้องถิ่น และเรื่องเล่าลี้ลับจาก**ทั่วทุกมุมโลก (Global Folklore, Myths & Legends)** สไตล์ **Radio Garden** ผสานกับความล้ำสมัยของ **Three.js** ขับเคลื่อนด้วย **Cloudflare Edge Ecosystem (Pages, Functions, D1, R2)**
+แพลตฟอร์มเว็บแอปพลิเคชัน Interactive Earth สำหรับสำรวจตำนานผี ประวัติศาสตร์ท้องถิ่น และเรื่องเล่าลี้ลับจาก**ทั่วทุกมุมโลก (Global Folklore, Myths & Legends)** สไตล์ **Radio Garden** โดยใช้ **MapLibre GL กับ globe projection** เป็นแกนหลักของประสบการณ์แผนที่ และขับเคลื่อนด้วย **Cloudflare Edge Ecosystem (Pages, Functions, D1, R2)**
 
 🌐 **Live URL**: [https://worldofmys.pages.dev/](https://worldofmys.pages.dev/)
 
@@ -14,14 +14,14 @@
 
 ## ✨ ไฮไลต์ฟีเจอร์ระดับโลก (Key Global Features)
 
-1. **🌍 ลูกโลก 3D Three.js Interactive Global Earth**
+1. **🌍 ลูกโลกอินเทอร์แอกทีฟแบบ Globe Projection**
    - สำรวจเรื่องเล่าและตำนานพื้นบ้านข้ามทวีป: เอเชีย, ยุโรป, อเมริกา, แอฟริกา และโอเชียเนีย
-   - Atmosphere Glow shader, เมฆหมุนช้าๆ, แสงเมืองยามค่ำคืน และพื้นผิวโลกแบบ 3D
-   - หมุดเรืองแสง (Glowing Instanced Pins) สไตล์ Radio Garden กระจายตามพิกัดภูมิภาคทั่วโลก
-   - แอนิเมชันบินกล้องข้ามทวีป (Fly-to Slerp) เมื่อคลิกที่หมุด พร้อมเรดาร์ Tooltip ระบุประเทศและภูมิภาค
+   - ใช้ **MapLibre GL** แบบ **globe projection** เพื่อสร้างประสบการณ์โลกทรงกลมที่หมุน สำรวจ และบินกล้องข้ามทวีปได้ลื่นไหล
+   - แสดงภาพพื้นผิวโลกด้วย satellite raster tiles พร้อมหมุดเรืองแสงสไตล์ Radio Garden กระจายตามพิกัดภูมิภาคทั่วโลก
+   - รองรับแอนิเมชันบินกล้องไปยังหมุดที่เลือก (Fly-to) พร้อม tooltip แสดงชื่อเรื่องและภูมิภาค
 
 2. **🔒 ล็อคระยะซูมระดับจังหวัด/มณฑล (Global PDPA & Privacy Protection)**
-   - ป้องกันการส่องระดับบ้านพักอาศัยหรือเลขที่อยู่จริงในทุกประเทศทั่วโลก โดยระบบจำกัด `controls.minDistance` ให้อยู่ในระดับขอบเขตจังหวัด/มณฑล (Province / State / County level) เท่านั้น ปลอดภัยตามกฎหมายคุ้มครองข้อมูลส่วนบุคคล (PDPA / GDPR) 100%
+   - ป้องกันการเจาะดูระดับบ้านพักอาศัยหรือเลขที่อยู่จริงในทุกประเทศทั่วโลก ด้วยการกำหนดข้อจำกัดการซูมของแผนที่ให้เน้นการสำรวจในระดับจังหวัด/มณฑล (Province / State / County level) มากกว่าพิกัดบ้านเรือนรายจุด
 
 3. **📻 Radio Garden Atmospheric Sound Engine (Web Audio API)**
    - สังเคราะห์เสียงคลื่นวิทยุความถี่สั้น (Radio Shortwave Tuning Sweep / Heterodyne Whistle) ขณะหมุนลูกโลกหรือจูนหาสัญญาณเรื่องเล่าข้ามประเทศ
@@ -60,7 +60,7 @@
 ## 🛠️ สถาปัตยกรรมระบบ (Tech Stack)
 
 - **Frontend**: React 19, TypeScript, Vite, Tailwind CSS v4, Lucide Icons
-- **3D Engine**: Three.js (WebGL Standard Shaders + OrbitControls)
+- **Interactive Globe / Map Engine**: MapLibre GL (Globe Projection, Raster Tiles, Navigation Control, Fly-to)
 - **Audio Engine**: Web Audio API (Procedural Shortwave Radio Synthesizer)
 - **Backend API**: Hono Framework บน Cloudflare Pages Functions (`/api/*`)
 - **Database**: Cloudflare D1 (Serverless SQLite) พร้อม Seed Data ตำนานรอบโลก
