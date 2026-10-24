@@ -24,8 +24,12 @@ export async function fetchPins(): Promise<GhostPin[]> {
     if (res.ok) {
       const data = await res.json();
       if (data.success && Array.isArray(data.data) && data.data.length > 0) {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(data.data));
-        return data.data;
+        // Merge in any seed pins the API doesn't know about yet, so newly
+        // added stories are never hidden behind the D1 database lag
+        const apiPins = data.data as GhostPin[];
+        const reconciled = reconcileWithSeed(apiPins);
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(reconciled));
+        return reconciled;
       }
     }
   } catch {
