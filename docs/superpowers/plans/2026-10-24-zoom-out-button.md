@@ -31,7 +31,7 @@
 - Modify: `src/lib/i18n.ts` (บล็อก `th` ต่อจาก `unmute`)
 - Modify: `src/lib/i18n.ts` (บล็อก `en` ต่อจาก `unmute`)
 
-- [ ] **Step 1: เพิ่มคีย์ภาษาไทย**
+- [x] **Step 1: เพิ่มคีย์ภาษาไทย**
 
 ในบล็อก `th` ต่อจากบรรทัด `unmute: 'เปิดเสียงบรรยากาศ',` ให้เพิ่มบรรทัดนี้
 
@@ -39,7 +39,7 @@
     zoomOutWorld: 'ซูมออกไปดูโลก',
 ```
 
-- [ ] **Step 2: เพิ่มคีย์ภาษาอังกฤษ**
+- [x] **Step 2: เพิ่มคีย์ภาษาอังกฤษ**
 
 ในบล็อก `en` ต่อจากบรรทัด `unmute: 'Enable Ambient Audio',` ให้เพิ่มบรรทัดนี้
 
@@ -47,12 +47,12 @@
     zoomOutWorld: 'Zoom out to world',
 ```
 
-- [ ] **Step 3: ตรวจว่าโค้ดยังคอมไพล์ผ่าน**
+- [x] **Step 3: ตรวจว่าโค้ดยังคอมไพล์ผ่าน**
 
 Run: `npm run build`
 Expected: จบด้วย exit code 0 และไม่มี error เรื่อง type ของ `translations`
 
-- [ ] **Step 4: บันทึกงาน**
+- [x] **Step 4: บันทึกงาน**
 
 ```bash
 git add src/lib/i18n.ts
@@ -70,7 +70,7 @@ git commit -m "feat(i18n): add zoom-out button label"
 
 ### ส่วน GhostGlobe
 
-- [ ] **Step 1: ประกาศค่ามุมมองโลกที่ระดับโมดูล**
+- [x] **Step 1: ประกาศค่ามุมมองโลกที่ระดับโมดูล**
 
 ใน `src/components/Globe/GhostGlobe.tsx` ต่อจากบรรทัด `import { audioEngine } from '../../lib/audio';` ให้เพิ่มค่าคงที่นี้
 
@@ -80,7 +80,7 @@ const WORLD_VIEW_CENTER: [number, number] = [100.5, 13.75]; // Centered on Thail
 const WORLD_VIEW_ZOOM = 2.8;
 ```
 
-- [ ] **Step 2: แก้ interface ของ props**
+- [x] **Step 2: แก้ interface ของ props**
 
 เปลี่ยน `GhostGlobeProps` จาก
 
@@ -105,7 +105,7 @@ interface GhostGlobeProps {
 }
 ```
 
-- [ ] **Step 3: รับ prop เข้ามาในคอมโพเนนต์**
+- [x] **Step 3: รับ prop เข้ามาในคอมโพเนนต์**
 
 ในรายการ destructuring ให้เพิ่ม `worldViewSignal` ต่อจาก `language` โดยผลลัพธ์จะเป็น
 
@@ -119,7 +119,7 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
 }) => {
 ```
 
-- [ ] **Step 4: ใช้ค่าคงที่ร่วมตอนสร้างแผนที่**
+- [x] **Step 4: ใช้ค่าคงที่ร่วมตอนสร้างแผนที่**
 
 ใน `useEffect` ที่สร้าง `new Map({...})` ให้เปลี่ยนสองบรรทัดนี้
 
@@ -135,7 +135,7 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
       zoom: WORLD_VIEW_ZOOM,
 ```
 
-- [ ] **Step 5: เพิ่มฟังก์ชันและตัวเฝ้าสัญญาณ**
+- [x] **Step 5: เพิ่มฟังก์ชันและตัวเฝ้าสัญญาณ**
 
 ต่อจาก `useEffect` ที่สร้างแผนที่ (บล็อกที่ปิดท้ายด้วย `}, []);` และอยู่ก่อนคอมเมนต์ `// 2. Render Markers reliably whenever`) ให้เพิ่มโค้ดนี้
 
@@ -162,7 +162,7 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
 
 ### ส่วน Navbar
 
-- [ ] **Step 6: เพิ่มไอคอนที่ import**
+- [x] **Step 6: เพิ่มไอคอนที่ import**
 
 เปลี่ยนบล็อก import จาก `lucide-react` จาก
 
@@ -191,7 +191,7 @@ import {
 } from 'lucide-react';
 ```
 
-- [ ] **Step 7: เพิ่ม prop ของปุ่ม**
+- [x] **Step 7: เพิ่ม prop ของปุ่ม**
 
 ใน `NavbarProps` ให้เพิ่มบรรทัดนี้ต่อจาก `onOpenAdmin: () => void;`
 
@@ -201,7 +201,7 @@ import {
 
 จากนั้นในรายการ destructuring ของคอมโพเนนต์ ให้เพิ่ม `onZoomOut,` ต่อจาก `onOpenAdmin,`
 
-- [ ] **Step 8: วางปุ่มในกลุ่มปุ่มควบคุม**
+- [x] **Step 8: วางปุ่มในกลุ่มปุ่มควบคุม**
 
 ในบล็อก `{/* Action Controls */}` ให้แทรกปุ่มนี้ก่อนคอมเมนต์ `{/* Sound Toggle */}`
 
@@ -220,7 +220,7 @@ import {
 
 ### ส่วน App
 
-- [ ] **Step 9: เพิ่ม state ตัวนับ**
+- [x] **Step 9: เพิ่ม state ตัวนับ**
 
 ใน `src/App.tsx` ต่อจากบรรทัด `const [isMuted, setIsMuted] = useState(false);` ให้เพิ่ม
 
@@ -228,7 +228,7 @@ import {
   const [worldViewSignal, setWorldViewSignal] = useState(0);
 ```
 
-- [ ] **Step 10: เพิ่ม callback**
+- [x] **Step 10: เพิ่ม callback**
 
 ต่อจาก `handleToggleLanguage` ให้เพิ่ม
 
@@ -238,7 +238,7 @@ import {
   }, []);
 ```
 
-- [ ] **Step 11: ส่ง callback ให้ Navbar**
+- [x] **Step 11: ส่ง callback ให้ Navbar**
 
 ใน JSX ของ `<Navbar ... />` ให้เพิ่มบรรทัดนี้ต่อจาก `onOpenAdmin={() => setIsAdminOpen(true)}`
 
@@ -246,7 +246,7 @@ import {
         onZoomOut={handleZoomOutToWorld}
 ```
 
-- [ ] **Step 12: ส่งสัญญาณให้ GhostGlobe**
+- [x] **Step 12: ส่งสัญญาณให้ GhostGlobe**
 
 ใน JSX ของ `<GhostGlobe ... />` ให้เพิ่มบรรทัดนี้ต่อจาก `language={language}`
 
@@ -256,17 +256,17 @@ import {
 
 ### ตรวจสอบและบันทึกงาน
 
-- [ ] **Step 13: ตรวจ lint**
+- [x] **Step 13: ตรวจ lint**
 
 Run: `npm run lint`
 Expected: ไม่มี error และไม่มี warning ใหม่จากไฟล์ที่แก้
 
-- [ ] **Step 14: ตรวจ build**
+- [x] **Step 14: ตรวจ build**
 
 Run: `npm run build`
 Expected: จบด้วย exit code 0 ไม่มี TypeScript error เรื่อง prop ที่ขาด
 
-- [ ] **Step 15: ตรวจด้วยตาในเบราว์เซอร์**
+- [x] **Step 15: ตรวจด้วยตาในเบราว์เซอร์**
 
 Run: `npm run dev`
 แล้วเปิด `http://localhost:5173` จากนั้นไล่ตรวจตามลำดับนี้
@@ -279,7 +279,7 @@ Run: `npm run dev`
 6. การ์ดเสียงมุมล่างซ้ายและ drawer เรื่องเล่าต้องยังทำงานปกติ
 7. ย่อหน้าต่างให้แคบระดับมือถือ แล้วตรวจว่าปุ่มใหม่ไม่ทับปุ่มเสียง ปุ่มภาษา และปุ่มแอดมิน
 
-- [ ] **Step 16: บันทึกงาน**
+- [x] **Step 16: บันทึกงาน**
 
 ```bash
 git add src/components/Globe/GhostGlobe.tsx src/components/UI/Navbar.tsx src/App.tsx
