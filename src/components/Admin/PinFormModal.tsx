@@ -210,14 +210,14 @@ export const PinFormModal: React.FC<PinFormModalProps> = ({
           <div className="p-4 rounded-2xl bg-slate-950 border border-slate-800/80 space-y-4">
             <div className="flex items-center justify-between">
               <span className="text-xs font-semibold text-emerald-400">
-                📍 พิกัดและจังหวัด (PDPA Privacy Safe)
+                📍 พิกัดและตำแหน่งบนลูกโลก (Global Coordinates)
               </span>
               <button
                 type="button"
                 onClick={handleJitter}
                 className="text-[11px] px-2.5 py-1 rounded-lg bg-emerald-500/20 text-emerald-300 hover:bg-emerald-500/30 border border-emerald-500/30 transition-colors"
               >
-                สุ่มพิกัดปลอดภัย (Jitter Coordinates)
+                สุ่มขยับพิกัดเล็กน้อย (Coordinate Jitter)
               </button>
             </div>
 

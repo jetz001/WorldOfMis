@@ -4,7 +4,6 @@ import {
   Volume2,
   VolumeX,
   MapPin,
-  ShieldCheck,
   Eye,
   Radio,
   BookOpen,
@@ -142,11 +141,6 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
             <div className="flex items-center gap-1 text-slate-400">
               <Eye className="w-3.5 h-3.5" />
               <span>{pin.views_count.toLocaleString()} {t.views}</span>
-            </div>
-
-            <div className="flex items-center gap-1 text-amber-400/90 font-medium bg-amber-500/10 px-2 py-0.5 rounded-md border border-amber-500/20">
-              <ShieldCheck className="w-3 h-3" />
-              <span>PDPA Safe (Province Scope)</span>
             </div>
           </div>
         </div>

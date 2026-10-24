@@ -4,7 +4,6 @@ import {
   Volume2,
   VolumeX,
   Languages,
-  ShieldCheck,
   Search,
   Lock,
 } from 'lucide-react';
@@ -81,12 +80,6 @@ export const Navbar: React.FC<NavbarProps> = ({
 
         {/* Action Controls */}
         <div className="flex items-center gap-2">
-          {/* PDPA Badge */}
-          <div className="hidden lg:flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-950/80 border border-slate-800/80 backdrop-blur-md text-xs text-amber-400/90 shadow-lg">
-            <ShieldCheck className="w-4 h-4 text-amber-400" />
-            <span>{t.maxZoomNotice}</span>
-          </div>
-
           {/* Sound Toggle */}
           <button
             onClick={onToggleMute}

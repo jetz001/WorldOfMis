@@ -2,12 +2,7 @@ import React, { useEffect, useRef, useState, useCallback } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import type { GhostPin, SupportedLanguage } from '../../types/ghost';
-import { EARTH_RADIUS, latLngToVector3, getProvinceCameraPosition } from '../../lib/coordinates';
-import {
-  createProceduralEarthTexture,
-  createProceduralCloudTexture,
-  AtmosphereShader,
-} from './earthTextures';
+import { EARTH_RADIUS, latLngToVector3 } from '../../lib/coordinates';
 import { audioEngine } from '../../lib/audio';
 
 interface GhostGlobeProps {
@@ -32,41 +27,41 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
   const containerRef = useRef<HTMLDivElement>(null);
   const [hoveredPin, setHoveredPin] = useState<HoveredPinInfo | null>(null);
 
-  // References to keep across renders
-  const sceneRef = useRef<THREE.Scene | null>(null);
+  // References across lifecycle
   const cameraRef = useRef<THREE.PerspectiveCamera | null>(null);
   const rendererRef = useRef<THREE.WebGLRenderer | null>(null);
   const controlsRef = useRef<OrbitControls | null>(null);
   const pinGroupRef = useRef<THREE.Group | null>(null);
-  const pinMeshesRef = useRef<Map<string, THREE.Object3D>>(new Map());
+  const pinObjectsRef = useRef<Map<string, { group: THREE.Group; rings: THREE.Mesh[] }>>(new Map());
   const cloudsMeshRef = useRef<THREE.Mesh | null>(null);
   const animationFrameRef = useRef<number | null>(null);
 
-  // Camera fly-to animation state
+  // Camera animation
   const cameraAnimRef = useRef<{
     startPos: THREE.Vector3;
     endPos: THREE.Vector3;
     progress: number;
-    duration: number; // in frames
+    duration: number;
   } | null>(null);
 
-  // Focus camera to pin smoothly
+  // Smooth fly-to pin on click
   const flyToPin = useCallback((pin: GhostPin) => {
     if (!cameraRef.current || !controlsRef.current) return;
 
     audioEngine.playRadioTuning();
     audioEngine.playPresetSound(pin.sound_preset);
 
-    const targetPos = getProvinceCameraPosition(pin.lat, pin.lng);
+    // Zoom close to target location (Radio Garden style ~2.4 units, surface is 2.0)
+    const targetPos = latLngToVector3(pin.lat, pin.lng, EARTH_RADIUS * 1.25, 0);
+
     cameraAnimRef.current = {
       startPos: cameraRef.current.position.clone(),
       endPos: targetPos,
       progress: 0,
-      duration: 60, // ~1 second at 60fps
+      duration: 55, // ~0.9s smooth slerp
     };
   }, []);
 
-  // When selectedPin prop changes from outside (e.g. search / list)
   useEffect(() => {
     if (selectedPin) {
       flyToPin(selectedPin);
@@ -81,75 +76,109 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
 
     // 1. Scene & Camera
     const scene = new THREE.Scene();
-    sceneRef.current = scene;
 
-    const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
-    // Initial camera position focused on Thailand coordinates (Lat 14, Lng 100)
-    const initialCamPos = getProvinceCameraPosition(14.0, 100.5);
-    camera.position.copy(initialCamPos.clone().multiplyScalar(1.4));
+    const camera = new THREE.PerspectiveCamera(45, width / height, 0.05, 1000);
+    // Initial camera view (Asia / Global perspective)
+    camera.position.set(0, 1.2, 4.8);
     camera.lookAt(0, 0, 0);
     cameraRef.current = camera;
 
     // 2. WebGL Renderer
-    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: 'high-performance' });
     renderer.setSize(width, height);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
-    renderer.toneMappingExposure = 1.2;
+    renderer.toneMappingExposure = 1.35;
     container.innerHTML = '';
     container.appendChild(renderer.domElement);
     rendererRef.current = renderer;
 
-    // 3. OrbitControls with STRICT PDPA Zoom Limits
+    // 3. OrbitControls - UNRESTRICTED ZOOM (Like Radio Garden & Google Earth!)
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.enableDamping = true;
     controls.dampingFactor = 0.05;
-    controls.rotateSpeed = 0.7;
-    // MANDATORY PDPA CONSTRAINT: minDistance is locked to province overview altitude (~2.9 units)
-    // Earth radius = 2.0. Users CANNOT zoom closer than province overview.
-    controls.minDistance = 2.9;
-    controls.maxDistance = 6.8;
-    controls.enablePan = false; // Keep globe centered
+    controls.rotateSpeed = 0.65;
+    controls.zoomSpeed = 0.85;
+    // FREE UNRESTRICTED ZOOM: Can zoom right down to surface!
+    controls.minDistance = 2.08;
+    controls.maxDistance = 14.0;
+    controls.enablePan = false;
     controlsRef.current = controls;
 
-    // 4. Starfield Background
-    const starsGeo = new THREE.BufferGeometry();
-    const starCount = 1200;
-    const starCoords = new Float32Array(starCount * 3);
-    for (let i = 0; i < starCount * 3; i += 3) {
-      const radius = 60 + Math.random() * 40;
-      const theta = Math.random() * Math.PI * 2;
-      const phi = Math.acos(Math.random() * 2 - 1);
-      starCoords[i] = radius * Math.sin(phi) * Math.cos(theta);
-      starCoords[i + 1] = radius * Math.sin(phi) * Math.sin(theta);
-      starCoords[i + 2] = radius * Math.cos(phi);
-    }
-    starsGeo.setAttribute('position', new THREE.BufferAttribute(starCoords, 3));
-    const starsMat = new THREE.PointsMaterial({
-      color: 0x88ccff,
-      size: 0.8,
-      transparent: true,
-      opacity: 0.6,
-    });
-    const starField = new THREE.Points(starsGeo, starsMat);
-    scene.add(starField);
+    // 4. Photorealistic NASA Textures
+    const textureLoader = new THREE.TextureLoader();
 
-    // 5. Earth Sphere
-    const earthGeo = new THREE.SphereGeometry(EARTH_RADIUS, 64, 64);
-    const earthTex = createProceduralEarthTexture();
+    // Day Surface Map (True-color Satellite Imagery)
+    const earthDayTex = textureLoader.load('/textures/earth_atmos_2048.jpg');
+    earthDayTex.colorSpace = THREE.SRGBColorSpace;
+
+    // Normal / Topographic Relief Map
+    const earthNormalTex = textureLoader.load('/textures/earth_normal_2048.jpg');
+
+    // Specular / Water reflection map
+    const earthSpecularTex = textureLoader.load('/textures/earth_specular_2048.jpg');
+
+    // Night Lights Map
+    const earthNightTex = textureLoader.load('/textures/earth_lights_2048.png');
+
+    // Cloud Map
+    const cloudsTex = textureLoader.load('/textures/earth_clouds_1024.png');
+
+    // 5. Realistic Earth Sphere Mesh
+    const earthGeo = new THREE.SphereGeometry(EARTH_RADIUS, 96, 96);
     const earthMat = new THREE.MeshStandardMaterial({
-      map: earthTex,
-      roughness: 0.7,
-      metalness: 0.1,
+      map: earthDayTex,
+      normalMap: earthNormalTex,
+      normalScale: new THREE.Vector2(0.65, 0.65),
+      roughnessMap: earthSpecularTex,
+      roughness: 0.75,
+      metalness: 0.15,
     });
     const earthMesh = new THREE.Mesh(earthGeo, earthMat);
     scene.add(earthMesh);
 
-    // 6. Atmosphere Glow (Outer Shell)
-    const atmosGeo = new THREE.SphereGeometry(EARTH_RADIUS * 1.05, 64, 64);
+    // 6. Night Lights Sphere (Additive City Lights)
+    const nightGeo = new THREE.SphereGeometry(EARTH_RADIUS * 1.002, 96, 96);
+    const nightMat = new THREE.MeshBasicMaterial({
+      map: earthNightTex,
+      blending: THREE.AdditiveBlending,
+      transparent: true,
+      opacity: 0.85,
+    });
+    const nightMesh = new THREE.Mesh(nightGeo, nightMat);
+    scene.add(nightMesh);
+
+    // 7. Clouds Layer
+    const cloudsGeo = new THREE.SphereGeometry(EARTH_RADIUS * 1.014, 96, 96);
+    const cloudsMat = new THREE.MeshStandardMaterial({
+      map: cloudsTex,
+      transparent: true,
+      opacity: 0.38,
+      blending: THREE.AdditiveBlending,
+      depthWrite: false,
+    });
+    const cloudsMesh = new THREE.Mesh(cloudsGeo, cloudsMat);
+    scene.add(cloudsMesh);
+    cloudsMeshRef.current = cloudsMesh;
+
+    // 8. Ethereal Atmospheric Rayleigh Scattering Halo
+    const atmosGeo = new THREE.SphereGeometry(EARTH_RADIUS * 1.045, 64, 64);
     const atmosMat = new THREE.ShaderMaterial({
-      vertexShader: AtmosphereShader.vertexShader,
-      fragmentShader: AtmosphereShader.fragmentShader,
+      vertexShader: `
+        varying vec3 vNormal;
+        void main() {
+          vNormal = normalize(normalMatrix * normal);
+          gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+        }
+      `,
+      fragmentShader: `
+        varying vec3 vNormal;
+        void main() {
+          float intensity = pow(0.68 - dot(vNormal, vec3(0.0, 0.0, 1.0)), 2.8);
+          // Soft atmospheric blue-cyan rim glow
+          gl_FragColor = vec4(0.2, 0.65, 1.0, 1.0) * intensity;
+        }
+      `,
       blending: THREE.AdditiveBlending,
       side: THREE.BackSide,
       transparent: true,
@@ -157,32 +186,37 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     const atmosMesh = new THREE.Mesh(atmosGeo, atmosMat);
     scene.add(atmosMesh);
 
-    // 7. Clouds Layer
-    const cloudsGeo = new THREE.SphereGeometry(EARTH_RADIUS * 1.015, 64, 64);
-    const cloudsTex = createProceduralCloudTexture();
-    const cloudsMat = new THREE.MeshStandardMaterial({
-      map: cloudsTex,
+    // 9. Starfield Background
+    const starsGeo = new THREE.BufferGeometry();
+    const starCount = 2000;
+    const starPositions = new Float32Array(starCount * 3);
+    for (let i = 0; i < starCount * 3; i += 3) {
+      const r = 80 + Math.random() * 50;
+      const theta = Math.random() * Math.PI * 2;
+      const phi = Math.acos(Math.random() * 2 - 1);
+      starPositions[i] = r * Math.sin(phi) * Math.cos(theta);
+      starPositions[i + 1] = r * Math.sin(phi) * Math.sin(theta);
+      starPositions[i + 2] = r * Math.cos(phi);
+    }
+    starsGeo.setAttribute('position', new THREE.BufferAttribute(starPositions, 3));
+    const starsMat = new THREE.PointsMaterial({
+      color: 0x93c5fd,
+      size: 0.9,
       transparent: true,
-      opacity: 0.35,
-      blending: THREE.AdditiveBlending,
+      opacity: 0.7,
     });
-    const cloudsMesh = new THREE.Mesh(cloudsGeo, cloudsMat);
-    scene.add(cloudsMesh);
-    cloudsMeshRef.current = cloudsMesh;
+    const stars = new THREE.Points(starsGeo, starsMat);
+    scene.add(stars);
 
-    // 8. Lighting
-    const ambientLight = new THREE.AmbientLight(0x334466, 1.2);
+    // 10. Lighting (Sun & Ambient)
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.45);
     scene.add(ambientLight);
 
-    const sunLight = new THREE.DirectionalLight(0xffeedd, 2.0);
-    sunLight.position.set(5, 3, 5);
+    const sunLight = new THREE.DirectionalLight(0xffffff, 2.5);
+    sunLight.position.set(6, 4, 7);
     scene.add(sunLight);
 
-    const spiritLight = new THREE.PointLight(0x34d399, 1.5, 10);
-    spiritLight.position.set(0, 0, 4);
-    scene.add(spiritLight);
-
-    // 9. Pins Group
+    // 11. Pins Group
     const pinGroup = new THREE.Group();
     scene.add(pinGroup);
     pinGroupRef.current = pinGroup;
@@ -243,7 +277,6 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     container.addEventListener('mousemove', handlePointerMove);
     container.addEventListener('click', handleClick);
 
-    // 10. Resize Observer
     const handleResize = () => {
       if (!containerRef.current || !rendererRef.current || !cameraRef.current) return;
       const newW = containerRef.current.clientWidth;
@@ -254,26 +287,25 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     };
     window.addEventListener('resize', handleResize);
 
-    // 11. Animation Loop
-    let clock = new THREE.Clock();
+    // 12. Render Animation Loop
+    const clock = new THREE.Clock();
 
     const animate = () => {
       animationFrameRef.current = requestAnimationFrame(animate);
       const elapsedTime = clock.getElapsedTime();
 
-      // Subtle slow cloud drift
+      // Slow cloud rotation
       if (cloudsMeshRef.current) {
-        cloudsMeshRef.current.rotation.y = elapsedTime * 0.015;
+        cloudsMeshRef.current.rotation.y = elapsedTime * 0.012;
       }
 
-      // Smooth camera interpolation for fly-to
+      // Smooth camera interpolation
       if (cameraAnimRef.current) {
         const anim = cameraAnimRef.current;
         anim.progress += 1 / anim.duration;
         const t = Math.min(anim.progress, 1.0);
-        // Ease-out cubic
+        // Smooth ease-out cubic
         const ease = 1 - Math.pow(1 - t, 3);
-
         camera.position.lerpVectors(anim.startPos, anim.endPos, ease);
         camera.lookAt(0, 0, 0);
 
@@ -282,13 +314,16 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
         }
       }
 
-      // Animate pulsing halo of pins
-      pinMeshesRef.current.forEach((mesh) => {
-        const halo = mesh.getObjectByName('halo');
-        if (halo) {
-          const s = 1.0 + 0.3 * Math.sin(elapsedTime * 3.5 + mesh.position.x);
-          halo.scale.set(s, s, s);
-        }
+      // Radio Garden Sonar Ripple Wave Animation
+      pinObjectsRef.current.forEach(({ rings }) => {
+        rings.forEach((ring, idx) => {
+          // Staggered outward expansion
+          const cycle = (elapsedTime * 1.8 + idx * 0.5) % 1.5;
+          const scale = 1.0 + cycle * 3.2;
+          ring.scale.set(scale, scale, scale);
+          const mat = ring.material as THREE.MeshBasicMaterial;
+          mat.opacity = Math.max(0, 0.7 - cycle * 0.45);
+        });
       });
 
       controls.update();
@@ -306,91 +341,108 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     };
   }, [onSelectPin, flyToPin]);
 
-  // Update 3D Pins whenever `pins` prop updates
+  // Update 3D Pins with Radio Garden Sonar styling
   useEffect(() => {
     if (!pinGroupRef.current) return;
     const pinGroup = pinGroupRef.current;
 
-    // Clear previous pin objects
     while (pinGroup.children.length > 0) {
       pinGroup.remove(pinGroup.children[0]);
     }
-    pinMeshesRef.current.clear();
+    pinObjectsRef.current.clear();
 
     pins.forEach((pin) => {
       const pinObj = new THREE.Group();
-      const pos = latLngToVector3(pin.lat, pin.lng, EARTH_RADIUS, 0.03);
+      // Altitude slightly above surface (0.015)
+      const pos = latLngToVector3(pin.lat, pin.lng, EARTH_RADIUS, 0.015);
       pinObj.position.copy(pos);
 
-      // Orient pin normal to surface
+      // Orient tangent to Earth surface
       const normal = pos.clone().normalize();
       pinObj.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), normal);
 
-      // Choose color based on category
-      let pinColor = 0x34d399; // Emerald green (spirits)
-      if (pin.category === 'curse') pinColor = 0xf43f5e; // Rose red (curses)
-      if (pin.category === 'monster') pinColor = 0xf59e0b; // Amber (beasts)
-      if (pin.category === 'sacred') pinColor = 0x38bdf8; // Sky blue (sacred)
-      if (pin.category === 'legend') pinColor = 0xa855f7; // Purple (legends)
+      // Radio Garden Iconic Neon Green (or category glow)
+      let colorHex = 0x00ff88; // Radio Garden Signature Electric Green
+      if (pin.category === 'curse') colorHex = 0xff3366; // Crimson
+      if (pin.category === 'monster') colorHex = 0xffaa00; // Amber
+      if (pin.category === 'sacred') colorHex = 0x00ddff; // Cyan
+      if (pin.category === 'legend') colorHex = 0xbf55ec; // Purple
 
       // 1. Central Core Dot
-      const coreGeo = new THREE.SphereGeometry(0.024, 16, 16);
-      const coreMat = new THREE.MeshBasicMaterial({ color: pinColor });
-      const core = new THREE.Mesh(coreGeo, coreMat);
-      core.position.y = 0.02;
-      pinObj.add(core);
+      const dotGeo = new THREE.SphereGeometry(0.018, 16, 16);
+      const dotMat = new THREE.MeshBasicMaterial({ color: colorHex });
+      const dot = new THREE.Mesh(dotGeo, dotMat);
+      dot.position.y = 0.015;
+      pinObj.add(dot);
 
-      // 2. Pulsing Glow Halo (Radio Garden style)
-      const haloGeo = new THREE.RingGeometry(0.028, 0.055, 32);
-      const haloMat = new THREE.MeshBasicMaterial({
-        color: pinColor,
-        side: THREE.DoubleSide,
-        transparent: true,
-        opacity: 0.65,
-      });
-      const halo = new THREE.Mesh(haloGeo, haloMat);
-      halo.name = 'halo';
-      halo.rotation.x = Math.PI / 2;
-      halo.position.y = 0.02;
-      pinObj.add(halo);
+      // 2. Radio Garden Sonar Ripple Wave Rings (Concentric Pulsing Waves)
+      const rings: THREE.Mesh[] = [];
+      for (let r = 0; r < 2; r++) {
+        const ringGeo = new THREE.RingGeometry(0.015, 0.024, 32);
+        const ringMat = new THREE.MeshBasicMaterial({
+          color: colorHex,
+          side: THREE.DoubleSide,
+          transparent: true,
+          opacity: 0.6,
+        });
+        const ringMesh = new THREE.Mesh(ringGeo, ringMat);
+        ringMesh.rotation.x = Math.PI / 2;
+        ringMesh.position.y = 0.015;
+        pinObj.add(ringMesh);
+        rings.push(ringMesh);
+      }
 
       // 3. Anchor Beam
-      const beamGeo = new THREE.CylinderGeometry(0.003, 0.003, 0.04, 8);
+      const beamGeo = new THREE.CylinderGeometry(0.002, 0.002, 0.03, 8);
       const beamMat = new THREE.MeshBasicMaterial({
-        color: pinColor,
+        color: colorHex,
         transparent: true,
-        opacity: 0.7,
+        opacity: 0.8,
       });
       const beam = new THREE.Mesh(beamGeo, beamMat);
-      beam.position.y = 0.01;
+      beam.position.y = 0.008;
       pinObj.add(beam);
 
       pinObj.userData = { pin };
       pinGroup.add(pinObj);
-      pinMeshesRef.current.set(pin.id, pinObj);
+      pinObjectsRef.current.set(pin.id, { group: pinObj, rings });
     });
   }, [pins]);
 
   return (
-    <div className="relative w-full h-full select-none overflow-hidden bg-[#05070c]">
+    <div className="relative w-full h-full select-none overflow-hidden bg-[#03060c]">
+      {/* 3D Canvas Container */}
       <div ref={containerRef} className="w-full h-full cursor-grab active:cursor-grabbing" />
+
+      {/* Radio Garden Tactical Crosshair Center Indicator */}
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
+        <div className="relative w-12 h-12 flex items-center justify-center opacity-40">
+          <div className="w-3 h-3 border border-emerald-400 rounded-full" />
+          <div className="absolute w-full h-[1px] bg-emerald-400/40" />
+          <div className="absolute h-full w-[1px] bg-emerald-400/40" />
+        </div>
+      </div>
 
       {/* Floating Tactical Tooltip on Pin Hover */}
       {hoveredPin && (
         <div
-          className="pointer-events-none fixed z-30 transform -translate-x-1/2 -translate-y-full mb-3 px-3.5 py-2 rounded-xl bg-slate-950/90 border border-emerald-500/40 backdrop-blur-md shadow-[0_0_20px_rgba(16,185,129,0.3)] animate-ghost-pulse transition-all"
+          className="pointer-events-none fixed z-30 transform -translate-x-1/2 -translate-y-full mb-4 px-4 py-2.5 rounded-2xl bg-slate-950/95 border border-emerald-400/60 backdrop-blur-xl shadow-[0_0_30px_rgba(0,255,136,0.4)] animate-in fade-in duration-200"
           style={{ left: hoveredPin.x, top: hoveredPin.y - 12 }}
         >
           <div className="flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-            <p className="font-semibold text-sm text-emerald-300">
+            <span className="w-2.5 h-2.5 rounded-full bg-[#00ff88] animate-ping" />
+            <p className="font-bold text-sm text-[#00ff88] tracking-wide">
               {language === 'th' ? hoveredPin.pin.title_th : hoveredPin.pin.title_en}
             </p>
           </div>
-          <p className="text-xs text-slate-400 mt-0.5">
+          <p className="text-xs text-slate-300 mt-1 font-medium">
             📍 {language === 'th' ? hoveredPin.pin.province_th : hoveredPin.pin.province_en}
-            {hoveredPin.pin.district_th && ` (${language === 'th' ? hoveredPin.pin.district_th : hoveredPin.pin.district_en})`}
+            {hoveredPin.pin.district_th && ` • ${language === 'th' ? hoveredPin.pin.district_th : hoveredPin.pin.district_en}`}
           </p>
+          <div className="mt-1 flex items-center justify-between text-[10px] text-slate-400 font-mono">
+            <span>{hoveredPin.pin.lat.toFixed(2)}°, {hoveredPin.pin.lng.toFixed(2)}°</span>
+            <span className="text-emerald-400 font-semibold uppercase">{hoveredPin.pin.category}</span>
+          </div>
         </div>
       )}
     </div>
