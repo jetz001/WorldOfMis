@@ -60,7 +60,8 @@ export function App() {
 
   const handleZoomOutToWorld = useCallback(() => {
     setWorldViewSignal((prev) => prev + 1);
-    setSelectedPin(null);
+    // NOTE: keep the selected pin so the Now Playing story indicator
+    // remains available after zooming back out to the world view.
     setIsDrawerOpen(false);
     audioEngine.stopPresetSound();
   }, []);

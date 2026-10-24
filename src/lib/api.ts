@@ -3,6 +3,21 @@ import { INITIAL_GHOST_PINS } from '../data/seedData';
 
 const STORAGE_KEY = 'worldofmys_pins_local_cache';
 
+/**
+ * Reconciles a cached pin list with the latest seed data so newly
+ * added stories are never hidden behind a stale localStorage cache
+ * (e.g. visitors from before new stories were added).
+ *
+ * - Seed pins missing from the cache are appended.
+ * - Cached pins are preserved (admin-created entries and local edits
+ *   survive); the cached version of a seed pin wins over the seed.
+ */
+function reconcileWithSeed(cachedPins: GhostPin[]): GhostPin[] {
+  const cachedIds = new Set(cachedPins.map((p) => p.id));
+  const missingFromCache = INITIAL_GHOST_PINS.filter((pin) => !cachedIds.has(pin.id));
+  return [...cachedPins, ...missingFromCache];
+}
+
 export async function fetchPins(): Promise<GhostPin[]> {
   try {
     const res = await fetch('/api/pins');
@@ -23,7 +38,12 @@ export async function fetchPins(): Promise<GhostPin[]> {
     try {
       const parsed = JSON.parse(cached);
       if (Array.isArray(parsed) && parsed.length > 0) {
-        return parsed;
+        // Merge in any seed pins the cache doesn't know about yet
+        const reconciled = reconcileWithSeed(parsed as GhostPin[]);
+        if (reconciled.length !== parsed.length) {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(reconciled));
+        }
+        return reconciled;
       }
     } catch {
       // ignore
