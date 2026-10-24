@@ -39,7 +39,7 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
         dialog.close();
       }
     }
-  }, [isOpen]);
+  }, [isOpen, pin]);
 
   // Fallback for browsers without native <dialog closedby> support
   useEffect(() => {
@@ -71,7 +71,7 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
       dialog.removeEventListener('click', handleDialogClick);
       dialog.removeEventListener('close', handleCloseEvent);
     };
-  }, [onClose]);
+  }, [onClose, pin]);
 
   if (!pin) return null;
 
@@ -85,7 +85,7 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
   return (
     <dialog
       ref={dialogRef}
-      closedby="any"
+      closedby="any" onClose={onClose}
       aria-labelledby="story-drawer-title"
       className="m-0 ml-auto h-full max-h-none w-full max-w-lg p-0 bg-transparent text-slate-100 border-none outline-none backdrop:bg-black/60 backdrop:backdrop-blur-sm"
     >
