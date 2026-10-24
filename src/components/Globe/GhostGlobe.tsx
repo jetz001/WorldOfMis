@@ -6,6 +6,7 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 // returns the correct JS MIME type instead of an HTML 404 page.
 setWorkerUrl('/maplibre-gl-worker.mjs');
 import type { GhostPin, SupportedLanguage } from '../../types/ghost';
+import { createAnimatedCloudCanvas } from './cloudMistLayer';
 
 // Shared world overview camera values, used both on init and when zooming out
 const WORLD_VIEW_CENTER: [number, number] = [100.5, 13.75]; // Centered on Thailand / Asia
@@ -50,21 +51,31 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     }
   }, [selectedPin, flyToPin]);
 
-  // 1. Initialize MapLibre GL Map
+  // 1. Initialize MapLibre GL 3D Globe with NASA Imagery, Drifting Clouds & Eerie Atmosphere
   useEffect(() => {
     if (!mapContainerRef.current) return;
+
+    const cloudController = createAnimatedCloudCanvas();
 
     const map = new Map({
       container: mapContainerRef.current,
       style: {
         version: 8,
         sources: {
-          'satellite-tiles': {
+          // Global seamless NASA Earth imagery (eliminates low-zoom patchwork blocks)
+          'nasa-blue-marble': {
             type: 'raster',
             tiles: [
-              'https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',
-              'https://mt2.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',
-              'https://mt3.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',
+              'https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/BlueMarble_NextGeneration/default/GoogleMapsCompatible_Level8/{z}/{y}/{x}.jpg',
+            ],
+            tileSize: 256,
+            maxzoom: 8,
+          },
+          // High-resolution consistent satellite imagery for regional / province zoom
+          'satellite-detail': {
+            type: 'raster',
+            tiles: [
+              'https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
               'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
             ],
             tileSize: 256,
@@ -73,20 +84,59 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
         },
         layers: [
           {
-            id: 'satellite-layer',
+            id: 'nasa-base-layer',
             type: 'raster',
-            source: 'satellite-tiles',
+            source: 'nasa-blue-marble',
             minzoom: 0,
             maxzoom: 22,
+            paint: {
+              'raster-brightness-max': 0.82,
+              'raster-contrast': 0.18,
+              'raster-saturation': -0.2,
+              'raster-fade-duration': 300,
+            },
+          },
+          {
+            id: 'satellite-detail-layer',
+            type: 'raster',
+            source: 'satellite-detail',
+            minzoom: 3,
+            maxzoom: 22,
+            paint: {
+              'raster-opacity': [
+                'interpolate',
+                ['linear'],
+                ['zoom'],
+                3.2,
+                0,
+                5.5,
+                0.95,
+              ],
+              'raster-brightness-max': 0.8,
+              'raster-contrast': 0.16,
+              'raster-saturation': -0.22,
+              'raster-fade-duration': 400,
+            },
           },
         ],
         sky: {
-          'sky-color': '#03060c',
-          'sky-horizon-blend': 0.5,
-          'horizon-color': '#03060c',
-          'horizon-fog-blend': 0.5,
-          'fog-color': '#03060c',
-          'fog-ground-blend': 0.5,
+          'sky-color': '#02050a',
+          'sky-horizon-blend': 0.65,
+          'horizon-color': '#0d3d38',
+          'horizon-fog-blend': 0.75,
+          'fog-color': '#071f24',
+          'fog-ground-blend': 0.45,
+          'atmosphere-blend': [
+            'interpolate',
+            ['linear'],
+            ['zoom'],
+            0,
+            0.92,
+            5,
+            0.75,
+            8,
+            0.35,
+          ],
         },
       },
       center: WORLD_VIEW_CENTER,
@@ -104,9 +154,53 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
       } catch (e) {
         console.warn('Globe projection error:', e);
       }
+
+      // Attach animated 3D spherical cloud & spectral mist layer onto the globe
+      try {
+        if (!map.getSource('globe-clouds')) {
+          map.addSource('globe-clouds', {
+            type: 'canvas',
+            canvas: cloudController.canvas,
+            animate: true,
+            coordinates: [
+              [-179.99, 85.05],
+              [179.99, 85.05],
+              [179.99, -85.05],
+              [-179.99, -85.05],
+            ],
+          });
+
+          map.addLayer({
+            id: 'globe-clouds-layer',
+            type: 'raster',
+            source: 'globe-clouds',
+            minzoom: 0,
+            maxzoom: 22,
+            paint: {
+              'raster-opacity': [
+                'interpolate',
+                ['linear'],
+                ['zoom'],
+                1,
+                0.76,
+                4,
+                0.55,
+                7.5,
+                0.28,
+                11,
+                0.14,
+              ],
+              'raster-fade-duration': 0,
+            },
+          });
+        }
+      } catch (err) {
+        console.warn('Cloud layer error:', err);
+      }
     });
 
     return () => {
+      cloudController.dispose();
       // Clear markers
       markersRef.current.forEach((m) => m.remove());
       markersRef.current = [];
@@ -203,9 +297,39 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
   }, [pins, selectedPin, onSelectPin, flyToPin]);
 
   return (
-    <div className="relative w-full h-full select-none overflow-hidden bg-[#03060c]">
+    <div className="relative w-full h-full select-none overflow-hidden bg-[#02050a]">
       {/* MapLibre 3D Globe Container */}
       <div ref={mapContainerRef} className="w-full h-full" />
+
+      {/* Mysterious Atmospheric Fog & Drifting Mist Overlay */}
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
+        {/* Deep nocturnal vignette around viewport edges */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              'radial-gradient(circle at 50% 50%, transparent 45%, rgba(2, 8, 16, 0.45) 78%, rgba(1, 4, 9, 0.85) 100%)',
+          }}
+        />
+        {/* Drifting low-lying spectral mist bank 1 */}
+        <div
+          className="absolute -inset-x-20 bottom-0 h-64 animate-mist-drift"
+          style={{
+            background:
+              'radial-gradient(ellipse 80% 60% at 35% 90%, rgba(16, 185, 129, 0.12) 0%, rgba(15, 23, 42, 0.25) 55%, transparent 100%)',
+            filter: 'blur(24px)',
+          }}
+        />
+        {/* Drifting upper/mid spectral mist bank 2 */}
+        <div
+          className="absolute -inset-x-24 top-1/4 h-72 animate-mist-drift-reverse"
+          style={{
+            background:
+              'radial-gradient(ellipse 70% 45% at 65% 50%, rgba(45, 212, 191, 0.08) 0%, rgba(148, 163, 184, 0.06) 50%, transparent 100%)',
+            filter: 'blur(32px)',
+          }}
+        />
+      </div>
 
       {/* Radio Garden Signature Center Circle (Green Ring with White Dot) */}
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center">

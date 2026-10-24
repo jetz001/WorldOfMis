@@ -35,12 +35,50 @@
   50% { transform: translateY(-6px); }
 }
 
+@keyframes mist-drift {
+  0% {
+    transform: translate3d(-4%, 0, 0) scale(1.05);
+    opacity: 0.45;
+  }
+  50% {
+    transform: translate3d(4%, -1.5%, 0) scale(1.1);
+    opacity: 0.65;
+  }
+  100% {
+    transform: translate3d(-4%, 0, 0) scale(1.05);
+    opacity: 0.45;
+  }
+}
+
+@keyframes mist-drift-reverse {
+  0% {
+    transform: translate3d(5%, 1%, 0) scale(1.08);
+    opacity: 0.35;
+  }
+  50% {
+    transform: translate3d(-5%, -1%, 0) scale(1.02);
+    opacity: 0.55;
+  }
+  100% {
+    transform: translate3d(5%, 1%, 0) scale(1.08);
+    opacity: 0.35;
+  }
+}
+
 .animate-ghost-pulse {
   animation: ghost-pulse 2.5s infinite ease-in-out;
 }
 
 .animate-eerie-float {
   animation: eerie-float 4s infinite ease-in-out;
+}
+
+.animate-mist-drift {
+  animation: mist-drift 28s infinite ease-in-out;
+}
+
+.animate-mist-drift-reverse {
+  animation: mist-drift-reverse 36s infinite ease-in-out;
 }
 
 /* Custom dark glassmorphism scrollbars */
