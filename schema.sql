@@ -39,6 +39,20 @@ CREATE INDEX idx_ghost_pins_coords ON ghost_pins(lat, lng);
 CREATE INDEX idx_ghost_pins_province ON ghost_pins(province_en);
 CREATE INDEX idx_ghost_pins_category ON ghost_pins(category);
 
+CREATE TABLE IF NOT EXISTS pin_comments (
+    id TEXT PRIMARY KEY,
+    pin_id TEXT NOT NULL,
+    author TEXT NOT NULL,
+    content TEXT NOT NULL,
+    likes INTEGER DEFAULT 0,
+    is_popular INTEGER DEFAULT 0,
+    role_badge TEXT,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE INDEX IF NOT EXISTS idx_pin_comments_pin ON pin_comments(pin_id);
+CREATE INDEX IF NOT EXISTS idx_pin_comments_likes ON pin_comments(likes DESC);
+
 -- Default Admin User (username: admin, password: password123)
 INSERT INTO admins (id, username, password_hash, role)
 VALUES ('admin-root', 'admin', 'ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f', 'superadmin');

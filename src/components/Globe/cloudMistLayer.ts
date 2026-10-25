@@ -174,7 +174,7 @@ function getMasterCloudCanvas(): HTMLCanvasElement {
       const mistIntensity = rawMist * latEnvelope * 0.55;
 
       const combinedAlpha = clamp01(
-        cloudIntensity * 0.88 + mistIntensity * 0.48
+        cloudIntensity * 0.75 + mistIntensity * 0.15
       );
 
       // Blend color from ghostly emerald-cyan mist -> silver-blue cloud -> bright white cloud tops
@@ -197,7 +197,7 @@ function getMasterCloudCanvas(): HTMLCanvasElement {
       data[idx] = Math.min(255, r);
       data[idx + 1] = Math.min(255, g);
       data[idx + 2] = Math.min(255, b);
-      data[idx + 3] = Math.round(combinedAlpha * 235);
+      data[idx + 3] = Math.round(combinedAlpha * 130);
     }
   }
 

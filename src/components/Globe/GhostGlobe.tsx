@@ -31,6 +31,7 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<Map | null>(null);
   const markersRef = useRef<Marker[]>([]);
+  const markerItemsRef = useRef<{ marker: Marker; pin: GhostPin; element: HTMLDivElement }[]>([]);
   const markerInnerElsRef = useRef<globalThis.Map<string, HTMLDivElement>>(new globalThis.Map());
   const pinsRef = useRef<GhostPin[]>(pins);
 
@@ -93,6 +94,37 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
       resumeSpinAfterDelay();
     }
   }, [selectedPin, resumeSpinAfterDelay]);
+
+    // Occlude markers that rotate onto the backside of the 3D globe (Spherical Horizon Culling)
+  const updateMarkerVisibility = useCallback(() => {
+    const map = mapRef.current;
+    if (!map) return;
+    const center = map.getCenter();
+    const zoom = map.getZoom();
+    const toRad = Math.PI / 180;
+    const phi1 = center.lat * toRad;
+    const cLngRad = center.lng * toRad;
+    const cosPhi1 = Math.cos(phi1);
+    const sinPhi1 = Math.sin(phi1);
+
+    // Visible horizon threshold: At full globe overview (zoom < 3.5), visible hemisphere is ~80 deg from center
+    const horizonThreshold = zoom > 4.5 ? -0.2 : 0.12;
+
+    for (const item of markerItemsRef.current) {
+      const phi2 = item.pin.lat * toRad;
+      const deltaLambda = item.pin.lng * toRad - cLngRad;
+      const cosDist = sinPhi1 * Math.sin(phi2) + cosPhi1 * Math.cos(phi2) * Math.cos(deltaLambda);
+
+      if (cosDist < horizonThreshold) {
+        // Pin is behind the globe! Hide it completely so it never shines through the Earth
+        item.element.style.display = 'none';
+      } else {
+        item.element.style.display = 'flex';
+        const fade = Math.min(1, Math.max(0, (cosDist - horizonThreshold) / 0.12));
+        item.element.style.opacity = fade >= 0.98 ? '1' : fade.toFixed(2);
+      }
+    }
+  }, []);
 
   // Compute closest pin to screen center and apply gentle magnetic pull on markers
   const updateMagneticField = useCallback(() => {
@@ -210,16 +242,23 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
         },
         layers: [
           {
+            id: 'solid-globe-background',
+            type: 'background',
+            paint: {
+              'background-color': '#030814',
+            },
+          },
+          {
             id: 'nasa-base-layer',
             type: 'raster',
             source: 'nasa-blue-marble',
             minzoom: 0,
             maxzoom: 22,
             paint: {
-              'raster-brightness-max': 0.92,
-              'raster-contrast': 0,
-              'raster-saturation': -0.05,
-              'raster-fade-duration': 300,
+              'raster-brightness-max': 0.98,
+              'raster-contrast': 0.08,
+              'raster-saturation': 0.04,
+              'raster-fade-duration': 0,
             },
           },
           {
@@ -238,10 +277,10 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
                 5.8,
                 0.95,
               ],
-              'raster-brightness-max': 0.9,
-              'raster-contrast': 0,
-              'raster-saturation': -0.08,
-              'raster-fade-duration': 400,
+              'raster-brightness-max': 0.92,
+              'raster-contrast': 0.04,
+              'raster-saturation': 0,
+              'raster-fade-duration': 200,
             },
           },
           {
@@ -256,35 +295,35 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
                 ['linear'],
                 ['zoom'],
                 1,
-                0.78,
+                0.28,
                 4,
-                0.6,
+                0.2,
                 7.5,
-                0.35,
+                0.12,
                 11,
-                0.18,
+                0.05,
               ],
-              'raster-fade-duration': 300,
+              'raster-fade-duration': 0,
             },
           },
         ],
         sky: {
-          'sky-color': '#02060d',
-          'sky-horizon-blend': 0.65,
-          'horizon-color': '#114b47',
-          'horizon-fog-blend': 0.75,
-          'fog-color': '#0b2930',
-          'fog-ground-blend': 0.45,
+          'sky-color': '#01040a',
+          'sky-horizon-blend': 0.15,
+          'horizon-color': '#06202c',
+          'horizon-fog-blend': 0.2,
+          'fog-color': '#01050d',
+          'fog-ground-blend': 0.1,
           'atmosphere-blend': [
             'interpolate',
             ['linear'],
             ['zoom'],
             0,
-            0.92,
+            0.18,
             5,
-            0.78,
+            0.12,
             8,
-            0.4,
+            0.05,
           ],
         },
       },
@@ -304,12 +343,17 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
         console.warn('Globe projection error:', e);
       }
       updateMagneticField();
+      updateMarkerVisibility();
       // Start initial slow auto-rotation
       spinGlobe();
     });
 
     map.on('move', () => {
       updateMagneticField();
+      updateMarkerVisibility();
+    });
+    map.on('render', () => {
+      updateMarkerVisibility();
     });
 
     // Continuously spin globe when animation completes
@@ -385,10 +429,11 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
       markersRef.current.forEach((m) => m.remove());
       markersRef.current = [];
       markerInnerElsRef.current.clear();
+    markerItemsRef.current = [];
       map.remove();
       mapRef.current = null;
     };
-  }, [updateMagneticField, spinGlobe, resumeSpinAfterDelay]);
+  }, [updateMagneticField, updateMarkerVisibility, spinGlobe, resumeSpinAfterDelay]);
 
   // Pull the camera back to the full-globe overview
   const flyToWorldView = useCallback(() => {
@@ -692,6 +737,7 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
         .addTo(map);
 
       markersRef.current.push(marker);
+      markerItemsRef.current.push({ marker, pin, element: el });
     });
 
     updateMagneticField();
@@ -704,32 +750,13 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
       {/* MapLibre 3D Globe Container */}
       <div ref={mapContainerRef} className="w-full h-full" />
 
-      {/* Mysterious Atmospheric Fog & Drifting Mist Overlay */}
+      {/* Deep nocturnal vignette around viewport edges (crisp, solid globe) */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        {/* Deep nocturnal vignette around viewport edges */}
         <div
           className="absolute inset-0"
           style={{
             background:
-              'radial-gradient(circle at 50% 50%, transparent 48%, rgba(3, 12, 22, 0.4) 78%, rgba(1, 4, 9, 0.82) 100%)',
-          }}
-        />
-        {/* Drifting low-lying spectral mist bank 1 */}
-        <div
-          className="absolute -inset-x-20 bottom-0 h-64 animate-mist-drift"
-          style={{
-            background:
-              'radial-gradient(ellipse 80% 60% at 35% 90%, rgba(45, 212, 191, 0.14) 0%, rgba(15, 23, 42, 0.25) 55%, transparent 100%)',
-            filter: 'blur(24px)',
-          }}
-        />
-        {/* Drifting upper/mid spectral mist bank 2 */}
-        <div
-          className="absolute -inset-x-24 top-1/4 h-72 animate-mist-drift-reverse"
-          style={{
-            background:
-              'radial-gradient(ellipse 70% 45% at 65% 50%, rgba(56, 189, 248, 0.09) 0%, rgba(148, 163, 184, 0.06) 50%, transparent 100%)',
-            filter: 'blur(32px)',
+              'radial-gradient(circle at 50% 50%, transparent 58%, rgba(2, 6, 12, 0.45) 85%, rgba(1, 3, 7, 0.9) 100%)',
           }}
         />
       </div>

@@ -62,6 +62,58 @@ app.get('/pins/:id', async (c) => {
   }
 });
 
+// 2.1 Get comments for a pin
+app.get('/pins/:id/comments', async (c) => {
+  const db = c.env.DB;
+  const pinId = c.req.param('id');
+  if (!db) return c.json({ error: 'D1 Database not bound' }, 500);
+  try {
+    const { results } = await db
+      .prepare('SELECT * FROM pin_comments WHERE pin_id = ? ORDER BY likes DESC, created_at DESC')
+      .bind(pinId)
+      .all();
+    return c.json({ success: true, data: results });
+  } catch (err) {
+    return c.json({ success: false, error: String(err) }, 500);
+  }
+});
+
+// 2.2 Add comment to a pin
+app.post('/pins/:id/comments', async (c) => {
+  const db = c.env.DB;
+  const pinId = c.req.param('id');
+  if (!db) return c.json({ error: 'D1 Database not bound' }, 500);
+  try {
+    const body = await c.req.json();
+    const id = body.id || 'cmt-' + Date.now() + '-' + Math.random().toString(36).slice(2, 7);
+    const author = (body.author || 'ผู้สำรวจนิรนาม').trim();
+    const content = (body.content || '').trim();
+    const roleBadge = body.roleBadge || 'พยานบอกเล่า';
+    if (!content) return c.json({ success: false, error: 'Content required' }, 400);
+    await db
+      .prepare('INSERT INTO pin_comments (id, pin_id, author, content, likes, is_popular, role_badge) VALUES (?, ?, ?, ?, 0, 0, ?)')
+      .bind(id, pinId, author, content, roleBadge)
+      .run();
+    return c.json({ success: true, data: { id, pin_id: pinId, author, content, likes: 0, is_popular: 0, role_badge: roleBadge, created_at: new Date().toISOString() } }, 201);
+  } catch (err) {
+    return c.json({ success: false, error: String(err) }, 500);
+  }
+});
+
+// 2.3 Upvote comment
+app.post('/comments/:id/like', async (c) => {
+  const db = c.env.DB;
+  const id = c.req.param('id');
+  if (!db) return c.json({ error: 'D1 Database not bound' }, 500);
+  try {
+    await db.prepare('UPDATE pin_comments SET likes = likes + 1 WHERE id = ?').bind(id).run();
+    const cmt = await db.prepare('SELECT * FROM pin_comments WHERE id = ?').bind(id).first();
+    return c.json({ success: true, data: cmt });
+  } catch (err) {
+    return c.json({ success: false, error: String(err) }, 500);
+  }
+});
+
 // 3. Create pin
 app.post('/pins', async (c) => {
   const db = c.env.DB;
