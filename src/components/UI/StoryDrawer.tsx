@@ -13,6 +13,7 @@ import {
   Clock,
   ShieldAlert,
   ScrollText,
+  Maximize2,
 } from 'lucide-react';
 import type { GhostPin, SupportedLanguage } from '../../types/ghost';
 import { getTranslation } from '../../lib/i18n';
@@ -33,6 +34,7 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
 }) => {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const t = getTranslation(language);
+  const [isImageFullscreen, setIsImageFullscreen] = React.useState(false);
 
   const dossier = useMemo(() => {
     if (!pin) return null;
@@ -52,8 +54,22 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
       if (dialog.open) {
         dialog.close();
       }
+      setIsImageFullscreen(false);
     }
   }, [isOpen, pin]);
+
+  // Handle escape for fullscreen image modal
+  useEffect(() => {
+    if (!isImageFullscreen) return;
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        e.stopPropagation();
+        setIsImageFullscreen(false);
+      }
+    };
+    window.addEventListener('keydown', handleKey);
+    return () => window.removeEventListener('keydown', handleKey);
+  }, [isImageFullscreen]);
 
   // Fallback for browsers without native <dialog closedby> support
   useEffect(() => {
@@ -167,24 +183,44 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
         {/* Scrollable Grimoire Body */}
         <div className="relative flex-1 overflow-y-auto px-6 py-5 space-y-6">
           {/* 1. Entity Bestiary Portrait Frame */}
-          <div className="relative rounded-2xl overflow-hidden border border-amber-500/30 bg-[#050a10] shadow-[0_12px_35px_rgba(0,0,0,0.85)] group">
-            <div className="relative aspect-video w-full overflow-hidden">
+          <div
+            onClick={() => setIsImageFullscreen(true)}
+            title={language === 'th' ? 'คลิกเพื่อเปิดดูภาพเต็มจอ (Fill Page)' : 'Click to view full image (Fill page)'}
+            className="relative rounded-2xl overflow-hidden border border-amber-500/30 bg-[#03060c] shadow-[0_12px_35px_rgba(0,0,0,0.85)] group cursor-zoom-in"
+          >
+            <div className="relative aspect-video w-full overflow-hidden flex items-center justify-center">
+              {/* Ambient blurred backdrop so vertical/square images blend beautifully into 16:9 */}
+              <img
+                src={dossier.portraitUrl}
+                alt=""
+                aria-hidden="true"
+                className="pointer-events-none absolute inset-0 w-full h-full object-cover blur-2xl opacity-40 scale-125"
+              />
+
+              {/* Main creature portrait with contain so full subject is always framed */}
               <img
                 src={dossier.portraitUrl}
                 alt={title}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                className="relative w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 z-[1]"
               />
+
               {/* Dark vignette & bottom gradient overlay */}
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#05080f] via-transparent to-black/30" />
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#05080f]/90 via-transparent to-black/30 z-[2]" />
 
               {/* Corner Arcane Accents */}
-              <div className="pointer-events-none absolute top-2.5 left-2.5 w-5 h-5 border-t-2 border-l-2 border-amber-400/60 rounded-tl" />
-              <div className="pointer-events-none absolute top-2.5 right-2.5 w-5 h-5 border-t-2 border-r-2 border-amber-400/60 rounded-tr" />
-              <div className="pointer-events-none absolute bottom-2.5 left-2.5 w-5 h-5 border-b-2 border-l-2 border-amber-400/60 rounded-bl" />
-              <div className="pointer-events-none absolute bottom-2.5 right-2.5 w-5 h-5 border-b-2 border-r-2 border-amber-400/60 rounded-br" />
+              <div className="pointer-events-none absolute top-2.5 left-2.5 w-5 h-5 border-t-2 border-l-2 border-amber-400/60 rounded-tl z-[3]" />
+              <div className="pointer-events-none absolute top-2.5 right-2.5 w-5 h-5 border-t-2 border-r-2 border-amber-400/60 rounded-tr z-[3]" />
+              <div className="pointer-events-none absolute bottom-2.5 left-2.5 w-5 h-5 border-b-2 border-l-2 border-amber-400/60 rounded-bl z-[3]" />
+              <div className="pointer-events-none absolute bottom-2.5 right-2.5 w-5 h-5 border-b-2 border-r-2 border-amber-400/60 rounded-br z-[3]" />
+
+              {/* Hover Fullscreen Badge */}
+              <div className="pointer-events-none absolute top-3 right-3 z-[4] flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-black/80 border border-amber-400/50 text-amber-200 text-xs backdrop-blur-md opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">
+                <Maximize2 className="w-3.5 h-3.5 text-amber-300" />
+                <span>{language === 'th' ? 'กดเพื่อดูรูปเต็มจอ' : 'Fill page view'}</span>
+              </div>
 
               {/* Bottom Danger / Omen Meter Overlay */}
-              <div className="absolute bottom-3 inset-x-4 flex items-center justify-between gap-2">
+              <div className="absolute bottom-3 inset-x-4 flex items-center justify-between gap-2 z-[3]">
                 <span className="text-[11px] font-medium text-amber-200/90 bg-slate-950/85 border border-amber-500/30 px-2.5 py-1 rounded-lg backdrop-blur-md">
                   {dossier.dangerLabel}
                 </span>
@@ -365,6 +401,56 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
           </button>
         </div>
       </div>
+
+      {/* Fullscreen Fill-Page Lightbox Overlay */}
+      {isImageFullscreen && (
+        <div
+          onClick={(e) => {
+            e.stopPropagation();
+            setIsImageFullscreen(false);
+          }}
+          className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-black/95 backdrop-blur-2xl p-4 sm:p-6 animate-in fade-in duration-200 select-none"
+        >
+          {/* Header Controls */}
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="w-full max-w-7xl flex items-center justify-between pb-3 px-2 border-b border-amber-500/25 mb-3"
+          >
+            <div className="flex items-center gap-3">
+              <h3 className="font-grimoire text-xl sm:text-2xl font-bold text-amber-50 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
+                {title}
+              </h3>
+              <span className="text-xs font-mono px-2 py-0.5 rounded bg-amber-950/80 text-amber-300 border border-amber-500/40">
+                {dossier.codexId}
+              </span>
+            </div>
+
+            <button
+              onClick={() => setIsImageFullscreen(false)}
+              className="p-2.5 rounded-full bg-slate-900/90 hover:bg-slate-800 border border-amber-500/40 text-amber-200 hover:text-white transition-all cursor-pointer shadow-[0_0_15px_rgba(0,0,0,0.8)]"
+              aria-label="Close"
+            >
+              <X className="w-5 h-5" />
+            </button>
+          </div>
+
+          {/* Fullscreen Image Container (Fill Page) */}
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="relative w-full h-full max-w-7xl max-h-[82vh] flex items-center justify-center overflow-hidden rounded-2xl border border-amber-500/30 bg-[#02050b] shadow-[0_0_60px_rgba(0,0,0,0.95)]"
+          >
+            <img
+              src={dossier.portraitUrl}
+              alt={title}
+              className="w-full h-full object-contain max-h-[82vh] select-none"
+            />
+          </div>
+
+          <p className="mt-2 text-xs text-amber-200/60 font-grimoire tracking-wider text-center">
+            {language === 'th' ? 'กดที่ว่างหรือคลิกปุ่มปิด เพื่อกลับสู่คัมภีร์' : 'Click backdrop or close button to return'}
+          </p>
+        </div>
+      )}
     </dialog>
   );
 };
