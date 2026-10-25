@@ -23,7 +23,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'Swept across Japan in the late 1970s, causing widespread moral panic and police patrols around elementary schools. Some folklorists trace its lineage back to Edo-period tales of a samurai’s unfaithful wife mutilated in jealousy.',
     image_url: '/entities/pin-kuchisake.jpg',
     sound_preset: 'whisper',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -75,7 +75,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'First chronicled in Adomnán’s 6th-century Life of Saint Columba. The legend exploded into a worldwide phenomenon following the controversial 1934 "Surgeon\'s Photograph".',
     image_url: '/entities/pin-lochness.jpg',
     sound_preset: 'water_spirit',
-    views_count: 3120,
+    views_count: 0,
     is_published: 1,
   },
   {
@@ -112,7 +112,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'Perched high in the Carpathian mountains, 14th-century Bran Castle became synonymous with Bram Stoker’s gothic vampire lore, merged with the brutal military history of Wallachia.',
     image_url: '/entities/pin-dracula.jpg',
     sound_preset: 'creepy_wind',
-    views_count: 2890,
+    views_count: 0,
     is_published: 1,
   },
 
@@ -138,7 +138,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'A profound cultural taboo among the Algonquian and Ojibwe First Nations designed to deter cannibalism during starvation winters, also inspiring the psychiatric concept of Wendigo Psychosis.',
     image_url: '/entities/pin-wendigo.jpg',
     sound_preset: 'creepy_wind',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -188,7 +188,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'First reported in Canóvanas, Puerto Rico in 1995, following hundreds of exsanguinated farm animals. The phenomenon quickly swept across Mexico, Brazil, and the southwestern United States.',
     image_url: '/entities/pin-chupacabra.jpg',
     sound_preset: 'jungle_curse',
-    views_count: 1420,
+    views_count: 0,
     is_published: 1,
   },
 
@@ -214,7 +214,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'Tomb KV62 in the Valley of the Kings, Luxor. The sudden demise of benefactor Lord Carnarvon from infected mosquito bites coupled with an inexplicable Cairo citywide blackout birthed the modern myth of mummy curses.',
     image_url: '/entities/pin-tutankhamun.jpg',
     sound_preset: 'whisper',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -253,7 +253,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'Deeply ingrained in Indigenous Australian Dreamtime oral histories. Paleontologists theorize the legend may preserve cultural memories of extinct Pleistocene megafauna like the giant wombat Diprotodon.',
     image_url: '/entities/pin-bunyip.jpg',
     sound_preset: 'water_spirit',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -305,7 +305,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'Originated during the reign of King Rama IV along Phra Khanong canal. Somdej Toh later performed rites to pacify her spirit, carving an amulet from her forehead bone. Her shrine at Wat Mahabut remains one of Bangkok\'s most revered pilgrimage sites.',
     image_url: '/entities/pin-maenak.jpg',
     sound_preset: 'whisper',
-    views_count: 1420,
+    views_count: 0,
     is_published: 1,
   },
   {
@@ -329,7 +329,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'A pervasive Southeast Asian folklore figure (Penanggalan in Malaysia, Ahp in Cambodia). Rural communities placed thorny branches beneath stilted homes to trap her trailing viscera and safeguard newborn babies.',
     image_url: '/entities/pin-krasue.jpg',
     sound_preset: 'creepy_wind',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -366,7 +366,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'A bedrock tradition of Isan village anthropology along the Pao River. Rituals led by Moh Tham (spiritual shamans) using wicker traps serve as community mechanisms for resolving crisis and reinforcing ancestral taboos.',
     image_url: '/entities/pin-pop.jpg',
     sound_preset: 'whisper',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -403,7 +403,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'Central to Mekong Basin civilization across Thailand and Laos for millennia. Enshrined in the Urangadhatu chronicles and sacred sites like Kaeng Ahong, believed to be the deepest underwater entrance to the Naga realm.',
     image_url: '/entities/pin-naga.jpg',
     sound_preset: 'water_spirit',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -440,7 +440,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'Originates in the impenetrable rainforests of Nakhon Si Thammarat. Traditional hunters adhere to strict taboos: never answer a night call from the brush and never descend from a hunting hide before full daylight.',
     image_url: '/entities/pin-saming.jpg',
     sound_preset: 'jungle_curse',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -477,7 +477,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'Rooted in the Xiangxi corpse-driving folklore of Hunan, where Taoist masters ritually transported corpses of migrant workers across mountains for family burial, pinning yellow paper talismans to their foreheads.',
     image_url: '/entities/pin-jiangshi.jpg',
     sound_preset: 'whisper',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -514,7 +514,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'An archetype of Slavic pre-Christian mythology across Eastern Europe, representing the wild, untamable wilderness of the Taiga forest and the borderkeeper between the mortal realm and the underworld.',
     image_url: '/entities/pin-baba-iva.jpg',
     sound_preset: 'creepy_wind',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -551,7 +551,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'Pervasive across Rajasthan and rural South Asia, notably around the cursed Bhangarh Fort where the Archaeological Survey of India strictly forbids entry between sunset and sunrise.',
     image_url: '/entities/pin-chudail.jpg',
     sound_preset: 'creepy_wind',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -588,7 +588,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'Extensively documented in 18th-century parish registers and royal archives of Versailles. The terror ended when local hunter Jean Chastel supposedly felled the beast using consecrated silver bullets.',
     image_url: '/entities/pin-gevaudan.jpg',
     sound_preset: 'creepy_wind',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -625,7 +625,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'First documented by Jesuit missionary José de Anchieta in 1560. Revered among indigenous Tupi-Guarani tribes as an unyielding defender of biodiversity against exploitation.',
     image_url: '/entities/pin-curupira.jpg',
     sound_preset: 'water_spirit',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -662,7 +662,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'Featured prominently in ancient Icelandic sagas such as Grettis saga. Dispelling a Draugr required decapitation, immolation of the corpse, and scattering the ashes into the ocean.',
     image_url: '/entities/pin-draugr.jpg',
     sound_preset: 'creepy_wind',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -701,7 +701,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'Rooted in Minoan Bronze Age culture at the Palace of Knossos, Crete. Sacred bull-leaping frescoes and subterranean palace vaults inspired the myth of Theseus navigating the maze with Ariadne\'s thread.',
     image_url: '/entities/pin-minotaur.jpg',
     sound_preset: 'creepy_wind',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -753,7 +753,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'Located near Sankt Goarshausen along the Rhine Gorge. The sheer 132-meter cliff creates a natural multi-echo acoustic resonance, immortalized by romantic poet Heinrich Heine in 1824.',
     image_url: '/entities/pin-lorelei.jpg',
     sound_preset: 'water_spirit',
-    views_count: 1610,
+    views_count: 0,
     is_published: 1,
   },
 
@@ -779,7 +779,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'Intertwined with traditional Gaelic keening rituals. According to tradition, only the ancestral Milesian families of Ireland are attended by a Banshee’s fateful laments.',
     image_url: '/entities/pin-banshee.jpg',
     sound_preset: 'whisper',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -831,7 +831,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'Famously chronicled by Abraham Fleming in 1577, when the demon dog burst through the doors of St Mary’s Church in Bungay during a storm, killing worshippers and leaving scorched claw scorch-marks on the oak doors.',
     image_url: '/entities/pin-blackshuck.jpg',
     sound_preset: 'creepy_wind',
-    views_count: 1240,
+    views_count: 0,
     is_published: 1,
   },
 
@@ -857,7 +857,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'Derived from ancient East Asian fox spirit myths, though the Korean Gumiho is distinctly more dangerous and bloodthirsty. Mountain caves in Jirisan National Park are traditional sites of her lair.',
     image_url: '/entities/pin-gumiho.jpg',
     sound_preset: 'temple_bell',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -896,7 +896,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'Prevalent across the Visayas region, particularly Capiz province. Her vulnerability lies in her severed lower half: sprinkling salt, crushed garlic, or ash prevents rejoining, causing her to perish at sunrise.',
     image_url: '/entities/pin-manananggal.jpg',
     sound_preset: 'jungle_curse',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -935,7 +935,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'Deeply woven into regional history: the city of Pontianak in West Kalimantan was named after the Sultan fired cannon fire to drive away swarms of Kuntilanak before founding the settlement in 1771.',
     image_url: '/entities/pin-kuntilanak.jpg',
     sound_preset: 'whisper',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -974,7 +974,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'Revered in Sherpa culture as "Meh-Teh", guardian spirit of the mountain sanctuaries. Relics including scalps and skeletal hands were preserved for centuries at the Pangboche Monastery.',
     image_url: '/entities/pin-yeti.jpg',
     sound_preset: 'creepy_wind',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -1013,7 +1013,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'Classified in pre-Islamic folklore as a predatory subspecies of Jinn. Famous throughout One Thousand and One Nights; nomadic Bedouins carried consecrated steel to ward off desert encounters.',
     image_url: '/entities/pin-ghul.jpg',
     sound_preset: 'creepy_wind',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -1052,7 +1052,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'Haunts sacred ancient battle trails across Oahu, notably the cliffs of Nuʻuanu Pali where King Kamehameha I fought the decisive 1795 battle that unified the Hawaiian kingdom.',
     image_url: '/entities/pin-nightmarchers.jpg',
     sound_preset: 'temple_bell',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -1089,7 +1089,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'Originated among the Ashanti people of Ghana. Anansi folktales survived the transatlantic slave trade, transforming into symbols of resilience and intellectual resistance across the Caribbean and Americas.',
     image_url: '/entities/pin-anansi.jpg',
     sound_preset: 'jungle_curse',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -1126,7 +1126,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'A persistent cultural belief across South Africa, particularly the Eastern Cape. Reports of Tokoloshe sightings and cleansing rituals by sangomas (traditional healers) frequently make national headlines.',
     image_url: '/entities/pin-tokoloshe.jpg',
     sound_preset: 'jungle_curse',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -1165,7 +1165,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'Deeply respected along the Waikato River basin. The Māori proverb "Waikato taniwha rau" honors the guardians of each river bend, frequently recognized under New Zealand environmental and cultural law.',
     image_url: '/entities/pin-taniwha.jpg',
     sound_preset: 'water_spirit',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -1204,7 +1204,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'Chronicled by Wincenty Kadłubek in the 13th century. Today, Smocza Jama (Dragon\'s Den) beneath Kraków’s royal castle features a bronze fire-breathing dragon statue overlooking the Vistula River.',
     image_url: '/entities/pin-wawel.jpg',
     sound_preset: 'creepy_wind',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -1241,7 +1241,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'A foundational aquatic ghost legend along the Dong Nai and Mekong river systems in Vietnam. River boatmen and fishermen erect riverside shrines and burn joss paper to appease drowned spirits before night voyages.',
     image_url: '/entities/pin-mada.jpg',
     sound_preset: 'water_spirit',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -1278,7 +1278,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'Predates Hindu and Buddhist influences in Khmer civilization. Countless Neak Ta shrines dot the landscapes around Angkor Wat and rural Siem Reap, receiving offerings of betel nut and rice wine.',
     image_url: '/entities/pin-neakta.jpg',
     sound_preset: 'temple_bell',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -1315,7 +1315,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'Mount Popa near Bagan is revered as the spiritual Olympus of Myanmar. An extinct volcanic plug crowned by monasteries, it attracts thousands of Nat-Kadaw spirit mediums during annual Nat festivals.',
     image_url: '/entities/pin-natpopa.jpg',
     sound_preset: 'temple_bell',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -1352,7 +1352,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'A prominent fixture of modern Taiwanese folklore and search-and-rescue reports, inspiring the hit horror film franchise "The Tag-Along" in the misty Yangmingshan mountain range.',
     image_url: '/entities/pin-mosina.jpg',
     sound_preset: 'jungle_curse',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -1387,7 +1387,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'Legend traces back to the 2nd century BCE champion warrior Ritigala Jayasena. Traditional Sinhala exorcists continue to perform the elaborate all-night "Sona Yakuma" ritual to dispel its curse.',
     image_url: '/entities/pin-mahasona.jpg',
     sound_preset: 'creepy_wind',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -1424,7 +1424,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'Documented in Western expedition journals by Roy Chapman Andrews in 1926. Nomadic camel herders avoid remote dune areas in June and July when the creature supposedly surfaces during desert rainstorms.',
     image_url: '/entities/pin-deathworm.jpg',
     sound_preset: 'creepy_wind',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -1463,7 +1463,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'An enduring cultural emblem of healing and protective sacrifice throughout Anatolia and Mesopotamia. Traditional folk paintings of Shahmaran are hung in homes to bestow good health.',
     image_url: '/entities/pin-shahmaran.jpg',
     sound_preset: 'temple_bell',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -1500,7 +1500,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'Guarded atop Montebello Castle. Acoustic recordings made every five years on the summer solstice capture mysterious cries of a child that puzzle paranormal researchers worldwide.',
     image_url: '/entities/pin-azzurrina.jpg',
     sound_preset: 'whisper',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -1537,7 +1537,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'Deeply entrenched in Galician Celtic lore. Travelers protect themselves by stepping inside a chalk circle (Solomon\'s ring) or clinging to stone Cruceiro wayside crosses until the procession passes.',
     image_url: '/entities/pin-santacompana.jpg',
     sound_preset: 'whisper',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -1589,7 +1589,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'Rooted in Coast Salish oral histories of "Sasq\'ets". Thrust into international celebrity status following Roger Patterson and Bob Gimlin\'s iconic 1967 16mm film footage at Bluff Creek, California.',
     image_url: '/entities/pin-sasquatch.jpg',
     sound_preset: 'jungle_curse',
-    views_count: 2500,
+    views_count: 0,
     is_published: 1,
   },
   {
@@ -1613,7 +1613,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'An integral part of Chilotan mythology used socially to explain unexpected pregnancies in rural communities and warn young women against wandering unattended into remote rainforests.',
     image_url: '/entities/pin-trauco.jpg',
     sound_preset: 'whisper',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -1650,7 +1650,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'Embodies centuries of indigenous trauma from Spanish colonial exploitation in the high Andes, where Spanish conquerors used native fat to grease weaponry and church bells.',
     image_url: '/entities/pin-pishtaco.jpg',
     sound_preset: 'creepy_wind',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -1687,7 +1687,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'A cautionary jungle fable rooted in domestic betrayal and environmental stewardship, warning hunters against violating forest taboos and abandoning domestic loyalties.',
     image_url: '/entities/pin-patasola.jpg',
     sound_preset: 'jungle_curse',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -1726,7 +1726,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'Archaeological bronze amulets from the 8th century BCE were unearthed at Nineveh. Cemented in modern popular consciousness as the ancient possessing entity in William Peter Blatty\'s "The Exorcist".',
     image_url: '/entities/pin-pazuzu.jpg',
     sound_preset: 'creepy_wind',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -1763,7 +1763,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'First described to classical antiquity by Greek physician Ctesias in Indica during the 5th century BCE, later popularized across medieval European bestiaries as the epitome of feral terror.',
     image_url: '/entities/pin-manticore.jpg',
     sound_preset: 'creepy_wind',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -1800,7 +1800,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'A premier boarding school urban legend originating in late 20th-century Nigeria. Used by matrons to enforce dormitory curfews and maintain discipline among boarding students.',
     image_url: '/entities/pin-madamkoi.jpg',
     sound_preset: 'whisper',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -1839,7 +1839,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'Central to Swedish folklore in the forestry regions of Dalarna. Charcoal-burners and hunters left gifts of bread and tobacco on mossy stumps to win her goodwill before felling trees.',
     image_url: '/entities/pin-skogsra.jpg',
     sound_preset: 'whisper',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",
@@ -1876,7 +1876,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       'Rooted in the seasonal mountain dairy farming (seter) traditions of Telemark, Norway. Her ethereal cattle calls (kulokk) still echo through traditional Scandinavian folk singing.',
     image_url: '/entities/pin-huldra.jpg',
     sound_preset: 'creepy_wind',
-    views_count: 1200,
+    views_count: 0,
     gallery_media: [
         {
                 "type": "image",

@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo, useCallback } from 'react';
 import type { GhostPin, GhostCategory, SupportedLanguage } from './types/ghost';
-import { fetchPins, createPin, updatePin, deletePin } from './lib/api';
+import { fetchPins, createPin, updatePin, deletePin, recordPinView } from './lib/api';
 import { GhostGlobe } from './components/Globe/GhostGlobe';
 import { Navbar } from './components/UI/Navbar';
 import { StoryDrawer } from './components/UI/StoryDrawer';
@@ -62,9 +62,18 @@ export function App() {
   }, []);
 
   const handleSelectPin = useCallback((pin: GhostPin) => {
-    setSelectedPin(pin);
-    // Open the story drawer (Now Playing popup) whenever a pin is selected
+    // 1. Immediately increment views_count locally for instant real-time feedback
+    const nextViews = (pin.views_count || 0) + 1;
+    const updated = { ...pin, views_count: nextViews };
+    setSelectedPin(updated);
     setIsDrawerOpen(true);
+
+    setPins((prev) =>
+      prev.map((p) => (p.id === pin.id ? { ...p, views_count: nextViews } : p))
+    );
+
+    // 2. Persist real view increment to remote Cloudflare D1
+    recordPinView(pin.id);
   }, []);
 
   const handleCloseDrawer = useCallback(() => {

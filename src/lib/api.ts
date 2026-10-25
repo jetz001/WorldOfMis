@@ -1,7 +1,7 @@
 import type { GhostPin } from '../types/ghost';
 import { INITIAL_GHOST_PINS } from '../data/seedData';
 
-const STORAGE_KEY = 'worldofmys_pins_local_cache';
+const STORAGE_KEY = 'worldofmys_pins_v3';
 
 /**
  * Reconciles a cached pin list with the latest seed data so newly
@@ -118,4 +118,52 @@ export async function deletePin(id: string): Promise<void> {
   const current = await fetchPins();
   const updated = current.filter((p) => p.id !== id);
   localStorage.setItem(STORAGE_KEY, JSON.stringify(updated));
+}
+
+/**
+ * Automatically records a real user view for a specific pin.
+ * Increments remote D1 views_count via /api/pins/:id and keeps local cache synchronized.
+ */
+export async function recordPinView(id: string): Promise<number | null> {
+  try {
+    const res = await fetch(`/api/pins/${id}`);
+    if (res.ok) {
+      const data = await res.json();
+      if (data.success && data.data && typeof data.data.views_count === 'number') {
+        const newCount = data.data.views_count;
+        const cached = localStorage.getItem(STORAGE_KEY);
+        if (cached) {
+          try {
+            const current = JSON.parse(cached) as GhostPin[];
+            const updated = current.map((p) =>
+              p.id === id ? { ...p, views_count: newCount } : p
+            );
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(updated));
+          } catch {}
+        }
+        return newCount;
+      }
+    }
+  } catch {
+    // Offline fallback
+  }
+
+  // Local storage increment fallback if offline
+  const cached = localStorage.getItem(STORAGE_KEY);
+  if (cached) {
+    try {
+      const current = JSON.parse(cached) as GhostPin[];
+      let updatedCount = 0;
+      const updated = current.map((p) => {
+        if (p.id === id) {
+          updatedCount = (p.views_count || 0) + 1;
+          return { ...p, views_count: updatedCount };
+        }
+        return p;
+      });
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(updated));
+      return updatedCount;
+    } catch {}
+  }
+  return null;
 }

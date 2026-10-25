@@ -10,6 +10,7 @@ import {
   Film,
   Shuffle,
   Globe2,
+  Eye,
 } from 'lucide-react';
 import type {
   GhostPin,
@@ -663,17 +664,19 @@ export const PinFormModal: React.FC<PinFormModalProps> = ({
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <label className="block text-xs text-slate-400 mb-1">
-                จำนวนการรับชม (Views Count)
-              </label>
-              <input
-                type="number"
-                min="0"
-                value={formData.views_count ?? 0}
-                onChange={(e) => setFormData({ ...formData, views_count: parseInt(e.target.value) || 0 })}
-                className="w-full px-3.5 py-2 rounded-xl bg-slate-950 border border-slate-700 text-sm text-white font-mono focus:outline-none"
-              />
+            <div className="p-3.5 rounded-xl bg-slate-950 border border-slate-800/90 flex items-center justify-between">
+              <div className="space-y-1">
+                <span className="block text-xs font-semibold text-slate-300 flex items-center gap-1.5">
+                  <Eye className="w-4 h-4 text-emerald-400" />
+                  <span>ยอดการเข้าชมจริง (Real Views Count)</span>
+                </span>
+                <span className="block text-[11px] text-slate-500">
+                  ระบบนับอัตโนมัติจากผู้เข้าชมจริงเมื่อเปิดอ่านเรื่องเล่า
+                </span>
+              </div>
+              <div className="px-3.5 py-1.5 rounded-xl bg-emerald-950/60 border border-emerald-500/40 text-emerald-300 font-mono font-bold text-sm">
+                {(formData.views_count || 0).toLocaleString()} ครั้ง
+              </div>
             </div>
 
             <div>
