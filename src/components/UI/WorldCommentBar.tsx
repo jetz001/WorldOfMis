@@ -267,11 +267,11 @@ export const WorldCommentBar: React.FC<WorldCommentBarProps> = ({
               placeholder={
                 cooldownSec > 0
                   ? language === 'th'
-                    ? `รออีก ${cooldownSec} วินาที เพื่อส่งข้อความถัดไป...`
-                    : `Wait ${cooldownSec}s before next World Comment...`
+                    ? `รออีก ${cooldownSec} วินาที...`
+                    : `Wait ${cooldownSec}s...`
                   : language === 'th'
-                  ? 'พิมพ์คอมเม้นต์ World ลอยขึ้นกลางจอ...'
-                  : 'Type a World Comment to launch across the globe...'
+                  ? 'พิมพ์คอมเม้น'
+                  : 'Type a comment'
               }
               className="flex-1 min-w-0 bg-transparent text-xs sm:text-sm text-slate-100 placeholder-slate-400 focus:outline-none"
             />
