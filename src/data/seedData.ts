@@ -25,11 +25,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'whisper',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-kuchisake.jpg",
-            "title": "คุชิซาเกะ-อนนะ (สาวปากฉีก)"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-kuchisake.jpg",
+                "title": "คุชิซาเกะ-อนนะ (สาวปากฉีก)"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=-O6Q5GS6x_w",
+                "title": "ตำนาน สาวปากฉีก : Kuchisake onna : ตำนานญี่ปุ่น : World of Legend : The sims",
+                "thumbnail": "/entities/pin-kuchisake.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -38,11 +44,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
   {
     id: 'pin-lochness',
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-lochness.jpg",
-            "title": "สัตว์ประหลาดล็อกเนสส์ (เนสซี)"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-lochness.jpg",
+                "title": "สัตว์ประหลาดล็อกเนสส์ (เนสซี)"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=8W-DjTLd0mo",
+                "title": "เปิดตำนาน เนสซี่ สัตว์ประหลาดล็อกเนสส์ | Point of View",
+                "thumbnail": "/entities/pin-lochness.jpg"
+        }
 ],
     title_th: 'สัตว์ประหลาดล็อกเนสส์ (เนสซี)',
     title_en: 'Loch Ness Monster (Nessie)',
@@ -69,17 +81,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
   {
     id: 'pin-dracula',
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-dracula.jpg",
-            "title": "เคานต์แดร็กคูลาแห่งทรานซิลเวเนีย"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=BtCjc5OwBi4",
-            "title": "สารคดีและตำนานลี้ลับ (เคานต์แดร็กคูลาแห่งทรานซิลเวเนีย)",
-            "thumbnail": "/entities/pin-dracula.jpg"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-dracula.jpg",
+                "title": "เคานต์แดร็กคูลาแห่งทรานซิลเวเนีย"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=BtCjc5OwBi4",
+                "title": "Vlad the Impaler: The True Story of Dracula",
+                "thumbnail": "/entities/pin-dracula.jpg"
+        }
 ],
     title_th: 'เคานต์แดร็กคูลาแห่งทรานซิลเวเนีย',
     title_en: 'Count Dracula & Vlad the Impaler',
@@ -128,22 +140,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'creepy_wind',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-wendigo.jpg",
-            "title": "เวนดิโก อสูรป่าหิมะกินคน"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-wendigo.jpg",
+                "title": "เวนดิโก อสูรป่าหิมะกินคน"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=kdvuaW_YZyc",
+                "title": "WENDIGO: สัตว์ประหลาด หรือ ศาสตร์มืด?",
+                "thumbnail": "/entities/pin-wendigo.jpg"
+        }
 ],
     is_published: 1,
   },
   {
     id: 'pin-chupacabra',
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-chupacabra.jpg",
-            "title": "เอล ชูปาคาบรา อสูรสูบเลือดสัตว์"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-chupacabra.jpg",
+                "title": "เอล ชูปาคาบรา อสูรสูบเลือดสัตว์"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=L7ibzW6z-t4",
+                "title": "Chupacabra ไขปริศนาตำนานปิศาจดูดเลือดของชาวละติน",
+                "thumbnail": "/entities/pin-chupacabra.jpg"
+        }
 ],
     title_th: 'เอล ชูปาคาบรา อสูรสูบเลือดสัตว์',
     title_en: 'El Chupacabra (Goat-Sucker)',
@@ -192,11 +216,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'whisper',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-tutankhamun.jpg",
-            "title": "คำสาปฟาโรห์ตุตันคาเมน"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-tutankhamun.jpg",
+                "title": "คำสาปฟาโรห์ตุตันคาเมน"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=AjTfqmIIB2E",
+                "title": "เรื่องจริงของคำสาป Tutankhamun กับอาถรรพ์ที่คร่าชีวิตนักสำรวจ",
+                "thumbnail": "/entities/pin-tutankhamun.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -225,11 +255,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'water_spirit',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-bunyip.jpg",
-            "title": "บันยิป อสูรแห่งบึงน้ำออสเตรเลีย"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-bunyip.jpg",
+                "title": "บันยิป อสูรแห่งบึงน้ำออสเตรเลีย"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=3dSsjAfyVYY",
+                "title": "Bunyip: อสูรกายกินคน ตำนานที่ไม่เคยเลือนหายไปจากลุ่มน้ำออสเตรเลีย",
+                "thumbnail": "/entities/pin-bunyip.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -238,11 +274,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
   {
     id: 'pin-maenak',
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-maenak.jpg",
-            "title": "แม่นาคพระโขนง"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-maenak.jpg",
+                "title": "แม่นาคพระโขนง"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=zWFQKdfeZF0",
+                "title": "เปิดตำนาน แม่นากพระโขนงตัวจริงเป็นยังไง ในประวัติศาสตร์? | Point of View",
+                "thumbnail": "/entities/pin-maenak.jpg"
+        }
 ],
     title_th: 'แม่นาคพระโขนง',
     title_en: 'Mae Nak Phra Khanong',
@@ -289,11 +331,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'creepy_wind',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-krasue.jpg",
-            "title": "กระสือยายสาย"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-krasue.jpg",
+                "title": "กระสือยายสาย"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=pDIYrsjPxKg",
+                "title": "ตำนานกระสือ อมนุษย์ที่มีหัวใจ | หลอนดูดิ EP.38",
+                "thumbnail": "/entities/pin-krasue.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -320,11 +368,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'whisper',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-pop.jpg",
-            "title": "ผีปอบหยิบแห่งลุ่มน้ำปาว"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-pop.jpg",
+                "title": "ผีปอบหยิบแห่งลุ่มน้ำปาว"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=j2knVlzAfLM",
+                "title": "เรื่องนี้ต้องรู้ Ep.8 : ย้อนอดีต...ปิดหมู่บ้านล่า! อาถรรพ์ #ผีปอบ บ้านนาบง จ.กาฬสินธุ์",
+                "thumbnail": "/entities/pin-pop.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -351,11 +405,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'water_spirit',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-naga.jpg",
-            "title": "พญานาคแม่น้ำโขงและบั้งไฟพญานาค"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-naga.jpg",
+                "title": "พญานาคแม่น้ำโขงและบั้งไฟพญานาค"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=4BRRbTs9r3E",
+                "title": "บั้งไฟพญานาค…ปาฏิหาริย์แห่งแม่น้ำโขง หรือปรากฏการณ์ธรรมชาติ?",
+                "thumbnail": "/entities/pin-naga.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -382,11 +442,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'jungle_curse',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-saming.jpg",
-            "title": "สมิงเขาหลวง"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-saming.jpg",
+                "title": "สมิงเขาหลวง"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=4bZdqVRapmc",
+                "title": "อาจารย์ยอด : เสือสมิง [ผี]",
+                "thumbnail": "/entities/pin-saming.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -413,11 +479,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'whisper',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-jiangshi.jpg",
-            "title": "จางจี้ (ผีผู้ขโขบ)"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-jiangshi.jpg",
+                "title": "จางจี้ (ผีผู้ขโขบ)"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=ij9MLYCO8xk",
+                "title": "ตำนานผีดิบจีน เจียงซือ | ตำนานจีน | โลกแห่งตำนาน WOL World of Legend | เกมส์ The Sims 4",
+                "thumbnail": "/entities/pin-jiangshi.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -444,11 +516,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'creepy_wind',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-baba-iva.jpg",
-            "title": "บาบาะ"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-baba-iva.jpg",
+                "title": "บาบาะ"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=_oW4iC956xo",
+                "title": "บาบายาก้า แม่มดร้ายแห่งรัสเซีย | Point of View",
+                "thumbnail": "/entities/pin-baba-iva.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -475,11 +553,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'creepy_wind',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-chudail.jpg",
-            "title": "จูดไล"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-chudail.jpg",
+                "title": "จูดไล"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=lo6urYjVgFI",
+                "title": "DAAYAN (WITCH) Documentary - English @ASRPictures​",
+                "thumbnail": "/entities/pin-chudail.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -506,11 +590,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'creepy_wind',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-gevaudan.jpg",
-            "title": "สัตว์ป่าผู้เปลี่ยนร่างเป็นหมอ"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-gevaudan.jpg",
+                "title": "สัตว์ป่าผู้เปลี่ยนร่างเป็นหมอ"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=3xTGVX8K_9Q",
+                "title": "เปิดปม \"อสูรร้ายแห่งเฌโวดอง\" สัตว์ปริศนาอาละวาด ให้ชาวฝรั่งเศสตกอยู่ในฝันร้าย !",
+                "thumbnail": "/entities/pin-gevaudan.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -537,11 +627,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'water_spirit',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-curupira.jpg",
-            "title": "ครูปิรา"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-curupira.jpg",
+                "title": "ครูปิรา"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=0Xl7oRy9bEo",
+                "title": "Curupira – The Guardian of the Brazilian Forests – Brazilian Folklore",
+                "thumbnail": "/entities/pin-curupira.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -568,11 +664,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'creepy_wind',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-draugr.jpg",
-            "title": "ดราวก"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-draugr.jpg",
+                "title": "ดราวก"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=VNM1Y8i8tuI",
+                "title": "Draugr: The Undead Nordic Zombie | Monstrum",
+                "thumbnail": "/entities/pin-draugr.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -601,11 +703,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'creepy_wind',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-minotaur.jpg",
-            "title": "ไมโนทอร์ในเขาวงกต"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-minotaur.jpg",
+                "title": "ไมโนทอร์ในเขาวงกต"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=8d81HRyYbLU",
+                "title": "มิโนทอร์มีอยู่จริง? ความจริงที่ซ่อนอยู่ในพระราชวังคนอสซอส | ลึกลับจับมาเล่า EP.303",
+                "thumbnail": "/entities/pin-minotaur.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -614,11 +722,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
   {
     id: 'pin-lorelei',
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-lorelei.jpg",
-            "title": "ลอเรไล นางเงียมแห่งแม่น้ำไรน์"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-lorelei.jpg",
+                "title": "ลอเรไล นางเงียมแห่งแม่น้ำไรน์"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=pzHQxEWADws",
+                "title": "EP6:ทัวร์เยอรมันกับไกด์คนไทย “ตำนานนางเงือกลุ่มแม่น้ำไรน์”",
+                "thumbnail": "/entities/pin-lorelei.jpg"
+        }
 ],
     title_th: 'ลอเรไล นางเงียมแห่งแม่น้ำไรน์',
     title_en: 'The Lorelei of the Rhine',
@@ -667,11 +781,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'whisper',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-banshee.jpg",
-            "title": "แบนชี ผู้ร้องไห้นำความตาย"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-banshee.jpg",
+                "title": "แบนชี ผู้ร้องไห้นำความตาย"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=YTo_qkkU78k",
+                "title": "#ผี ภูตร้องไห้ : บันชี (Banshee) - ไอร์แลนด์",
+                "thumbnail": "/entities/pin-banshee.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -680,11 +800,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
   {
     id: 'pin-blackshuck',
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-blackshuck.jpg",
-            "title": "แบล็ค ชัค สุนัขปีศาจแห่งซัฟฟอล์ก"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-blackshuck.jpg",
+                "title": "แบล็ค ชัค สุนัขปีศาจแห่งซัฟฟอล์ก"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=aDifEjVL7yI",
+                "title": "Black Shuck: Britain's Most Terrifying Folklore Legend",
+                "thumbnail": "/entities/pin-blackshuck.jpg"
+        }
 ],
     title_th: 'แบล็ค ชัค สุนัขปีศาจแห่งซัฟฟอล์ก',
     title_en: 'Black Shuck, the Demon Dog of Suffolk',
@@ -733,11 +859,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'temple_bell',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-gumiho.jpg",
-            "title": "กุมิโฮะ จิ้งจอกเก้าหาง"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-gumiho.jpg",
+                "title": "กุมิโฮะ จิ้งจอกเก้าหาง"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=eqK-yQNdvtA",
+                "title": "[ Vietsub + Kara ] Fox Rain - Lee Sun Hee ( My Girlfriend Is A Gumiho OST )",
+                "thumbnail": "/entities/pin-gumiho.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -766,11 +898,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'jungle_curse',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-manananggal.jpg",
-            "title": "มานันนังกัล ผู้ฉีกร่างกลางคืน"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-manananggal.jpg",
+                "title": "มานันนังกัล ผู้ฉีกร่างกลางคืน"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=CBDuhllXYUU",
+                "title": "ตำนานกระสือฟิลิปปินส์ มานานังเกล (Manananggal)",
+                "thumbnail": "/entities/pin-manananggal.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -799,11 +937,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'whisper',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-kuntilanak.jpg",
-            "title": "กุนตีลานัค ผีสาวชุดขาว"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-kuntilanak.jpg",
+                "title": "กุนตีลานัค ผีสาวชุดขาว"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=39CCyM5rZ_k",
+                "title": "กระจกโบราณกับตำนานผีพื้นบ้านของอินโดนีเซีย 🎃  | KUNTILANAK - กระจกส่องตาย 「สปอยหนัง」",
+                "thumbnail": "/entities/pin-kuntilanak.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -832,11 +976,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'creepy_wind',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-yeti.jpg",
-            "title": "เยติ สัตว์ประหลาดหิมะ"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-yeti.jpg",
+                "title": "เยติ สัตว์ประหลาดหิมะ"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=JeNrp7Mhva0",
+                "title": "เรื่องจริงหรือเเค่ตำนาน!? l YETI อสุรกายแดนหิมาลัย",
+                "thumbnail": "/entities/pin-yeti.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -865,11 +1015,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'creepy_wind',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-ghul.jpg",
-            "title": "กูล ปีศาจทะเลทรายอาหรับ"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-ghul.jpg",
+                "title": "กูล ปีศาจทะเลทรายอาหรับ"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=8qWibjaiLm8",
+                "title": "Tokyo Ghoul ไม่ได้มาจากญี่ปุ่น! ตำนาน Ghoul ที่แท้จริงมาจากอาหรับ? | Mythos Requiem",
+                "thumbnail": "/entities/pin-ghul.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -898,11 +1054,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'temple_bell',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-nightmarchers.jpg",
-            "title": "ไนท์ มาร์เชอร์ส ขบวนวิญญาณฮาวาย"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-nightmarchers.jpg",
+                "title": "ไนท์ มาร์เชอร์ส ขบวนวิญญาณฮาวาย"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=NeYKTKtkZsM",
+                "title": "If You Hear Them March… DON’T DARE LOOK | Hawaii’s Night Marchers",
+                "thumbnail": "/entities/pin-nightmarchers.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -929,11 +1091,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'jungle_curse',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-anansi.jpg",
-            "title": "อนันซี แมงมุมปราชญ์แห่งเรื่องเล่า"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-anansi.jpg",
+                "title": "อนันซี แมงมุมปราชญ์แห่งเรื่องเล่า"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=6nWba9Ii5Lo",
+                "title": "The myth of Anansi, the trickster spider - Emily Zobel Marshall",
+                "thumbnail": "/entities/pin-anansi.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -960,11 +1128,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'jungle_curse',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-tokoloshe.jpg",
-            "title": "โทโคโลชี ผีเตี้ยแห่งแม่น้ำ"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-tokoloshe.jpg",
+                "title": "โทโคโลชี ผีเตี้ยแห่งแม่น้ำ"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=7kbFkKC008U",
+                "title": "Tokoloshe - The Evil Spirit of Zulu Folklore - African Creatures",
+                "thumbnail": "/entities/pin-tokoloshe.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -993,11 +1167,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'water_spirit',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-taniwha.jpg",
-            "title": "ตานีฟา อสูรเฝ้าน้ำของมาโอริ"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-taniwha.jpg",
+                "title": "ตานีฟา อสูรเฝ้าน้ำของมาโอริ"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=nlu0foF3WBk",
+                "title": "New Zealand Today - Opo the Magic Dolphin and the legend of THE TANIWHA",
+                "thumbnail": "/entities/pin-taniwha.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -1026,11 +1206,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'creepy_wind',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-wawel.jpg",
-            "title": "มังกรเวเวลแห่งกรากุฟ"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-wawel.jpg",
+                "title": "มังกรเวเวลแห่งกรากุฟ"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=1KiVqQGR4b8",
+                "title": "Wawel Dragon (Smok Wawelski) - Fire Breathing Dragon in Kraków",
+                "thumbnail": "/entities/pin-wawel.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -1057,11 +1243,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'water_spirit',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-mada.jpg",
-            "title": "แม่ดา ผีน้ำเสื้อแดงแห่งสายธาร"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-mada.jpg",
+                "title": "แม่ดา ผีน้ำเสื้อแดงแห่งสายธาร"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=HCIhv9uKzus",
+                "title": "สปอยหน���งผีเฮี้ยนจากลุ่มแม่น้ำโขง | Ma Da - The Drowning Spirit (2024)「สปอยหนัง」",
+                "thumbnail": "/entities/pin-mada.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -1088,11 +1280,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'temple_bell',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-neakta.jpg",
-            "title": "แนกตา เจ้าที่ผู้พิทักษ์หมู่บ้าน"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-neakta.jpg",
+                "title": "แนกตา เจ้าที่ผู้พิทักษ์หมู่บ้าน"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=8eD7yyW9KTA",
+                "title": "Sacred Water | Neak Ta Water Guardian Spirit | Concept Teaser",
+                "thumbnail": "/entities/pin-neakta.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -1119,11 +1317,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'temple_bell',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-natpopa.jpg",
-            "title": "เจ้าแม่ป้อปะมะเดาะแห่งภูเขาโปปา"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-natpopa.jpg",
+                "title": "เจ้าแม่ป้อปะมะเดาะแห่งภูเขาโปปา"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=0jtPuU2TmPU",
+                "title": "Mount Popa: Myanmar’s Mysterious Spirit Mountain | Nats, Legends & Hidden Mysteries",
+                "thumbnail": "/entities/pin-natpopa.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -1150,11 +1354,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'jungle_curse',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-mosina.jpg",
-            "title": "โมซินอา ภูติน้อยแห่งขุนเขาไต้หวัน"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-mosina.jpg",
+                "title": "โมซินอา ภูติน้อยแห่งขุนเขาไต้หวัน"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=uW8oVHWmo1c",
+                "title": "TWO Mistakes Are Killing Hikers in Taiwan Mountains",
+                "thumbnail": "/entities/pin-mosina.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -1179,11 +1389,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'creepy_wind',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-mahasona.jpg",
-            "title": "มหาโสณา มาราผู้หญิงแห่งป่าช้า"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-mahasona.jpg",
+                "title": "มหาโสณา มาราผู้หญิงแห่งป่าช้า"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=I65bbz819SI",
+                "title": "🇱🇰 ปูตัวละหมื่นกว่าบาท ที่ศรีลังกา เดินกินทั่วเมืองคนเดียว",
+                "thumbnail": "/entities/pin-mahasona.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -1210,11 +1426,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'creepy_wind',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-deathworm.jpg",
-            "title": "หนอนมรณะแห่งโกบี"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-deathworm.jpg",
+                "title": "หนอนมรณะแห่งโกบี"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=qSFE9IxBSSQ",
+                "title": "พากย์ไทย|☠หนอนมรณะ Death Worm☠ | แอ็กชั่น สืบสวนสอบสวน อาชญากรรม | iQIYI movie Thai",
+                "thumbnail": "/entities/pin-deathworm.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -1243,11 +1465,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'temple_bell',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-shahmaran.jpg",
-            "title": "ชาฮ์มาราน ราชินีนาคครึ่งคนครึ่งงู"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-shahmaran.jpg",
+                "title": "ชาฮ์มาราน ราชินีนาคครึ่งคนครึ่งงู"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=WB7e3LEBVZI",
+                "title": "Shahmaran - Serpent Queen",
+                "thumbnail": "/entities/pin-shahmaran.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -1274,11 +1502,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'whisper',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-azzurrina.jpg",
-            "title": "อัซซูร์รีนา เด็กหญิงผมสีน้ำเงิน"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-azzurrina.jpg",
+                "title": "อัซซูร์รีนา เด็กหญิงผมสีน้ำเงิน"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=f90upNFJN1g",
+                "title": "The Ghost Of Azzurrina HD 1080p",
+                "thumbnail": "/entities/pin-azzurrina.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -1305,11 +1539,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'whisper',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-santacompana.jpg",
-            "title": "ซานตากอมปันยา ขบวนวิญญาณแห่งกาลิเซีย"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-santacompana.jpg",
+                "title": "ซานตากอมปันยา ขบวนวิญญาณแห่งกาลิเซีย"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=qMlxOHrwFXw",
+                "title": "Santa Compaña | A Procesión dos Mortos",
+                "thumbnail": "/entities/pin-santacompana.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -1318,11 +1558,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
   {
     id: 'pin-sasquatch',
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-sasquatch.jpg",
-            "title": "แซสควัทช์ มนุษย์ป่ายักษ์แห่งชายฝั่งแปซิฟิก"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-sasquatch.jpg",
+                "title": "แซสควัทช์ มนุษย์ป่ายักษ์แห่งชายฝั่งแปซิฟิก"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=mxQLLQdINVI",
+                "title": "เปิดตำนาน Bigfoot ไอ้ตีนโตมีจริงหรือเปล่า? | Point of View",
+                "thumbnail": "/entities/pin-sasquatch.jpg"
+        }
 ],
     title_th: 'แซสควัทช์ มนุษย์ป่ายักษ์แห่งชายฝั่งแปซิฟิก',
     title_en: 'Sasquatch, the Wild Man of the Pacific Northwest',
@@ -1369,11 +1615,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'whisper',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-trauco.jpg",
-            "title": "เทราโก ภูตจอมเสน่ห์แห่งเกาะชิโลเอ"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-trauco.jpg",
+                "title": "เทราโก ภูตจอมเสน่ห์แห่งเกาะชิโลเอ"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=oe0IK6_zYFI",
+                "title": "El Trauco 💀 Draw My Life Terror",
+                "thumbnail": "/entities/pin-trauco.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -1400,11 +1652,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'creepy_wind',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-pishtaco.jpg",
-            "title": "พิชตาโก จอมปลอมหนวดขาวที่ลนไขมันมนุษย์"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-pishtaco.jpg",
+                "title": "พิชตาโก จอมปลอมหนวดขาวที่ลนไขมันมนุษย์"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=hJGRZ6MyDMY",
+                "title": "\"ปลาหน้าคน\" มันยิ้มให้ก่อนฆ่า! ตำนานสยอง 20 ปีหวนคืน กะลาสีหนีตายกลางทะเลคลั่ง",
+                "thumbnail": "/entities/pin-pishtaco.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -1431,11 +1689,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'jungle_curse',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-patasola.jpg",
-            "title": "ปาตาโซลา ปีศาจขาเดียวแห่งป่าโคลอมเบีย"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-patasola.jpg",
+                "title": "ปาตาโซลา ปีศาจขาเดียวแห่งป่าโคลอมเบีย"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=D2QopgGC52c",
+                "title": "ตำนานผีสาวคอยาว | หลอนไดอารี่",
+                "thumbnail": "/entities/pin-patasola.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -1464,11 +1728,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'creepy_wind',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-pazuzu.jpg",
-            "title": "ปาซูซู ปีศาจลมพายุแห่งบาบิโลน"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-pazuzu.jpg",
+                "title": "ปาซูซู ปีศาจลมพายุแห่งบาบิโลน"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=5hOjDrXup7A",
+                "title": "PAZUZU จอมมารแห่งสายลมมรณะ | ปีศาจที่เก่าแก่ที่สุดในโลก ก่อนซาตานจะถือกำเนิด",
+                "thumbnail": "/entities/pin-pazuzu.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -1495,11 +1765,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'creepy_wind',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-manticore.jpg",
-            "title": "แมนทิคอร์ สัตว์ประหลาดหน้ามนุษย์ของเปอร์เซีย"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-manticore.jpg",
+                "title": "แมนทิคอร์ สัตว์ประหลาดหน้ามนุษย์ของเปอร์เซีย"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=n3iOSJsHcpg",
+                "title": "สิงโตหน้ามนุษย์ Manticore : DarkBlack แพคมาเล่า",
+                "thumbnail": "/entities/pin-manticore.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -1526,11 +1802,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'whisper',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-madamkoi.jpg",
-            "title": "แม่นางคอยพอย ผู้มีรองเท้าส้นสูงแห่งโรงเรียนประจำ"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-madamkoi.jpg",
+                "title": "แม่นางคอยพอย ผู้มีรองเท้าส้นสูงแห่งโรงเรียนประจำ"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=pzaWkXHCj28",
+                "title": "Madame KOI KOI  | AI Short Film | African Urban Legend",
+                "thumbnail": "/entities/pin-madamkoi.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -1559,11 +1841,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'whisper',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-skogsra.jpg",
-            "title": "สกอกรา สาวป่าที่หลังว่างเป็นโพรงไม้"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-skogsra.jpg",
+                "title": "สกอกรา สาวป่าที่หลังว่างเป็นโพรงไม้"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=jI0RYEIc7NY",
+                "title": "#2 ประวัติ Skogsrå ปีศาจหญิงสาวจอมล่อลวง : Bramble The Mountain King",
+                "thumbnail": "/entities/pin-skogsra.jpg"
+        }
 ],
     is_published: 1,
   },
@@ -1590,11 +1878,17 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     sound_preset: 'creepy_wind',
     views_count: 1200,
     gallery_media: [
-      {
-            "type": "image",
-            "url": "/entities/pin-huldra.jpg",
-            "title": "ฮุลดรา สาวหางวัวแห่งป่านอร์เวย์"
-      }
+        {
+                "type": "image",
+                "url": "/entities/pin-huldra.jpg",
+                "title": "ฮุลดรา สาวหางวัวแห่งป่านอร์เวย์"
+        },
+        {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=Nn-Q790Lq2U",
+                "title": "YOU COULD NOT RESIST. | Huldra's Lure | Nordic Folk | Huldra of the North",
+                "thumbnail": "/entities/pin-huldra.jpg"
+        }
 ],
     is_published: 1,
   },
