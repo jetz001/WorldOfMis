@@ -45,7 +45,6 @@ export const Navbar: React.FC<NavbarProps> = ({
   const t = getTranslation(language);
   const [isSearchFocused, setIsSearchFocused] = useState(false);
   const searchContainerRef = useRef<HTMLDivElement>(null);
-  const inputRef = useRef<HTMLInputElement>(null);
   const secretTapCountRef = useRef(0);
   const secretTapTimerRef = useRef<number | null>(null);
 
@@ -130,14 +129,15 @@ export const Navbar: React.FC<NavbarProps> = ({
           </h1>
         </div>
 
-        {/* RAG Vector Semantic Search Bar */}
+        {/* Lore & Mystery Semantic Search Bar */}
         <div
           ref={searchContainerRef}
           className="relative flex-1 max-w-xs md:max-w-lg hidden md:block"
         >
           <div className="relative flex items-center">
-            <Search className="w-4 h-4 absolute left-3.5 text-emerald-400 pointer-events-none" />
+            <Sparkles className="w-4 h-4 absolute left-3.5 text-emerald-400/70 pointer-events-none" />
             <input
+              ref={inputRef}
               type="text"
               value={searchQuery}
               onFocus={() => setIsSearchFocused(true)}
@@ -155,85 +155,103 @@ export const Navbar: React.FC<NavbarProps> = ({
               }}
               placeholder={
                 language === 'th'
-                  ? 'ค้นหาด้วย RAG Vector (เช่น ผีในน้ำ, ป่าหิมะ, คำสาป, ความรัก, ยุโรป)...'
-                  : 'RAG Vector Search (e.g. water monster, snow forest, curse, love)...'
+                  ? 'ค้นหาตำนาน ผี หรือบรรยากาศ (เช่น วิญญาณในน้ำ, ป่าหิมะ, คำสาป)...'
+                  : 'Search legends, spirits, or themes (e.g. water ghosts, snow forest)...'
               }
-              className="w-full pl-10 pr-28 py-2.5 rounded-2xl bg-slate-950/85 border border-emerald-500/40 backdrop-blur-xl text-sm text-slate-100 placeholder-slate-400 focus:outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-500/30 transition-all shadow-[0_0_25px_rgba(16,185,129,0.15)]"
+              className="w-full pl-10 pr-20 py-2.5 rounded-2xl bg-slate-950/85 border border-emerald-500/40 backdrop-blur-xl text-sm text-slate-100 placeholder-slate-400 focus:outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-500/30 transition-all shadow-[0_0_25px_rgba(16,185,129,0.15)]"
             />
 
-            {/* Clear Button & RAG Badge */}
-            <div className="absolute right-2.5 flex items-center gap-1.5">
+            {/* Clear Button & Search Magnifier Button */}
+            <div className="absolute right-2 flex items-center gap-1.5">
               {searchQuery.trim() && (
                 <button
                   type="button"
                   onClick={() => {
                     onSearchChange('');
                     setIsSearchFocused(true);
+                    inputRef.current?.focus();
                   }}
                   aria-label="Clear search"
-                  className="p-1 rounded-full hover:bg-slate-800 text-slate-400 hover:text-white transition-colors"
+                  className="p-1.5 rounded-full hover:bg-slate-800 text-slate-400 hover:text-white transition-colors cursor-pointer"
                 >
                   <X className="w-3.5 h-3.5" />
                 </button>
               )}
-              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg text-[10px] font-mono font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
-                <Cpu className="w-3 h-3 text-emerald-400" />
-                RAG
-              </span>
+              <button
+                type="button"
+                onClick={() => {
+                  setIsSearchFocused(true);
+                  inputRef.current?.focus();
+                }}
+                aria-label={language === 'th' ? 'ค้นหาเรื่องเล่า' : 'Search folklore'}
+                title={language === 'th' ? 'ค้นหาเรื่องเล่า' : 'Search folklore'}
+                className="w-8 h-8 rounded-xl bg-gradient-to-br from-emerald-500/25 to-teal-600/30 hover:from-emerald-500/40 hover:to-teal-500/45 text-emerald-300 hover:text-white border border-emerald-500/40 hover:border-emerald-400 transition-all shadow-[0_0_12px_rgba(16,185,129,0.25)] flex items-center justify-center cursor-pointer active:scale-95"
+              >
+                <Search className="w-4 h-4" />
+              </button>
             </div>
           </div>
 
-          {/* Interactive RAG Vector Dropdown Panel */}
+          {/* Interactive Suggestions & Results Dropdown Panel */}
           {showDropdown && (
             <div className="absolute left-0 right-0 top-full mt-2 rounded-2xl bg-slate-950/95 border border-emerald-500/30 backdrop-blur-2xl shadow-[0_25px_60px_rgba(0,0,0,0.85),0_0_30px_rgba(16,185,129,0.15)] overflow-hidden z-50 animate-in fade-in slide-in-from-top-2 duration-200">
               {!searchQuery.trim() ? (
-                /* Suggested Semantic Vector Queries */
+                /* Suggested Semantic Lore Themes */
                 <div className="p-4">
-                  <div className="flex items-center justify-between mb-2.5">
-                    <span className="text-[11px] font-bold uppercase tracking-wider text-emerald-400 flex items-center gap-1.5">
-                      <Sparkles className="w-3.5 h-3.5" />
+                  <div className="flex items-center justify-between mb-3 pb-2.5 border-b border-slate-800/80">
+                    <span className="text-xs font-semibold tracking-wide text-emerald-300 flex items-center gap-2">
+                      <Sparkles className="w-4 h-4 text-emerald-400" />
                       {language === 'th'
-                        ? 'ค้นหาเชิงความหมายด้วย RAG Vector (Semantic Search)'
-                        : 'RAG Vector Semantic Search Prompts'}
+                        ? 'สำรวจตามธีมและเรื่องเล่ายอดนิยม'
+                        : 'Explore Popular Themes & Lore'}
                     </span>
-                    <span className="text-[10px] font-mono text-slate-500">
-                      256-dim Cosine Similarity
+                    <span className="text-[11px] text-slate-400 flex items-center gap-1">
+                      <Compass className="w-3 h-3 text-emerald-400/80" />
+                      {language === 'th' ? 'แตะเพื่อค้นหาทันที' : 'Tap to explore'}
                     </span>
                   </div>
-                  <div className="flex flex-wrap gap-1.5">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                     {suggestedQueries.map((prompt) => {
-                      const cleanText = prompt.replace(/^[^\s]+\s/, '');
+                      const match = prompt.match(/^([^\s]+)\s+(.+)$/);
+                      const emoji = match ? match[1] : '🔮';
+                      const text = match ? match[2] : prompt;
+
                       return (
                         <button
                           key={prompt}
                           type="button"
                           onClick={() => {
-                            onSearchChange(cleanText);
+                            onSearchChange(text);
                             setIsSearchFocused(true);
                           }}
-                          className="px-3 py-1.5 rounded-xl text-xs bg-slate-900/90 hover:bg-emerald-950/70 text-slate-300 hover:text-emerald-300 border border-slate-800 hover:border-emerald-500/40 transition-all text-left"
+                          className="flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl text-xs bg-slate-900/85 hover:bg-emerald-950/60 text-slate-200 hover:text-emerald-200 border border-slate-800/80 hover:border-emerald-500/50 transition-all text-left group shadow-sm hover:shadow-[0_0_15px_rgba(16,185,129,0.18)] cursor-pointer active:scale-[0.98]"
                         >
-                          {prompt}
+                          <span className="text-base shrink-0 group-hover:scale-115 transition-transform duration-200">
+                            {emoji}
+                          </span>
+                          <span className="font-medium truncate leading-tight">
+                            {text}
+                          </span>
                         </button>
                       );
                     })}
                   </div>
                 </div>
               ) : (
-                /* RAG Summary + Ranked Vector Results */
+                /* Summary + Matching Stories */
                 <div className="max-h-[70vh] flex flex-col">
-                  {/* RAG AI Knowledge Synthesis Banner */}
+                  {/* Lore Summary Banner */}
                   <div className="p-3.5 bg-gradient-to-r from-emerald-950/60 via-slate-900/90 to-slate-950 border-b border-emerald-500/20">
                     <div className="flex items-center justify-between mb-1">
-                      <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-emerald-400 flex items-center gap-1.5">
-                        <Sparkles className="w-3 h-3 animate-pulse" />
+                      <span className="text-xs font-semibold text-emerald-300 flex items-center gap-1.5">
+                        <Sparkles className="w-3.5 h-3.5 text-emerald-400 animate-pulse" />
                         {language === 'th'
-                          ? 'สรุปข้อมูลความรู้จากระบบ RAG (Knowledge Synthesis)'
-                          : 'RAG Knowledge Synthesis'}
+                          ? 'สรุปเรื่องเล่าและบริบทที่เกี่ยวข้อง'
+                          : 'Folklore Overview & Context'}
                       </span>
-                      <span className="text-[10px] font-mono text-emerald-300/80">
+                      <span className="text-[11px] font-medium text-emerald-400/90">
                         {ragResponse.results.length}{' '}
-                        {language === 'th' ? 'ผลลัพธ์เวกเตอร์' : 'vector hits'}
+                        {language === 'th' ? 'เรื่องเล่าที่พบ' : 'stories found'}
                       </span>
                     </div>
                     <p className="text-xs text-slate-200 leading-relaxed">
@@ -241,7 +259,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     </p>
                   </div>
 
-                  {/* Vector Similarity Ranked List */}
+                  {/* Matching Stories List */}
                   {ragResponse.results.length > 0 && (
                     <div className="overflow-y-auto divide-y divide-slate-800/60 max-h-80">
                       {ragResponse.results.slice(0, 6).map((item) => {
@@ -260,7 +278,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                               onSelectPin(pin);
                               setIsSearchFocused(false);
                             }}
-                            className="w-full p-3.5 text-left hover:bg-emerald-950/30 transition-colors flex items-start justify-between gap-3 group"
+                            className="w-full p-3.5 text-left hover:bg-emerald-950/30 transition-colors flex items-start justify-between gap-3 group cursor-pointer"
                           >
                             <div className="flex items-start gap-3 min-w-0">
                               <div className="w-9 h-9 rounded-xl bg-slate-900 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0 mt-0.5 group-hover:bg-emerald-500/20 group-hover:border-emerald-400 transition-colors">
@@ -296,7 +314,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
                             <div className="flex flex-col items-end shrink-0 gap-1">
                               <span className="px-2 py-0.5 rounded-md text-[10px] font-mono font-bold bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
-                                {matchPercent}% Match
+                                {matchPercent}% {language === 'th' ? 'ตรงกัน' : 'Match'}
                               </span>
                               <span className="text-[11px] text-slate-500 group-hover:text-emerald-400 flex items-center gap-0.5 transition-colors">
                                 {language === 'th' ? 'บินไปดู' : 'Fly to'}
