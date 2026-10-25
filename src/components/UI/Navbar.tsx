@@ -1,10 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import {
   Compass,
-  Languages,
   Search,
-  Lock,
-  ZoomOut,
   Ghost,
   Skull,
   BookOpen,
@@ -80,6 +77,15 @@ export const Navbar: React.FC<NavbarProps> = ({
     legend: BookOpen,
     sacred: Sparkles,
     monster: Flame,
+  };
+
+  const categorySigils: Record<string, string> = {
+    all: '/icons/sigil_all.png',
+    ghost: '/icons/sigil_ghost.png',
+    curse: '/icons/sigil_curse.png',
+    legend: '/icons/sigil_legend.png',
+    sacred: '/icons/sigil_sacred.png',
+    monster: '/icons/sigil_monster.png',
   };
 
   const suggestedQueries =
@@ -279,25 +285,33 @@ export const Navbar: React.FC<NavbarProps> = ({
           )}
         </div>
 
-        {/* Action Controls */}
-        <div className="flex items-center gap-2 shrink-0">
+        {/* Action Controls (Mystical Talisman Buttons) */}
+        <div className="flex items-center gap-2.5 shrink-0">
           {/* Zoom-Out To World View */}
           <button
             onClick={onZoomOut}
             aria-label={t.zoomOutWorld}
             title={t.zoomOutWorld}
-            className="p-2.5 rounded-xl bg-slate-950/80 border border-slate-800/80 hover:border-emerald-500/40 backdrop-blur-md text-slate-300 hover:text-emerald-300 transition-all shadow-lg flex items-center gap-1.5 text-xs font-medium"
+            className="group px-3.5 py-2 rounded-2xl bg-[#070c16]/90 border border-amber-500/35 hover:border-emerald-400/70 backdrop-blur-xl text-amber-100/90 hover:text-emerald-200 transition-all shadow-[0_6px_20px_rgba(0,0,0,0.85),0_0_15px_rgba(16,185,129,0.12)] hover:shadow-[0_0_22px_rgba(16,185,129,0.35)] flex items-center gap-2 text-xs font-grimoire tracking-wider cursor-pointer active:scale-95"
           >
-            <ZoomOut className="w-4 h-4" />
-            <span className="hidden sm:inline">{t.zoomOutWorld}</span>
+            <img
+              src="/icons/sigil_world.png"
+              alt=""
+              className="w-6 h-6 object-contain group-hover:rotate-12 group-hover:scale-110 transition-transform duration-300"
+            />
+            <span className="hidden sm:inline font-semibold">{t.zoomOutWorld}</span>
           </button>
 
           {/* Language Switcher */}
           <button
             onClick={onToggleLanguage}
-            className="px-3 py-2.5 rounded-xl bg-slate-950/80 border border-slate-800/80 hover:border-slate-700 backdrop-blur-md text-xs font-semibold text-slate-200 hover:text-white transition-all shadow-lg flex items-center gap-1.5"
+            className="group px-3.5 py-2 rounded-2xl bg-[#070c16]/90 border border-amber-500/35 hover:border-emerald-400/70 backdrop-blur-xl text-xs font-grimoire font-bold tracking-widest text-amber-100 hover:text-emerald-200 transition-all shadow-[0_6px_20px_rgba(0,0,0,0.85),0_0_15px_rgba(16,185,129,0.12)] hover:shadow-[0_0_22px_rgba(16,185,129,0.35)] flex items-center gap-2 cursor-pointer active:scale-95"
           >
-            <Languages className="w-4 h-4 text-emerald-400" />
+            <img
+              src="/icons/sigil_lang.png"
+              alt=""
+              className="w-6 h-6 object-contain group-hover:scale-110 transition-transform duration-300"
+            />
             <span>{language.toUpperCase()}</span>
           </button>
 
@@ -305,32 +319,48 @@ export const Navbar: React.FC<NavbarProps> = ({
           <button
             onClick={onOpenAdmin}
             aria-label={t.adminLogin}
-            className="p-2.5 rounded-xl bg-slate-950/80 border border-slate-800/80 hover:border-emerald-500/40 backdrop-blur-md text-slate-300 hover:text-emerald-300 transition-all shadow-lg flex items-center gap-1.5 text-xs font-medium"
+            className="group px-3.5 py-2 rounded-2xl bg-[#070c16]/90 border border-amber-500/35 hover:border-emerald-400/70 backdrop-blur-xl text-amber-100/90 hover:text-emerald-200 transition-all shadow-[0_6px_20px_rgba(0,0,0,0.85),0_0_15px_rgba(16,185,129,0.12)] hover:shadow-[0_0_22px_rgba(16,185,129,0.35)] flex items-center gap-2 text-xs font-grimoire tracking-wider cursor-pointer active:scale-95"
           >
-            <Lock className="w-4 h-4" />
-            <span className="hidden sm:inline">{t.adminLogin}</span>
+            <img
+              src="/icons/sigil_admin.png"
+              alt=""
+              className="w-6 h-6 object-contain group-hover:scale-110 transition-transform duration-300"
+            />
+            <span className="hidden sm:inline font-semibold">{t.adminLogin}</span>
           </button>
         </div>
       </div>
 
-      {/* Categories Filter Strip */}
-      <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-1 pointer-events-auto">
+      {/* Categories Filter Strip (Occult Sigil Medallions) */}
+      <div className="flex items-center gap-2.5 overflow-x-auto no-scrollbar py-1 pointer-events-auto">
         {categories.map((cat) => {
           const isSelected = selectedCategory === cat.id;
-          const Icon = categoryIcons[cat.id];
+          const sigilUrl = categorySigils[cat.id];
           return (
             <button
               key={cat.id}
               onClick={() => onSelectCategory(cat.id)}
               aria-label={cat.label}
               title={cat.label}
-              className={`p-2.5 rounded-xl border backdrop-blur-md shadow-md transition-all active:scale-95 focus:outline-none focus:ring-1 focus:ring-emerald-500/40 ${
+              className={`group relative w-12 h-12 rounded-2xl border backdrop-blur-xl transition-all duration-300 flex items-center justify-center cursor-pointer active:scale-95 focus:outline-none ${
                 isSelected
-                  ? 'bg-emerald-500 text-slate-950 border-emerald-400 shadow-[0_0_15px_rgba(16,185,129,0.4)]'
-                  : 'bg-slate-950/80 text-slate-300 border-slate-800/80 hover:border-slate-700 hover:text-white'
+                  ? 'bg-gradient-to-b from-emerald-950/95 via-[#071f1b] to-[#041014] border-amber-400/80 shadow-[0_0_24px_rgba(16,185,129,0.55),inset_0_0_12px_rgba(251,191,36,0.25)] scale-105'
+                  : 'bg-[#070c16]/85 border-amber-500/25 hover:border-emerald-400/60 shadow-[0_6px_18px_rgba(0,0,0,0.8)] hover:scale-105'
               }`}
             >
-              <Icon className="w-4 h-4" />
+              {/* Subtle corner rune accent */}
+              {isSelected && (
+                <span className="pointer-events-none absolute -top-0.5 -right-0.5 w-2 h-2 rounded-full bg-[#00ff88] shadow-[0_0_8px_#00ff88] animate-ping" />
+              )}
+              <img
+                src={sigilUrl}
+                alt={cat.label}
+                className={`w-8 h-8 object-contain transition-transform duration-300 group-hover:scale-110 ${
+                  isSelected
+                    ? 'drop-shadow-[0_0_10px_rgba(52,211,153,0.85)]'
+                    : 'opacity-85 group-hover:opacity-100'
+                }`}
+              />
             </button>
           );
         })}

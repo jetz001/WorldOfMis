@@ -38,7 +38,7 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     pinsRef.current = pins;
   }, [pins]);
 
-  const [hoveredPin, setHoveredPin] = useState<{ pin: GhostPin; x: number; y: number } | null>(null);
+  const [previewPin, setPreviewPin] = useState<GhostPin | null>(null);
   const [magnetTarget, setMagnetTarget] = useState<{
     pin: GhostPin;
     dx: number;
@@ -299,6 +299,11 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
       }
     });
 
+    // Clicking empty space on the globe dismisses the miniature preview card
+    map.on('click', () => {
+      setPreviewPin(null);
+    });
+
     return () => {
       // Clear markers
       markersRef.current.forEach((m) => m.remove());
@@ -312,6 +317,7 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
   // Pull the camera back to the full-globe overview
   const flyToWorldView = useCallback(() => {
     if (!mapRef.current) return;
+    setPreviewPin(null);
     mapRef.current.flyTo({
       center: WORLD_VIEW_CENTER,
       zoom: WORLD_VIEW_ZOOM,
@@ -380,17 +386,11 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
       el.appendChild(innerWrap);
       markerInnerElsRef.current.set(pin.id, innerWrap);
 
-      el.addEventListener('mouseenter', (e) => {
-        setHoveredPin({ pin, x: e.clientX, y: e.clientY });
-      });
-
-      el.addEventListener('mouseleave', () => {
-        setHoveredPin(null);
-      });
-
+      // Clicking a pin shows ONLY the miniature preview card at the center reticle;
+      // clicking that miniature card then opens the full StoryDrawer.
       el.addEventListener('click', (e) => {
         e.stopPropagation();
-        onSelectPin(pin);
+        setPreviewPin(pin);
         flyToPin(pin);
       });
 
@@ -556,35 +556,40 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
             />
           </svg>
 
-          {/* Clickable Magnetic Lock-On Dossier Card with Miniature Creature Portrait */}
-          {magnetTarget && (() => {
-            const magnetDossier = getEntityDossier(magnetTarget.pin, language);
+          {/* Miniature Creature Preview Card (Appears ONLY when a pin is clicked, and opens full StoryDrawer when clicked) */}
+          {previewPin && (() => {
+            const previewDossier = getEntityDossier(previewPin, language);
             return (
               <button
                 type="button"
-                onClick={() => {
-                  onSelectPin(magnetTarget.pin);
-                  flyToPin(magnetTarget.pin);
+                onClick={(e) => {
+                  e.stopPropagation();
+                  const target = previewPin;
+                  setPreviewPin(null);
+                  onSelectPin(target);
                 }}
-                className="pointer-events-auto absolute top-full mt-2.5 pl-2 pr-4 py-1.5 rounded-2xl bg-[#070c15]/95 border border-amber-400/50 backdrop-blur-xl shadow-[0_10px_30px_rgba(0,0,0,0.85),0_0_20px_rgba(16,185,129,0.4)] flex items-center gap-3 whitespace-nowrap hover:border-emerald-400 hover:scale-105 transition-all cursor-pointer text-left"
+                className="pointer-events-auto absolute top-full mt-2.5 pl-2.5 pr-4 py-2 rounded-2xl bg-[#070c15]/95 border border-amber-400/55 backdrop-blur-xl shadow-[0_12px_32px_rgba(0,0,0,0.9),0_0_22px_rgba(16,185,129,0.45)] flex items-center gap-3 whitespace-nowrap hover:border-emerald-400 hover:scale-105 transition-all cursor-pointer text-left animate-in fade-in zoom-in-95 duration-200"
               >
-                <div className="relative w-11 h-11 rounded-xl overflow-hidden border border-amber-400/50 shrink-0 bg-slate-900">
+                <div className="relative w-12 h-12 rounded-xl overflow-hidden border border-amber-400/50 shrink-0 bg-slate-900">
                   <img
-                    src={magnetDossier.portraitUrl}
-                    alt={magnetTarget.pin.title_th}
+                    src={previewDossier.portraitUrl}
+                    alt={previewPin.title_th}
                     className="w-full h-full object-cover"
                   />
                   <span className="absolute bottom-0.5 right-0.5 w-2 h-2 rounded-full bg-[#00ff88] ring-1 ring-black animate-ping" />
                 </div>
                 <div className="min-w-0">
                   <p className="font-grimoire text-sm font-bold text-amber-100 leading-tight">
-                    {language === 'th' ? magnetTarget.pin.title_th : magnetTarget.pin.title_en}
+                    {language === 'th' ? previewPin.title_th : previewPin.title_en}
                   </p>
-                  <p className="text-[11px] text-emerald-300/90 truncate max-w-[190px]">
-                    {magnetDossier.entityType}
+                  <p className="text-[11px] text-emerald-300/90 truncate max-w-[210px] mt-0.5">
+                    {previewDossier.entityType}
                   </p>
-                  <p className="text-[10px] text-slate-400">
-                    📍 {language === 'th' ? magnetTarget.pin.province_th : magnetTarget.pin.province_en}
+                  <p className="text-[10px] text-amber-200/80 mt-0.5 flex items-center gap-1">
+                    <span>📍 {language === 'th' ? previewPin.province_th : previewPin.province_en}</span>
+                    <span className="text-emerald-400 font-semibold ml-1">
+                      • {language === 'th' ? 'กดเพื่อเปิดคัมภีร์ ↗' : 'Click to open ↗'}
+                    </span>
                   </p>
                 </div>
               </button>
@@ -592,39 +597,6 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
           })()}
         </div>
       </div>
-
-      {/* Floating Tactical Tooltip with Miniature Creature Portrait on Pin Hover */}
-      {hoveredPin && (() => {
-        const hoverDossier = getEntityDossier(hoveredPin.pin, language);
-        return (
-          <div
-            className="pointer-events-none fixed z-30 transform -translate-x-1/2 -translate-y-full mb-4 pl-2.5 pr-4 py-2 rounded-2xl bg-[#070c15]/95 border border-amber-400/55 backdrop-blur-xl shadow-[0_12px_32px_rgba(0,0,0,0.85),0_0_22px_rgba(0,255,136,0.3)] flex items-center gap-3 animate-in fade-in duration-150"
-            style={{ left: hoveredPin.x, top: hoveredPin.y - 14 }}
-          >
-            <div className="relative w-12 h-12 rounded-xl overflow-hidden border border-amber-400/50 shrink-0 bg-slate-900">
-              <img
-                src={hoverDossier.portraitUrl}
-                alt={hoveredPin.pin.title_th}
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div>
-              <div className="flex items-center gap-1.5">
-                <span className="w-2 h-2 rounded-full bg-[#00ff88] animate-ping" />
-                <p className="font-grimoire font-bold text-sm text-amber-100">
-                  {language === 'th' ? hoveredPin.pin.title_th : hoveredPin.pin.title_en}
-                </p>
-              </div>
-              <p className="text-[11px] text-emerald-300/90 mt-0.5 max-w-[210px] truncate">
-                {hoverDossier.entityType}
-              </p>
-              <p className="text-[10px] text-slate-400 mt-0.5">
-                📍 {language === 'th' ? hoveredPin.pin.province_th : hoveredPin.pin.province_en} • {hoverDossier.size}
-              </p>
-            </div>
-          </div>
-        );
-      })()}
     </div>
   );
 };
