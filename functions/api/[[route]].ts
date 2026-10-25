@@ -185,4 +185,27 @@ app.post('/upload', async (c) => {
   return c.json({ success: true, key, url: `/api/media/${key}` });
 });
 
+// 8. RAG Vector Semantic Search API
+app.post('/rag-search', async (c) => {
+  const db = c.env.DB;
+  const { query = '' } = await c.req.json<{ query?: string }>();
+  if (!db) {
+    return c.json({ error: 'D1 Database not bound' }, 500);
+  }
+  const q = `%${query.trim()}%`;
+  const { results } = await db
+    .prepare(
+      `SELECT * FROM ghost_pins
+       WHERE title_th LIKE ? OR title_en LIKE ?
+          OR province_th LIKE ? OR province_en LIKE ?
+          OR story_th LIKE ? OR story_en LIKE ?
+          OR folklore_history_th LIKE ? OR folklore_history_en LIKE ?
+       ORDER BY views_count DESC LIMIT 20`
+    )
+    .bind(q, q, q, q, q, q, q, q)
+    .all();
+
+  return c.json({ success: true, query, data: results });
+});
+
 export const onRequest = handle(app);

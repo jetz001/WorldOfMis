@@ -7,6 +7,7 @@ import { StoryDrawer } from './components/UI/StoryDrawer';
 import { AdminPortal } from './components/Admin/AdminPortal';
 import { BookOpen, ChevronUp, Sparkles } from 'lucide-react';
 import { getTranslation } from './lib/i18n';
+import { performVectorRagSearch } from './lib/vectorRagSearch';
 
 export function App() {
   const [pins, setPins] = useState<GhostPin[]>([]);
@@ -23,9 +24,7 @@ export function App() {
   useEffect(() => {
     fetchPins().then((data) => {
       setPins(data);
-      if (data.length > 0 && !selectedPin) {
-        setSelectedPin(data[0]);
-      }
+      setSelectedPin((prev) => prev ?? (data.length > 0 ? data[0] : null));
     });
   }, []);
 
@@ -50,29 +49,24 @@ export function App() {
     setIsDrawerOpen(false);
   }, []);
 
-  // Filter pins based on category & search query
+  // Category-filtered pins
+  const categoryFilteredPins = useMemo(() => {
+    if (selectedCategory === 'all') return pins;
+    return pins.filter((pin) => pin.category === selectedCategory);
+  }, [pins, selectedCategory]);
+
+  // Hybrid RAG + Vector Semantic Search over category-filtered pins
+  const ragResponse = useMemo(() => {
+    return performVectorRagSearch(searchQuery, categoryFilteredPins, language, 50);
+  }, [searchQuery, categoryFilteredPins, language]);
+
+  // Pins shown on the 3D Globe
   const filteredPins = useMemo(() => {
-    return pins.filter((pin) => {
-      // Category filter
-      if (selectedCategory !== 'all' && pin.category !== selectedCategory) {
-        return false;
-      }
-      // Search query
-      if (searchQuery.trim()) {
-        const q = searchQuery.toLowerCase();
-        const matchTitle =
-          pin.title_th.toLowerCase().includes(q) || pin.title_en.toLowerCase().includes(q);
-        const matchProvince =
-          pin.province_th.toLowerCase().includes(q) ||
-          pin.province_en.toLowerCase().includes(q);
-        const matchDistrict =
-          (pin.district_th && pin.district_th.toLowerCase().includes(q)) ||
-          (pin.district_en && pin.district_en.toLowerCase().includes(q));
-        return matchTitle || matchProvince || matchDistrict;
-      }
-      return true;
-    });
-  }, [pins, selectedCategory, searchQuery]);
+    if (!searchQuery.trim()) {
+      return categoryFilteredPins;
+    }
+    return ragResponse.results.map((r) => r.pin);
+  }, [searchQuery, categoryFilteredPins, ragResponse]);
 
   // Admin CRUD Handlers
   const handleAddPin = async (newPin: GhostPin) => {
@@ -109,9 +103,11 @@ export function App() {
         onSelectCategory={setSelectedCategory}
         onOpenAdmin={() => setIsAdminOpen(true)}
         onZoomOut={handleZoomOutToWorld}
+        ragResponse={ragResponse}
+        onSelectPin={handleSelectPin}
       />
 
-      {/* Main 3D Three.js Earth Scene */}
+      {/* Main 3D Earth Scene */}
       <main className="flex-1 w-full h-full">
         <GhostGlobe
           pins={filteredPins}
