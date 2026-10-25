@@ -8,7 +8,6 @@ import { RotateCw } from 'lucide-react';
 setWorkerUrl('/maplibre-gl-worker.mjs');
 import type { GhostPin, SupportedLanguage } from '../../types/ghost';
 import { registerCloudMistProtocol } from './cloudMistLayer';
-import { getEntityDossier } from '../../lib/entityBestiary';
 
 // Shared world overview camera values, used both on init and when zooming out
 const WORLD_VIEW_CENTER: [number, number] = [100.5, 13.75]; // Centered on Thailand / Asia
@@ -39,7 +38,6 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     pinsRef.current = pins;
   }, [pins]);
 
-  const [previewPin, setPreviewPin] = useState<GhostPin | null>(null);
   const [magnetTarget, setMagnetTarget] = useState<{
     pin: GhostPin;
     dx: number;
@@ -54,7 +52,6 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
   const spinTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const selectedPinRef = useRef<GhostPin | null>(selectedPin);
-  const previewPinRef = useRef<GhostPin | null>(previewPin);
 
   const spinGlobe = useCallback(() => {
     const map = mapRef.current;
@@ -68,8 +65,7 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
       isSpinningRef.current &&
       !userInteractingRef.current &&
       zoom < maxSpinZoom &&
-      !selectedPinRef.current &&
-      !previewPinRef.current
+      !selectedPinRef.current
     ) {
       let distancePerSecond = 360 / secondsPerRevolution;
       if (zoom > slowSpinZoom) {
@@ -97,13 +93,6 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
       resumeSpinAfterDelay();
     }
   }, [selectedPin, resumeSpinAfterDelay]);
-
-  useEffect(() => {
-    previewPinRef.current = previewPin;
-    if (!previewPin && isSpinningRef.current) {
-      resumeSpinAfterDelay();
-    }
-  }, [previewPin, resumeSpinAfterDelay]);
 
   // Compute closest pin to screen center and apply gentle magnetic pull on markers
   const updateMagneticField = useCallback(() => {
@@ -390,11 +379,6 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
       }
     });
 
-    // Clicking empty space on the globe dismisses the miniature preview card
-    map.on('click', () => {
-      setPreviewPin(null);
-    });
-
     return () => {
       if (spinTimeoutRef.current) clearTimeout(spinTimeoutRef.current);
       // Clear markers
@@ -409,7 +393,6 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
   // Pull the camera back to the full-globe overview
   const flyToWorldView = useCallback(() => {
     if (!mapRef.current) return;
-    setPreviewPin(null);
     mapRef.current.flyTo({
       center: WORLD_VIEW_CENTER,
       zoom: WORLD_VIEW_ZOOM,
@@ -436,12 +419,12 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     markersRef.current = [];
     markerInnerElsRef.current.clear();
 
-    // Create high-visibility Spectral Green Dot Markers with magnetic inner wrapper
+    // Create high-visibility Spectral Green Dot Markers with hover preview card & click-to-zoom
     pins.forEach((pin) => {
       const isSelected = selectedPin?.id === pin.id;
 
       const el = document.createElement('div');
-      el.className = 'cursor-pointer select-none group';
+      el.className = 'cursor-pointer select-none group relative';
       el.style.width = '28px';
       el.style.height = '28px';
       el.style.display = 'flex';
@@ -478,12 +461,230 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
       el.appendChild(innerWrap);
       markerInnerElsRef.current.set(pin.id, innerWrap);
 
-      // Clicking a pin shows ONLY the miniature preview card at the center reticle;
-      // clicking that miniature card then opens the full StoryDrawer.
+      // Hover Preview Card (Appears on mouse hover without zooming the camera)
+      const card = document.createElement('div');
+      card.style.position = 'absolute';
+      card.style.zIndex = '9999';
+      card.style.width = '275px';
+      card.style.pointerEvents = 'auto';
+      card.style.opacity = '0';
+      card.style.visibility = 'hidden';
+      card.style.transition = 'opacity 180ms ease, transform 180ms ease, visibility 180ms';
+      card.style.transform = 'translateX(-50%) translateY(6px) scale(0.95)';
+      card.style.cursor = 'pointer';
+
+      const cardBox = document.createElement('div');
+      cardBox.style.display = 'flex';
+      cardBox.style.flexDirection = 'column';
+      cardBox.style.background = 'rgba(7, 12, 21, 0.96)';
+      cardBox.style.border = '1px solid rgba(251, 191, 36, 0.45)';
+      cardBox.style.borderRadius = '14px';
+      cardBox.style.overflow = 'hidden';
+      cardBox.style.backdropFilter = 'blur(16px)';
+      cardBox.style.boxShadow = '0 12px 32px rgba(0,0,0,0.85), 0 0 24px rgba(16, 185, 129, 0.35)';
+
+      // Header row with portrait + title & location
+      const headerRow = document.createElement('div');
+      headerRow.style.display = 'flex';
+      headerRow.style.gap = '10px';
+      headerRow.style.padding = '10px 10px 6px 10px';
+      headerRow.style.alignItems = 'center';
+
+      const thumbWrap = document.createElement('div');
+      thumbWrap.style.position = 'relative';
+      thumbWrap.style.width = '52px';
+      thumbWrap.style.height = '52px';
+      thumbWrap.style.borderRadius = '10px';
+      thumbWrap.style.overflow = 'hidden';
+      thumbWrap.style.border = '1px solid rgba(251, 191, 36, 0.5)';
+      thumbWrap.style.flexShrink = '0';
+      thumbWrap.style.background = '#0f172a';
+
+      const thumbImg = document.createElement('img');
+      thumbImg.src = pin.image_url || `/entities/${pin.id}.jpg`;
+      thumbImg.alt = pin.title_th;
+      thumbImg.style.width = '100%';
+      thumbImg.style.height = '100%';
+      thumbImg.style.objectFit = 'cover';
+      thumbWrap.appendChild(thumbImg);
+
+      const statusDot = document.createElement('span');
+      statusDot.style.position = 'absolute';
+      statusDot.style.bottom = '3px';
+      statusDot.style.right = '3px';
+      statusDot.style.width = '7px';
+      statusDot.style.height = '7px';
+      statusDot.style.borderRadius = '9999px';
+      statusDot.style.background = '#00ff88';
+      statusDot.style.boxShadow = '0 0 6px #00ff88';
+      thumbWrap.appendChild(statusDot);
+
+      headerRow.appendChild(thumbWrap);
+
+      const infoCol = document.createElement('div');
+      infoCol.style.minWidth = '0';
+      infoCol.style.flex = '1';
+
+      const catBadge = document.createElement('span');
+      catBadge.textContent = pin.category.toUpperCase();
+      catBadge.style.display = 'inline-block';
+      catBadge.style.fontSize = '9px';
+      catBadge.style.fontWeight = '700';
+      catBadge.style.color = '#34d399';
+      catBadge.style.background = 'rgba(16,185,129,0.15)';
+      catBadge.style.border = '1px solid rgba(16,185,129,0.3)';
+      catBadge.style.borderRadius = '4px';
+      catBadge.style.padding = '1px 5px';
+      catBadge.style.letterSpacing = '0.5px';
+      infoCol.appendChild(catBadge);
+
+      const titleEl = document.createElement('p');
+      titleEl.textContent = language === 'th' ? pin.title_th : pin.title_en;
+      titleEl.style.margin = '3px 0 0 0';
+      titleEl.style.fontSize = '13px';
+      titleEl.style.fontWeight = '700';
+      titleEl.style.color = '#fef3c7';
+      titleEl.style.lineHeight = '1.25';
+      titleEl.style.overflow = 'hidden';
+      titleEl.style.textOverflow = 'ellipsis';
+      titleEl.style.whiteSpace = 'nowrap';
+      infoCol.appendChild(titleEl);
+
+      const locEl = document.createElement('p');
+      locEl.textContent = `📍 ${language === 'th' ? pin.province_th : pin.province_en}`;
+      locEl.style.margin = '2px 0 0 0';
+      locEl.style.fontSize = '11px';
+      locEl.style.color = '#6ee7b7';
+      locEl.style.overflow = 'hidden';
+      locEl.style.textOverflow = 'ellipsis';
+      locEl.style.whiteSpace = 'nowrap';
+      infoCol.appendChild(locEl);
+
+      headerRow.appendChild(infoCol);
+      cardBox.appendChild(headerRow);
+
+      // Short teaser lore snippet
+      const snippetEl = document.createElement('div');
+      const fullStory = language === 'th' ? pin.story_th : pin.story_en;
+      snippetEl.textContent = fullStory.length > 92 ? fullStory.slice(0, 92) + '...' : fullStory;
+      snippetEl.style.padding = '0 10px 8px 10px';
+      snippetEl.style.fontSize = '11px';
+      snippetEl.style.lineHeight = '1.35';
+      snippetEl.style.color = '#94a3b8';
+      snippetEl.style.display = '-webkit-box';
+      snippetEl.style.webkitLineClamp = '2';
+      snippetEl.style.webkitBoxOrient = 'vertical';
+      snippetEl.style.overflow = 'hidden';
+      cardBox.appendChild(snippetEl);
+
+      // Bottom Call-to-action
+      const ctaBar = document.createElement('div');
+      ctaBar.style.display = 'flex';
+      ctaBar.style.alignItems = 'center';
+      ctaBar.style.justifyContent = 'space-between';
+      ctaBar.style.padding = '5px 10px';
+      ctaBar.style.background = 'rgba(15, 23, 42, 0.75)';
+      ctaBar.style.borderTop = '1px solid rgba(255,255,255,0.08)';
+      ctaBar.style.fontSize = '10px';
+      ctaBar.style.color = '#fbbf24';
+      ctaBar.style.fontWeight = '600';
+
+      const ctaText = document.createElement('span');
+      ctaText.textContent = language === 'th' ? '👆 คลิกเพื่อซูมเข้าสู่บันทึก' : '👆 Click to zoom & explore';
+      ctaBar.appendChild(ctaText);
+
+      const ctaArrow = document.createElement('span');
+      ctaArrow.textContent = '↗';
+      ctaArrow.style.color = '#34d399';
+      ctaArrow.style.fontSize = '12px';
+      ctaBar.appendChild(ctaArrow);
+
+      cardBox.appendChild(ctaBar);
+      card.appendChild(cardBox);
+
+      // Pointer Arrow Triangle
+      const arrow = document.createElement('div');
+      arrow.style.position = 'absolute';
+      arrow.style.width = '0';
+      arrow.style.height = '0';
+      arrow.style.borderLeft = '6px solid transparent';
+      arrow.style.borderRight = '6px solid transparent';
+      card.appendChild(arrow);
+
+      el.appendChild(card);
+
+      // Hover Interaction: shows card without zooming in
+      let isCardVisible = false;
+
+      const showCard = () => {
+        if (isCardVisible) return;
+        isCardVisible = true;
+        userInteractingRef.current = true;
+        if (spinTimeoutRef.current) clearTimeout(spinTimeoutRef.current);
+        el.style.zIndex = '99999';
+
+        const rect = el.getBoundingClientRect();
+        const screenWidth = window.innerWidth;
+        let shiftX = -50;
+        let arrowShiftX = 50;
+
+        if (rect.left < 155) {
+          shiftX = -15;
+          arrowShiftX = 18;
+        } else if (rect.right > screenWidth - 155) {
+          shiftX = -85;
+          arrowShiftX = 82;
+        }
+
+        const isTop = rect.top < 190;
+        if (isTop) {
+          card.style.bottom = 'auto';
+          card.style.top = '100%';
+          card.style.marginTop = '12px';
+          card.style.marginBottom = '0px';
+          arrow.style.bottom = 'auto';
+          arrow.style.top = '-6px';
+          arrow.style.borderTop = 'none';
+          arrow.style.borderBottom = '6px solid rgba(7, 12, 21, 0.96)';
+        } else {
+          card.style.top = 'auto';
+          card.style.bottom = '100%';
+          card.style.marginTop = '0px';
+          card.style.marginBottom = '12px';
+          arrow.style.top = 'auto';
+          arrow.style.bottom = '-6px';
+          arrow.style.borderBottom = 'none';
+          arrow.style.borderTop = '6px solid rgba(7, 12, 21, 0.96)';
+        }
+
+        arrow.style.left = `${arrowShiftX}%`;
+        arrow.style.transform = 'translateX(-50%)';
+
+        card.style.left = '50%';
+        card.style.transform = `translateX(${shiftX}%) translateY(0) scale(1)`;
+        card.style.opacity = '1';
+        card.style.visibility = 'visible';
+      };
+
+      const hideCard = () => {
+        if (!isCardVisible) return;
+        isCardVisible = false;
+        el.style.zIndex = '';
+        card.style.opacity = '0';
+        card.style.visibility = 'hidden';
+        card.style.transform = 'translateX(-50%) translateY(6px) scale(0.95)';
+        resumeSpinAfterDelay();
+      };
+
+      el.addEventListener('mouseenter', showCard);
+      el.addEventListener('mouseleave', hideCard);
+
+      // Click Interaction: zooms in and opens full StoryDrawer
       el.addEventListener('click', (e) => {
         e.stopPropagation();
-        setPreviewPin(pin);
+        hideCard();
         flyToPin(pin);
+        onSelectPin(pin);
       });
 
       const marker = new Marker({ element: el, anchor: 'center' })
@@ -494,7 +695,7 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     });
 
     updateMagneticField();
-  }, [pins, selectedPin, onSelectPin, flyToPin, updateMagneticField]);
+  }, [pins, selectedPin, onSelectPin, language, flyToPin, updateMagneticField]);
 
   const isLocked = Boolean(magnetTarget && magnetTarget.dist < 22);
 
@@ -648,45 +849,6 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
             />
           </svg>
 
-          {/* Miniature Creature Preview Card (Appears ONLY when a pin is clicked, and opens full StoryDrawer when clicked) */}
-          {previewPin && (() => {
-            const previewDossier = getEntityDossier(previewPin, language);
-            return (
-              <button
-                type="button"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  const target = previewPin;
-                  setPreviewPin(null);
-                  onSelectPin(target);
-                }}
-                className="pointer-events-auto absolute top-full mt-2.5 pl-2.5 pr-4 py-2 rounded-2xl bg-[#070c15]/95 border border-amber-400/55 backdrop-blur-xl shadow-[0_12px_32px_rgba(0,0,0,0.9),0_0_22px_rgba(16,185,129,0.45)] flex items-center gap-3 whitespace-nowrap hover:border-emerald-400 hover:scale-105 transition-all cursor-pointer text-left animate-in fade-in zoom-in-95 duration-200"
-              >
-                <div className="relative w-12 h-12 rounded-xl overflow-hidden border border-amber-400/50 shrink-0 bg-slate-900">
-                  <img
-                    src={previewDossier.portraitUrl}
-                    alt={previewPin.title_th}
-                    className="w-full h-full object-cover"
-                  />
-                  <span className="absolute bottom-0.5 right-0.5 w-2 h-2 rounded-full bg-[#00ff88] ring-1 ring-black animate-ping" />
-                </div>
-                <div className="min-w-0">
-                  <p className="font-sans text-sm font-bold text-amber-100 leading-tight">
-                    {language === 'th' ? previewPin.title_th : previewPin.title_en}
-                  </p>
-                  <p className="text-[11px] text-emerald-300/90 truncate max-w-[210px] mt-0.5">
-                    {previewDossier.entityType}
-                  </p>
-                  <p className="text-[10px] text-amber-200/80 mt-0.5 flex items-center gap-1">
-                    <span>📍 {language === 'th' ? previewPin.province_th : previewPin.province_en}</span>
-                    <span className="text-emerald-400 font-semibold ml-1">
-                      • {language === 'th' ? 'กดเพื่อเปิดคัมภีร์ ↗' : 'Click to open ↗'}
-                    </span>
-                  </p>
-                </div>
-              </button>
-            );
-          })()}
         </div>
       </div>
 
