@@ -233,7 +233,7 @@ app.post('/pins', async (c) => {
 
     await db
       .prepare(`
-        INSERT INTO ghost_pins (
+        INSERT OR REPLACE INTO ghost_pins (
           id, title_th, title_en, category, province_th, province_en,
           district_th, district_en, lat, lng, story_th, story_en,
           folklore_history_th, folklore_history_en, image_url, audio_url, gallery_media,
