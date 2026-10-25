@@ -30,9 +30,6 @@ export const CommentsPanel: React.FC<CommentsPanelProps> = ({
   const [authorName, setAuthorName] = useState('');
   const [commentText, setCommentText] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [selectedRole, setSelectedRole] = useState(
-    language === 'th' ? '👁️ พยานในพื้นที่' : '👁️ Local Witness'
-  );
 
   // Load comments whenever pin or sortMode changes
   const loadComments = useCallback(() => {
@@ -71,8 +68,7 @@ export const CommentsPanel: React.FC<CommentsPanelProps> = ({
     const newCmt = addPinComment(
       pin.id,
       authorName || (language === 'th' ? 'ผู้สำรวจนิรนาม' : 'Anonymous Explorer'),
-      commentText,
-      selectedRole
+      commentText
     );
 
     setCommentText('');
@@ -239,78 +235,22 @@ export const CommentsPanel: React.FC<CommentsPanelProps> = ({
       {/* Comment Form (Add new testimony) */}
       <form
         onSubmit={handleSubmit}
-        className="relative px-4 py-3 border-t border-amber-500/20 bg-gradient-to-t from-[#090f1c] to-[#060a14] space-y-2.5 shrink-0"
+        className="relative px-4 py-3 border-t border-amber-500/20 bg-gradient-to-t from-[#090f1c] to-[#060a14] space-y-2 shrink-0"
       >
-        <div className="flex items-center justify-between text-[11px] text-amber-200/80 font-medium">
-          <span className="flex items-center gap-1.5">
-            <Sparkles className="w-3 h-3 text-amber-400" />
-            {language === 'th' ? 'ร่วมบันทึกคำบอกเล่า' : 'Add Eyewitness Report'}
-          </span>
-          <span className="text-[10px] text-amber-300/80 font-mono">
-            {language === 'th' ? '✏️ กำหนดชื่อ & ฉายาได้อิสระ' : '✏️ Custom Name & Role'}
-          </span>
+        <div className="flex items-center gap-1.5 text-[11px] text-amber-200/80 font-medium">
+          <Sparkles className="w-3 h-3 text-amber-400" />
+          <span>{language === 'th' ? 'ร่วมบันทึกคำบอกเล่า' : 'Add Eyewitness Report'}</span>
         </div>
 
-        {/* Name and Role inputs side by side */}
-        <div className="grid grid-cols-2 gap-2">
-          <div>
-            <label className="block text-[10px] text-slate-400 mb-1">
-              {language === 'th' ? 'ชื่อผู้บันทึก' : 'Author Name'}
-            </label>
-            <input
-              type="text"
-              value={authorName}
-              onChange={(e) => setAuthorName(e.target.value)}
-              placeholder={language === 'th' ? 'ชื่อของคุณ หรือ นามแฝง...' : 'Your name / alias...'}
-              className="w-full text-xs px-2.5 py-1.5 rounded-lg bg-black/60 border border-slate-700 focus:border-amber-500/60 text-slate-100 placeholder-slate-500 outline-none transition-colors"
-              maxLength={40}
-            />
-          </div>
-
-          <div>
-            <div className="flex items-center justify-between mb-1">
-              <label className="block text-[10px] text-amber-300 font-medium">
-                {language === 'th' ? 'ฉายา / บทบาท' : 'Role / Title'}
-              </label>
-              <span className="text-[9px] text-amber-400/90 font-mono">
-                {language === 'th' ? '(พิมพ์เปลี่ยนชื่อได้)' : '(Editable)'}
-              </span>
-            </div>
-            <input
-              type="text"
-              value={selectedRole}
-              onChange={(e) => setSelectedRole(e.target.value)}
-              placeholder={language === 'th' ? 'พิมพ์ฉายาตามใจชอบ...' : 'Type custom role/badge...'}
-              className="w-full text-xs px-2.5 py-1.5 rounded-lg bg-black/60 border border-amber-500/40 focus:border-amber-400 text-amber-200 placeholder-slate-500 outline-none transition-colors"
-              maxLength={30}
-            />
-          </div>
-        </div>
-
-        {/* Quick Preset Chips for 1-click selection */}
-        <div className="flex items-center gap-1.5 overflow-x-auto pb-0.5 scrollbar-none text-[10px]">
-          <span className="text-slate-500 shrink-0 text-[9px]">{language === 'th' ? 'ตัวเลือกด่วน:' : 'Presets:'}</span>
-          {[
-            language === 'th' ? '🌙 นักเดินทางกลางคืน' : '🌙 Night Traveler',
-            language === 'th' ? '👁️ พยานในพื้นที่' : '👁️ Local Witness',
-            language === 'th' ? '📜 นักค้นคว้า' : '📜 Researcher',
-            language === 'th' ? '📸 ผู้บันทึกภาพ' : '📸 Photographer',
-            language === 'th' ? '🌲 พรานป่า' : '🌲 Forest Guide',
-            language === 'th' ? '🔮 สายมูตัวจริง' : '🔮 Mystic Believer',
-          ].map((preset) => (
-            <button
-              key={preset}
-              type="button"
-              onClick={() => setSelectedRole(preset)}
-              className={`px-2 py-0.5 rounded-md border shrink-0 transition-all cursor-pointer ${
-                selectedRole === preset
-                  ? 'bg-amber-500/25 text-amber-300 border-amber-500/50 shadow-[0_0_8px_rgba(245,158,11,0.2)]'
-                  : 'bg-slate-900/80 text-slate-400 border-slate-700/60 hover:text-slate-200 hover:border-slate-500'
-              }`}
-            >
-              {preset}
-            </button>
-          ))}
+        <div>
+          <input
+            type="text"
+            value={authorName}
+            onChange={(e) => setAuthorName(e.target.value)}
+            placeholder={language === 'th' ? 'ชื่อของคุณ หรือ นามแฝง...' : 'Your name / alias...'}
+            className="w-full text-xs px-3 py-1.5 rounded-lg bg-black/60 border border-slate-700 focus:border-amber-500/60 text-slate-100 placeholder-slate-500 outline-none transition-colors"
+            maxLength={40}
+          />
         </div>
 
         <div className="relative">
