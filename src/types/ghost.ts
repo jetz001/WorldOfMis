@@ -41,4 +41,4 @@ export interface AdminUser {
   role: string;
 }
 
-export type SupportedLanguage = 'th' | 'en';
+export type SupportedLanguage = 'th' | 'en' | 'ja' | 'zh' | 'ko' | 'es' | 'fr' | 'de' | 'ru' | 'id';

@@ -123,11 +123,12 @@ export function App() {
   };
 
   return (
-    <div className="relative w-screen h-screen overflow-hidden bg-[#03060c] text-slate-100 flex flex-col">
+    <div className="relative w-screen h-[100dvh] overflow-hidden bg-[#03060c] text-slate-100 flex flex-col">
       {/* Top Navigation & HUD */}
       <Navbar
         language={language}
         onToggleLanguage={handleToggleLanguage}
+        onSelectLanguage={setLanguage}
         searchQuery={searchQuery}
         onSearchChange={setSearchQuery}
         selectedCategory={selectedCategory}

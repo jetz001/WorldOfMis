@@ -7,6 +7,7 @@ import { RotateCw } from 'lucide-react';
 // returns the correct JS MIME type instead of an HTML 404 page.
 setWorkerUrl('/maplibre-gl-worker.mjs');
 import type { GhostPin, SupportedLanguage, GhostCategory } from '../../types/ghost';
+import { getTranslation } from '../../lib/i18n';
 import { registerCloudMistProtocol } from './cloudMistLayer';
 
 // Shared world overview camera values, used both on init and when zooming out
@@ -957,31 +958,35 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
         </div>
       </div>
 
-      {/* Auto-Rotation Control Pill (Bottom Left) */}
-      <div className="absolute bottom-6 left-6 z-20 flex items-center gap-2">
+      {/* Auto-Rotation Control Pill (Bottom Left - Fixed & Safe-Area Aware for Mobile & Desktop) */}
+      <div
+        className="fixed left-4 sm:left-6 z-30 flex items-center gap-2 pointer-events-auto"
+        style={{ bottom: 'max(1.25rem, calc(env(safe-area-inset-bottom, 0px) + 0.85rem))' }}
+      >
         <button
           type="button"
           onClick={() => {
             setIsSpinning((prev) => {
               const next = !prev;
               isSpinningRef.current = next;
-              if (next) spinGlobe();
+              if (next) {
+                userInteractingRef.current = false;
+                spinGlobe();
+              } else {
+                mapRef.current?.stop();
+              }
               return next;
             });
           }}
-          className={`px-3.5 py-1.5 rounded-full border backdrop-blur-xl text-xs font-medium flex items-center gap-2 transition-all cursor-pointer shadow-lg select-none ${
+          className={`px-3.5 py-2 sm:py-1.5 rounded-full border backdrop-blur-xl text-xs font-medium flex items-center gap-2 transition-all cursor-pointer shadow-lg select-none active:scale-95 ${
             isSpinning
-              ? 'bg-emerald-950/85 border-emerald-500/50 text-emerald-200 hover:bg-emerald-900/80 shadow-[0_0_15px_rgba(16,185,129,0.35)]'
-              : 'bg-slate-950/85 border-slate-700/60 text-slate-400 hover:bg-slate-900/80'
+              ? 'bg-emerald-950/90 border-emerald-500/60 text-emerald-200 hover:bg-emerald-900/85 shadow-[0_0_15px_rgba(16,185,129,0.4)]'
+              : 'bg-slate-950/90 border-slate-700/70 text-slate-300 hover:bg-slate-900/85'
           }`}
           title={
             isSpinning
-              ? language === 'th'
-                ? 'แตะเพื่อพักการหมุนโลก'
-                : 'Pause Globe Auto-Rotation'
-              : language === 'th'
-              ? 'แตะเพื่อเริ่มหมุนโลกช้าๆ อัตโนมัติ'
-              : 'Start Globe Auto-Rotation'
+              ? getTranslation(language).autoRotateOn
+              : getTranslation(language).autoRotateOff
           }
         >
           <RotateCw
@@ -990,13 +995,9 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
             }`}
           />
           <span>
-            {language === 'th'
-              ? isSpinning
-                ? 'หมุนโลกช้าๆ: เปิด'
-                : 'หมุนโลกช้าๆ: ปิด'
-              : isSpinning
-              ? 'Auto-Rotate: On'
-              : 'Auto-Rotate: Off'}
+            {isSpinning
+              ? getTranslation(language).autoRotateOn
+              : getTranslation(language).autoRotateOff}
           </span>
         </button>
       </div>

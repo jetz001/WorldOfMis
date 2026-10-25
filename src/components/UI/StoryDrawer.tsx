@@ -22,6 +22,7 @@ import {
 } from 'lucide-react';
 import type { GhostPin, SupportedLanguage, MediaItem } from '../../types/ghost';
 import { getTranslation } from '../../lib/i18n';
+import { translateText } from '../../lib/autoTranslate';
 import { getEntityDossier } from '../../lib/entityBestiary';
 import { CommentsPanel } from './CommentsPanel';
 
@@ -160,13 +161,90 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
     thumbsScrollRef.current.scrollBy({ left: offset, behavior: 'smooth' });
   };
 
+  // Auto-translate story & dossier fields when language is outside th/en
+  const [translatedFields, setTranslatedFields] = useState<{
+    title?: string;
+    province?: string;
+    district?: string;
+    history?: string;
+    appearanceDesc?: string;
+    expandedStory?: string;
+    entityType?: string;
+    habitat?: string;
+    omensAndTaboos?: string[];
+  } | null>(null);
+
+  useEffect(() => {
+    if (!pin || !dossier || language === 'th' || language === 'en') {
+      setTranslatedFields(null);
+      return;
+    }
+    let cancelled = false;
+    (async () => {
+      const [
+        tTitle,
+        tProv,
+        tDist,
+        tHist,
+        tApp,
+        tStory,
+        tType,
+        tHab,
+        ...tRules
+      ] = await Promise.all([
+        translateText(pin.title_en, language),
+        translateText(pin.province_en, language),
+        pin.district_en ? translateText(pin.district_en, language) : Promise.resolve(''),
+        translateText(pin.folklore_history_en, language),
+        translateText(dossier.appearanceDesc, language),
+        translateText(dossier.expandedStory, language),
+        translateText(dossier.entityType, language),
+        translateText(dossier.habitat, language),
+        ...dossier.omensAndTaboos.map((r) => translateText(r, language)),
+      ]);
+      if (!cancelled) {
+        setTranslatedFields({
+          title: tTitle,
+          province: tProv,
+          district: tDist,
+          history: tHist,
+          appearanceDesc: tApp,
+          expandedStory: tStory,
+          entityType: tType,
+          habitat: tHab,
+          omensAndTaboos: tRules,
+        });
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [pin, dossier, language]);
+
   if (!pin || !dossier) return null;
 
-  const title = language === 'th' ? pin.title_th : pin.title_en;
+  const title =
+    language === 'th'
+      ? pin.title_th
+      : translatedFields?.title || pin.title_en;
   const subTitle = language === 'th' ? pin.title_en : pin.title_th;
-  const province = language === 'th' ? pin.province_th : pin.province_en;
-  const district = language === 'th' ? pin.district_th : pin.district_en;
-  const history = language === 'th' ? pin.folklore_history_th : pin.folklore_history_en;
+  const province =
+    language === 'th'
+      ? pin.province_th
+      : translatedFields?.province || pin.province_en;
+  const district =
+    language === 'th'
+      ? pin.district_th
+      : translatedFields?.district || pin.district_en;
+  const history =
+    language === 'th'
+      ? pin.folklore_history_th
+      : translatedFields?.history || pin.folklore_history_en;
+  const displayAppearance = translatedFields?.appearanceDesc || dossier.appearanceDesc;
+  const displayExpandedStory = translatedFields?.expandedStory || dossier.expandedStory;
+  const displayEntityType = translatedFields?.entityType || dossier.entityType;
+  const displayHabitat = translatedFields?.habitat || dossier.habitat;
+  const displayTaboos = translatedFields?.omensAndTaboos || dossier.omensAndTaboos;
   const categoryLabel = t.categories[pin.category] || pin.category;
 
   const currentMedia = mediaItems[activeMediaIndex] || mediaItems[0];
@@ -561,7 +639,7 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
                     {language === 'th' ? 'ประเภท / สายพันธุ์ (Classification)' : 'Classification / Type'}
                   </p>
                   <p className="font-semibold text-emerald-200 mt-0.5">
-                    {dossier.entityType}
+                    {displayEntityType}
                   </p>
                 </div>
               </div>
@@ -617,7 +695,7 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
                   <p className="text-[10px] uppercase tracking-wider text-slate-400">
                     {language === 'th' ? 'ถิ่นอาศัยและจุดพบบ่อย (Habitat)' : 'Primary Habitat & Haunting Ground'}
                   </p>
-                  <p className="font-medium text-slate-200 mt-0.5">{dossier.habitat}</p>
+                  <p className="font-medium text-slate-200 mt-0.5">{displayHabitat}</p>
                 </div>
               </div>
             </div>
@@ -634,7 +712,7 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
               </span>
             </div>
             <div className="p-4 rounded-2xl bg-[#09111c]/85 border border-amber-500/20 text-sm leading-relaxed text-slate-100 font-sans">
-              {dossier.appearanceDesc}
+              {displayAppearance}
             </div>
           </div>
 
@@ -645,7 +723,7 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
               <span>{t.storyDetail}</span>
             </div>
             <div className="p-5 rounded-2xl bg-[#08121a]/90 border border-emerald-500/25 text-sm sm:text-base leading-relaxed sm:leading-8 text-slate-100 font-sans whitespace-pre-line">
-              {dossier.expandedStory}
+              {displayExpandedStory}
             </div>
           </div>
 
@@ -671,7 +749,7 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
               </span>
             </div>
             <ul className="space-y-1.5 text-xs text-slate-300">
-              {dossier.omensAndTaboos.map((rule, idx) => (
+              {displayTaboos.map((rule, idx) => (
                 <li key={idx} className="flex items-start gap-2">
                   <span className="text-rose-400 font-bold mt-0.5">•</span>
                   <span>{rule}</span>

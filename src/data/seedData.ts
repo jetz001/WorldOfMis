@@ -5920,5 +5920,665 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
         "thumbnail": "/entities/pin-rainbowserpent.jpg"
       }
     ]
+  },
+  {
+    "id": "pin-phibong",
+    "title_th": "ผีกองกอย (ภูตป่าขาเดียวผู้ส่งเสียงร้องกอยๆ ยามค่ำคืน)",
+    "title_en": "Phi Kong Koi, The One-Legged Jungle Hopper of Loei",
+    "category": "monster",
+    "province_th": "เลย",
+    "province_en": "Loei (Thailand)",
+    "district_th": "ภูกระดึง - ป่าดงดิบภูหลวง",
+    "district_en": "Phu Kradueng & Phu Luang Wildlife Sanctuary",
+    "lat": 16.8906,
+    "lng": 101.7925,
+    "story_th": "ภูตผีป่าดงดิบที่มีขาเพียงข้างเดียว เคลื่อนที่ด้วยการกระโดดเขย่งไปมาอย่างรวดเร็ว ปากมีท่อยาวเหมือนหลอดใช้เจาะดูดเลือดจากหัวแม่เท้าของคนเดินป่าที่นอนหลับโดยไม่ก่อกองไฟ",
+    "story_en": "A bizarre one-legged jungle cryptid and spirit that hops backward through dense mountain mist, crying 'Koi! Koi!' in the dead of night as it searches for sleeping trekkers.",
+    "folklore_history_th": "ชาวบ้านและพรานป่าเชื่อว่าผีกองกอยมีหน้าตากลับหลังหรือเดินถอยหลังเพื่อหลอกทิศทางผู้สะกดรอย และมักซ่อนสมบัติล้ำค่าไว้ในโพรงไม้ลึก",
+    "folklore_history_en": "Northern and Isan forest lore describes the Kong Koi as having backward-facing feet to confuse trackers, guarding hidden jungle relics.",
+    "image_url": "/entities/pin-phibong.jpg",
+    "sound_preset": "jungle_curse",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "/entities/pin-phibong.jpg",
+        "title": "ผีกองกอย (ภูตป่าขาเดียวผู้ส่งเสียงร้องกอยๆ ยามค่ำคืน)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=tyBNJd9CwcY",
+        "title": "อาจารย์ยอด : ผีกองกอย [ผี] new",
+        "thumbnail": "/entities/pin-phibong.jpg"
+      }
+    ]
+  },
+  {
+    "id": "pin-maeyanang",
+    "title_th": "แม่ย่านางเรือ (เทวีผู้คุ้มครองนาวาและนักเดินเรือสยาม)",
+    "title_en": "Mae Yanang, Sacred Guardian Spirit of Siamese Vessels",
+    "category": "sacred",
+    "province_th": "กรุงเทพมหานคร",
+    "province_en": "Bangkok (Thailand)",
+    "district_th": "คลองบางกอกน้อย - แม่น้ำเจ้าพระยา",
+    "district_en": "Bangkok Noi Canal, Chao Phraya River",
+    "lat": 13.7617,
+    "lng": 100.4853,
+    "story_th": "สิ่งศักดิ์สิทธิ์ประจำหัวเรือพระราชพิธี เรือประมง และยานพาหนะตามความเชื่อไทย เชื่อว่าสถิตอยู่ที่โขนเรือคอยปกปักรักษาผู้เดินทางให้รอดพ้นจากพายุคลื่นยักษ์และภูตผีพรายน้ำ",
+    "story_en": "The revered tutelary goddess residing in the prows of Thai royal barges, fishing trawlers, and modern vehicles, shielding crews from deadly squalls and river phantoms.",
+    "folklore_history_th": "ก่อนนำเรือออกเดินทางทุกครั้ง ชาวเรือจะผูกผ้าสามสี พวงมาลัย และทำพิธีเซ่นไหว้แม่ย่านางอย่างเคร่งครัด ห้ามเหยียบหัวเรือหรือพูดจาอัปมงคลบนเรือ",
+    "folklore_history_en": "Traditionally honored with three-colored silk ribbons and jasmine garlands tied to the bow, sailors strictly forbid stepping on a boat's prow out of respect for Mae Yanang.",
+    "image_url": "/entities/pin-maeyanang.jpg",
+    "sound_preset": "water_spirit",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "/entities/pin-maeyanang.jpg",
+        "title": "แม่ย่านางเรือ (เทวีผู้คุ้มครองนาวาและนักเดินเรือสยาม)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=wDknWZ6F2II",
+        "title": "แม่ย่านางเรือพระที่นั่งสุพรรณหงส์ น้อยใจ! ตำนานเล่าปาฏิหาริย์หลายเรื่องราว",
+        "thumbnail": "/entities/pin-maeyanang.jpg"
+      }
+    ]
+  },
+  {
+    "id": "pin-wiangyonok",
+    "title_th": "เวียงหนองล่มและอาถรรพ์ปลาไหลเผือกแห่งโยนกนคร",
+    "title_en": "Wiang Nong Lom & The White Eel Curse of Yonok Nakhon",
+    "category": "curse",
+    "province_th": "เชียงราย",
+    "province_en": "Chiang Rai (Thailand)",
+    "district_th": "ทะเลสาบเชียงแสน (เวียงหนองล่ม)",
+    "district_en": "Chiang Saen Lake Basin",
+    "lat": 20.2286,
+    "lng": 100.0331,
+    "story_th": "ตำนานมหานครโยนกนาคพันธุ์ที่ล่มสลายกลายเป็นหนองน้ำขนาดใหญ่ในคืนเดียว หลังจากชาวเมืองจับปลาไหลเผือกยักษ์เท่าลำตาล (พญานาคจำแลง) มาแล่เนื้อแบ่งกันกินเกือบทั้งเมือง",
+    "story_en": "The Atlantis of Northern Thailand: the prosperous kingdom of Yonok Nakhon sank beneath a deep lake in a single catastrophic night after townsfolk slaughtered and ate a giant white eel—an incarnation of the Naga King.",
+    "folklore_history_th": "มีเพียงหญิงหม้ายชรานางเดียวที่ไม่ได้กินเนื้อปลาไหลเผือกจึงรอดชีวิต เกาะของนางยังคงเหลือเป็นดอนแม่หม้ายกลางหนองน้ำเชียงแสนจนถึงทุกวันนี้",
+    "folklore_history_en": "Only an elderly widow who refused to eat the sacred white eel survived; her homestead remained above water as 'Widow's Island' in the middle of Chiang Saen Lake.",
+    "image_url": "/entities/pin-wiangyonok.jpg",
+    "sound_preset": "water_spirit",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "/entities/pin-wiangyonok.jpg",
+        "title": "เวียงหนองล่มและอาถรรพ์ปลาไหลเผือกแห่งโยนกนคร"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=d7v90owNTy0",
+        "title": "โยนกนคร เกิดอาเพศ กินปลาไหลเผือก เวียงหนองหล่ม เมืองทั้งเมืองจึงล่มสลาย",
+        "thumbnail": "/entities/pin-wiangyonok.jpg"
+      }
+    ]
+  },
+  {
+    "id": "pin-khao-kitchakut",
+    "title_th": "เขาคิชฌกูฏและตำนานหินลูกพระบาทลอยฟ้า",
+    "title_en": "Khao Khitchakut & The Defying Gravity Sacred Boulder",
+    "category": "sacred",
+    "province_th": "จันทบุรี",
+    "province_en": "Chanthaburi (Thailand)",
+    "district_th": "อุทยานแห่งชาติเขาคิชฌกูฏ",
+    "district_en": "Khao Khitchakut National Park",
+    "lat": 12.8389,
+    "lng": 102.1644,
+    "story_th": "ยอดเขาศักดิ์สิทธิ์สูงเสียดฟ้าที่มีก้อนหินกลมขนาดยักษ์ 'หินลูกพระบาท' ตั้งหมิ่นเหม่ริมหน้าผาเคียงคู่รอยพระพุทธบาทที่สูงที่สุดในประเทศไทย มีเรื่องเล่าว่าสามารถมองเห็นเส้นด้ายลอดผ่านใต้ก้อนหินยักษ์ได้",
+    "story_en": "A mist-shrouded mountain peak crowned by a colossal spherical granite boulder balanced precariously at the cliff edge beside Thailand's highest sacred Buddha footprint.",
+    "folklore_history_th": "เปิดให้ผู้แสวงบุญเดินเท้าขึ้นยอดเขาเพียงปีละหนึ่งครั้ง พร้อมตำนานเมืองลับแลและปู่ฤษีผู้รักษาขุมทรัพย์ศักดิ์สิทธิ์บนยอดเขา",
+    "folklore_history_en": "Opened to midnight pilgrims for only two months each year, local lore surrounds the peak with tales of hidden Laplae spirit villages and guardian ascetics.",
+    "image_url": "/entities/pin-khao-kitchakut.jpg",
+    "sound_preset": "temple_bell",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "/entities/pin-khao-kitchakut.jpg",
+        "title": "เขาคิชฌกูฏและตำนานหินลูกพระบาทลอยฟ้า"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=TZxbVqmvwaI",
+        "title": "หินลอยได้แห่งขุนเขา: ปรากฏการณ์ปาฏิหาริย์หรือฟิสิกส์ลวงตาที่ ‘เขาคิชฌกูฏ’ | #ตำนานเช้านี้",
+        "thumbnail": "/entities/pin-khao-kitchakut.jpg"
+      }
+    ]
+  },
+  {
+    "id": "pin-prasat-hin-phanom-rung",
+    "title_th": "ปราสาทหินพนมรุ้ง (เทวสถานหินทรายสีชมพูบนปากปล่องภูเขาไฟ)",
+    "title_en": "Phanom Rung Sanctuary Atop the Extinct Volcano",
+    "category": "sacred",
+    "province_th": "บุรีรัมย์",
+    "province_en": "Buri Ram (Thailand)",
+    "district_th": "เฉลิมพระเกียรติ - เขาพนมรุ้ง",
+    "district_en": "Chaloem Phra Kiat, Mount Phanom Rung",
+    "lat": 14.5319,
+    "lng": 102.9403,
+    "story_th": "มหาเทวสถานขอมโบราณที่สร้างขึ้นจากหินทรายสีชมพูและศิลาแลงบนยอดภูเขาไฟที่ดับสนิทแล้ว ออกแบบตามหลักดาราศาสตร์ศักดิ์สิทธิ์จนแสงอาทิตย์ส่องทะลุประตูทั้ง 15 บานตรงกันอย่างน่าอัศจรรย์",
+    "story_en": "A majestic pink-sandstone Khmer temple complex built on the rim of an extinct volcano to mirror Mount Kailash. Twice a year, the rising sun aligns precisely through all 15 sanctuary doorways.",
+    "folklore_history_th": "มีตำนานทับหลังนารายณ์บรรทมสินธุ์ที่เคยถูกโจรกรรมไปต่างประเทศก่อนจะได้กลับคืนมาอย่างปาฏิหาริย์ ซึ่งชาวบ้านเชื่อว่าเป็นเพราะอาถรรพ์สิ่งศักดิ์สิทธิ์ผู้พิทักษ์ปราสาท",
+    "folklore_history_en": "Famous for the Phra Narai lintel that was looted during the 1960s and miraculously repatriated in 1988, attributed by locals to the temple's guardian spirits.",
+    "image_url": "/entities/pin-prasat-hin-phanom-rung.jpg",
+    "sound_preset": "temple_bell",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "/entities/pin-prasat-hin-phanom-rung.jpg",
+        "title": "ปราสาทหินพนมรุ้ง (เทวสถานหินทรายสีชมพูบนปากปล่องภูเขาไฟ)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=k_CwYaNsX80",
+        "title": "การทวงคืนโบราณวัตถุชิ้นสำคัญ สมบัติของชาติไทยที่ถูกปล้น | โลกวิวัฒน์ Podcast EP.107",
+        "thumbnail": "/entities/pin-prasat-hin-phanom-rung.jpg"
+      }
+    ]
+  },
+  {
+    "id": "pin-bakekujira",
+    "title_th": "บาเกะคุจิระ (โครงกระดูกวาฬผีแห่งทะเลญี่ปุ่น)",
+    "title_en": "Bake-kujira, The Phantom Whale Skeleton of Shimane",
+    "category": "ghost",
+    "province_th": "ชิมาเนะ (ญี่ปุ่น)",
+    "province_en": "Shimane Prefecture (Japan)",
+    "district_th": "คาบสมุทรชิมาเนะ ทะเลญี่ปุ่น",
+    "district_en": "Oki Islands & Shimane Coast",
+    "lat": 35.55,
+    "lng": 133.1333,
+    "story_th": "โครงกระดูกวาฬยักษ์สีขาวเรืองแสงที่แหวกว่ายเหนือผิวน้ำในคืนฝนพรำ รายล้อมด้วยฝูงนกประหลาดและปลาหน้าตาพิกล ฉมวกของชาวประมงพุ่งทะลุผ่านร่างโครงกระดูกไปโดยไม่อาจทำอันตรายได้",
+    "story_en": "A colossal, glowing skeletal whale gliding across the dark Sea of Japan on rainy nights, accompanied by eerie unknown birds and spectral fish. Harpoons pass harmlessly through its bleached bones.",
+    "folklore_history_th": "เชื่อกันว่าเป็นดวงวิญญาณอาฆาตของวาฬที่ถูกล่าสังหาร ซึ่งจะนำพาคำสาป โรคระบาด และไฟไหม้มาสู่หมู่บ้านชายฝั่งที่พบเห็นมัน",
+    "folklore_history_en": "Born from the vengeful souls of hunted whales, the Bake-kujira brings famine, plague, and fires upon coastal fishing villages that witness its ghostly procession.",
+    "image_url": "/entities/pin-bakekujira.jpg",
+    "sound_preset": "water_spirit",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "/entities/pin-bakekujira.jpg",
+        "title": "บาเกะคุจิระ (โครงกระดูกวาฬผีแห่งทะเลญี่ปุ่น)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=MAUg6Sb27C0",
+        "title": "Bake-kujira the Hideous Ghost Whales | Japanese Yokai Folklore",
+        "thumbnail": "/entities/pin-bakekujira.jpg"
+      }
+    ]
+  },
+  {
+    "id": "pin-nurarihyon",
+    "title_th": "นูราริเฮียง (จอมทัพสูงสุดแห่งขบวนร้อยอสูรยามราตรี)",
+    "title_en": "Nurarihyon, Supreme Lord of the Yokai Night Parade",
+    "category": "legend",
+    "province_th": "โอคายามะ (ญี่ปุ่น)",
+    "province_en": "Okayama Prefecture (Japan)",
+    "district_th": "ชายฝั่งทะเลในเซโตะ",
+    "district_en": "Seto Inland Sea Coast",
+    "lat": 34.6618,
+    "lng": 133.935,
+    "story_th": "โยไคในร่างชายชราผู้สวมชุดกิโมโนไหมชั้นสูงและมีศีรษะยาวคล้ายน้ำเต้า มักเดินเข้าบ้านคนอื่นในยามพลบค่ำแล้วนั่งจิบชาสูบกล้องยาสูบราวกับเป็นเจ้าของบ้านโดยไม่มีใครกล้าขับไล่",
+    "story_en": "An elderly gourd-headed yokai dressed in fine silk robes who slips into busy households at twilight, casually sipping luxury tea as if he were the master of the estate while captivating everyone into silence.",
+    "folklore_history_th": "ได้รับการยกย่องในคติชนญี่ปุ่นยุคเอโดะให้เป็นผู้นำสูงสุดของเหล่าภูตผีทั้งปวงในขบวนแห่ร้อยอสูร (Hyakki Yagyo)",
+    "folklore_history_en": "Revered in Edo folklore as the elusive Supreme Commander of all yokai during the Hyakki Yagyo (Night Parade of One Hundred Demons).",
+    "image_url": "/entities/pin-nurarihyon.jpg",
+    "sound_preset": "whisper",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "/entities/pin-nurarihyon.jpg",
+        "title": "นูราริเฮียง (จอมทัพสูงสุดแห่งขบวนร้อยอสูรยามราตรี)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=u7zwWaevMnE",
+        "title": "Nurarihyon - The Strange Leader of the Yokai - Japanese Mythology",
+        "thumbnail": "/entities/pin-nurarihyon.jpg"
+      }
+    ]
+  },
+  {
+    "id": "pin-nian",
+    "title_th": "อสูรเหนียน (สัตว์ร้ายโบราณผู้กลัวสีแดงและเสียงประทัด)",
+    "title_en": "Nian, The Horned New Year Beast of Mount Tai",
+    "category": "monster",
+    "province_th": "ซานตง (จีน)",
+    "province_en": "Shandong (China)",
+    "district_th": "ภูเขาไท่ซาน",
+    "district_en": "Mount Tai (Taishan)",
+    "lat": 36.2558,
+    "lng": 117.1,
+    "story_th": "อสูรกายดึกดำบรรพ์หัวคล้ายสิงโตแต่มีเขาแหลมคม อาศัยอยู่ใต้ทะเลลึกและจะขึ้นฝั่งในคืนวันสิ้นปีจันทรคติเพื่อบุกทำลายหมู่บ้านและกลืนกินผู้คน จนกระทั่งชายชราลึกลับค้นพบว่ามันหวาดกลัวสีแดง แสงไฟ และเสียงระเบิดของไม้ไผ่",
+    "story_en": "A ferocious lion-headed, horned beast emerging from the abyss every Lunar New Year's Eve to devour villagers—until an immortal beggar revealed its terror of crimson banners, blazing lanterns, and crackling bamboo firecrackers.",
+    "folklore_history_th": "กลายเป็นต้นกำเนิดประเพณีการติดกระดาษสีแดง จุดประทัด และเชิดสิงโตในเทศกาลตรุษจีนทั่วโลกเพื่อขับไล่อสูรเหนียน",
+    "folklore_history_en": "This ancient legend gave birth to Lunar New Year traditions of hanging red couplets, lighting firecrackers, and performing lion dances.",
+    "image_url": "/entities/pin-nian.jpg",
+    "sound_preset": "temple_bell",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "/entities/pin-nian.jpg",
+        "title": "อสูรเหนียน (สัตว์ร้ายโบราณผู้กลัวสีแดงและเสียงประทัด)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=giYX7bkzW98",
+        "title": "The Monster of Chinese New Year | Legend of Nian (Animated Story)",
+        "thumbnail": "/entities/pin-nian.jpg"
+      }
+    ]
+  },
+  {
+    "id": "pin-white-snake",
+    "title_th": "ตำนานนางพญางูขาวและเจดีย์เหลยเฟิงแห่งทะเลสาบซีหู",
+    "title_en": "Madame White Snake & Leifeng Pagoda of West Lake",
+    "category": "legend",
+    "province_th": "เจ้อเจียง (จีน)",
+    "province_en": "Zhejiang (China)",
+    "district_th": "ทะเลสาบซีหู เมืองหางโจว",
+    "district_en": "West Lake, Hangzhou",
+    "lat": 30.2314,
+    "lng": 120.1486,
+    "story_th": "ไป๋ซู่เจิน ปีศาจงูขาวผู้บำเพ็ญตบะพันปีจนจำแลงกายเป็นหญิงงามและพบรักกับบัณฑิตสวี่เซียนบนสะพานขาดริมทะเลสาบซีหู แต่กลับถูกพระฝาไห่ผู้เคร่งครัดจับขังสะกดไว้ใต้เจดีย์เหลยเฟิง",
+    "story_en": "Bai Suzhen, a thousand-year-old white serpent spirit who took human form and fell in love with mortal scholar Xu Xian on Hangzhou's Broken Bridge, before the monk Fahai imprisoned her beneath Leifeng Pagoda.",
+    "folklore_history_th": "หนึ่งในสี่นิทานพื้นบ้านที่ยิ่งใหญ่ที่สุดของจีน และเมื่อเจดีย์เหลยเฟิงองค์เดิมพังทลายลงในปี 1924 ชาวเมืองต่างเล่าขานว่านางพญางูขาวได้รับอิสรภาพแล้ว",
+    "folklore_history_en": "One of China's Four Great Folktales; when the ancient brick Leifeng Pagoda dramatically collapsed in 1924, locals whispered that Madame White Snake had finally broken free.",
+    "image_url": "/entities/pin-white-snake.jpg",
+    "sound_preset": "water_spirit",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "/entities/pin-white-snake.jpg",
+        "title": "ตำนานนางพญางูขาวและเจดีย์เหลยเฟิงแห่งทะเลสาบซีหู"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=eEeeClBoqK0",
+        "title": "The Chinese myth of the immortal white snake - Shunan Teng",
+        "thumbnail": "/entities/pin-white-snake.jpg"
+      }
+    ]
+  },
+  {
+    "id": "pin-baekdu-heaven-lake",
+    "title_th": "อสูรกายแห่งทะเลสาบสวรรค์บนปากปล่องภูเขาไฟแพ็กดู",
+    "title_en": "The Monster of Heaven Lake on Sacred Mount Paektu",
+    "category": "monster",
+    "province_th": "พรมแดนเกาหลี - จีน",
+    "province_en": "North Korea / Jilin (China) Border",
+    "district_th": "ทะเลสาบสวรรค์ (ช็อนจี) ยอดเขาแพ็กดู",
+    "district_en": "Heaven Lake (Chonji) Caldera, Mount Paektu",
+    "lat": 42.0056,
+    "lng": 128.0572,
+    "story_th": "ทะเลสาบปากปล่องภูเขาไฟที่สูงและหนาวเหน็บที่สุดแห่งหนึ่งของโลก มีรายงานการพบเห็นสัตว์ประหลาดขนาดยักษ์สีดำทองโผล่พ้นผิวน้ำแหวกว่ายด้วยความเร็วสูงทิ้งคลื่นเป็นทางยาวนับตั้งแต่ปี 1903",
+    "story_en": "High atop the volcanic caldera of sacred Mount Paektu lies Heaven Lake, where witnesses since 1903—and multiple videographers—have recorded mysterious finned creatures slicing through the icy waters.",
+    "folklore_history_th": "ภูเขาแพ็กดูยังเป็นสถานที่ศักดิ์สิทธิ์ตามตำนานการกำเนิดอาณาจักรโชซ็อนโบราณของพระเจ้าทันกุน บุตรแห่งสวรรค์",
+    "folklore_history_en": "Beyond its cryptozoological sightings, Mount Paektu is revered across Korea as the mythical birthplace of Dangun, founder of the first Korean kingdom.",
+    "image_url": "/entities/pin-baekdu-heaven-lake.jpg",
+    "sound_preset": "water_spirit",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "/entities/pin-baekdu-heaven-lake.jpg",
+        "title": "อสูรกายแห่งทะเลสาบสวรรค์บนปากปล่องภูเขาไฟแพ็กดู"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=3C2HVOB-g5s",
+        "title": "Why China's Largest Volcano Is So Unusual",
+        "thumbnail": "/entities/pin-baekdu-heaven-lake.jpg"
+      }
+    ]
+  },
+  {
+    "id": "pin-bhangarh",
+    "title_th": "ป้อมภานครห์ (นครต้องคำสาปที่ทางการอินเดียห้ามเข้ายามวิกาล)",
+    "title_en": "Bhangarh Fort, India's Officially Forbidden Cursed City",
+    "category": "curse",
+    "province_th": "ราชาสถาน (อินเดีย)",
+    "province_en": "Rajasthan (India)",
+    "district_th": "อัลวาร์ เทือกเขาอราวัลลี",
+    "district_en": "Alwar District, Aravalli Hills",
+    "lat": 27.0967,
+    "lng": 76.2861,
+    "story_th": "เมืองป้อมปราการโบราณจากศตวรรษที่ 17 ที่ถูกทิ้งร้างอย่างลึกลับหลังจอมขมังเวทย์สิงเหียสาปแช่งให้ทั้งเมืองพินาศและไม่มีหลังคาบ้านใดคงอยู่ได้ ปัจจุบันกรมโบราณคดีอินเดียติดป้ายห้ามเข้าหลังพระอาทิตย์ตกดินอย่างเด็ดขาด",
+    "story_en": "Cursed in the 17th century by a dying tantric sorcerer whose love potion was rejected by Princess Ratnavati, the entire royal city collapsed into ruin. Today, the Archaeological Survey of India legally prohibits entry between sunset and sunrise.",
+    "folklore_history_th": "ชาวบ้านเชื่อว่าหากใครสร้างหลังคาทับอาคารในป้อมภานครห์ หลังคานั้นจะพังถล่มลงมาทันที และผู้ที่แอบค้างคืนในป้อมไม่เคยได้กลับออกมา",
+    "folklore_history_en": "Locals maintain that any roof built inside Bhangarh collapses mysteriously, and travelers who linger inside after dusk vanish into the Aravalli shadows.",
+    "image_url": "/entities/pin-bhangarh.jpg",
+    "sound_preset": "creepy_wind",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "/entities/pin-bhangarh.jpg",
+        "title": "ป้อมภานครห์ (นครต้องคำสาปที่ทางการอินเดียห้ามเข้ายามวิกาล)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=KwVIla-VMiM",
+        "title": "भानगढ़ किला रहस्य 👻 | India’s Most Haunted Fort |HorrorDoc| #shorts #short #horrorstories   #anidoc",
+        "thumbnail": "/entities/pin-bhangarh.jpg"
+      }
+    ]
+  },
+  {
+    "id": "pin-aghartha",
+    "title_th": "นครใต้พิภพไคมัคลีแห่งคัปปาโดเกีย",
+    "title_en": "Kaymakli Subterranean Labyrinth of Cappadocia",
+    "category": "sacred",
+    "province_th": "เนฟเชฮีร์ (ตุรกี)",
+    "province_en": "Nevşehir Province (Turkey)",
+    "district_th": "ไคมัคลี แคว้นคัปปาโดเกีย",
+    "district_en": "Kaymakli, Cappadocia",
+    "lat": 38.46,
+    "lng": 34.7522,
+    "story_th": "มหานครใต้ดินที่ขุดเจาะลึกลงไปในชั้นหินภูเขาไฟถึง 8 ชั้น มีอุโมงค์ลับนับร้อยสาย ประตูหินกลิ้งหนักครึ่งตัน และปล่องระบายอากาศที่สามารถซ่อนผู้คนใต้แผ่นดินได้นับหมื่นคนราวกับอาณาจักรใต้พิภพ",
+    "story_en": "An astonishing eight-level subterranean metropolis carved deep into volcanic tuff rock, connected by miles of secret tunnels, rolling millstone blast doors, and ventilation shafts capable of sheltering 20,000 people underground.",
+    "folklore_history_th": "สร้างขึ้นตั้งแต่ยุคฟรีเจียนและใช้เป็นที่หลบภัยสงครามมานานนับพันปี เชื่อมโยงกับเมืองใต้ดินเดรินคูยูผ่านอุโมงค์ใต้ดินยาวกว่า 8 กิโลเมตร",
+    "folklore_history_en": "Begun by Phrygian builders in the 8th century BCE, a five-mile subterranean tunnel links Kaymakli directly to the neighboring abyss of Derinkuyu.",
+    "image_url": "/entities/pin-aghartha.jpg",
+    "sound_preset": "whisper",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "/entities/pin-aghartha.jpg",
+        "title": "นครใต้พิภพไคมัคลีแห่งคัปปาโดเกีย"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=u7suxnpRQRI",
+        "title": "Inside the Biggest Underground City in Cappadocia! | Kaymakli Tour",
+        "thumbnail": "/entities/pin-aghartha.jpg"
+      }
+    ]
+  },
+  {
+    "id": "pin-wildhunt",
+    "title_th": "กองทัพวิญญาณนักล่าแห่งรัตติกาล (เดอะไวลด์ฮันต์)",
+    "title_en": "The Wild Hunt (Åsgårdsreien) Across the Winter Sky",
+    "category": "ghost",
+    "province_th": "เวสต์ลันด์ (นอร์เวย์)",
+    "province_en": "Vestland (Norway)",
+    "district_th": "เทือกเขาโยทุนไฮเมน",
+    "district_en": "Jotunheimen Alpine Range",
+    "lat": 61.6333,
+    "lng": 8.3,
+    "story_th": "ขบวนทัพม้าผีและสุนัขล่าเนื้อวิญญาณที่ควบทะยานผ่านฟากฟ้าในคืนพายุหิมะ นำทัพโดยเทพโอดินและวิญญาณนักรบผู้ล่วงลับ หากผู้ใดเผลอเงยหน้าสบตาขบวนไวลด์ฮันต์ ดวงวิญญาณจะถูกฉุดกระชากไปร่วมขบวนทันที",
+    "story_en": "A terrifying spectral cavalcade of ghostly riders, baying hounds, and fallen Valkyries led by Odin across tempestuous winter skies. Mortals caught outdoors must throw themselves face-down on the snow lest their souls be swept away.",
+    "folklore_history_th": "ตำนานเก่าแก่ร่วมกันของชาวนอร์ส เยอรมัน และเคลต์ ที่ใช้อธิบายเสียงพายุฤดูหนาวอันเกรี้ยวกราดและลางบอกเหตุแห่งสงคราม",
+    "folklore_history_en": "Shared across Norse, Germanic, and Celtic mythologies, sighting the Wild Hunt portended war, plague, or the death of a monarch.",
+    "image_url": "/entities/pin-wildhunt.jpg",
+    "sound_preset": "creepy_wind",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "/entities/pin-wildhunt.jpg",
+        "title": "กองทัพวิญญาณนักล่าแห่งรัตติกาล (เดอะไวลด์ฮันต์)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=Gc9Z9YDo838",
+        "title": "What Is THE WILD HUNT? (and why are so many afraid of it?)",
+        "thumbnail": "/entities/pin-wildhunt.jpg"
+      }
+    ]
+  },
+  {
+    "id": "pin-trollstigen",
+    "title_th": "โทรลล์ศิลาแห่งฟยอร์ดนอร์เวย์ (หุบผาโทรลล์สติเกน)",
+    "title_en": "The Petrified Trolls of Trollstigen & Trollveggen",
+    "category": "monster",
+    "province_th": "เมอเรอและรอมสดาล (นอร์เวย์)",
+    "province_en": "Møre og Romsdal (Norway)",
+    "district_th": "หุบผาบันไดโทรลล์ โรมาสดาเลน",
+    "district_en": "Trollstigen & Romsdalen Valley",
+    "lat": 62.4567,
+    "lng": 7.6653,
+    "story_th": "ยักษ์โทรลล์แห่งขุนเขาสแกนดิเนเวียที่ออกหากินเฉพาะเวลากลางคืนและโยนก้อนหินยักษ์ใส่โบสถ์คริสต์ แต่หากพวกมันเผลออยู่จนแสงอาทิตย์แรกของวันส่องกระทบ ร่างกายจะกลายเป็นยอดเขาหินสูงชันไปชั่วนิรันดร์",
+    "story_en": "Towering mountain giants of Norwegian folklore that roam craggy fjords by night, hurling boulders at ringing church bells. Caught by the first rays of dawn, their bodies petrified into the jagged peaks of Trollveggen.",
+    "folklore_history_th": "ชาวนอร์เวย์ชี้ว่ายอดเขาหินรูปร่างประหลาดเรียงรายตลอดหุบเขาโรมาสดาเลนคือขบวนโทรลล์ที่ถูกแสงอาทิตย์สาปให้กลายเป็นหิน",
+    "folklore_history_en": "Local Romsdalen legend identifies the jagged spires of the Troll Wall—Europe's tallest vertical rock face—as a wedding procession of trolls turned to stone at sunrise.",
+    "image_url": "/entities/pin-trollstigen.jpg",
+    "sound_preset": "creepy_wind",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "/entities/pin-trollstigen.jpg",
+        "title": "โทรลล์ศิลาแห่งฟยอร์ดนอร์เวย์ (หุบผาโทรลล์สติเกน)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=4On7NJyTVQk",
+        "title": "What's the Origin of Trolls from Scandinavian Folklore?",
+        "thumbnail": "/entities/pin-trollstigen.jpg"
+      }
+    ]
+  },
+  {
+    "id": "pin-melusine",
+    "title_th": "เมลูซีน (ภูตสาวครึ่งงูผู้สร้างปราสาทลูซิญองแห่งฝรั่งเศส)",
+    "title_en": "Melusine, The Twin-Tailed Serpent Fairy of Lusignan",
+    "category": "legend",
+    "province_th": "นูแวล-อากีแตน (ฝรั่งเศส)",
+    "province_en": "Nouvelle-Aquitaine (France)",
+    "district_th": "ปราสาทลูซิญอง แคว้นปัวตู",
+    "district_en": "Château de Lusignan, Vienne",
+    "lat": 46.4353,
+    "lng": 0.1228,
+    "story_th": "ภูตน้ำสาวผู้เนรมิตปราสาทอันยิ่งใหญ่ให้แก่ขุนนางเรมอนดินในคืนเดียว โดยมีข้อแม้ห้ามสามีแอบดูเธออาบน้ำในวันเสาร์อย่างเด็ดขาด เพราะทุกวันเสาร์ท่อนล่างของเธอจะกลายร่างเป็นงูหรือมังกรมีปีก",
+    "story_en": "A sacred freshwater spirit who married Lord Raymondin and magically erected the fortress of Lusignan, asking only that he never enter her bathchamber on Saturdays—when her lower body transformed into a serpent.",
+    "folklore_history_th": "เมื่อสามีแอบมองและผิดสัญญา เมลูซีนจึงกลายร่างเป็นมังกรมีปีกบินหนีออกจากหน้าต่างปราสาท และจะกลับมาบินวนส่งเสียงร้องโหยหวนทุกครั้งก่อนที่ทายาทตระกูลลูซิญองจะเสียชีวิต",
+    "folklore_history_en": "When her husband broke his vow, Melusine sprouted dragon wings and flew from the castle tower, returning to wail above the battlements whenever a ruler of House Lusignan was about to die.",
+    "image_url": "/entities/pin-melusine.jpg",
+    "sound_preset": "water_spirit",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "/entities/pin-melusine.jpg",
+        "title": "เมลูซีน (ภูตสาวครึ่งงูผู้สร้างปราสาทลูซิญองแห่งฝรั่งเศส)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=jbwTxZpBiKs",
+        "title": "Melusine - The Serpent of Woe - European - Extra Mythology",
+        "thumbnail": "/entities/pin-melusine.jpg"
+      }
+    ]
+  },
+  {
+    "id": "pin-dullahan",
+    "title_th": "ดูลาฮาน (อัศวินม้ามืดถือศีรษะตัวเองผู้เรียกความตายแห่งไอร์แลนด์)",
+    "title_en": "The Dullahan, Headless Death-Rider of County Sligo",
+    "category": "ghost",
+    "province_th": "คอนนาคต์ (ไอร์แลนด์)",
+    "province_en": "Connacht (Ireland)",
+    "district_th": "เคาน์ตีสไลโก",
+    "district_en": "County Sligo",
+    "lat": 54.2766,
+    "lng": -8.4761,
+    "story_th": "ภูตแห่งความตายในตำนานเคลต์ผู้ควบม้าสีดำสนิทโดยหนีบศีรษะที่เน่าเปื่อยแต่ยิ้มกว้างถึงใบหูไว้ใต้แขน ใช้กระดูกสันหลังมนุษย์เป็นแส้ม้า หากมันหยุดม้าหน้าบ้านใครและขานชื่อ ผู้นั้นจะสิ้นใจในทันที",
+    "story_en": "A sinister Unseelie court horseman riding a snorting black steed across Irish country lanes while carrying his own grinning, moldering head under his arm and wielding a human spine as a whip.",
+    "folklore_history_th": "ไม่มีประตูหรือกุญแจใดขวางทางดูลาฮานได้ แต่สิ่งเดียวที่มันหวาดกลัวอย่างที่สุดคือ 'ทองคำ' แม้แต่เข็มกลัดทองคำเพียงชิ้นเดียวก็สามารถขับไล่มันให้หนีไปได้",
+    "folklore_history_en": "All locks fly open at the Dullahan's approach, yet he possesses an inexplicable dread of gold—even the smallest golden coin dropped on the road forces him to flee.",
+    "image_url": "/entities/pin-dullahan.jpg",
+    "sound_preset": "creepy_wind",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "/entities/pin-dullahan.jpg",
+        "title": "ดูลาฮาน (อัศวินม้ามืดถือศีรษะตัวเองผู้เรียกความตายแห่งไอร์แลนด์)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=NEUCF-AA5WM",
+        "title": "Dullahan: The Headless Horseman of Irish Folklore - (Irish/Celtic Mythology Explained)",
+        "thumbnail": "/entities/pin-dullahan.jpg"
+      }
+    ]
+  },
+  {
+    "id": "pin-edgarallanpoe",
+    "title_th": "ปริศนาการเสียชีวิตและผู้มาเยือนยามวิกาลที่หลุมศพ เอ็ดการ์ แอลแลน โพ",
+    "title_en": "The Mysterious Death of Edgar Allan Poe & The Poe Toaster",
+    "category": "legend",
+    "province_th": "แมริแลนด์ (สหรัฐอเมริกา)",
+    "province_en": "Maryland (USA)",
+    "district_th": "สุสานเวสต์มินสเตอร์ เมืองบัลติมอร์",
+    "district_en": "Westminster Hall Cemetery, Baltimore",
+    "lat": 39.2903,
+    "lng": -76.6231,
+    "story_th": "บิดาแห่งวรรณกรรมสยองขวัญผู้ถูกพบในสภาพเพ้อคลั่งสวมเสื้อผ้าของคนอื่นก่อนเสียชีวิตอย่างเป็นปริศนาในปี 1849 และตลอดเวลาเกือบ 70 ปี มีชายลึกลับในชุดคลุมดำนำดอกกุหลาบแดง 3 ดอกและคอนญักครึ่งขวดมาวางที่หลุมศพทุกคืนวันเกิดของโพ",
+    "story_en": "Found delirious in Baltimore wearing a stranger's clothes before his unexplained death in 1849, Poe's grave was visited every January 19 at midnight for six decades by a masked figure leaving three red roses and a half-bottle of cognac.",
+    "folklore_history_th": "คำพูดสุดท้ายก่อนสิ้นใจของโพคือ 'Reynolds' ซึ่งจนถึงปัจจุบันก็ยังไม่มีนักประวัติศาสตร์คนใดไขปริศนาได้ว่าเกิดอะไรขึ้นกับเขาใน 5 วันสุดท้ายที่หายตัวไป",
+    "folklore_history_en": "Neither the cause of Poe's final five missing days nor the true identity of the original 'Poe Toaster' has ever been conclusively solved.",
+    "image_url": "/entities/pin-edgarallanpoe.jpg",
+    "sound_preset": "whisper",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "/entities/pin-edgarallanpoe.jpg",
+        "title": "ปริศนาการเสียชีวิตและผู้มาเยือนยามวิกาลที่หลุมศพ เอ็ดการ์ แอลแลน โพ"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=tNR4alxMN8k",
+        "title": "The Mysterious Death of Edgar Allan Poe May Never Be Solved",
+        "thumbnail": "/entities/pin-edgarallanpoe.jpg"
+      }
+    ]
+  },
+  {
+    "id": "pin-villisca",
+    "title_th": "บ้านพักอาถรรพ์วิลลิสกา (โศกนาฏกรรมปริศนาปี 1912 ที่ไร้ผู้ต้องหา)",
+    "title_en": "The Villisca Axe Murder House Haunting of Iowa",
+    "category": "ghost",
+    "province_th": "ไอโอวา (สหรัฐอเมริกา)",
+    "province_en": "Iowa (USA)",
+    "district_th": "เมืองวิลลิสกา มอนต์โกเมอรีเคาน์ตี",
+    "district_en": "Villisca, Montgomery County",
+    "lat": 40.9272,
+    "lng": -94.9736,
+    "story_th": "บ้านไม้สีขาวที่เกิดคดีสะเทือนขวัญในคืนวันที่ 9 มิถุนายน 1912 เมื่อคนร้ายซ่อนตัวอยู่ในห้องใต้หลังคาและลงมือสังหารคนในบ้าน 8 ชีวิต ก่อนจะนำผ้ามาคลุมกระจกเงาทุกบานในบ้านแล้วหายตัวไปอย่างไร้ร่องรอย",
+    "story_en": "On the night of June 9, 1912, an unknown intruder hid in the attic of the Moore family home, claiming eight lives before draping every mirror and glass window in the house with cloth and vanishing forever.",
+    "folklore_history_th": "ปัจจุบันบ้านหลังนี้ยังคงสภาพเดิมเหมือนปี 1912 ไม่มีไฟฟ้าหรือน้ำประปา และขึ้นชื่อว่าเป็นหนึ่งในบ้านที่มีปรากฏการณ์เสียงเด็กร้องไห้และประตูเปิดปิดเองรุนแรงที่สุดในอเมริกา",
+    "folklore_history_en": "Preserved without electricity or plumbing just as it stood in 1912, the house is renowned among paranormal investigators for phantom children's voices and moving objects.",
+    "image_url": "/entities/pin-villisca.jpg",
+    "sound_preset": "whisper",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "/entities/pin-villisca.jpg",
+        "title": "บ้านพักอาถรรพ์วิลลิสกา (โศกนาฏกรรมปริศนาปี 1912 ที่ไร้ผู้ต้องหา)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=CfqkHYHcBv0",
+        "title": "The Villisca Axe Murder House: The SCARIEST Place In America (HORRIFYING Paranormal Activity)",
+        "thumbnail": "/entities/pin-villisca.jpg"
+      }
+    ]
+  },
+  {
+    "id": "pin-ciguapa",
+    "title_th": "ซีกัวปา (ภูตสาวป่าผู้มีเท้ากลับหลังแห่งเทือกเขาแคริบเบียน)",
+    "title_en": "La Ciguapa, The Backward-Footed Siren of Hispaniola",
+    "category": "monster",
+    "province_th": "ลาเวกา (สาธารณรัฐโดมินิกัน)",
+    "province_en": "La Vega Province (Dominican Republic)",
+    "district_th": "เทือกเขาคอร์ดิลเลอราเซนทรัล",
+    "district_en": "Cordillera Central Mountains",
+    "lat": 19.0333,
+    "lng": -70.6667,
+    "story_th": "อมนุษย์หญิงสาวผู้มีเรือนผมยาวสลวยคลุมร่างจนถึงข้อเท้า แต่มีฝ่าเท้าทั้งสองข้างหันกลับไปด้านหลัง ทำให้รอยเท้าในโคลนชี้ไปในทิศทางตรงกันข้ามเสมอ คอยสะกดจิตล่อลวงคนเดินป่าให้หายสาบสูญ",
+    "story_en": "Wild, nocturnal mountain women of Dominican folklore clothed only in cascades of glossy black hair, possessing feet turned completely backward so their footprints lead trackers in the opposite direction.",
+    "folklore_history_th": "ตำนานระบุว่าห้ามสบตากับซีกัวปาโดยเด็ดขาดเพราะจะถูกมนต์สะกดจนเดินตามเข้าป่าไปโดยไม่รู้ตัว และมีเพียงสุนัขสีขาวที่มีนิ้วเท้าห้านิ้วเท่านั้นที่สามารถไล่ตามรอยของเธอได้ในคืนพระจันทร์เต็มดวง",
+    "folklore_history_en": "Dominican lore warns never to look into a Ciguapa's eyes; she can only be captured under a full moon with the help of a rare five-toed white dog (perro cinqueño).",
+    "image_url": "/entities/pin-ciguapa.jpg",
+    "sound_preset": "jungle_curse",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "/entities/pin-ciguapa.jpg",
+        "title": "ซีกัวปา (ภูตสาวป่าผู้มีเท้ากลับหลังแห่งเทือกเขาแคริบเบียน)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=8z9p1xDa9Hg",
+        "title": "La Ciguapa: Dominican Folklore's Enigma",
+        "thumbnail": "/entities/pin-ciguapa.jpg"
+      }
+    ]
+  },
+  {
+    "id": "pin-rusalka",
+    "title_th": "รูซัลกา (พรายน้ำสาวผู้ล่อลวงชายหนุ่มสู่ก้นแม่น้ำดนีเปอร์)",
+    "title_en": "Rusalka, The Drowned Water Nymph of the Dnieper",
+    "category": "ghost",
+    "province_th": "เคียฟ (ยูเครน)",
+    "province_en": "Kyiv Oblast (Ukraine)",
+    "district_th": "ลุ่มแม่น้ำดนีเปอร์",
+    "district_en": "Dnieper River Banks",
+    "lat": 50.4501,
+    "lng": 30.5234,
+    "story_th": "วิญญาณหญิงสาวที่จมน้ำเสียชีวิตและกลายเป็นพรายน้ำผู้มีผิวขาวซีดและเส้นผมยาวเปียกชื้น ในคืนเดือนเพ็ญพวกเธอจะขึ้นมานั่งหวีผมบนกิ่งต้นวิลโลว์ริมน้ำ ร้องเพลงไพเราะล่อลวงชายหนุ่มให้ลงน้ำก่อนจะจั๊กจี้และฉุดลงไปจมน้ำตาย",
+    "story_en": "The pale,ethereal spirit of a drowned maiden dwelling in Slavic rivers. On moonlit summer nights, Rusalki comb their long wet hair in weeping willow trees, singing enchanting melodies to lure men into the deep currents.",
+    "folklore_history_th": "ในสัปดาห์รูซาลี (ต้นเดือนมิถุนายน) ชาวสลาฟโบราณจะนำพวงมาลัยดอกไม้ไปแขวนตามต้นไม้ริมน้ำและพกใบจิงจูฉ่าย (Wormwood) ติดตัวเพื่อป้องกันมนต์สะกดของรูซัลกา",
+    "folklore_history_en": "During Green Week in early June, villagers traditionally carried bitter wormwood herbs to ward off the Rusalka's fatal tickling embrace.",
+    "image_url": "/entities/pin-rusalka.jpg",
+    "sound_preset": "water_spirit",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "/entities/pin-rusalka.jpg",
+        "title": "รูซัลกา (พรายน้ำสาวผู้ล่อลวงชายหนุ่มสู่ก้นแม่น้ำดนีเปอร์)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=phSZEsHTnZ4",
+        "title": "Rusalka: The Deadly Slavic Water Nymphs – Seductive Spirits That Drown Men 🧜‍♀️🌊",
+        "thumbnail": "/entities/pin-rusalka.jpg"
+      }
+    ]
   }
 ];

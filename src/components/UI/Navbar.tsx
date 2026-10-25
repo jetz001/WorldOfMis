@@ -13,13 +13,14 @@ import {
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import type { GhostCategory, GhostPin, SupportedLanguage } from '../../types/ghost';
-import { getTranslation } from '../../lib/i18n';
+import { getTranslation, LANGUAGE_OPTIONS } from '../../lib/i18n';
 import type { RagSearchResponse } from '../../lib/vectorRagSearch';
 import { SUGGESTED_RAG_QUERIES } from '../../lib/vectorRagSearch';
 
 interface NavbarProps {
   language: SupportedLanguage;
   onToggleLanguage: () => void;
+  onSelectLanguage?: (lang: SupportedLanguage) => void;
   searchQuery: string;
   onSearchChange: (q: string) => void;
   selectedCategory: GhostCategory | 'all';
@@ -33,6 +34,7 @@ interface NavbarProps {
 export const Navbar: React.FC<NavbarProps> = ({
   language,
   onToggleLanguage,
+  onSelectLanguage,
   searchQuery,
   onSearchChange,
   selectedCategory,
@@ -44,6 +46,8 @@ export const Navbar: React.FC<NavbarProps> = ({
 }) => {
   const t = getTranslation(language);
   const [isSearchFocused, setIsSearchFocused] = useState(false);
+  const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
+  const langMenuRef = useRef<HTMLDivElement>(null);
   const searchContainerRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const secretTapCountRef = useRef(0);
@@ -75,7 +79,7 @@ export const Navbar: React.FC<NavbarProps> = ({
     }, 2000);
   };
 
-  // Close RAG dropdown when clicking outside the search container
+  // Close RAG dropdown and Language menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
@@ -83,6 +87,12 @@ export const Navbar: React.FC<NavbarProps> = ({
         !searchContainerRef.current.contains(event.target as Node)
       ) {
         setIsSearchFocused(false);
+      }
+      if (
+        langMenuRef.current &&
+        !langMenuRef.current.contains(event.target as Node)
+      ) {
+        setIsLangMenuOpen(false);
       }
     };
     document.addEventListener('mousedown', handleClickOutside);
@@ -408,18 +418,61 @@ export const Navbar: React.FC<NavbarProps> = ({
             <span className="hidden sm:inline font-semibold">{t.zoomOutWorld}</span>
           </button>
 
-          {/* Language Switcher */}
-          <button
-            onClick={onToggleLanguage}
-            className="group px-3.5 py-2 rounded-2xl bg-[#070c16]/90 border border-amber-500/35 hover:border-emerald-400/70 backdrop-blur-xl text-xs font-sans font-bold tracking-wider text-amber-100 hover:text-emerald-200 transition-all shadow-[0_6px_20px_rgba(0,0,0,0.85),0_0_15px_rgba(16,185,129,0.12)] hover:shadow-[0_0_22px_rgba(16,185,129,0.35)] flex items-center gap-2 cursor-pointer active:scale-95"
-          >
-            <img
-              src="/icons/sigil_lang.png"
-              alt=""
-              className="w-6 h-6 object-contain group-hover:scale-110 transition-transform duration-300"
-            />
-            <span>{language.toUpperCase()}</span>
-          </button>
+          {/* Multi-Language Switcher Dropdown */}
+          <div className="relative" ref={langMenuRef}>
+            <button
+              type="button"
+              onClick={() => setIsLangMenuOpen((v) => !v)}
+              className="group px-3.5 py-2 rounded-2xl bg-[#070c16]/90 border border-amber-500/35 hover:border-emerald-400/70 backdrop-blur-xl text-xs font-sans font-bold tracking-wider text-amber-100 hover:text-emerald-200 transition-all shadow-[0_6px_20px_rgba(0,0,0,0.85),0_0_15px_rgba(16,185,129,0.12)] hover:shadow-[0_0_22px_rgba(16,185,129,0.35)] flex items-center gap-2 cursor-pointer active:scale-95"
+              title="Select Language / เลือกภาษา"
+            >
+              <img
+                src="/icons/sigil_lang.png"
+                alt=""
+                className="w-6 h-6 object-contain group-hover:scale-110 transition-transform duration-300"
+              />
+              <span>{language.toUpperCase()}</span>
+            </button>
+
+            {isLangMenuOpen && (
+              <div className="absolute right-0 top-full mt-2 z-[1000] w-48 py-2 rounded-2xl bg-[#070c16]/97 border border-amber-500/45 shadow-[0_14px_40px_rgba(0,0,0,0.92),0_0_24px_rgba(16,185,129,0.25)] backdrop-blur-2xl animate-in fade-in duration-150 max-h-80 overflow-y-auto">
+                <div className="px-3 py-1 text-[10px] font-semibold uppercase tracking-widest text-amber-300/80 border-b border-slate-800/80 mb-1">
+                  🌐 Language / ภาษา
+                </div>
+                {LANGUAGE_OPTIONS.map((opt) => {
+                  const active = language === opt.code;
+                  return (
+                    <button
+                      key={opt.code}
+                      type="button"
+                      onClick={() => {
+                        if (onSelectLanguage) {
+                          onSelectLanguage(opt.code);
+                        } else {
+                          onToggleLanguage();
+                        }
+                        setIsLangMenuOpen(false);
+                      }}
+                      className={`w-full px-3.5 py-2 text-left text-xs flex items-center justify-between transition-colors cursor-pointer ${
+                        active
+                          ? 'bg-emerald-500/20 text-emerald-200 font-bold'
+                          : 'text-slate-200 hover:bg-white/5 hover:text-amber-200'
+                      }`}
+                    >
+                      <span className="flex items-center gap-2">
+                        <span className="text-sm">{opt.flag}</span>
+                        <span>{opt.label}</span>
+                      </span>
+                      <span className="text-[10px] font-mono opacity-75">
+                        {active ? '✓ ' : ''}
+                        {opt.short}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+            )}
+          </div>
         </div>
       </div>
 
