@@ -13,13 +13,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Shinjuku',
     lat: 35.6938,
     lng: 139.7034,
-    story_th: 'วิญญาณหญิงสาวสวมหน้ากากอนามัยที่คอยดักถามผู้คนยามค่ำคืนว่า "ฉันสวยไหม?" ก่อนจะปลดหน้ากากเผยให้เห็นรอยแผลฉีกขาดถึงใบหู หากตอบว่าไม่สวยจะถูกสังหารด้วยกรรไกรเล่มใหญ่',
-    story_en: 'A legendary vengeful spirit wearing a surgical mask who accosts pedestrians asking "Am I pretty?". Unmasking reveals her face mutilated from ear to ear with malicious shears.',
-    folklore_history_th: 'ตำนานเมืองชื่อดังยุคโชวะ (ทศวรรษ 1970) ที่แพร่กระจายไปทั่วญี่ปุ่น จนโรงเรียนต้องจัดครูเดินส่งนักเรียนกลับบ้านเป็นกลุ่ม',
-    folklore_history_en: 'A 1970s Japanese urban legend that spread nationwide panic, prompting schools to organize teacher-chaperoned student groups heading home.',
+    story_th:
+      'ตำนานเมืองชื่อดังแห่งญี่ปุ่น "คุชิซาเกะ-อนนะ" หรือหญิงสาวปากฉีก เธอจะสวมหน้ากากอนามัยสีขาวและเสื้อโค้ตตัวยาว เดินดักรอผู้คนในตรอกซอกซอยยามค่ำคืน เมื่อพบเหยื่อเธอจะเอ่ยถามด้วยน้ำเสียงเย็นยะเยือก "ฉันสวยไหม?" หากเหยื่อตอบว่าไม่ เธอจะใช้กรรไกรเล่มใหญ่สังหารทิ้งทันที แต่หากตอบว่าสวย เธอจะปลดหน้ากากออก เผยให้เห็นรอยแผลฉีกกว้างจากหูถึงหู แล้วถามซ้ำว่า "แม้ในสภาพนี้ ฉันยังสวยอยู่ไหม?"',
+    story_en:
+      'A terrifying Japanese urban legend of the Slit-Mouthed Woman. Lurking in misty dusk alleyways wearing a surgical mask and trench coat, she corners solitary wanderers with a chilling question: "Am I beautiful?" If you say no, she slashes with giant shears. If you say yes, she peels back her mask to reveal a gruesome ear-to-ear grin and asks: "Even now?"',
+    folklore_history_th:
+      'เริ่มแพร่สะพัดอย่างกว้างขวางในจังหวัดกิฟุและขยายสู่โตเกียวในปี ค.ศ. 1979 ก่อให้เกิดความตระหนกตกใจจนโรงเรียนหลายแห่งต้องให้ครูเดินไปส่งนักเรียนเป็นกลุ่ม บ้างเชื่อว่ามีรากเหง้ามาจากเรื่องเล่าของหญิงงามยุคเอโดะที่ถูกสามีหึงหวงลงโทษด้วยการกรีดปาก',
+    folklore_history_en:
+      'Swept across Japan in the late 1970s, causing widespread moral panic and police patrols around elementary schools. Some folklorists trace its lineage back to Edo-period tales of a samurai’s unfaithful wife mutilated in jealousy.',
     image_url: '/entities/pin-kuchisake.jpg',
     sound_preset: 'whisper',
-    views_count: 2450,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-kuchisake.jpg",
+            "title": "คุชิซาเกะ-อนนะ (Kuchisake-onna)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=4YmI-q9q3aI",
+            "title": "ตำนานลี้ลับสาวปากฉีกและคดีจริงในประวัติศาสตร์ญี่ปุ่น"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1200&q=80",
+            "title": "ตรอกซอยยามราตรีในโตเกียว (Tokyo Night Alleyway)"
+      }
+],
     is_published: 1,
   },
 
@@ -27,22 +48,22 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
   {
     id: 'pin-lochness',
     gallery_media: [
-          {
-                "type": "image",
-                "url": "/entities/pin-lochness.jpg",
-                "title": "Surgeon’s Photograph (1934)"
-          },
-          {
-                "type": "youtube",
-                "url": "https://www.youtube.com/watch?v=sU14zI0x87Q",
-                "title": "Loch Ness Monster - The Legend of Nessie"
-          },
-          {
-                "type": "image",
-                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Loch_Ness%2C_Scotland.jpg/960px-Loch_Ness%2C_Scotland.jpg",
-                "title": "ทะเลสาบล็อกเนสส์ สกอตแลนด์"
-          }
-    ],
+      {
+            "type": "image",
+            "url": "/entities/pin-lochness.jpg",
+            "title": "สัตว์ประหลาดล็อกเนสส์ (Loch Ness Monster / Nessie)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=2e6iQ-9yE3w",
+            "title": "The Legend of Loch Ness: Science, Myth & Sightings"
+      },
+      {
+            "type": "image",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Urquhart_Castle_Loch_Ness.jpg/960px-Urquhart_Castle_Loch_Ness.jpg",
+            "title": "ซากปราสาทเออร์คาร์ทริมทะเลสาบล็อกเนสส์ (Urquhart Castle)"
+      }
+],
     title_th: 'สัตว์ประหลาดล็อกเนสส์ (เนสซี)',
     title_en: 'Loch Ness Monster (Nessie)',
     category: 'monster',
@@ -52,10 +73,14 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Inverness',
     lat: 57.3229,
     lng: -4.4244,
-    story_th: 'สัตว์ประหลาดดึกดำบรรพ์รูปร่างคล้ายเพลซิโอซอร์ คอยาว ลำตัวใหญ่ มักปรากฏเหนือน่านน้ำลึกและหมอกหนาของทะเลสาบล็อกเนสส์',
-    story_en: 'A mythical aquatic creature resembling an ancient plesiosaur said to inhabit the deep, peaty waters of Loch Ness in the Scottish Highlands.',
-    folklore_history_th: 'บันทึกแรกสุดย้อนไปถึงศตวรรษที่ 6 โดยนักบุญโคลัมบา และภาพถ่ายปริศนา Surgeon’s Photograph ในปี 1934 ที่โด่งดังไปทั่วโลก',
-    folklore_history_en: 'Earliest accounts date back to 6th-century Saint Columba, while the iconic 1934 Surgeon’s Photograph sparked global cryptid fascination.',
+    story_th:
+      'อสูรโบราณใต้ผืนน้ำสีดำสนิทของทะเลสาบล็อกเนสส์ สกอตแลนด์ มีลักษณะคล้ายสัตว์เลื้อยคลานยุคดึกดำบรรพ์เพลซิโอซอร์ คอยาวและหลังเป็นลอนคลื่น โผล่ขึ้นมาเหนือน้ำท่ามกลางม่านหมอกหนาวเย็น ก่อนจะดำดิ่งหายวับลงสู่ความลึกกว่า 230 เมตรอย่างไร้ร่องรอย',
+    story_en:
+      'The immortal aquatic cryptid inhabiting the peaty, pitch-black waters of Loch Ness in the Scottish Highlands. Eyewitnesses describe a long serpent-like neck, dark humps breaking the surface mist, and sudden plunges into depths exceeding 230 meters.',
+    folklore_history_th:
+      'การพบเห็นครั้งแรกสุดถูกบันทึกไว้ในชีวประวัติของนักบุญโคลัมบา (Saint Columba) เมื่อศตวรรษที่ 6 ก่อนที่ภาพถ่ายชื่อดัง "Surgeon’s Photograph" ในปี 1934 จะทำให้เนสซีกลายเป็นปริศนาสิ่งมีชีวิตลี้ลับระดับโลก',
+    folklore_history_en:
+      'First chronicled in Adomnán’s 6th-century Life of Saint Columba. The legend exploded into a worldwide phenomenon following the controversial 1934 "Surgeon\'s Photograph".',
     image_url: '/entities/pin-lochness.jpg',
     sound_preset: 'water_spirit',
     views_count: 3120,
@@ -64,22 +89,22 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
   {
     id: 'pin-dracula',
     gallery_media: [
-          {
-                "type": "image",
-                "url": "/entities/pin-dracula.jpg",
-                "title": "เจ้าชายวลาดที่ 3 (Vlad III Dracula)"
-          },
-          {
-                "type": "youtube",
-                "url": "https://www.youtube.com/watch?v=BtCjc5OwBi4",
-                "title": "Vlad the Impaler: The True Story of Dracula"
-          },
-          {
-                "type": "image",
-                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Bran_Castle_Castle_01.jpg/960px-Bran_Castle_Castle_01.jpg",
-                "title": "ปราสาทบราน (Bran Castle ทรานซิลเวเนีย)"
-          }
-    ],
+      {
+            "type": "image",
+            "url": "/entities/pin-dracula.jpg",
+            "title": "เคานต์แดร็กคูลา และ วลาดที่ 3 (Vlad III Dracula)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=BtCjc5OwBi4",
+            "title": "Vlad the Impaler: The True Story of Dracula"
+      },
+      {
+            "type": "image",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Bran_Castle_Castle_01.jpg/960px-Bran_Castle_Castle_01.jpg",
+            "title": "ปราสาทบราน (Bran Castle ปราสาทแดร็กคูลา)"
+      }
+],
     title_th: 'เคานต์แดร็กคูลาแห่งทรานซิลเวเนีย',
     title_en: 'Count Dracula & Vlad the Impaler',
     category: 'curse',
@@ -89,10 +114,14 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Bran Castle',
     lat: 45.5152,
     lng: 25.3672,
-    story_th: 'แวมไพร์อมตะผู้ครอบครองปราสาทบนยอดเขาสูงท่ามกลางป่าสนหนาทึบ ได้รับแรงบันดาลใจจากเจ้าชายวลาดที่ 3 ผู้เสียบประจานศัตรูนับหมื่น',
-    story_en: 'The immortal nocturnal vampire inhabiting a secluded Transylvanian fortress, inspired by the historical Vlad III Dracula and his ruthless terror tactics.',
-    folklore_history_th: 'ปราสาทบรานสร้างขึ้นในศตวรรษที่ 14 บนเทือกเขาคาร์เพเทียน เป็นศูนย์กลางตำนานผีดูดเลือดและวรรณกรรมกอธิกของ บราม สโตกเกอร์',
-    folklore_history_en: 'Perched high in the Carpathian mountains, 14th-century Bran Castle became synonymous with Bram Stoker’s gothic vampire lore.',
+    story_th:
+      'เคานต์แดร็กคูลา แวมไพร์อมตะผู้ปกครองปราสาทหินสูงตระหง่านเหนือหน้าผาทรานซิลเวเนีย มีพลังสะกดจิต แปลงกายเป็นค้างคาวหรือหมอกควัน และดูดกลืนเลือดของเหยื่อเพื่อคงความเยาว์วัยชั่วนิรันดร์ มีต้นกำเนิดจากความโหดเหี้ยมของเจ้าชายวลาดที่ 3 ผู้เสียบประจานศัตรูนับหมื่น',
+    story_en:
+      'The noble undead sovereign haunting the mist-shrouded Carpathian crags. Channeling the ruthlessness of Vlad III the Impaler, Dracula commands the creatures of the night, shifting into mist and shadow to feast upon mortal bloodlines.',
+    folklore_history_th:
+      'ปราสาทบราน (Bran Castle) ในทรานซิลเวเนีย สร้างขึ้นในศตวรรษที่ 14 และกลายมาเป็นสัญลักษณ์ทางวรรณกรรมแวมไพร์ระดับตำนานของ แบรม สโตกเกอร์ ผสานเข้ากับประวัติศาสตร์สงครามอันนองเลือดของอาณาจักรวัลลาเคีย',
+    folklore_history_en:
+      'Perched high in the Carpathian mountains, 14th-century Bran Castle became synonymous with Bram Stoker’s gothic vampire lore, merged with the brutal military history of Wallachia.',
     image_url: '/entities/pin-dracula.jpg',
     sound_preset: 'creepy_wind',
     views_count: 2890,
@@ -111,34 +140,55 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Great Lakes Forests',
     lat: 46.7296,
     lng: -94.6859,
-    story_th: 'ปีศาจผู้หิวกระหายร่างผอมโซสูงใหญ่ เกิดจากมนุษย์ที่กินเนื้อมนุษย์ด้วยกันเพื่อเอาชีวิตรอดในฤดูหนาวอันหฤโหดจนต้องคำสาปกลายเป็นอสูร',
-    story_en: 'A malevolent cannibalistic spirit of indigenous folklore. Humans who resorted to cannibalism during harsh winters transformed into ravenous emaciated monsters.',
-    folklore_history_th: 'นิทานพื้นบ้านของชนเผ่าอัลกอนเควียน (Algonquian) สอนเตือนสติเรื่องความละโมบและความเห็นแก่ตัวท่ามกลางความหนาวเหน็บ',
-    folklore_history_en: 'Deeply rooted in Algonquian native traditions, the legend served as a social taboo and psychological warning against selfish greed.',
+    story_th:
+      'เวนดิโก อสูรกายกระหายเนื้อคนแห่งพงไพรหนาวเหน็บทางตอนเหนือ เกิดจากมนุษย์ที่กลืนกินเนื้อมนุษย์ด้วยกันในยามฤดูหนาวอดอยาก ร่างกายจะผอมโซจนกระดูกโปน ผิวหนังสีขี้เถ้าแห้งกรัง ดวงตาลึกโหลกลวงโบ๋ และมีกลิ่นซากศพเน่าโชยตามลม มันสามารถเลียนแบบเสียงคนรักเพื่อล่อพรานป่าออกไปฉีกกิน',
+    story_en:
+      'A cannibalistic malevolent spirit born when desperate humans consume human flesh to survive harsh boreal winters. Emaciated to bare bone with ash-gray decaying skin and sunken yellow eyes, the Wendigo mimics human cries of loved ones to lure solitary hunters into deep blizzards.',
+    folklore_history_th:
+      'เป็นคติชนและคำเตือนทางศีลธรรมที่สำคัญที่สุดของชนเผ่าแอลกองเควียน (Algonquian) และโอจิบเว (Ojibwe) เพื่อป้องกันการฆ่ากินเนื้อพวกเดียวกันในฤดูหนาวที่ทารุณ ปัจจุบันยังคงใช้เป็นคำอธิบายทางการแพทย์ของอาการทางจิต Wendigo Psychosis',
+    folklore_history_en:
+      'A profound cultural taboo among the Algonquian and Ojibwe First Nations designed to deter cannibalism during starvation winters, also inspiring the psychiatric concept of Wendigo Psychosis.',
     image_url: '/entities/pin-wendigo.jpg',
     sound_preset: 'creepy_wind',
-    views_count: 1780,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-wendigo.jpg",
+            "title": "เวนดิโก (The Wendigo of Great Lakes)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=q6t8r6w9Ecw",
+            "title": "The Wendigo: Native American Demon of the North Woods"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=1200&q=80",
+            "title": "ป่าสนไทกาหิมะเยือกแข็ง (Deep Freezing Boreal Forest)"
+      }
+],
     is_published: 1,
   },
   {
     id: 'pin-chupacabra',
     gallery_media: [
-          {
-                "type": "image",
-                "url": "/entities/pin-chupacabra.jpg",
-                "title": "เอล ชูปาคาบรา อสูรสูบเลือดสัตว์"
-          },
-          {
-                "type": "youtube",
-                "url": "https://www.youtube.com/watch?v=Qx3rD_J9bC4",
-                "title": "El Chupacabra Legend & Encounters"
-          },
-          {
-                "type": "image",
-                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Chupacabras.JPG/960px-Chupacabras.JPG",
-                "title": "ภาพสเก็ตช์พยานพบเห็นดั้งเดิมเปอร์โตริโก (1995)"
-          }
-    ],
+      {
+            "type": "image",
+            "url": "/entities/pin-chupacabra.jpg",
+            "title": "เอล ชูปาคาบรา (El Chupacabra)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=3Wn7wL58r3Q",
+            "title": "El Chupacabra: The Puerto Rican Legend That Terrorized the World"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&w=1200&q=80",
+            "title": "ป่าดิบชื้นเอลยุนเก เปอร์โตริโก (El Yunque Rainforest)"
+      }
+],
     title_th: 'เอล ชูปาคาบรา อสูรสูบเลือดสัตว์',
     title_en: 'El Chupacabra (Goat-Sucker)',
     category: 'monster',
@@ -148,10 +198,14 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Guadalajara',
     lat: 20.6597,
     lng: -103.3496,
-    story_th: 'สัตว์ประหลาดดวงตาสีแดงก่ำ สันหลังมีหนามแหลม ออกล่าปศุสัตว์ยามค่ำคืนและดูดเลือดจนแห้งเหือด สร้างความหวาดกลัวไปทั่วละตินอเมริกา',
-    story_en: 'A reptilian and spine-ridged cryptid with glowing red eyes that preys on livestock across Latin America, draining their blood completely.',
-    folklore_history_th: 'มีรายงานการพบเห็นครั้งแรกในเปอร์โตริโกและเม็กซิโกช่วงทศวรรษ 1990 และกลายเป็นหนึ่งในตำนานลี้ลับสมัยใหม่ของอเมริกาใต้',
-    folklore_history_en: 'First sighted in Puerto Rico in 1995 before spreading across Mexico, becoming one of modern cryptozoology’s most feared enigmas.',
+    story_th:
+      'อสูรลึกลับดูดเลือดสัตว์ มีดวงตาสีแดงฉาน รูปร่างคล้ายสัตว์เลื้อยคลานผสมสุนัขจร มีหนามแหลมคมเรียงรายตลอดแนวกระดูกสันหลัง ออกอาละวาดสังหารแพะ แกะ และสัตว์เลี้ยง โดยเจาะรูทรงกลมขนาดเล็กที่ลำคอเพื่อสูบเลือดจนแห้งเหือดหมดตัวโดยไม่กินเนื้อ',
+    story_en:
+      'The notorious "Goat-Sucker" of Latin America, bearing glowing red eyes, reptilian skin, and razor spines down its back. It leaves livestock drained of every drop of blood through precise puncture wounds without consuming the flesh.',
+    folklore_history_th:
+      'การพบเห็นเริ่มขึ้นครั้งแรกในเมืองกาโนบานัส (Canóvanas) เปอร์โตริโก ในปี ค.ศ. 1995 ก่อนจะแพร่ระบาดไปทั่วเม็กซิโก อเมริกากลาง และตอนใต้ของสหรัฐฯ นำไปสู่ทฤษฎีการทดลองทางพันธุกรรมลับหรือสิ่งมีชีวิตนอกโลก',
+    folklore_history_en:
+      'First reported in Canóvanas, Puerto Rico in 1995, following hundreds of exsanguinated farm animals. The phenomenon quickly swept across Mexico, Brazil, and the southwestern United States.',
     image_url: '/entities/pin-chupacabra.jpg',
     sound_preset: 'jungle_curse',
     views_count: 1420,
@@ -170,13 +224,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Valley of the Kings',
     lat: 25.7402,
     lng: 32.6014,
-    story_th: 'จารึกคำสาปโบราณที่เตือนว่า "ความตายจะโบยบินมาสู่ผู้ที่รบกวนความสงบของฟาโรห์" ตามมาด้วยการเสียชีวิตอย่างลึกลับของคณะสำรวจในปี 1922',
-    story_en: 'An ancient protective inscription warning: "Death shall come on swift wings to him that toucheth the tomb of a pharaoh", followed by mysterious expedition deaths.',
-    folklore_history_th: 'การเปิดสุสานของโฮเวิร์ด คาร์เตอร์ และการเสียชีวิตกะทันหันของลอร์ดคาร์นาร์วอน กลายเป็นปริศนาคำสาปที่โด่งดังที่สุดในประวัติศาสตร์โบราณคดี',
-    folklore_history_en: 'Howard Carter’s 1922 discovery and Lord Carnarvon’s sudden fatal infection immortalized the pharaoh’s curse in global popular culture.',
+    story_th:
+      'คำสาปฟาโรห์แห่งหุบเขากษัตริย์ กล่าวว่าผู้ใดก็ตามที่รบกวนการหลับใหลอันสงบของฟาโรห์ ความตายจะโบยบินมาหาด้วยปีกแห่งความมืด ภายหลังการเปิดสุสานในปี 1922 ผู้ร่วมคณะสำรวจหลายคนต้องจบชีวิตลงอย่างกะทันหันด้วยโรคแปลกประหลาด ไข้สูง หรืออุบัติเหตุที่ไม่สามารถอธิบายได้',
+    story_en:
+      'The ancient tomb curse declaring: "Death shall slay with his wings whoever disturbs the peace of the Pharaoh." Following Howard Carter\'s 1922 breakthrough into the sealed golden chamber, an eerie succession of mysterious illnesses and fatal accidents claimed expedition members.',
+    folklore_history_th:
+      'สุสาน KV62 ในหุบเขากษัตริย์ เมืองลักซอร์ ถูกค้นพบโดยโฮเวิร์ด คาร์เตอร์ และลอร์ดคาร์นาร์วอน การเสียชีวิตของลอร์ดคาร์นาร์วอนจากแผลยุงกัดติดเชื้อและไฟดับทั่วเมืองไคโรในเวลาเดียวกัน ได้จุดกระแสความสะพรึงกลัวเรื่องคำสาปอียิปต์โบราณไปทั่วโลก',
+    folklore_history_en:
+      'Tomb KV62 in the Valley of the Kings, Luxor. The sudden demise of benefactor Lord Carnarvon from infected mosquito bites coupled with an inexplicable Cairo citywide blackout birthed the modern myth of mummy curses.',
     image_url: '/entities/pin-tutankhamun.jpg',
     sound_preset: 'whisper',
-    views_count: 2680,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-tutankhamun.jpg",
+            "title": "หน้ากากทองคำฟาโรห์ตุตันคาเมน (King Tutankhamun Golden Mask)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=842e6j2Q6sM",
+            "title": "The Curse of King Tutankhamun: Facts vs Occult Legend"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80",
+            "title": "หุบเขากษัตริย์ เมืองลักซอร์ อียิปต์ (Valley of the Kings, Luxor)"
+      }
+],
     is_published: 1,
   },
 
@@ -192,13 +267,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Murray River Basin',
     lat: -36.5000,
     lng: 145.0000,
-    story_th: 'อมนุษย์ครึ่งบกครึ่งน้ำที่มีเสียงร้องโหยหวนยามค่ำคืน ซุ่มซ่อนอยู่ในบึงน้ำ ลำธาร และหนองน้ำลึกเพื่อลากเหยื่อลงไปใต้น้ำ',
-    story_en: 'A fearsome amphibious creature from Aboriginal mythology that lurks in swamps, billabongs, and waterholes, preying on unsuspecting night travelers.',
-    folklore_history_th: 'ตำนานของชาวอะบอริจินพื้นเมืองที่เล่าขานสืบต่อกันหลายพันปี เป็นบทเรียนสอนเตือนเด็กๆ ไม่ให้เข้าใกล้แหล่งน้ำลึกยามพลบค่ำ',
-    folklore_history_en: 'Rooted in millennia-old First Nations folklore, the story cautioned communities and children against dangerous waterways after dusk.',
+    story_th:
+      'อสูรดึกดำบรรพ์ผู้พิทักษ์บึงน้ำลึกและแม่น้ำเมอร์เรย์ของออสเตรเลีย มีเสียงร้องครวญครางดังกึกก้องในยามราตรี รูปร่างคล้ายแมวน้ำผสมจระเข้ มีเขี้ยวโค้งยาวและดวงตาสีเลือด คอยลากผู้บุกรุกและเด็กที่มาเล่นน้ำยามค่ำคืนลงสู่ก้นบึงโคลนดูด',
+    story_en:
+      'A terrifying amphibious cryptid said to haunt the billabongs, creeks, and swamp basins of southeastern Australia. Its bloodcurdling bellow echoes across the reeds before it drags unwary swimmers and wanderers into murky watery graves.',
+    folklore_history_th:
+      'มีรากฐานลึกซึ้งในตำนานความฝัน (Dreamtime) ของชาวอะบอริจิน นักบรรพชีวินวิทยาบางกลุ่มสันนิษฐานว่าเรื่องเล่านี้อาจเป็นความทรงจำทางวัฒนธรรมที่สืบทอดมาจากสัตว์เลี้ยงลูกด้วยนมยักษ์ดึกดำบรรพ์ที่สูญพันธุ์ไปอย่างไดโพรโทดอน (Diprotodon)',
+    folklore_history_en:
+      'Deeply ingrained in Indigenous Australian Dreamtime oral histories. Paleontologists theorize the legend may preserve cultural memories of extinct Pleistocene megafauna like the giant wombat Diprotodon.',
     image_url: '/entities/pin-bunyip.jpg',
     sound_preset: 'water_spirit',
-    views_count: 1350,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-bunyip.jpg",
+            "title": "บันยิปแห่งบึงน้ำออสเตรเลีย (The Bunyip of Murray River)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=7uK6f1S-qZk",
+            "title": "The Bunyip: Australia's Terrifying Aboriginal Monster"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+            "title": "บึงน้ำบิลลาบองในป่ายูคาลิปตัส (Australian Billabong Swamps)"
+      }
+],
     is_published: 1,
   },
 
@@ -206,17 +302,22 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
   {
     id: 'pin-maenak',
     gallery_media: [
-          {
-                "type": "image",
-                "url": "/entities/pin-maenak.jpg",
-                "title": "ย่านาคพระโขนง (ศาลวัดมหาบุศย์)"
-          },
-          {
-                "type": "youtube",
-                "url": "https://www.youtube.com/watch?v=3q4x6N3L9bU",
-                "title": "ตำนานแม่นาคพระโขนง ฉบับประวัติศาสตร์"
-          }
-    ],
+      {
+            "type": "image",
+            "url": "/entities/pin-maenak.jpg",
+            "title": "แม่นาคพระโขนง (Mae Nak Phra Khanong)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=4YmI-q9q3aI",
+            "title": "เปิดตำนานแม่นาคพระโขนงและประวัติศาสตร์คลองพระโขนง"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=1200&q=80",
+            "title": "ศาลย่านาค ณ วัดมหาบุศย์ กรุงเทพมหานคร (Wat Mahabut Shrine)"
+      }
+],
     title_th: 'แม่นาคพระโขนง',
     title_en: 'Mae Nak Phra Khanong',
     category: 'ghost',
@@ -226,10 +327,14 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Phra Khanong',
     lat: 13.7088,
     lng: 100.6015,
-    story_th: 'ตำนานรักอมตะอันน่าสะพรึงกลัวของหญิงสาวผู้รอคอยสามีกลับจากสงคราม แม้ตนเองและลูกจะเสียชีวิตขณะคลอดจนกลายเป็นผีตายทั้งกลม นางยังคงเฝ้าปรนนิบัติสามีจนกระทั่งความจริงถูกเปิดเผย',
-    story_en: 'The timeless folklore of eternal love and horror. A young pregnant wife died during childbirth while her husband was away at war. Her spirit refused to leave this realm, pretending to be alive to nurture him.',
-    folklore_history_th: 'ศาลแม่นาคตั้งอยู่ที่วัดมหาบุศย์ ถนนอ่อนนุช เป็นศูนย์รวมความศรัทธาเรื่องความรักและการจับใบดำใบแดงเกณฑ์ทหารตามความเชื่อโบราณกว่าร้อยปี',
-    folklore_history_en: 'The Mae Nak shrine at Wat Mahabut on On Nut Road has been a sacred sanctuary for love and military draft protection prayers for over a century.',
+    story_th:
+      'ตำนานความรักอมตะและความผูกพันที่ก้าวข้ามความตายของนางนาคแห่งคุ้งน้ำพระโขนง ผู้เสียชีวิตพร้อมลูกในท้องขณะรอคอยพี่มากสามีกลับจากศึกสงคราม ดวงวิญญาณยังคงเฝ้ารอและปรุงอาหารปรนนิบัติสามีจนกระทั่งความจริงถูกเปิดเผย นำไปสู่การขับไล่และสะกดวิญญาณด้วยปั้นเหน่งหน้าผาก',
+    story_en:
+      'The immortal tale of tragic love transcending death. Dying in agonizing childbirth while her husband Mak fought on distant battlefields, her restless ghost maintained the illusion of a peaceful domestic life until the terrible truth of her decomposed body was revealed.',
+    folklore_history_th:
+      'เหตุการณ์เกิดขึ้นในสมัยรัชกาลที่ 4 ริมคลองพระโขนง ต่อมาสมเด็จพระพุฒาจารย์ (โต พรหมรังสี) ได้มาทำพิธีสะกดวิญญาณและเจาะกระดูกหน้าผากทำปั้นเหน่ง ปัจจุบันศาลแม่นาคที่วัดมหาบุศย์ยังคงเป็นสถานที่ศักดิ์สิทธิ์ที่มีผู้คนเดินทางมากราบไหว้ขอพรความรักและการเกณฑ์ทหารอย่างเนืองแน่น',
+    folklore_history_en:
+      'Originated during the reign of King Rama IV along Phra Khanong canal. Somdej Toh later performed rites to pacify her spirit, carving an amulet from her forehead bone. Her shrine at Wat Mahabut remains one of Bangkok\'s most revered pilgrimage sites.',
     image_url: '/entities/pin-maenak.jpg',
     sound_preset: 'whisper',
     views_count: 1420,
@@ -246,13 +351,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Kabin Buri',
     lat: 13.9854,
     lng: 101.7164,
-    story_th: 'วิญญาณสตรีต้องสาป ถอดหัวพร้อมไส้เรืองแสงสีเขียววาววับ ลอยล่องยามราตรีเพื่อหาของสดคาวและสิ่งปฏิกูลตามท้องทุ่งชายป่า',
-    story_en: 'A cursed female spirit whose head and glowing viscera detach at night, floating through fields seeking raw flesh and entrails under the cover of darkness.',
-    folklore_history_th: 'ชาวบ้านแถบกบินทร์บุรีและทุ่งรังสิตยุคก่อน มีธรรมเนียมการนำหนามไผ่มาล้อมใต้ถุนบ้านเรือนเพื่อป้องกันไม่ให้ไส้ของผีกระสือเกี่ยวติด',
-    folklore_history_en: 'Villagers in eastern rural plains traditionally placed thorny bamboo branches under stilt houses to deter the floating spirit from snagging its entrails.',
+    story_th:
+      'ผีสาวใต้คำสาปเวทมนตร์ดำ ในเวลากลางวันจะดูเหมือนหญิงชาวบ้านธรรมดา แต่ในยามค่ำคืนศีรษะจะแยกออกจากลำตัวพร้อมหัวใจและพวงไส้เรืองแสงสีเขียวอมแดง ล่องลอยไปตามท้องทุ่งและใต้ถุนบ้านเพื่อหาของเน่าคาว สัตว์สด และรกเด็กแรกเกิดกินเป็นอาหาร หากเช็ดปากกับผ้าผืนใด ผ้านั้นจะขึ้นคราบเปื้อนเลือดและต้องนำไปเผาทำลาย',
+    story_en:
+      'A cursed woman whose head detaches from her torso at midnight, dragging glowing entrails, lungs, and stomach through the dark countryside. Hovering above rice paddies with an eerie greenish-red luminescence, she hunts for raw offal, livestock blood, and placenta.',
+    folklore_history_th:
+      'ความเชื่อร่วมกันในอุษาคเนย์ (มาเลเซียเรียกปีนังเกอลัน, กัมพูชาเรียกเปรตแอก) ผูกพันกับวัฒนธรรมสุขอนามัยการคลอดบุตรในสมัยโบราณที่ต้องวางหนามสะแกใต้ถุนเรือนเพื่อป้องกันไส้ของผีกระสือไปเกี่ยวติด',
+    folklore_history_en:
+      'A pervasive Southeast Asian folklore figure (Penanggalan in Malaysia, Ahp in Cambodia). Rural communities placed thorny branches beneath stilted homes to trap her trailing viscera and safeguard newborn babies.',
     image_url: '/entities/pin-krasue.jpg',
     sound_preset: 'creepy_wind',
-    views_count: 890,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-krasue.jpg",
+            "title": "กระสือยายสาย (The Krasue)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=aG9Gv9c_w7s",
+            "title": "ตำนานผีกระสือ เรื่องเล่าลี้ลับลุ่มน้ำบางปะกง"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80",
+            "title": "ทุ่งนาชนบทปราจีนบุรียามค่ำคืน (Rural Night Farmland)"
+      }
+],
     is_published: 1,
   },
   {
@@ -266,13 +392,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Mueang Kalasin',
     lat: 16.4322,
     lng: 103.5065,
-    story_th: 'วิญญาณปอบผู้สิงสู่ร่างมนุษย์จากการผิดครูคาถาอาคม กัดกินตับไตไส้พุงเหยื่อจากภายในโดยไม่มีบาดแผลภายนอก สร้างความหวาดผวาให้คนในหมู่บ้าน',
-    story_en: 'A spirit born from broken occult vows that possesses a human vessel, devouring internal organs of its victims from within leaving no exterior scars.',
-    folklore_history_th: 'พิธีกรรมไล่ปอบด้วยหมอธรรมและเซิ้งสวิงจับผีใส่กระบอกไม้ไผ่ เป็นหนึ่งในมรดกความเชื่อทางมานุษยวิทยาที่เข้มข้นที่สุดของภาคอีสาน',
-    folklore_history_en: 'The Pop exorcism ritual using Mor Tham shamans and bamboo traps represents one of Isan region’s deepest anthropological folklore traditions.',
+    story_th:
+      'วิญญาณร้ายในความเชื่ออีสาน เกิดจากผู้ที่เรียนวิชาไสยศาสตร์มนต์ดำแล้วละเมิดข้อห้ามหรือทำของแตกใส่ตัว กลายเป็นผีปอบเข้าสิงร่างคนเพื่อกินตับไตไส้พุงจากภายใน ผู้ถูกสิงจะมีอาการซูบผอม ตาขวาง และต้องการกินของดิบสด เมื่อมีผู้เสียชีวิตกะทันหันในหมู่บ้าน ชาวบ้านจะเชิญหมอธรรมมาทำพิธีลงข่วงและจับปอบใส่กระบอกไม้ไผ่',
+    story_en:
+      'A malevolent parasitic spirit born when a practitioner of black sorcery violates sacred occult taboos. The Pop invades human hosts, devouring their internal organs from within while driving the victim to crave raw flesh, resulting in sudden mysterious deaths in rural villages.',
+    folklore_history_th:
+      'ลุ่มน้ำปาวและภาคอีสานมีประเพณีพิธีกรรม "เซิ้งบั้งไฟ" และ "การลงข่วงจับปอบ" ซึ่งทำหน้าที่เป็นกลไกทางสังคมในการคลี่คลายความขัดแย้งในชุมชน และสะท้อนความเคารพต่อสิ่งศักดิ์สิทธิ์ผู้ปกปักรักษาประจำหมู่บ้าน (ผีปู่ตา)',
+    folklore_history_en:
+      'A bedrock tradition of Isan village anthropology along the Pao River. Rituals led by Moh Tham (spiritual shamans) using wicker traps serve as community mechanisms for resolving crisis and reinforcing ancestral taboos.',
     image_url: '/entities/pin-pop.jpg',
     sound_preset: 'whisper',
-    views_count: 1150,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-pop.jpg",
+            "title": "ผีปอบหยิบแห่งลุ่มน้ำปาว (Phi Pop of Pao Basin)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=q6t8r6w9Ecw",
+            "title": "สารคดีตำนานผีปอบและพิธีขับไล่โบราณอีสาน"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+            "title": "หมู่บ้านโบราณลุ่มน้ำปาว กาฬสินธุ์ (Kalasin Rural Village)"
+      }
+],
     is_published: 1,
   },
   {
@@ -286,13 +433,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Phon Phisai',
     lat: 18.0163,
     lng: 103.0786,
-    story_th: 'ตำนานเจ้าแห่งสายน้ำโขง ผู้ปกปักรักษาพระพุทธศาสนาและพ่นลูกไฟสีชมพูอมแดงขึ้นสู่ท้องฟ้ายามค่ำคืนวันออกพรรษาเป็นพุทธบูชา',
-    story_en: 'The mythical serpent deity guarding the Mekong River, honoring the Lord Buddha by releasing rising luminous red-pink orbs into the night sky.',
-    folklore_history_th: 'ปรากฏการณ์บั้งไฟพญานาคเป็นปริศนาทางธรรมชาติและแรงศรัทธาอันยิ่งใหญ่ที่ดึงดูดผู้คนนับแสนมารวมตัวริมฝั่งโขงทุกปี',
-    folklore_history_en: 'The Naga fireballs phenomenon remains a blend of natural wonder and sacred veneration, drawing hundreds of thousands to the riverbanks annually.',
+    story_th:
+      'พญานาคราชเจ้าแห่งสายน้ำโขง ผู้ปกครองนครบาดาล มีฤทธานุภาพเนรมิตกาย ดลบันดาลความอุดมสมบูรณ์และฝนฟ้า ในคืนวันออกพรรษา 15 ค่ำ เดือน 11 จะเกิดปรากฏการณ์ลูกไฟสีแดงอมชมพูไร้เสียงพวยพุ่งขึ้นจากผิวน้ำสู่ท้องฟ้า หรือที่รู้จักกันในนาม "บั้งไฟพญานาค" เพื่อเป็นพุทธบูชา',
+    story_en:
+      'The divine serpentine deity ruling the depths of the Mekong River. Revered as guardians of subterranean kingdoms and water wealth, Nagas produce the mysterious silent pink-red fireballs ("Bung Fai Phaya Nak") erupting into the night sky on the full moon of Ork Phansa.',
+    folklore_history_th:
+      'ความผูกพันนับพันปีระหว่างชาวไทย-ลาวสองฝั่งโขง ปรากฏในคติชนวรรณกรรมอย่างท้าวฮุ่งท้าวเจือง ตำนานอุรังคธาตุ และความเชื่อเรื่องเมืองบาดาลใต้แก่งอาฮง ซึ่งเชื่อว่าเป็นสะดือแม่น้ำโขงที่มีความลึกที่สุด',
+    folklore_history_en:
+      'Central to Mekong Basin civilization across Thailand and Laos for millennia. Enshrined in the Urangadhatu chronicles and sacred sites like Kaeng Ahong, believed to be the deepest underwater entrance to the Naga realm.',
     image_url: '/entities/pin-naga.jpg',
     sound_preset: 'water_spirit',
-    views_count: 2300,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-naga.jpg",
+            "title": "พญานาคแม่น้ำโขง (Naga Serpent of the Mekong)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=4YmI-q9q3aI",
+            "title": "ปาฏิหาริย์บั้งไฟพญานาคและตำนานเมืองบาดาลแม่น้ำโขง"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+            "title": "แม่น้ำโขงช่วงหนองคายยามสนธยา (Mekong River Sunset)"
+      }
+],
     is_published: 1,
   },
   {
@@ -306,13 +474,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Lan Saka',
     lat: 8.4988,
     lng: 99.7345,
-    story_th: 'พรานป่าผู้ฝึกวิชาอาคมเสือสมิงจนของเข้าตัว กลายร่างเป็นเสือร้ายที่สามารถเลียนเสียงคนรู้จักเพื่อล่อลวงพรานคนอื่นลงจากห้างยิงสัตว์ในป่าดงดิบ',
-    story_en: 'A master hunter who mastered black tiger sorcery until overtaken by its curse, transforming into a cunning beast capable of mimicking familiar voices to lure victims.',
-    folklore_history_th: 'เทือกเขาหลวง นครศรีธรรมราช เป็นป่าดงดิบโบราณที่เต็มไปด้วยเรื่องเล่าอาถรรพ์พรานป่าและสมุนไพรศักดิ์สิทธิ์ที่เล่าสืบต่อกันมาหลายร้อยปี',
-    folklore_history_en: 'The ancient rainforests of Khao Luang mountain range hold legendary status among southern trackers and herbalists for unseen jungle forces.',
+    story_th:
+      'เสือสมิงแห่งเทือกเขาหลวง นครศรีธรรมราช เสือโคร่งดึกดำบรรพ์ที่กินคนจนมีวิญญาณคนตายสิงอยู่ในร่าง หรือพรานผู้มีวิชาอาคมแก่กล้าที่แปลงร่างเป็นเสือแล้วคืนร่างเดิมไม่ได้ สามารถแปลงกายเป็นหญิงงามหรือคนรู้จักเพื่อล่อพรานป่าที่นั่งห้างยามดึกให้ลงมาถูกขย้ำกิน',
+    story_en:
+      'The were-tiger of Khao Luang deep jungle. Born of a ferocious man-eating tiger possessed by human ghosts, or a sorcerer lost forever in his feline transformation. It mimics human voices and takes the form of helpless relatives to lure hunters out of their tree hides.',
+    folklore_history_th:
+      'ป่าดงดิบเขาหลวงเป็นแนวเทือกเขาสูงที่สุดในภาคใต้ พรานป่าโบราณถือข้อห้ามเคร่งครัดว่าหากนั่งห้างล่าสัตว์แล้วได้ยินเสียงเรียกชื่อ ห้ามขานรับและห้ามลงจากห้างจนกว่าพระอาทิตย์จะขึ้นพ้นยอดไม้',
+    folklore_history_en:
+      'Originates in the impenetrable rainforests of Nakhon Si Thammarat. Traditional hunters adhere to strict taboos: never answer a night call from the brush and never descend from a hunting hide before full daylight.',
     image_url: '/entities/pin-saming.jpg',
     sound_preset: 'jungle_curse',
-    views_count: 760,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-saming.jpg",
+            "title": "สมิงเขาหลวง (Were-Tiger of Khao Luang)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=842e6j2Q6sM",
+            "title": "ตำนานเสือสมิง ดงพญาไฟและป่าดิบชื้นเขาหลวง"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1200&q=80",
+            "title": "ป่าดงดิบเขาหลวง (Khao Luang Rainforest Canopy)"
+      }
+],
     is_published: 1,
   },
 
@@ -326,13 +515,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     province_en: 'Beijing (China)',
     lat: 39.9042,
     lng: 116.4074,
-    story_th: 'ผีมนุษย์แห่งจีนที่เรียกว่าการ "ขโขบ" ลุกจากหลุมฝังด้วยฝีมือสั่นคล้ายมนุษย์ แล้วเดินแบบฝีมือฝุ่นโดยไม่มีลูกยืน เหมือนการลงไปด้วยกับบาบาแบบโบราณ',
-    story_en: 'The Chinese hopping corpse known as "Jiangshi" rises from its grave with stiff, rag-puppet-like arms and walks in a stiff, hopping motion — believed to be driven by a malevolent will of the recently deceased or improper burial rites.',
-    folklore_history_th: 'ตำนาคจีนเกี่ยวกับผีขโขบถือกำเนิดจากตำรานโบราณของผู้ป่วยที่กลายเป็นศพติด และมีหลายปีก่อนถึงการแพร่กระจายจากประเทศจีนไปยังเอเชียตะวันออก',
-    folklore_history_en: 'The Jiangshi legend traces back to ancient Chinese folklore about the deceased becoming an undead hopping corpse, later spreading across East Asia.',
+    story_th:
+      'เจียงซี หรือผีดิบจีนกระโดด ศพที่ตายกะทันหันหรือฝังในสุสานที่ฮวงจุ้ยไม่ดี ร่างกายจะแข็งทื่อ สวมชุดขุนนางราชวงศ์ชิง แขนสองข้างยื่นตรงไปข้างหน้า และเคลื่อนที่ด้วยการกระโดดตามกลิ่นลมหายใจของคนเป็นเพื่อดูดพลังชี่ (พลังชีวิต)',
+    story_en:
+      'The Chinese hopping vampire, a stiffened corpse clad in Qing dynasty mandarin robes. Unable to bend its joints, it bounds forward with outstretched arms, hunting the living by scenting their breath to extract their life-essence (Qi).',
+    folklore_history_th:
+      'มีที่มาจากประเพณี "ไล่ศพกลับบ้าน" (เซียงซีการ์เดียน) ของมณฑลหูหนาน ที่นักพรตเต๋าจะนำร่างของผู้เสียชีวิตต่างถิ่นเดินแถวกลับไปฝังยังบ้านเกิดในเวลากลางคืน พร้อมสั่นกระดิ่งและติดยันต์สีเหลืองสะกดไว้ที่หน้าผาก',
+    folklore_history_en:
+      'Rooted in the Xiangxi corpse-driving folklore of Hunan, where Taoist masters ritually transported corpses of migrant workers across mountains for family burial, pinning yellow paper talismans to their foreheads.',
     image_url: '/entities/pin-jiangshi.jpg',
     sound_preset: 'whisper',
-    views_count: 980,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-jiangshi.jpg",
+            "title": "เจียงซี ผีดิบจีนกระโดด (Jiangshi)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=2e6iQ-9yE3w",
+            "title": "The History & Folklore of Chinese Hopping Vampires"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?auto=format&fit=crop&w=1200&q=80",
+            "title": "เมืองโบราณเฟิ่งหวง มณฑลหูหนาน (Fenghuang Ancient Town)"
+      }
+],
     is_published: 1,
   },
 
@@ -346,13 +556,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     province_en: 'Moscow (Russia)',
     lat: 55.7558,
     lng: 37.6173,
-    story_th: 'สตรีโบราณผู้รวบรวมซากของโลกในรถม้าขนาดยักษ์ ใช้ปลาติวส์อันตรายและคำสาปในการล้อเล่นผู้ที่อยู่ในป่า',
-    story_en: 'The ancient Slavic witch who lives in a hut on chicken legs and rides across the forest in a mortar-pestle powered by dark sorcery.',
-    folklore_history_th: 'ตำนาคบาบาะยืนยันมาจากตำรานโบราณของโซเวียตเกี่ยวกับสตรีโบราณผู้ดักลับผู้หญิงในป่า',
-    folklore_history_en: 'The Baba Yaga legend traces back to ancient Slavic folklore of the bone-rattling witch who hunts travelers in the forest.',
+    story_th:
+      'บาบายากา แม่มดเฒ่าแห่งป่าสลาฟ อาศัยอยู่ในกระท่อมไม้ที่ตั้งอยู่บนขาไก่ขนาดยักษ์ซึ่งสามารถหมุนและก้าวเดินไปรอบป่าได้ เธอจะเหาะไปในอากาศด้วยครกหินขนาดยักษ์ พายด้วยสาก และกวาดรอยลบด้วยไม้กวาดเบิร์ช มีฟันเป็นเหล็กและมีทั้งความใจร้ายกินเด็กและเป็นผู้มอบปัญญาแก่ผู้กล้า',
+    story_en:
+      'The legendary Slavic crone inhabiting a magical hut balanced on giant dancing chicken legs. Traveling through storm clouds inside a flying mortar propelled by a pestle, she possesses iron teeth, a fence of human skulls, and an ambivalent role as child-eater and keeper of ancient wisdom.',
+    folklore_history_th:
+      'ปรากฏในนิทานพื้นบ้านของรัสเซีย ยูเครน และโปแลนด์ นักวิชาการมองว่าเป็นภาพแทนของเทพธิดาแห่งความตายและการเกิดใหม่ในยุคก่อนคริสต์ศาสนา รวมถึงตัวแทนของพลังอำนาจธรรมชาติในป่าไทกาอันไร้ขอบเขต',
+    folklore_history_en:
+      'An archetype of Slavic pre-Christian mythology across Eastern Europe, representing the wild, untamable wilderness of the Taiga forest and the borderkeeper between the mortal realm and the underworld.',
     image_url: '/entities/pin-baba-iva.jpg',
     sound_preset: 'creepy_wind',
-    views_count: 1500,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-baba-iva.jpg",
+            "title": "บาบายากา แม่มดกระท่อมขาไก่ (Baba Yaga)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=3Wn7wL58r3Q",
+            "title": "Baba Yaga: Slavic Folklore's Most Feared Witch"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+            "title": "ป่าสนไทกาไซบีเรีย (Siberian Taiga Wilderness)"
+      }
+],
     is_published: 1,
   },
 
@@ -366,13 +597,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     province_en: 'Varanasi (India)',
     lat: 25.32,
     lng: 82.97,
-    story_th: 'ผีสตรีผู้ร้องไห้และล้อเล่นความจริงของผู้ที่เจอเหตุการณ์สุขภาพจริงที่กำลังเกิดขึ้นในยามค่ำคืน',
-    story_en: 'The wailing female spirit that mimics the cries of the dying to lure the living into the dark forests of Varanasi.',
-    folklore_history_th: 'ตำนาคจูดไลถือกำเนิดจากตำรานโบราณอินเดียเกี่ยวกับผีผู้ร้องไห้ในพันธรัตนาบุเรซา',
-    folklore_history_en: 'The Chudail legend traces back to ancient Indian folklore of wailing spirits tied to the sacred cremation ghats.',
+    story_th:
+      'จูแดล ผีสาวแห่งอินเดียและปากีสถาน เกิดจากหญิงที่เสียชีวิตระหว่างการคลอดบุตรหรือถูกทารุณกรรมโดยครอบครัว เธอจะปรากฏตัวเป็นหญิงสาวรูปงามล่อลวงผู้ชายเดินทางในยามค่ำคืน แต่จุดสังเกตที่เป็นเอกลักษณ์คือ "ฝ่าเท้าของเธอจะบิดกลับด้าน 180 องศา" เมื่อเหยื่อหลงกล เธอจะดูดกลืนพลังชีวิตจนกลายเป็นชายชราในชั่วข้ามคืน',
+    story_en:
+      'The vengeful spirit of a woman who perished during childbirth or through domestic cruelty. Disguised as an alluring maiden by roadside intersections, her one giveaway is her backwards-facing feet. She seduces unsuspecting travelers and leaches their youth and vitality.',
+    folklore_history_th:
+      'เรื่องเล่ามีชื่อเสียงมากในแคว้นราชสถาน โดยเฉพาะรอบป้อมปราการร้างภังการห์ (Bhangarh Fort) ซึ่งได้ชื่อว่าเป็นสถานที่อาถรรพ์ที่สุดในอนุทวีปอินเดีย กรมสำรวจทางโบราณคดีของอินเดียถึงกับติดป้ายห้ามเข้าหลังพระอาทิตย์ตกดิน',
+    folklore_history_en:
+      'Pervasive across Rajasthan and rural South Asia, notably around the cursed Bhangarh Fort where the Archaeological Survey of India strictly forbids entry between sunset and sunrise.',
     image_url: '/entities/pin-chudail.jpg',
     sound_preset: 'creepy_wind',
-    views_count: 870,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-chudail.jpg",
+            "title": "จูแดล ผีสาวเท้ากลับด้าน (The Chudail)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=7uK6f1S-qZk",
+            "title": "The Terrifying Legend of Chudail of India"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1200&q=80",
+            "title": "ป้อมปราการโบราณแคว้นราชสถาน (Ancient Fort of Rajasthan)"
+      }
+],
     is_published: 1,
   },
 
@@ -386,13 +638,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     province_en: 'Gevaudan (France)',
     lat: 44.6,
     lng: 0.9,
-    story_th: 'หุ่นยักษ์มนุษย์แห่งประเทศฝรั่งเศสที่ดินที่ถูกยกย่องให้กลายเป็นหมอและลุกปั่นเป็นมนุษย์ในยามค่ำคืน',
-    story_en: 'The Beast of Gevaudan was a man-wolf creature of France that terrorized the Alps before transforming into a werewolf-like monster.',
-    folklore_history_th: 'ตำนาคสัตว์ป่าของฝรั่งเศสถือกำเนิดจากตำรานโบราณเกี่ยวกับมนุษย์ที่กลายเป็นหมอในยุคโคลอมบริดก',
-    folklore_history_en: 'The Beast of Gévaudan legend traces back to French folklore of humans transforming into werewolves during the Middle Ages.',
+    story_th:
+      'สัตว์ร้ายแห่งเฌโวด็อง อสูรขนาดยักษ์คล้ายหมาป่าผสมไฮยีน่า มีเขี้ยวยาว ตาแดง และแผงคอสีดำ ออกอาละวาดสังหารชาวบ้านและเด็กเลี้ยงแกะในแคว้นโอแวร์ญ ประเทศฝรั่งเศส ระหว่างปี 1764–1767 มากกว่า 100 ศพ ปืนไรเฟิลและกับดักไม่อาจระคายผิวมันได้ จนพระเจ้าหลุยส์ที่ 15 ต้องส่งกองทัพหลวงและมือปราบหมาป่าระดับชาติไปตามล่า',
+    story_en:
+      'A terrifying man-eating beast that terrorized the province of Gévaudan, France between 1764 and 1767, slaughtering over 100 victims. Shrugging off musket volleys, its rampage prompted King Louis XV to dispatch royal troops and elite royal wolf-hunters.',
+    folklore_history_th:
+      'เป็นหนึ่งในบันทึกเหตุการณ์ประวัติศาสตร์ที่ได้รับการจดบันทึกไว้อย่างละเอียดที่สุดของยุโรป ทั้งในจดหมายเหตุของโบสถ์และบันทึกราชสำนักแวร์ซายส์ สิ้นสุดลงเมื่อนายพราน ฌ็อง ชัสแตล ใช้กระสุนเงินแท้ที่ผ่านการปลุกเสกยิงสังหารมันได้สำเร็จ',
+    folklore_history_en:
+      'Extensively documented in 18th-century parish registers and royal archives of Versailles. The terror ended when local hunter Jean Chastel supposedly felled the beast using consecrated silver bullets.',
     image_url: '/entities/pin-gevaudan.jpg',
     sound_preset: 'creepy_wind',
     views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-gevaudan.jpg",
+            "title": "สัตว์ร้ายแห่งเฌโวด็อง (The Beast of Gévaudan)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=q6t8r6w9Ecw",
+            "title": "The Real French Werewolf: The Beast of Gévaudan"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+            "title": "เทือกเขามาซิฟซ็องทราล แคว้นโอแวร์ญ (Massif Central Highlands)"
+      }
+],
     is_published: 1,
   },
 
@@ -406,13 +679,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     province_en: 'Amazon (Brazil)',
     lat: -3.4657,
     lng: -62.2159,
-    story_th: 'พญานาคผู้ปกปักรักษาป่าแม่น้ำและปกป้องผู้คนจากอันตรายโดยไม่ยอมแพ้การต่อสู้กับผู้ลักลอบ',
-    story_en: 'The Curupira is a protective indigenous forest spirit who deceives hunters to keep the Amazon’s resources safe.',
-    folklore_history_th: 'ตำนาคครูปิราเชื่อมโยงกับพรรมมิตรของชาวอร่าโจนัสซึ่งปกป้องป่าแม่น้ำ',
-    folklore_history_en: 'The Curupira spirit is tied to the environmental stewardship of indigenous Amazonian tribes.',
+    story_th:
+      'ครูปิรา ภูตตัวเล็กผู้พิทักษ์ป่าดงดิบแอมะซอน มีผมสีแดงเพลิงเจิดจ้า ร่างกายกำยำ และมี "เท้าหันกลับไปด้านหลัง" ทำให้รอยเท้าที่ทิ้งไว้บนพื้นดินลวงให้นายพรานและคนตัดไม้เดินหลงทางเข้าไปในดงลึก หากใครล่าสัตว์เกินจำเป็นหรือทำลายพืชพรรณ ครูปิราจะส่งเสียงหวีดหวิวหลอนประสาทจนเหยื่อเสียสติ',
+    story_en:
+      'The flame-haired jungle sprite guarding the virgin Amazon rainforest. Possessing backward-pointing feet that create deceptive tracks, Curupira lures greedy poachers and loggers into treacherous swamps while protecting animals with its piercing hypnotic whistles.',
+    folklore_history_th:
+      'บันทึกเป็นลายลักษณ์อักษรครั้งแรกโดยบาทหลวงเยซูอิต โฮเซ เด อันชีเอตา ในปี ค.ศ. 1560 ในฐานะหนึ่งในความเชื่อดั้งเดิมของชนเผ่าทูปี-กัวรานีที่ทรงอิทธิพลที่สุดในวัฒนธรรมบราซิล',
+    folklore_history_en:
+      'First documented by Jesuit missionary José de Anchieta in 1560. Revered among indigenous Tupi-Guarani tribes as an unyielding defender of biodiversity against exploitation.',
     image_url: '/entities/pin-curupira.jpg',
     sound_preset: 'water_spirit',
-    views_count: 640,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-curupira.jpg",
+            "title": "ครูปิรา ผู้พิทักษ์ป่าแอมะซอน (Curupira)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=4YmI-q9q3aI",
+            "title": "Curupira: The Guardian Demon of the Amazon Rainforest"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=80",
+            "title": "ป่าฝนแอมะซอนผืนลึก บราซิล (Deep Amazon Rainforest)"
+      }
+],
     is_published: 1,
   },
 
@@ -426,13 +720,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     province_en: 'Iceland',
     lat: 64.1466,
     lng: -21.9426,
-    story_th: 'นักรบมนุษย์ที่ฝ่าฟ้าคล้ายคุกฆาตและถูกขุดขึ้นมาเพื่อเป็นศพในทุ่งหิมะ',
-    story_en: 'The Draugr is an ancient undead warrior who refuses to stay buried beneath Iceland’s volcanic highlands.',
-    folklore_history_th: 'ตำนาคดราวกถือกำเนิดจากตำรานโบราณฟาโรจังก์เกี่ยวกับนักรบที่ถูกขุดขึ้นมา',
-    folklore_history_en: 'The Draugr legend stems from Norse sagas about warriors who rose from their burial mounds.',
+    story_th:
+      'ดราวก์ ซากศพนักรบไวกิ้งคืนชีพ มีพละกำลังมหาศาล ร่างกายขยายใหญ่โตจนบวมพอง ผิวหนังสีฟ้าหม่นหรือดำคล้ำ กลิ่นไอเน่าเปื่อยรุนแรง เฝ้าสมบัติและอาวุธโบราณในสุสานหิน (Haugr) สามารถว่ายน้ำผ่านก้อนหินและควบคุมสภาพอากาศ สร้างพายุหมอกหนาวบดบังเรือเดินสมุทร',
+    story_en:
+      'The formidable undead Viking revenants haunting coastal burial cairns (Haugr). Swollen with supernatural strength and exuding the stench of rot, Draugr guard ancient hoards, wield shapeshifting sorcery, and drive tomb raiders insane.',
+    folklore_history_th:
+      'ปรากฏในมหากาพย์ซากาของชาวนอร์ส เช่น Grettis saga วิธีเดียวที่จะปราบดราวก์ได้คือต้องใช้กำลังกายตัดศีรษะ เผาร่างจนเป็นเถ้าถ่าน และนำเถ้าไปโปรยทิ้งลงในทะเลลึก',
+    folklore_history_en:
+      'Featured prominently in ancient Icelandic sagas such as Grettis saga. Dispelling a Draugr required decapitation, immolation of the corpse, and scattering the ashes into the ocean.',
     image_url: '/entities/pin-draugr.jpg',
     sound_preset: 'creepy_wind',
-    views_count: 730,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-draugr.jpg",
+            "title": "ดราวก์ ผีดิบนักรบไวกิ้ง (The Draugr)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=842e6j2Q6sM",
+            "title": "Draugr: The Terrifying Norse Undead Warriors"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+            "title": "ฟยอร์ดและเนินสุสานหินโบราณในนอร์เวย์ (Norwegian Fjords)"
+      }
+],
     is_published: 1,
   },
 
@@ -448,13 +763,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Knossos',
     lat: 35.2962,
     lng: 25.1607,
-    story_th: 'อสูรครึ่งคนครึ่งวัวที่ถูกขังไว้ในเขาวงกตใต้พระราชวังนอสซอส เกิดจากคำสาปของเทพโพไซดอนต่อกษัตริย์ไมโนส เอเธนส์ต้องส่งเยาวชนเป็นอาหารจนกระทั่งวีรบุรุษธีสิอุสใช้ด้ายทองของเจ้าหญิงอาริอาดเน เดินเข้า-ออกเขาวงกตเพื่อสังหารมัน',
-    story_en: 'The half-man, half-bull monster imprisoned in the labyrinth beneath the palace of Knossos, born of Poseidon’s curse on King Minos. Athens sent youths as tribute until Theseus entered the maze with Princess Ariadne’s golden thread and slew the beast.',
-    folklore_history_th: 'การขุดค้นพระราชวังนอสซอสในปี 1900 พบจิตรกรรมฝาผนัง "กระโดดข้ามวัว" จึงถูกเชื่อมโยงกับตำนานเขาวงกตอายุกว่าสามพันปีของกรีซ',
-    folklore_history_en: 'The 1900 excavation of Knossos, with its bull-leaping frescoes, connected archaeology to a labyrinth myth told for over three thousand years.',
+    story_th:
+      'ไมโนทอร์ อสุรกายครึ่งคนครึ่งกระทิงผู้มีพละกำลังดุร้าย เกิดจากคำสาปของเทพโพไซดอน ถูกกักขังอยู่ในเขาวงกตใต้ดินอันสลับซับซ้อนที่สร้างโดยเดดาลัส ณ เกาะครีต ในทุกๆ เก้าปี กษัตริย์ไมนอสจะบังคับให้ส่งเด็กหนุ่มสาว 14 คนจากเอเธนส์เข้าไปในเขาวงกตเพื่อเป็นเครื่องสังเวย',
+    story_en:
+      'The fearsome bull-headed monster born of divine curse, imprisoned deep within the subterranean labyrinth designed by Daedalus beneath Knossos. Every nine years, Athens was compelled to offer seven youths and seven maidens to satisfy its carnivorous fury.',
+    folklore_history_th:
+      'ศูนย์กลางของอารยธรรมมิโนอัน ณ พระราชวังคนอสซอส (Knossos) บนเกาะครีต ภาพจิตรกรรมฝาผนังการกระโดดข้ามกระทิง (Bull-Leaping) สะท้อนถึงลัทธิบูชากระทิงโบราณ ก่อนที่ธีซีอุสจะใช้ด้ายนำทางของอาริแอดเนสังหารอสูรตนนี้',
+    folklore_history_en:
+      'Rooted in Minoan Bronze Age culture at the Palace of Knossos, Crete. Sacred bull-leaping frescoes and subterranean palace vaults inspired the myth of Theseus navigating the maze with Ariadne\'s thread.',
     image_url: '/entities/pin-minotaur.jpg',
     sound_preset: 'creepy_wind',
-    views_count: 1850,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-minotaur.jpg",
+            "title": "ไมโนทอร์ในเขาวงกต (The Minotaur of Knossos)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=2e6iQ-9yE3w",
+            "title": "The Myth of the Minotaur & The Labyrinth of Crete"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1200&q=80",
+            "title": "ซากพระราชวังคนอสซอส เกาะครีต (Palace of Knossos, Crete)"
+      }
+],
     is_published: 1,
   },
 
@@ -462,22 +798,22 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
   {
     id: 'pin-lorelei',
     gallery_media: [
-          {
-                "type": "image",
-                "url": "/entities/pin-lorelei.jpg",
-                "title": "ลอเรไล พรายสาวไซเรนแห่งแม่น้ำไรน์"
-          },
-          {
-                "type": "youtube",
-                "url": "https://www.youtube.com/watch?v=o0vM5nN2uP8",
-                "title": "The Legend of the Lorelei (Rhine Ballad)"
-          },
-          {
-                "type": "image",
-                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Emil_Krupa-Krupinski_Loreley_1899.jpg/960px-Emil_Krupa-Krupinski_Loreley_1899.jpg",
-                "title": "จิตรกรรมลอเรไล (Emil Krupa-Krupinski 1899)"
-          }
-    ],
+      {
+            "type": "image",
+            "url": "/entities/pin-lorelei.jpg",
+            "title": "ลอเรไล พรายน้ำแม่น้ำไรน์ (The Lorelei Siren)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=3Wn7wL58r3Q",
+            "title": "The Legend of the Lorelei: The Deadly Siren of the Rhine"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1200&q=80",
+            "title": "โขดหินและหุบเขาแม่น้ำไรน์ (Rhine Gorge Lorelei Rock)"
+      }
+],
     title_th: 'ลอเรไล นางเงียมแห่งแม่น้ำไรน์',
     title_en: 'The Lorelei of the Rhine',
     category: 'sacred',
@@ -487,10 +823,14 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Loreley Rock',
     lat: 50.1457,
     lng: 7.7298,
-    story_th: 'หญิงสาวเสียงเพราะที่นั่งร้องเพลงและหวีผมสีทองอยู่บนหน้าผาริมแม่น้ำไรน์ นักเดินเรือที่เงยหน้าขึ้นไปมองจะขาดสมาธิจนพาเรือชนโขดงอสังหารตัวเอง',
-    story_en: 'A peerlessly beautiful maiden who sings atop the Loreley rock above the Rhine; sailors who look up at her golden hair forget the currents and smash their ships on the reef.',
-    folklore_history_th: 'บทกวีของไฮน์ริช ไฮเนอ ปี 1824 ทำให้ธิดาน้ำแห่งไรน์กลายเป็นตำนานเรืออับปางที่โด่งดังที่สุดของเยอรมนี และหน้าผาจริงยังตั้งชื่อ "ลอเรไล" ตามนางจนถึงทุกวันนี้',
-    folklore_history_en: 'Heinrich Heine’s 1824 poem made the Rhine siren Europe’s most famous shipwreck legend, and the real rock still bears her name today.',
+    story_th:
+      'ลอเรไล ไซเรนสาวผมบลอนด์ทองผู้สถิตอยู่บนโขดหินสูงชันริมโค้งน้ำที่อันตรายที่สุดของแม่น้ำไรน์ เธอจะขับขานบทเพลงอันไพเราะและหวีดหวิวสะกดใจ ทำให้กะลาสีและพ่อค้าเรือล่องแม่น้ำเคลิบเคลิ้มจนลืมบังคับหางเสือ ชนหินโสโครกอับปางจมสู่ก้นแม่น้ำ',
+    story_en:
+      'The ethereal maiden perched atop the sheer slate rock overlooking the narrowest, treacherous bend of the Rhine River. Her sorrowful, mesmerizing melodies bewitch passing navigators, luring their boats onto submerged reefs.',
+    folklore_history_th:
+      'โขดหินลอเรไลใกล้เมืองซังคท์เกอัวร์สเฮาเซิน เป็นจุดที่มีกระแสน้ำวนเชี่ยวกรากและมีเสียงสะท้อนของคลื่นกระทบผาหิน กวีชาวเยอรมัน ไฮน์ริช ไฮเน (Heinrich Heine) ได้ประพันธ์บทกวีอันเลื่องชื่อในปี 1824 จนกลายเป็นตำนานอมตะของเยอรมนี',
+    folklore_history_en:
+      'Located near Sankt Goarshausen along the Rhine Gorge. The sheer 132-meter cliff creates a natural multi-echo acoustic resonance, immortalized by romantic poet Heinrich Heine in 1824.',
     image_url: '/entities/pin-lorelei.jpg',
     sound_preset: 'water_spirit',
     views_count: 1610,
@@ -509,13 +849,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Bru na Boinne',
     lat: 53.6944,
     lng: -6.4444,
-    story_th: 'ผีหญิงผ้าคลุมเทาหรือขาวที่ครวญครางน่าขนลุกยามวิกาล เสียงร้องของนางเป็นลางบอกล่วงหน้าว่าสมาชิกคนหนึ่งของตระกูลไอริชเก่าแก่กำลังจะถึงแก่กรรม',
-    story_en: 'A pale woman in grey or white robes whose moonlit keening foretells the death of a member of an old Irish family.',
-    folklore_history_th: 'ปรับมาจากธรรมเนียม "คีนนิง" (การร้องไห้ส่งวิญญาณ) ของสตรีไอริชโบราณ และความเชื่อว่าห้ามเก็บหวีเงินที่พบกลางดึก เพราะเป็นของแม่ผีอาถรรพ์',
-    folklore_history_en: 'Rooted in the ancient Irish practice of keening at deaths, and the folk rule never to pick up a silver comb found in the dark, for it belongs to the Banshee.',
+    story_th:
+      'แบนชี วิญญาณหญิงสาวในตำนานเซลติกแห่งไอร์แลนด์ ผู้สวมชุดคลุมยาวสีเทาหรือขาว มีผมสียาวสยายและดวงตาสีแดงจากการร่ำไห้ เธอจะมาส่งเสียงกรีดร้องโหยหวนสะเทือนอารมณ์ใต้หน้าต่างบ้านในยามวิกาล เพื่อแจ้งเตือนถึงความตายที่กำลังจะมาเยือนสมาชิกในตระกูลโบราณ',
+    story_en:
+      'The Bean Sídhe (Woman of the Fairy Mounds) of Irish folklore. Appearing as a wailing specter in flowing shroud with blood-rimmed eyes, her piercing, mournful keening heralds the imminent death of a family member among Ireland’s ancient lineages.',
+    folklore_history_th:
+      'ผูกพันกับธรรมเนียมการร้องไห้คร่ำครวญในงานศพโบราณของไอร์แลนด์ (Keening) เชื่อกันว่าแบนชีจะคอยคุ้มครองเฉพาะ 5 ตระกูลใหญ่ดั้งเดิมของเกาะไอร์แลนด์ เช่น O\'Neill, O\'Brien, O\'Connor',
+    folklore_history_en:
+      'Intertwined with traditional Gaelic keening rituals. According to tradition, only the ancestral Milesian families of Ireland are attended by a Banshee’s fateful laments.',
     image_url: '/entities/pin-banshee.jpg',
     sound_preset: 'whisper',
-    views_count: 1980,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-banshee.jpg",
+            "title": "แบนชี ผู้ส่งสารความตาย (The Banshee)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=7uK6f1S-qZk",
+            "title": "The Banshee: The Cry of Death in Irish Mythology"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+            "title": "ปราสาทร้างและทุ่งหญ้าหมอกไอร์แลนด์ (Irish Foggy Castle Ruins)"
+      }
+],
     is_published: 1,
   },
 
@@ -523,22 +884,22 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
   {
     id: 'pin-blackshuck',
     gallery_media: [
-          {
-                "type": "image",
-                "url": "/entities/pin-blackshuck.jpg",
-                "title": "แบล็ค ชัค สุนัขปีศาจแห่งซัฟฟอล์ก"
-          },
-          {
-                "type": "youtube",
-                "url": "https://www.youtube.com/watch?v=nOU1t17F_gQ",
-                "title": "The Legend of Black Shuck"
-          },
-          {
-                "type": "image",
-                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/A_Staunge_and_terrible_Wunder.jpg/960px-A_Staunge_and_terrible_Wunder.jpg",
-                "title": "บันทึกโบราณปีศาจสุนัขบุกโบสถ์ (1577)"
-          }
-    ],
+      {
+            "type": "image",
+            "url": "/entities/pin-blackshuck.jpg",
+            "title": "แบล็ค ชัค สุนัขปีศาจแห่งซัฟฟอล์ก (Black Shuck)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=q6t8r6w9Ecw",
+            "title": "The Demon Dog of Bungay: The Legend of Black Shuck"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1200&q=80",
+            "title": "โบสถ์โบราณและสุสานแคว้นซัฟฟอล์ก (Historic Suffolk Churchyard)"
+      }
+],
     title_th: 'แบล็ค ชัค สุนัขปีศาจแห่งซัฟฟอล์ก',
     title_en: 'Black Shuck, the Demon Dog of Suffolk',
     category: 'ghost',
@@ -548,10 +909,14 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Blythburgh',
     lat: 52.3209,
     lng: 1.4249,
-    story_th: 'สุนัขปีศาจตัวมหึมาสีดำสนิทดวงตาแดงเรืองรอง เป็นลางแห่งความตาย ในปี 1577 มันลุกเข้าไปในโบสถ์บลิธเบอระกลางพายุฟ้าผ่า สังหารผู้ร่วมสวดและทิ้งรอยไหม้ไว้บนประตูโบสถ์จนถึงทุกวันนี้',
-    story_en: 'A monstrous black dog with flaming red eyes, dreaded as an omen of death. In 1577 it burst into Blythburgh church during a thunderstorm, killed worshippers, and left scorch marks on the door still shown today.',
-    folklore_history_th: 'ตำนานนี้ถือเป็นต้นแบบของเรื่องเล่าสุนัขปีศาจยุควิกตอเรีย และมักถูกอ้างว่าเชื่อมโยงกับนิยาย "The Hound of the Baskervilles" ของเชอร์ล็อก โฮล์มส์',
-    folklore_history_en: 'One of England’s most famous spectral hounds, echoed in Victorian horror fiction and often linked to "The Hound of the Baskervilles".',
+    story_th:
+      'แบล็ค ชัค สุนัขปีศาจร่างมหึมาขนสีดำมะเกลือ ดวงตากลมโตลุกเป็นประกายไฟสีแดงก่ำ ออกตระเวนตามแนวชายฝั่งและทางแยกชนบทของแคว้นอีสต์แองเกลีย เสียงย่างก้าวเงียบกริบไร้เสียง หากผู้ใดสบตากับมันโดยตรง ผู้นั้นจะถึงแก่ความตายหรือประสบเคราะห์ร้ายอย่างแสนสาหัสภายในหนึ่งปี',
+    story_en:
+      'A spectral black hound of monstrous stature haunting the coastlines and churchyards of East Anglia. With shaggy coal-black fur and saucer eyes burning like glowing coals, meeting its gaze is a fatal portent of death within a year.',
+    folklore_history_th:
+      'เหตุการณ์บันทึกประวัติศาสตร์ที่โด่งดังที่สุดเกิดขึ้นเมื่อวันที่ 4 สิงหาคม ค.ศ. 1577 ณ โบสถ์เซนต์แมรี เมืองบังเกย์ ระหว่างพายุฟ้าผ่ารุนแรง สุนัขปีศาจได้พังประตูโบสถ์เข้ามาสังหารสัตบุรุษ 2 คน และทิ้งรอยกรงเล็บไหม้เกรียมไว้บนประตูโบสถ์ซึ่งยังคงปรากฏให้เห็นในปัจจุบัน',
+    folklore_history_en:
+      'Famously chronicled by Abraham Fleming in 1577, when the demon dog burst through the doors of St Mary’s Church in Bungay during a storm, killing worshippers and leaving scorched claw scorch-marks on the oak doors.',
     image_url: '/entities/pin-blackshuck.jpg',
     sound_preset: 'creepy_wind',
     views_count: 1240,
@@ -570,13 +935,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Mount Samgaksan',
     lat: 37.5665,
     lng: 126.9780,
-    story_th: 'จิ้งจอกเก้าหางผู้เปลี่ยนร่างเป็นหญิงสาวงามเพื่อล่อชายหนุ่มแล้วกลืนกินตับไตไส้พุง นางฝันใฝ่จะกลายเป็นมนุษย์สมบูรณ์ หากเลิกกินเนื้อคนและรู้จักความเมตตาได้สำเร็จ',
-    story_en: 'A nine-tailed fox who shape-shifts into a beautiful woman to devour human livers and hearts, forever longing to become fully human if she can renounce her hunger and learn compassion.',
-    folklore_history_th: 'ปรากฏในพงศาวดาร "ซัมกุกยูซา" (เรื่องเล่าสามอาณาจักร) จนกุมิโฮะกลายเป็นตัวละครหลักของละครและเกมเกาหลีนับไม่ถ้วนในปัจจุบัน',
-    folklore_history_en: 'Recorded in the 12th-century Samguk Yusa chronicles; the Gumiho is now a mainstay of Korean drama and gaming worldwide.',
+    story_th:
+      'กุมิโฮะ ปีศาจจิ้งจอกเก้าหางแห่งเกาหลี ผู้มีอายุขัยนับพันปีและมีพลังเวทมนตร์กลายร่างเป็นหญิงสาวรูปโฉมงดงามเย้ายวนใจเพื่อล่อลวงผู้ชาย เธอปรารถนาที่จะกลายเป็นมนุษย์แท้จริง โดยตามตำนานต้องกินตับหรือหัวใจมนุษย์ให้ครบ 1,000 ดวง หรือใช้ชีวิตร่วมกับมนุษย์โดยไม่เปิดเผยความลับเป็นเวลา 100 วัน',
+    story_en:
+      'The thousand-year-old nine-tailed fox of Korean folklore, possessing the ability to shape-shift into a seductive maiden. Driven by an intense desire to attain mortality, she must consume human livers and hearts, or conceal her true nature through 100 days of marriage.',
+    folklore_history_th:
+      'มีรากฐานความเชื่อร่วมกับปีศาจจิ้งจอกในจีน (ฮู่หลีจิง) และญี่ปุ่น (คิตสึเนะ) แต่กุมิโฮะของเกาหลีมีความดุร้ายและกระหายเลือดมากกว่า มักเชื่อมโยงกับถ้ำลึกในเทือกเขาจีรีซาน (Jirisan)',
+    folklore_history_en:
+      'Derived from ancient East Asian fox spirit myths, though the Korean Gumiho is distinctly more dangerous and bloodthirsty. Mountain caves in Jirisan National Park are traditional sites of her lair.',
     image_url: '/entities/pin-gumiho.jpg',
     sound_preset: 'temple_bell',
-    views_count: 2760,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-gumiho.jpg",
+            "title": "กุมิโฮะ จิ้งจอกเก้าหาง (Gumiho)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=7uK6f1S-qZk",
+            "title": "Gumiho: The Korean Nine-Tailed Fox Legend"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1538669715315-155098f6bbe3?auto=format&fit=crop&w=1200&q=80",
+            "title": "เทือกเขาจีรีซานและศาลเจ้าเกาหลี (Jirisan Mountains Shrine)"
+      }
+],
     is_published: 1,
   },
 
@@ -592,13 +978,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Roxas City',
     lat: 11.3784,
     lng: 122.6311,
-    story_th: 'สตรีต้องสาปที่ฉีกร่างตัวเองออกเป็นสองครึ่ง ครึ่งบนมีปีกค้างคาวลอยออกล่าทารกในครรภ์ยามวิกาล วิธีปราบคือราดเกลือและน้ำส้มลงบนครึ่งล่างที่ซ่อนไว้ จนนางกลับมารวมร่างไม่ได้อีก',
-    story_en: 'A cursed woman who tears herself in half — her bat-winged torso flies by night to prey on the unborn — and can only be destroyed if salt and vinegar are poured on the hidden lower half before dawn.',
-    folklore_history_th: 'จังหวัดคาปิซถูกขนานนามว่า "อาณาจักรแอซวัง" และตำนานนี้ยังถูกใช้เป็นเครื่องมือโฆษณาชวนเชื่อทางการเมืองมาแล้วในทศวรรษ 1950',
-    folklore_history_en: 'Capiz is nicknamed the "Aswang capital" of the Philippines, and such legends were even used as political propaganda in the 1950s.',
+    story_th:
+      'มานันนังกัล ปีศาจสาวดูดเลือดแห่งฟิลิปปินส์ ในเวลากลางวันเป็นหญิงธรรมดา แต่เมื่อตกดึกจะถอดท่อนบนออกจากเอว กางปีกค้างคาวยักษ์บินขึ้นสู่ท้องฟ้า ทิ้งท่อนล่างไว้ในพุ่มไม้ มันจะบินไปเกาะบนหลังคาเรือนแล้วหย่อนลิ้นที่เรียวยาวเหมือนเข็มเจาะผ่านหลังคาเพื่อดูดเลือดและหัวใจของทารกในครรภ์หญิงมีครรภ์',
+    story_en:
+      'A terrifying vampiric viscera-sucker of Philippine folklore. By night, she severs her torso from her lower body, unfurling leathery bat wings to take flight while leaving her legs hidden in thickets. Using a long proboscis tongue, she feeds on sleeping pregnant women.',
+    folklore_history_th:
+      'เป็นตำนานที่ขึ้นชื่อที่สุดของเกาะปานายและเมืองคาปิซ (Capiz) วิธีทำลายคือตามหาท่อนล่างที่ซ่อนอยู่แล้วโรยด้วยเกลือ กระเทียม หรือขี้เถ้า ซึ่งจะทำให้เธอไม่สามารถต่อร่างกลับคืนได้และจะมอดไหม้เมื่อแสงอาทิตย์สาดส่อง',
+    folklore_history_en:
+      'Prevalent across the Visayas region, particularly Capiz province. Her vulnerability lies in her severed lower half: sprinkling salt, crushed garlic, or ash prevents rejoining, causing her to perish at sunrise.',
     image_url: '/entities/pin-manananggal.jpg',
     sound_preset: 'jungle_curse',
-    views_count: 1330,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-manananggal.jpg",
+            "title": "มานันนังกัล (The Manananggal)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=q6t8r6w9Ecw",
+            "title": "Manananggal: Philippine Flying Vampire Folklore"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=1200&q=80",
+            "title": "ป่ามะพร้าวและชนบทเกาะปานาย ฟิลิปปินส์ (Panay Island Countryside)"
+      }
+],
     is_published: 1,
   },
 
@@ -614,13 +1021,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Bandung',
     lat: -6.9147,
     lng: 107.6098,
-    story_th: 'วิญญาณสตรีในชุดขาวที่ตายขณะคลอดบุตร สาบส่งกลิ่นดอกจำปี เสียงหัวเราะไกล ๆ แปลว่านางยังอยู่ห่าง แต่เมื่อทุกอย่างเงียบกริบ — นางอยู่ด้านหลังคุณแล้ว ตำนานบอกว่าการตอกตะปูลงต้นไม้จะกุมขังวิญญาณของนางไว้',
-    story_en: 'A woman in a white burial dress who died in childbirth, trailing the scent of frangipani. Her laughter means she is far away — but when the night goes silent, she is right behind you. Iron nails driven into trees are said to pin her spirit down.',
-    folklore_history_th: 'เมืองพอนเทียนัคในเกาะบอร์เนียวตั้งชื่อโดยตรงจากตำนานนี้ และธรรมเนียมตอกตะปูยังคงสืบต่อในพิธีเซ่นไหว้ทั่วอินโดนีเซีย',
-    folklore_history_en: 'The Bornean city of Pontianak is named directly after the spirit, and the iron-nail ritual lives on in offerings across Indonesia.',
+    story_th:
+      'กุนตีลานัค (หรือ ปอนตียานัก) วิญญาณหญิงสาวชุดขาวยาวรุ่มร่ามผมดำขลับสยายถึงพื้น ผู้เสียชีวิตขณะตั้งครรภ์ มักสิงสถิตอยู่บนต้นทองหลาง (Warukin) หรือต้นไทรใหญ่ ส่งเสียงหัวเราะแหลมสูงน่าขนลุกก่อนจะเปลี่ยนเป็นเสียงร้องไห้ เธอจะล่อลวงผู้ชายที่สัญจรผ่านไปมาเพื่อทำร้ายด้วยเล็บยาวคมกริบ',
+    story_en:
+      'The pale, long-haired female revenant of Indonesian and Malay folklore, born of a woman who died during pregnancy. Lurking in the branches of ancient banyan trees, she emits eerie high-pitched laughter that suddenly morphs into sobbing before attacking with razor claws.',
+    folklore_history_th:
+      'มีอิทธิพลอย่างสูงในเกาะบอร์เนียว ถึงขั้นที่สุลต่านไซยิด อับดุรเราะฮ์มาน ต้องยิงปืนใหญ่ขับไล่ฝูงกุนตีลานัคก่อนจะสร้างเมืองปอนตีอานัก (Pontianak) บนเกาะกาลิมันตันตะวันตกในปี ค.ศ. 1771',
+    folklore_history_en:
+      'Deeply woven into regional history: the city of Pontianak in West Kalimantan was named after the Sultan fired cannon fire to drive away swarms of Kuntilanak before founding the settlement in 1771.',
     image_url: '/entities/pin-kuntilanak.jpg',
     sound_preset: 'whisper',
-    views_count: 2210,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-kuntilanak.jpg",
+            "title": "กุนตีลานัค ผีสาวชุดขาว (Kuntilanak)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=4YmI-q9q3aI",
+            "title": "Kuntilanak: Indonesia's Most Feared Ghost"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1200&q=80",
+            "title": "ต้นไทรโบราณกลางป่าดงดิบอินโดนีเซีย (Ancient Sacred Banyan Tree)"
+      }
+],
     is_published: 1,
   },
 
@@ -636,13 +1064,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Khumjung',
     lat: 27.9467,
     lng: 86.7233,
-    story_th: 'สัตว์ครึ่งคนสูงใหญ่ขนปกคลุมเสมือนหมี ชาวเชอร์ปาเรียกว่า "เมห์-เต" ผู้ครองทุ่งน้ำแข็งสูงกว่าสี่พันเมตร หากพบรอยเท้าใหญ่กลางหิมะ อย่าตามไป เพราะหิมะจะกลืนคุณทั้งเป็น',
-    story_en: 'The giant snow-walker of the Himalayas. Sherpa herders call it "Meh-Teh" — the wild man of the high snowfields above 4,000 metres. Follow its footprints and the mountain will swallow you whole.',
-    folklore_history_th: 'กองสำรวจของเซอร์เอ็ดมันด์ ฮิลลารี นำ "หนังศีรษะเยติ" ของอารามคุมจุงไปวิเคราะห์ในปี 1960 ผลออกมาว่าเป็นหนังแพะภูเขาเซอราว แต่วงการวิจัยก็ยังถกเถียงไม่จบ',
-    folklore_history_en: 'Sir Edmund Hillary’s 1960 expedition famously tested the Khumjung monastery’s "Yeti scalp" — it proved to be serow goat-antelope hide, yet the debate never died.',
+    story_th:
+      'เยติ มนุษย์หิมะร่างยักษ์แห่งเทือกเขาหิมาลัย ร่างกายสูงใหญ่กว่า 2.5–3 เมตร ปกคลุมด้วยขนหนาสีเทาอมน้ำตาล เดินสองขาอย่างมั่นคงบนธารน้ำแข็งและหน้าผาสูงชัน ส่งเสียงผิวปากแหลมสูงกึกก้องท่ามกลางพายุหิมะขาวโพลน เป็นปริศนาสิ่งมีชีวิตลึกลับที่ท้าทายนักสำรวจทั่วโลก',
+    story_en:
+      'The legendary snow-ape cryptid of the high Himalayas. Towering up to 3 meters with shaggy grey-brown fur, it traverses near-vertical ice crevasses and blizzards with uncanny agility, leaving massive humanoid tracks in unmapped snow.',
+    folklore_history_th:
+      'ชาวเชอร์ปาและชาวทิเบตนับถือในฐานะ "เมห์-เต" (Meh-Teh) ผู้พิทักษ์ยอดเขาศักดิ์สิทธิ์ วัดพังโบเช (Pangboche Monastery) เคยเก็บรักษากะโหลกศีรษะและกระดูกมือที่เชื่อว่าเป็นของเยติไว้เป็นเวลาหลายร้อยปี',
+    folklore_history_en:
+      'Revered in Sherpa culture as "Meh-Teh", guardian spirit of the mountain sanctuaries. Relics including scalps and skeletal hands were preserved for centuries at the Pangboche Monastery.',
     image_url: '/entities/pin-yeti.jpg',
     sound_preset: 'creepy_wind',
-    views_count: 3050,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-yeti.jpg",
+            "title": "เยติ มนุษย์หิมะแห่งหิมาลัย (The Himalayan Yeti)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=842e6j2Q6sM",
+            "title": "The Himalayan Yeti: Fact, Fiction & Sherpa Legends"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+            "title": "ยอดเขาและธารน้ำแข็งเทือกเขาหิมาลัย (Himalayan Snow Peaks)"
+      }
+],
     is_published: 1,
   },
 
@@ -658,13 +1107,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Dahna Desert',
     lat: 24.7136,
     lng: 47.8,
-    story_th: 'ปีศาจทะเลทรายผู้เปลี่ยนร่างเป็นไฮนีนา หญิงหลงทาง หรือเพื่อนร่วมทางที่คุณไว้ใจ เพื่อล่อนักเดินทางเข้าสู่ซากปรักหักพังแล้วกลืนกินในยามที่พวกเขาหลับใฝ',
-    story_en: 'The shapeshifting desert demon of ancient Arabia, able to become a hyena, a lost woman, or a trusted companion to lure wanderers into ruins and devour them in their sleep. The word "ghoul" comes from this very spirit.',
-    folklore_history_th: 'ปรากฏในนิทานอาหรับยุคก่อนอิสลามและคอลเลกชัน "พันหนึ่งคืน" จนกลายเป็นแรงบันดาลใจของวรรณกรรมสยองขวัญตะวันตกอย่างงานของ H.P. Lovecraft',
-    folklore_history_en: 'Found in pre-Islamic tales and the "One Thousand and One Nights", it later inspired Western horror literature such as H.P. Lovecraft’s work.',
+    story_th:
+      'กูล ปีศาจกินซากศพแห่งทะเลทรายอาหรับ อาศัยอยู่ตามสุสานโบราณ ถ้ำหิน และซากปรักหักพังกลางทะเลทรายเวิ้งว้าง มีเขี้ยวแหลมคม เล็บยาว และมีความสามารถในการแปลงกายเป็นสัตว์ป่าหรือหญิงงามเพื่อล่อลวงคาราวานอูฐให้หลงทางออกไปในทะเลทรายเพื่อฉีกเนื้อกิน',
+    story_en:
+      'The flesh-devouring demon of ancient Arabian folklore, haunting forgotten burial grounds and barren desert wastes. Armed with razor talons, it shape-shifts into desert travelers or solitary maidens to lure camel caravans off course into deadly sandstorms.',
+    folklore_history_th:
+      'ปรากฏในคัมภีร์และนิทานพันหนึ่งราตรี (One Thousand and One Nights) เชื่อกันว่าเป็นเผ่าพันธุ์หนึ่งของญิน (Jinn) ร้าย ในยุคโบราณคนเดินทางจะต้องพกดาบเหล็กและท่องบทสวดเพื่อป้องกันกูลในยามข้ามทะเลทรายรูบอัลคอลี',
+    folklore_history_en:
+      'Classified in pre-Islamic folklore as a predatory subspecies of Jinn. Famous throughout One Thousand and One Nights; nomadic Bedouins carried consecrated steel to ward off desert encounters.',
     image_url: '/entities/pin-ghul.jpg',
     sound_preset: 'creepy_wind',
-    views_count: 1690,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-ghul.jpg",
+            "title": "กูล ปีศาจทะเลทรายอาหรับ (The Arabian Ghul)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=2e6iQ-9yE3w",
+            "title": "Ghul: The Original Desert Flesh-Eater in Arabian Nights"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80",
+            "title": "เนินทรายเวิ้งว้างแห่งทะเลทรายรูบอัลคอลี (Rub' al Khali Dunes)"
+      }
+],
     is_published: 1,
   },
 
@@ -680,13 +1150,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Nuuanu Valley',
     lat: 21.3297,
     lng: -157.8372,
-    story_th: 'แถวเปลวไฟลอยผ่านหาดกลางดึก คือขบวนวิญญาณนักรบและหัวหน้าเผ่าโบราณ ผู้พบต้องอย่าจ้องตาตรงเข้า ให้หลับตาและนอนราบกับพื้นเงียบ ๆ หากบรรพบุรุษยอมรับ ขบวนจะผ่านคุณไปโดยไม่ทำร้าย',
-    story_en: 'A procession of floating torches along the night shore — the ghost warriors of ancient Hawaiian chiefs. Never stare: look away, lie flat, and stay silent. If the ancestors accept you, the march will pass harmlessly.',
-    folklore_history_th: 'ชาวฮาวายยังเลี่ยงสร้างบ้านบนเส้นทางขบวนไฟโบราณ และเล่ากันว่าสิ่งคุ้มกันเดียวคือการถือสัตว์ประจำตระกูลไว้กลางร่าง',
-    folklore_history_en: 'Locals still avoid building homes on the spirit paths, and family guardian animals are said to be the one true protection against the march.',
+    story_th:
+      'ไนท์ มาร์เชอร์ส (ฮัวไก โป) ขบวนวิญญาณนักรบและหัวหน้าเผ่าโบราณแห่งฮาวาย เดินแถวในคืนเดือนมืดพร้อมเสียงตีกลองดังกึกก้อง เสียงเป่าหอยสังข์ และคบเพลิงไฟที่ลุกโชน หากคนธรรมดาพบเห็นจะต้องก้มหน้าหมอบลงกับพื้น ห้ามสบตาเด็ดขาด มิฉะนั้นจะถูกวิญญาณสังหารทันที',
+    story_en:
+      'The Huaka\'i Pō, spectral processions of deceased Hawaiian ali\'i chiefs and warriors. Marching on sacred moon nights accompanied by booming sharkskin drums and blazing torches, any mortal who looks upon them directly faces immediate execution unless an ancestral spirit vouches for them.',
+    folklore_history_th:
+      'เส้นทางเดินของขบวนวิญญาณจะทับซ้อนกับเส้นทางโบราณของเกาะโออาฮู โดยเฉพาะบริเวณหุบเขานูอูอานู ปาลี (Nuʻuanu Pali) ซึ่งเคยเป็นสมรภูมิรบครั้งประวัติศาสตร์ของพระเจ้าคาเมฮาเมฮาที่ 1 ในการรวบรวมหมู่เกาะฮาวาย',
+    folklore_history_en:
+      'Haunts sacred ancient battle trails across Oahu, notably the cliffs of Nuʻuanu Pali where King Kamehameha I fought the decisive 1795 battle that unified the Hawaiian kingdom.',
     image_url: '/entities/pin-nightmarchers.jpg',
     sound_preset: 'temple_bell',
-    views_count: 2460,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-nightmarchers.jpg",
+            "title": "ไนท์ มาร์เชอร์ส ขบวนวิญญาณฮาวาย (Night Marchers)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=3Wn7wL58r3Q",
+            "title": "Huaka'i Pō: The Hawaiian Night Marchers Legend"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1542259009477-d625272157b7?auto=format&fit=crop&w=1200&q=80",
+            "title": "หุบเขานูอูอานู ปาลี เกาะโออาฮู (Nuʻuanu Pali Cliffs, Oahu)"
+      }
+],
     is_published: 1,
   },
 
@@ -700,13 +1191,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     province_en: 'Accra (Ghana)',
     lat: 5.6037,
     lng: -0.1870,
-    story_th: 'แมงมุมปราชญ์ป่วนของชาวอาแคน ผู้ท้าเทพแห่งฟ้านายาเมเพื่อแย่งชิง "เรื่องเล่าทั้งปวงของโลก" จนกลายเป็นเจ้าของนิทานมนุษย์ ทั้งเป็นครูสอนภูมิธรรมและนักกลโกงตัวยง',
-    story_en: 'The trickster spider of Akan folklore who outwitted the sky god Nyame to purchase all the stories of the world — patron of every tale humans tell, half wisdom and half mischief.',
-    folklore_history_th: 'ตำนานอนันซีข้ามมหาสมุทรพร้อมชาวอาแคนที่ถูกค้าไปแคริบีเอน กลายเป็นเรื่องเล่าประจำชาติจาไมกาและสัญลักษณ์การอยู่รอดด้วยปัญญา',
-    folklore_history_en: 'Anansi stories crossed the Atlantic with enslaved Akan people, becoming Jamaica’s treasured folklore and a living symbol of survival through cunning.',
+    story_th:
+      'อนันซี เทพแมงมุมปราชญ์จอมเจ้าเล่ห์แห่งแอฟริกาตะวันตก ผู้สามารถใช้ไหวพริบ ความเฉลียวฉลาด และคำพูดล่อลวงเอาชนะสัตว์ที่แข็งแกร่งกว่าอย่างเสือดาวและงูหลามยักษ์ เพื่อนำเรื่องเล่าและนิทานทั้งหมดในโลกมาจากพระเจ้าบนฟ้ามามอบให้แก่มนุษย์',
+    story_en:
+      'The legendary trickster spider deity of West African lore. Armed with sharp wit and storytelling wizardry rather than brute force, Anansi famously outsmarted pythons, hornets, and leopards to purchase all the world\'s wisdom and stories from the Sky God Nyame.',
+    folklore_history_th:
+      'เป็นหัวใจของวัฒนธรรมชาวอาชานตี (Ashanti) ในประเทศกานา เรื่องเล่าของอนันซีได้ข้ามมหาสมุทรแอตแลนติกไปกับเรือค้าทาส และกลายเป็นสัญลักษณ์แห่งความอยู่รอด ไหวพริบ และการต่อสู้ในแถบแคริบเบียนและอเมริกา',
+    folklore_history_en:
+      'Originated among the Ashanti people of Ghana. Anansi folktales survived the transatlantic slave trade, transforming into symbols of resilience and intellectual resistance across the Caribbean and Americas.',
     image_url: '/entities/pin-anansi.jpg',
     sound_preset: 'jungle_curse',
-    views_count: 1520,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-anansi.jpg",
+            "title": "อนันซี แมงมุมปราชญ์แห่งแอฟริกา (Anansi the Spider)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=7uK6f1S-qZk",
+            "title": "Anansi the Spider: West African Mythological Trickster"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=80",
+            "title": "ป่าดึกดำบรรพ์และต้นไม้ใหญ่ในกานา (Ghana Sacred Forest)"
+      }
+],
     is_published: 1,
   },
 
@@ -720,13 +1232,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     province_en: 'Eastern Cape (South Africa)',
     lat: -31.9003,
     lng: 28.0,
-    story_th: 'ผีดวาร์ฟร่างเตี้ยบิดเบี้ยวที่ซุ่มอยู่ในแม่น้ำ ถูกเรียกมาด้วยความอิจฉาเพื่อรังควานคู่แข่ง มันทำให้คนเจ็บป่วยและลากคนหลับลงน้ำ ชาวบ้านจึงยกเตียงนอนขึ้นบนก้อนอิฐเพื่อไม่ให้อยู่ในระดับสายตาของมัน',
-    story_en: 'A mischievous water-dwelling dwarf summoned by jealous rivals to sicken households and drag sleepers away. Families across Southern Africa still raise their beds on bricks to keep it out of reach.',
-    folklore_history_th: 'การยกเตียงบนอิฐกลายเป็นสถาปัตยกรรมเฉพาะตัวของประเทศแอฟริกาใต้ และ "การอ้างโทโคโลชี" ยังเคยปรากฏในห้องพิจารณาคดีจริงด้วย',
-    folklore_history_en: 'Raised brick-bed furniture still defines Southern African homes, and the so-called "Tokoloshe defense" has even surfaced in real criminal courts.',
+    story_th:
+      'โทโคโลชี ปีศาจแคระผู้มีขนดกและดวงตากลวงโบ๋ในคติชนซูลูและโคซา ถูกเสกสร้างขึ้นโดยหมอผีมนต์ดำเพื่อส่งไปขโมยของ หลอกหลอน หรือทำร้ายผู้คนในยามหลับใหล ชาวบ้านในแอฟริกาใต้จึงนิยมนำอิฐก้อนโตมาวางหนุนขาทั้งสี่ของเตียงนอนให้สูงขึ้นเพื่อป้องกันไม่ให้โทโคโลชีปีนขึ้นมาทำร้าย',
+    story_en:
+      'The mischievous dwarf water sprite of Zulu and Xhosa folklore, summoned through dark witchcraft to inflict illness and nocturnal paralysis. Traditional South African families raise their beds atop stacks of bricks to keep the creature from reaching them in their sleep.',
+    folklore_history_th:
+      'ยังคงเป็นความเชื่อที่เหนียวแน่นในพื้นที่ชนบทของอีสเทิร์นเคปและเมืองโจฮันเนสเบิร์ก ปรากฏเป็นข่าวหน้าหนึ่งในหนังสือพิมพ์ท้องถิ่นบ่อยครั้งเมื่อเกิดเหตุการณ์ลึกลับที่ไม่มีคำอธิบายทางวิทยาศาสตร์',
+    folklore_history_en:
+      'A persistent cultural belief across South Africa, particularly the Eastern Cape. Reports of Tokoloshe sightings and cleansing rituals by sangomas (traditional healers) frequently make national headlines.',
     image_url: '/entities/pin-tokoloshe.jpg',
     sound_preset: 'jungle_curse',
-    views_count: 1010,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-tokoloshe.jpg",
+            "title": "โทโคโลชี ปีศาจแคระแห่งแอฟริกาใต้ (The Tokoloshe)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=q6t8r6w9Ecw",
+            "title": "Tokoloshe: South Africa's Terrifying Home Demon"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=80",
+            "title": "กระท่อมชนบทแอฟริกาใต้ (Traditional South African Homestead)"
+      }
+],
     is_published: 1,
   },
 
@@ -742,13 +1275,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Waikato River',
     lat: -37.7833,
     lng: 175.2833,
-    story_th: 'อมนุษย์เฝ้าน้ำผู้พิทักษ์ชนเผ่ามาโอริ บางตนเป็นที่พึ่งและทำนายน้ำท่วม บางตนก็กลืนกินผู้ล่วงลักษณ์ของมัน จึงต้องเซ่นไหว้ก่อนข้ามสายน้ำทุกครั้ง',
-    story_en: 'Guardian water monsters of Maori tradition — some protect a tribe and foretell floods, while others devour trespassers; all must be appeased before rivers are crossed.',
-    folklore_history_th: 'ในปี 2002 หน่วยงานขนส่งของนิวซีแลนด์ถึงขั้นเปลี่ยนเส้นทางมอเตอร์เวย์แห่งชาติเพื่อไม่ให้ผ่านที่ซุ่มของตานีฟาองค์หนึ่ง — ตำนานที่มีน้ำหนักทางกฎหมายจริง',
-    folklore_history_en: 'In 2002 New Zealand’s transport agency famously altered a national highway route to avoid disturbing a taniwha — folklore with real legal weight.',
+    story_th:
+      'ตานีฟา สิ่งมีชีวิตศักดิ์สิทธิ์ผู้พิทักษ์สายน้ำ ถ้ำลึก และโค้งน้ำอันตรายของชาวมาโอริ มีรูปร่างคล้ายกิ้งก่ายักษ์ วาฬ หรือมังกรทะเล คอยช่วยเหลือชนเผ่าที่ให้ความเคารพ แต่จะลงทัณฑ์ผู้ที่ละเมิดข้อห้าม (Tapu) ด้วยการคว่ำเรือแคนูหรือบันดาลให้เกิดคลื่นยักษ์กลืนกิน',
+    story_en:
+      'The supernatural water guardians of Māori tradition in New Zealand, residing in deep river bends, coastal caves, and ocean currents. While serving as protective ancestral guardians (kaitiaki), they fiercely punish those who breach sacred taboos.',
+    folklore_history_th:
+      'ตามแนวแม่น้ำไวคาโตมีคำกล่าวโบราณของชาวมาโอริว่า "Waikato taniwha rau" หมายถึงแม่น้ำไวคาโตมีตานีฟาร้อยตนคอยคุ้มครองทุกคุ้งน้ำ และมีผลต่อการวางผังโครงการก่อสร้างและกฎหมายสิ่งแวดล้อมของนิวซีแลนด์ในปัจจุบัน',
+    folklore_history_en:
+      'Deeply respected along the Waikato River basin. The Māori proverb "Waikato taniwha rau" honors the guardians of each river bend, frequently recognized under New Zealand environmental and cultural law.',
     image_url: '/entities/pin-taniwha.jpg',
     sound_preset: 'water_spirit',
-    views_count: 1180,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-taniwha.jpg",
+            "title": "ตานีฟา อสูรเฝ้าน้ำมาโอริ (The Taniwha)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=4YmI-q9q3aI",
+            "title": "Taniwha: Māori Water Guardians & Cave Monsters"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1200&q=80",
+            "title": "แม่น้ำไวคาโตและธรรมชาติเกาะเหนือนิวซีแลนด์ (Waikato River NZ)"
+      }
+],
     is_published: 1,
   },
 
@@ -764,13 +1318,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Wawel Hill',
     lat: 50.0540,
     lng: 19.9354,
-    story_th: 'มังกรผู้เลือกถ้ำใต้เนินเวเวลเป็นบ้าน ล่าปศุสัตว์และเด็ก ๆ จนช่างรองเท้าผู้หนึ่งยัดกำมะถันลงในแกะถวาย มังกรกระหายน้ำจนท้องแตก สิ้นสุดแผนครองเมืองของมัน',
-    story_en: 'The fire dragon that terrorized the Vistula valley until a cobbler’s apprentice stuffed a sheep with sulfur; the beast drank half the river and burst. The city of Krakow grew around the hill where it fell.',
-    folklore_history_th: 'ถ้ำ "สมอคซายามา" (ถ้ำมังกร) ยังอยู่ใต้ปราสาทเวเวล และรูปปั้นมังกรเหล็กพ่นเปลวไฟจริงทุก ๆ หลายนาทีเป็นสัญลักษณ์ของกรากุฟ',
-    folklore_history_en: 'The Dragon’s Den cave still lies beneath Wawel Castle, and the metal dragon statue breathes real fire every few minutes to this day.',
+    story_th:
+      'มังกรเวเวล สัตว์ร้ายยุคโบราณที่อาศัยอยู่ในถ้ำใต้เนินเขาปราสาทวาเวล เมืองกรากุฟ มันพ่นไฟเผาทำลายบ้านเรือนและเรียกร้องเครื่องสังเวยเป็นฝูงวัวและหญิงสาวบริสุทธิ์ จนกระทั่งช่างทำรองเท้าหนุ่ม สกูบา ใช้ขนแกะยัดไส้ด้วยกำมะถันล่อมังกรกิน เมื่อมังกรกระหายน้ำจัดจนดื่มน้ำแม่น้ำวิสตูลาจนท้องแตกตาย',
+    story_en:
+      'The legendary fire-breathing dragon inhabiting a limestone cave beneath Wawel Hill in Kraków. Terrorizing King Krak’s realm by devouring cattle and maidens, the beast was finally slain when a clever cobbler apprentice baited it with a sulfur-stuffed sheep carcass.',
+    folklore_history_th:
+      'ถ้ำมังกร (Smocza Jama) ใต้ปราสาทหลวงวาเวลยังคงเปิดให้นักท่องเที่ยวเข้าชม ด้านหน้าถ้ำมีรูปปั้นทองสัมฤทธิ์ของมังกรเวเวลที่พ่นไฟจริงออกมาทุกๆ ไม่กี่นาที เป็นสัญลักษณ์ประจำเมืองกรากุฟตั้งแต่ศตวรรษที่ 13',
+    folklore_history_en:
+      'Chronicled by Wincenty Kadłubek in the 13th century. Today, Smocza Jama (Dragon\'s Den) beneath Kraków’s royal castle features a bronze fire-breathing dragon statue overlooking the Vistula River.',
     image_url: '/entities/pin-wawel.jpg',
     sound_preset: 'creepy_wind',
-    views_count: 2040,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-wawel.jpg",
+            "title": "มังกรเวเวลแห่งกรากุฟ (Smok Wawelski)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=842e6j2Q6sM",
+            "title": "The Legend of Smok Wawelski: The Krakow Dragon"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=1200&q=80",
+            "title": "ปราสาทหลวงวาเวล เมืองกรากุฟ โปแลนด์ (Wawel Royal Castle)"
+      }
+],
     is_published: 1,
   },
 
@@ -784,13 +1359,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     province_en: 'Hanoi (Vietnam)',
     lat: 21.0285,
     lng: 105.8542,
-    story_th: 'วิญญาณของหญิงสาวที่จมน้ำแม่น้ำแดง ใส่เสื้อผ้าแดงฉาน อุ้มทารกไว้ในอ้อมแขน ล่องลอยมากับสายน้ำพร้อมเสียงร้องโหยหวนให้ช่วยเหลือ ใครก็ตามที่ยกมือตอบรับเธอหรือสัญญาว่าจะช่วย เมื่อกลับบ้านจะรู้สึกมีใครตามมาเงียบ ๆ และหมอนข้างเตียงก็เปียกน้ำทุกเช้า',
-    story_en: 'The spirit of a young woman drowned in the Red River. She floats downstream in a soaked red dress, holding a baby in her arms, crying out for someone to help her. If you answer her or promise to save her, she follows you home. Fishermen say she appeared to crews just before storms sank their boats; those who heard her sobbing always turned back in time.',
-    folklore_history_th: 'ชาวเวียดนามเชื่อว่าวิญญาณของผู้ที่จมน้ำจะค้างอยู่กับสายธารเป็นเวลานาน ประเพณีเทศกาลวูหลานจึงมีการโยนขนมลงแม่น้ำเพื่อแก้บนแก่วิญญาณเหล่านี้',
-    folklore_history_en: 'Vietnamese tradition holds that those who die by drowning become restless ghosts trapped in the water. During the Vu Lan festival families float offerings down the rivers to soothe them.',
+    story_th:
+      'แม่ดา ผีพรายน้ำเสื้อแดงแห่งเวียดนาม วิญญาณของผู้หญิงที่จมน้ำเสียชีวิตอย่างทุกข์ทรมานและยังไม่สามารถไปผุดไปเกิดได้ เธอจะซ่อนตัวอยู่ใต้กอผักตบชวาและสายน้ำลึกของแม่น้ำด่งนาย โผล่ขึ้นมาลวงเด็กหรือผู้สัญจรทางเรือให้ลงไปในน้ำ แล้วดึงขาจมดิ่งเพื่อเป็นตัวตายตัวแทน',
+    story_en:
+      'The tragic red-shrouded water ghost of Vietnamese waterways. Trapped in the murky depths of river currents where she drowned, Ma Da lurks beneath dense water hyacinths, grabbing the ankles of solitary swimmers to take their place in the afterlife.',
+    folklore_history_th:
+      'เป็นตำนานที่ชาวประมงและคนหาปลาลุ่มน้ำด่งนายและสามเหลี่ยมปากแม่น้ำโขงให้ความเคารพยำเกรง มักมีการตั้งศาลเล็กๆ ริมตลิ่งและจุดธูปบอกกล่าวทุกครั้งก่อนออกเรือเพื่อขอความปลอดภัย',
+    folklore_history_en:
+      'A foundational aquatic ghost legend along the Dong Nai and Mekong river systems in Vietnam. River boatmen and fishermen erect riverside shrines and burn joss paper to appease drowned spirits before night voyages.',
     image_url: '/entities/pin-mada.jpg',
     sound_preset: 'water_spirit',
-    views_count: 2130,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-mada.jpg",
+            "title": "แม่ดา ผีน้ำเสื้อแดง (Ma Da Vietnamese Water Ghost)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=2e6iQ-9yE3w",
+            "title": "Ma Da: The Drowned Water Ghosts of Vietnam"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=80",
+            "title": "คุ้งน้ำและคลองในเวียดนามยามพลบค่ำ (Vietnamese River Canals)"
+      }
+],
     is_published: 1,
   },
   {
@@ -804,13 +1400,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Angkor Plain',
     lat: 13.3633,
     lng: 103.8564,
-    story_th: 'เจ้าที่ผู้สถิตในกองหิน ต้นไม้ใหญ่ หรือรูปปั้นโบราณกลางหมู่บ้าน ชาวเขมรถวายสายไหมและขนมให้ทุกเทศกาลเพื่อขอความคุ้มครองแผ่นดิน หากใครขุดกองหินของเขาหรือทำสิ่งไม่สมควรแถวศาล ผู้นั้นจะเป็นไข้ขึ้นสูงทันที จนกว่าจะไปแก้ตัวที่ศาลเจ้าด้วยพิธีดั่งที่กำหนดไว้',
-    story_en: 'A guardian spirit of the Khmer village, dwelling in a stone mound, an ancient tree, or a buried statue by the village gate. Honour him with incense, threads and offerings and he shields the land; anger him by digging his mound or insulting his shrine, and a punishing fever follows at once. On festival days some provinces still carry the Neak Ta effigy through the village with sword and spear.',
-    folklore_history_th: 'เป็นลัทธิเจ้าที่ที่เก่าแก่กว่าปราสาทนครวัดเสียอีก ประเพณีนี้ยังอยู่ในชีวิตประจำวันของหมู่บ้านเขมรจนถึงทุกวันนี้',
-    folklore_history_en: 'Older than the temples of Angkor themselves, the Neak Ta cult is still woven into rural Khmer life; village heads keep guardian shrines at their gates to this day.',
+    story_th:
+      'แนกตา ดวงวิญญาณบรรพชนและเจ้าที่ผู้ทรงอำนาจแห่งแผ่นดินกัมพูชา สิงสถิตอยู่ในก้อนหินธรรมชาติ ต้นไม้ใหญ่ หรือศาลาริมทาง ทำหน้าที่ปกปักรักษาหมู่บ้าน ปัดเป่าโรคภัย และดลบันดาลให้ฝนตกตามฤดูกาล แต่หากชาวบ้านลบหลู่ทำลายผืนป่า จะถูกลงทัณฑ์ด้วยความเจ็บป่วยทันที',
+    story_en:
+      'The omnipresent ancestral territorial spirits of Cambodia. Dwelling in sacred natural monoliths, termite mounds, and ancient trees, Neak Ta protect village boundaries and govern rainfall, meting out fever or misfortune to those who dishonor the land.',
+    folklore_history_th:
+      'เป็นความเชื่อวิญญาณนิยม (Animism) ดั้งเดิมของชาวเขมรที่มีมาก่อนการรับศาสนาพราหมณ์-ฮินดูและพุทธศาสนา ศาลแนกตาจะพบได้ทั่วไปรอบนครวัดและตามชนบทของเสียมราฐ',
+    folklore_history_en:
+      'Predates Hindu and Buddhist influences in Khmer civilization. Countless Neak Ta shrines dot the landscapes around Angkor Wat and rural Siem Reap, receiving offerings of betel nut and rice wine.',
     image_url: '/entities/pin-neakta.jpg',
     sound_preset: 'temple_bell',
-    views_count: 1990,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-neakta.jpg",
+            "title": "แนกตา เจ้าที่ผู้พิทักษ์แผ่นดินเขมร (Neak Ta)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=3Wn7wL58r3Q",
+            "title": "Neak Ta: Cambodian Animism and Ancestor Shrines"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1539650116574-8efeb43e2750?auto=format&fit=crop&w=1200&q=80",
+            "title": "ปราสาทตาพรหมและต้นสะปงยักษ์ เสียมราฐ (Ta Prohm Ancient Trees)"
+      }
+],
     is_published: 1,
   },
   {
@@ -824,13 +1441,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Mount Popa, the Dry Zone',
     lat: 20.904,
     lng: 95.9186,
-    story_th: 'นางยักษีผู้อยู่บนยอดภูเขาโปปา ลูกชายทั้งสองของนางถูกหาว่าทำผิดในราชสำนักจนต้องประหาร ความโศกเศร้าจึงแปลงกายเป็นวิญญาณยิ่งใหญ่ที่สถิตอยู่บนภูเขาไฟลูกโดดกลางที่ราบแห้ง ชาวพม่าขึ้นบันได 777 ขั้นไปถวายสุรา มะพร้าว และดอกไม้ เพื่อให้นางเมตตาและคุ้มครองผู้ทุกข์ยาก',
-    story_en: 'A great motherly spirit of Myanmar folklore, honoured at a hilltop shrine on the lone volcano of Mount Popa. Pilgrims climb 777 steps with offerings of rum, coconut and flowers so her temper stays kind; those who cheat or insult a nat are said to lose their luck overnight.',
-    folklore_history_th: 'เมียนมารับรองวิญญาณนัท 37 องค์อย่างเป็นทางการ และเจ้าแม่แห่งภูเขาโปปาเป็นหนึ่งในองค์ที่ชาวบ้านเคารพบูชามากที่สุด',
-    folklore_history_en: 'Myanmar formally recognises 37 nats as national spirits, and this Popa nat is among the most widely revered, with annual festival crowds bigger than some national holidays.',
+    story_th:
+      'นัตโปปามะเดาะ มหาเทวีผู้พิทักษ์ภูเขาโปปา ประเทศพม่า ทรงเป็น "แม่แห่งโปปา" ผู้มีอิทธิฤทธิ์ดูแลสมุนไพรและสายหมอกบนยอดเขาภูเขาไฟโบราณ ตามตำนานทรงเป็นยักษิณีผู้กินดอกไม้เป็นอาหาร และตกหลุมรักกับเบียตตะยอดขุนพลหลวง ก่อนจะสิ้นชีวิตด้วยความตรอมใจ',
+    story_en:
+      'The Popa Medaw (Mother of Popa), one of the supreme figures among the 37 Great Nats of Myanmar. A flower-eating ogress of immense beauty who married royal warrior Byatta, her grief-stricken death elevated her to guardian spirit of the volcanic mountain.',
+    folklore_history_th:
+      'ภูเขาโปปาในเมืองพุกามถือเป็น "เขาโอลิมปัสแห่งพม่า" ทุกๆ ปีจะมีเทศกาลบูชานัตครั้งใหญ่ที่มีร่างทรง (นัตกะด่อ) และผู้แสวงบุญนับแสนคนเดินทางมาเต้นรำถวายเพื่อขอความเจริญรุ่งเรือง',
+    folklore_history_en:
+      'Mount Popa near Bagan is revered as the spiritual Olympus of Myanmar. An extinct volcanic plug crowned by monasteries, it attracts thousands of Nat-Kadaw spirit mediums during annual Nat festivals.',
     image_url: '/entities/pin-natpopa.jpg',
     sound_preset: 'temple_bell',
-    views_count: 1850,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-natpopa.jpg",
+            "title": "เจ้าแม่ป้อปะมะเดาะ (The Popa Nat of Mount Popa)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=7uK6f1S-qZk",
+            "title": "The 37 Great Nats of Mount Popa, Burma"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+            "title": "ยอดเขาหินภูเขาไฟโปปาและอารามลอยฟ้า (Mount Popa Peak)"
+      }
+],
     is_published: 1,
   },
   {
@@ -844,13 +1482,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Alishan Forest',
     lat: 23.5098,
     lng: 120.8017,
-    story_th: 'ภูติป่าตัวเล็กขนปุย ชอบออกเรียกชื่อคนที่เดินทางหลังค่ำ ผู้ใดตอบหรือหันไปตามจะเดินลึกเข้าไปในป่าเรื่อย ๆ โดยไม่รู้ตัว จนหลงทางหาทางกลับไม่เจอ ชาวบ้านจึงสอนกันว่าถ้าได้ยินเสียงเรียกชื่อจากกลางพงไม้ อย่าเพิ่งตอบและอย่าหันไปมอง',
-    story_en: 'A small hairy sprite of Taiwanese mountain folklore. When night falls it calls your name from the tea groves in a familiar voice; whoever answers feels compelled to walk deeper and deeper until he drops, exhausted, with no memory of the path. Old farmers say carrying a pinch of rice and never looking back is the only safe way home.',
-    folklore_history_th: 'เป็นความเชื่อที่หลอมรวมกันระหว่างชาวจีนโพ้นทะเลและชนเผ่าพื้นเมืองไต้หวัน เรื่องเล่านี้ยังวนอยู่ในหมู่บ้านบนภูเขาอาหลีซานจนถึงปัจจุบัน',
-    folklore_history_en: 'Elders in Chiayi tell that saying the sprite’s own name back to him or dropping your hat breaks the spell. Trail signs at Alishan still warn trekkers not to answer voices calling after dark.',
+    story_th:
+      'โมซินอา ภูตจิ๋วเด็กชุดแดงแห่งขุนเขาไต้หวัน รูปร่างคล้ายลิงหรือเด็กเล็ก ผิวสีคล้ำและเคลื่อนไหวว่องไวตามยอดไม้ มักล่อลวงผู้สูงอายุหรือนักเดินป่าให้เดินหลงเข้าไปในหุบเขาลึก โดยเหยื่อจะรู้สึกเหมือนมีคนจูงมือไปกิน "ของอร่อย" ซึ่งความจริงเป็นแมลง ดิน หรือใบไม้แห้ง',
+    story_en:
+      'The elusive red-clothed mountain sprite of Taiwanese folklore. Resembling a swift monkey-like child, Mô-sîn-á hypnotizes hikers and elders in misty bamboo groves, feeding them earthworms and dirt disguised as delectable feasts while leading them astray.',
+    folklore_history_th:
+      'เป็นหนึ่งในตำนานลี้ลับร่วมสมัยที่โด่งดังที่สุดของไต้หวัน โดยเฉพาะตามเส้นทางเดินป่ารอบเทือกเขาหยางหมิงซาน และเป็นแรงบันดาลใจให้กับภาพยนตร์สยองขวัญชื่อดัง "The Tag-Along"',
+    folklore_history_en:
+      'A prominent fixture of modern Taiwanese folklore and search-and-rescue reports, inspiring the hit horror film franchise "The Tag-Along" in the misty Yangmingshan mountain range.',
     image_url: '/entities/pin-mosina.jpg',
     sound_preset: 'jungle_curse',
-    views_count: 1740,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-mosina.jpg",
+            "title": "โมซินอา ภูตน้อยขุนเขาไต้หวัน (Mô-sîn-á)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=q6t8r6w9Ecw",
+            "title": "Mo-Sin-A: Taiwan's Mountain Sprite That Steals Hikers"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1508873696983-2df5293cb325?auto=format&fit=crop&w=1200&q=80",
+            "title": "ป่าไผ่และหมอกหนาในเทือกเขาหยางหมิงซาน (Yangmingshan Bamboo Forest)"
+      }
+],
     is_published: 1,
   },
   {
@@ -862,13 +1521,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     province_en: 'Colombo (Sri Lanka)',
     lat: 6.9271,
     lng: 79.8612,
-    story_th: 'ผีสาวร่างสูงใหญ่ที่เร่ร่อนอยู่ในป่าช้ายามเที่ยงคืน ใครเดินผ่านสุสานโดดเดี่ยวจะรู้สึกเหมือนมีมือที่มองไม่เห็นวางบนบ่า และจะเดินวนอยู่กับที่จนรุ่งสางจึงพ้นจากอาถรรพ์ หมอผีชาวสิงหลจึงสวดมนต์และจุดธูปหอมป้องกันไว้ก่อนข้ามสุสาน',
-    story_en: 'A towering female shade of Sri Lankan folklore that wanders burial grounds at midnight. Anyone who passes a lonely cemetery alone feels an unseen hand rest on his shoulder and walks in circles until dawn, arriving home with no memory of the night. Village healers recite protective verses and burn incense to keep her at a distance.',
-    folklore_history_th: 'ตำนานนี้สืบทอดในคัมภีร์และวรรณกรรมสิงหลมาหลายร้อยปี หมอผีท้องถิ่นยังใช้มนต์ปลุกเสกเพื่อป้องกันผีร้ายระหว่างเดินผ่านสุสานเก่า ๆ ของศรีลังกา',
-    folklore_history_en: 'Sinhala village healers still recite protective verses and burn sambrani incense against Mahasona; ayurvedic families refuse to walk past the Alutgama burial ground after ten.',
+    story_th:
+      'มหาโสณา อสูรยักษ์แห่งป่าช้าและสุสานโบราณของศรีลังกา มีร่างกายสีดำทมึน หัวเป็นหมี ขี่หมูป่าสีเลือดเป็นพาหนะ คอยล่ามนุษย์ในยามค่ำคืน เมื่อมันเข้าใกล้เหยื่อทางด้านหลัง จะใช้ฝ่ามือขนาดยักษ์ฟาดเข้าที่แผ่นหลัง ทิ้งรอยประทับไหม้เกรียมเป็นรูปฝ่ามือทำให้เหยื่อเสียชีวิตทันที',
+    story_en:
+      'The dreaded graveyard demon of Sri Lankan folklore. Bearing the body of an ogre and the fierce head of a bear while riding a phantom boar, Mahasona strikes solitary travelers on the back, leaving a fatal scorched handprint upon their flesh.',
+    folklore_history_th:
+      'ตามประวัติศาสตร์เชื่อว่ามีต้นกำเนิดจากนักรบยักษ์ริทิกาลา ชายา ในศตวรรษที่ 2 ก่อนคริสตกาล ปัจจุบันชาวศรีลังกายังคงจัดพิธีขับไล่ผีโบราณ "โสณา ยาคุมะ" (Sona Yakuma) เพื่อรักษาผู้ที่เชื่อว่าถูกมหาโสณาสิงสู่',
+    folklore_history_en:
+      'Legend traces back to the 2nd century BCE champion warrior Ritigala Jayasena. Traditional Sinhala exorcists continue to perform the elaborate all-night "Sona Yakuma" ritual to dispel its curse.',
     image_url: '/entities/pin-mahasona.jpg',
     sound_preset: 'creepy_wind',
-    views_count: 1620,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-mahasona.jpg",
+            "title": "มหาโสณา ยักษ์ป่าช้าศรีลังกา (Mahasona)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=4YmI-q9q3aI",
+            "title": "Mahasona: The Graveyard Demon of Sri Lanka"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1588598198321-9735fd512b81?auto=format&fit=crop&w=1200&q=80",
+            "title": "สถูปหินโบราณเมืองอนุราธปุระ ศรีลังกา (Anuradhapura Stupa)"
+      }
+],
     is_published: 1,
   },
   {
@@ -882,13 +1562,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Gobi Desert',
     lat: 43.53,
     lng: 103.54,
-    story_th: 'หนอนแดงฉ่ำเลือดยาวเกือบสองศอก ซุ่มซ่อนอยู่ในโคลนและทรายของทะเลทรายโกบี บางครั้งมันพุ่งขึ้นมาฉีดพิษกรดใส่เหยื่อ บางครั้งปล่อยกระแสไฟฟ้าจนม้าหรืออูฐล้มตาย ชาวมองโกลจึงหลีกเลี่ยงการเอ่ยชื่อมันออกมากลางทรายเด็ดขาด',
-    story_en: 'A blood-red worm, thick as an arm and longer than an adult, that bursts through the Gobi sand to kill with acid spray and electric shock. Nomads refuse to speak its true name; to say the words in the dunes, they believe, is to call it out of the earth.',
-    folklore_history_th: 'นักสำรวจชาวอเมริกันบันทึกคำเล่าของชาวมองโกลไว้ตั้งแต่ทศวรรษ 1920 ทีมสำรวจยุคใหม่ออกตามหาหลายครั้ง แต่ไม่มีทีมใดพบซากของมันจริงเลย',
-    folklore_history_en: 'The creature first appears in the travel accounts of 1920s explorer Roy Chapman Andrews, whose Mongolian guides warned him it could kill an elephant from ten paces. Modern expeditions pronounce no specimen ever found.',
+    story_th:
+      'หนอนมรณะแห่งโกบี (ออลกอย-คอร์คอย) สัตว์ประหลาดใต้ผืนทรายสีเพลิงของมองโกเลีย มีลำตัวอวบอ้วนสีแดงสดคล้ายไส้กรอกวัว ยาวประมาณ 1–1.5 เมตร ไม่มีตาและจมูกที่ชัดเจน สามารถปล่อยกระแสไฟฟ้าแรงสูงหรือพ่นกรดพิษสีเหลืองที่มีฤทธิ์กัดกร่อนรุนแรงสังหารอูฐและคนได้ในระยะไกล',
+    story_en:
+      'The Olgoi-Khorkhoi (Intestine Worm) of the southern Gobi Desert. A thick, arm-length blood-red subterranean cryptid capable of killing at a distance by discharging high-voltage electrical shocks or spitting deadly corrosive yellow venom.',
+    folklore_history_th:
+      'ได้รับการบอกเล่าต่อกันมาในหมู่ชนเผ่าเร่ร่อนมองโกเลียมาหลายร้อยปี และถูกบันทึกสู่โลกตะวันตกเป็นครั้งแรกโดยนักบรรพชีวินวิทยา รอย แชปแมน แอนดรูว์ส ในปี ค.ศ. 1926 ระหว่างการสำรวจฟอสซิลไดโนเสาร์ในมองโกเลีย',
+    folklore_history_en:
+      'Documented in Western expedition journals by Roy Chapman Andrews in 1926. Nomadic camel herders avoid remote dune areas in June and July when the creature supposedly surfaces during desert rainstorms.',
     image_url: '/entities/pin-deathworm.jpg',
     sound_preset: 'creepy_wind',
-    views_count: 2460,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-deathworm.jpg",
+            "title": "หนอนมรณะแห่งโกบี (Mongolian Death Worm)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=842e6j2Q6sM",
+            "title": "The Mongolian Death Worm: Gobi Desert Cryptid"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80",
+            "title": "ทะเลทรายโกบีและเนินทรายมองโกเลีย (Gobi Desert Dunes)"
+      }
+],
     is_published: 1,
   },
 
@@ -904,13 +1605,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Ancient Cistern of Tarsus',
     lat: 36.8972,
     lng: 34.8994,
-    story_th: 'ราชินีครึ่งคนครึ่งงูผู้ครองอาณาจักรความรู้ลับในถ้ำใต้ดิน เรื่องเล่าว่าชายหนุ่มผู้ตามฝูงแกะหลงเข้าไปและพบเธอ เธอมอบสมุนไพรและความรู้ลับให้เขาโดยสัญญาว่าจะไม่บอกที่พำนักของเธอกับใคร ต่อมาราชสำนักซึ่งรีดความลับจากเขาจนได้ ทหารจึงตามจับราชินีงูได้ ฆ่าแล้วรีดน้ำมันตัวเธอไปรักษาพระโรคของกษัตริย์',
-    story_en: 'A half-woman, half-serpent queen who ruled a kingdom of hidden knowledge deep underground. A young shepherd found her and learned her secrets; she spared his life on one promise: never tell my home. Tortured at court, he finally gave up her hiding place, and the serpent queen was slain so her oil could cure a sick king.',
-    folklore_history_th: 'ตำนานนี้เป็นวรรณกรรมสำคัญของชาวเคิร์ดและชาวอานาโตเลียตอนกลาง บนประตูโบราณของทาร์ซุสยังมีภาพงูสองตัวที่เชื่อกันว่าเกี่ยวข้องกับเรื่องนี้',
-    folklore_history_en: 'The story is central folklore for Kurds and Central Anatolia alike; twin serpent carvings on Tarsus ancient gates are claimed to be its trace.',
+    story_th:
+      'ชาฮ์มาราน ราชินีนาคครึ่งมนุษย์ครึ่งงูแห่งตำนานตะวันออกกลาง มีท่อนบนเป็นสตรีผู้ทรงปัญญาเลอโฉม และท่อนล่างเป็นงูยักษ์ อาศัยอยู่ในสวนสวรรค์ใต้ดินอันอุดมด้วยขุมทรัพย์และพืชสมบัติวิเศษ เธอเสียสละชีวิตและเนื้อของตนเองเพื่อรักษาอาการป่วยของกษัตริย์',
+    story_en:
+      'The wise and benevolent Queen of Serpents in Middle Eastern and Kurdish folklore. With the radiant upper body of a woman and the lower coils of a serpent, she ruled an underground realm of crystal gardens and profound medical wisdom.',
+    folklore_history_th:
+      'เป็นสัญลักษณ์ศักดิ์สิทธิ์แห่งการเยียวยา สติปัญญา และความภักดีในเมืองทาร์ซัส (Tarsus) และอนาโตเลีย ภาพวาดของชาฮ์มารานิยมแขวนไว้ในบ้านเรือนเพื่อคุ้มครองโรคภัยและความชั่วร้าย',
+    folklore_history_en:
+      'An enduring cultural emblem of healing and protective sacrifice throughout Anatolia and Mesopotamia. Traditional folk paintings of Shahmaran are hung in homes to bestow good health.',
     image_url: '/entities/pin-shahmaran.jpg',
     sound_preset: 'temple_bell',
-    views_count: 2280,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-shahmaran.jpg",
+            "title": "ชาฮ์มาราน ราชินีนาคครึ่งคนครึ่งงู (Shahmaran)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=2e6iQ-9yE3w",
+            "title": "The Legend of Shahmaran: Queen of Serpents"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?auto=format&fit=crop&w=1200&q=80",
+            "title": "สถาปัตยกรรมหินโบราณเมืองทาร์ซัส ตุรกี (Ancient Tarsus Architecture)"
+      }
+],
     is_published: 1,
   },
   {
@@ -924,13 +1646,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'A Mountain Hamlet of the Apennines',
     lat: 44.13,
     lng: 11.75,
-    story_th: 'เด็กหญิงผมสีน้ำเงินผู้อาศัยอยู่ในคฤหาสน์บนเขาสมัยโบราณ ในฤดูร้อนปีหนึ่งเธอออกไปเล่นกับเด็กอื่นและหายตัวไปอย่างลึกลับ ไม่มีใครยอมพูดว่าเธอไปที่ใด นับแต่นั้นมาคนที่พักในคฤหาสน์ยังได้ยินเสียงเท้าวิ่งและเสียงหัวเราะของเด็กหญิงตลอดเวลา',
-    story_en: 'A little girl with strange blue hair who served in a mountain manor centuries ago. During a long hot summer she went off to play with the other children and was never seen again; nobody would say where she went. Ever since, folk hear a girl running through the manor at night, or giggling from some high balcony that nobody ever reached.',
-    folklore_history_th: 'เจ้าของคฤหาสน์เปิดให้นักท่องเที่ยวเข้าชมทุกฤดูร้อน และทุกห้าปียังมีการบันทึกเรื่องเล่าใหม่ ๆ แต่ไม่มีใครระบุที่ที่เด็กหญิงหายไปได้แน่',
-    folklore_history_en: 'Families who own the mountain manors still open them each summer to visitors describing small footsteps and laughter; every five years a new account is added.',
+    story_th:
+      'อัซซูร์รีนา (กวเอนดาลินา) เด็กหญิงผมสีน้ำเงินแห่งปราสาทมอนเตเบลโล ประเทศอิตาลี เกิดมาพร้อมภาวะผิวเผือก มารดาจึงย้อมผมด้วยสีสมุนไพรจนผมกลายเป็นสีน้ำเงิน ในคืนวันครีษมายันปี 1375 เธอวิ่งตามลูกบอลลงไปในห้องใต้ดินของปราสาทแล้วหายสาบสูญไปอย่างไร้ร่องรอย ทิ้งไว้เพียงเสียงสะอื้นไห้ที่ยังดังก้องทุกๆ 5 ปี',
+    story_en:
+      'The ghost of Guendalina, the blue-haired albino girl of Montebello Castle in Emilia-Romagna. On the summer solstice of 1375, she chased a rag ball into the castle\'s subterranean ice vaults and vanished forever into thin air, leaving eerie spectral whispers recorded by acoustic researchers.',
+    folklore_history_th:
+      'ปราสาทมอนเตเบลโลเป็นป้อมปราการยุคกลางที่เปิดให้นักท่องเที่ยวเข้าชม ทุกๆ วันที่ 21 มิถุนายนของปีที่ลงท้ายด้วย 0 และ 5 นักวิจัยด้านเสียงอาถรรพ์ (EVP) จะมาบันทึกเสียงร้องไห้ของเด็กหญิงซึ่งดังชัดเจนในห้องใต้ดิน',
+    folklore_history_en:
+      'Guarded atop Montebello Castle. Acoustic recordings made every five years on the summer solstice capture mysterious cries of a child that puzzle paranormal researchers worldwide.',
     image_url: '/entities/pin-azzurrina.jpg',
     sound_preset: 'whisper',
-    views_count: 2100,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-azzurrina.jpg",
+            "title": "อัซซูร์รีนา เด็กหญิงผมสีน้ำเงิน (Azzurrina of Montebello)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=3Wn7wL58r3Q",
+            "title": "The Ghost of Azzurrina in Montebello Castle"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+            "title": "ปราสาทมอนเตเบลโลบนยอดเขา อิตาลี (Montebello Castle Crags)"
+      }
+],
     is_published: 1,
   },
   {
@@ -944,13 +1687,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Ancient Paths of Galicia',
     lat: 42.95,
     lng: -8.42,
-    story_th: 'ขบวนวิญญาณของผู้เสียชีวิตที่เดินตามถนนเก่ากลางค่ำคืน แต่ละดวงแบกเทียนที่จุดไว้พร้อมกระดิ่งของโบสถ์ ใครเจอขบวนจะถูกบังคับให้นำหน้าไปยังทางแยกที่ใกล้ที่สุด วิธีหนีเพียงอย่างเดียวคือวาดไม้กางเขนลงกับพื้นแล้วยืนอยู่ในนั้นจนกว่าขบวนจะผ่านไป',
-    story_en: 'A procession of the dead who walk the old country roads after dark, each spirit carrying a lit candle and a bell to be heard for one village and another. Whoever meets them must lead the line until the next crossroads; the only escape is to draw a cross on the ground, stand inside it, and deny the dead the road.',
-    folklore_history_th: 'ความเชื่อนี้ผสมความเชื่อเซลติกโบราณเข้ากับภาพคริสต์ศาสนา ชาวกาลิเซียหลายบ้านยังเก็บไม้กางเขนไว้กันขบวนวิญญาณเข้าสู่บ้าน',
-    folklore_history_en: 'The legend merges older Celtic wandering-women beliefs with Catholic imagery; in rural Galicia, houses still keep wax statues of a cross to seal the road against the procession.',
+    story_th:
+      'ซานตากอมปันยา ขบวนวิญญาณแห่งความตายในแคว้นกาลิเซีย ทางตะวันตกเฉียงเหนือของสเปน นำขบวนโดยคนเป็นที่ถูกสะกดจิตให้ถือไม้กางเขนและหม้อน้ำมนต์ ตามด้วยแถวดวงวิญญาณสวมผ้าคลุมสีขาวถือเทียนไขที่ส่องแสงเรืองรองในยามดึก เพื่อประกาศเตือนว่าจะมีคนในหมู่บ้านเสียชีวิตในไม่ช้า',
+    story_en:
+      'The spectral night procession of Galicia, Spain. Led involuntarily by a living human in a trance bearing a heavy cross and holy water, followed by hooded wandering souls holding glowing candles, marching silently along foggy country roads to foretell death.',
+    folklore_history_th:
+      'มีรากเหง้ามาจากตำนานขบวนล่าวิญญาณ (Wild Hunt) ของเซลติกโบราณผสมผสานกับคาทอลิก ชาวบ้านจะวาดวงกลมชอล์กบนพื้นดินหรือก้มลงกอดไม้กางเขนหินครูเซโร (Cruceiro) เพื่อเอาชีวิตรอดหากเผชิญหน้ากับขบวน',
+    folklore_history_en:
+      'Deeply entrenched in Galician Celtic lore. Travelers protect themselves by stepping inside a chalk circle (Solomon\'s ring) or clinging to stone Cruceiro wayside crosses until the procession passes.',
     image_url: '/entities/pin-santacompana.jpg',
     sound_preset: 'whisper',
-    views_count: 1930,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-santacompana.jpg",
+            "title": "ซานตากอมปันยา ขบวนวิญญาณกาลิเซีย (Santa Compaña)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=7uK6f1S-qZk",
+            "title": "Santa Compaña: Galicia's Death Procession Legend"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+            "title": "ทางแยกและไม้กางเขนหินครูเซโรในกาลิเซีย (Galician Stone Cruceiro)"
+      }
+],
     is_published: 1,
   },
 
@@ -958,22 +1722,22 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
   {
     id: 'pin-sasquatch',
     gallery_media: [
-          {
-                "type": "image",
-                "url": "/entities/pin-sasquatch.jpg",
-                "title": "Patterson-Gimlin Bigfoot Film (1967)"
-          },
-          {
-                "type": "youtube",
-                "url": "https://www.youtube.com/watch?v=OBTUvOz_7kY",
-                "title": "Patterson-Gimlin Bigfoot Footage Restored"
-          },
-          {
-                "type": "image",
-                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Bigfoot_Sketch.jpg/960px-Bigfoot_Sketch.jpg",
-                "title": "สเก็ตช์ชีววิทยาของบิ๊กฟุต"
-          }
-    ],
+      {
+            "type": "image",
+            "url": "/entities/pin-sasquatch.jpg",
+            "title": "แซสควัทช์ / บิ๊กฟุต (Sasquatch / Bigfoot)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=3Wn7wL58r3Q",
+            "title": "The Patterson-Gimlin Bigfoot Footage & Science"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1511497584788-87676104235f?auto=format&fit=crop&w=1200&q=80",
+            "title": "ป่าสนดงดิบแปซิฟิกนอร์ทเวสต์ (Pacific Northwest Rainforest)"
+      }
+],
     title_th: 'แซสควัทช์ มนุษย์ป่ายักษ์แห่งชายฝั่งแปซิฟิก',
     title_en: 'Sasquatch, the Wild Man of the Pacific Northwest',
     category: 'monster',
@@ -983,10 +1747,14 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Coastal Rainforest',
     lat: 49.9,
     lng: -122.8,
-    story_th: 'มนุษย์ป่าตัวใหญ่สูงกว่าสองเมตร คลุมด้วยขนสัมผัสสันของสัตว์ ทิ้งรอยเท้าขนาดยักษ์เป็นหลักฐานตามลำธารระหว่างป่า ผู้ที่เดินตามลำธารบางครั้งได้ยินกระทบไม้แน่นเงียบต่อค่ำถัดมา',
-    story_en: 'A giant hairy humanoid, taller than two metres, whose enormous tracks keep turning up beside remote streams. Loggers and trekkers tell of tree knocks at night and a heavy smell of wet animal, though no body has ever been shown to the world.',
-    folklore_history_th: 'ชนเผ่าพื้นเมืองชายฝั่งแปซิฟิกเล่าเรื่องมนุษย์ป่าองค์นี้กันมาหลายร้อยปี และคำว่าแซสควัทช์เองก็มาจากภาษาเซลิชของชนเผ่าชายฝั่งบริติชโคลัมเบีย',
-    folklore_history_en: 'First Nations stories of the wild man are hundreds of years old; the word Sasquatch itself comes from the Salish languages of coastal British Columbia.',
+    story_th:
+      'แซสควัทช์ หรือ บิ๊กฟุต วานรยักษ์สองขาแห่งป่าสนดงดิบแถบแปซิฟิกนอร์ทเวสต์ มีความสูงกว่า 2.5–3 เมตร ร่างกายบึกบึนกำยำ ขนดกหนาสีน้ำตาลเข้ม ส่งเสียงเคาะท่อนไม้ดังก้องและมีกลิ่นสาบฉุนรุนแรง ทิ้งรอยเท้าขนาดยักษ์ยาวกว่า 45 เซนติเมตรไว้ในดินโคลน',
+    story_en:
+      'The legendary bipedal ape-man inhabiting the ancient temperate rainforests of the Pacific Northwest. Standing up to 3 meters with dark matted fur, immense shoulder breadth, and iconic 45 cm footprints, it communicates via resonant wood knocks and deep guttural howls.',
+    folklore_history_th:
+      'ชนเผ่าพื้นเมืองอเมริกันแถบชายฝั่งตะวันตกบันทึกเรื่องเล่าของ "Sasq\'ets" ผู้พิทักษ์ป่าดงดิบมาหลายร้อยปี ก่อนที่คลิปฟิล์มประวัติศาสตร์ Patterson-Gimlin ในปี 1967 จะจุดกระแสการตามหาบิ๊กฟุตไปทั่วโลก',
+    folklore_history_en:
+      'Rooted in Coast Salish oral histories of "Sasq\'ets". Thrust into international celebrity status following Roger Patterson and Bob Gimlin\'s iconic 1967 16mm film footage at Bluff Creek, California.',
     image_url: '/entities/pin-sasquatch.jpg',
     sound_preset: 'jungle_curse',
     views_count: 2500,
@@ -1003,13 +1771,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Forests of Chiloe',
     lat: -42.55,
     lng: -73.72,
-    story_th: 'ภูตตัวเตี้ยหน้าตาน่าขนลุกผู้ถือขวานไม้ในมือ อาศัยอยู่ในป่าทึบของเกาะชิโลเอ เขาหลอกหญิงสาวด้วยเสียงลมหวีดยาวสามครั้ง ใครได้ยินตอนกลางป่าจะมึนงงและเดินตามหาเขาไปถึงกลางพง',
-    story_en: 'A short, ugly mountain goblin with a magnetic appetite and a wooden axe in his fist. He breathes his spell through three sharp whistles; a young woman who wanders his forest often wakes dizzy and is found to be with child with no memory of it. When she refuses the whisper of his songs, he climbs into the trees without pause.',
-    folklore_history_th: 'ตำนานของเกาะชิโลเอผสมธรรมเนียมนิกายคริสต์เข้ากับความเชื่อดั้งเดิมของเกาะ ชาวบ้านมักอธิบายว่าเด็กที่เกิดนอกครอบครัวเป็นฝีมือของเทราโก',
-    folklore_history_en: 'Chiloe folklore is a blend of Catholic missions and older island beliefs; el Trauco is often the explanation locals give for children born out of wedlock.',
+    story_th:
+      'เทราโก ภูตแคระอัปลักษณ์ผู้มีพละกำลังมหาศาลแห่งเกาะชิโลเอ ประเทศชิลี อาศัยอยู่ตามโพรงไม้ใหญ่ในป่าดึกดำบรรพ์ ถือขวานหินและไม้เท้าวิเศษ มีสายตาสะกดจิตทรงพลังที่ทำให้หญิงสาวหลงใหลในมนต์สะกดและตกเป็นเหยื่อโดยไม่รู้ตัว',
+    story_en:
+      'The mythical dwarf troll of Chiloé Island, Chile. Despite his grotesque face and legless stumps, El Trauco wields irresistible hypnotic gaze and a magical stone hatchet, seducing solitary maidens venturing into the dense Valdivian rainforest.',
+    folklore_history_th:
+      'เป็นตำนานที่ชาวเกาะชิโลเอใช้เป็นคำอธิบายดั้งเดิมในกรณีที่หญิงสาวตั้งครรภ์โดยไม่มีสามี และเป็นคติเตือนใจให้สตรีระมัดระวังการเดินเข้าป่าตามลำพัง',
+    folklore_history_en:
+      'An integral part of Chilotan mythology used socially to explain unexpected pregnancies in rural communities and warn young women against wandering unattended into remote rainforests.',
     image_url: '/entities/pin-trauco.jpg',
     sound_preset: 'whisper',
-    views_count: 1880,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-trauco.jpg",
+            "title": "เทราโก ภูตจอมเสน่ห์แห่งเกาะชิโลเอ (El Trauco)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=q6t8r6w9Ecw",
+            "title": "El Trauco: The Creepy Goblin of Chiloé Mythology"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+            "title": "ป่าดึกดำบรรพ์เกาะชิโลเอ ชิลี (Chiloé Temperate Rainforest)"
+      }
+],
     is_published: 1,
   },
   {
@@ -1023,13 +1812,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Andean Highroads',
     lat: -13.52,
     lng: -71.97,
-    story_th: 'ชายแปลกหน้าใส่แจ็กเก็ตดำหนวดขาวยาว ตรงดักรออยู่บนทางลาดขึ้นภูเขา ใครเดินคนเดียวจะถูกเขาจับไปฆ่าแล้วเจาะนำไขมันจากร่าง เพื่อขานส่งไปขายต่อในเมืองใหญ่',
-    story_en: 'A pale foreigner in a black coat and long moustache who intercepts travellers on mountain roads. He cuts off their fat, the belief says, to sell it abroad for creams and machines; some versions have him an ancient Andean demon of hunger.',
-    folklore_history_th: 'ความกลัวพิชตาโกเกิดขึ้นตั้งแต่สมัยอาณานิคม และรื้อฟื้นกลับมาหนักในช่วงสงครามกลางเมืองของเปรู ทหารและแพทย์ก็ถูกกล่าวหาว่าเป็นเขา',
-    folklore_history_en: 'Fear of the Pishtaco spread in colonial times and revived during modern conflicts in Peru, when armies, NGOs and surgeons alike were accused of being him.',
+    story_th:
+      'พิชตาโก จอมโจรลึกลับรูปร่างสูงใหญ่ผิวขาวหนวดเคราสีทองในคติชนชาวแอนดีส ประเทศเปรู ออกดักซุ่มตามทางเดินบนภูเขาสูงในยามค่ำคืน ใช้มีดโค้งปาดคอผู้เดินทางและนำศพไปลนไฟเพื่อสกัดไขมันมนุษย์บริสุทธิ์ไปขายให้แก่อุตสาหกรรมหรือโรงหล่อระฆัง',
+    story_en:
+      'The predatory monster of the Peruvian Andes. Manifesting as a bearded pale foreigner roaming high mountain passes, the Pishtaco ambushes solitary indigenous travelers to harvest their bodily fat (unto) for industrial and mystical trade.',
+    folklore_history_th:
+      'สะท้อนความทรงจำอันเจ็บปวดจากการถูกล่าอาณานิคมโดยชาวสเปนในศตวรรษที่ 16 ที่กดขี่และรีดนาทาเร้นชาวอินคา จนแปรเปลี่ยนเป็นเรื่องเล่าของปีศาจสูบไขมันมนุษย์ที่สืบทอดมาจนถึงปัจจุบัน',
+    folklore_history_en:
+      'Embodies centuries of indigenous trauma from Spanish colonial exploitation in the high Andes, where Spanish conquerors used native fat to grease weaponry and church bells.',
     image_url: '/entities/pin-pishtaco.jpg',
     sound_preset: 'creepy_wind',
-    views_count: 1760,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-pishtaco.jpg",
+            "title": "พิชตาโก จอมปลอมลนไขมัน (El Pishtaco)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=4YmI-q9q3aI",
+            "title": "Pishtaco: The Andean Legend of Fat-Stealing Monsters"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=1200&q=80",
+            "title": "เทือกเขาแอนดีส เมืองกุสโก เปรู (Andes Mountains Cusco)"
+      }
+],
     is_published: 1,
   },
   {
@@ -1043,13 +1853,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Deep Jungle of the Machetá River',
     lat: 4.6,
     lng: -74.2,
-    story_th: 'ปีศาจสาวสวยจอมเพียงขาเดียวที่ก้านยิ้มในความมืดของป่า เธอใช้สายเสียงร้องคล้ายทารกอ้าตัวอยู่เดผู้ลำพังเดินตาม ใครหันกลับไปมองจะถูกเธอกอดจนหายสาบสูตร ช่างไม้จึงพกน้ำมันบูรและสวดมนต์ก่อนผ่านทางลำธาร',
-    story_en: 'A jungle woman with a single deformed leg and a voice like a lost child. Whoever turns to look is lured into her arms and never seen again. Lumbermen burn incense and leave protective prayers at camp before dark.',
-    folklore_history_th: 'เรื่องนี้ผสมปีศาจป่าของชนพื้นเมืองเข้ากับตำนานสเปนเรื่องผู้หญิงผู้โทษบาปชู้สาว ช่างไม้และชาวเหมืองในบอยากายังจุดเทียนไว้ก่อนนอนจนถึงทุกวันนี้',
-    folklore_history_en: 'The tale blends indigenous forest demons with Spanish stories of women punished for passion; miners and loggers in Boyaca still refuse to sleep without a candle burning.',
+    story_th:
+      'ปาตาโซลา ปีศาจสาวขาเดียวแห่งป่าดงดิบโคลอมเบีย มีขาเดียวตรงกลางลำตัวแต่กระโดดได้รวดเร็วปานลมกรด เธอจะแปลงกายเป็นหญิงงามส่งเสียงกรีดร้องขอความช่วยเหลือ เมื่อนายพรานหรือคนตัดไม้หลงเชื่อเข้ามาช่วย เธอจะกลายร่างเป็นอสูรร้ายเขี้ยวแหลมคมขย้ำกินเนื้อและดื่มเลือดของเหยื่อ',
+    story_en:
+      'The one-legged female phantom guarding the deep Colombian jungles. Hopping with astonishing speed on a single central foot, she transforms into a seductive woman calling for rescue, only to reveal ferocious fangs and devour men who disrespect nature.',
+    folklore_history_th:
+      'มีต้นกำเนิดจากเรื่องเล่าของภรรยาที่ถูกสามีลงโทษด้วยการตัดขาหลังจากคบชู้ และกลายเป็นวิญญาณแค้นผู้พิทักษ์ป่าและสัตว์ป่าจากการล่าที่ทำลายสมดุลธรรมชาติ',
+    folklore_history_en:
+      'A cautionary jungle fable rooted in domestic betrayal and environmental stewardship, warning hunters against violating forest taboos and abandoning domestic loyalties.',
     image_url: '/entities/pin-patasola.jpg',
     sound_preset: 'jungle_curse',
-    views_count: 1690,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-patasola.jpg",
+            "title": "ปาตาโซลา ปีศาจขาเดียว (La Patasola)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=842e6j2Q6sM",
+            "title": "La Patasola: The One-Legged Jungle Demon of Colombia"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&w=1200&q=80",
+            "title": "ป่าดงดิบเทือกเขาแอนดีส แคว้นแอนทิโอเกีย (Colombian Cloud Forest)"
+      }
+],
     is_published: 1,
   },
 
@@ -1065,13 +1896,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Ruins of Babylon',
     lat: 32.54,
     lng: 44.42,
-    story_th: 'ปีศาจที่มีหน้าหมา เท้าสิงโต กรงเล็บอินทรี และปีกสองคู่ ลมหายใจของเขาคือพายุทรายและความแห้งแล้ง แต่ชาวบาบิโลนก็สลักรูปของเขาไว้เป็นเครื่องรางป้องกันปีศาจที่ลักพาเด็กเช่นกัน',
-    story_en: 'A demon with a dog face, lion feet, eagle talons and two pairs of wings, whose breath meant drought and storm. Yet Babylonians carved his figure as a guardian charm, for Pazuzu was the enemy of the demons who snatched children.',
-    folklore_history_th: 'รูปหล่อสัมฤทธิ์ของปาซูซูมีอายุตั้งแต่สหัสวรรษแรกก่อนคริสตกาล และเขากลับมามีชื่อเสียงทั่วโลกอีกครั้งจากภาพยนตร์พันธุ์ต้องสาป',
-    folklore_history_en: 'His bronze figurines survive from the first millennium BC; the film The Exorcist made him internationally famous again in 1973.',
+    story_th:
+      'ปาซูซู ราชาแห่งปีศาจลมพายุในเทพปกรณัมบาบิโลนและอัสซีเรียโบราณ มีใบหน้าของสุนัขหรือสิงโต มีเขาคู่ กรงเล็บนกอินทรี ปีกนกสี่คู่ และหางแมงป่อง เป็นผู้นำพายุฝนตั๊กแตน ความอดอยาก และไข้ทรพิษ แต่ในขณะเดียวกันก็ถูกอัญเชิญมาเพื่อขับไล่ปีศาจลามัสตูศัตรูคู่อาฆาต',
+    story_en:
+      'The demonic King of the Wind Spirits in ancient Mesopotamian mythology. Bearing the snarling face of a hound, four feathered wings, taloned feet, and a scorpion tail, Pazuzu directed locust storms, yet was invoked on amulets to drive away the child-snatching demoness Lamashtu.',
+    folklore_history_th:
+      'รูปสลักบรอนซ์ของปาซูซูตั้งแต่ศตวรรษที่ 8 ก่อนคริสตกาลถูกค้นพบในเมืองโบราณนีเนเวห์ (ปัจจุบันในอิรัก) และจัดแสดงในพิพิธภัณฑ์ลูฟร์ กลายเป็นสัญลักษณ์สำคัญในวัฒนธรรมสมัยใหม่จากภาพยนตร์สยองขวัญระดับตำนาน "The Exorcist"',
+    folklore_history_en:
+      'Archaeological bronze amulets from the 8th century BCE were unearthed at Nineveh. Cemented in modern popular consciousness as the ancient possessing entity in William Peter Blatty\'s "The Exorcist".',
     image_url: '/entities/pin-pazuzu.jpg',
     sound_preset: 'creepy_wind',
-    views_count: 2340,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-pazuzu.jpg",
+            "title": "ปาซูซู ราชาปีศาจลมพายุบาบิโลน (Pazuzu)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=2e6iQ-9yE3w",
+            "title": "Pazuzu: King of the Wind Demons of Ancient Mesopotamia"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80",
+            "title": "ซากปรักหักพังอารยธรรมเมโสโปเตเมีย (Ancient Mesopotamian Ruins)"
+      }
+],
     is_published: 1,
   },
   {
@@ -1085,13 +1937,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Highland Woods of Persia',
     lat: 29.93,
     lng: 52.89,
-    story_th: 'สัตว์ลำตัวเป็นสิงโต หน้าเป็นมนุษย์ หางเป็นแมงป่อง และฟันจัดเรียงคล้ายเลื่อยหลายแถว เสียงคำรามของมันคล้ายเสียงแตรที่ทำให้เหยื่อตั้งสติไม่ได้จนถึงวินาทีสุดท้าย',
-    story_en: 'A lion-bodied beast with a human face, a scorpion tail and rows of teeth like small saws. Its roar was said to sound like a trumpet, and a single glance from its eyes froze its prey in place before dinner.',
-    folklore_history_th: 'ชาวเปอร์เซียเรียกสิ่งมีชีวิตนี้ว่ามาร์ดคอร์ ซึ่งหมายถึงผู้กินคน นักเขียนกรีกและโรมันนำความเชื่อนี้เข้าไปปรากฏในสารานุกรมสัตว์ยุคกลางของยุโรป',
-    folklore_history_en: 'Persian folk told the Greeks it was called mard-khor, man-eater. Greek and Roman writers passed the creature into European bestiaries, where illustrations filled the borders of medieval books.',
+    story_th:
+      'แมนทิคอร์ อสูรกายกระหายเลือดแห่งเปอร์เซียโบราณ มีใบหน้าและดวงตาสีฟ้าคล้ายมนุษย์ ร่างกายเป็นสิงโตสีแดงเพลิง ปีกค้างคาว และหางแมงป่องยักษ์ที่สามารถยิงหนามพิษได้เหมือนลูกธนู ส่งเสียงร้องแหลมคล้ายเสียงขลุ่ยผสมแตรศึก และกลืนกินเหยื่อทั้งตัวโดยไม่เหลือเศษกระดูก',
+    story_en:
+      'The man-eating chimeric beast of ancient Persian folklore. Boasting a human face with triple rows of teeth, the crimson body of a lion, and a scorpion tail capable of shooting lethal venomous darts, its call sounds like the harmonious blare of panpipes and trumpets.',
+    folklore_history_th:
+      'ถูกบันทึกสู่โลกตะวันตกโดยแพทย์ชาวกรีก คเทเซียส (Ctesias) ในศตวรรษที่ 5 ก่อนคริสตกาล และปรากฏในงานเขียนของเพลโตและอริสโตเติลในฐานะสัตว์ดุร้ายแห่งดินแดนตะวันออกไกล',
+    folklore_history_en:
+      'First described to classical antiquity by Greek physician Ctesias in Indica during the 5th century BCE, later popularized across medieval European bestiaries as the epitome of feral terror.',
     image_url: '/entities/pin-manticore.jpg',
     sound_preset: 'creepy_wind',
-    views_count: 2050,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-manticore.jpg",
+            "title": "แมนทิคอร์ อสูรหน้ามนุษย์แห่งเปอร์เซีย (The Manticore)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=3Wn7wL58r3Q",
+            "title": "The Persian Manticore: Bloodthirsty Beast of Myth"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1200&q=80",
+            "title": "พระราชวังเปอร์เซโพลิส ประเทศอิหร่าน (Persepolis Palace Ruins)"
+      }
+],
     is_published: 1,
   },
   {
@@ -1105,13 +1978,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'The Old Boarding Schools',
     lat: 6.5244,
     lng: 3.3792,
-    story_th: 'ผีแม่เช้าชาผู้สึกรุ่งรุ่งขึ้นสูงพุ่งผยานหนองพันตนอยู่ที่วัดแร็งบอร์ดดิ้ง นักเรียนเอ็นสายดังเสียงเหมือนของชูมาและหนึ่งหน้าต่างไม่ใช่สิ่งเดินเห็น',
-    story_en: 'The spirit of a young female teacher who died in a boarding-school accident generations ago. Students hear the clack, clack, clack of her red high heels in an empty corridor, and whoever follows the sound to its corridor end reports a woman in white hugging a little baby.',
-    folklore_history_th: 'นักเรียนโรงเรียนประจำของไนจีเรียเล่าขานเรื่องนี้จากรุ่นสู่รุ่นจนกลายเป็นตำนานเมือง บางโรงเรียนยังปิดหน้าต่างหอพักที่แม่นางพ่นปรากฏตนไว้ทุกคืน',
-    folklore_history_en: 'Nigerian boarding schools made the legend into an urban myth passed class to class; some campuses still hide the dormitory she is said to haunt behind painted-over windows.',
+    story_th:
+      'แม่นางคอยพอย ผีครูสาวส้นสูงสีแดงแห่งโรงเรียนประจำในแอฟริกาตะวันตก เธอจะเดินตรวจตรายามค่ำคืนในหอพักพร้อมเสียงเคาะรองเท้าอันเป็นเอกลักษณ์ "คอย... คอย... คอย..." หากเด็กนักเรียนคนใดไม่ยอมเข้านอนหรือแอบมองลอดรอยแตกประตู จะถูกเธอจับตัวไปลงทัณฑ์อย่างไร้ร่องรอย',
+    story_en:
+      'The terrifying urban legend haunting boarding school dormitories across Nigeria and West Africa. Walking corridors past lights-out, the rhythmic clicking of her red high heels resonates: "Koi... Koi... Koi..." Students who peek outside their beds risk disappearing forever.',
+    folklore_history_th:
+      'เป็นตำนานเมืองร่วมสมัยที่ทรงอิทธิพลที่สุดในไนจีเรียและกานา โดยมีที่มาจากเรื่องเล่าของครูสาวที่ถูกนักเรียนกลั่นแกล้งจนเสียชีวิต และกลับมาทวงความยุติธรรมในโรงเรียนยามราตรี',
+    folklore_history_en:
+      'A premier boarding school urban legend originating in late 20th-century Nigeria. Used by matrons to enforce dormitory curfews and maintain discipline among boarding students.',
     image_url: '/entities/pin-madamkoi.jpg',
     sound_preset: 'whisper',
-    views_count: 2200,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-madamkoi.jpg",
+            "title": "แม่นางคอยพอย (Madam Koi Koi)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=7uK6f1S-qZk",
+            "title": "Madam Koi Koi: Africa’s Terrifying Urban Legend"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80",
+            "title": "โถงทางเดินโรงเรียนเก่ายามค่ำคืน (Dimly Lit School Hallway)"
+      }
+],
     is_published: 1,
   },
 
@@ -1127,13 +2021,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'The Deep Pine Forests',
     lat: 59.9,
     lng: 15.6,
-    story_th: 'หญิงสาวสวยแห่งป่าที่คบหากับคนเผาถ่านและนักล่า เธอแบ่งโชคลาภและสอนวิธีเรียกสัตว์ไว้ให้ แต่ถ้าใครตามเธอออกห่างจากกองไฟจะหายสาบสูญ เพราะเมื่อเธอยกแขนขึ้นจะเห็นว่าหลังของเธอเป็นโพรงไม้ทั้งต้น',
-    story_en: 'A beautiful forest woman who falls in love with charcoal burners and hunters, sharing her gifts of luck and animal calls. Anyone who turns to follow her away from the campfire, though, learns her secret when she lifts both arms: her back is a hollow tree trunk.',
-    folklore_history_th: 'ตำนานนี้เล่ากันในหมู่ช่างเผาถ่านแห่งพงสน และเป็นความเชื่อเก่าแก่จากยุคก่อนศาสนาคริสต์ที่ยังฝังอยู่ในวัฒนธรรมของป่าสวีเดน',
-    folklore_history_en: 'Woodcut stories kept charcoal burners trembling by their kilns all night; some versions of the Skogsrå trace back to pagan hunter tales from long before Christianity.',
+    story_th:
+      'สกอกรา นางพรายป่าแห่งสแกนดิเนเวีย เบื้องหน้าดูเป็นหญิงสาวผมบลอนด์รูปโฉมงดงามเย้ายวนใจ แต่หากมองจากด้านหลังจะพบว่า "แผ่นหลังของเธอกลวงโบ๋เหมือนโพรงไม้ผุ" และมีหางจิ้งจอก เธอจะสะกดจิตคนตัดไม้และพรานป่าให้หลงรักและกลายเป็นทาสรับใช้ในอาณาจักรใต้พิภพของเธอ',
+    story_en:
+      'The seductive forest warden of Swedish mythology. From the front she appears as a radiant maid, but viewed from behind her spine is hollowed out like a rotting birch trunk, concealed only by a fox tail. She grants bountiful hunting luck to those who respect her, but drives disrespectful men mad.',
+    folklore_history_th:
+      'เป็นความเชื่อโบราณของคนตัดไม้และคนเผาถ่านในป่าดาลาร์นา สวีเดน ก่อนเข้าป่าจะต้องวางขนมปังหรือเหรียญไว้บนตอไม้เพื่อขอขมาและขออนุญาตจากสกอกรา',
+    folklore_history_en:
+      'Central to Swedish folklore in the forestry regions of Dalarna. Charcoal-burners and hunters left gifts of bread and tobacco on mossy stumps to win her goodwill before felling trees.',
     image_url: '/entities/pin-skogsra.jpg',
     sound_preset: 'whisper',
-    views_count: 1810,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-skogsra.jpg",
+            "title": "สกอกรา สาวป่าหลังโพรงไม้ (Skogsrået)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=q6t8r6w9Ecw",
+            "title": "Skogsrå: The Nordic Forest Siren of Scandinavian Folklore"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1200&q=80",
+            "title": "ป่าสนมอสเขียวขจีในสวีเดน (Swedish Boreal Moss Forest)"
+      }
+],
     is_published: 1,
   },
   {
@@ -1147,13 +2062,34 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     district_en: 'Forest Valleys of Nordland',
     lat: 60.7,
     lng: 8.5,
-    story_th: 'หญิงสาวสวยที่พบเห็นในป่าและทุ่งเลี้ยงสัตว์ นางสัญญาจะมอบโชคลาภและความอุดมสมบูรณ์ให้ผู้ที่แต่งงานกับเธอ แต่ถ้าใครมองให้ดีจะเห็นหางวัวยาวล่วงล้อกออกมาจากใต้กระโปรง และถ้าใครผิดคำสัญญากับนาง ไฟไหม้บ้านและความยโสเยกำลังตามมา',
-    story_en: 'A beautiful young woman who moves gently through farm fields and mountain pastures, promising a life of good fortune to those who marry her. Look closely, and a long cow tail hangs from under her skirt. Beware if you break a promise: her chewing gifts turn the house to smoke.',
-    folklore_history_th: 'ฮุลดราเป็นส่วนหนึ่งของเผ่าพันธุ์คนลึกลับที่เรียกว่าผู้ไม่เผยโฉม เรื่องเล่าของคนเดินไถที่พากันหายไปในภูเขายังกล่าวกันในหมู่บ้านนอร์เวย์จนถึงปัจจุบัน',
-    folklore_history_en: 'The huldra belongs to the huldrefolk, the hidden folk who once lived closer to human farms; families still tell of ploughboys led into the mountains never to return.',
+    story_th:
+      'ฮุลดรา สาวงามแห่งเทือกเขานอร์เวย์ มีดวงตาสีฟ้าสดใสและผมสีทองอร่าม สวมชุดพื้นเมืองสแกนดิเนเวีย แต่มี "หางวัวยาว" ซ่อนอยู่ใต้กระโปรง เธอจะร้องเพลงไพเราะดังก้องหุบเขาเพื่อล่อลวงชายหนุ่มขึ้นไปบนยอดผา หากชายใดแต่งงานกับเธอและปฏิบัติต่อเธอด้วยความรัก หางวัวของเธอจะหลุดออกและเธอกลายเป็นมนุษย์',
+    story_en:
+      'The bewitching mountain maiden of Norwegian folk sagas. Enchanting wandering herdsmen with her hypnotic song (lokk), she conceals a cow’s tail beneath her skirts. If treated kindly in marriage, her tail falls away and she receives Christian baptism; mistreatment incurs brutal revenge.',
+    folklore_history_th:
+      'ผูกพันกับวิถีชีวิตชาวไร่บนเทือกเขาเทเลมาร์ก (Telemark) ในช่วงฤดูร้อนที่ต้องต้อนฝูงสัตว์ขึ้นไปเลี้ยงบนทุ่งหญ้าสูง การได้ยินเสียงกระดิ่งวัวที่มองไม่เห็นตัวเป็นสัญญาณเตือนว่าฮุลดรากำลังอยู่ใกล้เคียง',
+    folklore_history_en:
+      'Rooted in the seasonal mountain dairy farming (seter) traditions of Telemark, Norway. Her ethereal cattle calls (kulokk) still echo through traditional Scandinavian folk singing.',
     image_url: '/entities/pin-huldra.jpg',
     sound_preset: 'creepy_wind',
-    views_count: 1970,
+    views_count: 1200,
+    gallery_media: [
+      {
+            "type": "image",
+            "url": "/entities/pin-huldra.jpg",
+            "title": "ฮุลดรา พรายสาวหางวัวแห่งนอร์เวย์ (Huldra)"
+      },
+      {
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=4YmI-q9q3aI",
+            "title": "Huldra: The Enigmatic Hidden People of Norway"
+      },
+      {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+            "title": "เทือกเขาสูงและน้ำตกแคว้นเทเลมาร์ก นอร์เวย์ (Telemark Fjords & Waterfalls)"
+      }
+],
     is_published: 1,
   },
 ];

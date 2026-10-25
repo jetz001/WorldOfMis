@@ -340,7 +340,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             onClick={onZoomOut}
             aria-label={t.zoomOutWorld}
             title={t.zoomOutWorld}
-            className="group px-3.5 py-2 rounded-2xl bg-[#070c16]/90 border border-amber-500/35 hover:border-emerald-400/70 backdrop-blur-xl text-amber-100/90 hover:text-emerald-200 transition-all shadow-[0_6px_20px_rgba(0,0,0,0.85),0_0_15px_rgba(16,185,129,0.12)] hover:shadow-[0_0_22px_rgba(16,185,129,0.35)] flex items-center gap-2 text-xs font-grimoire tracking-wider cursor-pointer active:scale-95"
+            className="group px-3.5 py-2 rounded-2xl bg-[#070c16]/90 border border-amber-500/35 hover:border-emerald-400/70 backdrop-blur-xl text-amber-100/90 hover:text-emerald-200 transition-all shadow-[0_6px_20px_rgba(0,0,0,0.85),0_0_15px_rgba(16,185,129,0.12)] hover:shadow-[0_0_22px_rgba(16,185,129,0.35)] flex items-center gap-2 text-xs font-sans tracking-wide cursor-pointer active:scale-95"
           >
             <img
               src="/icons/sigil_world.png"
@@ -353,7 +353,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           {/* Language Switcher */}
           <button
             onClick={onToggleLanguage}
-            className="group px-3.5 py-2 rounded-2xl bg-[#070c16]/90 border border-amber-500/35 hover:border-emerald-400/70 backdrop-blur-xl text-xs font-grimoire font-bold tracking-widest text-amber-100 hover:text-emerald-200 transition-all shadow-[0_6px_20px_rgba(0,0,0,0.85),0_0_15px_rgba(16,185,129,0.12)] hover:shadow-[0_0_22px_rgba(16,185,129,0.35)] flex items-center gap-2 cursor-pointer active:scale-95"
+            className="group px-3.5 py-2 rounded-2xl bg-[#070c16]/90 border border-amber-500/35 hover:border-emerald-400/70 backdrop-blur-xl text-xs font-sans font-bold tracking-wider text-amber-100 hover:text-emerald-200 transition-all shadow-[0_6px_20px_rgba(0,0,0,0.85),0_0_15px_rgba(16,185,129,0.12)] hover:shadow-[0_0_22px_rgba(16,185,129,0.35)] flex items-center gap-2 cursor-pointer active:scale-95"
           >
             <img
               src="/icons/sigil_lang.png"

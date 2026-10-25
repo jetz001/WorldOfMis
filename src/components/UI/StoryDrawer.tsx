@@ -213,14 +213,14 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
             </button>
           </div>
 
-          {/* Vintage Grimoire Title */}
+          {/* Vintage Title */}
           <h2
             id="story-drawer-title"
-            className="font-grimoire text-2xl md:text-3xl font-bold tracking-wide text-amber-50 drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)] leading-snug"
+            className="font-sans text-2xl md:text-3xl font-bold tracking-normal text-amber-50 drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)] leading-snug"
           >
             {title}
           </h2>
-          <p className="font-grimoire text-xs italic text-amber-200/60 tracking-wider mt-0.5 mb-2.5">
+          <p className="font-sans text-xs italic text-amber-200/80 tracking-normal mt-0.5 mb-2.5">
             “{subTitle}”
           </p>
 
@@ -453,7 +453,7 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
           {/* ============================================================== */}
           <div className="rounded-2xl bg-[#09101b]/90 border border-amber-500/25 p-4 shadow-inner">
             <div className="flex items-center justify-between border-b border-slate-800/90 pb-2.5 mb-3">
-              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-amber-300 font-grimoire">
+              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-300 font-sans">
                 <ScrollText className="w-4 h-4 text-amber-400" />
                 <span>
                   {language === 'th'
@@ -466,7 +466,7 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
               </span>
             </div>
 
-            <div className="grid grid-cols-2 gap-2.5 text-xs">
+            <div className="grid grid-cols-2 gap-2.5 text-xs font-sans">
               {/* ประเภท (Type / Classification) */}
               <div className="col-span-2 p-2.5 rounded-xl bg-slate-950/70 border border-slate-800/80 flex items-start gap-2.5">
                 <Compass className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
@@ -539,7 +539,7 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
 
           {/* 3. Physical Description & Manifestation Signs */}
           <div className="space-y-2.5">
-            <div className="flex items-center gap-2 text-sm font-bold text-amber-300 font-grimoire tracking-wide">
+            <div className="flex items-center gap-2 text-sm font-bold text-amber-300 font-sans tracking-wide">
               <Eye className="w-4 h-4 text-amber-400" />
               <span>
                 {language === 'th'
@@ -547,36 +547,36 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
                   : 'Physical Description & Manifestation Signs'}
               </span>
             </div>
-            <div className="p-4 rounded-2xl bg-[#09111c]/85 border border-amber-500/20 text-sm leading-relaxed text-slate-200 font-chronicle">
+            <div className="p-4 rounded-2xl bg-[#09111c]/85 border border-amber-500/20 text-sm leading-relaxed text-slate-100 font-sans">
               {dossier.appearanceDesc}
             </div>
           </div>
 
           {/* 4. Expanded Story Narrative */}
           <div className="space-y-2.5">
-            <div className="flex items-center gap-2 text-sm font-bold text-emerald-300 font-grimoire tracking-wide">
+            <div className="flex items-center gap-2 text-sm font-bold text-emerald-300 font-sans tracking-wide">
               <BookOpen className="w-4 h-4 text-emerald-400" />
               <span>{t.storyDetail}</span>
             </div>
-            <div className="p-5 rounded-2xl bg-[#08121a]/90 border border-emerald-500/25 text-sm leading-7 text-slate-200 font-chronicle whitespace-pre-line first-letter:text-3xl first-letter:font-grimoire first-letter:font-bold first-letter:text-emerald-300 first-letter:mr-1.5 first-letter:float-left first-letter:leading-none">
+            <div className="p-5 rounded-2xl bg-[#08121a]/90 border border-emerald-500/25 text-sm sm:text-base leading-relaxed sm:leading-8 text-slate-100 font-sans whitespace-pre-line">
               {dossier.expandedStory}
             </div>
           </div>
 
           {/* 5. Folklore & Historical Context */}
           <div className="space-y-2.5">
-            <div className="flex items-center gap-2 text-sm font-bold text-amber-300 font-grimoire tracking-wide">
+            <div className="flex items-center gap-2 text-sm font-bold text-amber-300 font-sans tracking-wide">
               <Sparkles className="w-4 h-4 text-amber-400" />
               <span>{t.folkloreHistory}</span>
             </div>
-            <div className="p-4 rounded-2xl bg-slate-900/70 border border-slate-800/90 text-sm leading-relaxed text-slate-300 font-chronicle">
+            <div className="p-4 rounded-2xl bg-slate-900/70 border border-slate-800/90 text-sm sm:text-base leading-relaxed sm:leading-8 text-slate-200 font-sans whitespace-pre-line">
               {history}
             </div>
           </div>
 
           {/* 6. Ancient Taboos & Survival Warnings */}
           <div className="rounded-2xl bg-rose-950/20 border border-rose-500/30 p-4 space-y-2.5">
-            <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-rose-300 font-grimoire">
+            <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-rose-300 font-sans">
               <ShieldAlert className="w-4 h-4 text-rose-400" />
               <span>
                 {language === 'th'
@@ -626,7 +626,7 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
             className="w-full max-w-7xl flex items-center justify-between pb-3 px-2 border-b border-amber-500/25 mb-3"
           >
             <div className="flex items-center gap-3">
-              <h3 className="font-grimoire text-xl sm:text-2xl font-bold text-amber-50 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
+              <h3 className="font-sans text-xl sm:text-2xl font-bold text-amber-50 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
                 {title}
               </h3>
               <span className="text-xs font-mono px-2 py-0.5 rounded bg-amber-950/80 text-amber-300 border border-amber-500/40">
@@ -670,7 +670,7 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
             )}
           </div>
 
-          <p className="mt-2 text-xs text-amber-200/60 font-grimoire tracking-wider text-center">
+          <p className="mt-2 text-xs text-amber-200/80 font-sans tracking-wide text-center">
             {language === 'th' ? 'กดที่ว่างหรือคลิกปุ่มปิด เพื่อกลับสู่คัมภีร์' : 'Click backdrop or close button to return'}
           </p>
         </div>

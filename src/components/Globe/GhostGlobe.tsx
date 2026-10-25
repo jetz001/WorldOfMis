@@ -579,7 +579,7 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
                   <span className="absolute bottom-0.5 right-0.5 w-2 h-2 rounded-full bg-[#00ff88] ring-1 ring-black animate-ping" />
                 </div>
                 <div className="min-w-0">
-                  <p className="font-grimoire text-sm font-bold text-amber-100 leading-tight">
+                  <p className="font-sans text-sm font-bold text-amber-100 leading-tight">
                     {language === 'th' ? previewPin.title_th : previewPin.title_en}
                   </p>
                   <p className="text-[11px] text-emerald-300/90 truncate max-w-[210px] mt-0.5">
