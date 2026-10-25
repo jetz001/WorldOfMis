@@ -9,6 +9,7 @@ setWorkerUrl('/maplibre-gl-worker.mjs');
 import type { GhostPin, SupportedLanguage, GhostCategory } from '../../types/ghost';
 import { getTranslation } from '../../lib/i18n';
 import { registerCloudMistProtocol } from './cloudMistLayer';
+import { WorldCommentBar } from '../UI/WorldCommentBar';
 
 // Shared world overview camera values, used both on init and when zooming out
 const WORLD_VIEW_CENTER: [number, number] = [100.5, 13.75]; // Centered on Thailand / Asia
@@ -70,6 +71,7 @@ interface GhostGlobeProps {
   onSelectPin: (pin: GhostPin) => void;
   language: SupportedLanguage;
   worldViewSignal: number;
+  onZoomOut?: () => void;
 }
 
 export const GhostGlobe: React.FC<GhostGlobeProps> = ({
@@ -78,6 +80,7 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
   onSelectPin,
   language,
   worldViewSignal,
+  onZoomOut,
 }) => {
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<Map | null>(null);
@@ -99,11 +102,17 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
 
   // Auto-Spin State & Configuration
   const [isSpinning, setIsSpinning] = useState(true);
+  const [isWorldZoomedOut, setIsWorldZoomedOut] = useState(true);
   const isSpinningRef = useRef(true);
   const userInteractingRef = useRef(false);
   const spinTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const selectedPinRef = useRef<GhostPin | null>(selectedPin);
+  useEffect(() => {
+    selectedPinRef.current = selectedPin;
+    const zoom = mapRef.current?.getZoom() ?? WORLD_VIEW_ZOOM;
+    setIsWorldZoomedOut(zoom <= 3.55 && !selectedPin);
+  }, [selectedPin]);
 
   const spinGlobe = useCallback(() => {
     const map = mapRef.current;
@@ -404,12 +413,16 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
       updateMagneticField();
       updateMarkerVisibility();
     });
+    map.on('zoom', () => {
+      setIsWorldZoomedOut(map.getZoom() <= 3.55 && !selectedPinRef.current);
+    });
     map.on('render', () => {
       updateMarkerVisibility();
     });
 
     // Continuously spin globe when animation completes
     map.on('moveend', () => {
+      setIsWorldZoomedOut(map.getZoom() <= 3.55 && !selectedPinRef.current);
       if (!selectedPinRef.current && isSpinningRef.current) {
         userInteractingRef.current = false;
       }
@@ -507,6 +520,7 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     if (worldViewSignal > 0) {
       userInteractingRef.current = false;
       selectedPinRef.current = null;
+      setIsWorldZoomedOut(true);
       flyToWorldView();
       if (spinTimeoutRef.current) clearTimeout(spinTimeoutRef.current);
       spinTimeoutRef.current = setTimeout(() => {
@@ -957,6 +971,22 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
 
         </div>
       </div>
+
+      {/* World Comment Fountain & Input Bar (Only unlocked when zoomed out to World View) */}
+      <WorldCommentBar
+        isWorldZoomedOut={isWorldZoomedOut}
+        onZoomOut={() => {
+          if (onZoomOut) {
+            onZoomOut();
+          } else {
+            userInteractingRef.current = false;
+            selectedPinRef.current = null;
+            setIsWorldZoomedOut(true);
+            flyToWorldView();
+          }
+        }}
+        language={language}
+      />
 
       {/* Auto-Rotation Control Pill (Bottom Left - Fixed & Safe-Area Aware for Mobile & Desktop) */}
       <div

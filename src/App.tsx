@@ -147,6 +147,7 @@ export function App() {
           onSelectPin={handleSelectPin}
           language={language}
           worldViewSignal={worldViewSignal}
+          onZoomOut={handleZoomOutToWorld}
         />
       </main>
 

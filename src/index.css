@@ -91,6 +91,39 @@
   animation: mist-drift-reverse 36s infinite ease-in-out;
 }
 
+/* World Comment Fountain Trajectory:
+   Launches from bottom -> rises to center of screen -> crests -> falls back down */
+@keyframes world-comment-fountain {
+  0% {
+    transform: translate3d(var(--start-x, 0px), 44vh, 0) scale(0.72);
+    opacity: 0;
+  }
+  14% {
+    transform: translate3d(calc(var(--start-x, 0px) * 0.5 + var(--peak-x, 0px) * 0.5), 14vh, 0) scale(0.96);
+    opacity: 1;
+  }
+  38% {
+    transform: translate3d(var(--peak-x, 0px), var(--peak-y, -4vh), 0) scale(1.05);
+    opacity: 1;
+  }
+  58% {
+    transform: translate3d(calc(var(--peak-x, 0px) + var(--drift-x, 18px) * 0.45), calc(var(--peak-y, -4vh) + 2.5vh), 0) scale(1.02);
+    opacity: 1;
+  }
+  84% {
+    transform: translate3d(calc(var(--peak-x, 0px) + var(--drift-x, 18px)), 24vh, 0) scale(0.92) rotate(var(--tilt, 3deg));
+    opacity: 0.82;
+  }
+  100% {
+    transform: translate3d(calc(var(--peak-x, 0px) + var(--drift-x, 18px) * 1.35), 46vh, 0) scale(0.8) rotate(calc(var(--tilt, 3deg) * 1.6));
+    opacity: 0;
+  }
+}
+
+.animate-world-fountain {
+  animation: world-comment-fountain 5.2s cubic-bezier(0.22, 0.68, 0.36, 0.98) forwards;
+}
+
 /* Custom dark glassmorphism scrollbars */
 ::-webkit-scrollbar {
   width: 6px;

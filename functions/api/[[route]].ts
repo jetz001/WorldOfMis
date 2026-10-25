@@ -150,6 +150,57 @@ app.post('/comments/:id/like', async (c) => {
   }
 });
 
+// 2.5 World Comments (Global Fountain Shoutbox)
+app.get('/world-comments', async (c) => {
+  const db = c.env.DB;
+  if (!db) return c.json({ error: 'D1 Database not bound' }, 500);
+  try {
+    await db
+      .prepare(
+        'CREATE TABLE IF NOT EXISTS world_comments (id TEXT PRIMARY KEY, author TEXT NOT NULL, content TEXT NOT NULL, created_at DATETIME DEFAULT CURRENT_TIMESTAMP)'
+      )
+      .run();
+    const { results } = await db
+      .prepare('SELECT * FROM world_comments ORDER BY created_at DESC LIMIT 40')
+      .all();
+    return c.json({ success: true, data: results });
+  } catch (err) {
+    return c.json({ success: false, error: String(err) }, 500);
+  }
+});
+
+app.post('/world-comments', async (c) => {
+  const db = c.env.DB;
+  if (!db) return c.json({ error: 'D1 Database not bound' }, 500);
+  try {
+    await db
+      .prepare(
+        'CREATE TABLE IF NOT EXISTS world_comments (id TEXT PRIMARY KEY, author TEXT NOT NULL, content TEXT NOT NULL, created_at DATETIME DEFAULT CURRENT_TIMESTAMP)'
+      )
+      .run();
+    const body = await c.req.json();
+    const author = String(body.author || 'ผู้สำรวจโลก').trim().slice(0, 32);
+    const content = String(body.content || '').trim().slice(0, 140);
+    if (!content) {
+      return c.json({ success: false, error: 'Content required' }, 400);
+    }
+    const id = 'wcmt-' + Date.now() + '-' + Math.random().toString(36).slice(2, 7);
+    await db
+      .prepare('INSERT INTO world_comments (id, author, content) VALUES (?, ?, ?)')
+      .bind(id, author, content)
+      .run();
+    return c.json(
+      {
+        success: true,
+        data: { id, author, content, created_at: new Date().toISOString() },
+      },
+      201
+    );
+  } catch (err) {
+    return c.json({ success: false, error: String(err) }, 500);
+  }
+});
+
 // 3. Create pin
 app.post('/pins', async (c) => {
   const db = c.env.DB;
