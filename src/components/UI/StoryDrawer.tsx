@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useMemo } from 'react';
+import React, { useEffect, useRef, useMemo, useState, useCallback } from 'react';
 import {
   X,
   MapPin,
@@ -14,8 +14,12 @@ import {
   ShieldAlert,
   ScrollText,
   Maximize2,
+  ChevronLeft,
+  ChevronRight,
+  Play,
+  Image as ImageIcon,
 } from 'lucide-react';
-import type { GhostPin, SupportedLanguage } from '../../types/ghost';
+import type { GhostPin, SupportedLanguage, MediaItem } from '../../types/ghost';
 import { getTranslation } from '../../lib/i18n';
 import { getEntityDossier } from '../../lib/entityBestiary';
 
@@ -26,6 +30,16 @@ interface StoryDrawerProps {
   language: SupportedLanguage;
 }
 
+/**
+ * Extracts standard 11-char YouTube Video ID from various URL formats
+ */
+function getYouTubeId(url: string): string | null {
+  const match = url.match(
+    /(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=|shorts\/))([\w-]{11})/
+  );
+  return match ? match[1] : null;
+}
+
 export const StoryDrawer: React.FC<StoryDrawerProps> = ({
   pin,
   isOpen,
@@ -33,13 +47,35 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
   language,
 }) => {
   const dialogRef = useRef<HTMLDialogElement>(null);
+  const thumbsScrollRef = useRef<HTMLDivElement>(null);
   const t = getTranslation(language);
-  const [isImageFullscreen, setIsImageFullscreen] = React.useState(false);
+
+  // Carousel & Lightbox States
+  const [activeMediaIndex, setActiveMediaIndex] = useState(0);
+  const [isPlayingVideo, setIsPlayingVideo] = useState(false);
+  const [isFullscreenModalOpen, setIsFullscreenModalOpen] = useState(false);
 
   const dossier = useMemo(() => {
     if (!pin) return null;
     return getEntityDossier(pin, language);
   }, [pin, language]);
+
+  // Construct complete Media List (Primary portrait + Gallery/YouTube items)
+  const mediaItems: MediaItem[] = useMemo(() => {
+    if (!pin) return [];
+    if (pin.gallery_media && pin.gallery_media.length > 0) {
+      return pin.gallery_media;
+    }
+    const defaultUrl = pin.image_url || dossier?.portraitUrl || `/entities/${pin.id}.jpg`;
+    return [{ type: 'image', url: defaultUrl, title: language === 'th' ? pin.title_th : pin.title_en }];
+  }, [pin, dossier, language]);
+
+  // Reset active slide & video playback whenever selected pin changes
+  useEffect(() => {
+    setActiveMediaIndex(0);
+    setIsPlayingVideo(false);
+    setIsFullscreenModalOpen(false);
+  }, [pin?.id]);
 
   // Modern HTML <dialog> lifecycle
   useEffect(() => {
@@ -54,22 +90,23 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
       if (dialog.open) {
         dialog.close();
       }
-      setIsImageFullscreen(false);
+      setIsFullscreenModalOpen(false);
+      setIsPlayingVideo(false);
     }
   }, [isOpen, pin]);
 
-  // Handle escape for fullscreen image modal
+  // Handle escape key for fullscreen media modal
   useEffect(() => {
-    if (!isImageFullscreen) return;
+    if (!isFullscreenModalOpen) return;
     const handleKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
         e.stopPropagation();
-        setIsImageFullscreen(false);
+        setIsFullscreenModalOpen(false);
       }
     };
     window.addEventListener('keydown', handleKey);
     return () => window.removeEventListener('keydown', handleKey);
-  }, [isImageFullscreen]);
+  }, [isFullscreenModalOpen]);
 
   // Fallback for browsers without native <dialog closedby> support
   useEffect(() => {
@@ -90,18 +127,35 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
       }
     };
 
-    const handleCloseEvent = () => {
-      onClose();
-    };
-
     dialog.addEventListener('click', handleDialogClick);
-    dialog.addEventListener('close', handleCloseEvent);
-
     return () => {
       dialog.removeEventListener('click', handleDialogClick);
-      dialog.removeEventListener('close', handleCloseEvent);
     };
   }, [onClose, pin]);
+
+  // Carousel navigation
+  const handlePrevMedia = useCallback((e?: React.MouseEvent) => {
+    e?.stopPropagation();
+    setIsPlayingVideo(false);
+    setActiveMediaIndex((prev) => (prev > 0 ? prev - 1 : mediaItems.length - 1));
+  }, [mediaItems.length]);
+
+  const handleNextMedia = useCallback((e?: React.MouseEvent) => {
+    e?.stopPropagation();
+    setIsPlayingVideo(false);
+    setActiveMediaIndex((prev) => (prev < mediaItems.length - 1 ? prev + 1 : 0));
+  }, [mediaItems.length]);
+
+  const handleSelectMedia = useCallback((idx: number) => {
+    setIsPlayingVideo(false);
+    setActiveMediaIndex(idx);
+  }, []);
+
+  const scrollThumbs = (direction: 'left' | 'right') => {
+    if (!thumbsScrollRef.current) return;
+    const offset = direction === 'left' ? -220 : 220;
+    thumbsScrollRef.current.scrollBy({ left: offset, behavior: 'smooth' });
+  };
 
   if (!pin || !dossier) return null;
 
@@ -111,6 +165,13 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
   const district = language === 'th' ? pin.district_th : pin.district_en;
   const history = language === 'th' ? pin.folklore_history_th : pin.folklore_history_en;
   const categoryLabel = t.categories[pin.category] || pin.category;
+
+  const currentMedia = mediaItems[activeMediaIndex] || mediaItems[0];
+  const ytVideoId = currentMedia?.type === 'youtube' ? getYouTubeId(currentMedia.url) : null;
+  const currentThumbnail =
+    currentMedia?.type === 'youtube'
+      ? currentMedia.thumbnail || (ytVideoId ? `https://img.youtube.com/vi/${ytVideoId}/hqdefault.jpg` : dossier.portraitUrl)
+      : currentMedia?.url || dossier.portraitUrl;
 
   return (
     <dialog
@@ -182,68 +243,214 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
 
         {/* Scrollable Grimoire Body */}
         <div className="relative flex-1 overflow-y-auto px-6 py-5 space-y-6">
-          {/* 1. Entity Bestiary Portrait Frame */}
-          <div
-            onClick={() => setIsImageFullscreen(true)}
-            title={language === 'th' ? 'คลิกเพื่อเปิดดูภาพเต็มจอ (Fill Page)' : 'Click to view full image (Fill page)'}
-            className="relative rounded-2xl overflow-hidden border border-amber-500/30 bg-[#03060c] shadow-[0_12px_35px_rgba(0,0,0,0.85)] group cursor-zoom-in"
-          >
-            <div className="relative aspect-video w-full overflow-hidden flex items-center justify-center">
-              {/* Ambient blurred backdrop so vertical/square images blend beautifully into 16:9 */}
-              <img
-                src={dossier.portraitUrl}
-                alt=""
-                aria-hidden="true"
-                className="pointer-events-none absolute inset-0 w-full h-full object-cover blur-2xl opacity-40 scale-125"
-              />
-
-              {/* Main creature portrait with contain so full subject is always framed */}
-              <img
-                src={dossier.portraitUrl}
-                alt={title}
-                className="relative w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 z-[1]"
-              />
-
-              {/* Dark vignette & bottom gradient overlay */}
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#05080f]/90 via-transparent to-black/30 z-[2]" />
-
-              {/* Corner Arcane Accents */}
-              <div className="pointer-events-none absolute top-2.5 left-2.5 w-5 h-5 border-t-2 border-l-2 border-amber-400/60 rounded-tl z-[3]" />
-              <div className="pointer-events-none absolute top-2.5 right-2.5 w-5 h-5 border-t-2 border-r-2 border-amber-400/60 rounded-tr z-[3]" />
-              <div className="pointer-events-none absolute bottom-2.5 left-2.5 w-5 h-5 border-b-2 border-l-2 border-amber-400/60 rounded-bl z-[3]" />
-              <div className="pointer-events-none absolute bottom-2.5 right-2.5 w-5 h-5 border-b-2 border-r-2 border-amber-400/60 rounded-br z-[3]" />
-
-              {/* Hover Fullscreen Badge */}
-              <div className="pointer-events-none absolute top-3 right-3 z-[4] flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-black/80 border border-amber-400/50 text-amber-200 text-xs backdrop-blur-md opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">
-                <Maximize2 className="w-3.5 h-3.5 text-amber-300" />
-                <span>{language === 'th' ? 'กดเพื่อดูรูปเต็มจอ' : 'Fill page view'}</span>
-              </div>
-
-              {/* Bottom Danger / Omen Meter Overlay */}
-              <div className="absolute bottom-3 inset-x-4 flex items-center justify-between gap-2 z-[3]">
-                <span className="text-[11px] font-medium text-amber-200/90 bg-slate-950/85 border border-amber-500/30 px-2.5 py-1 rounded-lg backdrop-blur-md">
-                  {dossier.dangerLabel}
-                </span>
-                <div
-                  className="flex items-center gap-1 px-2.5 py-1 rounded-lg bg-slate-950/85 border border-rose-500/30 backdrop-blur-md"
-                  title={dossier.dangerLabel}
-                >
-                  {[1, 2, 3, 4, 5].map((lvl) => (
-                    <Skull
-                      key={lvl}
-                      className={`w-3.5 h-3.5 ${
-                        lvl <= dossier.dangerLevel
-                          ? 'text-rose-400 fill-rose-500/30 drop-shadow-[0_0_6px_rgba(244,63,94,0.6)]'
-                          : 'text-slate-700'
-                      }`}
+          {/* ============================================================== */}
+          {/* STEAM-STYLE MEDIA CAROUSEL (MAIN PLAYER + THUMBNAIL STRIP)      */}
+          {/* ============================================================== */}
+          <div className="space-y-2.5">
+            {/* 1. Main Media Stage (16:9) */}
+            <div className="relative rounded-2xl overflow-hidden border border-amber-500/35 bg-[#03060c] shadow-[0_12px_35px_rgba(0,0,0,0.9)] group">
+              <div className="relative aspect-video w-full overflow-hidden flex items-center justify-center">
+                {/* VIDEO STAGE */}
+                {currentMedia.type === 'youtube' && ytVideoId ? (
+                  isPlayingVideo ? (
+                    <iframe
+                      src={`https://www.youtube-nocookie.com/embed/${ytVideoId}?autoplay=1&rel=0`}
+                      title={currentMedia.title || title}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="w-full h-full border-0 z-[10]"
                     />
-                  ))}
+                  ) : (
+                    <div
+                      onClick={() => setIsPlayingVideo(true)}
+                      className="relative w-full h-full flex items-center justify-center cursor-pointer group/play"
+                    >
+                      {/* Ambient blurred backdrop */}
+                      <img
+                        src={currentThumbnail}
+                        alt=""
+                        aria-hidden="true"
+                        className="pointer-events-none absolute inset-0 w-full h-full object-cover blur-xl opacity-40 scale-110"
+                      />
+                      {/* Sharp video poster */}
+                      <img
+                        src={currentThumbnail}
+                        alt={currentMedia.title || title}
+                        className="relative w-full h-full object-contain group-hover/play:scale-105 transition-transform duration-500 z-[1]"
+                      />
+                      {/* Dark overlay & Big Pulsing Play Button */}
+                      <div className="absolute inset-0 bg-black/40 group-hover/play:bg-black/20 transition-colors z-[2]" />
+                      <div className="relative z-[4] flex flex-col items-center gap-2">
+                        <div className="w-16 h-16 rounded-full bg-rose-600/90 hover:bg-rose-600 border-2 border-white/80 shadow-[0_0_30px_rgba(244,63,94,0.7)] flex items-center justify-center group-hover/play:scale-110 transition-transform">
+                          <Play className="w-7 h-7 text-white fill-white ml-1" />
+                        </div>
+                        <span className="text-[11px] font-semibold text-rose-200 bg-black/80 px-3 py-1 rounded-full border border-rose-500/40 backdrop-blur-md">
+                          {language === 'th' ? '▶ กดเล่นวิดีโอสารคดี' : '▶ Play Documentary'}
+                        </span>
+                      </div>
+                    </div>
+                  )
+                ) : (
+                  /* IMAGE STAGE */
+                  <div
+                    onClick={() => setIsFullscreenModalOpen(true)}
+                    className="relative w-full h-full flex items-center justify-center cursor-zoom-in"
+                    title={language === 'th' ? 'กดเพื่อเปิดดูภาพเต็มจอ (Fill Page)' : 'Click to view full image'}
+                  >
+                    {/* Ambient blurred backdrop */}
+                    <img
+                      src={currentThumbnail}
+                      alt=""
+                      aria-hidden="true"
+                      className="pointer-events-none absolute inset-0 w-full h-full object-cover blur-2xl opacity-40 scale-125"
+                    />
+                    {/* Centered crisp image */}
+                    <img
+                      src={currentThumbnail}
+                      alt={currentMedia.title || title}
+                      className="relative w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 z-[1]"
+                    />
+                    {/* Top right zoom button */}
+                    <div className="pointer-events-none absolute top-3 right-3 z-[4] flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-black/80 border border-amber-400/50 text-amber-200 text-xs backdrop-blur-md opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">
+                      <Maximize2 className="w-3.5 h-3.5 text-amber-300" />
+                      <span>{language === 'th' ? 'ดูภาพเต็ม' : 'Fill page'}</span>
+                    </div>
+                  </div>
+                )}
+
+                {/* Dark vignette overlay */}
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#05080f]/90 via-transparent to-black/30 z-[3]" />
+
+                {/* Corner Arcane Accents */}
+                <div className="pointer-events-none absolute top-2.5 left-2.5 w-5 h-5 border-t-2 border-l-2 border-amber-400/60 rounded-tl z-[3]" />
+                <div className="pointer-events-none absolute top-2.5 right-2.5 w-5 h-5 border-t-2 border-r-2 border-amber-400/60 rounded-tr z-[3]" />
+                <div className="pointer-events-none absolute bottom-2.5 left-2.5 w-5 h-5 border-b-2 border-l-2 border-amber-400/60 rounded-bl z-[3]" />
+                <div className="pointer-events-none absolute bottom-2.5 right-2.5 w-5 h-5 border-b-2 border-r-2 border-amber-400/60 rounded-br z-[3]" />
+
+                {/* Left & Right Stage Navigation Arrows (When multiple items exist) */}
+                {mediaItems.length > 1 && (
+                  <>
+                    <button
+                      onClick={handlePrevMedia}
+                      aria-label="Previous slide"
+                      className="absolute left-2.5 top-1/2 -translate-y-1/2 z-[15] p-2 rounded-full bg-black/75 hover:bg-black/95 border border-amber-500/40 text-amber-200 hover:text-white transition-all cursor-pointer opacity-80 hover:opacity-100 hover:scale-110 shadow-lg"
+                    >
+                      <ChevronLeft className="w-4 h-4" />
+                    </button>
+                    <button
+                      onClick={handleNextMedia}
+                      aria-label="Next slide"
+                      className="absolute right-2.5 top-1/2 -translate-y-1/2 z-[15] p-2 rounded-full bg-black/75 hover:bg-black/95 border border-amber-500/40 text-amber-200 hover:text-white transition-all cursor-pointer opacity-80 hover:opacity-100 hover:scale-110 shadow-lg"
+                    >
+                      <ChevronRight className="w-4 h-4" />
+                    </button>
+                  </>
+                )}
+
+                {/* Bottom Omen / Danger Level Meter & Slide Counter */}
+                <div className="absolute bottom-3 inset-x-4 flex items-center justify-between gap-2 z-[5] pointer-events-none">
+                  <div className="flex items-center gap-2">
+                    <span className="text-[11px] font-medium text-amber-200/90 bg-slate-950/85 border border-amber-500/30 px-2.5 py-1 rounded-lg backdrop-blur-md">
+                      {dossier.dangerLabel}
+                    </span>
+                    {mediaItems.length > 1 && (
+                      <span className="text-[10px] font-mono font-semibold text-slate-300 bg-black/85 border border-slate-700/60 px-2 py-0.5 rounded-md backdrop-blur-md">
+                        {activeMediaIndex + 1} / {mediaItems.length}
+                      </span>
+                    )}
+                  </div>
+
+                  <div
+                    className="flex items-center gap-1 px-2.5 py-1 rounded-lg bg-slate-950/85 border border-rose-500/30 backdrop-blur-md"
+                    title={dossier.dangerLabel}
+                  >
+                    {[1, 2, 3, 4, 5].map((lvl) => (
+                      <Skull
+                        key={lvl}
+                        className={`w-3.5 h-3.5 ${
+                          lvl <= dossier.dangerLevel
+                            ? 'text-rose-400 fill-rose-500/30 drop-shadow-[0_0_6px_rgba(244,63,94,0.6)]'
+                            : 'text-slate-700'
+                        }`}
+                      />
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
+
+            {/* 2. Steam-Style Thumbnail Strip Carousel (Below Stage) */}
+            {mediaItems.length > 1 && (
+              <div className="relative flex items-center gap-1.5 pt-1">
+                <button
+                  onClick={() => scrollThumbs('left')}
+                  aria-label="Scroll thumbnails left"
+                  className="shrink-0 p-1.5 rounded-lg bg-slate-900/80 hover:bg-slate-800 border border-slate-700/60 text-slate-300 hover:text-white cursor-pointer"
+                >
+                  <ChevronLeft className="w-3.5 h-3.5" />
+                </button>
+
+                <div
+                  ref={thumbsScrollRef}
+                  className="flex-1 flex items-center gap-2 overflow-x-auto scrollbar-none py-1 px-0.5"
+                >
+                  {mediaItems.map((item, idx) => {
+                    const isSelected = idx === activeMediaIndex;
+                    const itemYtId = item.type === 'youtube' ? getYouTubeId(item.url) : null;
+                    const thumbSrc =
+                      item.type === 'youtube'
+                        ? item.thumbnail || (itemYtId ? `https://img.youtube.com/vi/${itemYtId}/mqdefault.jpg` : dossier.portraitUrl)
+                        : item.url;
+
+                    return (
+                      <button
+                        key={idx}
+                        onClick={() => handleSelectMedia(idx)}
+                        className={`relative shrink-0 w-24 sm:w-28 aspect-video rounded-xl overflow-hidden border transition-all cursor-pointer bg-slate-950/90 ${
+                          isSelected
+                            ? 'border-amber-400 ring-2 ring-amber-400/60 scale-[1.03] shadow-[0_0_12px_rgba(251,191,36,0.35)]'
+                            : 'border-slate-800 opacity-60 hover:opacity-100 hover:border-slate-600'
+                        }`}
+                        title={item.title || `${title} (${idx + 1})`}
+                      >
+                        <img
+                          src={thumbSrc}
+                          alt=""
+                          className="w-full h-full object-cover"
+                        />
+                        {/* Type Icon Badge */}
+                        <div className="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-black/80 border border-white/20 text-[9px] font-medium flex items-center gap-1 text-slate-200">
+                          {item.type === 'youtube' ? (
+                            <>
+                              <Play className="w-2.5 h-2.5 text-rose-400 fill-rose-500" />
+                              <span className="text-rose-300">VIDEO</span>
+                            </>
+                          ) : (
+                            <>
+                              <ImageIcon className="w-2.5 h-2.5 text-emerald-400" />
+                              <span>IMG</span>
+                            </>
+                          )}
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
+
+                <button
+                  onClick={() => scrollThumbs('right')}
+                  aria-label="Scroll thumbnails right"
+                  className="shrink-0 p-1.5 rounded-lg bg-slate-900/80 hover:bg-slate-800 border border-slate-700/60 text-slate-300 hover:text-white cursor-pointer"
+                >
+                  <ChevronRight className="w-3.5 h-3.5" />
+                </button>
+              </div>
+            )}
           </div>
 
-          {/* 2. Physical & Paranormal Dossier Specifications (ประเภท, เพศ, ขนาด, น้ำหนัก, ถิ่นอาศัย, เวลาพบ) */}
+          {/* ============================================================== */}
+          {/* 2. Physical & Paranormal Dossier Specifications                */}
+          {/* ============================================================== */}
           <div className="rounded-2xl bg-[#09101b]/90 border border-amber-500/25 p-4 shadow-inner">
             <div className="flex items-center justify-between border-b border-slate-800/90 pb-2.5 mb-3">
               <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-amber-300 font-grimoire">
@@ -330,7 +537,7 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
             </div>
           </div>
 
-          {/* 3. Physical Description & Manifestation Signs (รายละเอียดรูปลักษณ์และเอกลักษณ์) */}
+          {/* 3. Physical Description & Manifestation Signs */}
           <div className="space-y-2.5">
             <div className="flex items-center gap-2 text-sm font-bold text-amber-300 font-grimoire tracking-wide">
               <Eye className="w-4 h-4 text-amber-400" />
@@ -345,7 +552,7 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
             </div>
           </div>
 
-          {/* 4. Expanded Story Narrative (เรื่องเล่าและบันทึกตำนานฉบับเต็ม) */}
+          {/* 4. Expanded Story Narrative */}
           <div className="space-y-2.5">
             <div className="flex items-center gap-2 text-sm font-bold text-emerald-300 font-grimoire tracking-wide">
               <BookOpen className="w-4 h-4 text-emerald-400" />
@@ -367,7 +574,7 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
             </div>
           </div>
 
-          {/* 6. Ancient Taboos & Survival Warnings (ข้อห้ามและวิธีเอาชีวิตรอด) */}
+          {/* 6. Ancient Taboos & Survival Warnings */}
           <div className="rounded-2xl bg-rose-950/20 border border-rose-500/30 p-4 space-y-2.5">
             <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-rose-300 font-grimoire">
               <ShieldAlert className="w-4 h-4 text-rose-400" />
@@ -402,12 +609,14 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
         </div>
       </div>
 
-      {/* Fullscreen Fill-Page Lightbox Overlay */}
-      {isImageFullscreen && (
+      {/* ============================================================== */}
+      {/* FULLSCREEN FILL-PAGE LIGHTBOX OVERLAY (IMAGE OR YOUTUBE)       */}
+      {/* ============================================================== */}
+      {isFullscreenModalOpen && (
         <div
           onClick={(e) => {
             e.stopPropagation();
-            setIsImageFullscreen(false);
+            setIsFullscreenModalOpen(false);
           }}
           className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-black/95 backdrop-blur-2xl p-4 sm:p-6 animate-in fade-in duration-200 select-none"
         >
@@ -423,10 +632,15 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
               <span className="text-xs font-mono px-2 py-0.5 rounded bg-amber-950/80 text-amber-300 border border-amber-500/40">
                 {dossier.codexId}
               </span>
+              {currentMedia.title && (
+                <span className="hidden sm:inline text-xs text-slate-400 font-serif italic truncate max-w-md">
+                  — {currentMedia.title}
+                </span>
+              )}
             </div>
 
             <button
-              onClick={() => setIsImageFullscreen(false)}
+              onClick={() => setIsFullscreenModalOpen(false)}
               className="p-2.5 rounded-full bg-slate-900/90 hover:bg-slate-800 border border-amber-500/40 text-amber-200 hover:text-white transition-all cursor-pointer shadow-[0_0_15px_rgba(0,0,0,0.8)]"
               aria-label="Close"
             >
@@ -434,16 +648,26 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
             </button>
           </div>
 
-          {/* Fullscreen Image Container (Fill Page) */}
+          {/* Fullscreen Media Container (Fill Page) */}
           <div
             onClick={(e) => e.stopPropagation()}
             className="relative w-full h-full max-w-7xl max-h-[82vh] flex items-center justify-center overflow-hidden rounded-2xl border border-amber-500/30 bg-[#02050b] shadow-[0_0_60px_rgba(0,0,0,0.95)]"
           >
-            <img
-              src={dossier.portraitUrl}
-              alt={title}
-              className="w-full h-full object-contain max-h-[82vh] select-none"
-            />
+            {currentMedia.type === 'youtube' && ytVideoId ? (
+              <iframe
+                src={`https://www.youtube-nocookie.com/embed/${ytVideoId}?autoplay=1&rel=0`}
+                title={currentMedia.title || title}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full border-0"
+              />
+            ) : (
+              <img
+                src={currentThumbnail}
+                alt={title}
+                className="w-full h-full object-contain max-h-[82vh] select-none"
+              />
+            )}
           </div>
 
           <p className="mt-2 text-xs text-amber-200/60 font-grimoire tracking-wider text-center">

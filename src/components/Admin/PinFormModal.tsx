@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { X, Save, Sparkles } from 'lucide-react';
+import { X, Save, Sparkles, Plus, Trash2 } from 'lucide-react';
+import type { MediaItem } from '../../types/ghost';
 import type { GhostPin, GhostCategory, SoundPreset, SupportedLanguage } from '../../types/ghost';
 import { getTranslation } from '../../lib/i18n';
 import { applyPrivacyJitter } from '../../lib/coordinates';
@@ -66,6 +67,37 @@ export const PinFormModal: React.FC<PinFormModalProps> = ({
     }
   );
 
+  const [newMediaUrl, setNewMediaUrl] = useState('');
+  const [newMediaType, setNewMediaType] = useState<'image' | 'youtube'>('image');
+  const [newMediaTitle, setNewMediaTitle] = useState('');
+
+
+  const handleAddMedia = () => {
+    if (!newMediaUrl.trim()) return;
+    const isYt =
+      newMediaUrl.includes('youtube.com') ||
+      newMediaUrl.includes('youtu.be') ||
+      newMediaType === 'youtube';
+    const item: MediaItem = {
+      type: isYt ? 'youtube' : 'image',
+      url: newMediaUrl.trim(),
+      title: newMediaTitle.trim() || undefined,
+    };
+    setFormData((prev) => ({
+      ...prev,
+      gallery_media: [...(prev.gallery_media || []), item],
+    }));
+    setNewMediaUrl('');
+    setNewMediaTitle('');
+  };
+
+  const handleRemoveMedia = (index: number) => {
+    setFormData((prev) => ({
+      ...prev,
+      gallery_media: (prev.gallery_media || []).filter((_, i) => i !== index),
+    }));
+  };
+
   if (!isOpen) return null;
 
   const handleProvinceSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -112,6 +144,7 @@ export const PinFormModal: React.FC<PinFormModalProps> = ({
       folklore_history_th: formData.folklore_history_th || '',
       folklore_history_en: formData.folklore_history_en || '',
       image_url: formData.image_url || '',
+      gallery_media: formData.gallery_media || [],
       sound_preset: (formData.sound_preset as SoundPreset) || 'whisper',
       views_count: formData.views_count || 0,
       is_published: formData.is_published ?? 1,
@@ -327,6 +360,92 @@ export const PinFormModal: React.FC<PinFormModalProps> = ({
               placeholder="https://pub-r2.yourdomain.com/ghost-image.jpg"
               className="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-sm text-white focus:outline-none focus:border-emerald-500 font-mono text-xs"
             />
+          </div>
+
+
+          {/* Media Gallery / Slides / YouTube Videos */}
+          <div className="p-4 rounded-2xl bg-slate-900/60 border border-slate-800 space-y-3">
+            <div className="flex items-center justify-between">
+              <label className="block text-xs font-bold text-amber-300 uppercase tracking-wider">
+                {language === 'th' ? 'แกลเลอรีสื่อมัลติมีเดีย (ภาพสไลด์ & วิดีโอ YouTube)' : 'Media Gallery (Image Slides & YouTube Videos)'}
+              </label>
+              <span className="text-[10px] text-slate-400">
+                {(formData.gallery_media || []).length} {language === 'th' ? 'รายการ' : 'items'}
+              </span>
+            </div>
+
+            {/* Existing Media List */}
+            {formData.gallery_media && formData.gallery_media.length > 0 && (
+              <div className="space-y-2 max-h-48 overflow-y-auto pr-1">
+                {formData.gallery_media.map((item, idx) => (
+                  <div
+                    key={idx}
+                    className="flex items-center justify-between gap-3 p-2 rounded-xl bg-slate-950 border border-slate-800 text-xs"
+                  >
+                    <div className="flex items-center gap-2.5 truncate">
+                      <span className={`px-1.5 py-0.5 rounded text-[10px] font-bold ${item.type === 'youtube' ? 'bg-rose-950 text-rose-300 border border-rose-500/40' : 'bg-emerald-950 text-emerald-300 border border-emerald-500/40'}`}>
+                        {item.type === 'youtube' ? 'YOUTUBE' : 'IMAGE'}
+                      </span>
+                      <span className="text-white font-medium truncate">
+                        {item.title || item.url}
+                      </span>
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => handleRemoveMedia(idx)}
+                      className="p-1 rounded text-rose-400 hover:text-rose-200 hover:bg-rose-950/50 cursor-pointer shrink-0"
+                    >
+                      <Trash2 className="w-3.5 h-3.5" />
+                    </button>
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {/* Add New Media Item Form */}
+            <div className="p-3 rounded-xl bg-slate-950 border border-slate-800/80 space-y-2">
+              <div className="grid grid-cols-3 gap-2">
+                <select
+                  value={newMediaType}
+                  onChange={(e) => setNewMediaType(e.target.value as 'image' | 'youtube')}
+                  className="px-2.5 py-1.5 rounded-lg bg-slate-900 border border-slate-700 text-xs text-white"
+                >
+                  <option value="image">รูปภาพ (Image)</option>
+                  <option value="youtube">วิดีโอ (YouTube)</option>
+                </select>
+                <input
+                  type="text"
+                  value={newMediaTitle}
+                  onChange={(e) => setNewMediaTitle(e.target.value)}
+                  placeholder="ชื่อคำบรรยาย (เช่น สารคดีตำนาน)"
+                  className="col-span-2 px-2.5 py-1.5 rounded-lg bg-slate-900 border border-slate-700 text-xs text-white"
+                />
+              </div>
+
+              <div className="flex gap-2">
+                <input
+                  type="url"
+                  value={newMediaUrl}
+                  onChange={(e) => {
+                    const val = e.target.value;
+                    setNewMediaUrl(val);
+                    if (val.includes('youtube.com') || val.includes('youtu.be')) {
+                      setNewMediaType('youtube');
+                    }
+                  }}
+                  placeholder={newMediaType === 'youtube' ? 'https://www.youtube.com/watch?v=...' : 'https://... หรือ /entities/photo.jpg'}
+                  className="flex-1 px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-700 text-xs text-white font-mono"
+                />
+                <button
+                  type="button"
+                  onClick={handleAddMedia}
+                  className="px-3 py-1.5 rounded-lg bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/50 text-amber-200 text-xs font-semibold flex items-center gap-1 cursor-pointer shrink-0"
+                >
+                  <Plus className="w-3.5 h-3.5" />
+                  <span>{language === 'th' ? 'เพิ่มสื่อ' : 'Add'}</span>
+                </button>
+              </div>
+            </div>
           </div>
 
           {/* Status */}

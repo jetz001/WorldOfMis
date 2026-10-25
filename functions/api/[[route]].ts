@@ -23,7 +23,16 @@ app.get('/pins', async (c) => {
     const { results } = await db
       .prepare('SELECT * FROM ghost_pins ORDER BY views_count DESC')
       .all();
-    return c.json({ success: true, data: results });
+    const formatted = results.map((r: any) => {
+      let gallery_media = [];
+      if (r.gallery_media) {
+        try {
+          gallery_media = typeof r.gallery_media === 'string' ? JSON.parse(r.gallery_media) : r.gallery_media;
+        } catch {}
+      }
+      return { ...r, gallery_media };
+    });
+    return c.json({ success: true, data: formatted });
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : String(err);
     return c.json({ success: false, error: message }, 500);
@@ -38,9 +47,15 @@ app.get('/pins/:id', async (c) => {
 
   try {
     await db.prepare('UPDATE ghost_pins SET views_count = views_count + 1 WHERE id = ?').bind(id).run();
-    const pin = await db.prepare('SELECT * FROM ghost_pins WHERE id = ?').bind(id).first();
+    const pin = (await db.prepare('SELECT * FROM ghost_pins WHERE id = ?').bind(id).first()) as any;
     if (!pin) return c.json({ error: 'Pin not found' }, 404);
-    return c.json({ success: true, data: pin });
+    let gallery_media = [];
+    if (pin.gallery_media) {
+      try {
+        gallery_media = typeof pin.gallery_media === 'string' ? JSON.parse(pin.gallery_media) : pin.gallery_media;
+      } catch {}
+    }
+    return c.json({ success: true, data: { ...pin, gallery_media } });
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : String(err);
     return c.json({ success: false, error: message }, 500);
@@ -61,9 +76,9 @@ app.post('/pins', async (c) => {
         INSERT INTO ghost_pins (
           id, title_th, title_en, category, province_th, province_en,
           district_th, district_en, lat, lng, story_th, story_en,
-          folklore_history_th, folklore_history_en, image_url, audio_url,
+          folklore_history_th, folklore_history_en, image_url, audio_url, gallery_media,
           sound_preset, is_published
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
       `)
       .bind(
         id,
@@ -82,6 +97,7 @@ app.post('/pins', async (c) => {
         body.folklore_history_en || '',
         body.image_url || '',
         body.audio_url || '',
+        body.gallery_media ? JSON.stringify(body.gallery_media) : '[]',
         body.sound_preset || 'whisper',
         body.is_published ?? 1
       )
@@ -107,7 +123,7 @@ app.put('/pins/:id', async (c) => {
         UPDATE ghost_pins SET
           title_th = ?, title_en = ?, category = ?, province_th = ?, province_en = ?,
           district_th = ?, district_en = ?, lat = ?, lng = ?, story_th = ?, story_en = ?,
-          folklore_history_th = ?, folklore_history_en = ?, image_url = ?, audio_url = ?,
+          folklore_history_th = ?, folklore_history_en = ?, image_url = ?, audio_url = ?, gallery_media = ?,
           sound_preset = ?, is_published = ?, updated_at = CURRENT_TIMESTAMP
         WHERE id = ?
       `)
@@ -127,6 +143,7 @@ app.put('/pins/:id', async (c) => {
         body.folklore_history_en || '',
         body.image_url || '',
         body.audio_url || '',
+        body.gallery_media ? JSON.stringify(body.gallery_media) : '[]',
         body.sound_preset || 'whisper',
         body.is_published ?? 1,
         id

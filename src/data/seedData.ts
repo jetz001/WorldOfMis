@@ -26,6 +26,23 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
   // --- EUROPE & UK ---
   {
     id: 'pin-lochness',
+    gallery_media: [
+          {
+                "type": "image",
+                "url": "/entities/pin-lochness.jpg",
+                "title": "Surgeon’s Photograph (1934)"
+          },
+          {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=sU14zI0x87Q",
+                "title": "Loch Ness Monster - The Legend of Nessie"
+          },
+          {
+                "type": "image",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Loch_Ness%2C_Scotland.jpg/960px-Loch_Ness%2C_Scotland.jpg",
+                "title": "ทะเลสาบล็อกเนสส์ สกอตแลนด์"
+          }
+    ],
     title_th: 'สัตว์ประหลาดล็อกเนสส์ (เนสซี)',
     title_en: 'Loch Ness Monster (Nessie)',
     category: 'monster',
@@ -46,6 +63,23 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
   },
   {
     id: 'pin-dracula',
+    gallery_media: [
+          {
+                "type": "image",
+                "url": "/entities/pin-dracula.jpg",
+                "title": "เจ้าชายวลาดที่ 3 (Vlad III Dracula)"
+          },
+          {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=BtCjc5OwBi4",
+                "title": "Vlad the Impaler: The True Story of Dracula"
+          },
+          {
+                "type": "image",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Bran_Castle_Castle_01.jpg/960px-Bran_Castle_Castle_01.jpg",
+                "title": "ปราสาทบราน (Bran Castle ทรานซิลเวเนีย)"
+          }
+    ],
     title_th: 'เคานต์แดร็กคูลาแห่งทรานซิลเวเนีย',
     title_en: 'Count Dracula & Vlad the Impaler',
     category: 'curse',
@@ -88,6 +122,23 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
   },
   {
     id: 'pin-chupacabra',
+    gallery_media: [
+          {
+                "type": "image",
+                "url": "/entities/pin-chupacabra.jpg",
+                "title": "เอล ชูปาคาบรา อสูรสูบเลือดสัตว์"
+          },
+          {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=Qx3rD_J9bC4",
+                "title": "El Chupacabra Legend & Encounters"
+          },
+          {
+                "type": "image",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Chupacabras.JPG/960px-Chupacabras.JPG",
+                "title": "ภาพสเก็ตช์พยานพบเห็นดั้งเดิมเปอร์โตริโก (1995)"
+          }
+    ],
     title_th: 'เอล ชูปาคาบรา อสูรสูบเลือดสัตว์',
     title_en: 'El Chupacabra (Goat-Sucker)',
     category: 'monster',
@@ -154,6 +205,18 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
   // --- THAILAND & SOUTHEAST ASIA ---
   {
     id: 'pin-maenak',
+    gallery_media: [
+          {
+                "type": "image",
+                "url": "/entities/pin-maenak.jpg",
+                "title": "ย่านาคพระโขนง (ศาลวัดมหาบุศย์)"
+          },
+          {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=3q4x6N3L9bU",
+                "title": "ตำนานแม่นาคพระโขนง ฉบับประวัติศาสตร์"
+          }
+    ],
     title_th: 'แม่นาคพระโขนง',
     title_en: 'Mae Nak Phra Khanong',
     category: 'ghost',
@@ -398,6 +461,23 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
   // --- CENTRAL EUROPE (GERMANY) ---
   {
     id: 'pin-lorelei',
+    gallery_media: [
+          {
+                "type": "image",
+                "url": "/entities/pin-lorelei.jpg",
+                "title": "ลอเรไล พรายสาวไซเรนแห่งแม่น้ำไรน์"
+          },
+          {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=o0vM5nN2uP8",
+                "title": "The Legend of the Lorelei (Rhine Ballad)"
+          },
+          {
+                "type": "image",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Emil_Krupa-Krupinski_Loreley_1899.jpg/960px-Emil_Krupa-Krupinski_Loreley_1899.jpg",
+                "title": "จิตรกรรมลอเรไล (Emil Krupa-Krupinski 1899)"
+          }
+    ],
     title_th: 'ลอเรไล นางเงียมแห่งแม่น้ำไรน์',
     title_en: 'The Lorelei of the Rhine',
     category: 'sacred',
@@ -442,6 +522,23 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
   // --- ENGLAND & UK ---
   {
     id: 'pin-blackshuck',
+    gallery_media: [
+          {
+                "type": "image",
+                "url": "/entities/pin-blackshuck.jpg",
+                "title": "แบล็ค ชัค สุนัขปีศาจแห่งซัฟฟอล์ก"
+          },
+          {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=nOU1t17F_gQ",
+                "title": "The Legend of Black Shuck"
+          },
+          {
+                "type": "image",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/A_Staunge_and_terrible_Wunder.jpg/960px-A_Staunge_and_terrible_Wunder.jpg",
+                "title": "บันทึกโบราณปีศาจสุนัขบุกโบสถ์ (1577)"
+          }
+    ],
     title_th: 'แบล็ค ชัค สุนัขปีศาจแห่งซัฟฟอล์ก',
     title_en: 'Black Shuck, the Demon Dog of Suffolk',
     category: 'ghost',
@@ -860,6 +957,23 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
   // --- AMERICAS (EXPANDED) ---
   {
     id: 'pin-sasquatch',
+    gallery_media: [
+          {
+                "type": "image",
+                "url": "/entities/pin-sasquatch.jpg",
+                "title": "Patterson-Gimlin Bigfoot Film (1967)"
+          },
+          {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=OBTUvOz_7kY",
+                "title": "Patterson-Gimlin Bigfoot Footage Restored"
+          },
+          {
+                "type": "image",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Bigfoot_Sketch.jpg/960px-Bigfoot_Sketch.jpg",
+                "title": "สเก็ตช์ชีววิทยาของบิ๊กฟุต"
+          }
+    ],
     title_th: 'แซสควัทช์ มนุษย์ป่ายักษ์แห่งชายฝั่งแปซิฟิก',
     title_en: 'Sasquatch, the Wild Man of the Pacific Northwest',
     category: 'monster',

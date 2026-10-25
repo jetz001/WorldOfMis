@@ -2,6 +2,14 @@ export type GhostCategory = 'ghost' | 'legend' | 'curse' | 'sacred' | 'monster';
 
 export type SoundPreset = 'whisper' | 'water_spirit' | 'jungle_curse' | 'temple_bell' | 'creepy_wind';
 
+export interface MediaItem {
+  id?: string;
+  type: 'image' | 'youtube';
+  url: string;
+  title?: string;
+  thumbnail?: string;
+}
+
 export interface GhostPin {
   id: string;
   title_th: string;
@@ -19,6 +27,7 @@ export interface GhostPin {
   folklore_history_en: string;
   image_url?: string;
   audio_url?: string;
+  gallery_media?: MediaItem[];
   sound_preset: SoundPreset;
   views_count: number;
   is_published: number;
