@@ -460,7 +460,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
   // --- EAST ASIA (CHINA) ---
   {
     id: 'pin-jiangshi',
-    title_th: 'จางจี้ (ผีผู้ขโขบ)',
+    title_th: 'เจียงซือ (ผีดิบจีนกระโดด)',
     title_en: 'Jiangshi (The Hopping Corpse)',
     category: 'ghost',
     province_th: 'ปีจูเนีย (จีน)',
@@ -497,7 +497,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
   // --- EUROPE & UK (RUSSIA) ---
   {
     id: 'pin-baba-iva',
-    title_th: 'บาบาะ',
+    title_th: 'บาบายากา (แม่มดกระดูกแห่งสลาฟ)',
     title_en: 'Baba Yaga (The Bone Witch)',
     category: 'curse',
     province_th: 'มอสโก (รัสเซีย)',
@@ -534,7 +534,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
   // --- SOUTH ASIA (INDIA) ---
   {
     id: 'pin-chudail',
-    title_th: 'จูดไล',
+    title_th: 'ชูเดล (วิญญาณหญิงคร่ำครวญแห่งเอเชียใต้)',
     title_en: 'The Chudail (Wailing Witch)',
     category: 'ghost',
     province_th: 'วาระนาสี (อินเดีย)',
@@ -571,7 +571,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
   // --- EUROPE (FRANCE) ---
   {
     id: 'pin-gevaudan',
-    title_th: 'สัตว์ป่าผู้เปลี่ยนร่างเป็นหมอ',
+    title_th: 'สัตว์ร้ายแห่งเฌโวด็อง (อสูรหมาป่า)',
     title_en: 'The Beast of Gevaudan (Werewolf)',
     category: 'monster',
     province_th: 'กัวดอน (ฝรั่งเศส)',
@@ -608,7 +608,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
   // --- SOUTH AMERICA (BRAZIL) ---
   {
     id: 'pin-curupira',
-    title_th: 'ครูปิรา',
+    title_th: 'กูรูปิรา (ภูตผู้พิทักษ์ผืนป่าแอมะซอน)',
     title_en: 'Curupira (Protective Forest Spirit)',
     category: 'sacred',
     province_th: 'อร่าโจนัส (บราซิล)',
@@ -645,7 +645,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
   // --- NORDIC (ICELAND) ---
   {
     id: 'pin-draugr',
-    title_th: 'ดราวก',
+    title_th: 'ดราวก์ (ผีดิบไวกิ้งโบราณ)',
     title_en: 'The Draugr (Ancient Undead)',
     category: 'ghost',
     province_th: 'ไอซ์แลนด์',
@@ -682,7 +682,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
   // --- SOUTHERN EUROPE (GREECE) ---
   {
     id: 'pin-minotaur',
-    title_th: 'ไมโนทอร์ในเขาวงกต',
+    title_th: 'มิโนทอร์แห่งเขาวงกตครีต',
     title_en: 'The Minotaur of the Labyrinth',
     category: 'monster',
     province_th: 'ครีต (กรีซ)',
@@ -734,7 +734,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
                 "thumbnail": "/entities/pin-lorelei.jpg"
         }
 ],
-    title_th: 'ลอเรไล นางเงียมแห่งแม่น้ำไรน์',
+    title_th: 'ลอเรไล ไซเรนสาวแห่งแม่น้ำไรน์',
     title_en: 'The Lorelei of the Rhine',
     category: 'sacred',
     province_th: 'ไรน์ลันด์ (เยอรมนี)',
@@ -760,7 +760,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
   // --- IRELAND ---
   {
     id: 'pin-banshee',
-    title_th: 'แบนชี ผู้ร้องไห้นำความตาย',
+    title_th: 'แบนชี (วิญญาณหวีดร้องแห่งความตาย)',
     title_en: 'The Banshee of the Old Families',
     category: 'ghost',
     province_th: 'เคาน์ตีมีท (ไอร์แลนด์)',
@@ -1370,7 +1370,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
   },
   {
     id: 'pin-mahasona',
-    title_th: 'มหาโสณา มาราผู้หญิงแห่งป่าช้า',
+    title_th: 'มหาโสณา (ยักษ์อสูรแห่งป่าช้าศรีลังกา)',
     title_en: 'Mahasona, the Graveyard Giantess',
     category: 'ghost',
     province_th: 'โกลมโบ (ศรีลังกา)',
@@ -1631,7 +1631,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
   },
   {
     id: 'pin-pishtaco',
-    title_th: 'พิชตาโก จอมปลอมหนวดขาวที่ลนไขมันมนุษย์',
+    title_th: 'พิชตาโก (ปีศาจสูบไขมันมนุษย์แห่งแอนดีส)',
     title_en: 'El Pishtaco, the Fat-Collecting Bandit',
     category: 'monster',
     province_th: 'คุสโก (เปรู)',
@@ -1781,7 +1781,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
   },
   {
     id: 'pin-madamkoi',
-    title_th: 'แม่นางคอยพอย ผู้มีรองเท้าส้นสูงแห่งโรงเรียนประจำ',
+    title_th: 'มาดามคอยคอย (ผีส้นสูงสีแดงแห่งแอฟริกา)',
     title_en: 'Madam Koi Koi, the High-Heel Ghost',
     category: 'ghost',
     province_th: 'ลากอส (ไนจีเรีย)',

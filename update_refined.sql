@@ -1,0 +1,18 @@
+UPDATE ghost_pins SET title_th = 'ลอเรไล ไซเรนสาวแห่งแม่น้ำไรน์' WHERE id = 'pin-lorelei';
+UPDATE ghost_pins SET title_th = 'สัตว์ร้ายแห่งเฌโวด็อง (อสูรหมาป่า)' WHERE id = 'pin-gevaudan';
+UPDATE ghost_pins SET title_th = 'เจียงซือ (ผีดิบจีนกระโดด)' WHERE id = 'pin-jiangshi';
+UPDATE ghost_pins SET title_th = 'บาบายากา (แม่มดกระดูกแห่งสลาฟ)' WHERE id = 'pin-baba-iva';
+UPDATE ghost_pins SET title_th = 'ชูเดล (วิญญาณหญิงคร่ำครวญแห่งเอเชียใต้)' WHERE id = 'pin-chudail';
+UPDATE ghost_pins SET title_th = 'กูรูปิรา (ภูตผู้พิทักษ์ผืนป่าแอมะซอน)' WHERE id = 'pin-curupira';
+UPDATE ghost_pins SET title_th = 'ดราวก์ (ผีดิบไวกิ้งโบราณ)' WHERE id = 'pin-draugr';
+UPDATE ghost_pins SET title_th = 'มิโนทอร์แห่งเขาวงกตครีต' WHERE id = 'pin-minotaur';
+UPDATE ghost_pins SET title_th = 'แบนชี (วิญญาณหวีดร้องแห่งความตาย)' WHERE id = 'pin-banshee';
+UPDATE ghost_pins SET title_th = 'มหาโสณา (ยักษ์อสูรแห่งป่าช้าศรีลังกา)' WHERE id = 'pin-mahasona';
+UPDATE ghost_pins SET title_th = 'พิชตาโก (ปีศาจสูบไขมันมนุษย์แห่งแอนดีส)' WHERE id = 'pin-pishtaco';
+UPDATE ghost_pins SET title_th = 'มาดามคอยคอย (ผีส้นสูงสีแดงแห่งแอฟริกา)' WHERE id = 'pin-madamkoi';
+UPDATE ghost_pins SET gallery_media = '[{"type":"image","url":"/entities/pin-lorelei.jpg","title":"ลอเรไล ไซเรนสาวแห่งแม่น้ำไรน์"},{"type":"youtube","url":"https://www.youtube.com/watch?v=s1qCMPnc820","title":"ไซเรนคือใคร? #ดราม่าระดับเทพ | Point of View","thumbnail":"/entities/pin-lorelei.jpg"}]' WHERE id = 'pin-lorelei';
+UPDATE ghost_pins SET gallery_media = '[{"type":"image","url":"/entities/pin-mahasona.jpg","title":"มหาโสณา (ยักษ์อสูรแห่งป่าช้าศรีลังกา)"},{"type":"youtube","url":"https://www.youtube.com/watch?v=ij3lZndopjs","title":"MAHASONA මහසෝනා — The Sri Lankan Legend of the Graveyard Demon","thumbnail":"/entities/pin-mahasona.jpg"}]' WHERE id = 'pin-mahasona';
+UPDATE ghost_pins SET gallery_media = '[{"type":"image","url":"/entities/pin-pishtaco.jpg","title":"พิชตาโก (ปีศาจสูบไขมันมนุษย์แห่งแอนดีส)"},{"type":"youtube","url":"https://www.youtube.com/watch?v=H2EGcnuUZuo","title":"The Police Arrested A Monster | The Real Story Of The Pishtaco","thumbnail":"/entities/pin-pishtaco.jpg"}]' WHERE id = 'pin-pishtaco';
+UPDATE ghost_pins SET gallery_media = '[{"type":"image","url":"/entities/pin-patasola.jpg","title":"ปาตาโซลา ปีศาจขาเดียวแห่งป่าโคลอมเบีย"},{"type":"youtube","url":"https://www.youtube.com/watch?v=YSnjByNhUgY","title":"The Curse of La Patasola | Official Trailer & Legend","thumbnail":"/entities/pin-patasola.jpg"}]' WHERE id = 'pin-patasola';
+UPDATE ghost_pins SET gallery_media = '[{"type":"image","url":"/entities/pin-mosina.jpg","title":"โมซินอา ภูติน้อยแห่งขุนเขาไต้หวัน"},{"type":"youtube","url":"https://www.youtube.com/watch?v=YELf32J1Xzk","title":"The Mud-Rice Feast | A Taiwanese Ghost Story (Mo-sin-a Mountain Legend)","thumbnail":"/entities/pin-mosina.jpg"}]' WHERE id = 'pin-mosina';
+UPDATE ghost_pins SET gallery_media = '[{"type":"image","url":"/entities/pin-nightmarchers.jpg","title":"ไนท์ มาร์เชอร์ส ขบวนวิญญาณฮาวาย"},{"type":"youtube","url":"https://www.youtube.com/watch?v=jLCEp-4esIM","title":"The Nightmarchers - Hawaiian Army of the Dead - Extra Mythology","thumbnail":"/entities/pin-nightmarchers.jpg"}]' WHERE id = 'pin-nightmarchers';
