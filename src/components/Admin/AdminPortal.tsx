@@ -42,7 +42,7 @@ export const AdminPortal: React.FC<AdminPortalProps> = ({
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(() => {
     return localStorage.getItem('worldofmys_admin_auth') === 'true';
   });
-  const [username, setUsername] = useState('admin');
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [loginError, setLoginError] = useState('');
 
@@ -107,7 +107,7 @@ export const AdminPortal: React.FC<AdminPortalProps> = ({
       setLoginError('');
       setPassword('');
     } else {
-      setLoginError('ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง (ลอง admin / password123)');
+      setLoginError('ชื่อผู้ใช้หรือรหัสผ่านผู้ดูแลระบบไม่ถูกต้อง');
     }
   };
 
@@ -222,7 +222,7 @@ export const AdminPortal: React.FC<AdminPortalProps> = ({
                         placeholder="••••••••"
                       />
                       <p className="text-[11px] text-slate-500 mt-1">
-                        * รหัสเริ่มต้นสำหรับการทดสอบ: <code className="text-emerald-400 font-mono">password123</code>
+                        * เฉพาะผู้ดูแลระบบที่ได้รับอนุญาตเท่านั้น
                       </p>
                     </div>
 

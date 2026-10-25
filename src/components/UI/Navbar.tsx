@@ -9,7 +9,6 @@ import {
   Flame,
   X,
   MapPin,
-  Cpu,
   ArrowUpRight,
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
@@ -46,6 +45,25 @@ export const Navbar: React.FC<NavbarProps> = ({
   const t = getTranslation(language);
   const [isSearchFocused, setIsSearchFocused] = useState(false);
   const searchContainerRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
+  const secretTapCountRef = useRef(0);
+  const secretTapTimerRef = useRef<number | null>(null);
+
+  // Secret 5-tap trigger on the logo to open Admin Portal (invisible to regular visitors)
+  const handleSecretLogoClick = () => {
+    secretTapCountRef.current += 1;
+    if (secretTapTimerRef.current) {
+      window.clearTimeout(secretTapTimerRef.current);
+    }
+    if (secretTapCountRef.current >= 5) {
+      secretTapCountRef.current = 0;
+      onOpenAdmin();
+      return;
+    }
+    secretTapTimerRef.current = window.setTimeout(() => {
+      secretTapCountRef.current = 0;
+    }, 2000);
+  };
 
   // Close RAG dropdown when clicking outside the search container
   useEffect(() => {
@@ -97,8 +115,11 @@ export const Navbar: React.FC<NavbarProps> = ({
     <header className="fixed top-0 left-0 right-0 z-20 pointer-events-none p-4 md:p-6 flex flex-col gap-3">
       {/* Top Main Bar */}
       <div className="flex items-center justify-between gap-3 pointer-events-auto">
-        {/* Brand / Title (Transparent Background + Custom Emblem Logo) */}
-        <div className="flex items-center gap-3 shrink-0 select-none">
+        {/* Brand / Title (Transparent Background + Custom Emblem Logo; Secret 5-tap opens Admin Portal) */}
+        <div
+          onClick={handleSecretLogoClick}
+          className="flex items-center gap-3 shrink-0 select-none cursor-default"
+        >
           <img
             src="/logo.png"
             alt="World of Mystery Logo"
@@ -123,6 +144,14 @@ export const Navbar: React.FC<NavbarProps> = ({
               onChange={(e) => {
                 onSearchChange(e.target.value);
                 setIsSearchFocused(true);
+              }}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' && searchQuery.trim().toLowerCase() === '/admin') {
+                  e.preventDefault();
+                  onSearchChange('');
+                  setIsSearchFocused(false);
+                  onOpenAdmin();
+                }
               }}
               placeholder={
                 language === 'th'
@@ -313,20 +342,6 @@ export const Navbar: React.FC<NavbarProps> = ({
               className="w-6 h-6 object-contain group-hover:scale-110 transition-transform duration-300"
             />
             <span>{language.toUpperCase()}</span>
-          </button>
-
-          {/* Admin Portal Button */}
-          <button
-            onClick={onOpenAdmin}
-            aria-label={t.adminLogin}
-            className="group px-3.5 py-2 rounded-2xl bg-[#070c16]/90 border border-amber-500/35 hover:border-emerald-400/70 backdrop-blur-xl text-amber-100/90 hover:text-emerald-200 transition-all shadow-[0_6px_20px_rgba(0,0,0,0.85),0_0_15px_rgba(16,185,129,0.12)] hover:shadow-[0_0_22px_rgba(16,185,129,0.35)] flex items-center gap-2 text-xs font-grimoire tracking-wider cursor-pointer active:scale-95"
-          >
-            <img
-              src="/icons/sigil_admin.png"
-              alt=""
-              className="w-6 h-6 object-contain group-hover:scale-110 transition-transform duration-300"
-            />
-            <span className="hidden sm:inline font-semibold">{t.adminLogin}</span>
           </button>
         </div>
       </div>

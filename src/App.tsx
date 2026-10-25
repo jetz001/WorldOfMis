@@ -17,11 +17,37 @@ export function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const [worldViewSignal, setWorldViewSignal] = useState(0);
 
-  // Load pins
+  // Load pins & attach secret Admin Portal triggers (Ctrl+Shift+A or #admin)
   useEffect(() => {
     fetchPins().then((data) => {
       setPins(data);
     });
+
+    const checkSecretUrl = () => {
+      const params = new URLSearchParams(window.location.search);
+      if (window.location.hash === '#admin' || params.get('admin') === '1') {
+        setIsAdminOpen(true);
+        // Clean URL hash so it stays discreet
+        if (window.location.hash === '#admin') {
+          window.history.replaceState(null, '', window.location.pathname + window.location.search);
+        }
+      }
+    };
+    checkSecretUrl();
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if ((e.ctrlKey || e.metaKey || e.altKey) && e.shiftKey && e.key.toLowerCase() === 'a') {
+        e.preventDefault();
+        setIsAdminOpen((prev) => !prev);
+      }
+    };
+
+    window.addEventListener('hashchange', checkSecretUrl);
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('hashchange', checkSecretUrl);
+      window.removeEventListener('keydown', handleKeyDown);
+    };
   }, []);
 
   const handleToggleLanguage = useCallback(() => {
