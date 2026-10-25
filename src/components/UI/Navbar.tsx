@@ -49,6 +49,16 @@ export const Navbar: React.FC<NavbarProps> = ({
   const secretTapCountRef = useRef(0);
   const secretTapTimerRef = useRef<number | null>(null);
 
+  // Dogecoin donation (address shared with QRzip project)
+  const DOGE_ADDRESS = 'D8QcXwSdCwXiqvU7x4jeYBHnJVze7a5yxb';
+  const [isDonateOpen, setIsDonateOpen] = useState(false);
+  const [dogeCopied, setDogeCopied] = useState(false);
+  const handleCopyDoge = () => {
+    navigator.clipboard?.writeText(DOGE_ADDRESS).catch(() => {});
+    setDogeCopied(true);
+    window.setTimeout(() => setDogeCopied(false), 1800);
+  };
+
   // Secret 5-tap trigger on the logo to open Admin Portal (invisible to regular visitors)
   const handleSecretLogoClick = () => {
     secretTapCountRef.current += 1;
@@ -335,6 +345,54 @@ export const Navbar: React.FC<NavbarProps> = ({
 
         {/* Action Controls (Mystical Talisman Buttons) */}
         <div className="flex items-center gap-2.5 shrink-0">
+          {/* Donate Doge (hover shows QR, click copies address) */}
+          <div
+            className="relative"
+            onMouseEnter={() => setIsDonateOpen(true)}
+            onMouseLeave={() => setIsDonateOpen(false)}
+          >
+            <button
+              type="button"
+              onClick={() => {
+                handleCopyDoge();
+                setIsDonateOpen((v) => !v);
+              }}
+              title={language === 'th' ? 'คลิกเพื่อคัดลอกที่อยู่ Dogecoin' : 'Click to copy Dogecoin address'}
+              className="px-3.5 py-2 rounded-2xl bg-[#070c16]/90 border border-amber-400/50 hover:border-amber-300 backdrop-blur-xl text-amber-300 hover:text-amber-200 transition-all shadow-[0_6px_20px_rgba(0,0,0,0.85),0_0_15px_rgba(246,195,67,0.18)] hover:shadow-[0_0_22px_rgba(246,195,67,0.45)] flex items-center gap-2 text-xs font-sans font-semibold tracking-wide cursor-pointer active:scale-95"
+            >
+              <span className="text-base leading-none">🐕</span>
+              <span className="hidden sm:inline">
+                {dogeCopied
+                  ? language === 'th' ? 'คัดลอกแล้ว!' : 'Copied!'
+                  : language === 'th' ? 'โดเนท Doge' : 'Donate Doge'}
+              </span>
+            </button>
+
+            {isDonateOpen && (
+              <div className="absolute right-0 top-full mt-2 z-[1000] w-56 p-3 rounded-2xl bg-[#070c16]/97 border border-amber-400/50 shadow-[0_12px_36px_rgba(0,0,0,0.9),0_0_24px_rgba(246,195,67,0.25)] backdrop-blur-xl animate-in fade-in duration-150">
+                <p className="text-[11px] text-amber-200 font-semibold text-center mb-2">
+                  {language === 'th' ? '☕ สนับสนุนผู้พัฒนาด้วย Dogecoin' : '☕ Support the creator with Dogecoin'}
+                </p>
+                <img
+                  src="/doge_qr.jpg"
+                  alt="Dogecoin QR"
+                  className="w-full rounded-xl bg-white"
+                />
+                <button
+                  type="button"
+                  onClick={handleCopyDoge}
+                  className="mt-2 w-full px-2 py-1.5 rounded-lg bg-black/60 border border-slate-700 hover:border-amber-400/60 text-[9.5px] font-mono text-slate-300 break-all cursor-pointer transition-colors"
+                  title={language === 'th' ? 'คลิกเพื่อคัดลอก' : 'Click to copy'}
+                >
+                  {DOGE_ADDRESS}
+                </button>
+                <p className="mt-1 text-[10px] text-center text-emerald-300 h-3">
+                  {dogeCopied ? (language === 'th' ? '✓ คัดลอกที่อยู่แล้ว' : '✓ Address copied') : ''}
+                </p>
+              </div>
+            )}
+          </div>
+
           {/* Zoom-Out To World View */}
           <button
             onClick={onZoomOut}
