@@ -1,7 +1,7 @@
 import type { GhostPin } from '../types/ghost';
 import { INITIAL_GHOST_PINS } from '../data/seedData';
 
-const STORAGE_KEY = 'worldofmys_pins_v4';
+const STORAGE_KEY = 'worldofmys_pins_v5';
 
 /**
  * Reconciles a cached pin list with the latest seed data so newly
