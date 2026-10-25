@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 import { Map, NavigationControl, Marker, setWorkerUrl } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
+import { RotateCw } from 'lucide-react';
 
 // Fix: point MapLibre to our bundled worker so Cloudflare Pages
 // returns the correct JS MIME type instead of an HTML 404 page.
@@ -45,6 +46,64 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     dy: number;
     dist: number;
   } | null>(null);
+
+  // Auto-Spin State & Configuration
+  const [isSpinning, setIsSpinning] = useState(true);
+  const isSpinningRef = useRef(true);
+  const userInteractingRef = useRef(false);
+  const spinTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const selectedPinRef = useRef<GhostPin | null>(selectedPin);
+  const previewPinRef = useRef<GhostPin | null>(previewPin);
+
+  const spinGlobe = useCallback(() => {
+    const map = mapRef.current;
+    if (!map) return;
+    const zoom = map.getZoom();
+    const maxSpinZoom = 4.2;
+    const slowSpinZoom = 2.4;
+    const secondsPerRevolution = 160; // Complete revolution every ~2.6 minutes (slow, majestic spin)
+
+    if (
+      isSpinningRef.current &&
+      !userInteractingRef.current &&
+      zoom < maxSpinZoom &&
+      !selectedPinRef.current &&
+      !previewPinRef.current
+    ) {
+      let distancePerSecond = 360 / secondsPerRevolution;
+      if (zoom > slowSpinZoom) {
+        const zoomDif = (maxSpinZoom - zoom) / (maxSpinZoom - slowSpinZoom);
+        distancePerSecond *= zoomDif;
+      }
+      const center = map.getCenter();
+      center.lng -= distancePerSecond;
+      // Smooth continuous animation over 1 second with linear easing
+      map.easeTo({ center, duration: 1000, easing: (n) => n });
+    }
+  }, []);
+
+  const resumeSpinAfterDelay = useCallback(() => {
+    if (spinTimeoutRef.current) clearTimeout(spinTimeoutRef.current);
+    spinTimeoutRef.current = setTimeout(() => {
+      userInteractingRef.current = false;
+      spinGlobe();
+    }, 1200);
+  }, [spinGlobe]);
+
+  useEffect(() => {
+    selectedPinRef.current = selectedPin;
+    if (!selectedPin && isSpinningRef.current) {
+      resumeSpinAfterDelay();
+    }
+  }, [selectedPin, resumeSpinAfterDelay]);
+
+  useEffect(() => {
+    previewPinRef.current = previewPin;
+    if (!previewPin && isSpinningRef.current) {
+      resumeSpinAfterDelay();
+    }
+  }, [previewPin, resumeSpinAfterDelay]);
 
   // Compute closest pin to screen center and apply gentle magnetic pull on markers
   const updateMagneticField = useCallback(() => {
@@ -256,14 +315,46 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
         console.warn('Globe projection error:', e);
       }
       updateMagneticField();
+      // Start initial slow auto-rotation
+      spinGlobe();
     });
 
     map.on('move', () => {
       updateMagneticField();
     });
 
+    // Continuously spin globe when animation completes
+    map.on('moveend', () => {
+      spinGlobe();
+    });
+
+    // Pause spinning during interaction
+    map.on('mousedown', () => {
+      userInteractingRef.current = true;
+      if (spinTimeoutRef.current) clearTimeout(spinTimeoutRef.current);
+    });
+    map.on('dragstart', () => {
+      userInteractingRef.current = true;
+      if (spinTimeoutRef.current) clearTimeout(spinTimeoutRef.current);
+    });
+    map.on('touchstart', () => {
+      userInteractingRef.current = true;
+      if (spinTimeoutRef.current) clearTimeout(spinTimeoutRef.current);
+    });
+    map.on('wheel', () => {
+      userInteractingRef.current = true;
+      resumeSpinAfterDelay();
+    });
+    map.on('mouseup', () => {
+      resumeSpinAfterDelay();
+    });
+    map.on('touchend', () => {
+      resumeSpinAfterDelay();
+    });
+
     // Gentle magnetic snap when user finishes dragging near a pin
     map.on('dragend', () => {
+      resumeSpinAfterDelay();
       const container = mapContainerRef.current;
       if (!container) return;
       const rect = container.getBoundingClientRect();
@@ -305,6 +396,7 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     });
 
     return () => {
+      if (spinTimeoutRef.current) clearTimeout(spinTimeoutRef.current);
       // Clear markers
       markersRef.current.forEach((m) => m.remove());
       markersRef.current = [];
@@ -312,7 +404,7 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
       map.remove();
       mapRef.current = null;
     };
-  }, [updateMagneticField]);
+  }, [updateMagneticField, spinGlobe, resumeSpinAfterDelay]);
 
   // Pull the camera back to the full-globe overview
   const flyToWorldView = useCallback(() => {
@@ -596,6 +688,50 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
             );
           })()}
         </div>
+      </div>
+
+      {/* Auto-Rotation Control Pill (Bottom Left) */}
+      <div className="absolute bottom-6 left-6 z-20 flex items-center gap-2">
+        <button
+          type="button"
+          onClick={() => {
+            setIsSpinning((prev) => {
+              const next = !prev;
+              isSpinningRef.current = next;
+              if (next) spinGlobe();
+              return next;
+            });
+          }}
+          className={`px-3.5 py-1.5 rounded-full border backdrop-blur-xl text-xs font-medium flex items-center gap-2 transition-all cursor-pointer shadow-lg select-none ${
+            isSpinning
+              ? 'bg-emerald-950/85 border-emerald-500/50 text-emerald-200 hover:bg-emerald-900/80 shadow-[0_0_15px_rgba(16,185,129,0.35)]'
+              : 'bg-slate-950/85 border-slate-700/60 text-slate-400 hover:bg-slate-900/80'
+          }`}
+          title={
+            isSpinning
+              ? language === 'th'
+                ? 'แตะเพื่อพักการหมุนโลก'
+                : 'Pause Globe Auto-Rotation'
+              : language === 'th'
+              ? 'แตะเพื่อเริ่มหมุนโลกช้าๆ อัตโนมัติ'
+              : 'Start Globe Auto-Rotation'
+          }
+        >
+          <RotateCw
+            className={`w-3.5 h-3.5 text-emerald-400 ${
+              isSpinning ? 'animate-spin [animation-duration:8s]' : 'opacity-40'
+            }`}
+          />
+          <span>
+            {language === 'th'
+              ? isSpinning
+                ? 'หมุนโลกช้าๆ: เปิด'
+                : 'หมุนโลกช้าๆ: ปิด'
+              : isSpinning
+              ? 'Auto-Rotate: On'
+              : 'Auto-Rotate: Off'}
+          </span>
+        </button>
       </div>
     </div>
   );
