@@ -10,6 +10,8 @@ import {
   X,
   MapPin,
   ArrowUpRight,
+  ChevronLeft,
+  ChevronRight,
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import type { GhostCategory, GhostPin, SupportedLanguage } from '../../types/ghost';
@@ -47,6 +49,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   const t = getTranslation(language);
   const [isSearchFocused, setIsSearchFocused] = useState(false);
   const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
+  const [isFilterExpanded, setIsFilterExpanded] = useState(true);
   const langMenuRef = useRef<HTMLDivElement>(null);
   const searchContainerRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -132,20 +135,20 @@ export const Navbar: React.FC<NavbarProps> = ({
   const showDropdown = isSearchFocused;
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-20 pointer-events-none p-4 md:p-6 flex flex-col gap-3">
+    <header className="fixed top-0 left-0 right-0 z-20 pointer-events-none p-2.5 sm:p-4 md:p-6 flex flex-col gap-2.5 max-w-full">
       {/* Top Main Bar */}
-      <div className="flex items-center justify-between gap-3 pointer-events-auto">
+      <div className="flex items-center justify-between gap-1.5 sm:gap-3 pointer-events-auto w-full max-w-full">
         {/* Brand / Title (Transparent Background + Custom Emblem Logo; Secret 5-tap opens Admin Portal) */}
         <div
           onClick={handleSecretLogoClick}
-          className="flex items-center gap-3 shrink-0 select-none cursor-default"
+          className="flex items-center gap-2 sm:gap-3 min-w-0 shrink select-none cursor-default"
         >
           <img
             src="/logo.png"
             alt="World of Mystery Logo"
-            className="w-11 h-11 object-contain drop-shadow-[0_0_14px_rgba(16,185,129,0.65)] animate-pulse [animation-duration:4s]"
+            className="w-9 h-9 sm:w-11 sm:h-11 shrink-0 object-contain drop-shadow-[0_0_14px_rgba(16,185,129,0.65)] animate-pulse [animation-duration:4s]"
           />
-          <h1 className="font-grimoire text-lg md:text-2xl font-bold text-amber-50 tracking-wider drop-shadow-[0_2px_12px_rgba(0,0,0,0.95)]">
+          <h1 className="font-grimoire text-sm sm:text-lg md:text-2xl font-bold text-amber-50 tracking-wide sm:tracking-wider truncate drop-shadow-[0_2px_12px_rgba(0,0,0,0.95)]">
             World of Mystery
           </h1>
         </div>
@@ -354,7 +357,7 @@ export const Navbar: React.FC<NavbarProps> = ({
         </div>
 
         {/* Action Controls (Mystical Talisman Buttons) */}
-        <div className="flex items-center gap-2.5 shrink-0">
+        <div className="flex items-center gap-1.5 sm:gap-2.5 shrink-0">
           {/* Donate Doge (hover shows QR, click copies address) */}
           <div
             className="relative"
@@ -368,7 +371,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 setIsDonateOpen((v) => !v);
               }}
               title={language === 'th' ? 'คลิกเพื่อคัดลอกที่อยู่ Dogecoin' : 'Click to copy Dogecoin address'}
-              className="px-3.5 py-2 rounded-2xl bg-[#070c16]/90 border border-amber-400/50 hover:border-amber-300 backdrop-blur-xl text-amber-300 hover:text-amber-200 transition-all shadow-[0_6px_20px_rgba(0,0,0,0.85),0_0_15px_rgba(246,195,67,0.18)] hover:shadow-[0_0_22px_rgba(246,195,67,0.45)] flex items-center gap-2 text-xs font-sans font-semibold tracking-wide cursor-pointer active:scale-95"
+              className="px-2.5 py-1.5 sm:px-3.5 sm:py-2 rounded-xl sm:rounded-2xl bg-[#070c16]/90 border border-amber-400/50 hover:border-amber-300 backdrop-blur-xl text-amber-300 hover:text-amber-200 transition-all shadow-[0_6px_20px_rgba(0,0,0,0.85),0_0_15px_rgba(246,195,67,0.18)] hover:shadow-[0_0_22px_rgba(246,195,67,0.45)] flex items-center gap-1.5 sm:gap-2 text-xs font-sans font-semibold tracking-wide cursor-pointer active:scale-95"
             >
               <span className="text-base leading-none">🐕</span>
               <span className="hidden sm:inline">
@@ -408,12 +411,12 @@ export const Navbar: React.FC<NavbarProps> = ({
             onClick={onZoomOut}
             aria-label={t.zoomOutWorld}
             title={t.zoomOutWorld}
-            className="group px-3.5 py-2 rounded-2xl bg-[#070c16]/90 border border-amber-500/35 hover:border-emerald-400/70 backdrop-blur-xl text-amber-100/90 hover:text-emerald-200 transition-all shadow-[0_6px_20px_rgba(0,0,0,0.85),0_0_15px_rgba(16,185,129,0.12)] hover:shadow-[0_0_22px_rgba(16,185,129,0.35)] flex items-center gap-2 text-xs font-sans tracking-wide cursor-pointer active:scale-95"
+            className="group px-2.5 py-1.5 sm:px-3.5 sm:py-2 rounded-xl sm:rounded-2xl bg-[#070c16]/90 border border-amber-500/35 hover:border-emerald-400/70 backdrop-blur-xl text-amber-100/90 hover:text-emerald-200 transition-all shadow-[0_6px_20px_rgba(0,0,0,0.85),0_0_15px_rgba(16,185,129,0.12)] hover:shadow-[0_0_22px_rgba(16,185,129,0.35)] flex items-center gap-1.5 sm:gap-2 text-xs font-sans tracking-wide cursor-pointer active:scale-95"
           >
             <img
               src="/icons/sigil_world.png"
               alt=""
-              className="w-6 h-6 object-contain group-hover:rotate-12 group-hover:scale-110 transition-transform duration-300"
+              className="w-5 h-5 sm:w-6 sm:h-6 object-contain group-hover:rotate-12 group-hover:scale-110 transition-transform duration-300"
             />
             <span className="hidden sm:inline font-semibold">{t.zoomOutWorld}</span>
           </button>
@@ -423,13 +426,13 @@ export const Navbar: React.FC<NavbarProps> = ({
             <button
               type="button"
               onClick={() => setIsLangMenuOpen((v) => !v)}
-              className="group px-3.5 py-2 rounded-2xl bg-[#070c16]/90 border border-amber-500/35 hover:border-emerald-400/70 backdrop-blur-xl text-xs font-sans font-bold tracking-wider text-amber-100 hover:text-emerald-200 transition-all shadow-[0_6px_20px_rgba(0,0,0,0.85),0_0_15px_rgba(16,185,129,0.12)] hover:shadow-[0_0_22px_rgba(16,185,129,0.35)] flex items-center gap-2 cursor-pointer active:scale-95"
+              className="group px-2.5 py-1.5 sm:px-3.5 sm:py-2 rounded-xl sm:rounded-2xl bg-[#070c16]/90 border border-amber-500/35 hover:border-emerald-400/70 backdrop-blur-xl text-xs font-sans font-bold tracking-wider text-amber-100 hover:text-emerald-200 transition-all shadow-[0_6px_20px_rgba(0,0,0,0.85),0_0_15px_rgba(16,185,129,0.12)] hover:shadow-[0_0_22px_rgba(16,185,129,0.35)] flex items-center gap-1.5 sm:gap-2 cursor-pointer active:scale-95"
               title="Select Language / เลือกภาษา"
             >
               <img
                 src="/icons/sigil_lang.png"
                 alt=""
-                className="w-6 h-6 object-contain group-hover:scale-110 transition-transform duration-300"
+                className="w-5 h-5 sm:w-6 sm:h-6 object-contain group-hover:scale-110 transition-transform duration-300"
               />
               <span>{language.toUpperCase()}</span>
             </button>
@@ -476,39 +479,85 @@ export const Navbar: React.FC<NavbarProps> = ({
         </div>
       </div>
 
-      {/* Categories Filter Strip (Occult Sigil Medallions) */}
-      <div className="flex items-center gap-2.5 overflow-x-auto no-scrollbar py-1 pointer-events-auto">
-        {categories.map((cat) => {
-          const isSelected = selectedCategory === cat.id;
-          const sigilUrl = categorySigils[cat.id];
-          return (
-            <button
-              key={cat.id}
-              onClick={() => onSelectCategory(cat.id)}
-              aria-label={cat.label}
-              title={cat.label}
-              className={`group relative w-12 h-12 rounded-2xl border backdrop-blur-xl transition-all duration-300 flex items-center justify-center cursor-pointer active:scale-95 focus:outline-none ${
-                isSelected
-                  ? 'bg-gradient-to-b from-emerald-950/95 via-[#071f1b] to-[#041014] border-amber-400/80 shadow-[0_0_24px_rgba(16,185,129,0.55),inset_0_0_12px_rgba(251,191,36,0.25)] scale-105'
-                  : 'bg-[#070c16]/85 border-amber-500/25 hover:border-emerald-400/60 shadow-[0_6px_18px_rgba(0,0,0,0.8)] hover:scale-105'
-              }`}
-            >
-              {/* Subtle corner rune accent */}
-              {isSelected && (
-                <span className="pointer-events-none absolute -top-0.5 -right-0.5 w-2 h-2 rounded-full bg-[#00ff88] shadow-[0_0_8px_#00ff88] animate-ping" />
-              )}
-              <img
-                src={sigilUrl}
-                alt={cat.label}
-                className={`w-8 h-8 object-contain transition-transform duration-300 group-hover:scale-110 ${
+      {/* Collapsible Categories Filter Strip (Occult Sigil Medallions) */}
+      <div className="flex items-center gap-2 py-1 pointer-events-auto self-start">
+        <div
+          className={`flex items-center gap-2.5 overflow-x-auto no-scrollbar transition-all duration-300 ease-out ${
+            isFilterExpanded
+              ? 'max-w-[92vw] sm:max-w-[520px] opacity-100'
+              : 'max-w-[52px] opacity-100 overflow-hidden'
+          }`}
+        >
+          {(isFilterExpanded
+            ? categories
+            : categories.filter((c) => c.id === selectedCategory)
+          ).map((cat) => {
+            const isSelected = selectedCategory === cat.id;
+            const sigilUrl = categorySigils[cat.id];
+            return (
+              <button
+                key={cat.id}
+                type="button"
+                onClick={() => {
+                  if (!isFilterExpanded) {
+                    setIsFilterExpanded(true);
+                  } else {
+                    onSelectCategory(cat.id);
+                  }
+                }}
+                aria-label={cat.label}
+                title={cat.label}
+                className={`group relative shrink-0 w-12 h-12 rounded-2xl border backdrop-blur-xl transition-all duration-300 flex items-center justify-center cursor-pointer active:scale-95 focus:outline-none ${
                   isSelected
-                    ? 'drop-shadow-[0_0_10px_rgba(52,211,153,0.85)]'
-                    : 'opacity-85 group-hover:opacity-100'
+                    ? 'bg-gradient-to-b from-emerald-950/95 via-[#071f1b] to-[#041014] border-amber-400/80 shadow-[0_0_24px_rgba(16,185,129,0.55),inset_0_0_12px_rgba(251,191,36,0.25)] scale-105'
+                    : 'bg-[#070c16]/85 border-amber-500/25 hover:border-emerald-400/60 shadow-[0_6px_18px_rgba(0,0,0,0.8)] hover:scale-105'
                 }`}
-              />
-            </button>
-          );
-        })}
+              >
+                {/* Subtle corner rune accent */}
+                {isSelected && (
+                  <span className="pointer-events-none absolute -top-0.5 -right-0.5 w-2 h-2 rounded-full bg-[#00ff88] shadow-[0_0_8px_#00ff88] animate-ping" />
+                )}
+                <img
+                  src={sigilUrl}
+                  alt={cat.label}
+                  className={`w-8 h-8 object-contain transition-transform duration-300 group-hover:scale-110 ${
+                    isSelected
+                      ? 'drop-shadow-[0_0_10px_rgba(52,211,153,0.85)]'
+                      : 'opacity-85 group-hover:opacity-100'
+                  }`}
+                />
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Collapse / Expand Toggle Button */}
+        <button
+          type="button"
+          onClick={() => setIsFilterExpanded((v) => !v)}
+          title={
+            isFilterExpanded
+              ? language === 'th'
+                ? 'ยุบตัวกรองหมวดหมู่'
+                : 'Collapse category filters'
+              : language === 'th'
+              ? 'ขยายตัวกรองหมวดหมู่'
+              : 'Expand category filters'
+          }
+          aria-label="Toggle category filters"
+          className="h-10 px-2.5 rounded-xl bg-[#070c16]/90 border border-amber-500/35 hover:border-emerald-400/70 backdrop-blur-xl text-amber-200/90 hover:text-emerald-300 transition-all shadow-[0_6px_18px_rgba(0,0,0,0.8)] flex items-center gap-1 text-xs font-medium cursor-pointer active:scale-95"
+        >
+          {isFilterExpanded ? (
+            <ChevronLeft className="w-4 h-4" />
+          ) : (
+            <>
+              <span className="text-[11px] pl-0.5">
+                {language === 'th' ? 'ตัวกรอง' : 'Filter'}
+              </span>
+              <ChevronRight className="w-4 h-4" />
+            </>
+          )}
+        </button>
       </div>
     </header>
   );
