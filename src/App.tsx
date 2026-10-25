@@ -5,8 +5,6 @@ import { GhostGlobe } from './components/Globe/GhostGlobe';
 import { Navbar } from './components/UI/Navbar';
 import { StoryDrawer } from './components/UI/StoryDrawer';
 import { AdminPortal } from './components/Admin/AdminPortal';
-import { BookOpen, ChevronUp, Sparkles } from 'lucide-react';
-import { getTranslation } from './lib/i18n';
 import { performVectorRagSearch } from './lib/vectorRagSearch';
 
 export function App() {
@@ -18,13 +16,11 @@ export function App() {
   const [selectedCategory, setSelectedCategory] = useState<GhostCategory | 'all'>('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [worldViewSignal, setWorldViewSignal] = useState(0);
-  const t = getTranslation(language);
 
-  // Load pins & set initial selected pin
+  // Load pins
   useEffect(() => {
     fetchPins().then((data) => {
       setPins(data);
-      setSelectedPin((prev) => prev ?? (data.length > 0 ? data[0] : null));
     });
   }, []);
 
@@ -117,51 +113,6 @@ export function App() {
           worldViewSignal={worldViewSignal}
         />
       </main>
-
-      {/* Prominent Story Indicator (Replaces RadioGardenPlayer) */}
-      {selectedPin && !isDrawerOpen && (
-        <aside
-          aria-label="Story indicator"
-          className="fixed bottom-10 left-1/2 -translate-x-1/2 z-20 pointer-events-auto animate-in fade-in zoom-in slide-in-from-bottom-6 duration-700 ease-out"
-        >
-          <button
-            onClick={() => setIsDrawerOpen(true)}
-            className="group relative flex items-center gap-6 px-8 py-5 rounded-[2rem] bg-slate-950/80 border border-emerald-500/30 backdrop-blur-3xl shadow-[0_30px_60px_-15px_rgba(0,0,0,0.7),0_0_20px_rgba(16,185,129,0.1)] hover:border-emerald-400/60 hover:bg-slate-900/90 transition-all active:scale-95"
-          >
-            {/* Animated background glow */}
-            <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-r from-emerald-500/10 via-transparent to-emerald-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-
-            <div className="relative w-14 h-14 rounded-2xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center text-emerald-400 group-hover:bg-emerald-500/25 group-hover:scale-110 transition-all duration-500">
-              <Sparkles className="w-7 h-7 animate-pulse" />
-              {/* Visualizer dots */}
-              <div className="absolute -bottom-1 flex gap-0.5">
-                {[1, 2, 3].map((i) => (
-                  <span key={i} className="w-1 h-1 rounded-full bg-emerald-400 animate-bounce" style={{ animationDelay: `${i * 200}ms` }} />
-                ))}
-              </div>
-            </div>
-
-            <div className="relative text-left pr-2">
-              <div className="flex items-center gap-2 mb-1">
-                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-ping" />
-                <p className="text-[11px] font-black text-emerald-400 uppercase tracking-[0.2em]">
-                  {t.nowPlaying}
-                </p>
-              </div>
-              <h2 className="text-xl font-bold text-white leading-tight tracking-tight group-hover:text-emerald-50 transition-colors">
-                {language === 'th' ? selectedPin.title_th : selectedPin.title_en}
-              </h2>
-              <div className="flex items-center gap-2 mt-1.5 opacity-70 group-hover:opacity-100 transition-opacity">
-                <BookOpen className="w-4 h-4 text-emerald-400/80" />
-                <span className="text-sm text-slate-400 font-medium">
-                  {t.readFullLegend}
-                </span>
-                <ChevronUp className="w-4 h-4 text-emerald-500 group-hover:translate-y-[-3px] transition-transform duration-300" />
-              </div>
-            </div>
-          </button>
-        </aside>
-      )}
 
       {/* Slide-out Story Drawer */}
       <StoryDrawer

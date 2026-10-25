@@ -91,22 +91,16 @@ export const Navbar: React.FC<NavbarProps> = ({
     <header className="fixed top-0 left-0 right-0 z-20 pointer-events-none p-4 md:p-6 flex flex-col gap-3">
       {/* Top Main Bar */}
       <div className="flex items-center justify-between gap-3 pointer-events-auto">
-        {/* Brand / Title */}
-        <div className="flex items-center gap-3 px-4 py-2.5 rounded-2xl bg-slate-950/80 border border-slate-800/80 backdrop-blur-md shadow-2xl shrink-0">
-          <div className="w-9 h-9 rounded-xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-300 shadow-[0_0_15px_rgba(16,185,129,0.3)]">
-            <Compass className="w-5 h-5 animate-spin [animation-duration:15s]" />
-          </div>
-          <div>
-            <h1 className="text-base font-bold text-white tracking-wide flex items-center gap-2">
-              <span>{t.appTitle}</span>
-              <span className="text-[10px] font-mono uppercase px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
-                3D Globe
-              </span>
-            </h1>
-            <p className="text-[11px] text-slate-400 hidden sm:block">
-              {t.appSubtitle}
-            </p>
-          </div>
+        {/* Brand / Title (Transparent Background + Custom Emblem Logo) */}
+        <div className="flex items-center gap-3 shrink-0 select-none">
+          <img
+            src="/logo.png"
+            alt="World of Mystery Logo"
+            className="w-11 h-11 object-contain drop-shadow-[0_0_14px_rgba(16,185,129,0.65)] animate-pulse [animation-duration:4s]"
+          />
+          <h1 className="text-lg md:text-xl font-bold text-white tracking-wide drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)]">
+            World of Mystery
+          </h1>
         </div>
 
         {/* RAG Vector Semantic Search Bar */}
