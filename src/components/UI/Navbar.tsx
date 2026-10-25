@@ -45,6 +45,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   const t = getTranslation(language);
   const [isSearchFocused, setIsSearchFocused] = useState(false);
   const searchContainerRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
   const secretTapCountRef = useRef(0);
   const secretTapTimerRef = useRef<number | null>(null);
 
