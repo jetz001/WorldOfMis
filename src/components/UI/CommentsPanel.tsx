@@ -11,6 +11,7 @@ import {
 import type { GhostPin, SupportedLanguage } from '../../types/ghost';
 import {
   getPinComments,
+  syncPinCommentsFromRemote,
   addPinComment,
   toggleCommentLike,
   addCommentReply,
@@ -50,6 +51,10 @@ export const CommentsPanel: React.FC<CommentsPanelProps> = ({
       sortMode
     );
     setComments(list);
+
+    syncPinCommentsFromRemote(pin.id, sortMode).then((remoteList) => {
+      setComments(remoteList);
+    });
   }, [pin, sortMode]);
 
   useEffect(() => {

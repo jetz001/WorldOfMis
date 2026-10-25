@@ -25,15 +25,13 @@ interface WorldCommentBarProps {
 
 const COOLDOWN_MS = 5000;
 const LAST_SENT_KEY = 'wom_world_cmt_last_sent';
-const LOCAL_CACHE_KEY = 'wom_world_cmt_list_v1';
 
-const DEFAULT_WORLD_COMMENTS: WorldCommentItem[] = [
-  { id: 'wc-1', author: 'นักสำรวจรัตติกาล', content: 'ลูกโลกมืดขลังมาก หมุดตำนานแน่นสุดๆ 🌍✨' },
-  { id: 'wc-2', author: 'GhostHunter_TH', content: 'ใครเคยไปคำชะโนดตอนกลางคืนบ้าง ขนลุกจริง' },
-  { id: 'wc-3', author: 'FolkloreWalker', content: '200 legends across the globe! Love the 3D talisman markers 🔮' },
-  { id: 'wc-4', author: 'พรานป่าดงพญาเย็น', content: 'ระวังเสียงเพรียกตอนดึก ห้ามทักเด็ดขาด!' },
-  { id: 'wc-5', author: 'KyotoNight', content: '百鬼夜行と雪女の伝説、とても雰囲気がありますね 👻' },
-];
+// Purge legacy mock world comment cache
+try {
+  localStorage.removeItem('wom_world_cmt_list_v1');
+} catch {
+  // ignore
+}
 
 export const WorldCommentBar: React.FC<WorldCommentBarProps> = ({
   isWorldZoomedOut,
@@ -47,9 +45,9 @@ export const WorldCommentBar: React.FC<WorldCommentBarProps> = ({
     return diff < COOLDOWN_MS ? COOLDOWN_MS - diff : 0;
   });
   const [floatingBubbles, setFloatingBubbles] = useState<FloatingBubble[]>([]);
-  const poolRef = useRef<WorldCommentItem[]>(DEFAULT_WORLD_COMMENTS);
-  const ambientIndexRef = useRef(0);
   const lastDesktopPartRef = useRef<number>(0);
+  const seenRemoteIdsRef = useRef<Set<string>>(new Set());
+  const initializedRemoteRef = useRef<boolean>(false);
 
   /**
    * Spawns a bubble that fades in while rising from the bottom,
@@ -73,7 +71,6 @@ export const WorldCommentBar: React.FC<WorldCommentBarProps> = ({
 
     if (isDesktop) {
       const candidateParts = [2, 3, 4];
-      // Avoid picking the exact same column twice in a row if possible for visual variety
       const filtered = candidateParts.filter((p) => p !== lastDesktopPartRef.current);
       const pool = filtered.length > 0 && Math.random() < 0.75 ? filtered : candidateParts;
       partNumber = pool[Math.floor(Math.random() * pool.length)];
@@ -85,7 +82,6 @@ export const WorldCommentBar: React.FC<WorldCommentBarProps> = ({
       leftPercent = Math.round((partCenterMap[partNumber] + jitter) * 10) / 10;
     }
 
-    // Slight vertical center variation around 48% so overlapping bubbles stay readable
     const topPercent = Math.round((47 + (Math.random() - 0.5) * 6) * 10) / 10;
 
     const bubble: FloatingBubble = {
@@ -99,51 +95,41 @@ export const WorldCommentBar: React.FC<WorldCommentBarProps> = ({
 
     setFloatingBubbles((prev) => [...prev.slice(-8), bubble]);
 
-    // Remove bubble after 5.4s animation completes
     window.setTimeout(() => {
       setFloatingBubbles((prev) => prev.filter((b) => b.instanceId !== instanceId));
     }, 5450);
   }, []);
 
-  // Load initial world comments from D1 API + localStorage
-  useEffect(() => {
-    try {
-      const cached = localStorage.getItem(LOCAL_CACHE_KEY);
-      if (cached) {
-        const parsed = JSON.parse(cached);
-        if (Array.isArray(parsed) && parsed.length > 0) {
-          poolRef.current = parsed;
-        }
-      }
-    } catch {
-      // ignore
-    }
-
-    fetch('/api/world-comments')
-      .then((r) => (r.ok ? r.json() : null))
-      .then((j) => {
-        if (j?.success && Array.isArray(j.data) && j.data.length > 0) {
-          poolRef.current = [...j.data, ...DEFAULT_WORLD_COMMENTS].slice(0, 40);
-          try {
-            localStorage.setItem(LOCAL_CACHE_KEY, JSON.stringify(poolRef.current));
-          } catch {
-            // ignore
-          }
-        }
-      })
-      .catch(() => {});
-  }, []);
-
-  // Periodically launch an ambient world comment bubble when zoomed out to the world
+  // Poll real live world comments from D1 (only spawns newly arrived real messages from other users)
   useEffect(() => {
     if (!isWorldZoomedOut) return;
-    const timer = window.setInterval(() => {
-      const list = poolRef.current;
-      if (!list || list.length === 0) return;
-      const item = list[ambientIndexRef.current % list.length];
-      ambientIndexRef.current += 1;
-      spawnFountainBubble(item, false);
-    }, 4800);
+
+    const checkLiveComments = async () => {
+      try {
+        const res = await fetch('/api/world-comments');
+        if (!res.ok) return;
+        const json = await res.json();
+        if (json?.success && Array.isArray(json.data)) {
+          const items: WorldCommentItem[] = json.data;
+          if (!initializedRemoteRef.current) {
+            items.forEach((it) => seenRemoteIdsRef.current.add(it.id));
+            initializedRemoteRef.current = true;
+            return;
+          }
+          for (const it of items) {
+            if (!seenRemoteIdsRef.current.has(it.id)) {
+              seenRemoteIdsRef.current.add(it.id);
+              spawnFountainBubble(it, false);
+            }
+          }
+        }
+      } catch {
+        // ignore network errors
+      }
+    };
+
+    checkLiveComments();
+    const timer = window.setInterval(checkLiveComments, 5000);
     return () => window.clearInterval(timer);
   }, [isWorldZoomedOut, spawnFountainBubble]);
 
@@ -192,17 +178,9 @@ export const WorldCommentBar: React.FC<WorldCommentBarProps> = ({
     // 1. Immediately fade-in upward to random Desktop Part 2–4 (or Mobile center), hold, then descend & fade out
     spawnFountainBubble(newItem, true);
 
-    // 2. Add to local pool so it also replays in rotation
-    poolRef.current = [newItem, ...poolRef.current].slice(0, 40);
+    // 2. Persist to Cloudflare D1 backend and record returned ID so polling doesn't duplicate it
     try {
-      localStorage.setItem(LOCAL_CACHE_KEY, JSON.stringify(poolRef.current));
-    } catch {
-      // ignore
-    }
-
-    // 3. Persist to Cloudflare D1 backend
-    try {
-      await fetch('/api/world-comments', {
+      const res = await fetch('/api/world-comments', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -210,8 +188,14 @@ export const WorldCommentBar: React.FC<WorldCommentBarProps> = ({
           content: newItem.content,
         }),
       });
+      if (res.ok) {
+        const j = await res.json();
+        if (j?.data?.id) {
+          seenRemoteIdsRef.current.add(j.data.id);
+        }
+      }
     } catch {
-      // offline fallback already stored
+      // ignore offline
     }
   };
 

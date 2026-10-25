@@ -72,7 +72,28 @@ app.get('/pins/:id/comments', async (c) => {
       .prepare('SELECT * FROM pin_comments WHERE pin_id = ? ORDER BY likes DESC, created_at DESC')
       .bind(pinId)
       .all();
-    return c.json({ success: true, data: results });
+    let replies: any[] = [];
+    try {
+      const repRes = await db
+        .prepare('SELECT * FROM comment_replies WHERE pin_id = ? ORDER BY created_at ASC')
+        .bind(pinId)
+        .all();
+      replies = repRes.results || [];
+    } catch {}
+    const data = (results || []).map((cmt: any) => ({
+      ...cmt,
+      replies: replies
+        .filter((r: any) => r.comment_id === cmt.id)
+        .map((r: any) => ({
+          id: r.id,
+          commentId: r.comment_id,
+          author: r.author,
+          content: r.content,
+          likes: r.likes || 0,
+          createdAt: r.created_at,
+        })),
+    }));
+    return c.json({ success: true, data });
   } catch (err) {
     return c.json({ success: false, error: String(err) }, 500);
   }
