@@ -28,17 +28,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-kuchisake.jpg",
-            "title": "คุชิซาเกะ-อนนะ (Kuchisake-onna)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=4YmI-q9q3aI",
-            "title": "ตำนานลี้ลับสาวปากฉีกและคดีจริงในประวัติศาสตร์ญี่ปุ่น"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1200&q=80",
-            "title": "ตรอกซอยยามราตรีในโตเกียว (Tokyo Night Alleyway)"
+            "title": "คุชิซาเกะ-อนนะ (สาวปากฉีก)"
       }
 ],
     is_published: 1,
@@ -51,17 +41,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-lochness.jpg",
-            "title": "สัตว์ประหลาดล็อกเนสส์ (Loch Ness Monster / Nessie)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=2e6iQ-9yE3w",
-            "title": "The Legend of Loch Ness: Science, Myth & Sightings"
-      },
-      {
-            "type": "image",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Urquhart_Castle_Loch_Ness.jpg/960px-Urquhart_Castle_Loch_Ness.jpg",
-            "title": "ซากปราสาทเออร์คาร์ทริมทะเลสาบล็อกเนสส์ (Urquhart Castle)"
+            "title": "สัตว์ประหลาดล็อกเนสส์ (เนสซี)"
       }
 ],
     title_th: 'สัตว์ประหลาดล็อกเนสส์ (เนสซี)',
@@ -92,17 +72,13 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-dracula.jpg",
-            "title": "เคานต์แดร็กคูลา และ วลาดที่ 3 (Vlad III Dracula)"
+            "title": "เคานต์แดร็กคูลาแห่งทรานซิลเวเนีย"
       },
       {
             "type": "youtube",
             "url": "https://www.youtube.com/watch?v=BtCjc5OwBi4",
-            "title": "Vlad the Impaler: The True Story of Dracula"
-      },
-      {
-            "type": "image",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Bran_Castle_Castle_01.jpg/960px-Bran_Castle_Castle_01.jpg",
-            "title": "ปราสาทบราน (Bran Castle ปราสาทแดร็กคูลา)"
+            "title": "สารคดีและตำนานลี้ลับ (เคานต์แดร็กคูลาแห่งทรานซิลเวเนีย)",
+            "thumbnail": "/entities/pin-dracula.jpg"
       }
 ],
     title_th: 'เคานต์แดร็กคูลาแห่งทรานซิลเวเนีย',
@@ -155,17 +131,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-wendigo.jpg",
-            "title": "เวนดิโก (The Wendigo of Great Lakes)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=q6t8r6w9Ecw",
-            "title": "The Wendigo: Native American Demon of the North Woods"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=1200&q=80",
-            "title": "ป่าสนไทกาหิมะเยือกแข็ง (Deep Freezing Boreal Forest)"
+            "title": "เวนดิโก อสูรป่าหิมะกินคน"
       }
 ],
     is_published: 1,
@@ -176,17 +142,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-chupacabra.jpg",
-            "title": "เอล ชูปาคาบรา (El Chupacabra)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=3Wn7wL58r3Q",
-            "title": "El Chupacabra: The Puerto Rican Legend That Terrorized the World"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&w=1200&q=80",
-            "title": "ป่าดิบชื้นเอลยุนเก เปอร์โตริโก (El Yunque Rainforest)"
+            "title": "เอล ชูปาคาบรา อสูรสูบเลือดสัตว์"
       }
 ],
     title_th: 'เอล ชูปาคาบรา อสูรสูบเลือดสัตว์',
@@ -239,17 +195,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-tutankhamun.jpg",
-            "title": "หน้ากากทองคำฟาโรห์ตุตันคาเมน (King Tutankhamun Golden Mask)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=842e6j2Q6sM",
-            "title": "The Curse of King Tutankhamun: Facts vs Occult Legend"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80",
-            "title": "หุบเขากษัตริย์ เมืองลักซอร์ อียิปต์ (Valley of the Kings, Luxor)"
+            "title": "คำสาปฟาโรห์ตุตันคาเมน"
       }
 ],
     is_published: 1,
@@ -282,17 +228,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-bunyip.jpg",
-            "title": "บันยิปแห่งบึงน้ำออสเตรเลีย (The Bunyip of Murray River)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=7uK6f1S-qZk",
-            "title": "The Bunyip: Australia's Terrifying Aboriginal Monster"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
-            "title": "บึงน้ำบิลลาบองในป่ายูคาลิปตัส (Australian Billabong Swamps)"
+            "title": "บันยิป อสูรแห่งบึงน้ำออสเตรเลีย"
       }
 ],
     is_published: 1,
@@ -305,17 +241,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-maenak.jpg",
-            "title": "แม่นาคพระโขนง (Mae Nak Phra Khanong)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=4YmI-q9q3aI",
-            "title": "เปิดตำนานแม่นาคพระโขนงและประวัติศาสตร์คลองพระโขนง"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=1200&q=80",
-            "title": "ศาลย่านาค ณ วัดมหาบุศย์ กรุงเทพมหานคร (Wat Mahabut Shrine)"
+            "title": "แม่นาคพระโขนง"
       }
 ],
     title_th: 'แม่นาคพระโขนง',
@@ -366,17 +292,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-krasue.jpg",
-            "title": "กระสือยายสาย (The Krasue)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=aG9Gv9c_w7s",
-            "title": "ตำนานผีกระสือ เรื่องเล่าลี้ลับลุ่มน้ำบางปะกง"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80",
-            "title": "ทุ่งนาชนบทปราจีนบุรียามค่ำคืน (Rural Night Farmland)"
+            "title": "กระสือยายสาย"
       }
 ],
     is_published: 1,
@@ -407,17 +323,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-pop.jpg",
-            "title": "ผีปอบหยิบแห่งลุ่มน้ำปาว (Phi Pop of Pao Basin)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=q6t8r6w9Ecw",
-            "title": "สารคดีตำนานผีปอบและพิธีขับไล่โบราณอีสาน"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
-            "title": "หมู่บ้านโบราณลุ่มน้ำปาว กาฬสินธุ์ (Kalasin Rural Village)"
+            "title": "ผีปอบหยิบแห่งลุ่มน้ำปาว"
       }
 ],
     is_published: 1,
@@ -448,17 +354,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-naga.jpg",
-            "title": "พญานาคแม่น้ำโขง (Naga Serpent of the Mekong)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=4YmI-q9q3aI",
-            "title": "ปาฏิหาริย์บั้งไฟพญานาคและตำนานเมืองบาดาลแม่น้ำโขง"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
-            "title": "แม่น้ำโขงช่วงหนองคายยามสนธยา (Mekong River Sunset)"
+            "title": "พญานาคแม่น้ำโขงและบั้งไฟพญานาค"
       }
 ],
     is_published: 1,
@@ -489,17 +385,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-saming.jpg",
-            "title": "สมิงเขาหลวง (Were-Tiger of Khao Luang)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=842e6j2Q6sM",
-            "title": "ตำนานเสือสมิง ดงพญาไฟและป่าดิบชื้นเขาหลวง"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1200&q=80",
-            "title": "ป่าดงดิบเขาหลวง (Khao Luang Rainforest Canopy)"
+            "title": "สมิงเขาหลวง"
       }
 ],
     is_published: 1,
@@ -530,17 +416,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-jiangshi.jpg",
-            "title": "เจียงซี ผีดิบจีนกระโดด (Jiangshi)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=2e6iQ-9yE3w",
-            "title": "The History & Folklore of Chinese Hopping Vampires"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?auto=format&fit=crop&w=1200&q=80",
-            "title": "เมืองโบราณเฟิ่งหวง มณฑลหูหนาน (Fenghuang Ancient Town)"
+            "title": "จางจี้ (ผีผู้ขโขบ)"
       }
 ],
     is_published: 1,
@@ -571,17 +447,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-baba-iva.jpg",
-            "title": "บาบายากา แม่มดกระท่อมขาไก่ (Baba Yaga)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=3Wn7wL58r3Q",
-            "title": "Baba Yaga: Slavic Folklore's Most Feared Witch"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
-            "title": "ป่าสนไทกาไซบีเรีย (Siberian Taiga Wilderness)"
+            "title": "บาบาะ"
       }
 ],
     is_published: 1,
@@ -612,17 +478,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-chudail.jpg",
-            "title": "จูแดล ผีสาวเท้ากลับด้าน (The Chudail)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=7uK6f1S-qZk",
-            "title": "The Terrifying Legend of Chudail of India"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1200&q=80",
-            "title": "ป้อมปราการโบราณแคว้นราชสถาน (Ancient Fort of Rajasthan)"
+            "title": "จูดไล"
       }
 ],
     is_published: 1,
@@ -653,17 +509,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-gevaudan.jpg",
-            "title": "สัตว์ร้ายแห่งเฌโวด็อง (The Beast of Gévaudan)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=q6t8r6w9Ecw",
-            "title": "The Real French Werewolf: The Beast of Gévaudan"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
-            "title": "เทือกเขามาซิฟซ็องทราล แคว้นโอแวร์ญ (Massif Central Highlands)"
+            "title": "สัตว์ป่าผู้เปลี่ยนร่างเป็นหมอ"
       }
 ],
     is_published: 1,
@@ -694,17 +540,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-curupira.jpg",
-            "title": "ครูปิรา ผู้พิทักษ์ป่าแอมะซอน (Curupira)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=4YmI-q9q3aI",
-            "title": "Curupira: The Guardian Demon of the Amazon Rainforest"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=80",
-            "title": "ป่าฝนแอมะซอนผืนลึก บราซิล (Deep Amazon Rainforest)"
+            "title": "ครูปิรา"
       }
 ],
     is_published: 1,
@@ -735,17 +571,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-draugr.jpg",
-            "title": "ดราวก์ ผีดิบนักรบไวกิ้ง (The Draugr)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=842e6j2Q6sM",
-            "title": "Draugr: The Terrifying Norse Undead Warriors"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
-            "title": "ฟยอร์ดและเนินสุสานหินโบราณในนอร์เวย์ (Norwegian Fjords)"
+            "title": "ดราวก"
       }
 ],
     is_published: 1,
@@ -778,17 +604,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-minotaur.jpg",
-            "title": "ไมโนทอร์ในเขาวงกต (The Minotaur of Knossos)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=2e6iQ-9yE3w",
-            "title": "The Myth of the Minotaur & The Labyrinth of Crete"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1200&q=80",
-            "title": "ซากพระราชวังคนอสซอส เกาะครีต (Palace of Knossos, Crete)"
+            "title": "ไมโนทอร์ในเขาวงกต"
       }
 ],
     is_published: 1,
@@ -801,17 +617,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-lorelei.jpg",
-            "title": "ลอเรไล พรายน้ำแม่น้ำไรน์ (The Lorelei Siren)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=3Wn7wL58r3Q",
-            "title": "The Legend of the Lorelei: The Deadly Siren of the Rhine"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1200&q=80",
-            "title": "โขดหินและหุบเขาแม่น้ำไรน์ (Rhine Gorge Lorelei Rock)"
+            "title": "ลอเรไล นางเงียมแห่งแม่น้ำไรน์"
       }
 ],
     title_th: 'ลอเรไล นางเงียมแห่งแม่น้ำไรน์',
@@ -864,17 +670,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-banshee.jpg",
-            "title": "แบนชี ผู้ส่งสารความตาย (The Banshee)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=7uK6f1S-qZk",
-            "title": "The Banshee: The Cry of Death in Irish Mythology"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
-            "title": "ปราสาทร้างและทุ่งหญ้าหมอกไอร์แลนด์ (Irish Foggy Castle Ruins)"
+            "title": "แบนชี ผู้ร้องไห้นำความตาย"
       }
 ],
     is_published: 1,
@@ -887,17 +683,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-blackshuck.jpg",
-            "title": "แบล็ค ชัค สุนัขปีศาจแห่งซัฟฟอล์ก (Black Shuck)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=q6t8r6w9Ecw",
-            "title": "The Demon Dog of Bungay: The Legend of Black Shuck"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1200&q=80",
-            "title": "โบสถ์โบราณและสุสานแคว้นซัฟฟอล์ก (Historic Suffolk Churchyard)"
+            "title": "แบล็ค ชัค สุนัขปีศาจแห่งซัฟฟอล์ก"
       }
 ],
     title_th: 'แบล็ค ชัค สุนัขปีศาจแห่งซัฟฟอล์ก',
@@ -950,17 +736,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-gumiho.jpg",
-            "title": "กุมิโฮะ จิ้งจอกเก้าหาง (Gumiho)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=7uK6f1S-qZk",
-            "title": "Gumiho: The Korean Nine-Tailed Fox Legend"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1538669715315-155098f6bbe3?auto=format&fit=crop&w=1200&q=80",
-            "title": "เทือกเขาจีรีซานและศาลเจ้าเกาหลี (Jirisan Mountains Shrine)"
+            "title": "กุมิโฮะ จิ้งจอกเก้าหาง"
       }
 ],
     is_published: 1,
@@ -993,17 +769,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-manananggal.jpg",
-            "title": "มานันนังกัล (The Manananggal)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=q6t8r6w9Ecw",
-            "title": "Manananggal: Philippine Flying Vampire Folklore"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=1200&q=80",
-            "title": "ป่ามะพร้าวและชนบทเกาะปานาย ฟิลิปปินส์ (Panay Island Countryside)"
+            "title": "มานันนังกัล ผู้ฉีกร่างกลางคืน"
       }
 ],
     is_published: 1,
@@ -1036,17 +802,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-kuntilanak.jpg",
-            "title": "กุนตีลานัค ผีสาวชุดขาว (Kuntilanak)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=4YmI-q9q3aI",
-            "title": "Kuntilanak: Indonesia's Most Feared Ghost"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1200&q=80",
-            "title": "ต้นไทรโบราณกลางป่าดงดิบอินโดนีเซีย (Ancient Sacred Banyan Tree)"
+            "title": "กุนตีลานัค ผีสาวชุดขาว"
       }
 ],
     is_published: 1,
@@ -1079,17 +835,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-yeti.jpg",
-            "title": "เยติ มนุษย์หิมะแห่งหิมาลัย (The Himalayan Yeti)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=842e6j2Q6sM",
-            "title": "The Himalayan Yeti: Fact, Fiction & Sherpa Legends"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
-            "title": "ยอดเขาและธารน้ำแข็งเทือกเขาหิมาลัย (Himalayan Snow Peaks)"
+            "title": "เยติ สัตว์ประหลาดหิมะ"
       }
 ],
     is_published: 1,
@@ -1122,17 +868,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-ghul.jpg",
-            "title": "กูล ปีศาจทะเลทรายอาหรับ (The Arabian Ghul)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=2e6iQ-9yE3w",
-            "title": "Ghul: The Original Desert Flesh-Eater in Arabian Nights"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80",
-            "title": "เนินทรายเวิ้งว้างแห่งทะเลทรายรูบอัลคอลี (Rub' al Khali Dunes)"
+            "title": "กูล ปีศาจทะเลทรายอาหรับ"
       }
 ],
     is_published: 1,
@@ -1165,17 +901,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-nightmarchers.jpg",
-            "title": "ไนท์ มาร์เชอร์ส ขบวนวิญญาณฮาวาย (Night Marchers)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=3Wn7wL58r3Q",
-            "title": "Huaka'i Pō: The Hawaiian Night Marchers Legend"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1542259009477-d625272157b7?auto=format&fit=crop&w=1200&q=80",
-            "title": "หุบเขานูอูอานู ปาลี เกาะโออาฮู (Nuʻuanu Pali Cliffs, Oahu)"
+            "title": "ไนท์ มาร์เชอร์ส ขบวนวิญญาณฮาวาย"
       }
 ],
     is_published: 1,
@@ -1206,17 +932,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-anansi.jpg",
-            "title": "อนันซี แมงมุมปราชญ์แห่งแอฟริกา (Anansi the Spider)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=7uK6f1S-qZk",
-            "title": "Anansi the Spider: West African Mythological Trickster"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=80",
-            "title": "ป่าดึกดำบรรพ์และต้นไม้ใหญ่ในกานา (Ghana Sacred Forest)"
+            "title": "อนันซี แมงมุมปราชญ์แห่งเรื่องเล่า"
       }
 ],
     is_published: 1,
@@ -1247,17 +963,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-tokoloshe.jpg",
-            "title": "โทโคโลชี ปีศาจแคระแห่งแอฟริกาใต้ (The Tokoloshe)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=q6t8r6w9Ecw",
-            "title": "Tokoloshe: South Africa's Terrifying Home Demon"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=80",
-            "title": "กระท่อมชนบทแอฟริกาใต้ (Traditional South African Homestead)"
+            "title": "โทโคโลชี ผีเตี้ยแห่งแม่น้ำ"
       }
 ],
     is_published: 1,
@@ -1290,17 +996,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-taniwha.jpg",
-            "title": "ตานีฟา อสูรเฝ้าน้ำมาโอริ (The Taniwha)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=4YmI-q9q3aI",
-            "title": "Taniwha: Māori Water Guardians & Cave Monsters"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1200&q=80",
-            "title": "แม่น้ำไวคาโตและธรรมชาติเกาะเหนือนิวซีแลนด์ (Waikato River NZ)"
+            "title": "ตานีฟา อสูรเฝ้าน้ำของมาโอริ"
       }
 ],
     is_published: 1,
@@ -1333,17 +1029,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-wawel.jpg",
-            "title": "มังกรเวเวลแห่งกรากุฟ (Smok Wawelski)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=842e6j2Q6sM",
-            "title": "The Legend of Smok Wawelski: The Krakow Dragon"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=1200&q=80",
-            "title": "ปราสาทหลวงวาเวล เมืองกรากุฟ โปแลนด์ (Wawel Royal Castle)"
+            "title": "มังกรเวเวลแห่งกรากุฟ"
       }
 ],
     is_published: 1,
@@ -1374,17 +1060,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-mada.jpg",
-            "title": "แม่ดา ผีน้ำเสื้อแดง (Ma Da Vietnamese Water Ghost)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=2e6iQ-9yE3w",
-            "title": "Ma Da: The Drowned Water Ghosts of Vietnam"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=80",
-            "title": "คุ้งน้ำและคลองในเวียดนามยามพลบค่ำ (Vietnamese River Canals)"
+            "title": "แม่ดา ผีน้ำเสื้อแดงแห่งสายธาร"
       }
 ],
     is_published: 1,
@@ -1415,17 +1091,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-neakta.jpg",
-            "title": "แนกตา เจ้าที่ผู้พิทักษ์แผ่นดินเขมร (Neak Ta)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=3Wn7wL58r3Q",
-            "title": "Neak Ta: Cambodian Animism and Ancestor Shrines"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1539650116574-8efeb43e2750?auto=format&fit=crop&w=1200&q=80",
-            "title": "ปราสาทตาพรหมและต้นสะปงยักษ์ เสียมราฐ (Ta Prohm Ancient Trees)"
+            "title": "แนกตา เจ้าที่ผู้พิทักษ์หมู่บ้าน"
       }
 ],
     is_published: 1,
@@ -1456,17 +1122,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-natpopa.jpg",
-            "title": "เจ้าแม่ป้อปะมะเดาะ (The Popa Nat of Mount Popa)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=7uK6f1S-qZk",
-            "title": "The 37 Great Nats of Mount Popa, Burma"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
-            "title": "ยอดเขาหินภูเขาไฟโปปาและอารามลอยฟ้า (Mount Popa Peak)"
+            "title": "เจ้าแม่ป้อปะมะเดาะแห่งภูเขาโปปา"
       }
 ],
     is_published: 1,
@@ -1497,17 +1153,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-mosina.jpg",
-            "title": "โมซินอา ภูตน้อยขุนเขาไต้หวัน (Mô-sîn-á)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=q6t8r6w9Ecw",
-            "title": "Mo-Sin-A: Taiwan's Mountain Sprite That Steals Hikers"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1508873696983-2df5293cb325?auto=format&fit=crop&w=1200&q=80",
-            "title": "ป่าไผ่และหมอกหนาในเทือกเขาหยางหมิงซาน (Yangmingshan Bamboo Forest)"
+            "title": "โมซินอา ภูติน้อยแห่งขุนเขาไต้หวัน"
       }
 ],
     is_published: 1,
@@ -1536,17 +1182,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-mahasona.jpg",
-            "title": "มหาโสณา ยักษ์ป่าช้าศรีลังกา (Mahasona)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=4YmI-q9q3aI",
-            "title": "Mahasona: The Graveyard Demon of Sri Lanka"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1588598198321-9735fd512b81?auto=format&fit=crop&w=1200&q=80",
-            "title": "สถูปหินโบราณเมืองอนุราธปุระ ศรีลังกา (Anuradhapura Stupa)"
+            "title": "มหาโสณา มาราผู้หญิงแห่งป่าช้า"
       }
 ],
     is_published: 1,
@@ -1577,17 +1213,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-deathworm.jpg",
-            "title": "หนอนมรณะแห่งโกบี (Mongolian Death Worm)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=842e6j2Q6sM",
-            "title": "The Mongolian Death Worm: Gobi Desert Cryptid"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80",
-            "title": "ทะเลทรายโกบีและเนินทรายมองโกเลีย (Gobi Desert Dunes)"
+            "title": "หนอนมรณะแห่งโกบี"
       }
 ],
     is_published: 1,
@@ -1620,17 +1246,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-shahmaran.jpg",
-            "title": "ชาฮ์มาราน ราชินีนาคครึ่งคนครึ่งงู (Shahmaran)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=2e6iQ-9yE3w",
-            "title": "The Legend of Shahmaran: Queen of Serpents"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?auto=format&fit=crop&w=1200&q=80",
-            "title": "สถาปัตยกรรมหินโบราณเมืองทาร์ซัส ตุรกี (Ancient Tarsus Architecture)"
+            "title": "ชาฮ์มาราน ราชินีนาคครึ่งคนครึ่งงู"
       }
 ],
     is_published: 1,
@@ -1661,17 +1277,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-azzurrina.jpg",
-            "title": "อัซซูร์รีนา เด็กหญิงผมสีน้ำเงิน (Azzurrina of Montebello)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=3Wn7wL58r3Q",
-            "title": "The Ghost of Azzurrina in Montebello Castle"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-            "title": "ปราสาทมอนเตเบลโลบนยอดเขา อิตาลี (Montebello Castle Crags)"
+            "title": "อัซซูร์รีนา เด็กหญิงผมสีน้ำเงิน"
       }
 ],
     is_published: 1,
@@ -1702,17 +1308,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-santacompana.jpg",
-            "title": "ซานตากอมปันยา ขบวนวิญญาณกาลิเซีย (Santa Compaña)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=7uK6f1S-qZk",
-            "title": "Santa Compaña: Galicia's Death Procession Legend"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
-            "title": "ทางแยกและไม้กางเขนหินครูเซโรในกาลิเซีย (Galician Stone Cruceiro)"
+            "title": "ซานตากอมปันยา ขบวนวิญญาณแห่งกาลิเซีย"
       }
 ],
     is_published: 1,
@@ -1725,17 +1321,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-sasquatch.jpg",
-            "title": "แซสควัทช์ / บิ๊กฟุต (Sasquatch / Bigfoot)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=3Wn7wL58r3Q",
-            "title": "The Patterson-Gimlin Bigfoot Footage & Science"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1511497584788-87676104235f?auto=format&fit=crop&w=1200&q=80",
-            "title": "ป่าสนดงดิบแปซิฟิกนอร์ทเวสต์ (Pacific Northwest Rainforest)"
+            "title": "แซสควัทช์ มนุษย์ป่ายักษ์แห่งชายฝั่งแปซิฟิก"
       }
 ],
     title_th: 'แซสควัทช์ มนุษย์ป่ายักษ์แห่งชายฝั่งแปซิฟิก',
@@ -1786,17 +1372,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-trauco.jpg",
-            "title": "เทราโก ภูตจอมเสน่ห์แห่งเกาะชิโลเอ (El Trauco)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=q6t8r6w9Ecw",
-            "title": "El Trauco: The Creepy Goblin of Chiloé Mythology"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
-            "title": "ป่าดึกดำบรรพ์เกาะชิโลเอ ชิลี (Chiloé Temperate Rainforest)"
+            "title": "เทราโก ภูตจอมเสน่ห์แห่งเกาะชิโลเอ"
       }
 ],
     is_published: 1,
@@ -1827,17 +1403,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-pishtaco.jpg",
-            "title": "พิชตาโก จอมปลอมลนไขมัน (El Pishtaco)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=4YmI-q9q3aI",
-            "title": "Pishtaco: The Andean Legend of Fat-Stealing Monsters"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=1200&q=80",
-            "title": "เทือกเขาแอนดีส เมืองกุสโก เปรู (Andes Mountains Cusco)"
+            "title": "พิชตาโก จอมปลอมหนวดขาวที่ลนไขมันมนุษย์"
       }
 ],
     is_published: 1,
@@ -1868,17 +1434,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-patasola.jpg",
-            "title": "ปาตาโซลา ปีศาจขาเดียว (La Patasola)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=842e6j2Q6sM",
-            "title": "La Patasola: The One-Legged Jungle Demon of Colombia"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&w=1200&q=80",
-            "title": "ป่าดงดิบเทือกเขาแอนดีส แคว้นแอนทิโอเกีย (Colombian Cloud Forest)"
+            "title": "ปาตาโซลา ปีศาจขาเดียวแห่งป่าโคลอมเบีย"
       }
 ],
     is_published: 1,
@@ -1911,17 +1467,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-pazuzu.jpg",
-            "title": "ปาซูซู ราชาปีศาจลมพายุบาบิโลน (Pazuzu)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=2e6iQ-9yE3w",
-            "title": "Pazuzu: King of the Wind Demons of Ancient Mesopotamia"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80",
-            "title": "ซากปรักหักพังอารยธรรมเมโสโปเตเมีย (Ancient Mesopotamian Ruins)"
+            "title": "ปาซูซู ปีศาจลมพายุแห่งบาบิโลน"
       }
 ],
     is_published: 1,
@@ -1952,17 +1498,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-manticore.jpg",
-            "title": "แมนทิคอร์ อสูรหน้ามนุษย์แห่งเปอร์เซีย (The Manticore)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=3Wn7wL58r3Q",
-            "title": "The Persian Manticore: Bloodthirsty Beast of Myth"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1200&q=80",
-            "title": "พระราชวังเปอร์เซโพลิส ประเทศอิหร่าน (Persepolis Palace Ruins)"
+            "title": "แมนทิคอร์ สัตว์ประหลาดหน้ามนุษย์ของเปอร์เซีย"
       }
 ],
     is_published: 1,
@@ -1993,17 +1529,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-madamkoi.jpg",
-            "title": "แม่นางคอยพอย (Madam Koi Koi)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=7uK6f1S-qZk",
-            "title": "Madam Koi Koi: Africa’s Terrifying Urban Legend"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80",
-            "title": "โถงทางเดินโรงเรียนเก่ายามค่ำคืน (Dimly Lit School Hallway)"
+            "title": "แม่นางคอยพอย ผู้มีรองเท้าส้นสูงแห่งโรงเรียนประจำ"
       }
 ],
     is_published: 1,
@@ -2036,17 +1562,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-skogsra.jpg",
-            "title": "สกอกรา สาวป่าหลังโพรงไม้ (Skogsrået)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=q6t8r6w9Ecw",
-            "title": "Skogsrå: The Nordic Forest Siren of Scandinavian Folklore"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1200&q=80",
-            "title": "ป่าสนมอสเขียวขจีในสวีเดน (Swedish Boreal Moss Forest)"
+            "title": "สกอกรา สาวป่าที่หลังว่างเป็นโพรงไม้"
       }
 ],
     is_published: 1,
@@ -2077,17 +1593,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
       {
             "type": "image",
             "url": "/entities/pin-huldra.jpg",
-            "title": "ฮุลดรา พรายสาวหางวัวแห่งนอร์เวย์ (Huldra)"
-      },
-      {
-            "type": "youtube",
-            "url": "https://www.youtube.com/watch?v=4YmI-q9q3aI",
-            "title": "Huldra: The Enigmatic Hidden People of Norway"
-      },
-      {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
-            "title": "เทือกเขาสูงและน้ำตกแคว้นเทเลมาร์ก นอร์เวย์ (Telemark Fjords & Waterfalls)"
+            "title": "ฮุลดรา สาวหางวัวแห่งป่านอร์เวย์"
       }
 ],
     is_published: 1,

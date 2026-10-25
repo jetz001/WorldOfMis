@@ -170,7 +170,7 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
   const ytVideoId = currentMedia?.type === 'youtube' ? getYouTubeId(currentMedia.url) : null;
   const currentThumbnail =
     currentMedia?.type === 'youtube'
-      ? currentMedia.thumbnail || (ytVideoId ? `https://img.youtube.com/vi/${ytVideoId}/hqdefault.jpg` : dossier.portraitUrl)
+      ? currentMedia.thumbnail || dossier.portraitUrl
       : currentMedia?.url || dossier.portraitUrl;
 
   return (
@@ -276,15 +276,20 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
                       <img
                         src={currentThumbnail}
                         alt={currentMedia.title || title}
-                        className="relative w-full h-full object-contain group-hover/play:scale-105 transition-transform duration-500 z-[1]"
+                        onError={(e) => {
+                          (e.target as HTMLImageElement).src = dossier.portraitUrl;
+                        }}
+                        className="w-full h-full object-contain group-hover/play:scale-105 transition-transform duration-500 z-[1]"
                       />
-                      {/* Dark overlay & Big Pulsing Play Button */}
+                      {/* Dark overlay */}
                       <div className="absolute inset-0 bg-black/40 group-hover/play:bg-black/20 transition-colors z-[2]" />
-                      <div className="relative z-[4] flex flex-col items-center gap-2">
-                        <div className="w-16 h-16 rounded-full bg-rose-600/90 hover:bg-rose-600 border-2 border-white/80 shadow-[0_0_30px_rgba(244,63,94,0.7)] flex items-center justify-center group-hover/play:scale-110 transition-transform">
+                      
+                      {/* Big Pulsing Play Button - Perfectly Centered */}
+                      <div className="absolute inset-0 z-[4] flex flex-col items-center justify-center gap-2 pointer-events-none">
+                        <div className="w-16 h-16 rounded-full bg-rose-600/90 hover:bg-rose-600 border-2 border-white/80 shadow-[0_0_30px_rgba(244,63,94,0.7)] flex items-center justify-center group-hover/play:scale-110 transition-transform pointer-events-auto">
                           <Play className="w-7 h-7 text-white fill-white ml-1" />
                         </div>
-                        <span className="text-[11px] font-semibold text-rose-200 bg-black/80 px-3 py-1 rounded-full border border-rose-500/40 backdrop-blur-md">
+                        <span className="text-[11px] font-semibold text-rose-200 bg-black/80 px-3 py-1 rounded-full border border-rose-500/40 backdrop-blur-md pointer-events-auto">
                           {language === 'th' ? '▶ กดเล่นวิดีโอสารคดี' : '▶ Play Documentary'}
                         </span>
                       </div>
@@ -396,10 +401,9 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
                 >
                   {mediaItems.map((item, idx) => {
                     const isSelected = idx === activeMediaIndex;
-                    const itemYtId = item.type === 'youtube' ? getYouTubeId(item.url) : null;
                     const thumbSrc =
                       item.type === 'youtube'
-                        ? item.thumbnail || (itemYtId ? `https://img.youtube.com/vi/${itemYtId}/mqdefault.jpg` : dossier.portraitUrl)
+                        ? item.thumbnail || dossier.portraitUrl
                         : item.url;
 
                     return (
@@ -416,6 +420,9 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
                         <img
                           src={thumbSrc}
                           alt=""
+                          onError={(e) => {
+                            (e.target as HTMLImageElement).src = dossier.portraitUrl;
+                          }}
                           className="w-full h-full object-cover"
                         />
                         {/* Type Icon Badge */}
