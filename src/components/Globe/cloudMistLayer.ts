@@ -1,27 +1,38 @@
+import { addProtocol, removeProtocol } from 'maplibre-gl';
+
 /**
- * Procedural 3D Globe Cloud & Spectral Mist Generator for MapLibre GL CanvasSource.
+ * 3D Globe Cloud & Spectral Mist Raster Tile Protocol (`clouds://{z}/{x}/{y}`)
  *
- * Pre-renders two seamless horizontally-wrapping equirectangular cloud/mist layers
- * using domain-warped Fractal Brownian Motion (fBm) value noise, then composites
- * them with parallax wind drift onto an HTMLCanvasElement mapped onto the 3D globe.
+ * Uses MapLibre's `addProtocol` to serve standard 256x256 XYZ raster tiles
+ * cut from a seamless 2048x1024 domain-warped Fractal Brownian Motion (fBm)
+ * and ridged turbulence cloud/mist master texture.
  */
 
-const WIDTH = 1024;
-const HEIGHT = 512;
+const MASTER_W = 2048;
+const MASTER_H = 1024;
+const TILE_SIZE = 256;
 
-// Deterministic fast 2D hash for value noise
+// Deterministic fast 2D hash for value noise in [0, 1]
 function hash2D(ix: number, iy: number, seed: number): number {
-  let n = (ix * 374761393 + iy * 668265263 + seed * 1442695041) | 0;
-  n = (n ^ (n >> 13)) * 1274126177;
-  return ((n ^ (n >> 16)) >>> 0) / 4294967295;
+  let h =
+    Math.imul(ix, 374761393) +
+    Math.imul(iy, 668265263) +
+    Math.imul(seed, 1442695041);
+  h = Math.imul(h ^ (h >>> 13), 1274126177);
+  return ((h ^ (h >>> 16)) >>> 0) / 4294967295;
 }
 
-// Smoothstep interpolation
+// Quintic smootherstep for organic cloud gradients
 function smooth(t: number): number {
-  return t * t * (3 - 2 * t);
+  return t * t * t * (t * (t * 6 - 15) + 10);
 }
 
-// Seamless horizontally-periodic 2D value noise (wraps cleanly at periodX)
+// Clamp to [0, 1]
+function clamp01(v: number): number {
+  return v < 0 ? 0 : v > 1 ? 1 : v;
+}
+
+// Seamless horizontally-periodic 2D value noise
 function periodicNoise2D(
   x: number,
   y: number,
@@ -34,7 +45,7 @@ function periodicNoise2D(
   const fy = smooth(y - iy);
 
   const x0 = ((ix % periodX) + periodX) % periodX;
-  const x1 = ((ix + 1) % periodX + periodX) % periodX;
+  const x1 = (((ix + 1) % periodX) + periodX) % periodX;
 
   const v00 = hash2D(x0, iy, seed);
   const v10 = hash2D(x1, iy, seed);
@@ -46,8 +57,36 @@ function periodicNoise2D(
   return i0 + (i1 - i0) * fy;
 }
 
-// Multi-octave Fractal Brownian Motion (fBm) with horizontal periodicity
+// Multi-octave Fractal Brownian Motion (fBm) with strong high-frequency detail
 function fbmPeriodic(
+  u: number,
+  v: number,
+  baseFreqX: number,
+  baseFreqY: number,
+  octaves: number,
+  persistence: number,
+  seed: number
+): number {
+  let value = 0;
+  let amplitude = 0.5;
+  let freqX = baseFreqX;
+  let freqY = baseFreqY;
+  let norm = 0;
+
+  for (let i = 0; i < octaves; i++) {
+    value +=
+      amplitude *
+      periodicNoise2D(u * freqX, v * freqY, freqX, seed + i * 97);
+    norm += amplitude;
+    amplitude *= persistence;
+    freqX *= 2;
+    freqY *= 2;
+  }
+  return value / norm;
+}
+
+// Billowy / wispy cloud turbulence (creates filaments and wispy edges)
+function wispyPeriodic(
   u: number,
   v: number,
   baseFreqX: number,
@@ -62,160 +101,166 @@ function fbmPeriodic(
   let norm = 0;
 
   for (let i = 0; i < octaves; i++) {
-    value +=
-      amplitude *
-      periodicNoise2D(u * freqX, v * freqY, freqX, seed + i * 97);
+    const n = periodicNoise2D(u * freqX, v * freqY, freqX, seed + i * 131);
+    const ridge = 1 - Math.abs(2 * n - 1);
+    value += amplitude * (ridge * ridge);
     norm += amplitude;
-    amplitude *= 0.5;
+    amplitude *= 0.56;
     freqX *= 2;
     freqY *= 2;
   }
   return value / norm;
 }
 
-/**
- * Builds two offscreen seamless cloud & spectral mist decks:
- * 1. High-altitude silver-cyan wispy weather clouds with domain warping
- * 2. Low-altitude eerie emerald-slate fog banks
- */
-function createCloudDecks(): {
-  highClouds: HTMLCanvasElement;
-  lowMist: HTMLCanvasElement;
-} {
-  const highClouds = document.createElement('canvas');
-  highClouds.width = WIDTH;
-  highClouds.height = HEIGHT;
-  const highCtx = highClouds.getContext('2d')!;
-  const highImg = highCtx.createImageData(WIDTH, HEIGHT);
-  const highData = highImg.data;
+let masterCloudCanvas: HTMLCanvasElement | null = null;
 
-  const lowMist = document.createElement('canvas');
-  lowMist.width = WIDTH;
-  lowMist.height = HEIGHT;
-  const lowCtx = lowMist.getContext('2d')!;
-  const lowImg = lowCtx.createImageData(WIDTH, HEIGHT);
-  const lowData = lowImg.data;
+function getMasterCloudCanvas(): HTMLCanvasElement {
+  if (masterCloudCanvas) return masterCloudCanvas;
 
-  for (let y = 0; y < HEIGHT; y++) {
-    const v = y / HEIGHT; // 0 (North) -> 1 (South)
-    // Latitude profile: fade gently near extreme poles to avoid pinching on Web Mercator
+  const canvas = document.createElement('canvas');
+  canvas.width = MASTER_W;
+  canvas.height = MASTER_H;
+  const ctx = canvas.getContext('2d')!;
+  const img = ctx.createImageData(MASTER_W, MASTER_H);
+  const data = img.data;
+
+  for (let y = 0; y < MASTER_H; y++) {
+    const v = y / MASTER_H; // 0 (North) -> 1 (South)
+    // Smooth polar fade so Web Mercator poles have no pinching artifacts
     const poleFade = Math.sin(v * Math.PI);
-    const latEnvelope = Math.pow(poleFade, 0.55);
+    const latEnvelope = Math.pow(poleFade, 0.5);
 
-    // Subtle atmospheric circulation bands (ITCZ & mid-latitude storm tracks)
+    // Subtle planetary circulation bands
     const latDeg = (0.5 - v) * 170;
     const bandBoost =
-      1.0 +
-      0.22 * Math.cos((latDeg / 28) * Math.PI) +
-      0.15 * Math.cos(((Math.abs(latDeg) - 45) / 22) * Math.PI);
+      0.025 * Math.cos((latDeg / 22) * Math.PI) +
+      0.02 * Math.cos(((Math.abs(latDeg) - 42) / 18) * Math.PI);
 
-    for (let x = 0; x < WIDTH; x++) {
-      const u = x / WIDTH; // 0 -> 1 wraps seamlessly
-      const idx = (y * WIDTH + x) * 4;
+    for (let x = 0; x < MASTER_W; x++) {
+      const u = x / MASTER_W;
+      const idx = (y * MASTER_W + x) * 4;
 
-      // Domain warp for swirling cyclone / wind currents
-      const warpX = fbmPeriodic(u, v, 6, 3, 3, 101) - 0.5;
-      const warpY = fbmPeriodic(u, v, 6, 3, 3, 202) - 0.5;
+      // Macro wind stream domain warp
+      const warpX = (fbmPeriodic(u, v, 10, 5, 4, 0.52, 101) - 0.5) * 1.6;
+      const warpY = (fbmPeriodic(u, v, 10, 5, 4, 0.52, 202) - 0.5) * 1.6;
 
-      const wu = (u + warpX * 0.14 + 1) % 1;
-      const wv = Math.max(0.01, Math.min(0.99, v + warpY * 0.14));
+      const wu = (u + warpX * 0.1 + 10) % 1;
+      const wv = clamp01(v + warpY * 0.1);
 
-      // Deck 1: High-altitude wispy storm clouds
-      const nHigh = fbmPeriodic(wu, wv, 12, 6, 5, 303) * bandBoost;
-      const cloudMask = Math.max(0, (nHigh - 0.52) / 0.48);
-      const cloudAlpha = Math.min(
-        1,
-        Math.pow(cloudMask, 1.35) * latEnvelope * 0.92
+      // Meso-scale cyclone & eddy curl warp
+      const curlX = (fbmPeriodic(wu, wv, 28, 14, 4, 0.55, 404) - 0.5) * 1.4;
+      const curlY = (fbmPeriodic(wu, wv, 28, 14, 4, 0.55, 505) - 0.5) * 1.4;
+
+      const cu = (wu + curlX * 0.045 + 10) % 1;
+      const cv = clamp01(wv + curlY * 0.045);
+
+      // Layer 1: Detailed wispy weather clouds (combines fBm base + ridged filaments)
+      const fbmBase = fbmPeriodic(cu, cv, 18, 9, 6, 0.56, 303) + bandBoost;
+      const wisps = wispyPeriodic(cu, cv, 24, 12, 5, 606);
+
+      // Combine macro cloud clusters with wispy filament tendrils
+      const cloudSignal = fbmBase * 0.68 + wisps * 0.32;
+      const rawCloud = clamp01((cloudSignal - 0.5) / 0.17);
+      const cloudIntensity = rawCloud * rawCloud * (3 - 2 * rawCloud) * latEnvelope;
+
+      // Bright dense cloud tops
+      const coreCloud = clamp01((cloudSignal - 0.58) / 0.11);
+
+      // Layer 2: Soft eerie cyan-emerald spectral mist shrouding continents & seas
+      const nMist = fbmPeriodic((u - warpY * 0.07 + 10) % 1, wv, 12, 6, 5, 0.55, 707);
+      const mistWisps = wispyPeriodic((u + warpX * 0.06 + 10) % 1, wv, 16, 8, 4, 808);
+      const mistSignal = nMist * 0.72 + mistWisps * 0.28;
+      const rawMist = clamp01((mistSignal - 0.48) / 0.18);
+      const mistIntensity = rawMist * latEnvelope * 0.55;
+
+      const combinedAlpha = clamp01(
+        cloudIntensity * 0.88 + mistIntensity * 0.48
       );
 
-      // Moonlight silver-cyan cloud tint
-      highData[idx] = 215; // R
-      highData[idx + 1] = 242; // G
-      highData[idx + 2] = 238; // B
-      highData[idx + 3] = Math.round(cloudAlpha * 215);
-
-      // Deck 2: Low-altitude spectral emerald-teal mist & eerie fog
-      const nLow = fbmPeriodic(
-        (u - warpY * 0.1 + 1) % 1,
-        wv,
-        8,
-        4,
-        4,
-        707
+      // Blend color from ghostly emerald-cyan mist -> silver-blue cloud -> bright white cloud tops
+      const r = Math.round(
+        115 * (1 - cloudIntensity) +
+          228 * cloudIntensity +
+          27 * coreCloud
       );
-      const mistMask = Math.max(0, (nLow - 0.44) / 0.56);
-      const mistAlpha = Math.min(
-        1,
-        Math.pow(mistMask, 1.5) * latEnvelope * 0.78
+      const g = Math.round(
+        218 * (1 - cloudIntensity) +
+          246 * cloudIntensity +
+          9 * coreCloud
+      );
+      const b = Math.round(
+        212 * (1 - cloudIntensity) +
+          250 * cloudIntensity +
+          5 * coreCloud
       );
 
-      // Haunted teal-emerald & slate mist color
-      lowData[idx] = 45; // R
-      lowData[idx + 1] = 175; // G
-      lowData[idx + 2] = 155; // B
-      lowData[idx + 3] = Math.round(mistAlpha * 165);
+      data[idx] = Math.min(255, r);
+      data[idx + 1] = Math.min(255, g);
+      data[idx + 2] = Math.min(255, b);
+      data[idx + 3] = Math.round(combinedAlpha * 235);
     }
   }
 
-  highCtx.putImageData(highImg, 0, 0);
-  lowCtx.putImageData(lowImg, 0, 0);
-
-  return { highClouds, lowMist };
+  ctx.putImageData(img, 0, 0);
+  masterCloudCanvas = canvas;
+  return canvas;
 }
 
-export interface AnimatedCloudController {
-  canvas: HTMLCanvasElement;
-  dispose: () => void;
+const tileCache = new Map<string, ArrayBuffer>();
+
+async function renderCloudTile(z: number, x: number, y: number): Promise<ArrayBuffer> {
+  const key = `${z}/${x}/${y}`;
+  const cached = tileCache.get(key);
+  if (cached) return cached;
+
+  const master = getMasterCloudCanvas();
+  const tilesPerSide = Math.pow(2, z);
+  const normX = ((x % tilesPerSide) + tilesPerSide) % tilesPerSide;
+
+  const sx = (normX / tilesPerSide) * MASTER_W;
+  const sy = (y / tilesPerSide) * MASTER_H;
+  const sw = MASTER_W / tilesPerSide;
+  const sh = MASTER_H / tilesPerSide;
+
+  const tileCanvas = document.createElement('canvas');
+  tileCanvas.width = TILE_SIZE;
+  tileCanvas.height = TILE_SIZE;
+  const ctx = tileCanvas.getContext('2d')!;
+  ctx.imageSmoothingEnabled = true;
+  ctx.imageSmoothingQuality = 'high';
+  ctx.drawImage(master, sx, sy, sw, sh, 0, 0, TILE_SIZE, TILE_SIZE);
+
+  const blob = await new Promise<Blob | null>((resolve) =>
+    tileCanvas.toBlob(resolve, 'image/png')
+  );
+  const buffer = blob ? await blob.arrayBuffer() : new ArrayBuffer(0);
+  tileCache.set(key, buffer);
+  return buffer;
 }
 
-/**
- * Creates an animated HTMLCanvasElement with two parallax cloud & mist layers
- * that drift continuously around the globe.
- */
-export function createAnimatedCloudCanvas(): AnimatedCloudController {
-  const canvas = document.createElement('canvas');
-  canvas.width = WIDTH;
-  canvas.height = HEIGHT;
-  const ctx = canvas.getContext('2d')!;
+let isProtocolRegistered = false;
 
-  const { highClouds, lowMist } = createCloudDecks();
-
-  let offsetHigh = 0;
-  let offsetLow = 0;
-  let animTimer: number | null = null;
-
-  const renderFrame = () => {
-    ctx.clearRect(0, 0, WIDTH, HEIGHT);
-
-    // 1. Draw low spectral mist layer (slower drift)
-    const xLow = Math.floor(offsetLow) % WIDTH;
-    ctx.globalAlpha = 0.75;
-    ctx.drawImage(lowMist, xLow, 0);
-    ctx.drawImage(lowMist, xLow - WIDTH, 0);
-
-    // 2. Draw high storm clouds layer (faster drift for 3D parallax feel)
-    const xHigh = Math.floor(offsetHigh) % WIDTH;
-    ctx.globalAlpha = 0.92;
-    ctx.drawImage(highClouds, xHigh, 0);
-    ctx.drawImage(highClouds, xHigh - WIDTH, 0);
-
-    offsetLow = (offsetLow + 0.18) % WIDTH;
-    offsetHigh = (offsetHigh + 0.42) % WIDTH;
-  };
-
-  // Render initial frame immediately
-  renderFrame();
-
-  // Update at ~20 FPS so MapLibre CanvasSource stays smooth and lightweight
-  animTimer = window.setInterval(renderFrame, 50);
-
-  return {
-    canvas,
-    dispose: () => {
-      if (animTimer !== null) {
-        clearInterval(animTimer);
-        animTimer = null;
+export function registerCloudMistProtocol(): () => void {
+  if (!isProtocolRegistered) {
+    addProtocol('clouds', async (params) => {
+      // Expected URL format: clouds://{z}/{x}/{y}
+      const match = params.url.match(/clouds:\/\/(\d+)\/(\d+)\/(\d+)/);
+      if (!match) {
+        return { data: new ArrayBuffer(0) };
       }
-    },
+      const z = parseInt(match[1], 10);
+      const x = parseInt(match[2], 10);
+      const y = parseInt(match[3], 10);
+      const data = await renderCloudTile(z, x, y);
+      return { data };
+    });
+    isProtocolRegistered = true;
+  }
+
+  return () => {
+    if (isProtocolRegistered) {
+      removeProtocol('clouds');
+      isProtocolRegistered = false;
+    }
   };
 }

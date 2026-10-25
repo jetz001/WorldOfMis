@@ -6,7 +6,7 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 // returns the correct JS MIME type instead of an HTML 404 page.
 setWorkerUrl('/maplibre-gl-worker.mjs');
 import type { GhostPin, SupportedLanguage } from '../../types/ghost';
-import { createAnimatedCloudCanvas } from './cloudMistLayer';
+import { registerCloudMistProtocol } from './cloudMistLayer';
 
 // Shared world overview camera values, used both on init and when zooming out
 const WORLD_VIEW_CENTER: [number, number] = [100.5, 13.75]; // Centered on Thailand / Asia
@@ -51,22 +51,22 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     }
   }, [selectedPin, flyToPin]);
 
-  // 1. Initialize MapLibre GL 3D Globe with NASA Imagery, Drifting Clouds & Eerie Atmosphere
+  // 1. Initialize MapLibre GL 3D Globe with NASA Bathymetry, Clouds & Eerie Atmosphere
   useEffect(() => {
     if (!mapContainerRef.current) return;
 
-    const cloudController = createAnimatedCloudCanvas();
+    registerCloudMistProtocol();
 
     const map = new Map({
       container: mapContainerRef.current,
       style: {
         version: 8,
         sources: {
-          // Global seamless NASA Earth imagery (eliminates low-zoom patchwork blocks)
+          // Global seamless NASA Blue Marble with Shaded Relief & Ocean Bathymetry
           'nasa-blue-marble': {
             type: 'raster',
             tiles: [
-              'https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/BlueMarble_NextGeneration/default/GoogleMapsCompatible_Level8/{z}/{y}/{x}.jpg',
+              'https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/BlueMarble_ShadedRelief_Bathymetry/default/GoogleMapsCompatible_Level8/{z}/{y}/{x}.jpg',
             ],
             tileSize: 256,
             maxzoom: 8,
@@ -81,6 +81,14 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
             tileSize: 256,
             maxzoom: 19,
           },
+          // 3D Spherical Cloud & Spectral Mist Raster Tiles
+          'globe-clouds': {
+            type: 'raster',
+            tiles: ['clouds://{z}/{x}/{y}'],
+            tileSize: 256,
+            minzoom: 0,
+            maxzoom: 4,
+          },
         },
         layers: [
           {
@@ -90,9 +98,9 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
             minzoom: 0,
             maxzoom: 22,
             paint: {
-              'raster-brightness-max': 0.82,
-              'raster-contrast': 0.18,
-              'raster-saturation': -0.2,
+              'raster-brightness-max': 0.92,
+              'raster-contrast': 0,
+              'raster-saturation': -0.05,
               'raster-fade-duration': 300,
             },
           },
@@ -107,24 +115,47 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
                 'interpolate',
                 ['linear'],
                 ['zoom'],
-                3.2,
+                3.5,
                 0,
-                5.5,
+                5.8,
                 0.95,
               ],
-              'raster-brightness-max': 0.8,
-              'raster-contrast': 0.16,
-              'raster-saturation': -0.22,
+              'raster-brightness-max': 0.9,
+              'raster-contrast': 0,
+              'raster-saturation': -0.08,
               'raster-fade-duration': 400,
+            },
+          },
+          {
+            id: 'globe-clouds-layer',
+            type: 'raster',
+            source: 'globe-clouds',
+            minzoom: 0,
+            maxzoom: 22,
+            paint: {
+              'raster-opacity': [
+                'interpolate',
+                ['linear'],
+                ['zoom'],
+                1,
+                0.78,
+                4,
+                0.6,
+                7.5,
+                0.35,
+                11,
+                0.18,
+              ],
+              'raster-fade-duration': 300,
             },
           },
         ],
         sky: {
-          'sky-color': '#02050a',
+          'sky-color': '#02060d',
           'sky-horizon-blend': 0.65,
-          'horizon-color': '#0d3d38',
+          'horizon-color': '#114b47',
           'horizon-fog-blend': 0.75,
-          'fog-color': '#071f24',
+          'fog-color': '#0b2930',
           'fog-ground-blend': 0.45,
           'atmosphere-blend': [
             'interpolate',
@@ -133,9 +164,9 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
             0,
             0.92,
             5,
-            0.75,
+            0.78,
             8,
-            0.35,
+            0.4,
           ],
         },
       },
@@ -154,53 +185,9 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
       } catch (e) {
         console.warn('Globe projection error:', e);
       }
-
-      // Attach animated 3D spherical cloud & spectral mist layer onto the globe
-      try {
-        if (!map.getSource('globe-clouds')) {
-          map.addSource('globe-clouds', {
-            type: 'canvas',
-            canvas: cloudController.canvas,
-            animate: true,
-            coordinates: [
-              [-179.99, 85.05],
-              [179.99, 85.05],
-              [179.99, -85.05],
-              [-179.99, -85.05],
-            ],
-          });
-
-          map.addLayer({
-            id: 'globe-clouds-layer',
-            type: 'raster',
-            source: 'globe-clouds',
-            minzoom: 0,
-            maxzoom: 22,
-            paint: {
-              'raster-opacity': [
-                'interpolate',
-                ['linear'],
-                ['zoom'],
-                1,
-                0.76,
-                4,
-                0.55,
-                7.5,
-                0.28,
-                11,
-                0.14,
-              ],
-              'raster-fade-duration': 0,
-            },
-          });
-        }
-      } catch (err) {
-        console.warn('Cloud layer error:', err);
-      }
     });
 
     return () => {
-      cloudController.dispose();
       // Clear markers
       markersRef.current.forEach((m) => m.remove());
       markersRef.current = [];
@@ -297,7 +284,7 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
   }, [pins, selectedPin, onSelectPin, flyToPin]);
 
   return (
-    <div className="relative w-full h-full select-none overflow-hidden bg-[#02050a]">
+    <div className="relative w-full h-full select-none overflow-hidden bg-[#02060d]">
       {/* MapLibre 3D Globe Container */}
       <div ref={mapContainerRef} className="w-full h-full" />
 
@@ -308,7 +295,7 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
           className="absolute inset-0"
           style={{
             background:
-              'radial-gradient(circle at 50% 50%, transparent 45%, rgba(2, 8, 16, 0.45) 78%, rgba(1, 4, 9, 0.85) 100%)',
+              'radial-gradient(circle at 50% 50%, transparent 48%, rgba(3, 12, 22, 0.4) 78%, rgba(1, 4, 9, 0.82) 100%)',
           }}
         />
         {/* Drifting low-lying spectral mist bank 1 */}
@@ -316,7 +303,7 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
           className="absolute -inset-x-20 bottom-0 h-64 animate-mist-drift"
           style={{
             background:
-              'radial-gradient(ellipse 80% 60% at 35% 90%, rgba(16, 185, 129, 0.12) 0%, rgba(15, 23, 42, 0.25) 55%, transparent 100%)',
+              'radial-gradient(ellipse 80% 60% at 35% 90%, rgba(45, 212, 191, 0.14) 0%, rgba(15, 23, 42, 0.25) 55%, transparent 100%)',
             filter: 'blur(24px)',
           }}
         />
@@ -325,7 +312,7 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
           className="absolute -inset-x-24 top-1/4 h-72 animate-mist-drift-reverse"
           style={{
             background:
-              'radial-gradient(ellipse 70% 45% at 65% 50%, rgba(45, 212, 191, 0.08) 0%, rgba(148, 163, 184, 0.06) 50%, transparent 100%)',
+              'radial-gradient(ellipse 70% 45% at 65% 50%, rgba(56, 189, 248, 0.09) 0%, rgba(148, 163, 184, 0.06) 50%, transparent 100%)',
             filter: 'blur(32px)',
           }}
         />
