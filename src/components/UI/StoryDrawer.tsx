@@ -182,7 +182,7 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
       closedby="any"
       onClose={onClose}
       aria-labelledby="story-drawer-title"
-      className="m-0 p-0 h-full max-h-none w-full max-w-none bg-transparent text-slate-100 border-none outline-none backdrop:bg-black/50 backdrop:backdrop-blur-[2px]"
+      className="m-0 p-0 h-full max-h-none w-full max-w-none bg-transparent text-slate-100 border-none outline-none backdrop:bg-black/30 backdrop:backdrop-blur-[1px]"
     >
       <div className="relative w-full h-full flex justify-between overflow-hidden">
         {/* ============================================================== */}
@@ -218,19 +218,19 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
         </div>
 
         {/* ============================================================== */}
-        {/* CENTER TRANSPARENT VIEWPORT (50% TRANSPARENCY OVER 3D GLOBE)    */}
+        {/* CENTER TRANSPARENT VIEWPORT (70% TRANSPARENCY OVER 3D GLOBE)    */}
         {/* ============================================================== */}
         <div
           onClick={onClose}
-          className="hidden lg:flex flex-1 h-full cursor-pointer bg-black/10 hover:bg-black/5 transition-colors items-end justify-center pb-8 select-none group z-10"
+          className="hidden lg:flex flex-1 h-full cursor-pointer bg-black/5 hover:bg-black/0 transition-colors items-end justify-center pb-8 select-none group z-10"
           title={language === 'th' ? 'คลิกที่ว่างตรงกลางเพื่อปิด' : 'Click center backdrop to close'}
         >
           <div className="opacity-0 group-hover:opacity-90 transition-opacity px-4 py-2 rounded-full bg-black/75 border border-amber-500/40 text-xs text-amber-200/90 backdrop-blur-md shadow-[0_0_24px_rgba(0,0,0,0.9)] flex items-center gap-2">
             <span>👁️</span>
             <span>
               {language === 'th'
-                ? 'มุมมองลูกโลก 3D (โปร่งใส 50%) • คลิกที่ว่างเพื่อปิด'
-                : '3D Globe View (50% Transparent) • Click to close'}
+                ? 'มุมมองลูกโลก 3D (โปร่งใส 70%) • คลิกที่ว่างเพื่อปิด'
+                : '3D Globe View (70% Transparent) • Click to close'}
             </span>
           </div>
         </div>
