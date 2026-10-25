@@ -100,6 +100,42 @@ app.post('/pins/:id/comments', async (c) => {
   }
 });
 
+// 2.3 Add reply to a comment
+app.post('/comments/:id/reply', async (c) => {
+  const db = c.env.DB;
+  const commentId = c.req.param('id');
+  if (!db) return c.json({ error: 'D1 Database not bound' }, 500);
+  try {
+    const body = await c.req.json();
+    const id = body.id || 'rep-' + Date.now() + '-' + Math.random().toString(36).slice(2, 7);
+    const author = (body.author || 'ผู้สำรวจนิรนาม').trim();
+    const content = (body.content || '').trim();
+    const pinId = body.pinId || '';
+    if (!content) return c.json({ success: false, error: 'Content required' }, 400);
+    await db
+      .prepare('INSERT INTO comment_replies (id, comment_id, pin_id, author, content, likes) VALUES (?, ?, ?, ?, ?, 0)')
+      .bind(id, commentId, pinId, author, content)
+      .run();
+    return c.json({ success: true, data: { id, comment_id: commentId, pin_id: pinId, author, content, likes: 0, created_at: new Date().toISOString() } }, 201);
+  } catch (err) {
+    return c.json({ success: false, error: String(err) }, 500);
+  }
+});
+
+// 2.4 Like a reply
+app.post('/replies/:id/like', async (c) => {
+  const db = c.env.DB;
+  const id = c.req.param('id');
+  if (!db) return c.json({ error: 'D1 Database not bound' }, 500);
+  try {
+    await db.prepare('UPDATE comment_replies SET likes = likes + 1 WHERE id = ?').bind(id).run();
+    const rep = await db.prepare('SELECT * FROM comment_replies WHERE id = ?').bind(id).first();
+    return c.json({ success: true, data: rep });
+  } catch (err) {
+    return c.json({ success: false, error: String(err) }, 500);
+  }
+});
+
 // 2.3 Upvote comment
 app.post('/comments/:id/like', async (c) => {
   const db = c.env.DB;

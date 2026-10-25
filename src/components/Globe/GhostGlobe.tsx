@@ -91,6 +91,7 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
   useEffect(() => {
     selectedPinRef.current = selectedPin;
     if (!selectedPin && isSpinningRef.current) {
+      userInteractingRef.current = false;
       resumeSpinAfterDelay();
     }
   }, [selectedPin, resumeSpinAfterDelay]);
@@ -358,6 +359,9 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
 
     // Continuously spin globe when animation completes
     map.on('moveend', () => {
+      if (!selectedPinRef.current && isSpinningRef.current) {
+        userInteractingRef.current = false;
+      }
       spinGlobe();
     });
 
@@ -450,9 +454,17 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
   // Each button press increments the signal and pulls the camera back
   useEffect(() => {
     if (worldViewSignal > 0) {
+      userInteractingRef.current = false;
+      selectedPinRef.current = null;
       flyToWorldView();
+      if (spinTimeoutRef.current) clearTimeout(spinTimeoutRef.current);
+      spinTimeoutRef.current = setTimeout(() => {
+        userInteractingRef.current = false;
+        selectedPinRef.current = null;
+        spinGlobe();
+      }, 1300);
     }
-  }, [worldViewSignal, flyToWorldView]);
+  }, [worldViewSignal, flyToWorldView, spinGlobe]);
 
   // 2. Render Markers reliably whenever `pins` or `selectedPin` changes
   useEffect(() => {

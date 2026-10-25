@@ -53,6 +53,18 @@ CREATE TABLE IF NOT EXISTS pin_comments (
 CREATE INDEX IF NOT EXISTS idx_pin_comments_pin ON pin_comments(pin_id);
 CREATE INDEX IF NOT EXISTS idx_pin_comments_likes ON pin_comments(likes DESC);
 
+CREATE TABLE IF NOT EXISTS comment_replies (
+    id TEXT PRIMARY KEY,
+    comment_id TEXT NOT NULL,
+    pin_id TEXT NOT NULL,
+    author TEXT NOT NULL,
+    content TEXT NOT NULL,
+    likes INTEGER DEFAULT 0,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE INDEX IF NOT EXISTS idx_comment_replies_cmt ON comment_replies(comment_id);
+
 -- Default Admin User (username: admin, password: password123)
 INSERT INTO admins (id, username, password_hash, role)
 VALUES ('admin-root', 'admin', 'ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f', 'superadmin');

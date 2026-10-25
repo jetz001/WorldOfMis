@@ -56,8 +56,7 @@ export function App() {
 
   const handleZoomOutToWorld = useCallback(() => {
     setWorldViewSignal((prev) => prev + 1);
-    // NOTE: keep the selected pin so the Now Playing story indicator
-    // remains available after zooming back out to the world view.
+    setSelectedPin(null);
     setIsDrawerOpen(false);
   }, []);
 
@@ -78,6 +77,7 @@ export function App() {
 
   const handleCloseDrawer = useCallback(() => {
     setIsDrawerOpen(false);
+    setSelectedPin(null);
   }, []);
 
   // Category-filtered pins
