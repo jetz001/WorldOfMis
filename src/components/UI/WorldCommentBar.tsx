@@ -12,11 +12,9 @@ export interface WorldCommentItem {
 interface FloatingBubble extends WorldCommentItem {
   instanceId: string;
   isSelf?: boolean;
-  startX: number;
-  peakX: number;
-  peakY: number;
-  driftX: number;
-  tilt: number;
+  leftPercent: number; // Horizontal column position (%)
+  topPercent: number;  // Vertical center target (%)
+  partNumber: number;  // 2, 3, or 4 on desktop; 3 on mobile
 }
 
 interface WorldCommentBarProps {
@@ -51,36 +49,60 @@ export const WorldCommentBar: React.FC<WorldCommentBarProps> = ({
   const [floatingBubbles, setFloatingBubbles] = useState<FloatingBubble[]>([]);
   const poolRef = useRef<WorldCommentItem[]>(DEFAULT_WORLD_COMMENTS);
   const ambientIndexRef = useRef(0);
+  const lastDesktopPartRef = useRef<number>(0);
 
-  // Spawn a single fountain bubble that shoots from bottom -> center -> falls down
+  /**
+   * Spawns a bubble that fades in while rising from the bottom,
+   * stays suspended at the center of the screen, then descends & fades out.
+   *
+   * Desktop (>= 768px): Screen is divided into 5 equal vertical columns (1..5):
+   *   Part 1: 0% - 20%
+   *   Part 2: 20% - 40% (center 30%)
+   *   Part 3: 40% - 60% (center 50%)
+   *   Part 4: 60% - 80% (center 70%)
+   *   Part 5: 80% - 100%
+   * Randomly spawns in the middle parts (Part 2, Part 3, or Part 4).
+   * Mobile (< 768px): Always spawns at center (50%).
+   */
   const spawnFountainBubble = useCallback((item: WorldCommentItem, isSelf = false) => {
     const instanceId = `${item.id}-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`;
-    // Randomize subtle arc around the center of the screen
-    const startX = isSelf ? 0 : Math.round((Math.random() - 0.5) * 140);
-    const peakX = isSelf
-      ? Math.round((Math.random() - 0.5) * 50)
-      : Math.round((Math.random() - 0.5) * 220);
-    const peakY = isSelf ? -6 : Math.round(-10 + Math.random() * 14); // vh around center
-    const driftX = (Math.random() > 0.5 ? 1 : -1) * Math.round(18 + Math.random() * 34);
-    const tilt = (Math.random() > 0.5 ? 1 : -1) * Math.round(2 + Math.random() * 4);
+    const isDesktop = typeof window !== 'undefined' && window.innerWidth >= 768;
+
+    let partNumber = 3;
+    let leftPercent = 50;
+
+    if (isDesktop) {
+      const candidateParts = [2, 3, 4];
+      // Avoid picking the exact same column twice in a row if possible for visual variety
+      const filtered = candidateParts.filter((p) => p !== lastDesktopPartRef.current);
+      const pool = filtered.length > 0 && Math.random() < 0.75 ? filtered : candidateParts;
+      partNumber = pool[Math.floor(Math.random() * pool.length)];
+      lastDesktopPartRef.current = partNumber;
+
+      // Center of Part 2 = 30%, Part 3 = 50%, Part 4 = 70% (with ±3% natural jitter within that part)
+      const partCenterMap: Record<number, number> = { 2: 30, 3: 50, 4: 70 };
+      const jitter = (Math.random() - 0.5) * 6; // -3% to +3%
+      leftPercent = Math.round((partCenterMap[partNumber] + jitter) * 10) / 10;
+    }
+
+    // Slight vertical center variation around 48% so overlapping bubbles stay readable
+    const topPercent = Math.round((47 + (Math.random() - 0.5) * 6) * 10) / 10;
 
     const bubble: FloatingBubble = {
       ...item,
       instanceId,
       isSelf,
-      startX,
-      peakX,
-      peakY,
-      driftX,
-      tilt,
+      leftPercent,
+      topPercent,
+      partNumber,
     };
 
-    setFloatingBubbles((prev) => [...prev.slice(-10), bubble]);
+    setFloatingBubbles((prev) => [...prev.slice(-8), bubble]);
 
-    // Remove bubble after 5.3s animation finishes
+    // Remove bubble after 5.4s animation completes
     window.setTimeout(() => {
       setFloatingBubbles((prev) => prev.filter((b) => b.instanceId !== instanceId));
-    }, 5300);
+    }, 5450);
   }, []);
 
   // Load initial world comments from D1 API + localStorage
@@ -121,7 +143,7 @@ export const WorldCommentBar: React.FC<WorldCommentBarProps> = ({
       const item = list[ambientIndexRef.current % list.length];
       ambientIndexRef.current += 1;
       spawnFountainBubble(item, false);
-    }, 4500);
+    }, 4800);
     return () => window.clearInterval(timer);
   }, [isWorldZoomedOut, spawnFountainBubble]);
 
@@ -167,7 +189,7 @@ export const WorldCommentBar: React.FC<WorldCommentBarProps> = ({
       created_at: new Date().toISOString(),
     };
 
-    // 1. Immediately launch fountain bubble from bottom -> center -> fall down!
+    // 1. Immediately fade-in upward to random Desktop Part 2–4 (or Mobile center), hold, then descend & fade out
     spawnFountainBubble(newItem, true);
 
     // 2. Add to local pool so it also replays in rotation
@@ -198,25 +220,21 @@ export const WorldCommentBar: React.FC<WorldCommentBarProps> = ({
   return (
     <>
       {/* ============================================================== */}
-      {/* FOUNTAIN OVERLAY: Messages shoot from bottom -> center -> drop */}
+      {/* FOUNTAIN OVERLAY: Fades up -> holds at center -> descends      */}
+      {/* Desktop spawns randomly in Columns 2, 3, or 4 (of 5 parts)     */}
       {/* ============================================================== */}
-      <div className="pointer-events-none fixed inset-0 z-25 flex items-center justify-center overflow-hidden">
+      <div className="pointer-events-none fixed inset-0 z-25 overflow-hidden">
         {floatingBubbles.map((b) => (
           <div
             key={b.instanceId}
-            style={
-              {
-                '--start-x': `${b.startX}px`,
-                '--peak-x': `${b.peakX}px`,
-                '--peak-y': `${b.peakY}vh`,
-                '--drift-x': `${b.driftX}px`,
-                '--tilt': `${b.tilt}deg`,
-              } as React.CSSProperties
-            }
-            className={`animate-world-fountain absolute max-w-[290px] sm:max-w-sm px-4 py-2.5 rounded-2xl border backdrop-blur-xl shadow-[0_12px_32px_rgba(0,0,0,0.85)] flex items-center gap-2.5 ${
+            style={{
+              left: `${b.leftPercent}%`,
+              top: `${b.topPercent}%`,
+            }}
+            className={`animate-world-fountain absolute w-max max-w-[260px] sm:max-w-[320px] px-4 py-2.5 rounded-2xl border backdrop-blur-xl shadow-[0_12px_32px_rgba(0,0,0,0.85)] flex items-center gap-2.5 ${
               b.isSelf
                 ? 'bg-gradient-to-r from-emerald-950/95 via-[#07261f]/95 to-slate-950/95 border-amber-400/80 text-amber-100 shadow-[0_0_28px_rgba(16,185,129,0.55)]'
-                : 'bg-[#070d18]/90 border-emerald-500/40 text-slate-100 shadow-[0_0_20px_rgba(16,185,129,0.22)]'
+                : 'bg-[#070d18]/92 border-emerald-500/45 text-slate-100 shadow-[0_0_20px_rgba(16,185,129,0.25)]'
             }`}
           >
             <span className="text-base shrink-0">{b.isSelf ? '✨' : '💬'}</span>
