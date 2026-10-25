@@ -6,6 +6,7 @@ import { Navbar } from './components/UI/Navbar';
 import { StoryDrawer } from './components/UI/StoryDrawer';
 import { AdminPortal } from './components/Admin/AdminPortal';
 import { performVectorRagSearch } from './lib/vectorRagSearch';
+import { MysticalLoadingScreen } from './components/UI/MysticalLoadingScreen';
 
 export function App() {
   const [pins, setPins] = useState<GhostPin[]>([]);
@@ -16,12 +17,20 @@ export function App() {
   const [selectedCategory, setSelectedCategory] = useState<GhostCategory | 'all'>('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [worldViewSignal, setWorldViewSignal] = useState(0);
+  const [isPinsLoaded, setIsPinsLoaded] = useState(false);
+  const [isMapReady, setIsMapReady] = useState(false);
 
   // Load pins & attach secret Admin Portal triggers (Ctrl+Shift+A or #admin)
   useEffect(() => {
     fetchPins().then((data) => {
       setPins(data);
+      setIsPinsLoaded(true);
     });
+
+    const safetyTimer = setTimeout(() => {
+      setIsPinsLoaded(true);
+      setIsMapReady(true);
+    }, 3600);
 
     const checkSecretUrl = () => {
       const params = new URLSearchParams(window.location.search);
@@ -45,6 +54,7 @@ export function App() {
     window.addEventListener('hashchange', checkSecretUrl);
     window.addEventListener('keydown', handleKeyDown);
     return () => {
+      clearTimeout(safetyTimer);
       window.removeEventListener('hashchange', checkSecretUrl);
       window.removeEventListener('keydown', handleKeyDown);
     };
@@ -148,6 +158,7 @@ export function App() {
           language={language}
           worldViewSignal={worldViewSignal}
           onZoomOut={handleZoomOutToWorld}
+          onMapReady={() => setIsMapReady(true)}
         />
       </main>
 
@@ -168,6 +179,13 @@ export function App() {
         onUpdatePin={handleUpdatePin}
         onDeletePin={handleDeletePin}
         language={language}
+      />
+
+      {/* Mystical Initial App Loading Screen */}
+      <MysticalLoadingScreen
+        isLoading={!isPinsLoaded || !isMapReady}
+        language={language}
+        pinsCount={pins.length}
       />
     </div>
   );

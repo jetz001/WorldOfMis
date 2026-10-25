@@ -72,6 +72,14 @@ interface GhostGlobeProps {
   language: SupportedLanguage;
   worldViewSignal: number;
   onZoomOut?: () => void;
+  onMapReady?: () => void;
+}
+
+interface MarkerItem {
+  marker: Marker;
+  pin: GhostPin;
+  element: HTMLDivElement;
+  isVisible?: boolean;
 }
 
 export const GhostGlobe: React.FC<GhostGlobeProps> = ({
@@ -81,13 +89,21 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
   language,
   worldViewSignal,
   onZoomOut,
+  onMapReady,
 }) => {
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<Map | null>(null);
   const markersRef = useRef<Marker[]>([]);
-  const markerItemsRef = useRef<{ marker: Marker; pin: GhostPin; element: HTMLDivElement }[]>([]);
+  const markerItemsRef = useRef<MarkerItem[]>([]);
   const markerInnerElsRef = useRef<globalThis.Map<string, HTMLDivElement>>(new globalThis.Map());
   const pinsRef = useRef<GhostPin[]>(pins);
+  const [hoveredPinInfo, setHoveredPinInfo] = useState<{
+    pin: GhostPin;
+    x: number;
+    y: number;
+    color: string;
+  } | null>(null);
+  const isFrameScheduledRef = useRef(false);
 
   useEffect(() => {
     pinsRef.current = pins;
@@ -171,16 +187,19 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     // Visible horizon threshold: At full globe overview (zoom < 3.5), visible hemisphere is ~80 deg from center
     const horizonThreshold = zoom > 4.5 ? -0.2 : 0.12;
 
-    for (const item of markerItemsRef.current) {
+    for (let i = 0; i < markerItemsRef.current.length; i++) {
+      const item = markerItemsRef.current[i];
       const phi2 = item.pin.lat * toRad;
       const deltaLambda = item.pin.lng * toRad - cLngRad;
       const cosDist = sinPhi1 * Math.sin(phi2) + cosPhi1 * Math.cos(phi2) * Math.cos(deltaLambda);
+      const isNowVisible = cosDist >= horizonThreshold;
 
-      if (cosDist < horizonThreshold) {
-        // Pin is behind the globe! Hide it completely so it never shines through the Earth
-        item.element.style.display = 'none';
-      } else {
-        item.element.style.display = 'flex';
+      if (item.isVisible !== isNowVisible) {
+        item.isVisible = isNowVisible;
+        item.element.style.display = isNowVisible ? 'flex' : 'none';
+      }
+
+      if (isNowVisible && horizonThreshold > 0) {
         const fade = Math.min(1, Math.max(0, (cosDist - horizonThreshold) / 0.12));
         item.element.style.opacity = fade >= 0.98 ? '1' : fade.toFixed(2);
       }
@@ -397,28 +416,37 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     mapRef.current = map;
     map.addControl(new NavigationControl({ showCompass: true }), 'top-right');
 
+    const scheduleThrottledUpdate = () => {
+      if (isFrameScheduledRef.current) return;
+      isFrameScheduledRef.current = true;
+      requestAnimationFrame(() => {
+        isFrameScheduledRef.current = false;
+        updateMarkerVisibility();
+        updateMagneticField();
+      });
+    };
+
     map.on('style.load', () => {
       try {
         map.setProjection({ type: 'globe' });
       } catch (e) {
         console.warn('Globe projection error:', e);
       }
-      updateMagneticField();
-      updateMarkerVisibility();
-      // Start initial slow auto-rotation
+      scheduleThrottledUpdate();
       spinGlobe();
+      if (onMapReady) onMapReady();
     });
 
-    map.on('move', () => {
-      updateMagneticField();
-      updateMarkerVisibility();
+    map.on('load', () => {
+      if (onMapReady) onMapReady();
     });
+
+    map.on('move', scheduleThrottledUpdate);
     map.on('zoom', () => {
+      setHoveredPinInfo(null);
       setIsWorldZoomedOut(map.getZoom() <= 3.55 && !selectedPinRef.current);
     });
-    map.on('render', () => {
-      updateMarkerVisibility();
-    });
+    map.on('render', scheduleThrottledUpdate);
 
     // Continuously spin globe when animation completes
     map.on('moveend', () => {
@@ -435,6 +463,7 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
       if (spinTimeoutRef.current) clearTimeout(spinTimeoutRef.current);
     });
     map.on('dragstart', () => {
+      setHoveredPinInfo(null);
       userInteractingRef.current = true;
       if (spinTimeoutRef.current) clearTimeout(spinTimeoutRef.current);
     });
@@ -541,7 +570,7 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     markersRef.current = [];
     markerInnerElsRef.current.clear();
 
-    // Create distinctive, prominent category-specific 3D Occult Diamond Markers
+    // Create distinctive, prominent category-specific 3D Occult Diamond Markers (Ultra-lightweight)
     pins.forEach((pin) => {
       const isSelected = selectedPin?.id === pin.id;
       const catStyle = CATEGORY_MARKER_STYLES[pin.category] || CATEGORY_MARKER_STYLES.legend;
@@ -599,228 +628,28 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
       el.appendChild(innerWrap);
       markerInnerElsRef.current.set(pin.id, innerWrap);
 
-      // Hover Preview Card (Appears on mouse hover without zooming the camera)
-      const card = document.createElement('div');
-      card.style.position = 'absolute';
-      card.style.zIndex = '9999';
-      card.style.width = '275px';
-      card.style.pointerEvents = 'auto';
-      card.style.opacity = '0';
-      card.style.visibility = 'hidden';
-      card.style.transition = 'opacity 180ms ease, transform 180ms ease, visibility 180ms';
-      card.style.transform = 'translateX(-50%) translateY(6px) scale(0.95)';
-      card.style.cursor = 'pointer';
-
-      const cardBox = document.createElement('div');
-      cardBox.style.display = 'flex';
-      cardBox.style.flexDirection = 'column';
-      cardBox.style.background = 'rgba(7, 12, 21, 0.96)';
-      cardBox.style.border = '1px solid rgba(251, 191, 36, 0.45)';
-      cardBox.style.borderRadius = '14px';
-      cardBox.style.overflow = 'hidden';
-      cardBox.style.backdropFilter = 'blur(16px)';
-      cardBox.style.boxShadow = '0 12px 32px rgba(0,0,0,0.85), 0 0 24px rgba(16, 185, 129, 0.35)';
-
-      // Header row with portrait + title & location
-      const headerRow = document.createElement('div');
-      headerRow.style.display = 'flex';
-      headerRow.style.gap = '10px';
-      headerRow.style.padding = '10px 10px 6px 10px';
-      headerRow.style.alignItems = 'center';
-
-      const thumbWrap = document.createElement('div');
-      thumbWrap.style.position = 'relative';
-      thumbWrap.style.width = '52px';
-      thumbWrap.style.height = '52px';
-      thumbWrap.style.borderRadius = '10px';
-      thumbWrap.style.overflow = 'hidden';
-      thumbWrap.style.border = '1px solid rgba(251, 191, 36, 0.5)';
-      thumbWrap.style.flexShrink = '0';
-      thumbWrap.style.background = '#0f172a';
-
-      const thumbImg = document.createElement('img');
-      thumbImg.src = pin.image_url || `/entities/${pin.id}.jpg`;
-      thumbImg.alt = pin.title_th;
-      thumbImg.style.width = '100%';
-      thumbImg.style.height = '100%';
-      thumbImg.style.objectFit = 'cover';
-      thumbWrap.appendChild(thumbImg);
-
-      const statusDot = document.createElement('span');
-      statusDot.style.position = 'absolute';
-      statusDot.style.bottom = '3px';
-      statusDot.style.right = '3px';
-      statusDot.style.width = '8px';
-      statusDot.style.height = '8px';
-      statusDot.style.borderRadius = '9999px';
-      statusDot.style.background = catStyle.color;
-      statusDot.style.boxShadow = `0 0 8px ${catStyle.color}`;
-      thumbWrap.appendChild(statusDot);
-
-      headerRow.appendChild(thumbWrap);
-
-      const infoCol = document.createElement('div');
-      infoCol.style.minWidth = '0';
-      infoCol.style.flex = '1';
-
-      const catBadge = document.createElement('span');
-      catBadge.textContent = pin.category.toUpperCase();
-      catBadge.style.display = 'inline-block';
-      catBadge.style.fontSize = '9px';
-      catBadge.style.fontWeight = '700';
-      catBadge.style.color = catStyle.color;
-      catBadge.style.background = `${catStyle.color}22`;
-      catBadge.style.border = `1px solid ${catStyle.color}55`;
-      catBadge.style.borderRadius = '4px';
-      catBadge.style.padding = '1px 5px';
-      catBadge.style.letterSpacing = '0.5px';
-      infoCol.appendChild(catBadge);
-
-      const titleEl = document.createElement('p');
-      titleEl.textContent = language === 'th' ? pin.title_th : pin.title_en;
-      titleEl.style.margin = '3px 0 0 0';
-      titleEl.style.fontSize = '13px';
-      titleEl.style.fontWeight = '700';
-      titleEl.style.color = '#fef3c7';
-      titleEl.style.lineHeight = '1.25';
-      titleEl.style.overflow = 'hidden';
-      titleEl.style.textOverflow = 'ellipsis';
-      titleEl.style.whiteSpace = 'nowrap';
-      infoCol.appendChild(titleEl);
-
-      const locEl = document.createElement('p');
-      locEl.textContent = `📍 ${language === 'th' ? pin.province_th : pin.province_en}`;
-      locEl.style.margin = '2px 0 0 0';
-      locEl.style.fontSize = '11px';
-      locEl.style.color = '#6ee7b7';
-      locEl.style.overflow = 'hidden';
-      locEl.style.textOverflow = 'ellipsis';
-      locEl.style.whiteSpace = 'nowrap';
-      infoCol.appendChild(locEl);
-
-      headerRow.appendChild(infoCol);
-      cardBox.appendChild(headerRow);
-
-      // Short teaser lore snippet
-      const snippetEl = document.createElement('div');
-      const fullStory = language === 'th' ? pin.story_th : pin.story_en;
-      snippetEl.textContent = fullStory.length > 92 ? fullStory.slice(0, 92) + '...' : fullStory;
-      snippetEl.style.padding = '0 10px 8px 10px';
-      snippetEl.style.fontSize = '11px';
-      snippetEl.style.lineHeight = '1.35';
-      snippetEl.style.color = '#94a3b8';
-      snippetEl.style.display = '-webkit-box';
-      snippetEl.style.webkitLineClamp = '2';
-      snippetEl.style.webkitBoxOrient = 'vertical';
-      snippetEl.style.overflow = 'hidden';
-      cardBox.appendChild(snippetEl);
-
-      // Bottom Call-to-action
-      const ctaBar = document.createElement('div');
-      ctaBar.style.display = 'flex';
-      ctaBar.style.alignItems = 'center';
-      ctaBar.style.justifyContent = 'space-between';
-      ctaBar.style.padding = '5px 10px';
-      ctaBar.style.background = 'rgba(15, 23, 42, 0.75)';
-      ctaBar.style.borderTop = '1px solid rgba(255,255,255,0.08)';
-      ctaBar.style.fontSize = '10px';
-      ctaBar.style.color = '#fbbf24';
-      ctaBar.style.fontWeight = '600';
-
-      const ctaText = document.createElement('span');
-      ctaText.textContent = language === 'th' ? '👆 คลิกเพื่อซูมเข้าสู่บันทึก' : '👆 Click to zoom & explore';
-      ctaBar.appendChild(ctaText);
-
-      const ctaArrow = document.createElement('span');
-      ctaArrow.textContent = '↗';
-      ctaArrow.style.color = '#34d399';
-      ctaArrow.style.fontSize = '12px';
-      ctaBar.appendChild(ctaArrow);
-
-      cardBox.appendChild(ctaBar);
-      card.appendChild(cardBox);
-
-      // Pointer Arrow Triangle
-      const arrow = document.createElement('div');
-      arrow.style.position = 'absolute';
-      arrow.style.width = '0';
-      arrow.style.height = '0';
-      arrow.style.borderLeft = '6px solid transparent';
-      arrow.style.borderRight = '6px solid transparent';
-      card.appendChild(arrow);
-
-      el.appendChild(card);
-
-      // Hover Interaction: shows card without zooming in
-      let isCardVisible = false;
-
-      const showCard = () => {
-        if (isCardVisible) return;
-        isCardVisible = true;
+      // Lightweight Hover Trigger: Populates single singleton Hover Card instead of 300 cards in DOM!
+      el.addEventListener('mouseenter', () => {
         userInteractingRef.current = true;
         if (spinTimeoutRef.current) clearTimeout(spinTimeoutRef.current);
-        el.style.zIndex = '99999';
-
         const rect = el.getBoundingClientRect();
-        const screenWidth = window.innerWidth;
-        let shiftX = -50;
-        let arrowShiftX = 50;
+        setHoveredPinInfo({
+          pin,
+          x: rect.left + rect.width / 2,
+          y: rect.top,
+          color: catStyle.color,
+        });
+      });
 
-        if (rect.left < 155) {
-          shiftX = -15;
-          arrowShiftX = 18;
-        } else if (rect.right > screenWidth - 155) {
-          shiftX = -85;
-          arrowShiftX = 82;
-        }
-
-        const isTop = rect.top < 190;
-        if (isTop) {
-          card.style.bottom = 'auto';
-          card.style.top = '100%';
-          card.style.marginTop = '12px';
-          card.style.marginBottom = '0px';
-          arrow.style.bottom = 'auto';
-          arrow.style.top = '-6px';
-          arrow.style.borderTop = 'none';
-          arrow.style.borderBottom = '6px solid rgba(7, 12, 21, 0.96)';
-        } else {
-          card.style.top = 'auto';
-          card.style.bottom = '100%';
-          card.style.marginTop = '0px';
-          card.style.marginBottom = '12px';
-          arrow.style.top = 'auto';
-          arrow.style.bottom = '-6px';
-          arrow.style.borderBottom = 'none';
-          arrow.style.borderTop = '6px solid rgba(7, 12, 21, 0.96)';
-        }
-
-        arrow.style.left = `${arrowShiftX}%`;
-        arrow.style.transform = 'translateX(-50%)';
-
-        card.style.left = '50%';
-        card.style.transform = `translateX(${shiftX}%) translateY(0) scale(1)`;
-        card.style.opacity = '1';
-        card.style.visibility = 'visible';
-      };
-
-      const hideCard = () => {
-        if (!isCardVisible) return;
-        isCardVisible = false;
-        el.style.zIndex = '';
-        card.style.opacity = '0';
-        card.style.visibility = 'hidden';
-        card.style.transform = 'translateX(-50%) translateY(6px) scale(0.95)';
+      el.addEventListener('mouseleave', () => {
+        setHoveredPinInfo(null);
         resumeSpinAfterDelay();
-      };
-
-      el.addEventListener('mouseenter', showCard);
-      el.addEventListener('mouseleave', hideCard);
+      });
 
       // Click Interaction: zooms in and opens full StoryDrawer
       el.addEventListener('click', (e) => {
         e.stopPropagation();
-        hideCard();
+        setHoveredPinInfo(null);
         flyToPin(pin);
         onSelectPin(pin);
       });
@@ -830,7 +659,7 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
         .addTo(map);
 
       markersRef.current.push(marker);
-      markerItemsRef.current.push({ marker, pin, element: el });
+      markerItemsRef.current.push({ marker, pin, element: el, isVisible: true });
     });
 
     updateMagneticField();
@@ -971,6 +800,66 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
 
         </div>
       </div>
+
+      {/* High-Performance Singleton Hover Preview Card */}
+      {hoveredPinInfo && (
+        <div
+          className="fixed z-50 pointer-events-auto cursor-pointer animate-in fade-in zoom-in-95 duration-150 select-none"
+          style={{
+            left: Math.min(Math.max(150, hoveredPinInfo.x), typeof window !== 'undefined' ? window.innerWidth - 150 : 200),
+            top: hoveredPinInfo.y < 210 ? hoveredPinInfo.y + 44 : hoveredPinInfo.y - 12,
+            transform: hoveredPinInfo.y < 210 ? 'translateX(-50%)' : 'translate(-50%, -100%)',
+            width: '275px',
+          }}
+          onClick={() => {
+            flyToPin(hoveredPinInfo.pin);
+            onSelectPin(hoveredPinInfo.pin);
+            setHoveredPinInfo(null);
+          }}
+        >
+          <div className="flex flex-col bg-[#070c15]/95 border border-amber-400/45 rounded-2xl overflow-hidden backdrop-blur-xl shadow-[0_12px_32px_rgba(0,0,0,0.85),0_0_24px_rgba(16,185,129,0.35)]">
+            <div className="flex gap-2.5 p-2.5 pb-1.5 items-center">
+              <div className="relative w-12 h-12 rounded-xl overflow-hidden border border-amber-400/50 shrink-0 bg-slate-900">
+                <img
+                  src={hoveredPinInfo.pin.image_url || `/entities/${hoveredPinInfo.pin.id}.jpg`}
+                  alt={hoveredPinInfo.pin.title_th}
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+                <span
+                  className="absolute bottom-1 right-1 w-2 h-2 rounded-full"
+                  style={{ backgroundColor: hoveredPinInfo.color, boxShadow: `0 0 8px ${hoveredPinInfo.color}` }}
+                />
+              </div>
+              <div className="min-w-0 flex-1">
+                <span
+                  className="inline-block text-[9px] font-bold rounded px-1.5 py-0.5 tracking-wider uppercase"
+                  style={{
+                    color: hoveredPinInfo.color,
+                    backgroundColor: `${hoveredPinInfo.color}22`,
+                    border: `1px solid ${hoveredPinInfo.color}55`,
+                  }}
+                >
+                  {hoveredPinInfo.pin.category}
+                </span>
+                <p className="mt-0.5 text-[13px] font-bold text-amber-100 truncate leading-tight">
+                  {language === 'th' ? hoveredPinInfo.pin.title_th : hoveredPinInfo.pin.title_en}
+                </p>
+                <p className="mt-0.5 text-[11px] text-emerald-300 truncate">
+                  📍 {language === 'th' ? hoveredPinInfo.pin.province_th : hoveredPinInfo.pin.province_en}
+                </p>
+              </div>
+            </div>
+            <p className="px-2.5 pb-2 text-[11px] text-slate-400 line-clamp-2 leading-relaxed">
+              {language === 'th' ? hoveredPinInfo.pin.story_th : hoveredPinInfo.pin.story_en}
+            </p>
+            <div className="flex items-center justify-between px-2.5 py-1.5 bg-slate-900/80 border-t border-white/10 text-[10px] text-amber-400 font-semibold">
+              <span>{language === 'th' ? '👆 คลิกเพื่อซูมเข้าสู่บันทึก' : '👆 Click to zoom & explore'}</span>
+              <span className="text-emerald-400 text-xs">↗</span>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* World Comment Fountain & Input Bar (Only unlocked when zoomed out to World View) */}
       <WorldCommentBar
