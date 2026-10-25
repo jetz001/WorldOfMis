@@ -1,13 +1,22 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useMemo } from 'react';
 import {
   X,
   MapPin,
   Eye,
   BookOpen,
   Sparkles,
+  Skull,
+  Scale,
+  Ruler,
+  UserCheck,
+  Compass,
+  Clock,
+  ShieldAlert,
+  ScrollText,
 } from 'lucide-react';
 import type { GhostPin, SupportedLanguage } from '../../types/ghost';
 import { getTranslation } from '../../lib/i18n';
+import { getEntityDossier } from '../../lib/entityBestiary';
 
 interface StoryDrawerProps {
   pin: GhostPin | null;
@@ -24,6 +33,11 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
 }) => {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const t = getTranslation(language);
+
+  const dossier = useMemo(() => {
+    if (!pin) return null;
+    return getEntityDossier(pin, language);
+  }, [pin, language]);
 
   // Modern HTML <dialog> lifecycle
   useEffect(() => {
@@ -73,113 +87,279 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
     };
   }, [onClose, pin]);
 
-  if (!pin) return null;
+  if (!pin || !dossier) return null;
 
   const title = language === 'th' ? pin.title_th : pin.title_en;
+  const subTitle = language === 'th' ? pin.title_en : pin.title_th;
   const province = language === 'th' ? pin.province_th : pin.province_en;
   const district = language === 'th' ? pin.district_th : pin.district_en;
-  const story = language === 'th' ? pin.story_th : pin.story_en;
   const history = language === 'th' ? pin.folklore_history_th : pin.folklore_history_en;
   const categoryLabel = t.categories[pin.category] || pin.category;
 
   return (
     <dialog
       ref={dialogRef}
-      closedby="any" onClose={onClose}
+      closedby="any"
+      onClose={onClose}
       aria-labelledby="story-drawer-title"
-      className="m-0 ml-auto h-full max-h-none w-full max-w-lg p-0 bg-transparent text-slate-100 border-none outline-none backdrop:bg-black/60 backdrop:backdrop-blur-sm"
+      className="m-0 ml-auto h-full max-h-none w-full max-w-xl p-0 bg-transparent text-slate-100 border-none outline-none backdrop:bg-black/70 backdrop:backdrop-blur-sm"
     >
-      <div className="flex flex-col h-full bg-slate-950/95 border-l border-emerald-500/20 shadow-2xl backdrop-blur-xl overflow-hidden animate-in slide-in-from-right duration-300">
-        {/* Header Bar */}
-        <div className="relative p-6 border-b border-slate-800/80 bg-gradient-to-b from-slate-900 to-transparent">
-          <div className="flex items-center justify-between mb-3">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
-              <Sparkles className="w-3.5 h-3.5" />
-              {categoryLabel}
-            </span>
+      <div className="relative flex flex-col h-full bg-[#060911]/98 border-l border-amber-500/25 shadow-[-20px_0_60px_rgba(0,0,0,0.9)] backdrop-blur-2xl overflow-hidden animate-in slide-in-from-right duration-300">
+        {/* Ambient Grimoire Background Texture & Ornate Corner Lines */}
+        <div
+          className="pointer-events-none absolute inset-0 opacity-30"
+          style={{
+            background:
+              'radial-gradient(circle at 85% 12%, rgba(16, 185, 129, 0.14) 0%, transparent 45%), radial-gradient(circle at 15% 88%, rgba(217, 119, 6, 0.1) 0%, transparent 50%)',
+          }}
+        />
+
+        {/* Top Antique Grimoire Header */}
+        <div className="relative px-6 pt-5 pb-4 border-b border-amber-500/20 bg-gradient-to-b from-[#0b121e] via-[#080d16] to-transparent">
+          <div className="flex items-center justify-between gap-2 mb-2.5">
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-semibold uppercase tracking-widest bg-emerald-950/80 text-emerald-300 border border-emerald-500/35 shadow-[0_0_12px_rgba(16,185,129,0.2)]">
+                <Sparkles className="w-3 h-3 text-emerald-400" />
+                {categoryLabel}
+              </span>
+              <span className="text-[10px] font-mono tracking-widest uppercase px-2.5 py-1 rounded bg-amber-950/50 text-amber-300/90 border border-amber-500/30">
+                {dossier.codexId}
+              </span>
+            </div>
 
             <button
               onClick={onClose}
               aria-label={t.close}
-              className="p-2 rounded-full hover:bg-slate-800 text-slate-400 hover:text-white transition-colors"
+              className="p-2 rounded-full bg-slate-900/80 hover:bg-slate-800 border border-slate-700/60 text-slate-300 hover:text-white transition-colors cursor-pointer"
             >
-              <X className="w-5 h-5" />
+              <X className="w-4 h-4" />
             </button>
           </div>
 
+          {/* Vintage Grimoire Title */}
           <h2
             id="story-drawer-title"
-            className="text-2xl font-bold tracking-tight text-white mb-2 leading-tight"
+            className="font-grimoire text-2xl md:text-3xl font-bold tracking-wide text-amber-50 drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)] leading-snug"
           >
             {title}
           </h2>
+          <p className="font-grimoire text-xs italic text-amber-200/60 tracking-wider mt-0.5 mb-2.5">
+            “{subTitle}”
+          </p>
 
-          <div className="flex flex-wrap items-center gap-3 text-xs text-slate-400">
-            <div className="flex items-center gap-1 text-emerald-400">
+          <div className="flex flex-wrap items-center gap-4 text-xs text-slate-400">
+            <div className="flex items-center gap-1.5 text-emerald-400 font-medium">
               <MapPin className="w-3.5 h-3.5" />
-              <span>{province} {district && `• ${district}`}</span>
+              <span>
+                {province} {district && `• ${district}`}
+              </span>
             </div>
 
-            <div className="flex items-center gap-1 text-slate-400">
-              <Eye className="w-3.5 h-3.5" />
-              <span>{pin.views_count.toLocaleString()} {t.views}</span>
+            <div className="flex items-center gap-1.5 text-slate-400">
+              <Eye className="w-3.5 h-3.5 text-amber-400/80" />
+              <span>
+                {pin.views_count.toLocaleString()} {t.views}
+              </span>
             </div>
           </div>
         </div>
 
-        {/* Scrollable Content Body */}
-        <div className="flex-1 overflow-y-auto p-6 space-y-6">
-          {/* Story Image / Atmosphere Illustration */}
-          {pin.image_url ? (
-            <div className="relative rounded-2xl overflow-hidden border border-slate-800 aspect-video">
+        {/* Scrollable Grimoire Body */}
+        <div className="relative flex-1 overflow-y-auto px-6 py-5 space-y-6">
+          {/* 1. Entity Bestiary Portrait Frame */}
+          <div className="relative rounded-2xl overflow-hidden border border-amber-500/30 bg-[#050a10] shadow-[0_12px_35px_rgba(0,0,0,0.85)] group">
+            <div className="relative aspect-video w-full overflow-hidden">
               <img
-                src={pin.image_url}
+                src={dossier.portraitUrl}
                 alt={title}
-                className="w-full h-full object-cover"
-                loading="lazy"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
-            </div>
-          ) : (
-            <div className="relative rounded-2xl overflow-hidden border border-slate-800 bg-gradient-to-br from-slate-900 via-emerald-950/20 to-slate-950 p-6 flex flex-col items-center justify-center text-center">
-              <span className="text-4xl mb-2">👻</span>
-              <p className="text-xs text-emerald-400/80 font-mono">
-                {title} • {province}
-              </p>
-              <p className="text-[11px] text-slate-500 mt-1">
-                Cloudflare R2 Object Storage Ready
-              </p>
-            </div>
-          )}
+              {/* Dark vignette & bottom gradient overlay */}
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#05080f] via-transparent to-black/30" />
 
-          {/* Story Narrative */}
-          <div className="space-y-3">
-            <div className="flex items-center gap-2 text-sm font-semibold text-emerald-300">
-              <BookOpen className="w-4 h-4" />
-              <span>{t.storyDetail}</span>
-            </div>
-            <div className="p-4 rounded-2xl bg-slate-900/60 border border-slate-800/80 text-sm leading-relaxed text-slate-300">
-              {story}
+              {/* Corner Arcane Accents */}
+              <div className="pointer-events-none absolute top-2.5 left-2.5 w-5 h-5 border-t-2 border-l-2 border-amber-400/60 rounded-tl" />
+              <div className="pointer-events-none absolute top-2.5 right-2.5 w-5 h-5 border-t-2 border-r-2 border-amber-400/60 rounded-tr" />
+              <div className="pointer-events-none absolute bottom-2.5 left-2.5 w-5 h-5 border-b-2 border-l-2 border-amber-400/60 rounded-bl" />
+              <div className="pointer-events-none absolute bottom-2.5 right-2.5 w-5 h-5 border-b-2 border-r-2 border-amber-400/60 rounded-br" />
+
+              {/* Bottom Danger / Omen Meter Overlay */}
+              <div className="absolute bottom-3 inset-x-4 flex items-center justify-between gap-2">
+                <span className="text-[11px] font-medium text-amber-200/90 bg-slate-950/85 border border-amber-500/30 px-2.5 py-1 rounded-lg backdrop-blur-md">
+                  {dossier.dangerLabel}
+                </span>
+                <div
+                  className="flex items-center gap-1 px-2.5 py-1 rounded-lg bg-slate-950/85 border border-rose-500/30 backdrop-blur-md"
+                  title={dossier.dangerLabel}
+                >
+                  {[1, 2, 3, 4, 5].map((lvl) => (
+                    <Skull
+                      key={lvl}
+                      className={`w-3.5 h-3.5 ${
+                        lvl <= dossier.dangerLevel
+                          ? 'text-rose-400 fill-rose-500/30 drop-shadow-[0_0_6px_rgba(244,63,94,0.6)]'
+                          : 'text-slate-700'
+                      }`}
+                    />
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
 
-          {/* Folklore & Historical Context */}
-          <div className="space-y-3">
-            <div className="flex items-center gap-2 text-sm font-semibold text-amber-300">
-              <Sparkles className="w-4 h-4" />
+          {/* 2. Physical & Paranormal Dossier Specifications (ประเภท, เพศ, ขนาด, น้ำหนัก, ถิ่นอาศัย, เวลาพบ) */}
+          <div className="rounded-2xl bg-[#09101b]/90 border border-amber-500/25 p-4 shadow-inner">
+            <div className="flex items-center justify-between border-b border-slate-800/90 pb-2.5 mb-3">
+              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-amber-300 font-grimoire">
+                <ScrollText className="w-4 h-4 text-amber-400" />
+                <span>
+                  {language === 'th'
+                    ? 'แฟ้มข้อมูลจำเพาะสิ่งลี้ลับ (Entity Dossier)'
+                    : 'Paranormal Entity Specifications'}
+                </span>
+              </div>
+              <span className="text-[10px] font-mono text-emerald-400/80">
+                ARCHIVE VERIFIED
+              </span>
+            </div>
+
+            <div className="grid grid-cols-2 gap-2.5 text-xs">
+              {/* ประเภท (Type / Classification) */}
+              <div className="col-span-2 p-2.5 rounded-xl bg-slate-950/70 border border-slate-800/80 flex items-start gap-2.5">
+                <Compass className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-[10px] uppercase tracking-wider text-slate-400">
+                    {language === 'th' ? 'ประเภท / สายพันธุ์ (Classification)' : 'Classification / Type'}
+                  </p>
+                  <p className="font-semibold text-emerald-200 mt-0.5">
+                    {dossier.entityType}
+                  </p>
+                </div>
+              </div>
+
+              {/* เพศ (Gender) */}
+              <div className="p-2.5 rounded-xl bg-slate-950/70 border border-slate-800/80 flex items-start gap-2">
+                <UserCheck className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-[10px] uppercase tracking-wider text-slate-400">
+                    {language === 'th' ? 'เพศสภาพ (Gender)' : 'Gender'}
+                  </p>
+                  <p className="font-medium text-slate-200 mt-0.5">{dossier.gender}</p>
+                </div>
+              </div>
+
+              {/* ขนาด / ความสูง (Size) */}
+              <div className="p-2.5 rounded-xl bg-slate-950/70 border border-slate-800/80 flex items-start gap-2">
+                <Ruler className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-[10px] uppercase tracking-wider text-slate-400">
+                    {language === 'th' ? 'ขนาด / ความสูง (Size)' : 'Size / Stature'}
+                  </p>
+                  <p className="font-medium text-slate-200 mt-0.5">{dossier.size}</p>
+                </div>
+              </div>
+
+              {/* น้ำหนัก (Weight) */}
+              <div className="p-2.5 rounded-xl bg-slate-950/70 border border-slate-800/80 flex items-start gap-2">
+                <Scale className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-[10px] uppercase tracking-wider text-slate-400">
+                    {language === 'th' ? 'น้ำหนัก (Weight)' : 'Estimated Weight'}
+                  </p>
+                  <p className="font-medium text-slate-200 mt-0.5">{dossier.weight}</p>
+                </div>
+              </div>
+
+              {/* ช่วงเวลาปรากฏตัว (Active Hours) */}
+              <div className="p-2.5 rounded-xl bg-slate-950/70 border border-slate-800/80 flex items-start gap-2">
+                <Clock className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-[10px] uppercase tracking-wider text-slate-400">
+                    {language === 'th' ? 'เวลาปรากฏตัว (Active Hours)' : 'Active Hours'}
+                  </p>
+                  <p className="font-medium text-slate-200 mt-0.5">{dossier.activeHours}</p>
+                </div>
+              </div>
+
+              {/* ถิ่นอาศัย (Habitat) */}
+              <div className="col-span-2 p-2.5 rounded-xl bg-slate-950/70 border border-slate-800/80 flex items-start gap-2.5">
+                <MapPin className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-[10px] uppercase tracking-wider text-slate-400">
+                    {language === 'th' ? 'ถิ่นอาศัยและจุดพบบ่อย (Habitat)' : 'Primary Habitat & Haunting Ground'}
+                  </p>
+                  <p className="font-medium text-slate-200 mt-0.5">{dossier.habitat}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* 3. Physical Description & Manifestation Signs (รายละเอียดรูปลักษณ์และเอกลักษณ์) */}
+          <div className="space-y-2.5">
+            <div className="flex items-center gap-2 text-sm font-bold text-amber-300 font-grimoire tracking-wide">
+              <Eye className="w-4 h-4 text-amber-400" />
+              <span>
+                {language === 'th'
+                  ? 'รูปลักษณ์และอัตลักษณ์ที่พบเห็น (Description & Appearance)'
+                  : 'Physical Description & Manifestation Signs'}
+              </span>
+            </div>
+            <div className="p-4 rounded-2xl bg-[#09111c]/85 border border-amber-500/20 text-sm leading-relaxed text-slate-200 font-chronicle">
+              {dossier.appearanceDesc}
+            </div>
+          </div>
+
+          {/* 4. Expanded Story Narrative (เรื่องเล่าและบันทึกตำนานฉบับเต็ม) */}
+          <div className="space-y-2.5">
+            <div className="flex items-center gap-2 text-sm font-bold text-emerald-300 font-grimoire tracking-wide">
+              <BookOpen className="w-4 h-4 text-emerald-400" />
+              <span>{t.storyDetail}</span>
+            </div>
+            <div className="p-5 rounded-2xl bg-[#08121a]/90 border border-emerald-500/25 text-sm leading-7 text-slate-200 font-chronicle whitespace-pre-line first-letter:text-3xl first-letter:font-grimoire first-letter:font-bold first-letter:text-emerald-300 first-letter:mr-1.5 first-letter:float-left first-letter:leading-none">
+              {dossier.expandedStory}
+            </div>
+          </div>
+
+          {/* 5. Folklore & Historical Context */}
+          <div className="space-y-2.5">
+            <div className="flex items-center gap-2 text-sm font-bold text-amber-300 font-grimoire tracking-wide">
+              <Sparkles className="w-4 h-4 text-amber-400" />
               <span>{t.folkloreHistory}</span>
             </div>
-            <div className="p-4 rounded-2xl bg-slate-900/60 border border-slate-800/80 text-sm leading-relaxed text-slate-300">
+            <div className="p-4 rounded-2xl bg-slate-900/70 border border-slate-800/90 text-sm leading-relaxed text-slate-300 font-chronicle">
               {history}
             </div>
+          </div>
+
+          {/* 6. Ancient Taboos & Survival Warnings (ข้อห้ามและวิธีเอาชีวิตรอด) */}
+          <div className="rounded-2xl bg-rose-950/20 border border-rose-500/30 p-4 space-y-2.5">
+            <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-rose-300 font-grimoire">
+              <ShieldAlert className="w-4 h-4 text-rose-400" />
+              <span>
+                {language === 'th'
+                  ? 'ข้อห้ามโบราณและวิธีเอาชีวิตรอด (Taboos & Survival Rules)'
+                  : 'Ancient Taboos & Survival Protocol'}
+              </span>
+            </div>
+            <ul className="space-y-1.5 text-xs text-slate-300">
+              {dossier.omensAndTaboos.map((rule, idx) => (
+                <li key={idx} className="flex items-start gap-2">
+                  <span className="text-rose-400 font-bold mt-0.5">•</span>
+                  <span>{rule}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 
         {/* Footer */}
-        <div className="p-4 border-t border-slate-800/80 bg-slate-950/90 flex items-center justify-between text-xs text-slate-500">
-          <span>Lat: {pin.lat.toFixed(4)}, Lng: {pin.lng.toFixed(4)}</span>
+        <div className="relative px-6 py-3.5 border-t border-amber-500/20 bg-[#05080f] flex items-center justify-between text-xs text-slate-400">
+          <span className="font-mono text-[11px] text-amber-200/70">
+            LAT {pin.lat.toFixed(4)}° • LNG {pin.lng.toFixed(4)}°
+          </span>
           <button
             onClick={onClose}
-            className="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium transition-colors"
+            className="px-5 py-2 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/40 text-amber-200 font-semibold transition-all cursor-pointer"
           >
             {t.close}
           </button>

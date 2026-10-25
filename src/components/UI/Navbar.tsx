@@ -98,7 +98,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             alt="World of Mystery Logo"
             className="w-11 h-11 object-contain drop-shadow-[0_0_14px_rgba(16,185,129,0.65)] animate-pulse [animation-duration:4s]"
           />
-          <h1 className="text-lg md:text-xl font-bold text-white tracking-wide drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)]">
+          <h1 className="font-grimoire text-lg md:text-2xl font-bold text-amber-50 tracking-wider drop-shadow-[0_2px_12px_rgba(0,0,0,0.95)]">
             World of Mystery
           </h1>
         </div>

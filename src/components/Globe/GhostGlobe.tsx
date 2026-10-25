@@ -7,6 +7,7 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 setWorkerUrl('/maplibre-gl-worker.mjs');
 import type { GhostPin, SupportedLanguage } from '../../types/ghost';
 import { registerCloudMistProtocol } from './cloudMistLayer';
+import { getEntityDossier } from '../../lib/entityBestiary';
 
 // Shared world overview camera values, used both on init and when zooming out
 const WORLD_VIEW_CENTER: [number, number] = [100.5, 13.75]; // Centered on Thailand / Asia
@@ -555,42 +556,75 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
             />
           </svg>
 
-          {/* Clickable Magnetic Lock-On Pill right below the reticle when a pin is captured */}
-          {magnetTarget && (
-            <button
-              type="button"
-              onClick={() => {
-                onSelectPin(magnetTarget.pin);
-                flyToPin(magnetTarget.pin);
-              }}
-              className="pointer-events-auto absolute top-full mt-2 px-3.5 py-1.5 rounded-full bg-slate-950/90 border border-emerald-400/60 backdrop-blur-md shadow-[0_0_20px_rgba(16,185,129,0.45)] flex items-center gap-2 whitespace-nowrap hover:bg-emerald-950/80 hover:scale-105 transition-all cursor-pointer"
-            >
-              <span className="w-2 h-2 rounded-full bg-[#00ff88] animate-ping" />
-              <span className="text-xs font-semibold text-emerald-300">
-                {language === 'th' ? magnetTarget.pin.title_th : magnetTarget.pin.title_en}
-              </span>
-            </button>
-          )}
+          {/* Clickable Magnetic Lock-On Dossier Card with Miniature Creature Portrait */}
+          {magnetTarget && (() => {
+            const magnetDossier = getEntityDossier(magnetTarget.pin, language);
+            return (
+              <button
+                type="button"
+                onClick={() => {
+                  onSelectPin(magnetTarget.pin);
+                  flyToPin(magnetTarget.pin);
+                }}
+                className="pointer-events-auto absolute top-full mt-2.5 pl-2 pr-4 py-1.5 rounded-2xl bg-[#070c15]/95 border border-amber-400/50 backdrop-blur-xl shadow-[0_10px_30px_rgba(0,0,0,0.85),0_0_20px_rgba(16,185,129,0.4)] flex items-center gap-3 whitespace-nowrap hover:border-emerald-400 hover:scale-105 transition-all cursor-pointer text-left"
+              >
+                <div className="relative w-11 h-11 rounded-xl overflow-hidden border border-amber-400/50 shrink-0 bg-slate-900">
+                  <img
+                    src={magnetDossier.portraitUrl}
+                    alt={magnetTarget.pin.title_th}
+                    className="w-full h-full object-cover"
+                  />
+                  <span className="absolute bottom-0.5 right-0.5 w-2 h-2 rounded-full bg-[#00ff88] ring-1 ring-black animate-ping" />
+                </div>
+                <div className="min-w-0">
+                  <p className="font-grimoire text-sm font-bold text-amber-100 leading-tight">
+                    {language === 'th' ? magnetTarget.pin.title_th : magnetTarget.pin.title_en}
+                  </p>
+                  <p className="text-[11px] text-emerald-300/90 truncate max-w-[190px]">
+                    {magnetDossier.entityType}
+                  </p>
+                  <p className="text-[10px] text-slate-400">
+                    📍 {language === 'th' ? magnetTarget.pin.province_th : magnetTarget.pin.province_en}
+                  </p>
+                </div>
+              </button>
+            );
+          })()}
         </div>
       </div>
 
-      {/* Floating Tactical Tooltip on Pin Hover */}
-      {hoveredPin && (
-        <div
-          className="pointer-events-none fixed z-30 transform -translate-x-1/2 -translate-y-full mb-4 px-3.5 py-2 rounded-xl bg-slate-950/90 border border-emerald-400/60 backdrop-blur-md shadow-[0_0_20px_rgba(0,255,136,0.3)] animate-in fade-in duration-150"
-          style={{ left: hoveredPin.x, top: hoveredPin.y - 12 }}
-        >
-          <div className="flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-[#00ff88] animate-ping" />
-            <p className="font-bold text-sm text-[#00ff88]">
-              {language === 'th' ? hoveredPin.pin.title_th : hoveredPin.pin.title_en}
-            </p>
+      {/* Floating Tactical Tooltip with Miniature Creature Portrait on Pin Hover */}
+      {hoveredPin && (() => {
+        const hoverDossier = getEntityDossier(hoveredPin.pin, language);
+        return (
+          <div
+            className="pointer-events-none fixed z-30 transform -translate-x-1/2 -translate-y-full mb-4 pl-2.5 pr-4 py-2 rounded-2xl bg-[#070c15]/95 border border-amber-400/55 backdrop-blur-xl shadow-[0_12px_32px_rgba(0,0,0,0.85),0_0_22px_rgba(0,255,136,0.3)] flex items-center gap-3 animate-in fade-in duration-150"
+            style={{ left: hoveredPin.x, top: hoveredPin.y - 14 }}
+          >
+            <div className="relative w-12 h-12 rounded-xl overflow-hidden border border-amber-400/50 shrink-0 bg-slate-900">
+              <img
+                src={hoverDossier.portraitUrl}
+                alt={hoveredPin.pin.title_th}
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <div className="flex items-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-[#00ff88] animate-ping" />
+                <p className="font-grimoire font-bold text-sm text-amber-100">
+                  {language === 'th' ? hoveredPin.pin.title_th : hoveredPin.pin.title_en}
+                </p>
+              </div>
+              <p className="text-[11px] text-emerald-300/90 mt-0.5 max-w-[210px] truncate">
+                {hoverDossier.entityType}
+              </p>
+              <p className="text-[10px] text-slate-400 mt-0.5">
+                📍 {language === 'th' ? hoveredPin.pin.province_th : hoveredPin.pin.province_en} • {hoverDossier.size}
+              </p>
+            </div>
           </div>
-          <p className="text-xs text-slate-300 mt-0.5">
-            📍 {language === 'th' ? hoveredPin.pin.province_th : hoveredPin.pin.province_en}
-          </p>
-        </div>
-      )}
+        );
+      })()}
     </div>
   );
 };
