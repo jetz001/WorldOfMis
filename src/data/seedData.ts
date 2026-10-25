@@ -17,7 +17,7 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     story_en: 'A legendary vengeful spirit wearing a surgical mask who accosts pedestrians asking "Am I pretty?". Unmasking reveals her face mutilated from ear to ear with malicious shears.',
     folklore_history_th: 'ตำนานเมืองชื่อดังยุคโชวะ (ทศวรรษ 1970) ที่แพร่กระจายไปทั่วญี่ปุ่น จนโรงเรียนต้องจัดครูเดินส่งนักเรียนกลับบ้านเป็นกลุ่ม',
     folklore_history_en: 'A 1970s Japanese urban legend that spread nationwide panic, prompting schools to organize teacher-chaperoned student groups heading home.',
-    image_url: '/entities/pin-huldra.jpg',
+    image_url: '/entities/pin-kuchisake.jpg',
     sound_preset: 'whisper',
     views_count: 2450,
     is_published: 1,

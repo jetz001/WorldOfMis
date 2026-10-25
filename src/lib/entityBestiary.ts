@@ -472,7 +472,7 @@ export function getEntityDossier(
   const portraitUrl =
     pin.image_url ||
     custom?.customImage ||
-    buildGrimoirePortraitSvg(pin, archetype);
+    (pin.id ? `/entities/${pin.id}.jpg` : buildGrimoirePortraitSvg(pin, archetype));
 
   // 2. Codex ID
   const numHash = Math.abs(

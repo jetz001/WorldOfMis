@@ -13,9 +13,18 @@ const STORAGE_KEY = 'worldofmys_pins_local_cache';
  *   survive); the cached version of a seed pin wins over the seed.
  */
 function reconcileWithSeed(cachedPins: GhostPin[]): GhostPin[] {
+  const seedMap = new Map(INITIAL_GHOST_PINS.map((p) => [p.id, p]));
+  const reconciled = cachedPins.map((cached) => {
+    const seed = seedMap.get(cached.id);
+    const resolvedImg = cached.image_url || seed?.image_url || `/entities/${cached.id}.jpg`;
+    return {
+      ...cached,
+      image_url: resolvedImg,
+    };
+  });
   const cachedIds = new Set(cachedPins.map((p) => p.id));
   const missingFromCache = INITIAL_GHOST_PINS.filter((pin) => !cachedIds.has(pin.id));
-  return [...cachedPins, ...missingFromCache];
+  return [...reconciled, ...missingFromCache];
 }
 
 export async function fetchPins(): Promise<GhostPin[]> {

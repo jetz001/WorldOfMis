@@ -185,6 +185,24 @@ app.post('/upload', async (c) => {
   return c.json({ success: true, key, url: `/api/media/${key}` });
 });
 
+// 7.1 Serve Cloudflare R2 Media directly
+app.get('/media/:key', async (c) => {
+  const bucket = c.env.MEDIA_BUCKET;
+  if (!bucket) {
+    return c.text('Cloudflare R2 Bucket not bound', 500);
+  }
+  const key = c.req.param('key');
+  const object = await bucket.get(key);
+  if (!object) {
+    return c.text('Media not found in R2', 404);
+  }
+  const headers = new Headers();
+  object.writeHttpMetadata(headers);
+  headers.set('etag', object.httpEtag);
+  headers.set('cache-control', 'public, max-age=31536000, immutable');
+  return new Response(object.body, { headers });
+});
+
 // 8. RAG Vector Semantic Search API
 app.post('/rag-search', async (c) => {
   const db = c.env.DB;
