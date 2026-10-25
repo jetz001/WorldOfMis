@@ -230,7 +230,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                           <span className="text-base shrink-0 group-hover:scale-115 transition-transform duration-200">
                             {emoji}
                           </span>
-                          <span className="font-medium truncate leading-tight">
+                          <span className="font-medium leading-tight">
                             {text}
                           </span>
                         </button>

@@ -509,19 +509,19 @@ export function performVectorRagSearch(
 
 export const SUGGESTED_RAG_QUERIES = {
   th: [
-    '🌊 สัตว์ประหลาดในทะเลสาบและสายน้ำ',
-    '❄️ อสูรและผีร้ายในป่าหิมะ',
-    '🧛 แวมไพร์สูบเลือดและคำสาปโบราณ',
-    '💔 วิญญาณหญิงสาวและตำนานความรัก',
-    '🐉 พญานาคและสิ่งศักดิ์สิทธิ์ลี้ลับ',
-    '🏰 ตำนานผีและอาถรรพ์ในยุโรป',
+    '🌊 สัตว์ประหลาดและพรายน้ำ',
+    '❄️ อสูรและภูตผีในป่าหิมะ',
+    '🧛 แวมไพร์และคำสาปโบราณ',
+    '💔 วิญญาณและตำนานรักเศร้า',
+    '🐉 พญานาคและสิ่งศักดิ์สิทธิ์',
+    '🏰 ปราสาทและอาถรรพ์ยุโรป',
   ],
   en: [
-    '🌊 Aquatic monsters & lake spirits',
-    '❄️ Snow forest beasts & winter spirits',
-    '🧛 Vampires, blood & ancient curses',
-    '💔 Female ghosts & tragic love lore',
-    '🐉 Sacred Naga & guardian deities',
-    '🏰 Haunted castles & European myths',
+    '🌊 Water beasts & lake spirits',
+    '❄️ Snow forest beasts & spirits',
+    '🧛 Vampires & ancient curses',
+    '💔 Spirits & tragic love lore',
+    '🐉 Sacred Naga & deities',
+    '🏰 Haunted castles in Europe',
   ],
 };
