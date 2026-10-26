@@ -10154,14 +10154,14 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "First reported in 1955 and reaffirmed in 1972 when two Loveland police officers observed the creature climbing over a guardrail into the river.",
     "taboos_th": "หากเดินริมตลิ่งแม่น้ำลิตเติลไมอามียามค่ำคืนแล้วได้ยินเสียงกระโดดน้ำหนักๆ ห้ามส่องไฟฉายไล่ตามตัว",
     "taboos_en": "Do not illuminate shadowed riverbanks along Little Miami if heavy splashing echoes from under bridges.",
-    "image_url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/vhI6xuu0aqA/hqdefault.jpg",
     "sound_preset": "water_spirit",
     "views_count": 6,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/vhI6xuu0aqA/hqdefault.jpg",
         "title": "มนุษย์กบแห่งเลิฟแลนด์ (อมนุษย์สะเทินน้ำสะเทินบกแห่งโอไฮโอ)"
       },
       {
@@ -10191,14 +10191,14 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Burst into national prominence in 1988 after teen Christopher Davis suffered claw scratches across his car roof, followed by confirmed 14-inch three-toed mud tracks.",
     "taboos_th": "ห้ามจอดรถริมถนนตัดผ่านหนองน้ำสเคปออร์หลังพระอาทิตย์ตกดิน และห้ามลงไปสำรวจรอยเท้าในดงปรือ",
     "taboos_en": "Never halt a vehicle along Scape Ore Swamp after dusk, as clawed thrashing signals an impending ambush.",
-    "image_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/qALWoIj_Htg/hqdefault.jpg",
     "sound_preset": "jungle_curse",
     "views_count": 27,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/qALWoIj_Htg/hqdefault.jpg",
         "title": "มนุษย์กิ้งก่าแห่งหนองน้ำสเคปออร์ (อสูรเล็บยักษ์แห่งลีเคาน์ตี)"
       },
       {
@@ -10228,14 +10228,14 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "A morbid urban legend responsible for actual fatalities over decades as curious thrill-seekers traversed the dangerous 90-foot railway trestle.",
     "taboos_th": "ห้ามเดินขึ้นไปบนรางรถไฟโปปลิคเด็ดขาด และอย่าตอบรับเสียงผิวปากหรือเสียงกระซิบเรียกชื่อจากใต้สะพาน",
     "taboos_en": "Never step foot onto the elevated Pope Lick railway trestle; dismiss hypnotic vocal mimicry coming from the ravine.",
-    "image_url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/rxBi5Uy_-Cw/hqdefault.jpg",
     "sound_preset": "whisper",
     "views_count": 23,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/rxBi5Uy_-Cw/hqdefault.jpg",
         "title": "อสูรแพะแห่งทางรถไฟโปปลิค (ปีศาจสะกดจิตแห่งสะพานสูง)"
       },
       {
@@ -10265,14 +10265,14 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "First recorded on home security video in 2007 and verified in 2011 Yosemite footage, connected to Native American folklore regarding peaceful otherworldly travelers.",
     "taboos_th": "หากพบเห็นเงาสีขาวเดินข้ามสวนยามดึก ห้ามส่งเสียงตกใจหรือขว้างปาสิ่งของเข้าใส่ จงเฝ้ามองอย่างเงียบเชียบ",
     "taboos_en": "Do not chase or harass the walking white silhouettes; they move passively across terrestrial terrain without malice.",
-    "image_url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/Qc0C68U_r4U/hqdefault.jpg",
     "sound_preset": "creepy_wind",
     "views_count": 8,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/Qc0C68U_r4U/hqdefault.jpg",
         "title": "ไนท์ครอว์เลอร์แห่งเฟรสโน (อมนุษย์ขากางเกงขาวเร่ร่อน)"
       },
       {
@@ -10302,14 +10302,14 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Documented over a 25-hour window in April 1977 with independent, matching eyewitness sketches collected by cryptozoologist Loren Coleman.",
     "taboos_th": "หากขับรถผ่านถนนฟาร์มสตรีทกลางดึกแล้วเห็นดวงตาสีส้มส่องสะท้อนบนแนวกำแพงหิน ห้ามจอดรถลงไปดู",
     "taboos_en": "Never approach stone wall ridges along Farm Street if glowing orange eyes peek over the boulders.",
-    "image_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/cCRZ_fB15Pg/hqdefault.jpg",
     "sound_preset": "whisper",
     "views_count": 14,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/cCRZ_fB15Pg/hqdefault.jpg",
         "title": "โดเวอร์เดมอน (อสูรไร้ขนตาโตแห่งแมสซาชูเซตส์)"
       },
       {
@@ -10339,15 +10339,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Originating in Muscogee Creek tribal lore, sighted continuously since the 18th century by timber rafters and commercial fishermen.",
     "taboos_th": "ห้ามพายเรือคายัคลึกเข้าไปในร่องน้ำคดเคี้ยวของป่าชายเลนอัลตามฮายามน้ำลง",
     "taboos_en": "Refrain from solitary kayaking along tidal mudflats when serpentine wakes crest against the current.",
-    "image_url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/Yu0luISnI_M/hqdefault.jpg",
     "sound_preset": "water_spirit",
     "views_count": 13,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/Yu0luISnI_M/hqdefault.jpg",
         "title": "อัลตามฮา-ฮา (อสูรน้ำปากจระเข้แห่งแม่น้ำอัลตามฮา)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=Yu0luISnI_M",
+        "title": "Altamaha-ha: Georgia's Legendary River Monster | Altie Ballad & Cryptid Story!",
+        "thumbnail": "https://i.ytimg.com/vi/Yu0luISnI_M/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:35.320Z",
@@ -10370,15 +10376,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Part of deep Ozark folklore, supposedly encountered by frontiersman Daniel Boone and recorded in folk songs for over two centuries.",
     "taboos_th": "เมื่อตั้งแคมป์ในป่าโอซาร์กแล้วได้ยินเสียงหอนแหลมสูงก้องฟ้า ให้ดับไฟแคมป์และหลบในเต็นท์ทันที",
     "taboos_en": "Extinguish campfires immediately if a compound howl resembling human agony rolls off the mountain ridges.",
-    "image_url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/tGtpw1e9f5I/hqdefault.jpg",
     "sound_preset": "jungle_curse",
     "views_count": 11,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/tGtpw1e9f5I/hqdefault.jpg",
         "title": "โอซาร์กฮาวเลอร์ (อสูรคำรามขนดกเขางุ้มแห่งอาร์คันซอ)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=tGtpw1e9f5I",
+        "title": "Ozark Howler - Arkansas Urban Legend - Live the Scary Story 360 video",
+        "thumbnail": "https://i.ytimg.com/vi/tGtpw1e9f5I/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:35.993Z",
@@ -10401,15 +10413,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Encountered in October 1903 by high-standing town officials who formed an armed posse and fired upon it before it retreated into an abandoned coal mine shaft.",
     "taboos_th": "ห้ามเดินเข้าไปใกล้ปากปล่องเหมืองถ่านหินร้างของแวนมิเตอร์ในคืนเดือนมืด",
     "taboos_en": "Never linger near the abandoned brick and coal shafts of Van Meter when unearthly light beams illuminate the canopy.",
-    "image_url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/vLV-gGn5Y5g/hqdefault.jpg",
     "sound_preset": "creepy_wind",
     "views_count": 6,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/vLV-gGn5Y5g/hqdefault.jpg",
         "title": "แวนมิเตอร์วิสิเตอร์ (อสูรมีปีกปล่อยลำแสงแห่งไอโอวา)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=vLV-gGn5Y5g",
+        "title": "The Van Meter Visitor",
+        "thumbnail": "https://i.ytimg.com/vi/vLV-gGn5Y5g/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:36.587Z",
@@ -10432,15 +10450,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Derived from French werewolf legends brought to the bayou by French Canadian Acadian settlers, deeply ingrained in southern Louisiana identity.",
     "taboos_th": "หากถูกรูการูจ้องตา ห้ามเล่าเรื่องนี้ให้ใครฟังเป็นเวลา 101 วัน มิฉะนั้นคำสาปจะตกสู่ตนเองกลายเป็นรูการู",
     "taboos_en": "If you cross paths with the Rougarou, speak not a word for 101 days or the lycanthropic curse transfers to you.",
-    "image_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/5oUPXA98JsY/hqdefault.jpg",
     "sound_preset": "jungle_curse",
     "views_count": 18,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/5oUPXA98JsY/hqdefault.jpg",
         "title": "รูการู (มนุษย์หมาป่าแห่งบึงเคจุนและหนองน้ำหลุยเซียน่า)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=5oUPXA98JsY",
+        "title": "Rougarou: The Werewolf Curse From the Louisiana Bayou",
+        "thumbnail": "https://i.ytimg.com/vi/5oUPXA98JsY/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:37.127Z",
@@ -10463,15 +10487,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Recorded in Ojibwe lore and formally investigated by scientists following a prominent 1962 sighting captured on black-and-white film.",
     "taboos_th": "ห้ามแล่นเรือเล็กข้ามแนวร่องน้ำลึกของทะเลสาบแมนิโทบายามมีหมอกหนาปกคลุม",
     "taboos_en": "Avoid solitary boating over deep glacier troughs of Lake Manitoba when rolling wakes appear without wind.",
-    "image_url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/Vdi0VDs8qfU/hqdefault.jpg",
     "sound_preset": "water_spirit",
     "views_count": 23,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/Vdi0VDs8qfU/hqdefault.jpg",
         "title": "มานิโปโก (อสูรน้ำคอยาวแห่งทะเลสาบแมนิโทบา)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=Vdi0VDs8qfU",
+        "title": "Manipogo: What Lurks Beneath Lake Manitoba?",
+        "thumbnail": "https://i.ytimg.com/vi/Vdi0VDs8qfU/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:37.579Z",
@@ -10494,15 +10524,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Associated with the gruesome decapitations of prospectors in the 1900s, theorized to be a surviving Amphicyonid (bear-dog).",
     "taboos_th": "ห้ามก้าวล่วงลึกเข้าไปในหุบเขานาฮันนีเพียงลำพัง และอย่านอนพักใต้หน้าผาหินปูนที่มีรอยเท้าหมาป่าขนาดสองเท่าปกติ",
     "taboos_en": "Never venture unguided into Headless Valley; giant single pawprints signify immediate predatory tracking.",
-    "image_url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/Ck0_o_kThQg/hqdefault.jpg",
     "sound_preset": "creepy_wind",
     "views_count": 7,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/Ck0_o_kThQg/hqdefault.jpg",
         "title": "วาฮีลา (หมาป่ายักษ์สีขาวแห่งหุบเขาไร้หัว)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=Ck0_o_kThQg",
+        "title": "Mystical Cryptids - The Waheela, Saber Wolf or Dire Wolf?",
+        "thumbnail": "https://i.ytimg.com/vi/Ck0_o_kThQg/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:38.119Z",
@@ -10525,15 +10561,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "A durable Midwestern urban legend claiming children with hydrocephalus escaped into the dense woods following the burning of an eccentric orphanage.",
     "taboos_th": "ห้ามดับเครื่องยนต์บนถนนวิสเปอร์ลิงไฮทส์กลางดึก หากได้ยินเสียงเคาะรอบตัวถังรถให้เหยียบคันเร่งออกไปทันที",
     "taboos_en": "Never cut ignition along wooded Kirtland turns if tapping knuckles rattle against rear hubcaps.",
-    "image_url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/fyZVB4WaM0w/hqdefault.jpg",
     "sound_preset": "whisper",
     "views_count": 26,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/fyZVB4WaM0w/hqdefault.jpg",
         "title": "มนุษย์หัวแตงโมแห่งเคิร์ตแลนด์ (ตำนานเด็กต้องสาปในป่าลึก)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=fyZVB4WaM0w",
+        "title": "Melonheads | Mysteries of Kirtland Ohio",
+        "thumbnail": "https://i.ytimg.com/vi/fyZVB4WaM0w/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:38.637Z",
@@ -10556,15 +10598,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Triggered a massive organized hunt in 1939 involving state troopers and hunting hounds across Connecticut woodlands.",
     "taboos_th": "หากได้ยินเสียงผู้หญิงกรีดร้องโหยหวนในดงไม้หลังบ้านยามดึก ห้ามเปิดประตูออกไปตามหาเสียง",
     "taboos_en": "Never investigate human-sounding shrieks resonating from Glastonbury apple orchards after dark.",
-    "image_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/rtwWDFb3vtw/hqdefault.jpg",
     "sound_preset": "jungle_curse",
     "views_count": 24,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/rtwWDFb3vtw/hqdefault.jpg",
         "title": "กลาวาคัส (อสูรแมวยักษ์กรีดร้องแห่งกลาสตันเบอรี)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=rtwWDFb3vtw",
+        "title": "Cryptids and Monsters:  \"The Glastonbury Glawackus\", a user's experience at a Summer Camp!!",
+        "thumbnail": "https://i.ytimg.com/vi/rtwWDFb3vtw/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:39.094Z",
@@ -10587,15 +10635,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Induced mass hysteria in January 1954 drawing thousands of armed hunters into North Carolina swamps before abruptly vanishing.",
     "taboos_th": "ห้ามปล่อยสุนัขหรือสัตว์เลี้ยงไว้นอกบ้านยามค่ำคืนในแถบเบลดเดนเคาน์ตี",
     "taboos_en": "Keep domestic hounds indoor when silence falls across the low pine swamps of Bladen County.",
-    "image_url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/avxfOBLjtsI/hqdefault.jpg",
     "sound_preset": "whisper",
     "views_count": 11,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/avxfOBLjtsI/hqdefault.jpg",
         "title": "สัตว์ร้ายแห่งเบลดเดนโบโร (แวมไพร์ลึกลับดูดเลือดสัตว์)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=avxfOBLjtsI",
+        "title": "The Beast of Bladenboro",
+        "thumbnail": "https://i.ytimg.com/vi/avxfOBLjtsI/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:39.735Z",
@@ -10618,15 +10672,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "First cataloged in 1910 by William T. Cox, representing one of the most uniquely melancholic critters in North American folklore.",
     "taboos_th": "ห้ามพยายามไล่ต้อนหรือจับสควองค์ใส่ถุง เพราะมันจะละลายตัวสูญสลายไปในพริบตา",
     "taboos_en": "Do not corner a weeping Squonk; stressful entrapment triggers instantaneous liquefaction into salty tears.",
-    "image_url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/hyE1iSQpJIU/hqdefault.jpg",
     "sound_preset": "whisper",
     "views_count": 6,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/hyE1iSQpJIU/hqdefault.jpg",
         "title": "สควองค์ (อสูรขี้แยผู้อัปลักษณ์แห่งป่าเพนซิลเวเนีย)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=hyE1iSQpJIU",
+        "title": "The Heartbreaking Legend of Pennsylvania's Squonk",
+        "thumbnail": "https://i.ytimg.com/vi/hyE1iSQpJIU/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:40.235Z",
@@ -10649,15 +10709,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Invented or captured in 1893 by timber cruiser Eugene Shepard, evolving into a foundational icon of Great Lakes folklore.",
     "taboos_th": "เมื่อเดินป่าสนไรน์แลนเดอร์ยามเช้ามืด ให้ระวังหลุมโคลนที่มีควันกำมะถันกรุ่นขึ้นมา",
     "taboos_en": "Approach hollowed hemlock stumps with caution when pungent sulfur vapors permeate the frosty air.",
-    "image_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/4lTxUpyHTTk/hqdefault.jpg",
     "sound_preset": "jungle_curse",
     "views_count": 24,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/4lTxUpyHTTk/hqdefault.jpg",
         "title": "โฮแดก (อสูรมีเขาหนามและกลิ่นกำมะถันแห่งวิสคอนซิน)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=4lTxUpyHTTk",
+        "title": "Wisconsin's Fearsome Beast | The Hodag",
+        "thumbnail": "https://i.ytimg.com/vi/4lTxUpyHTTk/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:40.789Z",
@@ -10680,15 +10746,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Traced to Native American Iroquois folklore describing an ancient river behemoth lurking below sandbars and gravel shoals.",
     "taboos_th": "ห้ามทอดสมอเรือตกปลาเหนือแอ่งน้ำวนลึกของแม่น้ำโมนอนกาฮีลาในยามพลบค่ำ",
     "taboos_en": "Do not anchor over murky river sinkholes if bubbling foam spirals upward without warning.",
-    "image_url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/0UyRwMhb1s8/hqdefault.jpg",
     "sound_preset": "water_spirit",
     "views_count": 12,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/0UyRwMhb1s8/hqdefault.jpg",
         "title": "โอกัว (อสูรเต่ายักษ์หุ้มเกราะแห่งแม่น้ำโมนอนกาฮีลา)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=0UyRwMhb1s8",
+        "title": "WEST VIRGINIA CRYPTIDS UNCOVERED | FULL DOCUMENTARY",
+        "thumbnail": "https://i.ytimg.com/vi/0UyRwMhb1s8/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:41.358Z",
@@ -10711,15 +10783,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Gained modern regional notoriety across southwestern West Virginia during waves of sightings in 1994 and 1995.",
     "taboos_th": "หากพบกระจุกขนสีขาวติดอยู่บนกิ่งไม้สูงกว่าสองเมตรในป่าบูน ให้รีบเดินย้อนกลับทางเดิมทันที",
     "taboos_en": "Turn back if coarse white wool tufts are found snagged on elevated tree limbs above six feet.",
-    "image_url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/yDq7103ehWs/hqdefault.jpg",
     "sound_preset": "jungle_curse",
     "views_count": 7,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/yDq7103ehWs/hqdefault.jpg",
         "title": "ชีปสควอตช์ (อสูรขนแกะขาวสองขาแห่งเวสต์เวอร์จิเนีย)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=yDq7103ehWs",
+        "title": "Danger In The Appalachia Mountains: Mothman & Other Terrifying Cryptids",
+        "thumbnail": "https://i.ytimg.com/vi/yDq7103ehWs/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:41.996Z",
@@ -10742,15 +10820,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Triggered the famous 1949 hunt involving lake drainage pumps and deep-sea divers, celebrated annually at the Churubusco Turtle Days Festival.",
     "taboos_th": "ห้ามหย่อนเท้าลงแช่ในทะเลสาบฟูลก์ขณะนั่งบนสะพานไม้",
     "taboos_en": "Never dangle legs from wooden docks into the green weed beds of Fulk Lake.",
-    "image_url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/WbKUWp7kzXQ/hqdefault.jpg",
     "sound_preset": "water_spirit",
     "views_count": 28,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/WbKUWp7kzXQ/hqdefault.jpg",
         "title": "ออสการ์ อสูรเต่ายักษ์แห่งชูรูบัสโก (บีสต์ออฟบุสโก)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=WbKUWp7kzXQ",
+        "title": "Cryptid Documentary That Terrified a Generation | The Mysterious Monsters | Full Documentary",
+        "thumbnail": "https://i.ytimg.com/vi/WbKUWp7kzXQ/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:42.653Z",
@@ -10773,15 +10857,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Escaped from the experimental US Camel Corps, turning into a grim desert ghost legend until it was shot by rancher Mizoo Hastings in 1893.",
     "taboos_th": "หากได้ยินเสียงฝีเท้าอูฐควบตะลุยกลางทะเลทรายแอริโซนายามค่ำ ห้ามโผล่ศีรษะออกจากที่พัก",
     "taboos_en": "Do not step outside desert tents if heavy hoofbeats trample through cactus groves under moonlight.",
-    "image_url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/TZhbyGT0qdI/hqdefault.jpg",
     "sound_preset": "creepy_wind",
     "views_count": 25,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/TZhbyGT0qdI/hqdefault.jpg",
         "title": "เรดโกสต์แห่งแอริโซนา (อูฐผีสิงและโครงกระดูกบนหลัง)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=TZhbyGT0qdI",
+        "title": "The Legend of the Red Ghost: Arizona’s Haunted Camel",
+        "thumbnail": "https://i.ytimg.com/vi/TZhbyGT0qdI/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:43.284Z",
@@ -10804,15 +10894,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "A prominent moral warning specter in Venezuelan and Colombian folklore protecting matrimonial fidelity.",
     "taboos_th": "ห้ามผู้ชายเกี้ยวพาราสีสตรีชุดขาวที่เดินอยู่ริมทางเปลี่ยวยามดึก และจงซื่อสัตย์ต่อคู่ครอง",
     "taboos_en": "Never proposition lone maidens dressed in white along nocturnal roads.",
-    "image_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/wIBqooTrcvg/hqdefault.jpg",
     "sound_preset": "whisper",
     "views_count": 23,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/wIBqooTrcvg/hqdefault.jpg",
         "title": "ลาซาโยนา (วิญญาณสตรีชุดขาวผู้แก้แค้นคนนอกใจ)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=wIBqooTrcvg",
+        "title": "LA LEYENDA DE LA SAYONA - LEYENDAS VENEZOLANAS",
+        "thumbnail": "https://i.ytimg.com/vi/wIBqooTrcvg/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:43.946Z",
@@ -10835,15 +10931,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Traced to indigenous Maya folklore where the woman Sihuehuet was cursed by the god Tlaloc for child neglect, turning into an eternal wanderer.",
     "taboos_th": "หากพบหญิงสาวกำลังสระผมริมลำธารยามดึก ให้กัดมีดเหล็กหรือทำเครื่องหมายกางเขนบนพื้นดินแล้วรีบเดินหนี",
     "taboos_en": "Bite upon cold iron or make a holy sign in the dirt if a maiden bathes her black tresses in moonlit streams.",
-    "image_url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/LdO6ZnBuM34/hqdefault.jpg",
     "sound_preset": "whisper",
     "views_count": 20,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/LdO6ZnBuM34/hqdefault.jpg",
         "title": "ลาซิกวานาบา (นางพรายแปลงกายใบหน้าม้าแห่งอเมริกากลาง)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=LdO6ZnBuM34",
+        "title": "Exploring Myths & Legends of El Salvador: The Enigmatic Siguanaba👻 #elsalvador",
+        "thumbnail": "https://i.ytimg.com/vi/LdO6ZnBuM34/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:44.576Z",
@@ -10866,15 +10968,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "One of the seven monstrous legendary children of Tau and Kerana in Guarani mythology, embodying the danger of tropical midday heat.",
     "taboos_th": "ห้ามเด็กๆ ออกไปวิ่งเล่นนอกเรือนในช่วงเวลาบ่ายจัด และหากพบเห็นเศษรังผึ้งป่าหล่นอยู่ริมทาง ห้ามก้มเก็บ",
     "taboos_en": "Children must observe strict indoor rest during the midday siesta; do not follow honeyed bird calls into deep brush.",
-    "image_url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/L9xHmALO7oU/hqdefault.jpg",
     "sound_preset": "jungle_curse",
     "views_count": 26,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/L9xHmALO7oU/hqdefault.jpg",
         "title": "ยาซี ยาเตเร (ภูตจิ๋วผมทองเป่านกหวีดล่อลวงเด็กแห่งปารากวัย)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=L9xHmALO7oU",
+        "title": "Jasy Jatere: The Myth That Reveals the Danger of Distraction",
+        "thumbnail": "https://i.ytimg.com/vi/L9xHmALO7oU/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:45.251Z",
@@ -10897,15 +11005,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Deeply rooted in Mapuche tribal culture; only a female shaman (Machi) possessed the spiritual rituals capable of dispelling a resident Peuchen.",
     "taboos_th": "หากมองขึ้นไปบนกิ่งไม้ใหญ่แล้วสบตากับดวงตาสีแดงที่จ้องลงมา ห้ามหยุดนิ่ง ให้รีบยกแขนปิดบังสายตาทันที",
     "taboos_en": "Avert your eyes instantly if two crimson embers glint from high Araucaria branches to break its paralyzing trance.",
-    "image_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/p2WDGQrCNww/hqdefault.jpg",
     "sound_preset": "jungle_curse",
     "views_count": 14,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/p2WDGQrCNww/hqdefault.jpg",
         "title": "เปวเชน (อสรพิษมีปีกดูดเลือดแห่งป่าชิลี)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=p2WDGQrCNww",
+        "title": "La Memoria Encantada. Capítulo El Piuchén",
+        "thumbnail": "https://i.ytimg.com/vi/p2WDGQrCNww/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:45.775Z",
@@ -10928,15 +11042,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Feared across Mapuche and Chilote folk tradition, often conceptualized as a freshwater ray-like creature mutated in glacial mountain lakes.",
     "taboos_th": "ห้ามลงเล่นน้ำในทะเลสาบที่มีผืนวัตถุสีน้ำตาลลอยนิ่งอยู่ใต้ผิวน้ำคล้ายพรม",
     "taboos_en": "Never wade into still Patagonian lakes where floating leather-like shadows linger beneath the reed line.",
-    "image_url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/950g8zT3QC0/hqdefault.jpg",
     "sound_preset": "water_spirit",
     "views_count": 16,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/950g8zT3QC0/hqdefault.jpg",
         "title": "เอลกูเอโร (ปีศาจหนังวัวดูดเหยื่อใต้ทะเลสาบชิลี)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=950g8zT3QC0",
+        "title": "CUENTA LA LEYENDA - El Cuero",
+        "thumbnail": "https://i.ytimg.com/vi/950g8zT3QC0/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:46.378Z",
@@ -10959,15 +11079,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Spawned a unique national custom where the President of Paraguay traditionally becomes the godfather of seventh consecutive sons to ward off the curse.",
     "taboos_th": "ห้ามเดินตัดผ่านสุสานในคืนวันอังคารและวันศุกร์ที่มีพระจันทร์เต็มดวง และห้ามแตะต้องหลุมศพที่ดินพังทลายใหม่ๆ",
     "taboos_en": "Avoid solitary churchyard paths during full-moon Tuesdays and Fridays when the stench of fresh rot hangs low.",
-    "image_url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/00uVXGSXESQ/hqdefault.jpg",
     "sound_preset": "creepy_wind",
     "views_count": 29,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/00uVXGSXESQ/hqdefault.jpg",
         "title": "ลุยซอน (อสูรหมาป่าเฝ้าสุสานและกินซากศพแห่งปารากวัย)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=00uVXGSXESQ",
+        "title": "El Luisón: la maldición del séptimo hijo que Paraguay aún teme",
+        "thumbnail": "https://i.ytimg.com/vi/00uVXGSXESQ/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:46.908Z",
@@ -10990,15 +11116,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Pre-Columbian folklore surviving Spanish colonization; fishermen still place gifts of tobacco, salt, and aguardiente on river stones to secure safe voyages.",
     "taboos_th": "หญิงสาวห้ามไปซักผ้าคนเดียวริมแม่น้ำยามพลบค่ำ และชาวประมงต้องวางซิการ์เซ่นไหว้ก่อนทอดแห",
     "taboos_en": "Maidens must never wash linen alone at twilight; always offer tobacco leaves before casting nets into whirlpool bends.",
-    "image_url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/vzApj15eB-A/hqdefault.jpg",
     "sound_preset": "water_spirit",
     "views_count": 24,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/vzApj15eB-A/hqdefault.jpg",
         "title": "เอลโมฮัน (พรายน้ำเคราดกสูบยาเส้นแห่งแม่น้ำมักดาเลนา)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=vzApj15eB-A",
+        "title": "El mohan o Poira",
+        "thumbnail": "https://i.ytimg.com/vi/vzApj15eB-A/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:47.439Z",
@@ -11021,15 +11153,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "A famous Guatemalan nocturnal legend; maidens seduced by his melodies waste away unless they shear off their beloved hair to break his obsession.",
     "taboos_th": "หากเช้าขึ้นมาพบว่าแผงคอม้าในคอกถูกถักเป็นเปียแน่นหนา ให้รีบตัดผมหญิงสาวในบ้านทันที",
     "taboos_en": "If horse manes are found braided into intricate knots at sunrise, cut the hair of maidens in the homestead.",
-    "image_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/B1wDiR_RyM8/hqdefault.jpg",
     "sound_preset": "whisper",
     "views_count": 12,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/B1wDiR_RyM8/hqdefault.jpg",
         "title": "เอลซอมเบรรอน (ภูตแคระสวมหมวกปีกกว้างผู้ถักเปียยามราตรี)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=B1wDiR_RyM8",
+        "title": "la leyenda de El sombreron",
+        "thumbnail": "https://i.ytimg.com/vi/B1wDiR_RyM8/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:48.079Z",
@@ -11052,15 +11190,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Recorded in the expedition journals of Colonel Percy Fawcett before his mysterious disappearance in the Mato Grosso wilderness.",
     "taboos_th": "ห้ามรุกล้ำเข้าไปในอาณาเขตป่าที่มีลูกธนูไม้ไผ่หัวทู่ปักเตือนไว้บนพื้นดิน",
     "taboos_en": "Withdraw immediately if heavy bamboo arrows without fletching are found stuck into trail clearings.",
-    "image_url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/mH5Ve0JT8yA/hqdefault.jpg",
     "sound_preset": "jungle_curse",
     "views_count": 17,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/mH5Ve0JT8yA/hqdefault.jpg",
         "title": "มาริโคซี (มนุษย์วานรยักษ์ติดธนูแห่งแอมะซอน)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=mH5Ve0JT8yA",
+        "title": "Maricoxi - Tribu salvaje del Amazonas - Criptozoología",
+        "thumbnail": "https://i.ytimg.com/vi/mH5Ve0JT8yA/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:48.562Z",
@@ -11083,15 +11227,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Documented by naturalist Fritz Müller in the 1870s, debated among zoologists as a surviving prehistoric titanoboa or giant caecilian.",
     "taboos_th": "หากพื้นดินใต้ฝ่าเท้าสั่นสะเทือนและมีเสียงคำรามใต้หิน ให้รีบวิ่งขึ้นสู่ที่สูงที่มีชั้นหินแกรนิตแข็งแกร่ง",
     "taboos_en": "Flee to solid bedrock ridge-lines if the forest floor heaves upward with subterranean grinding noises.",
-    "image_url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/ikR4xuBaLwM/hqdefault.jpg",
     "sound_preset": "jungle_curse",
     "views_count": 29,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/ikR4xuBaLwM/hqdefault.jpg",
         "title": "มินโฮเกา (อสูรไส้เดือนยักษ์เกล็ดดำขุดโพรงใต้พิภพ)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=ikR4xuBaLwM",
+        "title": "O MINHOCÃO: O Monstro Pré-Histórico que Habita os Rios Brasileiros (Documentário)",
+        "thumbnail": "https://i.ytimg.com/vi/ikR4xuBaLwM/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:49.154Z",
@@ -11114,15 +11264,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Directly gave rise to the iconic carved wooden figureheads called 'Carrancas' carved onto the prows of riverboats to frighten it away.",
     "taboos_th": "ห้ามแล่นเรือในแม่น้ำเซาฟรังซีสกูโดยไม่มีหัวเรือคารังกัสคุ้มกัน และควรทิ้งใบยาสูบลงน้ำเพื่อขอทาง",
     "taboos_en": "Never pilot wooden river barges without a protective Carranca figurehead mounted to the bow.",
-    "image_url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/9YmfhXafwLQ/hqdefault.jpg",
     "sound_preset": "water_spirit",
     "views_count": 11,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/9YmfhXafwLQ/hqdefault.jpg",
         "title": "คาโบกลูดากวา (พรายน้ำทองแดงตาเดียวแห่งแม่น้ำเซาฟรังซีสกู)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=9YmfhXafwLQ",
+        "title": "A lenda do Caboclo D'Água - FOLCLORE BRASILEIRO",
+        "thumbnail": "https://i.ytimg.com/vi/9YmfhXafwLQ/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:49.625Z",
@@ -11145,15 +11301,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Rooted in tribal traditions of Maranhao, viewed as the horrific outcome of elderly hermits transformed through dark forest spirits.",
     "taboos_th": "จุดอ่อนเดียวของคาเปโลโบคือสะดือ หากเผชิญหน้าให้เล็งยิงหรือแทงเข้าที่กึ่งกลางหน้าท้องเท่านั้น",
     "taboos_en": "The only lethal vulnerability of the Capelobo is its navel; standard arrows cannot pierce its reinforced hide.",
-    "image_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/vaZBrREz-7Q/hqdefault.jpg",
     "sound_preset": "jungle_curse",
     "views_count": 26,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/vaZBrREz-7Q/hqdefault.jpg",
         "title": "คาเปโลโบ (อสูรหน้าตัวกินมดกึ่งมนุษย์ดูดสมอง)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=vaZBrREz-7Q",
+        "title": "El Legendario Monstruo de Brasil, el CAPELOBO",
+        "thumbnail": "https://i.ytimg.com/vi/vaZBrREz-7Q/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:50.167Z",
@@ -11176,15 +11338,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Centuries-old Guarani entity revered across northern Argentina; rustic rural homes leave gifts of honey and tobacco to secure nocturnal protection.",
     "taboos_th": "ห้ามผิวปากในป่ายามค่ำคืนเพราะเป็นการท้าทายปอมเบโร และอย่ายิงนกหากไม่ได้ล่าเพื่อเป็นอาหารประทังชีวิต",
     "taboos_en": "Never imitate whistling calls in the woods; kill only what you consume, or face the wrath of El Pombero.",
-    "image_url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/5Gh567_Y00g/hqdefault.jpg",
     "sound_preset": "jungle_curse",
     "views_count": 11,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/5Gh567_Y00g/hqdefault.jpg",
         "title": "เอลปอมเบโร (ภูตแคระขนดกผู้พิทักษ์ป่าแห่งชาวกวารานี)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=5Gh567_Y00g",
+        "title": "El Pombero | Mitos y Leyendas del Paraguay",
+        "thumbnail": "https://i.ytimg.com/vi/5Gh567_Y00g/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:50.689Z",
@@ -11207,15 +11375,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Celebrated in Colombian coastal culture with an annual festival and monument in the municipality of Plato, immortalized in Caribbean cumbia folk songs.",
     "taboos_th": "ห้ามขว้างก้อนหินใส่จระเข้ที่ลอยนิ่งจ้องมองมนุษย์ด้วยสายตาเศร้าสร้อยริมตลิ่งเมืองเพลาโต",
     "taboos_en": "Do not cast stones at solitary caimans that observe riverbanks with melancholic, human-like eyes.",
-    "image_url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/uKpHPWWK26g/hqdefault.jpg",
     "sound_preset": "water_spirit",
     "views_count": 14,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/uKpHPWWK26g/hqdefault.jpg",
         "title": "อมนุษย์จระเข้แห่งเพลาโต (โฮมเบรไกมันแห่งแม่น้ำมักดาเลนา)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=uKpHPWWK26g",
+        "title": "“The Legend of the Alligator Man 🐊 | A Magical Colombian Story for Kids”.",
+        "thumbnail": "https://i.ytimg.com/vi/uKpHPWWK26g/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:51.305Z",
@@ -11238,15 +11412,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Extensively investigated by the Society for Psychical Research and chronicled in Colin Wilson's classic paranormal case studies.",
     "taboos_th": "ห้ามพักค้างคืนในห้องนอนชั้นสองของบ้านเลขที่ 30 อีสต์ไดรฟ์คนเดียว และห้ามดับไฟหากได้ยินเสียงฝีเท้าหนักๆ บนบันได",
     "taboos_en": "Never sleep alone on the second floor of 30 East Drive; keep lights illuminated if dragging noises echo on stairs.",
-    "image_url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/jDJOaDw-S2A/hqdefault.jpg",
     "sound_preset": "creepy_wind",
     "views_count": 13,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/jDJOaDw-S2A/hqdefault.jpg",
         "title": "แบล็กมองค์แห่งพอนเตแฟรกต์ (โพลเตอร์ไกสต์บ้านเลขที่ 30)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=jDJOaDw-S2A",
+        "title": "Britain's Most VIOLENT Poltergeist | The Black Monk [FULL Paranormal Horror Documentary]",
+        "thumbnail": "https://i.ytimg.com/vi/jDJOaDw-S2A/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:51.872Z",
@@ -11269,15 +11449,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "First publicly disclosed in 1925 by renowned scientist Professor J. Norman Collie, verified by numerous members of the Scottish Mountaineering Club.",
     "taboos_th": "หากเดินอยู่บนที่ราบสูงเบนแมคดูอีแล้วได้ยินเสียงฝีเท้าหนักๆ เดินตามหลังจังหวะสม่ำเสมอ ให้รีบเดินลงจากยอดเขาโดยไม่หันหลังกลับไปมอง",
     "taboos_en": "Descend the granite scree immediately if synchronized heavy footsteps crunch behind you through the freezing mist.",
-    "image_url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/UmcMZLWN78E/hqdefault.jpg",
     "sound_preset": "creepy_wind",
     "views_count": 27,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/UmcMZLWN78E/hqdefault.jpg",
         "title": "บุรุษสีเทาแห่งยอดเขาเบนแมคดูอี (อสูรหมอกแห่งสก็อตแลนด์)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=UmcMZLWN78E",
+        "title": "Daddies Mythos | Am Fear Liath Mòr | The Big Grey Man of Ben Macdui",
+        "thumbnail": "https://i.ytimg.com/vi/UmcMZLWN78E/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:52.474Z",
@@ -11300,15 +11486,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Sighted over 30 times since 1887 and formally investigated by the Loch Ness Investigation Bureau following an aggressive physical boat collision in 1969.",
     "taboos_th": "ห้ามทิ้งสมอเรือในร่องน้ำลึกตอนกลางของทะเลสาบมอราร์ในวันที่ผิวน้ำนิ่งสนิท",
     "taboos_en": "Avoid drifting over deep trenches of Loch Morar if sudden concentric surface waves erupt on calm waters.",
-    "image_url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/UbNt_NgGBcc/hqdefault.jpg",
     "sound_preset": "water_spirit",
     "views_count": 10,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/UbNt_NgGBcc/hqdefault.jpg",
         "title": "มอแร็ก (อสูรน้ำแห่งทะเลสาบมอราร์ ทะเลสาบน้ำจืดที่ลึกที่สุด)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=UbNt_NgGBcc",
+        "title": "Morag Daughter of Donald: Haunted by the Daoine Sìth (Scottish Folklore)",
+        "thumbnail": "https://i.ytimg.com/vi/UbNt_NgGBcc/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:53.029Z",
@@ -11331,15 +11523,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Derived from Norse troll myths softened by Celtic fairy beliefs; traditional Shetland fiddle music still preserves melodies attributed to Trow tutelage.",
     "taboos_th": "ห้ามเดินเหยียบย่ำบนยอดเนินดินโบราณยามตะวันตกดิน และห้ามรับเครื่องดื่มจากคนแคระในถ้ำ",
     "taboos_en": "Never tread across grassy hollow knolls after sundown; refuse silver flagons offered from beneath the turf.",
-    "image_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/W5v8VDn57Mw/hqdefault.jpg",
     "sound_preset": "creepy_wind",
     "views_count": 12,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/W5v8VDn57Mw/hqdefault.jpg",
         "title": "เดอะโทรว (ภูตแคระนักดนตรีใต้ดินแห่งหมู่เกาะออร์คนีย์)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=W5v8VDn57Mw",
+        "title": "Spooky Shetland Part 1 - Trows",
+        "thumbnail": "https://i.ytimg.com/vi/W5v8VDn57Mw/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:53.499Z",
@@ -11362,15 +11560,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Died under mysterious circumstances in 1726 after being locked in her chambers, sighted by luminaries including King George IV.",
     "taboos_th": "ห้ามยืนจ้องบันไดใหญ่เรย์นแฮมฮอลล์หลังเที่ยงคืน หากได้ยินเสียงลากชายกระโปรงผ้าซาตินให้รีบถอยออกมา",
     "taboos_en": "Never linger at the foot of Raynham's oak staircase after midnight when faint rustling satin whispers along steps.",
-    "image_url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/GdJt6LRfXDk/hqdefault.jpg",
     "sound_preset": "whisper",
     "views_count": 16,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/GdJt6LRfXDk/hqdefault.jpg",
         "title": "เดอะบราวน์เลดี้แห่งเรย์นแฮมฮอลล์ (ภาพถ่ายวิญญาณบันไดไม้โอ๊ค)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=GdJt6LRfXDk",
+        "title": "The Story of The Brown Lady of Raynham Hall",
+        "thumbnail": "https://i.ytimg.com/vi/GdJt6LRfXDk/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:54.149Z",
@@ -11393,15 +11597,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Heavily featured across Rosslyn Chapel, embodying the synthesis of pre-Christian pagan vegetative gods and medieval Christian architecture.",
     "taboos_th": "เมื่อเข้าชมวิหารรอสลิน ห้ามเอื้อมมือสัมผัสใบหน้ากรีนแมนที่แกะสลักเหนือเสานักเรียนช่าง (Apprentice Pillar)",
     "taboos_en": "Do not touch stone carvings of the foliated head upon sacred cathedral arches with defiling intent.",
-    "image_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/tELXxxBhztU/hqdefault.jpg",
     "sound_preset": "temple_bell",
     "views_count": 18,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/tELXxxBhztU/hqdefault.jpg",
         "title": "เดอะกรีนแมน (บุรุษใบไม้สีเขียวแห่งวิหารยุคกลาง)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=tELXxxBhztU",
+        "title": "In Search of the Green Man | Documentary | History, Folklore & Myth | The TRUTH about Pagan Carving",
+        "thumbnail": "https://i.ytimg.com/vi/tELXxxBhztU/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:54.600Z",
@@ -11424,15 +11634,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "A quintessential Northern English nursery bogey used by generations of parents to prevent children from drowning in weed-choked canals.",
     "taboos_th": "ห้ามก้มหน้าชะโงกมองผิวน้ำที่ถูกปกคลุมด้วยแหนเป็ดหนาทึบโดยเด็ดขาด",
     "taboos_en": "Never peer over riverbanks choked with thick duckweed mats, lest pale green talons grasp your collar.",
-    "image_url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/U1Iv-BznrtQ/hqdefault.jpg",
     "sound_preset": "water_spirit",
     "views_count": 20,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/U1Iv-BznrtQ/hqdefault.jpg",
         "title": "เจนนี่ฟันเขียว (พรายน้ำฟันแหลมจอมลากเด็กลงบึงน้ำ)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=U1Iv-BznrtQ",
+        "title": "Who are Jenny Greenteeth, Nelly Longarms and Peg Powler? | WATER HAG FOLKLORE ",
+        "thumbnail": "https://i.ytimg.com/vi/U1Iv-BznrtQ/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:55.158Z",
@@ -11455,15 +11671,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "A legendary Channel Island spectral hound, reinforced by 18th-century smugglers who amplified ghost stories to keep coastal patrols away.",
     "taboos_th": "หากเดินริมหน้าผาอ่าวบูเลย์ยามค่ำแล้วได้ยินเสียงโซ่เหล็กครูดกับหิน ให้ยืนนิ่งและอย่าหันไปสบตากับดวงตาสีแดง",
     "taboos_en": "Freeze in place and avert gaze if metallic chains rattle along the storm-battered cliff tracks of Bouley Bay.",
-    "image_url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/yua3t9KyMrE/hqdefault.jpg",
     "sound_preset": "creepy_wind",
     "views_count": 22,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/yua3t9KyMrE/hqdefault.jpg",
         "title": "หมาปีศาจแห่งอ่าวบูเลย์ (แบล็กด็อกเฝ้าชายฝั่งเกาะเจอร์ซีย์)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=yua3t9KyMrE",
+        "title": "Folklore & Legend - Black Dogs",
+        "thumbnail": "https://i.ytimg.com/vi/yua3t9KyMrE/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:55.734Z",
@@ -11486,15 +11708,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Triggered a lockdown at the US Morbach Munitions Depot in 1988 when armed sentries observed an upright canine leaping a ten-foot security fence.",
     "taboos_th": "ห้ามปล่อยให้เทียนไขในศาลเจ้ามอร์บาคดับลงเด็ดขาด และอย่าเดินในป่าสนฮุนส์รึคยามค่ำคืนคนเดียว",
     "taboos_en": "The perpetual candle at the Morbach shrine must remain lit; an extinguished flame releases the prowling beast.",
-    "image_url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/ZSyEE_wdM-4/hqdefault.jpg",
     "sound_preset": "creepy_wind",
     "views_count": 6,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/ZSyEE_wdM-4/hqdefault.jpg",
         "title": "อสูรแห่งมอร์บาค (มนุษย์หมาป่าตัวสุดท้ายแห่งเยอรมนี)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=ZSyEE_wdM-4",
+        "title": "The Morbach Monster | The Last German Werewolf | True Story",
+        "thumbnail": "https://i.ytimg.com/vi/ZSyEE_wdM-4/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:56.288Z",
@@ -11517,15 +11745,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "A staple of Alpine rural culture; locals initiate gullible travelers into comical night hunts to startle the beast into turning around.",
     "taboos_th": "ห้ามเป่านกหวีดข้างหลังดายูขณะที่มันกำลังเดินเลาะหน้าผาสูงชัน",
     "taboos_en": "Never whistle behind an Alpine Dahu while it grazes along sheer rock ledges.",
-    "image_url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/ZKJeKqefJv8/hqdefault.jpg",
     "sound_preset": "creepy_wind",
     "views_count": 21,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/ZKJeKqefJv8/hqdefault.jpg",
         "title": "ดายู (สัตว์ปริศนาขาไม่เท่ากันแห่งเทือกเขาแอลป์)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=ZKJeKqefJv8",
+        "title": "Monsters of The Alps: Unearthing the Dragon's Skull",
+        "thumbnail": "https://i.ytimg.com/vi/ZKJeKqefJv8/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:56.951Z",
@@ -11548,15 +11782,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Deeply preserved in Hebridean oral tradition, representing personifications of unpredictable tidal rapids and treacherous ocean currents.",
     "taboos_th": "กัปตันเรือที่แล่นผ่านช่องแคบมินช์ต้องตอบสัมผัสกลอนของบลูเมนทันทีโดยห้ามลังเลหรือติดขัด",
     "taboos_en": "Shipmasters must complete the Blue Men's opening rhyming verse without hesitation to calm the sea.",
-    "image_url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/vRtwX2-6794/hqdefault.jpg",
     "sound_preset": "water_spirit",
     "views_count": 7,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/vRtwX2-6794/hqdefault.jpg",
         "title": "บลูเมนออฟเดอะมินช์ (พรายน้ำมนุษย์ตัวสีฟ้าแห่งสก็อตแลนด์)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=vRtwX2-6794",
+        "title": "The Tale of the Blue Men of the Minch",
+        "thumbnail": "https://i.ytimg.com/vi/vRtwX2-6794/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:57.446Z",
@@ -11579,15 +11819,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "More treacherous than the freshwater kelpie; ancient Highland clans warned travelers to inspect the hair of handsome strangers for waterweeds.",
     "taboos_th": "ห้ามแตะต้องหรือปีนขึ้นขี่ม้าแปลกหน้าที่ยืนนิ่งอยู่ริมชายฝั่งทะเลสาบโดยเด็ดขาด",
     "taboos_en": "Never touch or mount a docile unfamiliar steed idling near coastal sea lochs.",
-    "image_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/0Ns-pyL28iQ/hqdefault.jpg",
     "sound_preset": "water_spirit",
     "views_count": 19,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/0Ns-pyL28iQ/hqdefault.jpg",
         "title": "เอคอิชเก (ม้าพรายน้ำจอมสังหารแห่งที่ราบสูงสก็อตแลนด์)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=0Ns-pyL28iQ",
+        "title": "The Each-Uisge: Scotland’s Deadliest Loch Horse | Dark Folklore",
+        "thumbnail": "https://i.ytimg.com/vi/0Ns-pyL28iQ/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:57.896Z",
@@ -11610,15 +11856,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "A historic Northern English warning spirit whose signature surface foam warned children of hazardous river whirlpools.",
     "taboos_th": "ห้ามก้าวขาลงไปในบริเวณแม่น้ำทีส์ที่มีฟองคลื่นฟูฟ่องสีขาวคล้ายฟองสบู่",
     "taboos_en": "Keep clear of frothy foam patches known as Peg Powler's Suds drifting along rocky banks.",
-    "image_url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/U1Iv-BznrtQ/hqdefault.jpg",
     "sound_preset": "water_spirit",
     "views_count": 20,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/U1Iv-BznrtQ/hqdefault.jpg",
         "title": "เพกพาวเลอร์ (นางพรายผมเขียวแห่งแม่น้ำทีส์)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=U1Iv-BznrtQ",
+        "title": "Who are Jenny Greenteeth, Nelly Longarms and Peg Powler? | WATER HAG FOLKLORE ",
+        "thumbnail": "https://i.ytimg.com/vi/U1Iv-BznrtQ/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:58.402Z",
@@ -11641,15 +11893,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "An ancient English marsh creature preserved in Yorkshire dialect and later popularized in contemporary folklore studies.",
     "taboos_th": "ห้ามยื่นมือลงไปกวักน้ำในบึงหนองน้ำที่เต็มไปด้วยดงอ้อและจอกแหนเป็ด",
     "taboos_en": "Never dip fingers into dark peaty waters where long reed-like shadows tremble beneath the surface.",
-    "image_url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/HDtVB9eNBSA/hqdefault.jpg",
     "sound_preset": "water_spirit",
     "views_count": 7,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/HDtVB9eNBSA/hqdefault.jpg",
         "title": "กรินไดโลว์ (ปีศาจนิ้วยาวซุ่มจับเหยื่อใต้บึงยอร์กเชียร์)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=HDtVB9eNBSA",
+        "title": "Grindylow: The Water Demons of British Folklore - (British/English Folklore Explained)",
+        "thumbnail": "https://i.ytimg.com/vi/HDtVB9eNBSA/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:59.061Z",
@@ -11672,15 +11930,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "One of the best-documented sea serpent episodes in American history, leading to sworn affidavits published by scientific societies.",
     "taboos_th": "ห้ามยิงปืนใส่อสรพิษทะเลยามมันชูคอขึ้นเหนือน้ำ เพราะกระสุนปืนไม่สามารถเจาะทะลุเกล็ดกระดูกของมันได้",
     "taboos_en": "Do not fire upon massive marine serpents cresting harbor waters; historical rifles failed to pierce its hide.",
-    "image_url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/fye8GjUZDg0/hqdefault.jpg",
     "sound_preset": "water_spirit",
     "views_count": 11,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/fye8GjUZDg0/hqdefault.jpg",
         "title": "งูทะเลยักษ์แห่งกลอสเตอร์ (อสูรทะเลบันทึกประวัติศาสตร์ปี 1817)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=fye8GjUZDg0",
+        "title": "The Gloucester Sea Monster",
+        "thumbnail": "https://i.ytimg.com/vi/fye8GjUZDg0/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:55:59.615Z",
@@ -11703,15 +11967,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Rose to modern prominence following multiple independent photographs in 2006-2007, inspiring local eco-tourism and annual monitoring.",
     "taboos_th": "หากสังเกตเห็นคลื่นน้ำรูปตัววีแหวกผิวน้ำอย่างรวดเร็ว ให้ชะลอเครื่องยนต์เรือและเฝ้าสังเกตอย่างระมัดระวัง",
     "taboos_en": "Throttle down boat propellers if a steady V-shaped wake cuts against the wind across Raystown narrows.",
-    "image_url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/oLVGijK6DRs/hqdefault.jpg",
     "sound_preset": "water_spirit",
     "views_count": 27,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/oLVGijK6DRs/hqdefault.jpg",
         "title": "เรย์สทาวน์เรย์ (อสูรน้ำคอยาวแห่งทะเลสาบเรย์สทาวน์)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=oLVGijK6DRs",
+        "title": "Searching For Pennsylvania's Loch Ness Monster | Fact Or Faked: Paranormal Files | Real Fear",
+        "thumbnail": "https://i.ytimg.com/vi/oLVGijK6DRs/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:00.274Z",
@@ -11734,15 +12004,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Immortally preserved in the sacred 400-year-old ochre pictographs on Agawa Rock along the windswept shores of Lake Superior.",
     "taboos_th": "ห้ามแล่นเรือแคนูผ่านหน้าผาอากาวาร็อกโดยไม่ถวายใบยาสูบศักดิ์สิทธิ์ให้แก่มิชิเปชูเพื่อขอความคุ้มครอง",
     "taboos_en": "Never paddle past Agawa Rock without placing consecrated tobacco into the freshwater surf.",
-    "image_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/pDxpcAZHuTo/hqdefault.jpg",
     "sound_preset": "water_spirit",
     "views_count": 24,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/pDxpcAZHuTo/hqdefault.jpg",
         "title": "มิชิเปชู (พญาสิงห์เสือแพนเธอร์ใต้พิภพแห่งทะเลสาบซูพีเรียร์)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=pDxpcAZHuTo",
+        "title": "Mishipeshu | The Guardian of the Great Lakes",
+        "thumbnail": "https://i.ytimg.com/vi/pDxpcAZHuTo/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:00.900Z",
@@ -11765,15 +12041,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "A central cautionary entity in Tlingit indigenous culture; travelers carried urine or traveled with dogs, which the Kushtaka naturally despised.",
     "taboos_th": "หากได้ยินเสียงเด็กร้องไห้กลางป่าสนอลาสกาที่มีหิมะตกหนัก ห้ามเดินตามหาเสียงเด็ดขาด",
     "taboos_en": "Ignore the wails of crying infants echoing from freezing Tongass straits; it is the mimicry of the Kushtaka.",
-    "image_url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/Uc6prRBCpS4/hqdefault.jpg",
     "sound_preset": "jungle_curse",
     "views_count": 10,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/Uc6prRBCpS4/hqdefault.jpg",
         "title": "คุชทากา (อมนุษย์นากแปลงกายแห่งอลาสกา)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=Uc6prRBCpS4",
+        "title": "Kushtaka: Monster of the Pacific Northwest [NEW 2025 Folklore Documentary]",
+        "thumbnail": "https://i.ytimg.com/vi/Uc6prRBCpS4/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:01.585Z",
@@ -11796,15 +12078,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Deeply entrenched in Wampanoag traditions as adversarial woodland tricksters, blamed for modern paranormal phenomena across Massachusetts reserves.",
     "taboos_th": "ห้ามเดินตามลูกไฟเรืองแสงสีฟ้าในป่าฟรีทาวน์ยามดึก และห้ามปีนขึ้นไปยืนบนขอบหน้าผาหินโปรไฟล์ร็อก",
     "taboos_en": "Never pursue bobbing blue orbs into Freetown forest thickets; avoid standing near high ledge drop-offs.",
-    "image_url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/wumIKgOH1HU/hqdefault.jpg",
     "sound_preset": "jungle_curse",
     "views_count": 21,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/wumIKgOH1HU/hqdefault.jpg",
         "title": "ปุกวุดจี (คนแคระขนดกผู้ใช้ลูกศรพิษแห่งบริดจ์วอเตอร์)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=wumIKgOH1HU",
+        "title": "The History and Myths of This Algonquian Folklore Creature | Pukwudgie",
+        "thumbnail": "https://i.ytimg.com/vi/wumIKgOH1HU/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:02.181Z",
@@ -11827,15 +12115,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Created by 19th-century Bavarian taxidermists and incorporated into whimsical regional folklore celebrated in traditional Alpine taverns.",
     "taboos_th": "เชื่อว่าการจะจับโวลเพอร์ทิงเกอร์ได้ ต้องใช้หญิงสาวบริสุทธิ์เป็นผู้นำทางและโรยเกลือลงบนหางของมันยามค่ำคืน",
     "taboos_en": "Tradition holds that catching sight of a Wolpertinger requires venturing into moonlight with a bag of pure salt.",
-    "image_url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/JoVwx38DDWM/hqdefault.jpg",
     "sound_preset": "whisper",
     "views_count": 19,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/JoVwx38DDWM/hqdefault.jpg",
         "title": "โวลเพอร์ทิงเกอร์ (สัตว์ลูกผสมมีเขาและปีกแห่งป่าบาวาเรีย)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=JoVwx38DDWM",
+        "title": "Meet Wolpertinger",
+        "thumbnail": "https://i.ytimg.com/vi/JoVwx38DDWM/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:02.707Z",
@@ -11858,15 +12152,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Foundational legend of Klagenfurt; the city center has been graced by the famous monumental stone Lindwurm fountain since 1590.",
     "taboos_th": "ห้ามโยนเหรียญหรือสิ่งสกปรกลงในอ่างน้ำพุมังกรหินลินด์วอร์ม",
     "taboos_en": "Show reverence before the monumental stone dragon fountain in the central square of Klagenfurt.",
-    "image_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/lGNOCnJKYaE/hqdefault.jpg",
     "sound_preset": "jungle_curse",
     "views_count": 8,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/lGNOCnJKYaE/hqdefault.jpg",
         "title": "ลินด์วอร์ม (มังกรไร้ปีกสองขาแห่งคลาเกนฟวร์ท)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=lGNOCnJKYaE",
+        "title": "2+ Hours Of Iconic Folklore Creatures: Champ, Lindworm & More",
+        "thumbnail": "https://i.ytimg.com/vi/lGNOCnJKYaE/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:03.105Z",
@@ -11889,15 +12189,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Subject of an infamous 1474 judicial trial against a rooster for laying an unholy egg; now honored on 25 ornate bronze fountains throughout Basel.",
     "taboos_th": "หากเผชิญหน้ากับบาซิลิสก์ ห้ามสบตาโดยตรง ให้ยกกระจกเงาสะท้อนสายตาของมันกลับไป",
     "taboos_en": "Never gaze directly into the reptilian eyes of a Basilisk; mirror reflection is the only mortal defense.",
-    "image_url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/0UEE4YDMu5g/hqdefault.jpg",
     "sound_preset": "whisper",
     "views_count": 20,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/0UEE4YDMu5g/hqdefault.jpg",
         "title": "บาซิลิสก์แห่งบาเซิล (ราชาอสรพิษผู้พิทักษ์แห่งสวิตเซอร์แลนด์)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=0UEE4YDMu5g",
+        "title": "MF #42: The Basilisk [European Mythology]",
+        "thumbnail": "https://i.ytimg.com/vi/0UEE4YDMu5g/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:03.729Z",
@@ -11920,15 +12226,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Miners strictly respected their unseen hosts, leaving behind the crusts of their Cornish pasties to ensure goodwill and life-saving cave-in warnings.",
     "taboos_th": "ห้ามผิวปาก ส่งเสียงสบถ หรือแอบมองน็อกเกอร์สขณะทำงานในอุโมงค์เหมืองแร่",
     "taboos_en": "Never whistle, curse, or spy upon the Knockers inside deep underground shafts.",
-    "image_url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/3zZlSVhMXkE/hqdefault.jpg",
     "sound_preset": "creepy_wind",
     "views_count": 26,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/3zZlSVhMXkE/hqdefault.jpg",
         "title": "น็อกเกอร์ส (ภูตเคาะหินเตือนภัยแห่งเหมืองดีบุกคอร์นวอลล์)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=3zZlSVhMXkE",
+        "title": "The Knockers: The ghostly miners of Cornwall",
+        "thumbnail": "https://i.ytimg.com/vi/3zZlSVhMXkE/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:04.209Z",
@@ -11951,15 +12263,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Protagonist of the famous Manx folk tale where a clever tailor sewed a pair of breeches inside the ruined chapel under the monster's nose.",
     "taboos_th": "หากถูกบักเกนไล่ล่า ให้รีบวิ่งข้ามลำธารหรือสะพานน้ำไหล เพราะบักเกนไม่สามารถข้ามสายน้ำบริสุทธิ์ได้",
     "taboos_en": "Flee across running water if pursued by a Buggane; natural streams break its supernatural power.",
-    "image_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/dnh1ZIl2P7U/hqdefault.jpg",
     "sound_preset": "creepy_wind",
     "views_count": 19,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/dnh1ZIl2P7U/hqdefault.jpg",
         "title": "บักเกน (อสูรยักษ์พังหลังคาโบสถ์แห่งเกาะแมน)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=dnh1ZIl2P7U",
+        "title": "Buggane Isle Of Man Folklore",
+        "thumbnail": "https://i.ytimg.com/vi/dnh1ZIl2P7U/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:04.632Z",
@@ -11982,15 +12300,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Bore Odin between the worlds of the Norse cosmos; Icelandic geology attributes the colossal horseshoe shape of Asbyrgi to one of Sleipnir's hooves.",
     "taboos_th": "เมื่อยืนอยู่ในหุบผาแอสเบอร์กี ให้สงบนิ่งรับฟังเสียงลมก้องสะท้อน ห้ามส่งเสียงเอะอะทำลายความศักดิ์สิทธิ์",
     "taboos_en": "Maintain solemn silence within the horseshoe ramparts of Asbyrgi where winds echo the thunder of divine hooves.",
-    "image_url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/Um7fjLVMOHo/hqdefault.jpg",
     "sound_preset": "creepy_wind",
     "views_count": 17,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/Um7fjLVMOHo/hqdefault.jpg",
         "title": "สเลปนีร์ (ม้าแปดขาแห่งโอดินและหุบผาแอสเบอร์กี)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=Um7fjLVMOHo",
+        "title": "MANOWAR - Sleipnir (Official Lyric Video)",
+        "thumbnail": "https://i.ytimg.com/vi/Um7fjLVMOHo/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:05.301Z",
@@ -12013,15 +12337,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Ancient Nordic burial customs involved painting crosses inside coffins and carrying bodies thrice around the church to prevent their revenant return.",
     "taboos_th": "ห้ามขานรับเสียงเคาะประตูยามวิกาลหากได้ยินเสียงเล็บขูดบนบานประตูไม้ในคืนพายุหิมะ",
     "taboos_en": "Never unbolt entryways during winter blizzards if dried fingernails scrape three times against the timber.",
-    "image_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/iblMZ-fL-Qk/hqdefault.jpg",
     "sound_preset": "whisper",
     "views_count": 6,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/iblMZ-fL-Qk/hqdefault.jpg",
         "title": "เยนกันเกอร์ (ผีดิบคืนชีพแพร่พิษร้ายแห่งสแกนดิเนเวีย)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=iblMZ-fL-Qk",
+        "title": "The Gjenganger: Scandinavia's Walking Dead Who Cannot Rest Until Debts Are Paid",
+        "thumbnail": "https://i.ytimg.com/vi/iblMZ-fL-Qk/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:05.823Z",
@@ -12044,15 +12374,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "First scientifically documented in 1925 by naturalist Dr. Ernest Bartels while exploring Mount Salak waterfalls, deeply rooted in Sundanese jungle lore.",
     "taboos_th": "หากเดินป่าบนเขาซาลักยามพลบค่ำแล้วได้ยินเสียงกรีดร้องสะท้อนว่า อา-ฮูล ให้หลบใต้ร่มไม้ใหญ่ทันทีเพื่อป้องกันการถูกโฉบจากเวหา",
     "taboos_en": "Seek immediate cover under heavy canopy if the piercing cry of Ahool resounds through the mountain mist at twilight.",
-    "image_url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/oxDfium5HNA/hqdefault.jpg",
     "sound_preset": "jungle_curse",
     "views_count": 23,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/oxDfium5HNA/hqdefault.jpg",
         "title": "อาฮูล (อสูรวานรปีกค้างคาวแห่งยอดเขาซาลัก)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=oxDfium5HNA",
+        "title": "The True History That Inspired Folk Horror (Part 1)",
+        "thumbnail": "https://i.ytimg.com/vi/oxDfium5HNA/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:06.253Z",
@@ -12075,15 +12411,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Formally documented by British explorer Ethelbert Skertchly in 1896 journals, chronicling elaborate native warding methods utilizing cocoa-nut shell ash.",
     "taboos_th": "ชาวเกาะนิยมโรยขี้เถ้าและจุดตะเกียงสว่างไสวรอบหลุมศพใหม่เป็นเวลาเจ็ดวันเพื่อป้องกันเบอร์บาลัง",
     "taboos_en": "Fresh burials must remain illuminated with open flames and encircled with palm ash for seven consecutive nights.",
-    "image_url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/ZKJeKqefJv8/hqdefault.jpg",
     "sound_preset": "whisper",
     "views_count": 8,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/ZKJeKqefJv8/hqdefault.jpg",
         "title": "เบอร์บาลัง (เผ่าพันธุ์กินศพมีปีกแห่งเกาะซูลู)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=ZKJeKqefJv8",
+        "title": "Monsters of The Alps: Unearthing the Dragon's Skull",
+        "thumbnail": "https://i.ytimg.com/vi/ZKJeKqefJv8/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:06.673Z",
@@ -12106,15 +12448,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Deeply entrenched in Visayan folklore; wealthy families in folklore were accused of keeping a Sigbin inside a clay jar as a wealth-generating familiar.",
     "taboos_th": "ห้ามมองลอดใต้หว่างขาตนเองในเวลากลางคืน เพราะอาจเห็นซิกบินกำลังเดินถอยหลังเข้ามาประชิดตัว",
     "taboos_en": "Never bend forward to peek backward between your legs at night in rural Visayan pathways.",
-    "image_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/-WSaF3KXCK8/hqdefault.jpg",
     "sound_preset": "jungle_curse",
     "views_count": 14,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/-WSaF3KXCK8/hqdefault.jpg",
         "title": "ซิกบิน (สัตว์ประหลาดเงาเดินถอยหลังแห่งฟิลิปปินส์)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=-WSaF3KXCK8",
+        "title": "Sigbin – The Child-Hunting Creature of Philippine Folklore",
+        "thumbnail": "https://i.ytimg.com/vi/-WSaF3KXCK8/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:07.120Z",
@@ -12137,15 +12485,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "A prominent fixture in Assamese storytelling; folk remedies dictate keeping a torn fishnet or sharp bamboo knife to ward off the entity.",
     "taboos_th": "หากกลับมาจากหาปลาตอนดึกแล้วเห็นคนในครอบครัวมีพฤติกรรมกินปลาดิบอย่างมูมมามผิดปกติ ให้ระวังว่าอาจเป็นบาคจำแลงกายมา",
     "taboos_en": "Never consume fresh fish raw beside midnight waterways; carry woven bamboo splitters to repel a stalking Baak.",
-    "image_url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/_Pf8n2vz-E0/hqdefault.jpg",
     "sound_preset": "water_spirit",
     "views_count": 13,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/_Pf8n2vz-E0/hqdefault.jpg",
         "title": "บาค (ผีน้ำสถิตบึงจับมนุษย์ขังใต้โคลนแห่งรัฐอัสสัม)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=_Pf8n2vz-E0",
+        "title": "👻குலை நடுங்க வைக்கும் \"Baak பேய்கள்\" | Assamese folklore | Real ghost video | Aranmanai 4",
+        "thumbnail": "https://i.ytimg.com/vi/_Pf8n2vz-E0/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:07.621Z",
@@ -12168,15 +12522,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Featured in classic Edo-era yokai compendiums as a tragic, protective specter born of famine and grief.",
     "taboos_th": "ห้ามทอดทิ้งเด็กเล็กให้อยู่ตามลำพังในศาลเจ้าร้างยามค่ำคืน เพราะมุอนนะจะมารับตัวไปเป็นบุตรทิพย์",
     "taboos_en": "Never leave small infants unattended in twilight courtyards, lest the faceless mother envelope them in loving mists.",
-    "image_url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/h28FjQ4Tu-o/hqdefault.jpg",
     "sound_preset": "whisper",
     "views_count": 20,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/h28FjQ4Tu-o/hqdefault.jpg",
         "title": "มุอนนะ (วิญญาณสตรีไร้หน้าผู้พิทักษ์เด็กแห่งญี่ปุ่น)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=h28FjQ4Tu-o",
+        "title": "Mu-Onna |El Demonio Sin Rostro",
+        "thumbnail": "https://i.ytimg.com/vi/h28FjQ4Tu-o/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:08.046Z",
@@ -12199,15 +12559,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "A harmless atmospheric yokai of Kansai folklore; polite etiquette dispels it entirely by stepping aside and welcoming it to pass.",
     "taboos_th": "หากได้ยินเสียงฝีเท้าตามหลัง ห้ามวิ่งหนีด้วยความตื่นตระหนก ให้ชิดข้างทางแล้วกล่าวเชิญอย่างสุภาพ",
     "taboos_en": "Never panic and sprint blindly; step aside to the curb and politely say: 'Betobeto-san, please go ahead.'",
-    "image_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/sQDU5Oum5Gg/hqdefault.jpg",
     "sound_preset": "creepy_wind",
     "views_count": 11,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/sQDU5Oum5Gg/hqdefault.jpg",
         "title": "เบโตะเบโตะซัง (ภูตเสียงฝีเท้าตามหลังยามค่ำคืน)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=sQDU5Oum5Gg",
+        "title": "Yokai Gadan Shorts: Yokai Gadan BetoBetoSan",
+        "thumbnail": "https://i.ytimg.com/vi/sQDU5Oum5Gg/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:08.714Z",
@@ -12230,15 +12596,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Immortalized in the 18th-century picture scroll of poet Yosa Buson, serving as a humorous prankster spirit rather than a malicious threat.",
     "taboos_th": "หากพบชายแปลกหน้าถอดกางเกงริมทางแยกคาตาบิระ ห้ามชักดาบฟัน ให้หัวเราะหรือเดินเลี่ยงผ่านไป",
     "taboos_en": "Do not draw steel against harmless trickster spirits at the Katabira crossroads; disregard the bizarre apparition.",
-    "image_url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/doMHk7RX-e4/hqdefault.jpg",
     "sound_preset": "whisper",
     "views_count": 22,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/doMHk7RX-e4/hqdefault.jpg",
         "title": "ชิริเมะ (โยไกตาเดียวที่ทวารหนักแห่งเกียวโต)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=doMHk7RX-e4",
+        "title": "Shirime Yokai | Japanese Folklore",
+        "thumbnail": "https://i.ytimg.com/vi/doMHk7RX-e4/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:09.226Z",
@@ -12261,15 +12633,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Preserved in the oral legends of Kagoshima Prefecture; carrying iron shears was considered the only effective countermeasure to sever the airborne fabric.",
     "taboos_th": "ควรพกกรรไกรหรือมีดพกเล็กๆ ติดตัวเมื่อเดินผ่านแนวป่าไผ่คาโกชิมะยามค่ำคืน",
     "taboos_en": "Carry a pocket knife or shears when walking rural Kagoshima roads to sever predatory gliding linens.",
-    "image_url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/2_B1Lvn1mFc/hqdefault.jpg",
     "sound_preset": "creepy_wind",
     "views_count": 19,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/2_B1Lvn1mFc/hqdefault.jpg",
         "title": "อิตตันโมเมน (ผีผ้าขาวลอยฟ้าแห่งคาโกชิมะ)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=2_B1Lvn1mFc",
+        "title": "Ittan-momen - The Dangerous Ghostly Cloth Strip - Japanese Mythology",
+        "thumbnail": "https://i.ytimg.com/vi/2_B1Lvn1mFc/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:09.723Z",
@@ -12292,15 +12670,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Immortalized globally by Lafcadio Hearn in his 1904 masterpiece 'Kwaidan', representing clever shapeshifting tanuki tricks.",
     "taboos_th": "เมื่อวิ่งหนีจากคนหน้าเนียนแล้วไปพบร้านบะหมี่หรือคนขายของ ห้ามรีบเล่าเรื่องหน้าเนียนให้ฟัง เพราะพ่อค้าคนนั้นอาจลูบหน้าให้ดูอีกคน",
     "taboos_en": "If fleeing from a faceless stranger, do not confide in the nearest soba vendor, lest he wipe his own face blank.",
-    "image_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/IDRqabQelsU/hqdefault.jpg",
     "sound_preset": "whisper",
     "views_count": 17,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/IDRqabQelsU/hqdefault.jpg",
         "title": "นพเพระโบ (ผีหน้าเนียนไร้เครื่องหน้าแห่งเนินมืด)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=IDRqabQelsU",
+        "title": "Noppera-bō (のっぺら坊) – The Chilling Legend of the Faceless Ghost | Japanese Yokai Horror",
+        "thumbnail": "https://i.ytimg.com/vi/IDRqabQelsU/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:10.327Z",
@@ -12323,15 +12707,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "One of Japan's three supreme commander tanuki; the Danzaburo shrine on Sado continues to be visited by pilgrims seeking financial luck and relief.",
     "taboos_th": "หากกู้ยืมเงินหรือทำสัญญากับดันซาบุโร่ ต้องคืนเงินให้ตรงตามกำหนดเวลา มิฉะนั้นบ้านจะถูกเสกให้กลายเป็นป่าทึบ",
     "taboos_en": "Always honor debts borrowed under Tanuki seal; failure to repay returns gold into withered autumn leaves.",
-    "image_url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/vhXrOflvodE/hqdefault.jpg",
     "sound_preset": "temple_bell",
     "views_count": 6,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/vhXrOflvodE/hqdefault.jpg",
         "title": "บาเกะดานุกิ (ดันซาบุโร่ ทานุกิแปลงกายมหาอำนาจแห่งเกาะซาโดะ)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=vhXrOflvodE",
+        "title": "【Bake-danuki】Japanese Folklore Horror | Japanese Horror Music | Yokai BGM for Work & Focus",
+        "thumbnail": "https://i.ytimg.com/vi/vhXrOflvodE/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:10.741Z",
@@ -12354,15 +12744,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "A staple tsukumogami depicted extensively in kabuki theater and Edo woodblock prints by artists such as Katsushika Hokusai.",
     "taboos_th": "ห้ามจุดไฟในโคมกระดาษเก่าที่มีรอยฉีกขาดกลางลำตัวโดยไม่ทำความสะอาดและขอขมา",
     "taboos_en": "Treat ancestral paper lanterns with care; torn paper left discarded in dark attics awakens the spirit within.",
-    "image_url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/hdG08-1Z1Ro/hqdefault.jpg",
     "sound_preset": "whisper",
     "views_count": 5,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/hdG08-1Z1Ro/hqdefault.jpg",
         "title": "โชจินโอบาเกะ (ผีโคมกระดาษตาเดียวแลบลิ้นยาว)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=hdG08-1Z1Ro",
+        "title": "Chochin Obake: A True Japanese Ghost Story",
+        "thumbnail": "https://i.ytimg.com/vi/hdG08-1Z1Ro/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:11.309Z",
@@ -12385,15 +12781,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Immortalized in modern Japanese pop culture by Shigeru Mizuki, representing the quintessential playful household artifact spirit.",
     "taboos_th": "ห้ามกางร่มกระดาษเก่าที่ถูกทิ้งขว้างไว้ในคืนที่ฝนตกพรำๆ",
     "taboos_en": "Never unfurl an abandoned oiled-paper umbrella found resting against temple eaves during twilight drizzles.",
-    "image_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/FGPJ1qgfx_8/hqdefault.jpg",
     "sound_preset": "whisper",
     "views_count": 24,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/FGPJ1qgfx_8/hqdefault.jpg",
         "title": "คาซะโอบาเกะ (ผีร่มขาเดียวตาเดียวแลบลิ้นกระโดด)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=FGPJ1qgfx_8",
+        "title": "El Kasa-Obake ☂️ | Mitos Urbanos Japoneses | La Guía de los Yokai",
+        "thumbnail": "https://i.ytimg.com/vi/FGPJ1qgfx_8/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:11.838Z",
@@ -12416,15 +12818,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Drawn by Toriyama Sekien in his 1781 encyclopedia, illustrating the supernatural consequences of neglecting household repair through extreme thrift.",
     "taboos_th": "เมื่อพบรูกระดาษขาดบนประตูบานเลื่อนโชจิ ให้รีบนำกระดาษใหม่มาแปะซ่อมแซมทันที อย่าปล่อยทิ้งไว้ข้ามคืน",
     "taboos_en": "Mend torn holes in paper screens immediately; leaving empty apertures overnight invites unblinking spectral gazes.",
-    "image_url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/aWqVJZs5l3s/hqdefault.jpg",
     "sound_preset": "whisper",
     "views_count": 10,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/aWqVJZs5l3s/hqdefault.jpg",
         "title": "โมคุโมคุเรน (ดวงตาปริศนาในช่องประตูบานเลื่อนโชจิ)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=aWqVJZs5l3s",
+        "title": "Mokumokuren – The Many-Eyed Yokai",
+        "thumbnail": "https://i.ytimg.com/vi/aWqVJZs5l3s/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:12.370Z",
@@ -12447,15 +12855,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Celebrated in Edo-era urban lore; compliance with a basin of warm water satisfied the phantom limb, whereas refusal led to demolished tatami rooms.",
     "taboos_th": "หากมีเท้ายักษ์ทะลุเพดานตกลงมา ให้รีบเตรียมถังน้ำและแปรงขัดถูอย่างนอบน้อม ห้ามชักดาบฟันเด็ดขาด",
     "taboos_en": "Fetch a tub of water and wash the descending foot patiently; hostility causes violent structural destruction.",
-    "image_url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/3-DB2wx3hwE/hqdefault.jpg",
     "sound_preset": "whisper",
     "views_count": 5,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/3-DB2wx3hwE/hqdefault.jpg",
         "title": "อาชิอะไรยาชิกิ (คฤหาสน์เท้าปีศาจขอยืมล้างเท้าแห่งเอโดะ)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=3-DB2wx3hwE",
+        "title": "10 เรื่อง(ลับ?) ที่เรารู้เกี่ยวกับ ตระกูลอุบุยาชิกิ - ดาบพิฆาตรอสูร",
+        "thumbnail": "https://i.ytimg.com/vi/3-DB2wx3hwE/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:12.800Z",
@@ -12478,15 +12892,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "One of the most feared maritime yokai; traditional crews carried bottomless barrels to trick the monster while beating a hasty retreat.",
     "taboos_th": "เมื่ออุมิโบซุโผล่ขึ้นมาขอยืมถังน้ำ ให้ยื่นถังที่เจาะก้นทะลุให้มันเท่านั้น ห้ามยื่นถังที่สมบูรณ์เด็ดขาด",
     "taboos_en": "Only hand a bottomless barrel to the Umibozu to exhaust its attempts to flood your deck.",
-    "image_url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/hwye84rIun4/hqdefault.jpg",
     "sound_preset": "water_spirit",
     "views_count": 12,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/hwye84rIun4/hqdefault.jpg",
         "title": "อุมิโบซุ (พระสงฆ์ยักษ์แห่งท้องทะเลลึกผู้คว่ำเรือ)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=hwye84rIun4",
+        "title": "Yokai & Urban Legends | Size Comparison (Japanese Mythology)",
+        "thumbnail": "https://i.ytimg.com/vi/hwye84rIun4/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:13.450Z",
@@ -12509,15 +12929,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "A beloved protective spirit; children recite a triple invocation upon waking from terrors so the Baku will absorb the ominous omen.",
     "taboos_th": "ห้ามเรียกบาคุมากินฝันร้ายบ่อยเกินไปโดยไม่จำเป็น เพราะหากบาคุยังไม่อิ่ม มันอาจกลืนกินความหวังและความฝันดีๆ ของเราไปด้วย",
     "taboos_en": "Do not summon the Baku excessively, lest it remain hungry and swallow your hopes and pleasant ambitions as well.",
-    "image_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/EV92b5ey-G0/hqdefault.jpg",
     "sound_preset": "temple_bell",
     "views_count": 22,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/EV92b5ey-G0/hqdefault.jpg",
         "title": "บาคุ (อสูรศักดิ์สิทธิ์กลืนกินฝันร้ายแห่งญี่ปุ่น)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=EV92b5ey-G0",
+        "title": "Baku - The Devourer of Dreams - Creatures of Japan",
+        "thumbnail": "https://i.ytimg.com/vi/EV92b5ey-G0/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:14.001Z",
@@ -12540,15 +12966,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Cataloged in the 4th-century Chinese compendium 'In Search of the Supernatural' (Soushen Ji) by Gan Bao, representing tree longevity spirits.",
     "taboos_th": "ห้ามโค่นต้นการบูรโบราณที่มีอายุเกินร้อยปีโดยไม่ทำพิธีขอขมาต่อเทพารักษ์",
     "taboos_en": "Never fell ancient camphor trees without offering incense to appease dwelling arboreal souls.",
-    "image_url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/yOUT55XlbYI/hqdefault.jpg",
     "sound_preset": "jungle_curse",
     "views_count": 6,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/yOUT55XlbYI/hqdefault.jpg",
         "title": "เผิงโหว (ภูตสุนัขสีดำไร้หางสิงสถิตในต้นการบูรพันปี)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=yOUT55XlbYI",
+        "title": "Cryptids and Monsters:  Penghou, Tree Spirit from Chinese Mythology",
+        "thumbnail": "https://i.ytimg.com/vi/yOUT55XlbYI/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:14.556Z",
@@ -12571,15 +13003,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Documented in the Classic of Mountains and Seas (Shanhaijing); communities historically beat gongs and fired firecrackers to force the celestial beast to disgorge the moon.",
     "taboos_th": "เมื่อเกิดคราสบนท้องฟ้า ให้ส่งเสียงเคาะโลหะหรือตีกลองเพื่อช่วยปลดปล่อยดวงจันทร์",
     "taboos_en": "Sound bronze bells and firecrackers during eclipses to drive the celestial hound away from heavenly bodies.",
-    "image_url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/HvWAZiLkwk8/hqdefault.jpg",
     "sound_preset": "temple_bell",
     "views_count": 8,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/HvWAZiLkwk8/hqdefault.jpg",
         "title": "เทียนโก่ว (สุนัขสวรรค์ผู้กลืนกินดวงจันทร์และดวงอาทิตย์)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=HvWAZiLkwk8",
+        "title": "Tiangou: The Heavenly Dog Who Ate The Moon",
+        "thumbnail": "https://i.ytimg.com/vi/HvWAZiLkwk8/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:15.105Z",
@@ -12602,15 +13040,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Detailed in the Shanhaijing as an embodiment of Hundun (primordial chaos) living in harmonic unity before the differentiation of senses.",
     "taboos_th": "ห้ามพยายามเจาะช่องตาหรือช่องปากให้แก่ตี้เจียง เพราะตามปรัชญาเต๋า ความพยายามจัดระเบียบความโกลาหลจะทำให้มันดับสูญ",
     "taboos_en": "Never attempt to carve facial features into the primal chaos, for forced order destroys primordial innocence.",
-    "image_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/Pa6UpQFnJVg/hqdefault.jpg",
     "sound_preset": "temple_bell",
     "views_count": 26,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/Pa6UpQFnJVg/hqdefault.jpg",
         "title": "ตี้เจียง (เทพอสูรหกขาปีกสี่ไร้หน้าแห่งความโกลาหล)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=Pa6UpQFnJVg",
+        "title": "Chinese MYTHICAL Animals EXPLAINED...",
+        "thumbnail": "https://i.ytimg.com/vi/Pa6UpQFnJVg/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:15.615Z",
@@ -12633,15 +13077,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "The Yellow Emperor recorded the Bai Ze Tu based on its teachings; images of Bai Ze were hung on doors as the ultimate apotropaic ward.",
     "taboos_th": "การติดภาพวาดของไป่เจ๋อไว้ที่หน้าประตูเรือน จะช่วยขับไล่ภูตผีและโรคระบาดมิให้กล้ำกราย",
     "taboos_en": "Displaying the visage of Bai Ze above thresholds neutralizes harmful curses and pestilential spirits.",
-    "image_url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/I8i2J-vqnGI/hqdefault.jpg",
     "sound_preset": "temple_bell",
     "views_count": 5,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/I8i2J-vqnGI/hqdefault.jpg",
         "title": "ไป่เจ๋อ (สัตว์สวรรค์สีขาวผู้รู้แจ้งภูตผีปีศาจทั้งปวง)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=I8i2J-vqnGI",
+        "title": "Baize — The Wise and Auspicious Divine Beast in Chinese Mythology",
+        "thumbnail": "https://i.ytimg.com/vi/I8i2J-vqnGI/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:16.048Z",
@@ -12664,15 +13114,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "The origin myth of Chinese Lunar New Year customs: hanging red paper couplets, illuminating lanterns, and setting off firecrackers to celebrate surviving the Nian.",
     "taboos_th": "ในคืนวันสิ้นปี ห้ามดับตะเกียงไฟในเรือน และต้องติดกระดาษสีแดงไว้ที่บานประตูหน้าบ้าน",
     "taboos_en": "Keep doors adorned with scarlet banners and maintain lanterns lit throughout New Year's Eve.",
-    "image_url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/giYX7bkzW98/hqdefault.jpg",
     "sound_preset": "temple_bell",
     "views_count": 22,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/giYX7bkzW98/hqdefault.jpg",
         "title": "เหนียน (สัตว์ร้ายโบราณผู้เกลียดเสียงประทัดและสีแดง)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=giYX7bkzW98",
+        "title": "The Monster of Chinese New Year | Legend of Nian (Animated Story)",
+        "thumbnail": "https://i.ytimg.com/vi/giYX7bkzW98/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:16.531Z",
@@ -12695,15 +13151,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Believed to be the tragic ghost of individuals who died without descendants or ancestral funerary rites, stripped of human identity.",
     "taboos_th": "หากเดินป่าบนเขาแทแบกแล้วพบเห็นสิ่งสีขาวกลมคล้ายไข่ลอยอยู่ ห้ามหันไปมองเด็ดขาด ให้ก้มหน้ามองพื้นแล้วเดินหนี",
     "taboos_en": "Avert your eyes immediately if a smooth white oval shape hovers in lonely mountain paths.",
-    "image_url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/P5cz8COOtws/hqdefault.jpg",
     "sound_preset": "whisper",
     "views_count": 27,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/P5cz8COOtws/hqdefault.jpg",
         "title": "ทัลกยัลกวิชิน (ผีไข่ไร้หน้ามรณะแห่งเกาหลี)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=P5cz8COOtws",
+        "title": "Every Korean Urban Legend Explained in 17 Minutes",
+        "thumbnail": "https://i.ytimg.com/vi/P5cz8COOtws/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:16.961Z",
@@ -12726,15 +13188,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "A cornerstone of Korean ghost belief, immortalized in everyday idioms referring to pulling others down into mutual destruction.",
     "taboos_th": "ห้ามว่ายน้ำคนเดียวในแม่น้ำฮันยามวิกาล และหากรู้สึกเหมือนมีสาหร่ายพันข้อเท้า ให้ว่ายน้ำขึ้นฝั่งทันที",
     "taboos_en": "Never swim alone in deep reservoirs after dark; cold tugging around ankles indicates grasping spectral hands.",
-    "image_url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/YHVHUkvM78Y/hqdefault.jpg",
     "sound_preset": "water_spirit",
     "views_count": 19,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/YHVHUkvM78Y/hqdefault.jpg",
         "title": "มุลกวิชิน (ผีพรายน้ำจับขาแห่งแม่น้ำฮัน)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=YHVHUkvM78Y",
+        "title": "South Korean Water Ghost or  Mul Gwishin 물귀신 🧡",
+        "thumbnail": "https://i.ytimg.com/vi/YHVHUkvM78Y/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:17.460Z",
@@ -12757,15 +13225,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Central to traditional Korean home religion; visitors were culturally mandated to cough thrice before unlatching outhouse doors.",
     "taboos_th": "ต้องกระแอมไอ 3 ครั้งก่อนเปิดประตูห้องน้ำโบราณทุกครั้ง ห้ามเดินพรวดพราดเข้าไปในความมืด",
     "taboos_en": "Always cough three times clearly before opening traditional outhouse doors to give the goddess time to withdraw.",
-    "image_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/eoQQg8mVxdA/hqdefault.jpg",
     "sound_preset": "whisper",
     "views_count": 18,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/eoQQg8mVxdA/hqdefault.jpg",
         "title": "ช็อกชิน (เทวีผู้ดุร้ายแห่งห้องส้วมโบราณเกาหลี)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=eoQQg8mVxdA",
+        "title": "Some Neat Korean Folktales (ft. Black Desert Online)",
+        "thumbnail": "https://i.ytimg.com/vi/eoQQg8mVxdA/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:18.042Z",
@@ -12788,15 +13262,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "A foundational cultural symbol of heroic determination, speed, and boundless potential across the Korean peninsula.",
     "taboos_th": "ห้ามพยายามวางกับดักหรือใช้แส้เฆี่ยนตีเพื่อบังคับขี่ม้าชอลลีมา",
     "taboos_en": "Never attempt to tether or break the stride of the celestial winged stallion.",
-    "image_url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/DKsj5mCR7qs/hqdefault.jpg",
     "sound_preset": "temple_bell",
     "views_count": 28,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/DKsj5mCR7qs/hqdefault.jpg",
         "title": "ชอลลีมา (ม้าพันลี้มีปีกผู้ทะยานเหนือห้วงเมฆ)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=DKsj5mCR7qs",
+        "title": "Chollima On The Wing - DPRK Music Video",
+        "thumbnail": "https://i.ytimg.com/vi/DKsj5mCR7qs/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:18.774Z",
@@ -12819,15 +13299,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "One of South Korea's most infamous modern highway urban legends, reported by numerous celebrities and taxi drivers traversing the foggy riverside artery.",
     "taboos_th": "หากขับรถบนทางหลวงจายูโรในคืนหมอกลงจัดแล้วเห็นหญิงสาวโบกมือริมทาง ห้ามจอดรับและอย่ามองสบเบ้าตาของเธอ",
     "taboos_en": "Never pull over for hitchhikers standing beside the guardrails of Jayu-ro under midnight fog.",
-    "image_url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/yENBM020Uvs/hqdefault.jpg",
     "sound_preset": "creepy_wind",
     "views_count": 25,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/yENBM020Uvs/hqdefault.jpg",
         "title": "ผีสาวแห่งทางหลวงจายูโร (วิญญาณแว่นกันแดดหลุมตาดำ)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=yENBM020Uvs",
+        "title": "The Ghost on Jayu-ro (Jayu Highway) | Korea’s Most Terrifying Road",
+        "thumbnail": "https://i.ytimg.com/vi/yENBM020Uvs/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:19.256Z",
@@ -12850,15 +13336,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Deeply entrenched in Mandinka and Wolof tribal traditions; its deafening nocturnal screech was regarded as an infallible omen of lethal sickness.",
     "taboos_th": "หากได้ยินเสียงนกฮูกร้องแหลมก้องผิดธรรมชาติเหนือหลังคาเรือน ให้สุมควันสมุนไพรขับไล่ทันที",
     "taboos_en": "Burn protective smoking herbs if unnatural owl shrieks rattle thatched roofs in Casamance villages.",
-    "image_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/tlOfnMKrbfI/hqdefault.jpg",
     "sound_preset": "creepy_wind",
     "views_count": 18,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/tlOfnMKrbfI/hqdefault.jpg",
         "title": "คิกิยาออน (นกฮูกยักษ์ล่าวิญญาณแห่งป่าเซเนกัล)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=tlOfnMKrbfI",
+        "title": "Cryptids and Monsters:  Kikiyaon, deadly owl/man cryptid from Africa, attacks people in life/dreams!",
+        "thumbnail": "https://i.ytimg.com/vi/tlOfnMKrbfI/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:19.729Z",
@@ -12881,15 +13373,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Recorded in detail by cryptozoologist Roy Mackal during expeditions to the Likouala swamps, theorized as a surviving ceratopsian dinosaur.",
     "taboos_th": "หากพบซากช้างป่าถูกแทงทะลุอกล้มตายริมบึงโดยไม่มีรอยกัดกินเนื้อ ให้รีบถอยเรือออกจากบึงน้ำทันที",
     "taboos_en": "Depart marsh channels immediately if bull elephant carcasses are found gored without predatory feeding.",
-    "image_url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/ZjcUSuVi8p0/hqdefault.jpg",
     "sound_preset": "jungle_curse",
     "views_count": 20,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/ZjcUSuVi8p0/hqdefault.jpg",
         "title": "เอเมลา-เอ็นทูคา (อสูรแรดนอเดียวผู้สังหารช้างแห่งคองโก)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=ZjcUSuVi8p0",
+        "title": "Dino Hunter | Dinosaurs Alive | Emela-Ntouka of the Cameroon",
+        "thumbnail": "https://i.ytimg.com/vi/ZjcUSuVi8p0/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:20.216Z",
@@ -12912,15 +13410,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Sighted in 1961 by missionary Joseph Ellis and subsequent river expeditions, resembling a surviving Spinosaurus or giant primitive snake.",
     "taboos_th": "ห้ามข้ามแม่น้ำดองโกยามบ่ายจัดเมื่อมีแนวสันคลื่นรูปฟันเลื่อยโผล่ขึ้นมาเหนือน้ำ",
     "taboos_en": "Do not cross murky Congo tributaries when a serrated ridge cuts straight through opposing currents.",
-    "image_url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/QgaMfMUWcSo/hqdefault.jpg",
     "sound_preset": "water_spirit",
     "views_count": 7,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/QgaMfMUWcSo/hqdefault.jpg",
         "title": "งูมา-โมเนเน (พญางูยักษ์ครีบสันหลังแห่งแม่น้ำดองโก)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=QgaMfMUWcSo",
+        "title": "A living Spinosaurus in Africa? The Legend of Nguma Monene #legends #dinosaur #mystery",
+        "thumbnail": "https://i.ytimg.com/vi/QgaMfMUWcSo/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:20.648Z",
@@ -12943,15 +13447,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "A central terror in Ewe tribal folklore; unexplained infant sicknesses were attributed to nocturnal bites from the disguised insect vampire.",
     "taboos_th": "ห้ามปล่อยให้มีหิ่งห้อยบินเข้ามาในห้องนอนยามค่ำคืน ให้ใช้ควันธูปหรือไม้ไล่หิ่งห้อยออกไปทันที",
     "taboos_en": "Extinguish or catch any solitary firefly drifting indoors after twilight; it may be an Adze in miniature form.",
-    "image_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/I15v-4b4Mk0/hqdefault.jpg",
     "sound_preset": "whisper",
     "views_count": 9,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/I15v-4b4Mk0/hqdefault.jpg",
         "title": "แอดเซ (ปีศาจหิ่งห้อยดูดเลือดแปลงกายแห่งกานาและโตโก)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=I15v-4b4Mk0",
+        "title": "Adze: the Shapeshifting Firefly from West Africa | Monstrum",
+        "thumbnail": "https://i.ytimg.com/vi/I15v-4b4Mk0/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:21.103Z",
@@ -12974,15 +13484,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Chronicled by 13th-century scholar Zakariya al-Qazwini and celebrated in the Arabian Nights as the ultimate foundation of planetary existence.",
     "taboos_th": "ความยิ่งใหญ่ของบาฮามุตเกินกว่าที่สายตามนุษย์จะมองเห็นได้ ผู้ใดที่พยายามจ้องมองร่างจริงจะต้องสูญเสียสติปัญญา",
     "taboos_en": "Contemplate the cosmic leviathan with spiritual humility; mortal comprehension cannot withstand the scale of the cosmic foundation.",
-    "image_url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/Kc91H8Hzv1Q/hqdefault.jpg",
     "sound_preset": "temple_bell",
     "views_count": 21,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/Kc91H8Hzv1Q/hqdefault.jpg",
         "title": "บาฮามุต (มหาปลาวาฬยักษ์ผู้รองรับผืนพิภพและจักรวาล)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=Kc91H8Hzv1Q",
+        "title": "Bahamut - Arabian Fish that Holds the Earth | Pantheon Mythology",
+        "thumbnail": "https://i.ytimg.com/vi/Kc91H8Hzv1Q/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:21.772Z",
@@ -13005,15 +13521,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Described in classic Arab bestiaries and Edward Lane's translations of the Arabian Nights as a dangerous solitary wilderness demon.",
     "taboos_th": "หากพบเงาร่างครึ่งซีกกระโดดข้ามเนินทรายในคืนเดือนมืด ให้รีบอ่านโองการศักดิ์สิทธิ์และอย่าให้มันสัมผัสถูกตัว",
     "taboos_en": "Avoid solitary desert wadis if a one-legged silhouette hops with blinding speed across moonlit dunes.",
-    "image_url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/vhabiefhBfw/hqdefault.jpg",
     "sound_preset": "creepy_wind",
     "views_count": 22,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/vhabiefhBfw/hqdefault.jpg",
         "title": "นาสนัส (อสุรกายครึ่งซีกกระโดดขาเดียวแห่งเยเมน)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=vhabiefhBfw",
+        "title": "The Horror of the Nasnas A Monster Born from Metaphysical Error",
+        "thumbnail": "https://i.ytimg.com/vi/vhabiefhBfw/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:22.215Z",
@@ -13036,15 +13558,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Described by 11th-century polymath Al-Biruni and Ibn Battuta, celebrated in Persian miniature paintings as the ultimate symbol of untamable strength.",
     "taboos_th": "มีเพียงเสียงขันคูอันไพเราะของนกพิราบเท่านั้นที่สามารถสยบความบ้าคลั่งของคาร์คาดันน์ได้",
     "taboos_en": "Only the gentle cooing of ringdoves can soothe the territorial wrath of a charging Karkadann.",
-    "image_url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/Ng66OcDk3Kg/hqdefault.jpg",
     "sound_preset": "jungle_curse",
     "views_count": 20,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/Ng66OcDk3Kg/hqdefault.jpg",
         "title": "คาร์คาดันน์ (ยูนิคอร์นเขาเดียวดุร้ายแห่งเปอร์เซียโบราณ)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=Ng66OcDk3Kg",
+        "title": "Top 10 Terrifying Arabian Mythical Creatures",
+        "thumbnail": "https://i.ytimg.com/vi/Ng66OcDk3Kg/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:22.683Z",
@@ -13067,15 +13595,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Cataloged in Zakariya al-Qazwini's famous bestiary, presented as a gift to Alexander the Great after slaying the terrorizing island dragon.",
     "taboos_th": "ห้ามประมาทสัตว์ตัวเล็กที่มีเขาเดี่ยวในเกาะลี้ลับ การเข้าใกล้อัล-มิราชต้องใช้แม่มดหรือผู้มีเวทมนตร์กล่อมให้หลับเท่านั้น",
     "taboos_en": "Never approach the golden hare with naive curiosity; only experienced enchantresses can lull its fierce instincts.",
-    "image_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/MXmOKbZVL7M/hqdefault.jpg",
     "sound_preset": "whisper",
     "views_count": 8,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/MXmOKbZVL7M/hqdefault.jpg",
         "title": "อัล-มิราช (กระต่ายเหลืองมีเขาดำแห่งเกาะมังกร)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=MXmOKbZVL7M",
+        "title": "Katharine's Creatures Episode 203: Al-Mi'raj",
+        "thumbnail": "https://i.ytimg.com/vi/MXmOKbZVL7M/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:23.116Z",
@@ -13098,15 +13632,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Greek tradition dictates keeping fireplace Yule logs burning continuously and hanging colanders outside doorways to distract the goblins with counting holes until sunrise.",
     "taboos_th": "ต้องรักษาไฟในเตาผิงให้ลุกโชนตลอด 12 วันแห่งเทศกาลคริสต์มาสเพื่อป้องกันไม่ให้กัลลิคันซารอสปีนลงมาทางปล่องไฟ",
     "taboos_en": "Keep hearth fires burning night and day between Christmas and Epiphany to bar entry through chimneys.",
-    "image_url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+    "image_url": "https://i.ytimg.com/vi/qFTIRZRBhVE/hqdefault.jpg",
     "sound_preset": "whisper",
     "views_count": 15,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80",
+        "url": "https://i.ytimg.com/vi/qFTIRZRBhVE/hqdefault.jpg",
         "title": "กัลลิคันซารอส (ปีศาจก๊อบลินใต้พิภพแห่งเทศกาลคริสต์มาส)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=qFTIRZRBhVE",
+        "title": "Kallikantzaros: The Origins of the CHRISTMAS  Goblins",
+        "thumbnail": "https://i.ytimg.com/vi/qFTIRZRBhVE/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:23.601Z",
