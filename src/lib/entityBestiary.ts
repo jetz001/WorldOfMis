@@ -24,6 +24,7 @@ export type ArchetypeKey =
   | 'cursed_artifact'
   | 'aquatic_abyss'
   | 'aquatic_serpent'
+  | 'merfolk_spirit'
   | 'cryptid_beast'
   | 'undead_lord'
   | 'winged_demon'
@@ -58,6 +59,24 @@ interface PinBestiaryMeta {
 }
 
 const PIN_BESTIARY_DB: Record<string, Partial<PinBestiaryMeta>> = {
+  'pin-adaro-solomon-flying-fish': {
+    archetype: 'merfolk_spirit',
+    typeTh: 'เผ่าพันธุ์เงือกและพรายน้ำโบราณ (Amphibious Merfolk & Sea Specter)',
+    typeEn: 'Amphibious Merfolk & Oceanic Specter',
+    genderTh: 'เพศชาย (วิญญาณชั่วร้ายของมนุษย์จำแลงกาย)',
+    genderEn: 'Male Spirit (Malignant Human Ghost Manifestation)',
+    sizeTh: '1.6 – 2.0 เมตร (สรีระครึ่งมนุษย์ครึ่งปลาดาบ มีเขาแหลมบนศีรษะ)',
+    sizeEn: '1.6 – 2.0 m (Humanoid with swordfish horn & dorsal fins)',
+    weightTh: '60 – 85 กก.',
+    weightEn: '60 – 85 kg',
+    danger: 3,
+    habitatTh: 'เกาะมาคิรา แนวมรสุม และแนวปะการังหมู่เกาะโซโลมอน',
+    habitatEn: 'Makira Island reefs & Solomon Islands sea shoals',
+    hoursTh: 'ยามแดดออกกลางสายฝน (Sun showers) และยามเกิดสายรุ้งเหนือน้ำ',
+    hoursEn: 'During ocean sun showers and descending rainbows',
+    descTh: 'ปรากฏกายเป็นอมนุษย์พรายน้ำท่อนบนเป็นชายกำยำ มีเหงือกหลังใบหู บนศีรษะมีเขาแหลมยาวคล้ายดาบของปลากระโทงหรือฉลาม ท่อนล่างเป็นหางปลาแหวกว่ายได้รวดเร็วปานสายฟ้า มักถือปลาบินมีพิษพร้อมยิงใส่ผู้บุกรุก',
+    descEn: 'Manifests as an amphibious merman with gills behind his ears, sporting a formidable swordfish-like horn upon his crown and shark fins, propelling across waves to fling venomous flying fish.',
+  },
   'pin-kumanthong': {
     archetype: 'cursed_artifact',
     typeTh: 'กุมารทองและวิญญาณเด็กทองคำ (Sacred Child Spirit & Occult Amulet)',
@@ -358,13 +377,20 @@ export function inferArchetype(pin: GhostPin): ArchetypeKey {
   // 2. Category: MONSTER
   if (pin.category === 'monster') {
     if (
+      text.includes('เงือก') || text.includes('mermaid') || text.includes('merman') ||
+      text.includes('siren') || text.includes('ไซเรน') || text.includes('adaro') ||
+      text.includes('อาดะโร') || text.includes('กัปปะ') || text.includes('kappa') ||
+      text.includes('ningyo') || text.includes('นิงเงียว') || text.includes('rusalka') ||
+      text.includes('melusine') || text.includes('พรายน้ำ')
+    ) {
+      return 'merfolk_spirit';
+    }
+    if (
       text.includes('จระเข้') || text.includes('ชาละวัน') || text.includes('chalawan') ||
       text.includes('พญานาค') || text.includes('นาคราช') || text.includes('naga') ||
       text.includes('loch ness') || text.includes('nessie') || text.includes('เนสซี') ||
       text.includes('kraken') || text.includes('คราเคน') || text.includes('serpent') ||
-      text.includes('เงือก') || text.includes('mermaid') || text.includes('siren') ||
-      text.includes('kelpie') || text.includes('เคลปี') || text.includes('กัปปะ') || text.includes('kappa') ||
-      text.includes('พรายน้ำ') || text.includes('leviathan')
+      text.includes('kelpie') || text.includes('เคลปี') || text.includes('leviathan')
     ) {
       return 'aquatic_serpent';
     }
@@ -598,6 +624,23 @@ function getDefaultMetadata(archetype: ArchetypeKey, pin: GhostPin) {
         hoursEn: 'Dense water mist & full-moon nights',
       };
 
+    case 'merfolk_spirit':
+      return {
+        typeTh: 'เผ่าพันธุ์เงือกและพรายน้ำโบราณ (Amphibious Merfolk & Sea Specter)',
+        typeEn: 'Amphibious Merfolk & Oceanic Specter',
+        genderTh: 'มีทั้งเพศชายและหญิง (จำแลงกายตามวิญญาณเดิม)',
+        genderEn: 'Male / Female or Manifested Spirit Form',
+        sizeTh: '1.5 – 2.1 เมตร (ท่อนบนคล้ายมนุษย์ ท่อนล่างเป็นหางปลา)',
+        sizeEn: '1.5 – 2.1 m (Humanoid upper torso with finned tail)',
+        weightTh: '50 – 90 กก.',
+        weightEn: '50 – 90 kg',
+        danger: 3 as const,
+        habitatTh: 'แนวปะการัง ถ้ำใต้น้ำ และชายฝั่งทะเลมหาสมุทร',
+        habitatEn: 'Coral reefs, sea caverns & ocean coastlines',
+        hoursTh: 'ยามคลื่นลมแปรปรวน แดดออกกลางฝน และคืนข้างแรม',
+        hoursEn: 'Turbulent tides, sun showers & waning moon swells',
+      };
+
     case 'cryptid_beast':
       return {
         typeTh: 'อสุรกายดึกดำบรรพ์และสัตว์ร้ายจำแลง (Primeval Cryptid & Alpha Predator)',
@@ -809,6 +852,19 @@ export function generateContextualTaboos(pin: GhostPin, language: SupportedLangu
             'Never swim or navigate waters alone during unnatural dead calms or sudden creeping river fogs.',
             'If hypnotic melodies, whispers, or calls echo across the water, do not lean over or steer towards them.',
             'Offer respect to water deities and refrain from voyaging across deep waters after twilight.',
+          ];
+
+    case 'merfolk_spirit':
+      return isTh
+        ? [
+            'ห้ามจ้องมองสายรุ้งที่แตะลงสู่ผิวน้ำ หรือว่ายน้ำตามเสียงเพลงหวานลึกลับกลางคลื่นทะเลเด็ดขาด',
+            'หากพบเงาร่างแปลกประหลาดมีครีบว่ายวนรอบเรือ ให้ถอยห่างจากกราบเรือและไม่โยนเหยื่อลงน้ำ',
+            'ควรพกเครื่องรางป้องกันภัยทางน้ำ และหลีกเลี่ยงการออกเรือคนเดียวในวันที่แดดออกกลางสายฝน',
+          ]
+        : [
+            'Never gaze into rainbows touching sea surfaces or pursue eerie melodies across oceanic swells.',
+            'If finned humanoid silhouettes circle the hull, step away from the gunwales immediately.',
+            'Carry protective maritime talismans and avoid solo coastal voyages during sun showers.',
           ];
 
     case 'cryptid_beast':

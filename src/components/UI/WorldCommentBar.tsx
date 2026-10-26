@@ -326,18 +326,17 @@ export const WorldCommentBar: React.FC<WorldCommentBarProps> = ({
         }}
       >
         {!isWorldZoomedOut ? (
-          <button
-            type="button"
-            onClick={onZoomOut}
-            className="w-full px-4 py-2 rounded-full bg-[#070c16]/90 hover:bg-emerald-950/85 border border-amber-500/40 hover:border-emerald-400/70 backdrop-blur-xl text-xs text-amber-200/95 hover:text-emerald-200 shadow-[0_8px_24px_rgba(0,0,0,0.85)] flex items-center justify-center gap-2 transition-all cursor-pointer active:scale-95"
-          >
-            <Globe2 className="w-4 h-4 text-emerald-400 animate-pulse" />
-            <span>
-              {language === 'th'
-                ? '🌍 ซูมออกไปดูโลก เพื่อพิมพ์คอมเม้นต์ World (แตะเพื่อซูมออก)'
-                : '🌍 Zoom out to World View to post a World Comment'}
-            </span>
-          </button>
+          <div className="flex justify-center">
+            <button
+              type="button"
+              onClick={onZoomOut}
+              title={language === 'th' ? 'ซูมออกดูมุมมองโลก (World View)' : 'Zoom out to World View'}
+              aria-label={language === 'th' ? 'ซูมออกดูมุมมองโลก' : 'Zoom out to World View'}
+              className="p-3 sm:p-3.5 rounded-full bg-[#070c16]/90 hover:bg-emerald-950/90 border-2 border-emerald-500/60 hover:border-amber-400 text-emerald-300 hover:text-amber-300 backdrop-blur-xl shadow-[0_8px_25px_rgba(0,0,0,0.85),0_0_20px_rgba(16,185,129,0.35)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.9),0_0_25px_rgba(251,191,36,0.45)] transition-all cursor-pointer active:scale-90 group"
+            >
+              <Globe2 className="w-6 h-6 text-emerald-400 group-hover:text-amber-300 drop-shadow-[0_0_8px_rgba(52,211,153,0.8)] group-hover:scale-110 transition-transform" />
+            </button>
+          </div>
         ) : (
           <form
             onSubmit={handleSend}

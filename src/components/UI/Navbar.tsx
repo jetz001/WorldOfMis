@@ -5,7 +5,8 @@ import {
   Ghost,
   Skull,
   BookOpen,
-  Sparkles,
+  ScrollText,
+  Crown,
   Flame,
   X,
   MapPin,
@@ -319,7 +320,7 @@ export const Navbar: React.FC<NavbarProps> = ({
     ghost: Ghost,
     curse: Skull,
     legend: BookOpen,
-    sacred: Sparkles,
+    sacred: Crown,
     monster: Flame,
   };
 
@@ -331,23 +332,23 @@ export const Navbar: React.FC<NavbarProps> = ({
   const renderDropdownContent = (isMobile: boolean = false) => {
     if (!searchQuery.trim()) {
       return (
-        <div className="p-3.5 sm:p-4">
-          <div className="flex items-center justify-between mb-2.5 pb-2 border-b border-slate-800/80">
-            <span className="text-xs font-semibold tracking-wide text-emerald-300 flex items-center gap-2">
-              <Sparkles className="w-4 h-4 text-emerald-400" />
+        <div className="p-3.5 sm:p-4 text-xs font-parchment select-none">
+          <div className="flex items-center justify-between mb-2.5 pb-2 border-b border-[#dfcfad]">
+            <span className="font-bold tracking-wide text-[#3d2008] flex items-center gap-2">
+              <ScrollText className="w-4 h-4 text-[#7a4618]" />
               {language === 'th'
                 ? 'สำรวจตามธีมและเรื่องเล่ายอดนิยม'
                 : 'Explore Popular Themes & Lore'}
             </span>
-            <span className="text-[11px] text-slate-400 flex items-center gap-1">
-              <Compass className="w-3 h-3 text-emerald-400/80" />
+            <span className="text-[11px] text-[#7a5430] flex items-center gap-1 font-medium">
+              <Compass className="w-3 h-3 text-[#8b5a2b]" />
               {language === 'th' ? 'แตะเพื่อค้นหาทันที' : 'Tap to explore'}
             </span>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             {suggestedQueries.map((prompt) => {
               const match = prompt.match(/^([^\s]+)\s+(.+)$/);
-              const emoji = match ? match[1] : '🔮';
+              const emoji = match ? match[1] : '📜';
               const text = match ? match[2] : prompt;
 
               return (
@@ -364,12 +365,12 @@ export const Navbar: React.FC<NavbarProps> = ({
                       inputRef.current?.focus();
                     }
                   }}
-                  className="flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl text-xs bg-slate-900/85 hover:bg-emerald-950/60 text-slate-200 hover:text-emerald-200 border border-slate-800/80 hover:border-emerald-500/50 transition-all text-left group shadow-sm hover:shadow-[0_0_15px_rgba(16,185,129,0.18)] cursor-pointer active:scale-[0.98]"
+                  className="flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl text-xs bg-[#fdfbf7] hover:bg-[#ebdcc0] text-[#3d2008] border border-[#cfb68a] transition-all text-left group shadow-sm hover:shadow-[0_2px_8px_rgba(70,40,15,0.08)] cursor-pointer active:scale-[0.98]"
                 >
                   <span className="text-base shrink-0 group-hover:scale-115 transition-transform duration-200">
                     {emoji}
                   </span>
-                  <span className="font-medium leading-tight">
+                  <span className="font-medium leading-tight text-[#2a1608]">
                     {text}
                   </span>
                 </button>
@@ -381,29 +382,29 @@ export const Navbar: React.FC<NavbarProps> = ({
     }
 
     return (
-      <div className="max-h-[65vh] flex flex-col">
-        {/* Lore Summary Banner */}
-        <div className="p-3 bg-gradient-to-r from-emerald-950/60 via-slate-900/90 to-slate-950 border-b border-emerald-500/20">
-          <div className="flex items-center justify-between mb-1">
-            <span className="text-xs font-semibold text-emerald-300 flex items-center gap-1.5">
-              <Sparkles className="w-3.5 h-3.5 text-emerald-400 animate-pulse" />
+      <div className="max-h-[65vh] flex flex-col font-parchment select-text">
+        {/* Lore Summary Banner (Antique Ivory Parchment Style) */}
+        <div className="p-3 sm:p-3.5 bg-gradient-to-b from-[#f5ebd4] to-[#f0e4cc] border-b-2 border-[#8b5a2b]/35 shadow-sm">
+          <div className="flex items-center justify-between mb-1.5">
+            <span className="text-xs font-bold text-[#3e2008] flex items-center gap-1.5 uppercase tracking-wide">
+              <ScrollText className="w-4 h-4 text-[#7a4618]" />
               {language === 'th'
                 ? 'สรุปเรื่องเล่าและบริบทที่เกี่ยวข้อง'
                 : 'Folklore Overview & Context'}
             </span>
-            <span className="text-[11px] font-medium text-emerald-400/90">
+            <span className="text-[11px] font-mono font-bold text-[#5c300f] bg-[#e6d3b8] px-2 py-0.5 rounded border border-[#b8956e]">
               {ragResponse.results.length}{' '}
               {language === 'th' ? 'เรื่องเล่าที่พบ' : 'stories found'}
             </span>
           </div>
-          <p className="text-xs text-slate-200 leading-relaxed">
+          <p className="text-xs sm:text-[13px] text-[#2a1708] leading-relaxed font-parchment">
             {ragResponse.ragSummary}
           </p>
         </div>
 
         {/* Matching Stories List */}
         {ragResponse.results.length > 0 && (
-          <div className="overflow-y-auto divide-y divide-slate-800/60 max-h-72">
+          <div className="overflow-y-auto divide-y divide-[#e5d5b7] max-h-72 scrollbar-thin scrollbar-thumb-[#cfb68a]">
             {ragResponse.results.slice(0, 6).map((item) => {
               const pin = item.pin;
               const title = language === 'th' ? pin.title_th : pin.title_en;
@@ -422,31 +423,31 @@ export const Navbar: React.FC<NavbarProps> = ({
                     setIsMobileSearchFocused(false);
                     setIsMobileSearchOpen(false);
                   }}
-                  className="w-full p-3 sm:p-3.5 text-left hover:bg-emerald-950/30 transition-colors flex items-start justify-between gap-3 group cursor-pointer"
+                  className="w-full p-3 sm:p-3.5 text-left bg-[#fcf9f2] hover:bg-[#efe0c7] transition-colors flex items-start justify-between gap-3 group cursor-pointer"
                 >
                   <div className="flex items-start gap-3 min-w-0">
-                    <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-slate-900 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0 mt-0.5 group-hover:bg-emerald-500/20 group-hover:border-emerald-400 transition-colors">
+                    <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-[#eadbbf] border border-[#a37947] flex items-center justify-center text-[#5a320f] shrink-0 mt-0.5 group-hover:bg-[#dfcaa8] group-hover:border-[#8b5a2b] transition-colors shadow-sm">
                       <CatIcon className="w-4 h-4" />
                     </div>
                     <div className="min-w-0">
                       <div className="flex items-center gap-2 flex-wrap">
-                        <h3 className="text-xs sm:text-sm font-bold text-white group-hover:text-emerald-300 transition-colors truncate">
+                        <h3 className="text-xs sm:text-sm font-bold text-[#1f1106] group-hover:text-[#7a4013] transition-colors truncate">
                           {title}
                         </h3>
-                        <span className="inline-flex items-center gap-1 text-[10px] sm:text-[11px] text-emerald-400/90">
-                          <MapPin className="w-3 h-3" />
+                        <span className="inline-flex items-center gap-1 text-[10px] sm:text-[11px] text-[#785028] font-medium">
+                          <MapPin className="w-3 h-3 text-[#99531d]" />
                           {province}
                         </span>
                       </div>
-                      <p className="text-[11px] sm:text-xs text-slate-400 line-clamp-2 mt-0.5 sm:mt-1 leading-relaxed">
+                      <p className="text-[11px] sm:text-xs text-[#52351c] line-clamp-2 mt-0.5 sm:mt-1 leading-relaxed font-sans">
                         {item.matchedSnippet}
                       </p>
                       {item.matchedConceptTags.length > 0 && (
-                        <div className="flex flex-wrap gap-1 mt-1">
+                        <div className="flex flex-wrap gap-1 mt-1 font-sans">
                           {item.matchedConceptTags.map((tag) => (
                             <span
                               key={tag}
-                              className="px-1.5 py-0.5 rounded text-[9.5px] sm:text-[10px] font-medium bg-emerald-500/10 text-emerald-300 border border-emerald-500/25"
+                              className="px-1.5 py-0.5 rounded text-[9.5px] sm:text-[10px] font-medium bg-[#ecdbc2] text-[#4d2508] border border-[#c29c71]"
                             >
                               #{tag}
                             </span>
@@ -457,10 +458,10 @@ export const Navbar: React.FC<NavbarProps> = ({
                   </div>
 
                   <div className="flex flex-col items-end shrink-0 gap-1">
-                    <span className="px-1.5 py-0.5 rounded text-[9.5px] sm:text-[10px] font-mono font-bold bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
+                    <span className="px-1.5 py-0.5 rounded text-[9.5px] sm:text-[10px] font-mono font-bold bg-[#dfcaa8] text-[#3d2008] border border-[#8b5a2b]">
                       {matchPercent}% {language === 'th' ? 'ตรงกัน' : 'Match'}
                     </span>
-                    <span className="text-[10px] sm:text-[11px] text-slate-500 group-hover:text-emerald-400 flex items-center gap-0.5 transition-colors">
+                    <span className="text-[10px] sm:text-[11px] text-[#7a4618] group-hover:text-[#3d1e06] font-semibold flex items-center gap-0.5 transition-colors">
                       {language === 'th' ? 'บินไปดู' : 'Fly to'}
                       <ArrowUpRight className="w-3.5 h-3.5" />
                     </span>
@@ -499,7 +500,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           className="relative flex-1 max-w-xs md:max-w-lg hidden md:block"
         >
           <div className="relative flex items-center">
-            <Sparkles className="w-4 h-4 absolute left-3.5 text-emerald-400/70 pointer-events-none" />
+            <ScrollText className="w-4 h-4 absolute left-3.5 text-[#c4923e] pointer-events-none" />
             <input
               ref={inputRef}
               type="text"
@@ -556,10 +557,20 @@ export const Navbar: React.FC<NavbarProps> = ({
             </div>
           </div>
 
-          {/* Interactive Suggestions & Results Dropdown Panel */}
+          {/* Interactive Suggestions & Results Dropdown Panel (2.5D Antique Ivory Scroll) */}
           {showDropdown && (
-            <div className="absolute left-0 right-0 top-full mt-2 rounded-2xl bg-slate-950/95 border border-emerald-500/30 backdrop-blur-2xl shadow-[0_25px_60px_rgba(0,0,0,0.85),0_0_30px_rgba(16,185,129,0.15)] overflow-hidden z-50 animate-in fade-in slide-in-from-top-2 duration-200">
+            <div className="absolute left-0 right-0 top-full mt-2 rounded-2xl bg-ivory-scroll border-2 border-[#8b5a2b] shadow-[0_22px_55px_rgba(0,0,0,0.6),0_0_30px_rgba(139,90,43,0.2)] overflow-hidden z-50 animate-parchment-unroll">
+              {/* Top Scroll Roller Rod (2.5D Scroll Accent) */}
+              <div className="h-2 bg-gradient-to-r from-[#4a280d] via-[#a36f3c] to-[#4a280d] border-b border-[#5a3818]/60 shadow-inner flex items-center justify-between px-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#f4ebd5]/80" />
+                <span className="w-1.5 h-1.5 rounded-full bg-[#f4ebd5]/80" />
+              </div>
               {renderDropdownContent(false)}
+              {/* Bottom Scroll Roller Rod */}
+              <div className="h-2 bg-gradient-to-r from-[#4a280d] via-[#a36f3c] to-[#4a280d] border-t border-[#5a3818]/60 shadow-inner flex items-center justify-between px-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#f4ebd5]/80" />
+                <span className="w-1.5 h-1.5 rounded-full bg-[#f4ebd5]/80" />
+              </div>
             </div>
           )}
         </div>
@@ -737,7 +748,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           className="relative w-full md:hidden pointer-events-auto animate-in fade-in slide-in-from-top-1 duration-150"
         >
           <div className="relative flex items-center">
-            <Sparkles className="w-4 h-4 absolute left-3.5 text-emerald-400/70 pointer-events-none" />
+            <ScrollText className="w-4 h-4 absolute left-3.5 text-[#c4923e] pointer-events-none" />
             <input
               ref={mobileInputRef}
               type="text"
@@ -792,10 +803,20 @@ export const Navbar: React.FC<NavbarProps> = ({
             </div>
           </div>
 
-          {/* Mobile Dropdown Panel */}
+          {/* Mobile Dropdown Panel (2.5D Antique Ivory Scroll) */}
           {isMobileSearchFocused && (
-            <div className="absolute left-0 right-0 top-full mt-2 rounded-2xl bg-slate-950/98 border border-emerald-500/40 backdrop-blur-2xl shadow-[0_25px_60px_rgba(0,0,0,0.95),0_0_30px_rgba(16,185,129,0.2)] overflow-hidden z-[1100] max-h-[65vh] overflow-y-auto">
+            <div className="absolute left-0 right-0 top-full mt-2 rounded-2xl bg-ivory-scroll border-2 border-[#8b5a2b] shadow-[0_25px_60px_rgba(0,0,0,0.65),0_0_30px_rgba(139,90,43,0.2)] overflow-hidden z-[1100] max-h-[65vh] overflow-y-auto animate-parchment-unroll">
+              {/* Top Scroll Roller Rod */}
+              <div className="h-2 bg-gradient-to-r from-[#4a280d] via-[#a36f3c] to-[#4a280d] border-b border-[#5a3818]/60 shadow-inner flex items-center justify-between px-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#f4ebd5]/80" />
+                <span className="w-1.5 h-1.5 rounded-full bg-[#f4ebd5]/80" />
+              </div>
               {renderDropdownContent(true)}
+              {/* Bottom Scroll Roller Rod */}
+              <div className="h-2 bg-gradient-to-r from-[#4a280d] via-[#a36f3c] to-[#4a280d] border-t border-[#5a3818]/60 shadow-inner flex items-center justify-between px-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#f4ebd5]/80" />
+                <span className="w-1.5 h-1.5 rounded-full bg-[#f4ebd5]/80" />
+              </div>
             </div>
           )}
         </div>

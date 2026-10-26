@@ -20598,20 +20598,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "Malicious amphibious ocean spirits of Melanesian folklore shaped like humanoids with swordfish snouts and shark fins, travelling along rainbows and hurling flying fish at mariners.",
     "folklore_history_th": "ชาวเกาะโซโลมอนเชื่อว่าอาดาโรเกิดจากส่วนที่ชั่วร้ายของวิญญาณมนุษย์ที่แยกตัวออกมาหลังความตาย",
     "folklore_history_en": "Rooted in Melanesian animism as the malignant essence of departed souls haunting coastal shoals.",
-    "image_url": "https://i.ytimg.com/vi/cJkdw-AmCFw/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/fSZ5NAreaQE/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/cJkdw-AmCFw/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/fSZ5NAreaQE/hqdefault.jpg",
         "title": "อาดาโร มนุษย์เงือกปลาบินแห่งหมู่เกาะโซโลมอน (แปซิฟิก)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=cJkdw-AmCFw",
-        "title": "นักวิทยาศาสตร์ไม่ได้แสดงสิ่งมีชีวิตใต้ทะเลลึกชนิดใหม่ที่พวกเขาค้นพบให้เราเห็น แต่ทำไมล่ะ?",
-        "thumbnail": "https://i.ytimg.com/vi/cJkdw-AmCFw/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=fSZ5NAreaQE",
+        "title": "Beware the Adaro: Solomon Islands' Most Terrifying Sea Spirit",
+        "thumbnail": "https://i.ytimg.com/vi/fSZ5NAreaQE/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามจ้องมองปลายสายรุ้งที่แตะลงสู่ผิวน้ำทะเลในวันที่แดดออกกลางฝน",

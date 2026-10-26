@@ -66,6 +66,46 @@
   outline-offset: -5px;
 }
 
+/* 2.5D Antique Ivory Parchment Scroll Unrolling Animation */
+@keyframes parchment-scroll-unroll-25d {
+  0% {
+    opacity: 0;
+    transform: perspective(1000px) rotateX(-28deg) scaleY(0.12);
+    transform-origin: top center;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.4));
+  }
+  65% {
+    opacity: 1;
+    transform: perspective(1000px) rotateX(4deg) scaleY(1.02);
+    transform-origin: top center;
+  }
+  100% {
+    opacity: 1;
+    transform: perspective(1000px) rotateX(0deg) scaleY(1);
+    transform-origin: top center;
+    filter: drop-shadow(0 16px 36px rgba(0, 0, 0, 0.55));
+  }
+}
+
+.animate-parchment-unroll {
+  animation: parchment-scroll-unroll-25d 0.38s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transform-origin: top center;
+}
+
+/* Aged Ivory Parchment Dropdown Paper */
+.bg-ivory-scroll {
+  background-color: #fbf7ee;
+  background-image:
+    radial-gradient(circle at 10% 12%, rgba(139, 90, 43, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 90% 88%, rgba(120, 68, 25, 0.09) 0%, transparent 45%),
+    radial-gradient(circle at 85% 15%, rgba(150, 90, 35, 0.06) 0%, transparent 38%),
+    linear-gradient(to bottom, #fdfbf7 0%, #faf3e4 55%, #f2e6cb 100%);
+  border: 2px solid #8b5a2b;
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.5),
+    inset 0 0 25px rgba(139, 90, 43, 0.08);
+}
+
 /* Custom glowing pulse and animations */
 @keyframes ghost-pulse {
   0%, 100% {
