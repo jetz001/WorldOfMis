@@ -185,23 +185,60 @@ export const Navbar: React.FC<NavbarProps> = ({
     window.setTimeout(() => setDogeCopied(false), 1800);
   };
 
-  // Live Online Explorers counter with gentle natural fluctuations
-  const [onlineCount, setOnlineCount] = useState(() => {
-    const base = 138;
-    const seed = Math.floor(Date.now() / 60000) % 25;
-    return base + seed;
-  });
+  // Real-time Live Online Explorers counter connected to Cloudflare D1 Presence API
+  const [onlineCount, setOnlineCount] = useState<number>(1);
 
   useEffect(() => {
-    const interval = window.setInterval(() => {
-      setOnlineCount((prev) => {
-        const delta = Math.floor(Math.random() * 5) - 2; // -2, -1, 0, +1, +2
-        const next = prev + delta;
-        return next < 105 ? 112 : next > 250 ? 238 : next;
-      });
-    }, 4500 + Math.random() * 2000);
+    let visitorId = '';
+    try {
+      visitorId = sessionStorage.getItem('wom_visitor_id') || '';
+      if (!visitorId) {
+        visitorId = 'v_' + Math.random().toString(36).slice(2, 10) + '_' + Date.now().toString(36);
+        sessionStorage.setItem('wom_visitor_id', visitorId);
+      }
+    } catch {
+      visitorId = 'v_' + Date.now().toString(36);
+    }
 
-    return () => window.clearInterval(interval);
+    const sendHeartbeat = async () => {
+      try {
+        const res = await fetch('/api/heartbeat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ visitorId }),
+        });
+        if (res.ok) {
+          const data = (await res.json()) as { success?: boolean; onlineCount?: number };
+          if (data && typeof data.onlineCount === 'number') {
+            setOnlineCount(data.onlineCount);
+          }
+        }
+      } catch {
+        // Fallback to local 1 if network fails
+      }
+    };
+
+    // Initial heartbeat
+    sendHeartbeat();
+
+    // Heartbeat every 20 seconds to renew active presence in D1
+    const interval = window.setInterval(sendHeartbeat, 20000);
+
+    const handleLeave = () => {
+      try {
+        if (navigator.sendBeacon) {
+          navigator.sendBeacon('/api/heartbeat/leave', JSON.stringify({ visitorId }));
+        }
+      } catch {}
+    };
+
+    window.addEventListener('beforeunload', handleLeave);
+
+    return () => {
+      window.clearInterval(interval);
+      window.removeEventListener('beforeunload', handleLeave);
+      handleLeave();
+    };
   }, []);
 
   // Secret 5-tap trigger on the logo to open Admin Portal (invisible to regular visitors)

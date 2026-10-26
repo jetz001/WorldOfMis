@@ -21,6 +21,86 @@ const app = new Hono<{ Bindings: Bindings }>().basePath('/api');
 // CORS / Health check
 app.get('/health', (c) => c.json({ status: 'ok', service: 'worldofmys-cf-worker' }));
 
+// Real-time Live Online Users (Presence Heartbeat)
+app.post('/heartbeat', async (c) => {
+  const db = c.env.DB;
+  if (!db) {
+    return c.json({ success: true, onlineCount: 1 });
+  }
+
+  try {
+    let visitorId = '';
+    try {
+      const body = await c.req.json();
+      visitorId = body?.visitorId || '';
+    } catch {}
+
+    if (!visitorId) {
+      visitorId = c.req.header('cf-connecting-ip') || 'anonymous-visitor';
+    }
+
+    const now = Date.now();
+    await db
+      .prepare(
+        'INSERT INTO live_presence (visitor_id, last_seen) VALUES (?, ?) ON CONFLICT(visitor_id) DO UPDATE SET last_seen = excluded.last_seen'
+      )
+      .bind(visitorId, now)
+      .run();
+
+    // Clean up visitors inactive for more than 2 minutes (120,000 ms)
+    if (Math.random() < 0.2) {
+      await db
+        .prepare('DELETE FROM live_presence WHERE last_seen < ?')
+        .bind(now - 120000)
+        .run();
+    }
+
+    // Active threshold: seen in the last 45 seconds (45,000 ms)
+    const threshold = now - 45000;
+    const result = (await db
+      .prepare('SELECT COUNT(*) as count FROM live_presence WHERE last_seen > ?')
+      .bind(threshold)
+      .first()) as { count?: number } | null;
+
+    const onlineCount = Math.max(1, Number(result?.count || 1));
+    return c.json({ success: true, onlineCount });
+  } catch (err: unknown) {
+    return c.json({ success: true, onlineCount: 1 });
+  }
+});
+
+app.post('/heartbeat/leave', async (c) => {
+  const db = c.env.DB;
+  if (!db) return c.json({ success: true });
+  try {
+    let visitorId = '';
+    try {
+      const body = await c.req.json();
+      visitorId = body?.visitorId || '';
+    } catch {}
+    if (visitorId) {
+      await db.prepare('DELETE FROM live_presence WHERE visitor_id = ?').bind(visitorId).run();
+    }
+  } catch {}
+  return c.json({ success: true });
+});
+
+app.get('/heartbeat', async (c) => {
+  const db = c.env.DB;
+  if (!db) return c.json({ success: true, onlineCount: 1 });
+  try {
+    const threshold = Date.now() - 45000;
+    const result = (await db
+      .prepare('SELECT COUNT(*) as count FROM live_presence WHERE last_seen > ?')
+      .bind(threshold)
+      .first()) as { count?: number } | null;
+    const onlineCount = Math.max(1, Number(result?.count || 1));
+    return c.json({ success: true, onlineCount });
+  } catch {
+    return c.json({ success: true, onlineCount: 1 });
+  }
+});
+
 // 1. Get all published pins
 app.get('/pins', async (c) => {
   const db = c.env.DB;
