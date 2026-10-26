@@ -285,19 +285,19 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
         >
           <div className="w-full h-full flex flex-col">
             {/* Mobile Tab Switcher at top of comments */}
-            <div className="lg:hidden flex items-center justify-between p-2.5 bg-[#070c16] border-b border-amber-500/20 text-xs">
+            <div className="lg:hidden flex items-center justify-between p-2.5 bg-[#f3ede2] border-b border-[#dfd7c6] text-xs">
               <button
                 type="button"
                 onClick={() => setMobileTab('dossier')}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-500/20 text-amber-200 border border-amber-500/30"
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-100 text-amber-900 border border-amber-300/80 font-medium shadow-sm"
               >
                 <ScrollText className="w-3.5 h-3.5" />
-                <span>{language === 'th' ? '← สลับไปดูคัมภีร์ข้อมูล' : '← Switch to Dossier'}</span>
+                <span>{language === 'th' ? '← สลับไปดูสารานุกรม' : '← Switch to Dossier'}</span>
               </button>
               <button
                 type="button"
                 onClick={onClose}
-                className="p-1.5 rounded-full bg-slate-800 text-slate-300"
+                className="p-1.5 rounded-full bg-stone-200 text-stone-700 hover:bg-stone-300 transition-colors"
               >
                 <X className="w-4 h-4" />
               </button>
@@ -315,60 +315,60 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
           className="hidden lg:flex flex-1 h-full cursor-pointer bg-black/5 hover:bg-black/0 transition-colors items-end justify-center pb-8 select-none group z-10"
           title={language === 'th' ? 'คลิกที่ว่างตรงกลางเพื่อปิด' : 'Click center backdrop to close'}
         >
-          <div className="opacity-0 group-hover:opacity-90 transition-opacity px-4 py-2 rounded-full bg-black/75 border border-amber-500/40 text-xs text-amber-200/90 backdrop-blur-md shadow-[0_0_24px_rgba(0,0,0,0.9)] flex items-center gap-2">
+          <div className="opacity-0 group-hover:opacity-95 transition-opacity px-4 py-2 rounded-full bg-stone-900/85 border border-[#dfd7c6]/40 text-xs text-amber-100 backdrop-blur-md shadow-[0_4px_20px_rgba(0,0,0,0.4)] flex items-center gap-2">
             <span>👁️</span>
             <span>
               {language === 'th'
-                ? 'มุมมองลูกโลก 3D (โปร่งใส 70%) • คลิกที่ว่างเพื่อปิด'
-                : '3D Globe View (70% Transparent) • Click to close'}
+                ? 'มุมมองลูกโลก 3D • คลิกที่ว่างเพื่อปิด'
+                : '3D Globe View • Click to close'}
             </span>
           </div>
         </div>
 
         {/* ============================================================== */}
-        {/* RIGHT PANEL: STORY DOSSIER & MEDIA CAROUSEL                    */}
+        {/* RIGHT PANEL: STORY DOSSIER & MEDIA CAROUSEL (PARCHMENT THEME)  */}
         {/* ============================================================== */}
         <div
-          className={`relative flex flex-col h-full w-full lg:max-w-xl xl:max-w-xl bg-[#060911]/98 border-l border-amber-500/25 shadow-[-20px_0_60px_rgba(0,0,0,0.9)] backdrop-blur-2xl overflow-hidden animate-in slide-in-from-right duration-300 z-30 ${
+          className={`relative flex flex-col h-full w-full lg:max-w-xl xl:max-w-xl bg-[#fbf9f4] text-stone-800 border-l border-[#dfd7c6] shadow-[-20px_0_60px_rgba(0,0,0,0.35)] backdrop-blur-2xl overflow-hidden animate-in slide-in-from-right duration-300 z-30 ${
             mobileTab === 'dossier' ? 'flex' : 'hidden lg:flex'
           }`}
         >
           {/* Mobile Top Toggle for switching to comments */}
-          <div className="lg:hidden flex items-center justify-between px-4 py-2 bg-[#080e1b] border-b border-amber-500/20 text-xs">
+          <div className="lg:hidden flex items-center justify-between px-4 py-2.5 bg-[#f3ede2] border-b border-[#dfd7c6] text-xs">
             <button
               type="button"
               onClick={() => setMobileTab('comments')}
-              className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-medium"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-100 text-amber-900 border border-amber-300/80 font-medium hover:bg-amber-200/80 transition-colors shadow-sm"
             >
               <MessageSquare className="w-3.5 h-3.5" />
-              <span>{language === 'th' ? '💬 ดูความคิดเห็น & ยอดนิยม' : '💬 View Comments & Popular'}</span>
+              <span>{language === 'th' ? '💬 ดูความคิดเห็น & พยาน' : '💬 View Comments & Evidence'}</span>
             </button>
             <button
               type="button"
               onClick={onClose}
-              className="p-1.5 rounded-full bg-slate-800 text-slate-300"
+              className="p-1.5 rounded-full bg-stone-200 text-stone-700 hover:bg-stone-300 transition-colors"
             >
               <X className="w-4 h-4" />
             </button>
           </div>
-        {/* Ambient Grimoire Background Texture & Ornate Corner Lines */}
+        {/* Ambient Warm Parchment Background Subtle Vignette */}
         <div
-          className="pointer-events-none absolute inset-0 opacity-30"
+          className="pointer-events-none absolute inset-0 opacity-40"
           style={{
             background:
-              'radial-gradient(circle at 85% 12%, rgba(16, 185, 129, 0.14) 0%, transparent 45%), radial-gradient(circle at 15% 88%, rgba(217, 119, 6, 0.1) 0%, transparent 50%)',
+              'radial-gradient(circle at 85% 12%, rgba(217, 119, 6, 0.05) 0%, transparent 45%), radial-gradient(circle at 15% 88%, rgba(180, 83, 9, 0.04) 0%, transparent 50%)',
           }}
         />
 
         {/* Top Antique Grimoire Header */}
-        <div className="relative px-6 pt-5 pb-4 border-b border-amber-500/20 bg-gradient-to-b from-[#0b121e] via-[#080d16] to-transparent">
+        <div className="relative px-6 pt-5 pb-4 border-b border-[#dfd7c6] bg-gradient-to-b from-[#f2ece0] via-[#f7f3eb] to-[#fbf9f4]">
           <div className="flex items-center justify-between gap-2 mb-2.5">
             <div className="flex items-center gap-2 flex-wrap">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-semibold uppercase tracking-widest bg-emerald-950/80 text-emerald-300 border border-emerald-500/35 shadow-[0_0_12px_rgba(16,185,129,0.2)]">
-                <Sparkles className="w-3 h-3 text-emerald-400" />
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-semibold uppercase tracking-wider bg-emerald-100 text-emerald-900 border border-emerald-300/80 shadow-sm">
+                <Sparkles className="w-3 h-3 text-emerald-700" />
                 {categoryLabel}
               </span>
-              <span className="text-[10px] font-mono tracking-widest uppercase px-2.5 py-1 rounded bg-amber-950/50 text-amber-300/90 border border-amber-500/30">
+              <span className="text-[10.5px] font-mono tracking-widest uppercase px-2.5 py-1 rounded bg-amber-100 text-amber-900 border border-amber-300/80 font-bold">
                 {dossier.codexId}
               </span>
             </div>
@@ -376,7 +376,7 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
             <button
               onClick={onClose}
               aria-label={t.close}
-              className="p-2 rounded-full bg-slate-900/80 hover:bg-slate-800 border border-slate-700/60 text-slate-300 hover:text-white transition-colors cursor-pointer"
+              className="p-2 rounded-full bg-stone-200/80 hover:bg-stone-300 border border-stone-300 text-stone-700 hover:text-stone-900 transition-colors cursor-pointer shadow-sm"
             >
               <X className="w-4 h-4" />
             </button>
@@ -385,24 +385,24 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
           {/* Vintage Title */}
           <h2
             id="story-drawer-title"
-            className="font-sans text-2xl md:text-3xl font-bold tracking-normal text-amber-50 drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)] leading-snug"
+            className="font-serif text-2xl md:text-3xl font-bold tracking-tight text-[#1c1917] leading-snug"
           >
             {title}
           </h2>
-          <p className="font-sans text-xs italic text-amber-200/80 tracking-normal mt-0.5 mb-2.5">
+          <p className="font-serif text-xs sm:text-sm italic text-[#57534e] tracking-normal mt-1 mb-2.5">
             “{subTitle}”
           </p>
 
-          <div className="flex flex-wrap items-center gap-4 text-xs text-slate-400">
-            <div className="flex items-center gap-1.5 text-emerald-400 font-medium">
+          <div className="flex flex-wrap items-center gap-4 text-xs text-[#78716c]">
+            <div className="flex items-center gap-1.5 text-emerald-800 font-semibold">
               <MapPin className="w-3.5 h-3.5" />
               <span>
                 {province} {district && `• ${district}`}
               </span>
             </div>
 
-            <div className="flex items-center gap-1.5 text-slate-400">
-              <Eye className="w-3.5 h-3.5 text-amber-400/80" />
+            <div className="flex items-center gap-1.5 text-stone-600 font-medium">
+              <Eye className="w-3.5 h-3.5 text-amber-700" />
               <span>
                 {pin.views_count.toLocaleString()} {t.views}
               </span>
@@ -417,7 +417,7 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
           {/* ============================================================== */}
           <div className="space-y-2.5">
             {/* 1. Main Media Stage (16:9) */}
-            <div className="relative rounded-2xl overflow-hidden border border-amber-500/35 bg-[#03060c] shadow-[0_12px_35px_rgba(0,0,0,0.9)] group">
+            <div className="relative rounded-2xl overflow-hidden border border-[#d6cbb6] bg-[#1a1816] shadow-[0_8px_30px_rgba(40,30,20,0.18)] group">
               <div className="relative aspect-video w-full overflow-hidden flex items-center justify-center">
                 {/* VIDEO STAGE */}
                 {currentMedia.type === 'youtube' && ytVideoId ? (
@@ -556,11 +556,11 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
 
             {/* 2. Steam-Style Thumbnail Strip Carousel (Below Stage) */}
             {mediaItems.length > 1 && (
-              <div className="relative flex items-center gap-1.5 pt-1">
+              <div className="relative flex items-center gap-1.5 p-1.5 rounded-xl bg-[#efe8da] border border-[#d6cbb6] shadow-sm">
                 <button
                   onClick={() => scrollThumbs('left')}
                   aria-label="Scroll thumbnails left"
-                  className="shrink-0 p-1.5 rounded-lg bg-slate-900/80 hover:bg-slate-800 border border-slate-700/60 text-slate-300 hover:text-white cursor-pointer"
+                  className="shrink-0 p-1.5 rounded-lg bg-[#e2d8c6] hover:bg-[#d6cbba] border border-[#cbbeaa] text-stone-700 hover:text-stone-900 cursor-pointer transition-colors"
                 >
                   <ChevronLeft className="w-3.5 h-3.5" />
                 </button>
@@ -580,10 +580,10 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
                       <button
                         key={idx}
                         onClick={() => handleSelectMedia(idx)}
-                        className={`relative shrink-0 w-24 sm:w-28 aspect-video rounded-xl overflow-hidden border transition-all cursor-pointer bg-slate-950/90 ${
+                        className={`relative shrink-0 w-24 sm:w-28 aspect-video rounded-xl overflow-hidden border transition-all cursor-pointer bg-stone-900 ${
                           isSelected
-                            ? 'border-amber-400 ring-2 ring-amber-400/60 scale-[1.03] shadow-[0_0_12px_rgba(251,191,36,0.35)]'
-                            : 'border-slate-800 opacity-60 hover:opacity-100 hover:border-slate-600'
+                            ? 'border-amber-600 ring-2 ring-amber-500/40 scale-[1.03] shadow-md'
+                            : 'border-[#d4c9b3] opacity-75 hover:opacity-100 hover:border-amber-600'
                         }`}
                         title={item.title || `${title} (${idx + 1})`}
                       >
@@ -615,7 +615,7 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
                 <button
                   onClick={() => scrollThumbs('right')}
                   aria-label="Scroll thumbnails right"
-                  className="shrink-0 p-1.5 rounded-lg bg-slate-900/80 hover:bg-slate-800 border border-slate-700/60 text-slate-300 hover:text-white cursor-pointer"
+                  className="shrink-0 p-1.5 rounded-lg bg-[#e2d8c6] hover:bg-[#d6cbba] border border-[#cbbeaa] text-stone-700 hover:text-stone-900 cursor-pointer transition-colors"
                 >
                   <ChevronRight className="w-3.5 h-3.5" />
                 </button>
@@ -624,89 +624,89 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
           </div>
 
           {/* ============================================================== */}
-          {/* 2. Physical & Paranormal Dossier Specifications                */}
+          {/* 2. Physical & Paranormal Dossier Specifications (Infobox)       */}
           {/* ============================================================== */}
-          <div className="rounded-2xl bg-[#09101b]/90 border border-amber-500/25 p-4 shadow-inner">
-            <div className="flex items-center justify-between border-b border-slate-800/90 pb-2.5 mb-3">
-              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-300 font-sans">
-                <ScrollText className="w-4 h-4 text-amber-400" />
+          <div className="rounded-2xl bg-[#f5efe4] border border-[#d6cbb6] p-4 sm:p-5 shadow-sm space-y-3.5">
+            <div className="flex items-center justify-between border-b border-[#dfd4c0] pb-2.5">
+              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#44403c] font-serif">
+                <ScrollText className="w-4 h-4 text-amber-800" />
                 <span>
                   {language === 'th'
-                    ? 'แฟ้มข้อมูลจำเพาะสิ่งลี้ลับ (Entity Dossier)'
-                    : 'Paranormal Entity Specifications'}
+                    ? 'สารานุกรมข้อมูลจำเพาะ (Dossier Classification)'
+                    : 'Entity Dossier & Classification'}
                 </span>
               </div>
-              <span className="text-[10px] font-mono text-emerald-400/80">
+              <span className="text-[10px] font-mono text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded border border-emerald-300 font-semibold">
                 ARCHIVE VERIFIED
               </span>
             </div>
 
-            <div className="grid grid-cols-2 gap-2.5 text-xs font-sans">
+            <div className="grid grid-cols-2 gap-2.5 text-xs font-serif">
               {/* ประเภท (Type / Classification) */}
-              <div className="col-span-2 p-2.5 rounded-xl bg-slate-950/70 border border-slate-800/80 flex items-start gap-2.5">
-                <Compass className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+              <div className="col-span-2 p-3 rounded-xl bg-white/95 border border-[#dfd4c0] flex items-start gap-2.5 shadow-[0_1px_4px_rgba(0,0,0,0.03)]">
+                <Compass className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />
                 <div>
-                  <p className="text-[10px] uppercase tracking-wider text-slate-400">
+                  <p className="text-[10px] uppercase tracking-wider text-[#78716c] font-sans font-medium">
                     {language === 'th' ? 'ประเภท / สายพันธุ์ (Classification)' : 'Classification / Type'}
                   </p>
-                  <p className="font-semibold text-emerald-200 mt-0.5">
+                  <p className="font-bold text-emerald-900 mt-0.5 text-[13px]">
                     {displayEntityType}
                   </p>
                 </div>
               </div>
 
               {/* เพศ (Gender) */}
-              <div className="p-2.5 rounded-xl bg-slate-950/70 border border-slate-800/80 flex items-start gap-2">
-                <UserCheck className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
+              <div className="p-3 rounded-xl bg-white/95 border border-[#dfd4c0] flex items-start gap-2 shadow-[0_1px_4px_rgba(0,0,0,0.03)]">
+                <UserCheck className="w-4 h-4 text-amber-800 shrink-0 mt-0.5" />
                 <div>
-                  <p className="text-[10px] uppercase tracking-wider text-slate-400">
+                  <p className="text-[10px] uppercase tracking-wider text-[#78716c] font-sans font-medium">
                     {language === 'th' ? 'เพศสภาพ (Gender)' : 'Gender'}
                   </p>
-                  <p className="font-medium text-slate-200 mt-0.5">{dossier.gender}</p>
+                  <p className="font-medium text-[#292524] mt-0.5">{dossier.gender}</p>
                 </div>
               </div>
 
               {/* ขนาด / ความสูง (Size) */}
-              <div className="p-2.5 rounded-xl bg-slate-950/70 border border-slate-800/80 flex items-start gap-2">
-                <Ruler className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
+              <div className="p-3 rounded-xl bg-white/95 border border-[#dfd4c0] flex items-start gap-2 shadow-[0_1px_4px_rgba(0,0,0,0.03)]">
+                <Ruler className="w-4 h-4 text-amber-800 shrink-0 mt-0.5" />
                 <div>
-                  <p className="text-[10px] uppercase tracking-wider text-slate-400">
+                  <p className="text-[10px] uppercase tracking-wider text-[#78716c] font-sans font-medium">
                     {language === 'th' ? 'ขนาด / ความสูง (Size)' : 'Size / Stature'}
                   </p>
-                  <p className="font-medium text-slate-200 mt-0.5">{dossier.size}</p>
+                  <p className="font-medium text-[#292524] mt-0.5">{dossier.size}</p>
                 </div>
               </div>
 
               {/* น้ำหนัก (Weight) */}
-              <div className="p-2.5 rounded-xl bg-slate-950/70 border border-slate-800/80 flex items-start gap-2">
-                <Scale className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
+              <div className="p-3 rounded-xl bg-white/95 border border-[#dfd4c0] flex items-start gap-2 shadow-[0_1px_4px_rgba(0,0,0,0.03)]">
+                <Scale className="w-4 h-4 text-amber-800 shrink-0 mt-0.5" />
                 <div>
-                  <p className="text-[10px] uppercase tracking-wider text-slate-400">
+                  <p className="text-[10px] uppercase tracking-wider text-[#78716c] font-sans font-medium">
                     {language === 'th' ? 'น้ำหนัก (Weight)' : 'Estimated Weight'}
                   </p>
-                  <p className="font-medium text-slate-200 mt-0.5">{dossier.weight}</p>
+                  <p className="font-medium text-[#292524] mt-0.5">{dossier.weight}</p>
                 </div>
               </div>
 
               {/* ช่วงเวลาปรากฏตัว (Active Hours) */}
-              <div className="p-2.5 rounded-xl bg-slate-950/70 border border-slate-800/80 flex items-start gap-2">
-                <Clock className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
+              <div className="p-3 rounded-xl bg-white/95 border border-[#dfd4c0] flex items-start gap-2 shadow-[0_1px_4px_rgba(0,0,0,0.03)]">
+                <Clock className="w-4 h-4 text-amber-800 shrink-0 mt-0.5" />
                 <div>
-                  <p className="text-[10px] uppercase tracking-wider text-slate-400">
+                  <p className="text-[10px] uppercase tracking-wider text-[#78716c] font-sans font-medium">
                     {language === 'th' ? 'เวลาปรากฏตัว (Active Hours)' : 'Active Hours'}
                   </p>
-                  <p className="font-medium text-slate-200 mt-0.5">{dossier.activeHours}</p>
+                  <p className="font-medium text-[#292524] mt-0.5">{dossier.activeHours}</p>
                 </div>
               </div>
 
               {/* ถิ่นอาศัย (Habitat) */}
-              <div className="col-span-2 p-2.5 rounded-xl bg-slate-950/70 border border-slate-800/80 flex items-start gap-2.5">
-                <MapPin className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+              <div className="col-span-2 p-3 rounded-xl bg-white/95 border border-[#dfd4c0] flex items-start gap-2.5 shadow-[0_1px_4px_rgba(0,0,0,0.03)]">
+                <MapPin className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />
                 <div>
-                  <p className="text-[10px] uppercase tracking-wider text-slate-400">
+                  <p className="text-[10px] uppercase tracking-wider text-[#78716c] font-sans font-medium">
                     {language === 'th' ? 'ถิ่นอาศัยและจุดพบบ่อย (Habitat)' : 'Primary Habitat & Haunting Ground'}
                   </p>
-                  <p className="font-medium text-slate-200 mt-0.5">{displayHabitat}</p>
+                  <p className="font-medium text-[#292524] mt-0.5">{displayHabitat}</p>
                 </div>
               </div>
             </div>
@@ -714,26 +714,26 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
 
           {/* 3. Physical Description & Manifestation Signs */}
           <div className="space-y-2">
-            <div className="border-l-2 border-amber-400/80 pl-3 py-0.5 text-xs sm:text-sm font-bold tracking-wide uppercase text-amber-300/95 font-sans">
+            <div className="border-l-4 border-amber-700 pl-3 py-0.5 text-xs sm:text-sm font-bold tracking-wide uppercase text-amber-950 font-serif">
               <span>
                 {language === 'th'
                   ? 'รูปลักษณ์และอัตลักษณ์ที่พบเห็น (Description & Appearance)'
                   : 'Physical Description & Manifestation Signs'}
               </span>
             </div>
-            <div className="p-4 sm:p-5 rounded-2xl bg-slate-900/50 border border-slate-800/80 text-[14.5px] sm:text-[15.5px] leading-[1.95] sm:leading-[2.1] text-slate-200 font-sans shadow-inner">
+            <div className="p-5 sm:p-6 rounded-2xl bg-white border border-[#dfd4c0] text-[15px] sm:text-[16px] leading-[1.9] sm:leading-[2.05] text-[#292524] font-serif shadow-[0_2px_8px_rgba(0,0,0,0.03)]">
               {displayAppearance}
             </div>
           </div>
 
           {/* 4. Expanded Story Narrative */}
           <div className="space-y-2">
-            <div className="border-l-2 border-emerald-400/80 pl-3 py-0.5 text-xs sm:text-sm font-bold tracking-wide uppercase text-emerald-300/95 font-sans">
+            <div className="border-l-4 border-emerald-700 pl-3 py-0.5 text-xs sm:text-sm font-bold tracking-wide uppercase text-emerald-950 font-serif">
               <span>{t.storyDetail}</span>
             </div>
-            <div className="p-4 sm:p-5 rounded-2xl bg-slate-900/50 border border-slate-800/80 text-[14.5px] sm:text-[15.5px] leading-[1.95] sm:leading-[2.15] text-slate-100 font-sans shadow-inner">
+            <div className="p-5 sm:p-6 rounded-2xl bg-white border border-[#dfd4c0] text-[15px] sm:text-[16px] leading-[1.9] sm:leading-[2.1] text-[#292524] font-serif shadow-[0_2px_8px_rgba(0,0,0,0.03)]">
               {displayExpandedStory.split(/\n\n+/).map((paragraph, pIdx) => (
-                <p key={pIdx} className="mb-3.5 last:mb-0">
+                <p key={pIdx} className="mb-4 last:mb-0">
                   {paragraph}
                 </p>
               ))}
@@ -742,12 +742,12 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
 
           {/* 5. Folklore & Historical Context */}
           <div className="space-y-2">
-            <div className="border-l-2 border-teal-400/80 pl-3 py-0.5 text-xs sm:text-sm font-bold tracking-wide uppercase text-teal-300/95 font-sans">
+            <div className="border-l-4 border-teal-700 pl-3 py-0.5 text-xs sm:text-sm font-bold tracking-wide uppercase text-teal-950 font-serif">
               <span>{t.folkloreHistory}</span>
             </div>
-            <div className="p-4 sm:p-5 rounded-2xl bg-slate-900/50 border border-slate-800/80 text-[14.5px] sm:text-[15.5px] leading-[1.95] sm:leading-[2.15] text-slate-200 font-sans shadow-inner">
+            <div className="p-5 sm:p-6 rounded-2xl bg-white border border-[#dfd4c0] text-[15px] sm:text-[16px] leading-[1.9] sm:leading-[2.1] text-[#292524] font-serif shadow-[0_2px_8px_rgba(0,0,0,0.03)]">
               {history.split(/\n\n+/).map((paragraph, pIdx) => (
-                <p key={pIdx} className="mb-3.5 last:mb-0">
+                <p key={pIdx} className="mb-4 last:mb-0">
                   {paragraph}
                 </p>
               ))}
@@ -756,20 +756,20 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
 
           {/* 6. Ancient Taboos & Survival Warnings */}
           <div className="space-y-2">
-            <div className="border-l-2 border-rose-500/90 pl-3 py-0.5 text-xs sm:text-sm font-bold tracking-wide uppercase text-rose-300/95 font-sans">
+            <div className="border-l-4 border-rose-700 pl-3 py-0.5 text-xs sm:text-sm font-bold tracking-wide uppercase text-rose-950 font-serif">
               <span>
                 {language === 'th'
                   ? 'ข้อห้ามโบราณและวิธีเอาชีวิตรอด (Taboos & Survival Rules)'
                   : 'Ancient Taboos & Survival Protocol'}
               </span>
             </div>
-            <div className="space-y-2">
+            <div className="space-y-2.5">
               {displayTaboos.map((rule, idx) => (
                 <div
                   key={idx}
-                  className="flex items-start gap-3 p-3 sm:p-3.5 rounded-xl bg-rose-950/20 border border-rose-500/25 text-xs sm:text-[13.5px] text-rose-100/90 leading-relaxed sm:leading-[1.8]"
+                  className="flex items-start gap-3 p-3.5 sm:p-4 rounded-xl bg-[#fff7f7] border border-rose-200 text-xs sm:text-[14px] text-rose-950 leading-relaxed shadow-sm font-serif"
                 >
-                  <span className="font-mono text-rose-400 font-bold text-xs bg-rose-950/60 px-2 py-0.5 rounded border border-rose-500/30 shrink-0 mt-0.5">
+                  <span className="font-mono text-rose-800 font-bold text-xs bg-rose-100 px-2.5 py-0.5 rounded border border-rose-300 shrink-0 mt-0.5">
                     0{idx + 1}
                   </span>
                   <span className="flex-1">{rule}</span>
@@ -780,13 +780,13 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
         </div>
 
         {/* Footer */}
-        <div className="relative px-6 py-3.5 border-t border-amber-500/20 bg-[#05080f] flex items-center justify-between text-xs text-slate-400">
-          <span className="font-mono text-[11px] text-amber-200/70">
+        <div className="relative px-6 py-4 border-t border-[#dfd7c6] bg-[#f2ece0] flex items-center justify-between text-xs text-stone-600">
+          <span className="font-mono text-[11px] text-[#78716c] font-medium">
             LAT {pin.lat.toFixed(4)}° • LNG {pin.lng.toFixed(4)}°
           </span>
           <button
             onClick={onClose}
-            className="px-5 py-2 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/40 text-amber-200 font-semibold transition-all cursor-pointer"
+            className="px-5 py-2 rounded-xl bg-stone-800 hover:bg-stone-900 border border-stone-700 text-stone-100 font-semibold transition-all cursor-pointer shadow-sm hover:shadow"
           >
             {t.close}
           </button>

@@ -165,28 +165,28 @@ export const CommentsPanel: React.FC<CommentsPanelProps> = ({
   );
 
   return (
-    <div className="relative flex flex-col h-full bg-[#060911]/92 border-r border-amber-500/25 shadow-[20px_0_50px_rgba(0,0,0,0.85)] backdrop-blur-2xl overflow-hidden select-none">
-      {/* Occult ambient subtle glow */}
+    <div className="relative flex flex-col h-full bg-[#fbf9f4] border-r border-[#dfd7c6] shadow-[20px_0_50px_rgba(0,0,0,0.25)] overflow-hidden select-none text-stone-800">
+      {/* Occult ambient subtle warm glow */}
       <div
-        className="pointer-events-none absolute inset-0 opacity-20"
+        className="pointer-events-none absolute inset-0 opacity-40"
         style={{
           background:
-            'radial-gradient(circle at 10% 20%, rgba(217, 119, 6, 0.15) 0%, transparent 40%), radial-gradient(circle at 90% 80%, rgba(16, 185, 129, 0.12) 0%, transparent 50%)',
+            'radial-gradient(circle at 10% 20%, rgba(217, 119, 6, 0.05) 0%, transparent 40%), radial-gradient(circle at 90% 80%, rgba(16, 185, 129, 0.04) 0%, transparent 50%)',
         }}
       />
 
       {/* Header */}
-      <div className="relative px-5 pt-5 pb-3.5 border-b border-amber-500/20 bg-gradient-to-b from-[#0b1322] via-[#070d18] to-transparent">
+      <div className="relative px-5 pt-5 pb-3.5 border-b border-[#dfd7c6] bg-gradient-to-b from-[#f2ece0] via-[#f7f3eb] to-[#fbf9f4]">
         <div className="flex items-center justify-between mb-2">
           <div className="flex items-center gap-2">
-            <div className="p-1.5 rounded-lg bg-amber-500/15 border border-amber-500/30 text-amber-300">
-              <MessageSquare className="w-4 h-4 text-amber-400" />
+            <div className="p-1.5 rounded-lg bg-amber-100 border border-amber-300 text-amber-900 shadow-sm">
+              <MessageSquare className="w-4 h-4 text-amber-800" />
             </div>
             <div>
-              <h3 className="font-sans text-base font-bold text-amber-50 leading-tight">
+              <h3 className="font-serif text-base font-bold text-stone-900 leading-tight">
                 {language === 'th' ? 'บันทึกคำบอกเล่า & พยาน' : 'Eyewitness & Theories'}
               </h3>
-              <p className="text-[10px] text-amber-200/70 font-mono tracking-wide">
+              <p className="text-[10.5px] text-[#78716c] font-mono tracking-wide">
                 {comments.length} {language === 'th' ? 'บันทึก' : 'records'} • {totalLikes}{' '}
                 {language === 'th' ? 'ถูกใจ' : 'likes'}
               </p>
@@ -195,19 +195,19 @@ export const CommentsPanel: React.FC<CommentsPanelProps> = ({
         </div>
 
         {/* Tab Switcher: Popular (🔥 ยอดนิยม) vs Latest (🕒 ล่าสุด) */}
-        <div className="grid grid-cols-2 gap-1 p-1 rounded-xl bg-black/60 border border-amber-500/20 text-xs">
+        <div className="grid grid-cols-2 gap-1 p-1 rounded-xl bg-[#efe8da] border border-[#d6cbb6] text-xs">
           <button
             type="button"
             onClick={() => setSortMode('popular')}
             className={`flex items-center justify-center gap-1.5 py-1.5 px-3 rounded-lg font-medium transition-all cursor-pointer ${
               sortMode === 'popular'
-                ? 'bg-gradient-to-r from-amber-500/30 to-amber-600/20 text-amber-200 border border-amber-500/40 shadow-[0_0_12px_rgba(245,158,11,0.25)] font-semibold'
-                : 'text-slate-400 hover:text-slate-200 hover:bg-white/5'
+                ? 'bg-white text-amber-950 border border-[#d6cbb6] shadow-sm font-semibold'
+                : 'text-stone-600 hover:text-stone-900 hover:bg-white/50'
             }`}
           >
             <Flame
               className={`w-3.5 h-3.5 ${
-                sortMode === 'popular' ? 'text-amber-400 animate-pulse' : 'text-slate-500'
+                sortMode === 'popular' ? 'text-amber-600' : 'text-stone-500'
               }`}
             />
             <span>{language === 'th' ? '🔥 ยอดนิยม' : '🔥 Popular'}</span>
@@ -218,13 +218,13 @@ export const CommentsPanel: React.FC<CommentsPanelProps> = ({
             onClick={() => setSortMode('latest')}
             className={`flex items-center justify-center gap-1.5 py-1.5 px-3 rounded-lg font-medium transition-all cursor-pointer ${
               sortMode === 'latest'
-                ? 'bg-gradient-to-r from-emerald-500/30 to-emerald-600/20 text-emerald-200 border border-emerald-500/40 shadow-[0_0_12px_rgba(16,185,129,0.25)] font-semibold'
-                : 'text-slate-400 hover:text-slate-200 hover:bg-white/5'
+                ? 'bg-white text-emerald-950 border border-[#d6cbb6] shadow-sm font-semibold'
+                : 'text-stone-600 hover:text-stone-900 hover:bg-white/50'
             }`}
           >
             <Clock
               className={`w-3.5 h-3.5 ${
-                sortMode === 'latest' ? 'text-emerald-400' : 'text-slate-500'
+                sortMode === 'latest' ? 'text-emerald-700' : 'text-stone-500'
               }`}
             />
             <span>{language === 'th' ? '🕒 ล่าสุด' : '🕒 Latest'}</span>
@@ -233,10 +233,10 @@ export const CommentsPanel: React.FC<CommentsPanelProps> = ({
       </div>
 
       {/* Scrollable Comments List */}
-      <div className="relative flex-1 overflow-y-auto px-4 py-4 space-y-3.5 scrollbar-thin scrollbar-thumb-amber-500/20">
+      <div className="relative flex-1 overflow-y-auto px-4 py-4 space-y-3.5 scrollbar-thin scrollbar-thumb-stone-300">
         {comments.length === 0 ? (
-          <div className="text-center py-12 px-4 text-slate-400">
-            <MessageSquare className="w-8 h-8 mx-auto text-amber-500/40 mb-2" />
+          <div className="text-center py-12 px-4 text-stone-500">
+            <MessageSquare className="w-8 h-8 mx-auto text-stone-400 mb-2" />
             <p className="text-xs">
               {language === 'th'
                 ? 'ยังไม่มีบันทึกคำบอกเล่า ร่วมเป็นคนแรกที่บันทึกข้อมูล!'
@@ -251,17 +251,17 @@ export const CommentsPanel: React.FC<CommentsPanelProps> = ({
                 key={item.id}
                 className={`p-3.5 rounded-xl border transition-all text-xs select-text ${
                   isTop1
-                    ? 'bg-gradient-to-b from-[#121c2c] to-[#0c1320] border-amber-500/50 shadow-[0_0_20px_rgba(245,158,11,0.18)]'
-                    : 'bg-[#090f1c]/80 border-slate-800/80 hover:border-amber-500/30'
+                    ? 'bg-[#fefce8] border-amber-400 shadow-sm'
+                    : 'bg-white border-[#dfd7c6] hover:border-amber-400 shadow-[0_1px_4px_rgba(0,0,0,0.03)]'
                 }`}
               >
                 {/* Author row */}
                 <div className="flex items-center justify-between gap-2 mb-2">
                   <div className="flex items-center gap-2 min-w-0">
-                    <div className="w-6 h-6 rounded-full bg-gradient-to-tr from-amber-600 to-emerald-600 flex items-center justify-center text-[10px] font-bold text-white shrink-0 shadow-[0_0_8px_rgba(245,158,11,0.3)]">
+                    <div className="w-6 h-6 rounded-full bg-gradient-to-tr from-amber-700 to-emerald-700 flex items-center justify-center text-[10px] font-bold text-white shrink-0 shadow-sm">
                       {item.author.charAt(0).toUpperCase()}
                     </div>
-                    <span className="font-semibold text-slate-200 truncate">
+                    <span className="font-semibold text-stone-900 truncate">
                       {item.author}
                     </span>
                   </div>
@@ -270,8 +270,8 @@ export const CommentsPanel: React.FC<CommentsPanelProps> = ({
                     <span
                       className={`text-[9px] px-2 py-0.5 rounded-full font-mono font-medium shrink-0 ${
                         item.isPopular || isTop1
-                          ? 'bg-amber-950/80 text-amber-300 border border-amber-500/40'
-                          : 'bg-emerald-950/70 text-emerald-300 border border-emerald-500/30'
+                          ? 'bg-amber-100 text-amber-900 border border-amber-300'
+                          : 'bg-emerald-100 text-emerald-900 border border-emerald-300'
                       }`}
                     >
                       {item.roleBadge}
@@ -280,13 +280,13 @@ export const CommentsPanel: React.FC<CommentsPanelProps> = ({
                 </div>
 
                 {/* Comment body */}
-                <p className="text-slate-300 font-sans leading-relaxed text-[12px] pl-1 border-l-2 border-amber-500/30 my-2">
+                <p className="text-[#292524] font-serif leading-relaxed text-[13px] pl-2 border-l-2 border-amber-600/40 my-2">
                   “{item.content}”
                 </p>
 
                 {/* Footer with timestamp, Reply button, and Like button */}
-                <div className="flex items-center justify-between pt-1.5 text-[10px] text-slate-400 border-t border-slate-800/60">
-                  <span className="font-mono text-slate-500">
+                <div className="flex items-center justify-between pt-2 text-[10.5px] text-stone-500 border-t border-[#f0ebe0]">
+                  <span className="font-mono text-stone-500">
                     {new Date(item.createdAt).toLocaleDateString(
                       language === 'th' ? 'th-TH' : 'en-US',
                       {
@@ -306,11 +306,11 @@ export const CommentsPanel: React.FC<CommentsPanelProps> = ({
                       onClick={() => handleToggleReplyBox(item.id)}
                       className={`flex items-center gap-1 px-2.5 py-1 rounded-full border transition-all cursor-pointer ${
                         replyingCommentId === item.id
-                          ? 'bg-amber-500/25 text-amber-200 border-amber-500/50 shadow-[0_0_8px_rgba(245,158,11,0.2)]'
-                          : 'bg-slate-900/60 text-slate-300 border-slate-700/60 hover:text-amber-300 hover:border-amber-500/40'
+                          ? 'bg-amber-100 text-amber-900 border-amber-300 font-medium'
+                          : 'bg-stone-100 text-stone-700 border-stone-300 hover:text-stone-900 hover:bg-stone-200'
                       }`}
                     >
-                      <MessageSquare className="w-2.5 h-2.5 text-amber-400" />
+                      <MessageSquare className="w-2.5 h-2.5 text-amber-700" />
                       <span>
                         {item.replies && item.replies.length > 0
                           ? `${language === 'th' ? 'ตอบกลับ' : 'Reply'} (${item.replies.length})`
@@ -326,13 +326,13 @@ export const CommentsPanel: React.FC<CommentsPanelProps> = ({
                       onClick={() => handleLike(item.id)}
                       className={`flex items-center gap-1.5 px-2.5 py-1 rounded-full border transition-all cursor-pointer ${
                         item.userLiked
-                          ? 'bg-rose-950/70 text-rose-300 border-rose-500/60 shadow-[0_0_10px_rgba(244,63,94,0.3)]'
-                          : 'bg-slate-900/60 text-slate-400 border-slate-700/60 hover:text-rose-300 hover:border-rose-500/40'
+                          ? 'bg-rose-50 text-rose-700 border-rose-300 shadow-sm'
+                          : 'bg-stone-100 text-stone-600 border-stone-300 hover:text-rose-600 hover:bg-stone-200'
                       }`}
                     >
                       <Heart
                         className={`w-3 h-3 ${
-                          item.userLiked ? 'fill-rose-400 text-rose-400 scale-110' : 'text-slate-400'
+                          item.userLiked ? 'fill-rose-600 text-rose-600 scale-110' : 'text-stone-500'
                         } transition-transform`}
                       />
                       <span className="font-mono font-semibold">{item.likes}</span>
@@ -342,22 +342,22 @@ export const CommentsPanel: React.FC<CommentsPanelProps> = ({
 
                 {/* Nested Threaded Replies List */}
                 {item.replies && item.replies.length > 0 && (
-                  <div className="mt-2.5 ml-2 pl-3 border-l-2 border-amber-500/25 space-y-2">
+                  <div className="mt-2.5 ml-2 pl-3 border-l-2 border-amber-600/30 space-y-2">
                     {item.replies.map((reply) => (
                       <div
                         key={reply.id}
-                        className="p-2.5 rounded-lg bg-black/45 border border-slate-800/80 hover:border-slate-700 text-xs"
+                        className="p-2.5 rounded-lg bg-[#f7f3ea] border border-[#dfd7c6] text-xs"
                       >
                         <div className="flex items-center justify-between gap-1 mb-1">
                           <div className="flex items-center gap-1.5 min-w-0">
-                            <div className="w-4 h-4 rounded-full bg-gradient-to-tr from-amber-600 to-emerald-600 flex items-center justify-center text-[8px] font-bold text-white shrink-0">
+                            <div className="w-4 h-4 rounded-full bg-gradient-to-tr from-amber-700 to-emerald-700 flex items-center justify-center text-[8px] font-bold text-white shrink-0">
                               {reply.author.charAt(0).toUpperCase()}
                             </div>
-                            <span className="font-semibold text-slate-200 text-[11px] truncate">
+                            <span className="font-semibold text-stone-900 text-[11px] truncate">
                               {reply.author}
                             </span>
                           </div>
-                          <span className="text-[9px] font-mono text-slate-500 shrink-0">
+                          <span className="text-[9px] font-mono text-stone-500 shrink-0">
                             {new Date(reply.createdAt).toLocaleDateString(
                               language === 'th' ? 'th-TH' : 'en-US',
                               {
@@ -370,18 +370,18 @@ export const CommentsPanel: React.FC<CommentsPanelProps> = ({
                             )}
                           </span>
                         </div>
-                        <p className="text-slate-300 text-[11px] pl-1 leading-relaxed">
+                        <p className="text-[#292524] text-[12px] pl-1 leading-relaxed font-serif">
                           {reply.content}
                         </p>
                         <div className="flex justify-end pt-1">
                           <button
                             type="button"
                             onClick={() => handleReplyLike(item.id, reply.id)}
-                            className="flex items-center gap-1 text-[9px] text-slate-400 hover:text-rose-400 cursor-pointer"
+                            className="flex items-center gap-1 text-[9px] text-stone-600 hover:text-rose-600 cursor-pointer"
                           >
                             <Heart
                               className={`w-2.5 h-2.5 ${
-                                reply.userLiked ? 'fill-rose-400 text-rose-400 scale-110' : ''
+                                reply.userLiked ? 'fill-rose-600 text-rose-600 scale-110' : ''
                               }`}
                             />
                             <span className="font-mono">{reply.likes}</span>
@@ -399,11 +399,11 @@ export const CommentsPanel: React.FC<CommentsPanelProps> = ({
                       e.preventDefault();
                       handleSubmitReply(item.id);
                     }}
-                    className="mt-2.5 ml-2 pl-3 border-l-2 border-amber-500/40 space-y-2 bg-[#080e1b]/95 p-2.5 rounded-xl border border-amber-500/30 animate-in fade-in duration-200"
+                    className="mt-2.5 ml-2 pl-3 border-l-2 border-amber-600/40 space-y-2 bg-[#f3ede2] p-2.5 rounded-xl border border-[#d6cbb6] animate-in fade-in duration-200"
                   >
-                    <div className="flex items-center justify-between text-[10px] text-amber-200 font-medium">
+                    <div className="flex items-center justify-between text-[10px] text-amber-900 font-medium">
                       <span className="flex items-center gap-1">
-                        <CornerDownRight className="w-3 h-3 text-amber-400" />
+                        <CornerDownRight className="w-3 h-3 text-amber-800" />
                         {language === 'th'
                           ? `ตอบกลับ @${item.author}`
                           : `Reply to @${item.author}`}
@@ -411,7 +411,7 @@ export const CommentsPanel: React.FC<CommentsPanelProps> = ({
                       <button
                         type="button"
                         onClick={() => setReplyingCommentId(null)}
-                        className="text-slate-400 hover:text-white text-[10px] cursor-pointer"
+                        className="text-stone-500 hover:text-stone-900 text-[10px] cursor-pointer"
                       >
                         ✕ {language === 'th' ? 'ยกเลิก' : 'Cancel'}
                       </button>
@@ -424,7 +424,7 @@ export const CommentsPanel: React.FC<CommentsPanelProps> = ({
                       placeholder={
                         language === 'th' ? 'ชื่อของคุณ หรือ นามแฝง...' : 'Your name / alias...'
                       }
-                      className="w-full text-xs px-2.5 py-1 rounded-lg bg-black/60 border border-slate-700 focus:border-amber-500/60 text-slate-100 placeholder-slate-500 outline-none"
+                      className="w-full text-xs px-2.5 py-1 rounded-lg bg-white border border-stone-300 focus:border-amber-600 text-stone-900 placeholder:text-stone-400 outline-none"
                       maxLength={40}
                     />
 
@@ -438,14 +438,14 @@ export const CommentsPanel: React.FC<CommentsPanelProps> = ({
                             : `Write reply to @${item.author}...`
                         }
                         rows={2}
-                        className="w-full text-xs px-2.5 py-1 pr-9 rounded-lg bg-black/60 border border-slate-700 focus:border-amber-500/60 text-slate-100 placeholder-slate-500 outline-none resize-none"
+                        className="w-full text-xs px-2.5 py-1 pr-9 rounded-lg bg-white border border-stone-300 focus:border-amber-600 text-stone-900 placeholder:text-stone-400 outline-none resize-none font-serif"
                         maxLength={300}
                         autoFocus
                       />
                       <button
                         type="submit"
                         disabled={!replyContent.trim() || isSubmittingReply}
-                        className="absolute right-1.5 bottom-2 p-1.5 rounded-lg bg-amber-500 hover:bg-amber-400 disabled:opacity-30 text-slate-950 font-bold transition-all cursor-pointer shadow-[0_0_8px_rgba(245,158,11,0.3)]"
+                        className="absolute right-1.5 bottom-2 p-1.5 rounded-lg bg-stone-800 hover:bg-stone-900 disabled:opacity-30 text-white font-bold transition-all cursor-pointer shadow-sm"
                         title={language === 'th' ? 'ส่งคำตอบกลับ' : 'Submit Reply'}
                       >
                         <Send className="w-3 h-3" />
@@ -462,10 +462,10 @@ export const CommentsPanel: React.FC<CommentsPanelProps> = ({
       {/* Main Comment Form (Add new testimony) */}
       <form
         onSubmit={handleSubmit}
-        className="relative px-4 py-3 border-t border-amber-500/20 bg-gradient-to-t from-[#090f1c] to-[#060a14] space-y-2 shrink-0"
+        className="relative px-4 py-3.5 border-t border-[#dfd7c6] bg-[#f2ece0] space-y-2.5 shrink-0"
       >
-        <div className="flex items-center gap-1.5 text-[11px] text-amber-200/80 font-medium">
-          <Sparkles className="w-3 h-3 text-amber-400" />
+        <div className="flex items-center gap-1.5 text-[11px] text-amber-950 font-medium">
+          <Sparkles className="w-3 h-3 text-amber-800" />
           <span>{language === 'th' ? 'ร่วมบันทึกคำบอกเล่า' : 'Add Eyewitness Report'}</span>
         </div>
 
@@ -475,7 +475,7 @@ export const CommentsPanel: React.FC<CommentsPanelProps> = ({
             value={authorName}
             onChange={(e) => setAuthorName(e.target.value)}
             placeholder={language === 'th' ? 'ชื่อของคุณ หรือ นามแฝง...' : 'Your name / alias...'}
-            className="w-full text-xs px-3 py-1.5 rounded-lg bg-black/60 border border-slate-700 focus:border-amber-500/60 text-slate-100 placeholder-slate-500 outline-none transition-colors"
+            className="w-full text-xs px-3 py-1.5 rounded-lg bg-white border border-stone-300 focus:border-amber-600 text-stone-900 placeholder:text-stone-400 outline-none transition-colors"
             maxLength={40}
           />
         </div>
@@ -490,14 +490,14 @@ export const CommentsPanel: React.FC<CommentsPanelProps> = ({
                 : 'Share your sightings, folklore, or thoughts...'
             }
             rows={2}
-            className="w-full text-xs px-3 py-1.5 pr-10 rounded-lg bg-black/60 border border-slate-700 focus:border-amber-500/60 text-slate-100 placeholder-slate-500 outline-none transition-colors resize-none"
+            className="w-full text-xs px-3 py-1.5 pr-10 rounded-lg bg-white border border-stone-300 focus:border-amber-600 text-stone-900 placeholder:text-stone-400 outline-none transition-colors resize-none font-serif"
             maxLength={350}
           />
 
           <button
             type="submit"
             disabled={!commentText.trim() || isSubmitting}
-            className="absolute right-1.5 bottom-2.5 p-1.5 rounded-lg bg-amber-500 hover:bg-amber-400 disabled:opacity-30 disabled:hover:bg-amber-500 text-slate-950 font-bold transition-all cursor-pointer shadow-[0_0_10px_rgba(245,158,11,0.3)]"
+            className="absolute right-1.5 bottom-2.5 p-1.5 rounded-lg bg-stone-800 hover:bg-stone-900 disabled:opacity-30 disabled:hover:bg-stone-800 text-white font-bold transition-all cursor-pointer shadow-sm"
             title={language === 'th' ? 'ส่งความคิดเห็น' : 'Submit'}
           >
             <Send className="w-3.5 h-3.5" />
