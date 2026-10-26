@@ -166,12 +166,16 @@ export const Navbar: React.FC<NavbarProps> = ({
 }) => {
   const t = getTranslation(language);
   const [isSearchFocused, setIsSearchFocused] = useState(false);
+  const [isMobileSearchFocused, setIsMobileSearchFocused] = useState(false);
+  const [isMobileSearchOpen, setIsMobileSearchOpen] = useState(false);
   const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const langMenuRef = useRef<HTMLDivElement>(null);
   const searchContainerRef = useRef<HTMLDivElement>(null);
+  const mobileSearchContainerRef = useRef<HTMLDivElement>(null);
   const filterRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const mobileInputRef = useRef<HTMLInputElement>(null);
   const secretTapCountRef = useRef(0);
   const secretTapTimerRef = useRef<number | null>(null);
 
@@ -267,6 +271,12 @@ export const Navbar: React.FC<NavbarProps> = ({
         setIsSearchFocused(false);
       }
       if (
+        mobileSearchContainerRef.current &&
+        !mobileSearchContainerRef.current.contains(event.target as Node)
+      ) {
+        setIsMobileSearchFocused(false);
+      }
+      if (
         langMenuRef.current &&
         !langMenuRef.current.contains(event.target as Node)
       ) {
@@ -317,6 +327,152 @@ export const Navbar: React.FC<NavbarProps> = ({
     language === 'th' ? SUGGESTED_RAG_QUERIES.th : SUGGESTED_RAG_QUERIES.en;
 
   const showDropdown = isSearchFocused;
+
+  const renderDropdownContent = (isMobile: boolean = false) => {
+    if (!searchQuery.trim()) {
+      return (
+        <div className="p-3.5 sm:p-4">
+          <div className="flex items-center justify-between mb-2.5 pb-2 border-b border-slate-800/80">
+            <span className="text-xs font-semibold tracking-wide text-emerald-300 flex items-center gap-2">
+              <Sparkles className="w-4 h-4 text-emerald-400" />
+              {language === 'th'
+                ? 'สำรวจตามธีมและเรื่องเล่ายอดนิยม'
+                : 'Explore Popular Themes & Lore'}
+            </span>
+            <span className="text-[11px] text-slate-400 flex items-center gap-1">
+              <Compass className="w-3 h-3 text-emerald-400/80" />
+              {language === 'th' ? 'แตะเพื่อค้นหาทันที' : 'Tap to explore'}
+            </span>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            {suggestedQueries.map((prompt) => {
+              const match = prompt.match(/^([^\s]+)\s+(.+)$/);
+              const emoji = match ? match[1] : '🔮';
+              const text = match ? match[2] : prompt;
+
+              return (
+                <button
+                  key={prompt}
+                  type="button"
+                  onClick={() => {
+                    onSearchChange(text);
+                    if (isMobile) {
+                      setIsMobileSearchFocused(true);
+                      mobileInputRef.current?.focus();
+                    } else {
+                      setIsSearchFocused(true);
+                      inputRef.current?.focus();
+                    }
+                  }}
+                  className="flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl text-xs bg-slate-900/85 hover:bg-emerald-950/60 text-slate-200 hover:text-emerald-200 border border-slate-800/80 hover:border-emerald-500/50 transition-all text-left group shadow-sm hover:shadow-[0_0_15px_rgba(16,185,129,0.18)] cursor-pointer active:scale-[0.98]"
+                >
+                  <span className="text-base shrink-0 group-hover:scale-115 transition-transform duration-200">
+                    {emoji}
+                  </span>
+                  <span className="font-medium leading-tight">
+                    {text}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      );
+    }
+
+    return (
+      <div className="max-h-[65vh] flex flex-col">
+        {/* Lore Summary Banner */}
+        <div className="p-3 bg-gradient-to-r from-emerald-950/60 via-slate-900/90 to-slate-950 border-b border-emerald-500/20">
+          <div className="flex items-center justify-between mb-1">
+            <span className="text-xs font-semibold text-emerald-300 flex items-center gap-1.5">
+              <Sparkles className="w-3.5 h-3.5 text-emerald-400 animate-pulse" />
+              {language === 'th'
+                ? 'สรุปเรื่องเล่าและบริบทที่เกี่ยวข้อง'
+                : 'Folklore Overview & Context'}
+            </span>
+            <span className="text-[11px] font-medium text-emerald-400/90">
+              {ragResponse.results.length}{' '}
+              {language === 'th' ? 'เรื่องเล่าที่พบ' : 'stories found'}
+            </span>
+          </div>
+          <p className="text-xs text-slate-200 leading-relaxed">
+            {ragResponse.ragSummary}
+          </p>
+        </div>
+
+        {/* Matching Stories List */}
+        {ragResponse.results.length > 0 && (
+          <div className="overflow-y-auto divide-y divide-slate-800/60 max-h-72">
+            {ragResponse.results.slice(0, 6).map((item) => {
+              const pin = item.pin;
+              const title = language === 'th' ? pin.title_th : pin.title_en;
+              const province =
+                language === 'th' ? pin.province_th : pin.province_en;
+              const matchPercent = Math.round(item.score * 100);
+              const CatIcon = categoryIcons[pin.category] || Ghost;
+
+              return (
+                <button
+                  key={pin.id}
+                  type="button"
+                  onClick={() => {
+                    onSelectPin(pin);
+                    setIsSearchFocused(false);
+                    setIsMobileSearchFocused(false);
+                    setIsMobileSearchOpen(false);
+                  }}
+                  className="w-full p-3 sm:p-3.5 text-left hover:bg-emerald-950/30 transition-colors flex items-start justify-between gap-3 group cursor-pointer"
+                >
+                  <div className="flex items-start gap-3 min-w-0">
+                    <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-slate-900 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0 mt-0.5 group-hover:bg-emerald-500/20 group-hover:border-emerald-400 transition-colors">
+                      <CatIcon className="w-4 h-4" />
+                    </div>
+                    <div className="min-w-0">
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <h3 className="text-xs sm:text-sm font-bold text-white group-hover:text-emerald-300 transition-colors truncate">
+                          {title}
+                        </h3>
+                        <span className="inline-flex items-center gap-1 text-[10px] sm:text-[11px] text-emerald-400/90">
+                          <MapPin className="w-3 h-3" />
+                          {province}
+                        </span>
+                      </div>
+                      <p className="text-[11px] sm:text-xs text-slate-400 line-clamp-2 mt-0.5 sm:mt-1 leading-relaxed">
+                        {item.matchedSnippet}
+                      </p>
+                      {item.matchedConceptTags.length > 0 && (
+                        <div className="flex flex-wrap gap-1 mt-1">
+                          {item.matchedConceptTags.map((tag) => (
+                            <span
+                              key={tag}
+                              className="px-1.5 py-0.5 rounded text-[9.5px] sm:text-[10px] font-medium bg-emerald-500/10 text-emerald-300 border border-emerald-500/25"
+                            >
+                              #{tag}
+                            </span>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col items-end shrink-0 gap-1">
+                    <span className="px-1.5 py-0.5 rounded text-[9.5px] sm:text-[10px] font-mono font-bold bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
+                      {matchPercent}% {language === 'th' ? 'ตรงกัน' : 'Match'}
+                    </span>
+                    <span className="text-[10px] sm:text-[11px] text-slate-500 group-hover:text-emerald-400 flex items-center gap-0.5 transition-colors">
+                      {language === 'th' ? 'บินไปดู' : 'Fly to'}
+                      <ArrowUpRight className="w-3.5 h-3.5" />
+                    </span>
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+        )}
+      </div>
+    );
+  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-20 pointer-events-none p-2.5 sm:p-4 md:p-6 flex flex-col gap-2.5 max-w-full">
@@ -403,145 +559,39 @@ export const Navbar: React.FC<NavbarProps> = ({
           {/* Interactive Suggestions & Results Dropdown Panel */}
           {showDropdown && (
             <div className="absolute left-0 right-0 top-full mt-2 rounded-2xl bg-slate-950/95 border border-emerald-500/30 backdrop-blur-2xl shadow-[0_25px_60px_rgba(0,0,0,0.85),0_0_30px_rgba(16,185,129,0.15)] overflow-hidden z-50 animate-in fade-in slide-in-from-top-2 duration-200">
-              {!searchQuery.trim() ? (
-                /* Suggested Semantic Lore Themes */
-                <div className="p-4">
-                  <div className="flex items-center justify-between mb-3 pb-2.5 border-b border-slate-800/80">
-                    <span className="text-xs font-semibold tracking-wide text-emerald-300 flex items-center gap-2">
-                      <Sparkles className="w-4 h-4 text-emerald-400" />
-                      {language === 'th'
-                        ? 'สำรวจตามธีมและเรื่องเล่ายอดนิยม'
-                        : 'Explore Popular Themes & Lore'}
-                    </span>
-                    <span className="text-[11px] text-slate-400 flex items-center gap-1">
-                      <Compass className="w-3 h-3 text-emerald-400/80" />
-                      {language === 'th' ? 'แตะเพื่อค้นหาทันที' : 'Tap to explore'}
-                    </span>
-                  </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                    {suggestedQueries.map((prompt) => {
-                      const match = prompt.match(/^([^\s]+)\s+(.+)$/);
-                      const emoji = match ? match[1] : '🔮';
-                      const text = match ? match[2] : prompt;
-
-                      return (
-                        <button
-                          key={prompt}
-                          type="button"
-                          onClick={() => {
-                            onSearchChange(text);
-                            setIsSearchFocused(true);
-                          }}
-                          className="flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl text-xs bg-slate-900/85 hover:bg-emerald-950/60 text-slate-200 hover:text-emerald-200 border border-slate-800/80 hover:border-emerald-500/50 transition-all text-left group shadow-sm hover:shadow-[0_0_15px_rgba(16,185,129,0.18)] cursor-pointer active:scale-[0.98]"
-                        >
-                          <span className="text-base shrink-0 group-hover:scale-115 transition-transform duration-200">
-                            {emoji}
-                          </span>
-                          <span className="font-medium leading-tight">
-                            {text}
-                          </span>
-                        </button>
-                      );
-                    })}
-                  </div>
-                </div>
-              ) : (
-                /* Summary + Matching Stories */
-                <div className="max-h-[70vh] flex flex-col">
-                  {/* Lore Summary Banner */}
-                  <div className="p-3.5 bg-gradient-to-r from-emerald-950/60 via-slate-900/90 to-slate-950 border-b border-emerald-500/20">
-                    <div className="flex items-center justify-between mb-1">
-                      <span className="text-xs font-semibold text-emerald-300 flex items-center gap-1.5">
-                        <Sparkles className="w-3.5 h-3.5 text-emerald-400 animate-pulse" />
-                        {language === 'th'
-                          ? 'สรุปเรื่องเล่าและบริบทที่เกี่ยวข้อง'
-                          : 'Folklore Overview & Context'}
-                      </span>
-                      <span className="text-[11px] font-medium text-emerald-400/90">
-                        {ragResponse.results.length}{' '}
-                        {language === 'th' ? 'เรื่องเล่าที่พบ' : 'stories found'}
-                      </span>
-                    </div>
-                    <p className="text-xs text-slate-200 leading-relaxed">
-                      {ragResponse.ragSummary}
-                    </p>
-                  </div>
-
-                  {/* Matching Stories List */}
-                  {ragResponse.results.length > 0 && (
-                    <div className="overflow-y-auto divide-y divide-slate-800/60 max-h-80">
-                      {ragResponse.results.slice(0, 6).map((item) => {
-                        const pin = item.pin;
-                        const title = language === 'th' ? pin.title_th : pin.title_en;
-                        const province =
-                          language === 'th' ? pin.province_th : pin.province_en;
-                        const matchPercent = Math.round(item.score * 100);
-                        const CatIcon = categoryIcons[pin.category] || Ghost;
-
-                        return (
-                          <button
-                            key={pin.id}
-                            type="button"
-                            onClick={() => {
-                              onSelectPin(pin);
-                              setIsSearchFocused(false);
-                            }}
-                            className="w-full p-3.5 text-left hover:bg-emerald-950/30 transition-colors flex items-start justify-between gap-3 group cursor-pointer"
-                          >
-                            <div className="flex items-start gap-3 min-w-0">
-                              <div className="w-9 h-9 rounded-xl bg-slate-900 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0 mt-0.5 group-hover:bg-emerald-500/20 group-hover:border-emerald-400 transition-colors">
-                                <CatIcon className="w-4 h-4" />
-                              </div>
-                              <div className="min-w-0">
-                                <div className="flex items-center gap-2 flex-wrap">
-                                  <h3 className="text-sm font-bold text-white group-hover:text-emerald-300 transition-colors truncate">
-                                    {title}
-                                  </h3>
-                                  <span className="inline-flex items-center gap-1 text-[11px] text-emerald-400/90">
-                                    <MapPin className="w-3 h-3" />
-                                    {province}
-                                  </span>
-                                </div>
-                                <p className="text-xs text-slate-400 line-clamp-2 mt-1 leading-relaxed">
-                                  {item.matchedSnippet}
-                                </p>
-                                {item.matchedConceptTags.length > 0 && (
-                                  <div className="flex flex-wrap gap-1 mt-1.5">
-                                    {item.matchedConceptTags.map((tag) => (
-                                      <span
-                                        key={tag}
-                                        className="px-2 py-0.5 rounded-md text-[10px] font-medium bg-emerald-500/10 text-emerald-300 border border-emerald-500/25"
-                                      >
-                                        #{tag}
-                                      </span>
-                                    ))}
-                                  </div>
-                                )}
-                              </div>
-                            </div>
-
-                            <div className="flex flex-col items-end shrink-0 gap-1">
-                              <span className="px-2 py-0.5 rounded-md text-[10px] font-mono font-bold bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
-                                {matchPercent}% {language === 'th' ? 'ตรงกัน' : 'Match'}
-                              </span>
-                              <span className="text-[11px] text-slate-500 group-hover:text-emerald-400 flex items-center gap-0.5 transition-colors">
-                                {language === 'th' ? 'บินไปดู' : 'Fly to'}
-                                <ArrowUpRight className="w-3.5 h-3.5" />
-                              </span>
-                            </div>
-                          </button>
-                        );
-                      })}
-                    </div>
-                  )}
-                </div>
-              )}
+              {renderDropdownContent(false)}
             </div>
           )}
         </div>
 
         {/* Action Controls (Mystical Talisman Buttons) */}
         <div className="flex items-center gap-1.5 sm:gap-2.5 shrink-0">
+          {/* Mobile Search Toggle Button */}
+          <button
+            type="button"
+            onClick={() => {
+              setIsMobileSearchOpen((v) => {
+                const next = !v;
+                if (next) {
+                  setTimeout(() => mobileInputRef.current?.focus(), 80);
+                }
+                return next;
+              });
+            }}
+            aria-label={language === 'th' ? 'ค้นหา' : 'Search'}
+            title={language === 'th' ? 'ค้นหาเรื่องเล่า' : 'Search folklore'}
+            className={`md:hidden px-2.5 py-1.5 sm:px-3 sm:py-2 rounded-xl sm:rounded-2xl bg-[#070c16]/90 border backdrop-blur-xl text-xs font-semibold flex items-center gap-1.5 transition-all cursor-pointer active:scale-95 ${
+              isMobileSearchOpen || searchQuery.trim()
+                ? 'border-emerald-400 text-emerald-300 shadow-[0_0_15px_rgba(16,185,129,0.35)]'
+                : 'border-amber-500/35 text-amber-200 hover:border-emerald-400/70 hover:text-white'
+            }`}
+          >
+            {isMobileSearchOpen ? <X className="w-4 h-4" /> : <Search className="w-4 h-4" />}
+            <span className="hidden xs:inline text-[11px]">
+              {language === 'th' ? 'ค้นหา' : 'Search'}
+            </span>
+          </button>
+
           {/* Live Current Online Explorers Counter */}
           <div
             className="flex items-center gap-1.5 sm:gap-2 px-2.5 py-1.5 sm:px-3.5 sm:py-2 rounded-xl sm:rounded-2xl bg-[#070c16]/90 border border-emerald-500/35 backdrop-blur-xl text-emerald-300 shadow-[0_6px_20px_rgba(0,0,0,0.85),0_0_15px_rgba(16,185,129,0.18)] select-none"
@@ -679,6 +729,77 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
         </div>
       </div>
+
+      {/* Mobile Search Bar Expansion Panel */}
+      {isMobileSearchOpen && (
+        <div
+          ref={mobileSearchContainerRef}
+          className="relative w-full md:hidden pointer-events-auto animate-in fade-in slide-in-from-top-1 duration-150"
+        >
+          <div className="relative flex items-center">
+            <Sparkles className="w-4 h-4 absolute left-3.5 text-emerald-400/70 pointer-events-none" />
+            <input
+              ref={mobileInputRef}
+              type="text"
+              value={searchQuery}
+              onFocus={() => setIsMobileSearchFocused(true)}
+              onChange={(e) => {
+                onSearchChange(e.target.value);
+                setIsMobileSearchFocused(true);
+              }}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' && searchQuery.trim().toLowerCase() === '/admin') {
+                  e.preventDefault();
+                  onSearchChange('');
+                  setIsMobileSearchFocused(false);
+                  setIsMobileSearchOpen(false);
+                  onOpenAdmin();
+                }
+              }}
+              placeholder={
+                language === 'th'
+                  ? 'ค้นหาตำนาน ผี หรือบรรยากาศ...'
+                  : 'Search legends, spirits, or themes...'
+              }
+              className="w-full pl-10 pr-20 py-2.5 rounded-2xl bg-slate-950/95 border border-emerald-500/40 backdrop-blur-xl text-xs sm:text-sm text-slate-100 placeholder-slate-400 focus:outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-500/30 transition-all shadow-[0_0_20px_rgba(16,185,129,0.2)]"
+            />
+
+            <div className="absolute right-2 flex items-center gap-1.5">
+              {searchQuery.trim() && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    onSearchChange('');
+                    setIsMobileSearchFocused(true);
+                    mobileInputRef.current?.focus();
+                  }}
+                  aria-label="Clear search"
+                  className="p-1.5 rounded-full hover:bg-slate-800 text-slate-400 hover:text-white transition-colors cursor-pointer"
+                >
+                  <X className="w-3.5 h-3.5" />
+                </button>
+              )}
+              <button
+                type="button"
+                onClick={() => {
+                  setIsMobileSearchFocused(true);
+                  mobileInputRef.current?.focus();
+                }}
+                className="w-8 h-8 rounded-xl bg-gradient-to-br from-emerald-500/25 to-teal-600/30 text-emerald-300 border border-emerald-500/40 flex items-center justify-center cursor-pointer active:scale-95"
+              >
+                <Search className="w-4 h-4" />
+              </button>
+            </div>
+          </div>
+
+          {/* Mobile Dropdown Panel */}
+          {isMobileSearchFocused && (
+            <div className="absolute left-0 right-0 top-full mt-2 rounded-2xl bg-slate-950/98 border border-emerald-500/40 backdrop-blur-2xl shadow-[0_25px_60px_rgba(0,0,0,0.95),0_0_30px_rgba(16,185,129,0.2)] overflow-hidden z-[1100] max-h-[65vh] overflow-y-auto">
+              {renderDropdownContent(true)}
+            </div>
+          )}
+        </div>
+      )}
 
       {/* Mystical Category Filter: Vertical Dropdown with Globe Diamond Markers & Descriptive Text */}
       <div className="relative pointer-events-auto self-start" ref={filterRef}>
