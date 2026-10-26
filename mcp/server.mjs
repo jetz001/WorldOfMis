@@ -2,12 +2,63 @@
 import fs from 'fs';
 import path from 'path';
 import readline from 'readline';
+import https from 'https';
 import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const PROJECT_ROOT = path.resolve(__dirname, '..');
 const SEED_FILE = path.join(PROJECT_ROOT, 'src', 'data', 'seedData.ts');
+
+/**
+ * Direct YouTube Search without any API Key
+ * Queries YouTube web search and parses ytInitialData JSON payload.
+ */
+function searchYouTube(query, limit = 5) {
+  const url = 'https://www.youtube.com/results?search_query=' + encodeURIComponent(query);
+  return new Promise((resolve) => {
+    const req = https.get(url, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept-Language': 'th,en-US;q=0.9,en;q=0.8'
+      }
+    }, (res) => {
+      let html = '';
+      res.on('data', chunk => html += chunk);
+      res.on('end', () => {
+        try {
+          const match = html.match(/var ytInitialData\s*=\s*({.+?});<\/script>/);
+          if (!match) return resolve([]);
+          const data = JSON.parse(match[1]);
+          const contents = data.contents?.twoColumnSearchResultsRenderer?.primaryContents?.sectionListRenderer?.contents?.[0]?.itemSectionRenderer?.contents || [];
+          const results = [];
+          for (const item of contents) {
+            const v = item.videoRenderer;
+            if (v && v.videoId) {
+              results.push({
+                videoId: v.videoId,
+                url: `https://www.youtube.com/watch?v=${v.videoId}`,
+                title: v.title?.runs?.[0]?.text || '',
+                channel: v.ownerText?.runs?.[0]?.text || '',
+                views: v.shortViewCountText?.simpleText || '',
+                duration: v.lengthText?.simpleText || '',
+                thumbnail: v.thumbnail?.thumbnails?.[0]?.url || `https://i.ytimg.com/vi/${v.videoId}/hqdefault.jpg`
+              });
+            }
+          }
+          resolve(results.slice(0, limit));
+        } catch (e) {
+          resolve([]);
+        }
+      });
+    });
+    req.on('error', () => resolve([]));
+    req.setTimeout(8000, () => {
+      req.destroy();
+      resolve([]);
+    });
+  });
+}
 
 function loadPins() {
   if (!fs.existsSync(SEED_FILE)) {
@@ -204,10 +255,41 @@ const TOOLS = [
       },
       required: ['id']
     }
+  },
+  {
+    name: 'worldofmys_search_youtube',
+    description: 'Search YouTube videos for any query WITHOUT ANY API KEY. Returns video ID, title, URL, channel name, views, duration, and thumbnail.',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        query: {
+          type: 'string',
+          description: 'Search keyword (e.g. "ผีกระสือ หลอนไดอารี่", "Loch Ness monster documentary")'
+        },
+        limit: {
+          type: 'number',
+          description: 'Max number of results (default 5, max 15)'
+        }
+      },
+      required: ['query']
+    }
   }
 ];
 
-function handleToolCall(name, args) {
+async function handleToolCall(name, args) {
+  if (name === 'worldofmys_search_youtube') {
+    if (!args.query) {
+      throw new Error('Missing required argument: query');
+    }
+    const limit = Math.min(Number(args.limit) || 5, 15);
+    const videos = await searchYouTube(args.query, limit);
+    return {
+      query: args.query,
+      count: videos.length,
+      videos
+    };
+  }
+
   const pins = loadPins();
 
   switch (name) {
@@ -364,7 +446,7 @@ const rl = readline.createInterface({
   terminal: false
 });
 
-rl.on('line', (line) => {
+rl.on('line', async (line) => {
   if (!line.trim()) return;
   let req;
   try {
@@ -421,7 +503,7 @@ rl.on('line', (line) => {
     try {
       const toolName = params?.name;
       const toolArgs = params?.arguments || {};
-      const output = handleToolCall(toolName, toolArgs);
+      const output = await handleToolCall(toolName, toolArgs);
       const res = {
         jsonrpc: '2.0',
         id,
