@@ -367,7 +367,7 @@ export const WorldCommentBar: React.FC<WorldCommentBarProps> = ({
                 <div className="flex items-center justify-between pb-2 mb-2 border-b border-slate-800/90 text-xs">
                   <div className="flex items-center gap-2 font-bold text-emerald-400">
                     <MessageSquare className="w-3.5 h-3.5 text-emerald-400" />
-                    <span>{language === 'th' ? 'แชท 5 ครั้งล่าสุด' : 'Recent 5 Messages'}</span>
+                    <span>Chat History</span>
                   </div>
                   <button
                     type="button"
@@ -421,9 +421,9 @@ export const WorldCommentBar: React.FC<WorldCommentBarProps> = ({
                 title={
                   isRecentOpen
                     ? (language === 'th' ? 'ย่อกลับ' : 'Collapse')
-                    : (language === 'th' ? 'ดูแชท 5 ครั้งล่าสุด (^)' : 'View recent 5 chats (^)')
+                    : 'Chat History (^)'
                 }
-                aria-label={isRecentOpen ? 'Collapse recent chats' : 'View recent 5 chats'}
+                aria-label={isRecentOpen ? 'Collapse chat history' : 'Chat History'}
                 className={`p-1.5 sm:p-2 rounded-full border transition-all cursor-pointer shrink-0 flex items-center justify-center active:scale-90 ${
                   isRecentOpen
                     ? 'bg-emerald-950/90 border-emerald-400 text-emerald-200 shadow-[0_0_12px_rgba(16,185,129,0.4)]'
