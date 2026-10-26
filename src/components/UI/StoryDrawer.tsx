@@ -41,6 +41,8 @@ function getYouTubeId(url: string): string | null {
   return match ? match[1] : null;
 }
 
+const DEFAULT_FALLBACK_IMAGE = 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80';
+
 export const StoryDrawer: React.FC<StoryDrawerProps> = ({
   pin,
   isOpen,
@@ -68,9 +70,21 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
     if (pin.gallery_media && pin.gallery_media.length > 0) {
       return pin.gallery_media;
     }
-    const defaultUrl = pin.image_url || dossier?.portraitUrl || `/entities/${pin.id}.jpg`;
+    const defaultUrl = pin.image_url || dossier?.portraitUrl || DEFAULT_FALLBACK_IMAGE;
     return [{ type: 'image', url: defaultUrl, title: language === 'th' ? pin.title_th : pin.title_en }];
   }, [pin, dossier, language]);
+
+  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+    const target = e.currentTarget;
+    if (target.dataset.failed) return;
+    target.dataset.failed = 'true';
+    const ytFallback = pin?.gallery_media?.find(m => m.type === 'youtube')?.thumbnail;
+    if (ytFallback && !target.src.includes(ytFallback)) {
+      target.src = ytFallback;
+    } else {
+      target.src = DEFAULT_FALLBACK_IMAGE;
+    }
+  };
 
   // Reset active slide & video playback whenever selected pin changes
   useEffect(() => {
@@ -425,15 +439,14 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
                         src={currentThumbnail}
                         alt=""
                         aria-hidden="true"
+                        onError={handleImageError}
                         className="pointer-events-none absolute inset-0 w-full h-full object-cover blur-xl opacity-40 scale-110"
                       />
                       {/* Sharp video poster */}
                       <img
                         src={currentThumbnail}
                         alt={currentMedia.title || title}
-                        onError={(e) => {
-                          (e.target as HTMLImageElement).src = dossier.portraitUrl;
-                        }}
+                        onError={handleImageError}
                         className="w-full h-full object-contain group-hover/play:scale-105 transition-transform duration-500 z-[1]"
                       />
                       {/* Dark overlay */}
@@ -462,12 +475,14 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
                       src={currentThumbnail}
                       alt=""
                       aria-hidden="true"
+                      onError={handleImageError}
                       className="pointer-events-none absolute inset-0 w-full h-full object-cover blur-2xl opacity-40 scale-125"
                     />
                     {/* Centered crisp image */}
                     <img
                       src={currentThumbnail}
                       alt={currentMedia.title || title}
+                      onError={handleImageError}
                       className="relative w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 z-[1]"
                     />
                     {/* Top right zoom button */}
@@ -575,9 +590,7 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
                         <img
                           src={thumbSrc}
                           alt=""
-                          onError={(e) => {
-                            (e.target as HTMLImageElement).src = dossier.portraitUrl;
-                          }}
+                          onError={handleImageError}
                           className="w-full h-full object-cover"
                         />
                         {/* Type Icon Badge */}
@@ -837,6 +850,7 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
               <img
                 src={currentThumbnail}
                 alt={title}
+                onError={handleImageError}
                 className="w-full h-full object-contain max-h-[82vh] select-none"
               />
             )}

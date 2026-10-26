@@ -1,7 +1,7 @@
 import type { GhostPin } from '../types/ghost';
 import { INITIAL_GHOST_PINS } from '../data/seedData';
 
-const STORAGE_KEY = 'worldofmys_pins_v16';
+const STORAGE_KEY = 'worldofmys_pins_v17';
 
 /**
  * Reconciles a cached pin list with the latest seed data so newly
@@ -11,7 +11,7 @@ function reconcileWithSeed(cachedPins: GhostPin[]): GhostPin[] {
   const seedMap = new Map(INITIAL_GHOST_PINS.map((p) => [p.id, p]));
   const reconciled = cachedPins.map((cached) => {
     const seed = seedMap.get(cached.id);
-    const resolvedImg = cached.image_url || seed?.image_url || `/entities/${cached.id}.jpg`;
+    const resolvedImg = cached.image_url || seed?.image_url || 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80';
     const resolvedGallery =
       cached.gallery_media && cached.gallery_media.length > 0
         ? cached.gallery_media

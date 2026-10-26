@@ -58,6 +58,38 @@ interface PinBestiaryMeta {
 }
 
 const PIN_BESTIARY_DB: Record<string, Partial<PinBestiaryMeta>> = {
+  'pin-kumanthong': {
+    archetype: 'cursed_artifact',
+    typeTh: 'กุมารทองและวิญญาณเด็กทองคำ (Sacred Child Spirit & Occult Amulet)',
+    typeEn: 'Sacred Child Spirit & Occult Amulet',
+    genderTh: 'วิญญาณกุมารจำแลง (Child Spirit / Golden Familiar)',
+    genderEn: 'Child Spirit / Golden Familiar',
+    sizeTh: '0.15 – 0.35 เมตร (รูปหล่อหุ่นจำลองบูชา)',
+    sizeEn: '0.15 – 0.35 m (Cast metal / clay consecrated effigy)',
+    weightTh: '0.5 – 3.5 กก.',
+    weightEn: '0.5 – 3.5 kg',
+    danger: 2,
+    habitatTh: 'หิ้งบูชาในเคหสถานและอารามวัดสามง่าม นครปฐม',
+    habitatEn: 'Domestic household altars & Wat Sam Ngam, Nakhon Pathom',
+    hoursTh: 'ตลอด 24 ชั่วโมง (คึกคักเป็นพิเศษยามถวายขนมหวานและน้ำแดง)',
+    hoursEn: '24 Hours (Heightened during offerings of sweets & red soda)',
+  },
+  'pin-phiam': {
+    archetype: 'male_specter',
+    typeTh: 'ผีอำและเงามืดกดทับยามนิทรา (Sleep Paralysis Shadow Phantom)',
+    typeEn: 'Sleep Paralysis Shadow Phantom',
+    genderTh: 'เงามืดไร้รูป / อสุรกายกดทับ',
+    genderEn: 'Formless Shadow Wraith',
+    sizeTh: 'ขนาดไม่คงที่ (แปรสภาพตามน้ำหนักที่กดทับ)',
+    sizeEn: 'Variable (Compresses upon the chest of the slumbering)',
+    weightTh: 'หนักอึ้งดั่งหินผา (ทับทรวงอก)',
+    weightEn: 'Crushing stone weight upon the thoracic plane',
+    danger: 3,
+    habitatTh: 'ห้องนอนและมุมมืดในเคหสถานยามค่ำคืน',
+    habitatEn: 'Nocturnal bedchambers and shadows of sleep',
+    hoursTh: 'ยามเคลิ้มหลับช่วงกึ่งหลับกึ่งตื่น (Hypnagogia)',
+    hoursEn: 'Hypnagogic & hypnopompic twilight transitions',
+  },
   'pin-yeti': {
     archetype: 'cryptid_beast',
     customImage: '/entities/yeti.jpg',
@@ -308,7 +340,7 @@ export function inferArchetype(pin: GhostPin): ArchetypeKey {
     (pin.district_en || '')
   ).toLowerCase();
 
-  // 1. Cosmic & Extraterrestrial Anomalies
+  // 1. Cosmic & Extraterrestrial Anomalies (Always top priority)
   if (
     text.includes('dogon') || text.includes('โดกอน') ||
     text.includes('sirius') || text.includes('ซิริอุส') ||
@@ -323,158 +355,122 @@ export function inferArchetype(pin: GhostPin): ArchetypeKey {
     return 'cosmic_anomaly';
   }
 
-  // 2. Cursed Wilderness, Sacred Mountains & Primeval Forests
-  if (
-    text.includes('ดงพญาเย็น') || text.includes('ดงพญาไฟ') ||
-    text.includes('aokigahara') || text.includes('อาโอกิกาฮาระ') ||
-    text.includes('hoia baciu') || text.includes('ฮอยา') ||
-    text.includes('pine barrens') || text.includes('ป่าสน') ||
-    text.includes('black forest') || text.includes('ป่าดำ') ||
-    text.includes('dyatlov') || text.includes('ดยัตลอฟ') ||
-    text.includes('ป่าดงดิบ') || text.includes('ป่าอาถรรพ์') ||
-    text.includes('ผืนป่า') || text.includes('หุบเขาอาถรรพ์') ||
-    text.includes('ดอยหลวง') || text.includes('wilderness') ||
-    text.includes('เขาหลวง') || text.includes('ป่าช้า')
-  ) {
-    return 'cursed_wilderness';
-  }
-
-  // 3. Ancient Monuments, Sanctuaries, Pyramids, Ruins & Tombs
-  if (
-    text.includes('ปราสาทหิน') || text.includes('พนมรุ้ง') ||
-    text.includes('phanom rung') || text.includes('เทวสถาน') ||
-    text.includes('พีระมิด') || text.includes('pyramid') ||
-    text.includes('sphinx') || text.includes('สฟิงซ์') ||
-    text.includes('stonehenge') || text.includes('สโตนเฮนจ์') ||
-    text.includes('moai') || text.includes('โมไอ') ||
-    text.includes('terracotta') || text.includes('จิ๋นซี') ||
-    text.includes('tomb') || text.includes('สุสาน') ||
-    text.includes('mausoleum') || text.includes('catacomb') ||
-    text.includes('โบราณสถาน') || text.includes('นครวัด') || text.includes('angkor')
-  ) {
-    return 'cursed_relic_monument';
-  }
-
-  // 4. Haunted Structures, Castles, Bridges & Historic Edifices
-  if (
-    text.includes('ปราสาท') || text.includes('castle') ||
-    text.includes('สะพาน') || text.includes('bridge') ||
-    text.includes('overtoun') || text.includes('leap') ||
-    text.includes('คฤหาสน์') || text.includes('mansion') ||
-    text.includes('alcatraz') || text.includes('อัลคาทราซ') ||
-    text.includes('หอคอย') || text.includes('tower') ||
-    text.includes('เรือนจำ') || text.includes('prison') ||
-    text.includes('โรงแรม') || text.includes('hotel') ||
-    text.includes('โรงพยาบาล') || text.includes('asylum') ||
-    text.includes('บ้านร้าง') || text.includes('บ้านผีสิง')
-  ) {
-    return 'haunted_edifice';
-  }
-
-  // 5. Cursed Artifacts, Relics & Dolls
-  if (
-    text.includes('ตุ๊กตา') || text.includes('doll') ||
-    text.includes('muñeca') || text.includes('หีบ') ||
-    text.includes('box') || text.includes('dybbuk') ||
-    text.includes('กระจก') || text.includes('mirror') ||
-    text.includes('เพชร') || text.includes('diamond') ||
-    text.includes('เครื่องรางต้องสาป')
-  ) {
-    return 'cursed_artifact';
-  }
-
-  // 6. Naval Abyss, Phantom Ships & Oceanic Anomalies
-  if (
-    text.includes('bermuda') || text.includes('เบอร์มิวดา') ||
-    text.includes('dutchman') || text.includes('ฟลายอิงดัตช์แมน') ||
-    text.includes('เรือผี') || text.includes('ghost ship') ||
-    text.includes('mary celeste') || text.includes('วังน้ำวน') ||
-    text.includes('ทะเลปีศาจ') || text.includes('marianas') ||
-    text.includes('สามเหลี่ยม') || text.includes('atlantis')
-  ) {
-    return 'aquatic_abyss';
-  }
-
-  // 7. Aquatic Serpents, River Guardians & Water Leviathans
-  if (
-    text.includes('loch ness') || text.includes('เนสซี') || text.includes('nessie') ||
-    text.includes('naga') || text.includes('พญานาค') || text.includes('นาคราช') ||
-    text.includes('bunyip') || text.includes('taniwha') ||
-    text.includes('sea serpent') || text.includes('งูยักษ์') ||
-    text.includes('พรายน้ำ') || text.includes('เงือก') ||
-    text.includes('mermaid') || text.includes('siren') ||
-    text.includes('lorelei') || text.includes('kraken') || text.includes('คราเคน') ||
-    text.includes('chalawan') || text.includes('ชาละวัน') || text.includes('กุมภีล์') ||
-    text.includes('kelpie') || text.includes('เคลปี') || text.includes('กัปปะ') || text.includes('kappa') ||
-    text.includes('ม้าน้ำปีศาจ') || text.includes('leviathan') || text.includes('เลเวียธาน')
-  ) {
-    return 'aquatic_serpent';
-  }
-
-  // 8. Cryptids, Wild Beasts, Lycanthropes & Predators
-  if (
-    text.includes('yeti') || text.includes('เยติ') ||
-    text.includes('sasquatch') || text.includes('wendigo') || text.includes('เวนดิโก') ||
-    text.includes('chupacabra') || text.includes('ชูปาคาบรา') ||
-    text.includes('werewolf') || text.includes('หมาป่า') ||
-    text.includes('saming') || text.includes('เสือสมิง') || text.includes('สมิง') ||
-    text.includes('gevaudan') || text.includes('สัตว์ร้าย') ||
-    text.includes('สัตว์ประหลาด') || text.includes('minotaur') ||
-    text.includes('manticore') || text.includes('shuck') ||
-    pin.category === 'monster'
-  ) {
+  // 2. Category: MONSTER
+  if (pin.category === 'monster') {
+    if (
+      text.includes('จระเข้') || text.includes('ชาละวัน') || text.includes('chalawan') ||
+      text.includes('พญานาค') || text.includes('นาคราช') || text.includes('naga') ||
+      text.includes('loch ness') || text.includes('nessie') || text.includes('เนสซี') ||
+      text.includes('kraken') || text.includes('คราเคน') || text.includes('serpent') ||
+      text.includes('เงือก') || text.includes('mermaid') || text.includes('siren') ||
+      text.includes('kelpie') || text.includes('เคลปี') || text.includes('กัปปะ') || text.includes('kappa') ||
+      text.includes('พรายน้ำ') || text.includes('leviathan')
+    ) {
+      return 'aquatic_serpent';
+    }
+    if (
+      text.includes('mothman') || text.includes('มอธแมน') || text.includes('มังกร') ||
+      text.includes('dragon') || text.includes('pazuzu') || text.includes('jersey') ||
+      text.includes('กระหัง') || text.includes('krahang') || text.includes('ahool') ||
+      text.includes('thunderbird') || text.includes('ปีก')
+    ) {
+      return 'winged_demon';
+    }
+    if (
+      text.includes('vampire') || text.includes('แวมไพร์') || text.includes('dracula') ||
+      text.includes('jiangshi') || text.includes('เจียงซือ') || text.includes('ผีดิบ') ||
+      text.includes('mummy') || text.includes('มัมมี่') || text.includes('ghoul') ||
+      text.includes('draugr')
+    ) {
+      return 'undead_lord';
+    }
     return 'cryptid_beast';
   }
 
-  // 9. Undead Lords, Vampires & Mummies
-  if (
-    text.includes('dracula') || text.includes('แดร็กคูลา') ||
-    text.includes('vampire') || text.includes('แวมไพร์') ||
-    text.includes('jiangshi') || text.includes('เจียงซือ') ||
-    text.includes('ผีดิบ') || text.includes('draugr') ||
-    text.includes('mummy') || text.includes('มัมมี่') ||
-    text.includes('ghoul') || text.includes('กูล') ||
-    text.includes('tutankhamun') || text.includes('ศพคืนชีพ')
-  ) {
-    return 'undead_lord';
+  // 3. Category: GHOST
+  if (pin.category === 'ghost') {
+    if (
+      text.includes('แม่นาค') || text.includes('สาว') || text.includes('นาง') ||
+      text.includes('หญิง') || text.includes('woman') || text.includes('lady') ||
+      text.includes('krasue') || text.includes('กระสือ') || text.includes('ปอบ') ||
+      text.includes('kuchisake') || text.includes('banshee') || text.includes('แบนชี') ||
+      text.includes('white lady') || text.includes('สตรีชุดขาว') || text.includes('ตานี') ||
+      text.includes('แม่มด') || text.includes('witch')
+    ) {
+      return 'female_specter';
+    }
+    return 'male_specter';
   }
 
-  // 10. Winged Demons & Avian Night Fiends
-  if (
-    text.includes('krahang') || text.includes('กระหัง') ||
-    text.includes('manananggal') || text.includes('มานันนังกัล') ||
-    text.includes('pazuzu') || text.includes('wawel') ||
-    text.includes('dragon') || text.includes('มังกร') ||
-    text.includes('mothman') || text.includes('มอธแมน') ||
-    text.includes('jersey') || text.includes('owlman') || text.includes('ปีก')
-  ) {
-    return 'winged_demon';
+  // 4. Category: CURSE
+  if (pin.category === 'curse') {
+    // 4.1 Cursed female apparitions / entities (e.g. Krasue, Pop, Witches)
+    if (
+      text.includes('กระสือ') || text.includes('krasue') || text.includes('ปอบ') ||
+      text.includes('แม่มด') || text.includes('witch') || text.includes('นาง') ||
+      text.includes('สาว') || text.includes('หญิง') || text.includes('lady') || text.includes('woman')
+    ) {
+      return 'female_specter';
+    }
+    // 4.2 Cursed artifacts, relics, amulets, dolls
+    if (
+      text.includes('กุมารทอง') || text.includes('kuman') || text.includes('ตุ๊กตา') ||
+      text.includes('doll') || text.includes('amulet') || text.includes('relic') ||
+      text.includes('เครื่องราง') || text.includes('หุ่น') || text.includes('ปลัดขิก') ||
+      text.includes('รักยม') || text.includes('ควายธนู') || text.includes('วัวธนู') ||
+      text.includes('กระจก') || text.includes('mirror') || text.includes('กล่อง') ||
+      text.includes('box') || text.includes('dybbuk') || text.includes('เพชร') || text.includes('diamond')
+    ) {
+      return 'cursed_artifact';
+    }
+    // 4.3 Haunted edifices, mansions, bridges (Title-prioritized)
+    const titleOnly = (pin.title_th + ' ' + pin.title_en).toLowerCase();
+    if (
+      titleOnly.includes('บ้าน') || titleOnly.includes('house') || titleOnly.includes('ตึก') ||
+      titleOnly.includes('building') || titleOnly.includes('ปราสาท') || titleOnly.includes('castle') ||
+      titleOnly.includes('คฤหาสน์') || titleOnly.includes('mansion') || titleOnly.includes('สะพาน') ||
+      titleOnly.includes('bridge') || titleOnly.includes('โรงแรม') || titleOnly.includes('hotel') ||
+      titleOnly.includes('เรือนจำ') || titleOnly.includes('prison') || titleOnly.includes('โรงพยาบาล')
+    ) {
+      return 'haunted_edifice';
+    }
+    // 4.4 Cursed wilderness & swamps
+    if (
+      titleOnly.includes('ป่า') || titleOnly.includes('forest') || titleOnly.includes('woods') ||
+      titleOnly.includes('swamp') || titleOnly.includes('บึง') || titleOnly.includes('เขา') ||
+      titleOnly.includes('ดง') || titleOnly.includes('mountain') || titleOnly.includes('wilderness')
+    ) {
+      return 'cursed_wilderness';
+    }
+    return 'cursed_artifact';
   }
 
-  // 11. Deities & Sacred Guardians
-  if (
-    pin.category === 'sacred' ||
-    text.includes('เทพ') || text.includes('พระ') || text.includes('ฤาษี') ||
-    text.includes('เจ้าแม่') || text.includes('ศาล') || text.includes('วัด') ||
-    text.includes('temple') || text.includes('shrine') || text.includes('ศักดิ์สิทธิ์') ||
-    text.includes('จามเทวี') || text.includes('pele') || text.includes('กวนอิม')
-  ) {
+  // 5. Category: SACRED
+  if (pin.category === 'sacred') {
+    if (
+      text.includes('ปราสาทหิน') || text.includes('pyramid') || text.includes('พีระมิด') ||
+      text.includes('เจดีย์') || text.includes('พระธาตุ') || text.includes('สถูป') ||
+      text.includes('stonehenge') || text.includes('นครวัด') || text.includes('monument')
+    ) {
+      return 'cursed_relic_monument';
+    }
     return 'deity_guardian';
   }
 
-  // 12. Female Specters & Vengeful Apparitions
-  if (
-    text.includes('แม่นาค') || text.includes('สาวปากฉีก') ||
-    text.includes('kuchisake') || text.includes('banshee') || text.includes('แบนชี') ||
-    text.includes('นาง') || text.includes('สาว') || text.includes('แม่') ||
-    text.includes('หญิง') || text.includes('woman') || text.includes('lady') ||
-    text.includes('krasue') || text.includes('กระสือ') || text.includes('ปอบ') ||
-    text.includes('kuntilanak') || text.includes('churel')
-  ) {
-    return 'female_specter';
+  // 6. Category: LEGEND
+  if (pin.category === 'legend') {
+    if (text.includes('bermuda') || text.includes('เรือผี') || text.includes('ghost ship') || text.includes('atlantis') || text.includes('สามเหลี่ยม')) {
+      return 'aquatic_abyss';
+    }
+    if (text.includes('พีระมิด') || text.includes('pyramid') || text.includes('ปราสาทหิน') || text.includes('stonehenge') || text.includes('สุสาน') || text.includes('tomb') || text.includes('โบราณสถาน')) {
+      return 'cursed_relic_monument';
+    }
+    if (text.includes('ดงพญา') || text.includes('aokigahara') || text.includes('hoia') || text.includes('ป่าอาถรรพ์')) {
+      return 'cursed_wilderness';
+    }
+    return 'haunted_edifice';
   }
 
-  // 13. Male Specters & Wraiths (Default for ghosts / unclassified phantoms)
   return 'male_specter';
 }
 

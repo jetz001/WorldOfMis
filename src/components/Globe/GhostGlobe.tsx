@@ -1112,8 +1112,12 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
             <div className="flex gap-2.5 p-2.5 pb-1.5 items-center">
               <div className="relative w-12 h-12 rounded-xl overflow-hidden border border-amber-400/50 shrink-0 bg-slate-900">
                 <img
-                  src={hoveredPinInfo.pin.image_url || `/entities/${hoveredPinInfo.pin.id}.jpg`}
+                  src={hoveredPinInfo.pin.image_url || `https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=400&q=80`}
                   alt={hoveredPinInfo.pin.title_th}
+                  onError={(e) => {
+                    const yt = hoveredPinInfo.pin.gallery_media?.find(m => m.type === 'youtube')?.thumbnail;
+                    (e.target as HTMLImageElement).src = yt || 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=400&q=80';
+                  }}
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
