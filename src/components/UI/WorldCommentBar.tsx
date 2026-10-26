@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import { Send, Globe2, Clock, Sparkles, User, Dice5 } from 'lucide-react';
+import { Send, Globe2, Clock, User, Dice5 } from 'lucide-react';
 import type { SupportedLanguage } from '../../types/ghost';
 
 export interface WorldCommentItem {
@@ -296,7 +296,7 @@ export const WorldCommentBar: React.FC<WorldCommentBarProps> = ({
                 : 'bg-[#070d18]/92 border-emerald-500/45 text-slate-100 shadow-[0_0_20px_rgba(16,185,129,0.25)]'
             }`}
           >
-            <span className="text-base shrink-0 mt-0.5">{b.isSelf ? '✨' : '💬'}</span>
+            <span className="text-sm shrink-0 mt-0.5">💬</span>
             <div className="min-w-0">
               <div className="flex items-center gap-1.5 mb-0.5">
                 <span className="text-[10px] font-bold text-amber-300 truncate max-w-[140px]">
@@ -377,8 +377,7 @@ export const WorldCommentBar: React.FC<WorldCommentBarProps> = ({
             <div className="h-4 w-px bg-slate-700/60 shrink-0" />
 
             {/* Comment Text Input */}
-            <div className="flex-1 min-w-0 flex items-center gap-1.5 pl-0.5">
-              <Sparkles className="w-3.5 h-3.5 text-emerald-400 shrink-0 hidden xs:block" />
+            <div className="flex-1 min-w-0 flex items-center pl-0.5">
               <input
                 type="text"
                 value={text}
