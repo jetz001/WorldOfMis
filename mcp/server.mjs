@@ -60,6 +60,46 @@ function searchYouTube(query, limit = 5) {
   });
 }
 
+function searchWebImages(query, limit = 5) {
+  return new Promise((resolve) => {
+    const url = `https://www.bing.com/images/search?q=${encodeURIComponent(query)}&first=1&scenario=ImageBasicHover`;
+    https.get(url, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        'Accept-Language': 'th,en-US;q=0.9,en;q=0.8'
+      }
+    }, (res) => {
+      let html = '';
+      res.on('data', c => html += c);
+      res.on('end', () => {
+        try {
+          const matches = html.match(/m="(\{[^"]+?\})"/g) || [];
+          const results = [];
+          for (const m of matches) {
+            try {
+              const decoded = m.slice(3, -1).replace(/&quot;/g, '"');
+              const obj = JSON.parse(decoded);
+              if (obj.murl) {
+                results.push({
+                  title: obj.t || query,
+                  imageUrl: obj.murl,
+                  thumbnail: obj.turl || obj.murl,
+                  source: obj.purl || ''
+                });
+                if (results.length >= limit) break;
+              }
+            } catch {}
+          }
+          resolve(results);
+        } catch {
+          resolve([]);
+        }
+      });
+    }).on('error', () => resolve([]));
+  });
+}
+
 function loadPins() {
   if (!fs.existsSync(SEED_FILE)) {
     throw new Error(`Seed file not found: ${SEED_FILE}`);
@@ -273,6 +313,24 @@ const TOOLS = [
       },
       required: ['query']
     }
+  },
+  {
+    name: 'worldofmys_search_images',
+    description: 'Search web images WITHOUT requiring any API key. Returns direct image URLs, thumbnails, and webpage sources.',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        query: {
+          type: 'string',
+          description: 'Image search keyword (e.g. "ปราสาทหินพนมรุ้ง", "Loch Ness Monster", "Tokyo Tower at night")'
+        },
+        limit: {
+          type: 'number',
+          description: 'Maximum number of images to return (default 5, max 20)'
+        }
+      },
+      required: ['query']
+    }
   }
 ];
 
@@ -287,6 +345,19 @@ async function handleToolCall(name, args) {
       query: args.query,
       count: videos.length,
       videos
+    };
+  }
+
+  if (name === 'worldofmys_search_images') {
+    if (!args.query) {
+      throw new Error('Missing required argument: query');
+    }
+    const limit = Math.min(Number(args.limit) || 5, 20);
+    const images = await searchWebImages(args.query, limit);
+    return {
+      query: args.query,
+      count: images.length,
+      images
     };
   }
 
