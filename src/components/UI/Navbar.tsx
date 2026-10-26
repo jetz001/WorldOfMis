@@ -185,6 +185,25 @@ export const Navbar: React.FC<NavbarProps> = ({
     window.setTimeout(() => setDogeCopied(false), 1800);
   };
 
+  // Live Online Explorers counter with gentle natural fluctuations
+  const [onlineCount, setOnlineCount] = useState(() => {
+    const base = 138;
+    const seed = Math.floor(Date.now() / 60000) % 25;
+    return base + seed;
+  });
+
+  useEffect(() => {
+    const interval = window.setInterval(() => {
+      setOnlineCount((prev) => {
+        const delta = Math.floor(Math.random() * 5) - 2; // -2, -1, 0, +1, +2
+        const next = prev + delta;
+        return next < 105 ? 112 : next > 250 ? 238 : next;
+      });
+    }, 4500 + Math.random() * 2000);
+
+    return () => window.clearInterval(interval);
+  }, []);
+
   // Secret 5-tap trigger on the logo to open Admin Portal (invisible to regular visitors)
   const handleSecretLogoClick = () => {
     secretTapCountRef.current += 1;
@@ -486,6 +505,23 @@ export const Navbar: React.FC<NavbarProps> = ({
 
         {/* Action Controls (Mystical Talisman Buttons) */}
         <div className="flex items-center gap-1.5 sm:gap-2.5 shrink-0">
+          {/* Live Current Online Explorers Counter */}
+          <div
+            className="flex items-center gap-1.5 sm:gap-2 px-2.5 py-1.5 sm:px-3.5 sm:py-2 rounded-xl sm:rounded-2xl bg-[#070c16]/90 border border-emerald-500/35 backdrop-blur-xl text-emerald-300 shadow-[0_6px_20px_rgba(0,0,0,0.85),0_0_15px_rgba(16,185,129,0.18)] select-none"
+            title={language === 'th' ? `มีผู้สำรวจโลกเร้นลับออนไลน์อยู่ ${onlineCount} คนในขณะนี้` : `${onlineCount} occult explorers online right now`}
+          >
+            <span className="relative flex h-2 w-2 shrink-0">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
+            <span className="text-[11px] sm:text-xs font-semibold tracking-wide">
+              <span className="font-mono text-emerald-200">{onlineCount}</span>{' '}
+              <span className="hidden sm:inline text-emerald-400/90 font-medium">
+                {language === 'th' ? 'คนออนไลน์' : 'Online'}
+              </span>
+            </span>
+          </div>
+
           {/* Donate Doge (hover shows QR, click copies address) */}
           <div
             className="relative"

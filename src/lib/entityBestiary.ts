@@ -16,17 +16,22 @@ export interface EntityDossier {
   omensAndTaboos: string[];
 }
 
-type ArchetypeKey =
-  | 'ape_beast'
+export type ArchetypeKey =
+  | 'cursed_wilderness'
+  | 'cursed_relic_monument'
+  | 'cosmic_anomaly'
+  | 'haunted_edifice'
+  | 'cursed_artifact'
+  | 'aquatic_abyss'
   | 'aquatic_serpent'
-  | 'female_specter'
-  | 'floating_head'
-  | 'horned_beast'
+  | 'cryptid_beast'
   | 'undead_lord'
   | 'winged_demon'
-  | 'spider_trickster'
   | 'sand_worm'
-  | 'witch_deity';
+  | 'spider_trickster'
+  | 'deity_guardian'
+  | 'male_specter'
+  | 'female_specter';
 
 interface PinBestiaryMeta {
   archetype: ArchetypeKey;
@@ -52,35 +57,26 @@ interface PinBestiaryMeta {
   taboosEn: string[];
 }
 
-// Detailed Bestiary Records for key pins + intelligent archetype fallback for all 50+ pins
 const PIN_BESTIARY_DB: Record<string, Partial<PinBestiaryMeta>> = {
   'pin-yeti': {
-    archetype: 'ape_beast',
+    archetype: 'cryptid_beast',
     customImage: '/entities/yeti.jpg',
     typeTh: 'อสุรกายไพรหนาวหิมาลัย (Cryo-Hominid Cryptid)',
     typeEn: 'Himalayan Cryo-Hominid Cryptid',
-    genderTh: 'พบทั้งเพศผู้และเพศเมีย (ไม่ระบุแน่ชัด)',
-    genderEn: 'Dimorphic (Male & Female reported)',
+    genderTh: 'เพศผู้ / สัตว์นักล่าดึกดำบรรพ์',
+    genderEn: 'Male / Primeval Beast',
     sizeTh: '2.4 – 3.2 เมตร (เมื่อยืนสองขา)',
     sizeEn: '2.4 – 3.2 m (Bipedal stance)',
-    weightTh: '220 – 420 กก. (ประมาณการ)',
-    weightEn: '220 – 420 kg (Estimated)',
+    weightTh: '220 – 420 กก.',
+    weightEn: '220 – 420 kg',
     danger: 4,
     habitatTh: 'สันเขาหิมะและธารน้ำแข็งเทือกเขาหิมาลัย (สูงกว่า 4,500 ม.)',
     habitatEn: 'High Himalayan glaciers & snow ridges (>4,500 m)',
     hoursTh: 'ยามพายุหิมะพัดจัดและพลบค่ำถึงเช้ามืด',
     hoursEn: 'Blizzard whiteouts & dusk till dawn',
-    descTh:
-      'รูปร่างคล้ายวานรยักษ์ผสมมนุษย์โบราณ เดินสองขาอย่างมั่นคงท่ามกลางหิมะลึก ปกคลุมด้วยขนหนาสีขาวเงินอมเทาหม่นหรือน้ำตาลเข้ม ดวงตาสีเขียวมรกตเรืองแสงในม่านพายุ มีกรามใหญ่และรอยเท้าขนาดมหึมาความยาวกว่า 35–45 เซนติเมตร',
-    descEn:
-      'A towering, broad-shouldered bipedal hominid cloaked in frost-matted silver-white and dark brown fur. Piercing emerald-amber eyes gleam through blizzard whiteouts, leaving 40 cm footprints across sheer glacial ridges.',
-    extraLoreTh:
-      'ในคัมภีร์โบราณของชาวเชอร์ปาและทิเบต เรียกสิ่งมีชีวิตนี้ว่า "เมห์-เต" (Meh-Teh) หรืออสูรผู้พิทักษ์ยอดเขาศักดิ์สิทธิ์ ก่อนที่มันจะปรากฏตัว มักมีเสียงผิวปากแหลมสูงแทรกมากับเสียงลมหอน และมีกลิ่นสาบฉุนคล้ายกำมะถันปนขนสัตว์เปียกหิมะ',
-    extraLoreEn:
-      'Revered and feared in Sherpa manuscripts as "Meh-Teh", guardian of the sacred peaks. Its arrival is heralded by a high-pitched whistling cry cutting through the gale and a pungent smell of sulfur and wet fur.',
     taboosTh: [
       'หากพบรอยเท้าขนาดยักษ์สดใหม่กลางพายุหิมะ ห้ามเดินตามรอยไปเด็ดขาด',
-      'หากได้ยินเสียงผิวปากก้องจากหุบเหวน้ำแข็ง ให้รีบลงสู่ที่ต่ำทันที કારણเยติเคลื่อนที่บนที่ลาดชันเร็วกว่ามนุษย์หลายเท่า',
+      'หากได้ยินเสียงผิวปากก้องจากหุบเหวน้ำแข็ง ให้รีบลงสู่ที่ต่ำทันที',
       'ห้ามเผาขนสัตว์หรือส่งเสียงท้าทายเจ้าเขาบริเวณอารามคุมจุงหลังตะวันตกดิน',
     ],
     taboosEn: [
@@ -89,373 +85,815 @@ const PIN_BESTIARY_DB: Record<string, Partial<PinBestiaryMeta>> = {
       'Never burn animal hair or shout challenges near sacred high-altitude passes after dusk.',
     ],
   },
+  'pin-prasat-hin-phanom-rung': {
+    archetype: 'cursed_relic_monument',
+    customImage: '/entities/pin-prasat-hin-phanom-rung.jpg',
+    typeTh: 'โบราณสถานศักดิ์สิทธิ์และเทวสถานขอมโบราณ (Ancient Stone Sanctuary & Sacred Monument)',
+    typeEn: 'Ancient Stone Sanctuary & Sacred Monument',
+    genderTh: 'N/A (สถาปัตยกรรมเทวสถานโบราณ / พระศิวะมหาเทพ)',
+    genderEn: 'N/A (Ancient Monolithic Temple / Lord Shiva Sanctum)',
+    sizeTh: 'เทวสถานยอดปรางค์ประธานสูง 27 เมตร บนยอดภูเขาไฟดับสนิท',
+    sizeEn: '27-meter central stone prang sanctuary atop an extinct volcano',
+    weightTh: 'มวลหินทรายสีชมพูและศิลาแลงนับหมื่นตัน',
+    weightEn: 'Tens of thousands of tons of pink sandstone & laterite',
+    danger: 2,
+    habitatTh: 'ยอดภูเขาไฟพนมรุ้ง อำเภอเฉลิมพระเกียรติ จังหวัดบุรีรัมย์',
+    habitatEn: 'Phanom Rung Extinct Volcano, Buriram, Thailand',
+    hoursTh: 'ตลอดกาล (รับพลังงานจักรวาลสูงสุดยามดวงอาทิตย์ส่องตรง 15 ช่องประตู)',
+    hoursEn: 'Eternal (Heightened alignment when sun shines through all 15 doorways)',
+    descTh: 'เทวสถานปราสาทหินทรายสีชมพูศิลปะขอมโบราณ สร้างขึ้นเพื่อถวายแด่องค์พระศิวะ ตั้งตระหง่านอยู่บนยอดภูเขาไฟที่ดับสนิทแล้ว มีทับหลังนารายณ์บรรทมสินธุ์อันเลื่องชื่อ',
+    descEn: 'A magnificent pink sandstone Khmer sanctuary dedicated to Shiva, perched atop an extinct volcano. Renowned for its divine cosmic alignment where the sun aligns through 15 doorways.',
+    extraLoreTh: 'ปราสาทหินพนมรุ้งเปรียบเสมือนเขาไกรลาสจำลองบนโลกมนุษย์ ทุกปีจะมีปรากฏการณ์แสงอาทิตย์ลอดผ่าน 15 ช่องประตู 4 ครั้ง เชื่อว่าเป็นช่วงเวลาที่พลังแห่งทวยเทพและจักรวาลเปิดออกสู่โลกมนุษย์',
+    extraLoreEn: 'Symbolizing Mount Kailash on Earth, the temple exhibits a solar phenomenon four times a year where sunlight pierces straight through all 15 sanctuary doors.',
+    taboosTh: [
+      'ห้ามปีนป่าย ขูดขีด สลักชื่อ หรือนั่งบนศิวลึงค์ ฐานโยนี หรือทับหลังนารายณ์บรรทมสินธุ์เด็ดขาด',
+      'ห้ามหยิบเศษหินทราย ศิลาแลง วัตถุมงคล หรือดินออกจากบริเวณเขตปราสาทกลับบ้าน',
+      'ควรสำรวมกายวาจาและกราบสักการะด้วยความเคารพต่อองค์พระศิวะและเทพผู้พิทักษ์',
+    ],
+    taboosEn: [
+      'Never climb, deface, or sit on the Shiva lingam, yoni base, or the sacred lintels.',
+      'Never remove sandstone fragments, laterite bricks, or soil from the temple grounds.',
+      'Maintain respectful silence and honor the ancient guardians of the sanctuary.',
+    ],
+  },
+  'pin-dongphayayen': {
+    archetype: 'cursed_wilderness',
+    customImage: '/entities/pin-dongphayayen.jpg',
+    typeTh: 'อาถรรพ์ผืนป่าดึกดำบรรพ์และแดนลี้ลับ (Haunted Wilderness & Primeval Biosphere)',
+    typeEn: 'Haunted Wilderness & Primeval Biosphere',
+    genderTh: 'N/A (อาณาเขตผืนป่าธรรมชาติ / เจ้าป่าเจ้าเขา)',
+    genderEn: 'N/A (Natural Wilderness / Forest Deities)',
+    sizeTh: 'ครอบคลุมผืนป่ามรดกโลกกว้างใหญ่กว่า 6,155 ตร.กม.',
+    sizeEn: 'Expansive World Heritage forest complex exceeding 6,155 sq km',
+    weightTh: 'N/A (มวลระบบนิเวศและพลังงานสนามแม่เหล็กโลก)',
+    weightEn: 'N/A (Biomass & Geomagnetic Field Mass)',
+    danger: 4,
+    habitatTh: 'เทือกเขาดงพญาเย็นและอุทยานแห่งชาติเขาใหญ่',
+    habitatEn: 'Dong Phaya Yen Mountains & Khao Yai Forest Complex',
+    hoursTh: 'ตลอด 24 ชั่วโมง (ทวีความรุนแรงยามค่ำคืนและช่วงม่านหมอกลงจัด)',
+    hoursEn: '24 Hours (Heightened during midnight hours & creeping rainy fogs)',
+    descTh: 'ผืนป่าดงดิบดึกดำบรรพ์ที่เคยได้ชื่อว่า "ดงพญาไฟ" เต็มไปด้วยเรื่องเล่าขานของไข้ป่า สมิงร้ายจำแลง และสิ่งลี้ลับที่กลืนกินผู้บุกรุกมานับร้อยปี',
+    descEn: 'A primeval rainforest historically feared as "Dong Phaya Fai" (Forest of the Fire Lord), known for fatal malaria, were-tigers (Suea Saming), and unmapped spirit trails.',
+    extraLoreTh: 'ก่อนการสร้างทางรถไฟสายแรก ขบวนเกวียนโบราณที่สัญจรผ่านต้องทำพิธีขอขมาเจ้าป่าเจ้าเขาตลอดเส้นทาง ผู้เฒ่าผู้แก่เตือนว่าใครฝ่าฝืนตัดไม้หรือท้าทายจะถูกเจ้าป่าปิดตามิให้พบทางออก',
+    extraLoreEn: 'Caravans of old required protective shamans to traverse this territory, warning that disrespectful travelers would suffer jungle delirium and vanish forever.',
+    taboosTh: [
+      'ห้ามตัดไม้ ยิงสัตว์ หรือสร้างความเสียหายต่อผืนป่าโดยไม่ขอขมาเจ้าป่าเจ้าเขา',
+      'หากได้ยินเสียงคนรู้จักเรียกชื่อแว่วมาจากดงทึบ ห้ามขานรับเด็ดขาดเพราะอาจเป็นเสือสมิงแปลงกายมาล่อลวง',
+      'พกเครื่องรางสายพุทธคุณคุ้มกาย และห้ามพูดจาลบหลู่ศาลเจ้าพ่อเขาใหญ่ตลอดเส้นทาง',
+    ],
+    taboosEn: [
+      'Never fell trees or hunt wildlife without offering traditional rites to forest guardians.',
+      'If familiar voices call your name from the deep thicket, never answer—it may be a shapeshifting tiger spirit.',
+      'Carry blessed amulets and refrain from vulgar language while traversing deep trails.',
+    ],
+  },
   'pin-maenak': {
     archetype: 'female_specter',
     customImage: '/entities/maenak.jpg',
-    typeTh: 'วิญญาณผีตายทั้งกลมผู้ผูกพันด้วยรัก (Bound Revenant Spirit)',
+    typeTh: 'วิญญาณผีตายทั้งกลมผู้ผูกพันด้วยรัก (Bound Maternal Revenant)',
     typeEn: 'Bound Maternal Revenant Spirit',
     genderTh: 'เพศหญิง (พร้อมวิญญาณทารก)',
     genderEn: 'Female (with Infant Spirit)',
-    sizeTh: '1.62 เมตร (ยืดแขนยาวได้หลายเมตร)',
-    sizeEn: '1.62 m (Arms can elongate supernaturally)',
-    weightTh: 'N/A (0.0 กก. — ร่างจิตวิญญาณ)',
-    weightEn: 'N/A (0.0 kg — Ethereal Form)',
-    danger: 4,
-    habitatTh: 'คุ้งน้ำคลองพระโขนง เรือนไม้ริมน้ำ และร่มต้นตะเคียนวัดมหาบุศย์',
-    habitatEn: 'Phra Khanong canal banks, wooden stilt house & banyan groves',
-    hoursTh: 'ยามพลบค่ำถึงเที่ยงคืน (21:00 – 03:00 น.)',
-    hoursEn: 'Dusk through witching hour (21:00 – 03:00)',
-    descTh:
-      'หญิงสาวชาวสยามโบราณใบหน้าสะสวยแต่ซีดขาวราวแสงจันทร์ ห่มสไบสีหม่นและนุ่งโจงกระเบนเก่า อุ้มทารกน้อยแนบอก ดวงตาเปี่ยมด้วยความรักปนโศกเศร้าและอาฆาตแค้นต่อผู้ที่พยายามพรากนางจากพี่มาก',
-    descEn:
-      'A pale, melancholic Siamese woman dressed in antique sabai silk, cradling a spectral infant by a moonlit canal pier. Capable of stretching her limbs through floorboards and summoning fierce canal winds.',
-    extraLoreTh:
-      'ยามค่ำคืนชาวบ้านริมคลองพระโขนงจะได้ยินเสียงเพลงกล่อมเด็กแว่วมากับสายลมเย็นยะเยือก ตำนานเล่าว่าสมเด็จพระพุฒาจารย์ (โต พรหมรังสี) ได้เสด็จมาโปรดและเจาะกะโหลกหน้าผากของนางทำเป็นปั้นเหน่งเพื่อปลดปล่อยดวงวิญญาณสู่สุคติ',
-    extraLoreEn:
-      'Locals along the canal reported haunting lullabies drifting across the water at midnight, until Somdet Toh subdued her grieving spirit and bound her forehead bone into a sacred belt buckle.',
+    sizeTh: '1.62 เมตร (ยืดแขนยาวได้ตามอาถรรพ์)',
+    sizeEn: '1.62 m (Supernaturally elongating limbs)',
+    weightTh: 'N/A (0.0 กก. — กายทิพย์วิญญาณ)',
+    weightEn: 'N/A (0.0 kg — Incorporeal Ectoplasm)',
+    danger: 3,
+    habitatTh: 'ริมคลองพระโขนงและศาลย่านาควัดมหาบุศย์ กรุงเทพฯ',
+    habitatEn: 'Phra Khanong canal banks & Wat Mahabut Shrine, Bangkok',
+    hoursTh: 'ยามพลบค่ำถึงก่อนรุ่งสาง (19:00 – 04:00 น.)',
+    hoursEn: 'Twilight till dawn (19:00 – 04:00)',
     taboosTh: [
-      'ห้ามทักหรือพูดจาลบหลู่เรื่องความรักและครอบครัวบริเวณคุ้งน้ำพระโขนง',
-      'หากได้ยินเสียงเพลงกล่อมเด็กริมคลองยามดึก ห้ามชะโงกหน้ามองลงไปใต้ถุนเรือน',
-      'เมื่อบนบานเรื่องการเกณฑ์ทหารหรือความรัก ต้องรักษาสัจจะตามที่กล่าวไว้เสมอ',
+      'ห้ามทักหรือมองลอดใต้หว่างขายามสัญจรเลียบคลองพระโขนงในคืนเดือนมืด',
+      'เมื่อเข้ากราบไหว้ศาลย่านาค ห้ามบนบานขอให้ไม่ต้องเกณฑ์ทหารเด็ดขาด',
+      'ควรถวายชุดไทย ของเล่นเด็ก หรือทองคำเปลวด้วยจิตเมตตาระลึกถึงความรักอันบริสุทธิ์',
     ],
     taboosEn: [
-      'Never mock vows of love or family fidelity near the canal shrine.',
-      'Do not peer beneath wooden floorboards if a midnight lullaby is heard.',
-      'Always fulfill any vow made at the shrine regarding military draft or romance.',
+      'Never look between your legs along dark canal banks at night.',
+      'Never pray to avoid military conscription at Ya Nak shrine.',
+      'Offer traditional Thai silk garments or child toys with pure respect.',
     ],
   },
-  'pin-kuchisake': {
-    archetype: 'female_specter',
-    typeTh: 'อนเรียว / วิญญาณอาฆาตยุคใหม่ (Vengeful Onryō)',
-    typeEn: 'Vengeful Urban Onryō Spirit',
-    genderTh: 'เพศหญิง (Female)',
-    genderEn: 'Female',
-    sizeTh: '1.68 เมตร',
-    sizeEn: '1.68 m',
-    weightTh: '48 กก. (N/A ในร่างวิญญาณ)',
-    weightEn: '48 kg (N/A in spectral state)',
-    danger: 5,
-    habitatTh: 'ตรอกซอยมืด เสาไฟสลัว และทางเดินกลับจากโรงเรียนยามค่ำ',
-    habitatEn: 'Dimly lit alleys, street corners & school routes at dusk',
-    descTh:
-      'หญิงสาวผมยาวสลวยสีดำขลับ สวมเสื้อโค้ทยาวและหน้ากากอนามัยสีขาวปิดบังครึ่งใบหน้า ภายใต้หน้ากากคือบาดแผลฉีกขาดตั้งแต่ริมฝีปากถึงใบหูทั้งสองข้าง ในมือถือกรรไกรเหล็กขนาดใหญ่เปื้อนสนิมเลือด',
-    descEn:
-      'A tall, dark-haired woman in a trench coat wearing a white surgical mask. Beneath the mask lies a grotesque ear-to-ear grin, accompanied by a pair of heavy, blood-stained iron shears.',
-  },
-  'pin-lochness': {
-    archetype: 'aquatic_serpent',
-    typeTh: 'สัตว์ดึกดำบรรพ์ใต้น้ำลึก (Abyssal Plesiosaur Cryptid)',
-    typeEn: 'Abyssal Aquatic Cryptid',
-    genderTh: 'ไม่ระบุ (Unverified)',
-    genderEn: 'Unverified',
-    sizeTh: '9.0 – 15.0 เมตร (ความยาวลำตัว)',
-    sizeEn: '9.0 – 15.0 m (Total length)',
-    weightTh: '1,800 – 3,500 กก.',
-    weightEn: '1,800 – 3,500 kg',
+  'pin-pret': {
+    archetype: 'male_specter',
+    customImage: '/entities/pin-pret.jpg',
+    typeTh: 'เปรตอสุรกายชดใช้กรรมบาป (Tormented Hungry Ghost / Preta)',
+    typeEn: 'Tormented Karmic Hungry Ghost (Preta)',
+    genderTh: 'เพศชาย / เปรตสัมภเวสี',
+    genderEn: 'Male / Tormented Preta',
+    sizeTh: 'ร่างผอมโซสูงตระหง่าน 15 – 25 เมตร (เทียบเท่าเสาชิงช้า)',
+    sizeEn: '15 – 25 meters tall (Towering as the Giant Swing)',
+    weightTh: 'N/A (0.0 กก. — โครงสร้างกายทิพย์อเวจี)',
+    weightEn: 'N/A (0.0 kg — Spectral Hellform)',
     danger: 3,
-    habitatTh: 'ร่องน้ำลึกใต้ทะเลสาบล็อกเนสส์ (ลึกกว่า 230 เมตร)',
-    habitatEn: 'Deep peaty trenches of Loch Ness (>230 m depth)',
-    descTh:
-      'ลำตัวสีเทาดำมันวาวคล้ายเพลซิโอซอร์ดึกดำบรรพ์ มีคอยาวเรียวชูขึ้นเหนือผิวน้ำ ท่อนหลังมีโหนกนูน 2–3 ลูก และครีบใบพายสี่ข้างสำหรับแหวกว่ายในน้ำเย็นจัดที่มืดทึบด้วยตะกอนพีต',
-    descEn:
-      'A sleek, dark-skinned aquatic giant with an elongated swan-like neck, humped back, and four powerful flippers adapted to the frigid, peat-darkened waters of the Scottish Highlands.',
+    habitatTh: 'ลานหน้าวัดสุทัศนเทพวรารามและเสาชิงช้า พระนคร',
+    habitatEn: 'Wat Suthat Sanctuary & The Giant Swing, Bangkok',
+    hoursTh: 'คืนเดือนมืดหลังเที่ยงคืน (00:00 – 03:30 น.)',
+    hoursEn: 'Moonless midnight hours (00:00 – 03:30)',
+    taboosTh: [
+      'ห้ามส่งเสียงผิวปากล้อเลียนหรือเลียนแบบเสียงหวีดร้องในยามวิกาลรอบเสาชิงช้า',
+      'หากได้ยินเสียงขอส่วนบุญ ให้ตั้งจิตอุทิศกุศลและห้ามท้าทายหรือชี้มือขึ้นฟ้าเด็ดขาด',
+      'ควรทำบุญตักบาตรกรวดน้ำอุทิศให้แก่บรรพบุรุษและสัมภเวสีผู้ยากไร้',
+    ],
+    taboosEn: [
+      'Never whistle or mimic piercing cries around the Giant Swing after midnight.',
+      'If wailing cries for merit echo from above, recite protective prayers and do not point upwards.',
+      'Dedicate merit and water-libation rituals to suffering wandering spirits.',
+    ],
   },
-  'pin-dracula': {
-    archetype: 'undead_lord',
-    typeTh: 'จ้าวแห่งแวมไพร์อมตะ (Immortal Nosferatu Lord)',
-    typeEn: 'Immortal Vampire Lord',
-    genderTh: 'เพศชาย (Male)',
-    genderEn: 'Male',
-    sizeTh: '1.85 เมตร (แปลงร่างเป็นค้างคาวหรือหมอกได้)',
-    sizeEn: '1.85 m (Shapeshifts into mist or bat)',
-    weightTh: '78 กก. (ไม่มีเงาในกระจก)',
-    weightEn: '78 kg (Casts no reflection)',
+  'pin-bermuda': {
+    archetype: 'aquatic_abyss',
+    customImage: '/entities/pin-bermuda.jpg',
+    typeTh: 'วังน้ำวนลึกและดินแดนสูญหายทางทะเล (Abyssal Anomaly & Phantom Vessel)',
+    typeEn: 'Abyssal Anomaly & Phantom Vessel',
+    genderTh: 'N/A (ความผิดปกติทางมิติและภูมิศาสตร์มหาสมุทร)',
+    genderEn: 'N/A (Naval Anomaly & Dimensional Vortex)',
+    sizeTh: 'อาณาเขตมหาสมุทรแอตแลนติกครอบคลุมกว่า 1,300,000 ตร.กม.',
+    sizeEn: 'Vast Atlantic oceanic zone spanning 1,300,000 sq km',
+    weightTh: 'N/A (มวลน้ำลึกและสนามแม่เหล็กแปรปรวน)',
+    weightEn: 'N/A (Abyssal ocean mass & electromagnetic vortex)',
     danger: 5,
-    habitatTh: 'ปราสาทหินบนยอดเขาคาร์เพเทียนและห้องใต้ดินโบราณ',
-    habitatEn: 'Carpathian mountain fortress & subterranean crypts',
-    descTh:
-      'ขุนนางโบราณในชุดคลุมสีดำสนิทซับในสีแดงเลือดหมู ผิวขาวซีดเย็นเฉียบราวหินอ่อน ดวงตาสีแดงเพลิงสะกดจิตเหยื่อ มีเขี้ยวแหลมคมสำหรับสูบเลือดสดและสามารถสลายร่างเป็นกลุ่มหมอกหนาทึบ',
-    descEn:
-      'An aristocratic undead nobleman draped in midnight-black velvet, pale as marble with hypnotic crimson eyes and razor fangs, commanding wolves and nocturnal mist.',
+    habitatTh: 'มหาสมุทรแอตแลนติกเหนือ (ฟลอริดา - เบอร์มิวดา - เปอร์โตริโก)',
+    habitatEn: 'North Atlantic Ocean (Florida - Bermuda - Puerto Rico triangle)',
+    hoursTh: 'ยามพายุแม่เหล็ก หมอกไฟฟ้า และคืนเดือนดับ',
+    hoursEn: 'Electromagnetic storm fronts & moonless ocean swells',
+    taboosTh: [
+      'ห้ามพึ่งพาระบบเข็มทิศแม่เหล็กเพียงอย่างเดียว ตรวจสอบอุปกรณ์สำรองและบันทึกพิกัดทุกระยะ',
+      'หากพบหมอกสีขาวประหลาดหรือฟ้าแลบไร้เสียงฟ้าร้อง ให้รีบหันหัวเรือหรืออากาศยานออกจากพิกัดทันที',
+      'แจ้งสัญญาณวิทยุสื่อสารฉุกเฉินต่อสถานีชายฝั่งอย่างต่อเนื่อง',
+    ],
+    taboosEn: [
+      'Never rely solely on magnetic compass systems; calibrate secondary GPS and celestial charts.',
+      'If electronic green fog or silent lightning manifests, alter bearing immediately.',
+      'Maintain continuous emergency radio contact with mainland maritime controllers.',
+    ],
   },
-  'pin-wendigo': {
-    archetype: 'horned_beast',
-    typeTh: 'อสูรคำสาปกินคนแห่งป่าหิมะ (Cannibalistic Winter Fiend)',
-    typeEn: 'Algonquian Cannibalistic Winter Fiend',
-    genderTh: 'N/A (อดีตมนุษย์ต้องคำสาป)',
-    genderEn: 'N/A (Cursed former human)',
-    sizeTh: '3.0 – 4.5 เมตร (สูงขึ้นตามเหยื่อที่กิน)',
-    sizeEn: '3.0 – 4.5 m (Grows in proportion to victims eaten)',
-    weightTh: '140 กก. (ผอมแห้งแต่พละกำลังมหาศาล)',
-    weightEn: '140 kg (Gaunt skeletal frame with immense strength)',
+  'pin-sphinx': {
+    archetype: 'cursed_relic_monument',
+    customImage: '/entities/pin-sphinx.jpg',
+    typeTh: 'ซากโบราณสถานและมรดกต้องคำสาป (Cursed Ruin & Ancient Monolith)',
+    typeEn: 'Cursed Ruin & Ancient Monolith',
+    genderTh: 'N/A (อนุสรณ์หินแกะสลัก / สุริยเทพฮอร์-เอม-อัคเฮต)',
+    genderEn: 'N/A (Colossal Limestone Monument / Hor-em-akhet)',
+    sizeTh: 'ยาว 73 เมตร กว้าง 19 เมตร สูง 20 เมตร',
+    sizeEn: '73 m length, 19 m width, 20 m height',
+    weightTh: 'หินปูนธรรมชาติกว่า 20,000 ตัน',
+    weightEn: 'Over 20,000 metric tons of limestone bedrock',
+    danger: 3,
+    habitatTh: 'ที่ราบสูงกิซา ริมแม่น้ำไนล์ อียิปต์',
+    habitatEn: 'Giza Plateau, West Bank of the Nile, Egypt',
+    hoursTh: 'ตลอดกาล (รับพลังงานสูงสุดยามพระอาทิตย์ขึ้นและวันวิษุวัต)',
+    hoursEn: 'Perpetual (Peak resonance at dawn & equinox alignments)',
+    taboosTh: [
+      'ห้ามปีนป่าย ขูดขีด หรือรบกวนฐานหินและรอยแยกโบราณใต้กรงเล็บโดยเด็ดขาด',
+      'ห้ามลักลอบขุดทรายหรือนำเครื่องตรวจจับโลหะเข้ามาในเขตลานหน้าสฟิงซ์ยามวิกาล',
+      'ควรแสดงความเคารพต่ออนุสรณ์สถานศักดิ์สิทธิ์และผู้พิทักษ์แห่งทะเลทราย',
+    ],
+    taboosEn: [
+      'Never climb, deface, or disturb the bedrock fissures beneath the great stone paws.',
+      'Do not dig into surrounding sands or attempt nocturnal electromagnetic scans.',
+      'Honor the monument with solemn respect as an eternal guardian of desert mysteries.',
+    ],
+  },
+  'pin-piedpiper': {
+    archetype: 'male_specter',
+    customImage: '/entities/pin-piedpiper.jpg',
+    typeTh: 'บุคคลลี้ลับและผู้บรรเลงมนต์สะกด (The Mysterious Pied Piper & Enchanter)',
+    typeEn: 'The Mysterious Pied Piper & Enchanter',
+    genderTh: 'เพศชาย (สวมชุดหลากสีสัน / Pied Hunter)',
+    genderEn: 'Male (Dressed in Pied Multi-colored Garments)',
+    sizeTh: '1.75 เมตร',
+    sizeEn: '1.75 m',
+    weightTh: '68 กก. (หรือกายทิพย์ในร่างนักดนตรีพเนจร)',
+    weightEn: '68 kg (or ethereal wandering minstrel)',
     danger: 5,
-    habitatTh: 'ป่าสนทึบและทุ่งน้ำแข็งรอบทะเลสาบเกรตเลกส์',
-    habitatEn: 'Boreal pine forests of the Great Lakes & northern plains',
-    descTh:
-      'ร่างสูงชะลูดผอมแห้งจนหนังสีเทาซีดหุ้มกระดูก ศีรษะคล้ายกะโหลกวางกวางเขากิ่งก้านสาขา เบ้าตาลึกโบ๋เรืองแสงสีฟ้าเยือกแข็ง หัวใจภายในอกเป็นน้ำแข็งบริสุทธิ์ และมีกลิ่นเนื้อเน่าโชยตามลมหนาว',
-    descEn:
-      'A towering, emaciated monstrosity with ash-grey skin pulled tight over jutting bones, an antlered stag-skull visage, sunken glowing eyes, and a heart of solid ice.',
-  },
-  'pin-krasue': {
-    archetype: 'floating_head',
-    typeTh: 'ผีสตรีต้องสาปถอดหัว (Detached Viscera Spirit)',
-    typeEn: 'Cursed Detached-Head Nocturnal Spirit',
-    genderTh: 'เพศหญิง (Female)',
-    genderEn: 'Female',
-    sizeTh: '0.85 เมตร (เฉพาะศีรษะและพวงไส้เรืองแสง)',
-    sizeEn: '0.85 m (Floating head & luminescent entrails)',
-    weightTh: '3.5 กก. (ลอยเหนือพื้นดิน 1–3 เมตร)',
-    weightEn: '3.5 kg (Levitates 1–3 m above ground)',
-    danger: 4,
-    habitatTh: 'ชายป่า ทุ่งนา และใต้ถุนเรือนชาวบ้านยามวิกาล',
-    habitatEn: 'Rural rice paddies, bamboo groves & beneath stilt houses',
-    descTh:
-      'ศีรษะของหญิงสาวหรือหญิงชราที่ถอดหลุดออกจากร่างในยามดึก ห้อยพวงหลอดลม หัวใจ และลำไส้ที่เปล่งแสงเรืองรองสีเขียวอมฟ้าวูบวาบเป็นดวงไฟลอยต่ำไปตามยอดหญ้า',
-    descEn:
-      'A disembodied female head trailing a pulsing cluster of heart, lungs, and intestines that emit an eerie bioluminescent green-blue glow as it drifts silently through the night.',
-  },
-  'pin-naga': {
-    archetype: 'aquatic_serpent',
-    typeTh: 'พญานาคราชผู้พิทักษ์สายน้ำศักดิ์สิทธิ์ (Celestial Serpent Deity)',
-    typeEn: 'Sacred Celestial Serpent Deity',
-    genderTh: 'เพศผู้ / เพศเมีย (นาคา และ นาคี)',
-    genderEn: 'Divine Male / Female (Naga & Nagi)',
-    sizeTh: '20 – 60 เมตร (ลำตัวพญานาค)',
-    sizeEn: '20 – 60 m (Serpentine form)',
-    weightTh: 'N/A (กายทิพย์กึ่งเทพ)',
-    weightEn: 'N/A (Semi-divine astral body)',
-    danger: 2,
-    habitatTh: 'วังบาดาลใต้แม่น้ำโขงและถ้ำศักดิ์สิทธิ์ริมฝั่งน้ำ',
-    habitatEn: 'Subterranean palaces beneath the Mekong River & sacred caves',
-    descTh:
-      'พญางูใหญ่อันทรงตบะบารมี มีหงอนสีทองแดงหรือเขียวมรกต เกล็ดเลื่อมพรายดั่งอัญมณี มีทั้งตระกูลเศียรเดียวจนถึงเจ็ดเศียร สามารถเนรมิตกายเป็นมนุษย์และพ่นลูกไฟสีชมพูอมแดงไร้กลิ่นควันขึ้นจากผิวน้ำ',
-    descEn:
-      'A majestic crested serpent deity adorned with iridescent emerald and gold scales, dwelling in the underwater realm ofบาดาล and breathing smokeless ruby-pink fireballs toward the heavens.',
+    habitatTh: 'เมืองฮาเมิลน์ ริมแม่น้ำเวเซอร์ และถ้ำในภูเขาค็อพเพิน (Koppen Mountain)',
+    habitatEn: 'Hamelin on the River Weser & Koppen Mountain caverns, Germany',
+    hoursTh: 'ยามรุ่งสางวันเซนต์ยอห์นและเปาโล (26 มิถุนายน) และยามเสียงดนตรีแว่วมา',
+    hoursEn: 'Feast of Saints John and Paul (June 26) & when eerie melodies drift',
+    descTh: 'ชายพเนจรสวมเสื้อผ้าหลากสีสันผู้ถือขลุ่ยวิเศษ สามารถเป่ามนต์สะกดฝูงหนูและเด็กๆ ในเมืองฮาเมิลน์ 130 คนให้เดินตามจนหายสาบสูญไปในหุบเขาตลอดกาล',
+    descEn: 'A mysterious piper in multicolored garments who used a magical flute to lure away Hamelin\'s rats and subsequently 130 children into the mountain, never to return.',
+    extraLoreTh: 'บันทึกบนกระจกสีโบราณของโบสถ์เมืองฮาเมิลน์ปี 1284 ยืนยันว่าเด็กๆ 130 คนได้หายตัวไปตามเสียงดนตรีของชายผู้นี้จริงๆ จนถึงปัจจุบัน ถนน Bungelosenstrasse ในเมืองฮาเมิลน์ยังคงมีกฎหมายห้ามเล่นดนตรีหรือเต้นรำโดยเด็ดขาด',
+    extraLoreEn: 'Historical town records from 1284 confirm 130 children followed the piper into the mountain and vanished. To this day, music and dancing remain strictly forbidden on Hamelin\'s Bungelosenstrasse.',
+    taboosTh: [
+      'ห้ามเล่นดนตรี เป่าขลุ่ย หรือเต้นรำบนถนน Bungelosenstrasse (ถนนไร้เสียงดนตรี) ในเมืองฮาเมิลน์โดยเด็ดขาด',
+      'หากได้ยินเสียงทำนองเพลงขลุ่ยหวานไพเราะแต่เย็นยะเยือกแว่วมาจากตรอกมืด ห้ามเดินตามเสียงไปเด็ดขาด',
+      'รักษาสัญญาและข้อตกลงอย่างเคร่งครัด เพราะการผิดคำมั่นสัญญานำมาซึ่งการสูญเสียที่ไม่อาจแก้ไข',
+    ],
+    taboosEn: [
+      'Never play music, pipes, or dance on Bungelosenstrasse (the street without drums) in Hamelin.',
+      'If an enchanting yet chilling flute melody drifts from dark alleys, do not follow it.',
+      'Always honor pacts and promises; broken vows invite irreversible retribution.',
+    ],
   },
 };
 
 /**
- * Generates an intricate Dark-Grimoire Tarot / Woodcut SVG Data URI portrait
- * specific to each creature archetype & color aura so every pin has a vivid illustration.
+ * Intelligent Archetype Inference Engine
+ * Classifies any folklore pin into its true essence (monument, forest, sea, cryptid, specter).
  */
-function buildGrimoirePortraitSvg(pin: GhostPin, archetype: ArchetypeKey): string {
-  // Choose palette based on category / archetype
-  const palette =
-    pin.category === 'sacred'
-      ? { bg1: '#041b1d', bg2: '#072a24', glow: '#fbbf24', primary: '#fcd34d', secondary: '#34d399', eye: '#fef08a' }
-      : pin.category === 'curse'
-      ? { bg1: '#16071c', bg2: '#090d16', glow: '#c084fc', primary: '#e9d5ff', secondary: '#34d399', eye: '#f43f5e' }
-      : pin.category === 'monster'
-      ? { bg1: '#061914', bg2: '#040b12', glow: '#10b981', primary: '#6ee7b7', secondary: '#38bdf8', eye: '#00ff88' }
-      : { bg1: '#061520', bg2: '#03080e', glow: '#2dd4bf', primary: '#99f6e4', secondary: '#6ee7b7', eye: '#ffffff' };
-
-  let creatureArt = '';
-
-  switch (archetype) {
-    case 'ape_beast':
-      creatureArt = `
-        <!-- Mountain peaks & blizzard -->
-        <polygon points="20,220 95,95 165,220" fill="#0b2228" opacity="0.7"/>
-        <polygon points="180,220 265,80 350,220" fill="#0d2830" opacity="0.7"/>
-        <!-- Towering Yeti/Sasquatch Silhouette -->
-        <path d="M125,220 C125,165 135,120 155,95 C162,72 178,60 200,60 C222,60 238,72 245,95 C265,120 275,165 275,220 Z" fill="#0f2f32" stroke="${palette.primary}" stroke-width="2"/>
-        <!-- Jagged frost fur shoulders -->
-        <path d="M135,150 L122,158 L138,168 L125,180 L142,190 M265,150 L278,158 L262,168 L275,180 L258,190" stroke="${palette.primary}" stroke-width="1.8" fill="none"/>
-        <!-- Glowing Beast Eyes & Fangs -->
-        <polygon points="182,88 194,92 184,96" fill="${palette.eye}"/>
-        <polygon points="218,88 206,92 216,96" fill="${palette.eye}"/>
-        <path d="M188,108 L193,115 L198,109 L202,109 L207,115 L212,108" stroke="#ecfdf5" stroke-width="1.8" fill="none"/>
-      `;
-      break;
-
-    case 'aquatic_serpent':
-      creatureArt = `
-        <!-- Misty Water Waves -->
-        <path d="M20,185 Q100,172 200,185 T380,185" stroke="${palette.secondary}" stroke-width="2" fill="none" opacity="0.7"/>
-        <path d="M20,202 Q110,190 200,202 T380,202" stroke="${palette.primary}" stroke-width="1.5" fill="none" opacity="0.5"/>
-        <!-- Coiling Sea Serpent / Naga / Nessie -->
-        <path d="M90,195 C95,140 130,145 140,190 C155,130 185,115 195,75 C200,56 218,52 228,64 C215,72 215,82 208,105 C200,138 220,155 245,190 C265,152 295,158 305,195" fill="#0b2e2b" stroke="${palette.primary}" stroke-width="2.4"/>
-        <!-- Crest & Glowing Eye -->
-        <path d="M196,60 L204,42 L211,56 L220,46 L222,60" fill="${palette.glow}" opacity="0.85"/>
-        <circle cx="212" cy="65" r="3.2" fill="${palette.eye}"/>
-      `;
-      break;
-
-    case 'floating_head':
-      creatureArt = `
-        <!-- Floating Female Head -->
-        <path d="M168,62 C168,40 232,40 232,62 C236,92 242,125 248,145 M168,62 C164,92 158,125 152,145" stroke="${palette.primary}" stroke-width="2" fill="#081c20"/>
-        <ellipse cx="200" cy="78" rx="22" ry="26" fill="#0d2b2e" stroke="${palette.primary}" stroke-width="1.8"/>
-        <!-- Eyes -->
-        <circle cx="191" cy="76" r="2.8" fill="${palette.eye}"/>
-        <circle cx="209" cy="76" r="2.8" fill="${palette.eye}"/>
-        <!-- Glowing Viscera & Heart Below Neck -->
-        <path d="M200,104 L200,130 M194,118 C180,130 182,155 198,162 C214,168 218,145 204,132 C190,145 192,175 206,188" stroke="#00ff88" stroke-width="3" fill="none"/>
-        <circle cx="198" cy="134" r="9" fill="#00ff88" opacity="0.85"/>
-        <circle cx="198" cy="134" r="18" fill="#00ff88" opacity="0.25"/>
-      `;
-      break;
-
-    case 'horned_beast':
-      creatureArt = `
-        <!-- Antlered / Horned Beast Skull & Shoulders -->
-        <path d="M130,220 C140,165 162,135 200,135 C238,135 260,165 270,220 Z" fill="#0b2226" stroke="${palette.primary}" stroke-width="1.8"/>
-        <!-- Branching Antlers / Horns -->
-        <path d="M180,82 C155,70 140,48 135,28 M158,64 L148,42 M170,74 L166,52" stroke="${palette.primary}" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-        <path d="M220,82 C245,70 260,48 265,28 M242,64 L252,42 M230,74 L234,52" stroke="${palette.primary}" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-        <!-- Beast Skull Head -->
-        <polygon points="176,80 224,80 232,108 200,142 168,108" fill="#0e2c30" stroke="${palette.primary}" stroke-width="2"/>
-        <circle cx="187" cy="100" r="4" fill="${palette.eye}"/>
-        <circle cx="213" cy="100" r="4" fill="${palette.eye}"/>
-      `;
-      break;
-
-    case 'winged_demon':
-      creatureArt = `
-        <!-- Bat / Demon Wings Spread Wide -->
-        <path d="M200,115 C165,70 115,58 65,75 C90,102 100,125 92,152 C125,135 155,138 182,155 Z" fill="#0c262c" stroke="${palette.primary}" stroke-width="1.8"/>
-        <path d="M200,115 C235,70 285,58 335,75 C310,102 300,125 308,152 C275,135 245,138 218,155 Z" fill="#0c262c" stroke="${palette.primary}" stroke-width="1.8"/>
-        <!-- Central Demon Torso & Horned Head -->
-        <path d="M182,215 L186,112 L200,82 L214,112 L218,215 Z" fill="#113238" stroke="${palette.primary}" stroke-width="2"/>
-        <circle cx="194" cy="98" r="3" fill="${palette.eye}"/>
-        <circle cx="206" cy="98" r="3" fill="${palette.eye}"/>
-      `;
-      break;
-
-    case 'undead_lord':
-      creatureArt = `
-        <!-- Gothic High-Collared Cloak & Crown/Tomb Silhouette -->
-        <polygon points="120,220 152,95 178,112 200,88 222,112 248,95 280,220" fill="#0b1f28" stroke="${palette.primary}" stroke-width="2"/>
-        <ellipse cx="200" cy="86" rx="20" ry="25" fill="#102c36" stroke="${palette.primary}" stroke-width="1.8"/>
-        <polygon points="182,64 191,48 200,60 209,48 218,64" fill="${palette.glow}" opacity="0.85"/>
-        <circle cx="192" cy="84" r="3.2" fill="${palette.eye}"/>
-        <circle cx="208" cy="84" r="3.2" fill="${palette.eye}"/>
-      `;
-      break;
-
-    case 'spider_trickster':
-      creatureArt = `
-        <!-- Arcane Web & Eight-Legged Spider -->
-        <circle cx="200" cy="120" r="70" stroke="${palette.primary}" stroke-width="0.8" stroke-dasharray="4 4" fill="none" opacity="0.45"/>
-        <path d="M200,120 L125,75 M200,120 L115,115 M200,120 L125,155 M200,120 L150,185" stroke="${palette.primary}" stroke-width="2.4" stroke-linecap="round"/>
-        <path d="M200,120 L275,75 M200,120 L285,115 M200,120 L275,155 M200,120 L250,185" stroke="${palette.primary}" stroke-width="2.4" stroke-linecap="round"/>
-        <ellipse cx="200" cy="132" rx="22" ry="28" fill="#0c2c2a" stroke="${palette.primary}" stroke-width="2"/>
-        <circle cx="200" cy="98" r="14" fill="#103835" stroke="${palette.primary}" stroke-width="1.8"/>
-        <circle cx="195" cy="95" r="2.5" fill="${palette.eye}"/>
-        <circle cx="205" cy="95" r="2.5" fill="${palette.eye}"/>
-      `;
-      break;
-
-    case 'sand_worm':
-      creatureArt = `
-        <!-- Desert Dunes & Coiling Spiked Death Worm -->
-        <path d="M20,195 Q120,165 220,192 T380,185" stroke="${palette.glow}" stroke-width="2" fill="none" opacity="0.6"/>
-        <path d="M125,205 C120,135 165,85 205,78 C240,72 255,115 245,195" fill="#1f1018" stroke="${palette.primary}" stroke-width="3"/>
-        <circle cx="204" cy="86" r="16" fill="#0b151c" stroke="${palette.eye}" stroke-width="2.5"/>
-        <circle cx="204" cy="86" r="6" fill="${palette.eye}"/>
-      `;
-      break;
-
-    case 'female_specter':
-    default:
-      creatureArt = `
-        <!-- Weeping Willow / Flowing Hair Female Spirit Silhouette -->
-        <path d="M142,220 C148,155 162,122 200,122 C238,122 252,155 258,220 Z" fill="#0a242a" stroke="${palette.primary}" stroke-width="1.8"/>
-        <!-- Flowing Spectral Hair -->
-        <path d="M168,78 C152,115 142,165 132,215 M232,78 C248,115 258,165 268,215" stroke="${palette.primary}" stroke-width="2.2" fill="none"/>
-        <ellipse cx="200" cy="84" rx="22" ry="27" fill="#0e2f36" stroke="${palette.primary}" stroke-width="1.8"/>
-        <!-- Glowing Spectral Eyes & Slit/Veil -->
-        <circle cx="191" cy="82" r="2.8" fill="${palette.eye}"/>
-        <circle cx="209" cy="82" r="2.8" fill="${palette.eye}"/>
-        <path d="M186,98 Q200,104 214,98" stroke="${palette.glow}" stroke-width="1.6" fill="none"/>
-      `;
-      break;
-  }
-
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" fill="none">
-    <defs>
-      <radialGradient id="bg" cx="50%" cy="42%" r="68%">
-        <stop offset="0%" stop-color="${palette.bg1}"/>
-        <stop offset="100%" stop-color="${palette.bg2}"/>
-      </radialGradient>
-      <radialGradient id="aura" cx="50%" cy="42%" r="42%">
-        <stop offset="0%" stop-color="${palette.glow}" stop-opacity="0.32"/>
-        <stop offset="65%" stop-color="${palette.primary}" stop-opacity="0.08"/>
-        <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
-      </radialGradient>
-    </defs>
-    <rect width="400" height="225" fill="url(#bg)"/>
-    <!-- Grimoire Corner Filigree Frame -->
-    <rect x="10" y="10" width="380" height="205" rx="8" stroke="${palette.primary}" stroke-opacity="0.3" stroke-width="1"/>
-    <rect x="15" y="15" width="370" height="195" rx="5" stroke="${palette.primary}" stroke-opacity="0.18" stroke-width="0.8" stroke-dasharray="4 4"/>
-    <!-- Sacred Halo behind creature -->
-    <circle cx="200" cy="96" r="78" fill="url(#aura)"/>
-    <circle cx="200" cy="96" r="56" stroke="${palette.primary}" stroke-opacity="0.35" stroke-width="1" stroke-dasharray="3 3"/>
-    <polygon points="200,32 264,96 200,160 136,96" stroke="${palette.secondary}" stroke-opacity="0.22" stroke-width="1" fill="none"/>
-    ${creatureArt}
-    <!-- Bottom Grimoire Vignette -->
-    <rect y="185" width="400" height="40" fill="url(#bg)" fill-opacity="0.55"/>
-  </svg>`;
-
-  return `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`;
-}
-
-/**
- * Infers the creature archetype from a pin's ID, category, and story text.
- */
-function inferArchetype(pin: GhostPin): ArchetypeKey {
+export function inferArchetype(pin: GhostPin): ArchetypeKey {
   const explicit = PIN_BESTIARY_DB[pin.id]?.archetype;
   if (explicit) return explicit;
 
-  const text = `${pin.id} ${pin.title_th} ${pin.title_en} ${pin.story_en}`.toLowerCase();
-  if (text.includes('yeti') || text.includes('sasquatch')) return 'ape_beast';
-  if (text.includes('krasue')) return 'floating_head';
-  if (text.includes('anansi') || text.includes('spider')) return 'spider_trickster';
-  if (text.includes('worm') || text.includes('หนอน')) return 'sand_worm';
+  const text = (
+    pin.id + ' ' +
+    pin.title_th + ' ' +
+    pin.title_en + ' ' +
+    pin.story_en + ' ' +
+    pin.story_th + ' ' +
+    pin.province_th + ' ' +
+    pin.province_en + ' ' +
+    (pin.district_th || '') + ' ' +
+    (pin.district_en || '')
+  ).toLowerCase();
+
+  // 1. Cosmic & Extraterrestrial Anomalies
   if (
-    text.includes('loch') ||
-    text.includes('naga') ||
-    text.includes('bunyip') ||
-    text.includes('taniwha') ||
-    text.includes('shahmaran') ||
-    text.includes('serpent') ||
-    text.includes('พญานาค')
+    text.includes('dogon') || text.includes('โดกอน') ||
+    text.includes('sirius') || text.includes('ซิริอุส') ||
+    text.includes('nommo') || text.includes('นอมโม') ||
+    text.includes('ufo') || text.includes('alien') || text.includes('เอเลี่ยน') ||
+    text.includes('roswell') || text.includes('รอสเวลล์') ||
+    text.includes('nazca') || text.includes('นาซกา') ||
+    text.includes('tunguska') || text.includes('ทังกัสกา') ||
+    text.includes('area 51') || text.includes('ยานอวกาศ') ||
+    text.includes('ดาราศาสตร์โบราณ') || text.includes('จานบิน')
+  ) {
+    return 'cosmic_anomaly';
+  }
+
+  // 2. Cursed Wilderness, Sacred Mountains & Primeval Forests
+  if (
+    text.includes('ดงพญาเย็น') || text.includes('ดงพญาไฟ') ||
+    text.includes('aokigahara') || text.includes('อาโอกิกาฮาระ') ||
+    text.includes('hoia baciu') || text.includes('ฮอยา') ||
+    text.includes('pine barrens') || text.includes('ป่าสน') ||
+    text.includes('black forest') || text.includes('ป่าดำ') ||
+    text.includes('dyatlov') || text.includes('ดยัตลอฟ') ||
+    text.includes('ป่าดงดิบ') || text.includes('ป่าอาถรรพ์') ||
+    text.includes('ผืนป่า') || text.includes('หุบเขาอาถรรพ์') ||
+    text.includes('ดอยหลวง') || text.includes('wilderness') ||
+    text.includes('เขาหลวง') || text.includes('ป่าช้า')
+  ) {
+    return 'cursed_wilderness';
+  }
+
+  // 3. Ancient Monuments, Sanctuaries, Pyramids, Ruins & Tombs
+  if (
+    text.includes('ปราสาทหิน') || text.includes('พนมรุ้ง') ||
+    text.includes('phanom rung') || text.includes('เทวสถาน') ||
+    text.includes('พีระมิด') || text.includes('pyramid') ||
+    text.includes('sphinx') || text.includes('สฟิงซ์') ||
+    text.includes('stonehenge') || text.includes('สโตนเฮนจ์') ||
+    text.includes('moai') || text.includes('โมไอ') ||
+    text.includes('terracotta') || text.includes('จิ๋นซี') ||
+    text.includes('tomb') || text.includes('สุสาน') ||
+    text.includes('mausoleum') || text.includes('catacomb') ||
+    text.includes('โบราณสถาน') || text.includes('นครวัด') || text.includes('angkor')
+  ) {
+    return 'cursed_relic_monument';
+  }
+
+  // 4. Haunted Structures, Castles, Bridges & Historic Edifices
+  if (
+    text.includes('ปราสาท') || text.includes('castle') ||
+    text.includes('สะพาน') || text.includes('bridge') ||
+    text.includes('overtoun') || text.includes('leap') ||
+    text.includes('คฤหาสน์') || text.includes('mansion') ||
+    text.includes('alcatraz') || text.includes('อัลคาทราซ') ||
+    text.includes('หอคอย') || text.includes('tower') ||
+    text.includes('เรือนจำ') || text.includes('prison') ||
+    text.includes('โรงแรม') || text.includes('hotel') ||
+    text.includes('โรงพยาบาล') || text.includes('asylum') ||
+    text.includes('บ้านร้าง') || text.includes('บ้านผีสิง')
+  ) {
+    return 'haunted_edifice';
+  }
+
+  // 5. Cursed Artifacts, Relics & Dolls
+  if (
+    text.includes('ตุ๊กตา') || text.includes('doll') ||
+    text.includes('muñeca') || text.includes('หีบ') ||
+    text.includes('box') || text.includes('dybbuk') ||
+    text.includes('กระจก') || text.includes('mirror') ||
+    text.includes('เพชร') || text.includes('diamond') ||
+    text.includes('เครื่องรางต้องสาป')
+  ) {
+    return 'cursed_artifact';
+  }
+
+  // 6. Naval Abyss, Phantom Ships & Oceanic Anomalies
+  if (
+    text.includes('bermuda') || text.includes('เบอร์มิวดา') ||
+    text.includes('dutchman') || text.includes('ฟลายอิงดัตช์แมน') ||
+    text.includes('เรือผี') || text.includes('ghost ship') ||
+    text.includes('mary celeste') || text.includes('วังน้ำวน') ||
+    text.includes('ทะเลปีศาจ') || text.includes('marianas') ||
+    text.includes('สามเหลี่ยม') || text.includes('atlantis')
+  ) {
+    return 'aquatic_abyss';
+  }
+
+  // 7. Aquatic Serpents, River Guardians & Water Leviathans
+  if (
+    text.includes('loch ness') || text.includes('เนสซี') || text.includes('nessie') ||
+    text.includes('naga') || text.includes('พญานาค') || text.includes('นาคราช') ||
+    text.includes('bunyip') || text.includes('taniwha') ||
+    text.includes('sea serpent') || text.includes('งูยักษ์') ||
+    text.includes('พรายน้ำ') || text.includes('เงือก') ||
+    text.includes('mermaid') || text.includes('siren') ||
+    text.includes('lorelei') || text.includes('kraken') || text.includes('คราเคน') ||
+    text.includes('chalawan') || text.includes('ชาละวัน') || text.includes('กุมภีล์') ||
+    text.includes('kelpie') || text.includes('เคลปี') || text.includes('กัปปะ') || text.includes('kappa') ||
+    text.includes('ม้าน้ำปีศาจ') || text.includes('leviathan') || text.includes('เลเวียธาน')
   ) {
     return 'aquatic_serpent';
   }
+
+  // 8. Cryptids, Wild Beasts, Lycanthropes & Predators
   if (
-    text.includes('manananggal') ||
-    text.includes('pazuzu') ||
-    text.includes('wawel') ||
-    text.includes('dragon') ||
-    text.includes('wing')
+    text.includes('yeti') || text.includes('เยติ') ||
+    text.includes('sasquatch') || text.includes('wendigo') || text.includes('เวนดิโก') ||
+    text.includes('chupacabra') || text.includes('ชูปาคาบรา') ||
+    text.includes('werewolf') || text.includes('หมาป่า') ||
+    text.includes('saming') || text.includes('เสือสมิง') || text.includes('สมิง') ||
+    text.includes('gevaudan') || text.includes('สัตว์ร้าย') ||
+    text.includes('สัตว์ประหลาด') || text.includes('minotaur') ||
+    text.includes('manticore') || text.includes('shuck') ||
+    pin.category === 'monster'
   ) {
-    return 'winged_demon';
+    return 'cryptid_beast';
   }
+
+  // 9. Undead Lords, Vampires & Mummies
   if (
-    text.includes('wendigo') ||
-    text.includes('minotaur') ||
-    text.includes('saming') ||
-    text.includes('gevaudan') ||
-    text.includes('shuck') ||
-    text.includes('manticore') ||
-    text.includes('chupacabra') ||
-    text.includes('gumiho')
-  ) {
-    return 'horned_beast';
-  }
-  if (
-    text.includes('dracula') ||
-    text.includes('tutankhamun') ||
-    text.includes('jiangshi') ||
-    text.includes('draugr') ||
-    text.includes('pishtaco') ||
-    text.includes('nightmarchers') ||
-    text.includes('santacompana')
+    text.includes('dracula') || text.includes('แดร็กคูลา') ||
+    text.includes('vampire') || text.includes('แวมไพร์') ||
+    text.includes('jiangshi') || text.includes('เจียงซือ') ||
+    text.includes('ผีดิบ') || text.includes('draugr') ||
+    text.includes('mummy') || text.includes('มัมมี่') ||
+    text.includes('ghoul') || text.includes('กูล') ||
+    text.includes('tutankhamun') || text.includes('ศพคืนชีพ')
   ) {
     return 'undead_lord';
   }
-  return 'female_specter';
+
+  // 10. Winged Demons & Avian Night Fiends
+  if (
+    text.includes('krahang') || text.includes('กระหัง') ||
+    text.includes('manananggal') || text.includes('มานันนังกัล') ||
+    text.includes('pazuzu') || text.includes('wawel') ||
+    text.includes('dragon') || text.includes('มังกร') ||
+    text.includes('mothman') || text.includes('มอธแมน') ||
+    text.includes('jersey') || text.includes('owlman') || text.includes('ปีก')
+  ) {
+    return 'winged_demon';
+  }
+
+  // 11. Deities & Sacred Guardians
+  if (
+    pin.category === 'sacred' ||
+    text.includes('เทพ') || text.includes('พระ') || text.includes('ฤาษี') ||
+    text.includes('เจ้าแม่') || text.includes('ศาล') || text.includes('วัด') ||
+    text.includes('temple') || text.includes('shrine') || text.includes('ศักดิ์สิทธิ์') ||
+    text.includes('จามเทวี') || text.includes('pele') || text.includes('กวนอิม')
+  ) {
+    return 'deity_guardian';
+  }
+
+  // 12. Female Specters & Vengeful Apparitions
+  if (
+    text.includes('แม่นาค') || text.includes('สาวปากฉีก') ||
+    text.includes('kuchisake') || text.includes('banshee') || text.includes('แบนชี') ||
+    text.includes('นาง') || text.includes('สาว') || text.includes('แม่') ||
+    text.includes('หญิง') || text.includes('woman') || text.includes('lady') ||
+    text.includes('krasue') || text.includes('กระสือ') || text.includes('ปอบ') ||
+    text.includes('kuntilanak') || text.includes('churel')
+  ) {
+    return 'female_specter';
+  }
+
+  // 13. Male Specters & Wraiths (Default for ghosts / unclassified phantoms)
+  return 'male_specter';
+}
+
+/**
+ * Returns accurately tailored attribute metadata based on the classified archetype.
+ */
+function getDefaultMetadata(archetype: ArchetypeKey, pin: GhostPin) {
+  switch (archetype) {
+    case 'cursed_wilderness':
+      return {
+        typeTh: 'อาถรรพ์ผืนป่าดึกดำบรรพ์และแดนลี้ลับ (Haunted Wilderness & Primeval Biosphere)',
+        typeEn: 'Haunted Wilderness & Primeval Biosphere',
+        genderTh: 'N/A (อาณาเขตผืนป่าธรรมชาติ / เจ้าป่าเจ้าเขา)',
+        genderEn: 'N/A (Natural Wilderness / Environmental Forest Spirits)',
+        sizeTh: 'ครอบคลุมผืนป่ากว้างใหญ่หลายพันตารางกิโลเมตร',
+        sizeEn: 'Spanning thousands of square kilometers of dense wilderness',
+        weightTh: 'N/A (มวลระบบนิเวศและพลังงานสนามแม่เหล็กโลก)',
+        weightEn: 'N/A (Ecological Biomass & Planetary Geomagnetic Energy)',
+        danger: 4 as const,
+        habitatTh: `${pin.province_th} ${pin.district_th ? `(${pin.district_th})` : ''}`,
+        habitatEn: `${pin.province_en} ${pin.district_en ? `(${pin.district_en})` : ''}`,
+        hoursTh: 'ตลอด 24 ชั่วโมง (ทวีความรุนแรงยามราตรีและช่วงม่านหมอกลงจัด)',
+        hoursEn: '24 Hours (Heightened during midnight hours & creeping rainy fogs)',
+      };
+
+    case 'cursed_relic_monument':
+      return {
+        typeTh: 'โบราณสถานศักดิ์สิทธิ์และเทวสถานขอมโบราณ (Ancient Stone Sanctuary & Sacred Monument)',
+        typeEn: 'Ancient Stone Sanctuary & Sacred Monument',
+        genderTh: 'N/A (สถาปัตยกรรมเทวสถานโบราณ / พระศิวะมหาเทพ)',
+        genderEn: 'N/A (Ancient Monolithic Temple / Deities of Antiquity)',
+        sizeTh: 'มหาเทวสถานยอดปรางค์ศิลาบนยอดเขา (สถาปัตยกรรมขนาดมหึมา)',
+        sizeEn: 'Colossal stone sanctuary & sacred architecture',
+        weightTh: 'มวลหินทรายและศิลาแลงนับหมื่นตัน',
+        weightEn: 'Tens of thousands of metric tons of carved sandstone',
+        danger: (pin.category === 'sacred' ? 2 : 4) as 1 | 2 | 3 | 4 | 5,
+        habitatTh: `${pin.province_th} ${pin.district_th ? `(${pin.district_th})` : ''}`,
+        habitatEn: `${pin.province_en} ${pin.district_en ? `(${pin.district_en})` : ''}`,
+        hoursTh: 'ตลอดกาล (รับพลังงานสูงสุดยามแสงอาทิตย์ส่องตรงช่องประตูและวันเปลี่ยนฤดู)',
+        hoursEn: 'Perpetual (Peak alignment during equinoxes & astronomical alignments)',
+      };
+
+    case 'cosmic_anomaly':
+      return {
+        typeTh: 'ปรากฏการณ์ดาราศาสตร์โบราณและวัตถุลี้ลับนอกโลก (Cosmic & Extraterrestrial Anomaly)',
+        typeEn: 'Cosmic & Extraterrestrial Anomaly',
+        genderTh: 'N/A (สิ่งมีชีวิตทรงปัญญาจากต่างดาว / ทวยเทพนอมโม)',
+        genderEn: 'N/A (Extraterrestrial Entity / Cosmic Intelligence)',
+        sizeTh: 'แปรผันได้ (ตั้งแต่รูปทรงมนุษย์ครึ่งสัตว์ถึงอากาศยานขนาดยักษ์)',
+        sizeEn: 'Variable (Humanoid avatars to colossal celestial craft)',
+        weightTh: 'N/A (สสารและพลังงานมิติคู่ขนาน)',
+        weightEn: 'N/A (Exotic Matter & Transdimensional Energy)',
+        danger: 3 as const,
+        habitatTh: `${pin.province_th} ${pin.district_th ? `(${pin.district_th})` : ''}`,
+        habitatEn: `${pin.province_en} ${pin.district_en ? `(${pin.district_en})` : ''}`,
+        hoursTh: 'ยามดาวเรียงตัวและปรากฏการณ์สุริยคราส/จันทรคราส',
+        hoursEn: 'Planetary alignments & celestial eclipse windows',
+      };
+
+    case 'haunted_edifice':
+      return {
+        typeTh: 'สิ่งปลูกสร้างอาถรรพ์และคฤหาสน์ผีสิง (Haunted Fortress & Cursed Structure)',
+        typeEn: 'Haunted Fortress & Cursed Structure',
+        genderTh: 'N/A (สิ่งก่อสร้างสถาปัตยกรรม / แหล่งสถิตวิญญาณ)',
+        genderEn: 'N/A (Architectural Structure / Spiritual Nexus)',
+        sizeTh: 'อาคารและสิ่งปลูกสร้างหลายชั้นพร้อมโถงใต้ดิน',
+        sizeEn: 'Multi-story structural complex & subterranean vaults',
+        weightTh: 'มวลสิ่งก่อสร้างคอนกรีต/หินแกรนิตโบราณ',
+        weightEn: 'Structural masonry & stone foundation mass',
+        danger: 4 as const,
+        habitatTh: `${pin.province_th} ${pin.district_th ? `(${pin.district_th})` : ''}`,
+        habitatEn: `${pin.province_en} ${pin.district_en ? `(${pin.district_en})` : ''}`,
+        hoursTh: 'ยามวิกาลและชั่วโมงผีผ่าน (23:00 – 04:00 น.)',
+        hoursEn: 'The Witching Hours (23:00 – 04:00)',
+      };
+
+    case 'cursed_artifact':
+      return {
+        typeTh: 'วัตถุอาถรรพ์และเครื่องรางต้องคำสาป (Cursed Artifact & Occult Relic)',
+        typeEn: 'Cursed Artifact & Occult Relic',
+        genderTh: 'N/A (วัตถุต้องคำสาป / หุ่นจำลอง)',
+        genderEn: 'N/A (Inanimate Cursed Vessel / Occult Object)',
+        sizeTh: 'ขนาดวัตถุโบราณ (0.2 – 1.5 เมตร)',
+        sizeEn: 'Small to medium object (0.2 – 1.5 m)',
+        weightTh: 'ตามสภาพมวลสารวัตถุจริง (0.5 – 15 กก.)',
+        weightEn: 'Physical object mass (0.5 – 15 kg)',
+        danger: 4 as const,
+        habitatTh: `${pin.province_th} ${pin.district_th ? `(${pin.district_th})` : ''}`,
+        habitatEn: `${pin.province_en} ${pin.district_en ? `(${pin.district_en})` : ''}`,
+        hoursTh: 'ยามถูกสัมผัส จ้องมอง หรือเมื่อมีผู้ล่วงละเมิดข้อห้าม',
+        hoursEn: 'Upon physical contact, observation or boundary breach',
+      };
+
+    case 'aquatic_abyss':
+      return {
+        typeTh: 'วังน้ำวนลึกและดินแดนสูญหายทางทะเล (Abyssal Anomaly & Phantom Vessel)',
+        typeEn: 'Abyssal Anomaly & Phantom Vessel',
+        genderTh: 'N/A (ความผิดปกติทางมิติและภูมิศาสตร์มหาสมุทร)',
+        genderEn: 'N/A (Naval Anomaly & Dimensional Vortex)',
+        sizeTh: 'อาณาเขตมหาสมุทรกว้างใหญ่หลายแสนตารางกิโลเมตร',
+        sizeEn: 'Spanning hundreds of thousands of square kilometers of open sea',
+        weightTh: 'N/A (มวลน้ำลึกและสนามแม่เหล็กแปรปรวน)',
+        weightEn: 'N/A (Abyssal ocean mass & electromagnetic vortex)',
+        danger: 5 as const,
+        habitatTh: `${pin.province_th} ${pin.district_th ? `(${pin.district_th})` : ''}`,
+        habitatEn: `${pin.province_en} ${pin.district_en ? `(${pin.district_en})` : ''}`,
+        hoursTh: 'ยามเกิดพายุแม่เหล็ก หมอกไฟฟ้า และคืนเดือนดับ',
+        hoursEn: 'Electromagnetic storm fronts & moonless ocean swells',
+      };
+
+    case 'aquatic_serpent':
+      return {
+        typeTh: 'อสูรและเทพพิทักษ์แห่งสายน้ำ (Aquatic Leviathan & River Guardian)',
+        typeEn: 'Abyssal Aquatic Leviathan & River Guardian',
+        genderTh: 'ไม่ระบุแน่ชัด (กายทิพย์/สัตว์โบราณ)',
+        genderEn: 'Unverified / Ancient Astral Entity',
+        sizeTh: '8.0 – 35.0 เมตร (ความยาวลำตัว)',
+        sizeEn: '8.0 – 35.0 m (Body length)',
+        weightTh: '1,500 – 8,000 กก. (หรือ N/A ในรูปกายทิพย์)',
+        weightEn: '1,500 – 8,000 kg (or N/A in astral form)',
+        danger: 3 as const,
+        habitatTh: 'ร่องน้ำลึก ทะเลสาบ บึงโบราณ และถ้ำใต้น้ำ',
+        habitatEn: 'Deep river trenches, misty lakes & underwater caves',
+        hoursTh: 'ยามหมอกลงจัดและคืนวันเพ็ญขึ้น 15 ค่ำ',
+        hoursEn: 'Dense water mist & full-moon nights',
+      };
+
+    case 'cryptid_beast':
+      return {
+        typeTh: 'อสุรกายดึกดำบรรพ์และสัตว์ร้ายจำแลง (Primeval Cryptid & Alpha Predator)',
+        typeEn: 'Primeval Cryptid & Alpha Predator',
+        genderTh: 'เพศผู้ / สัตว์นักล่าดึกดำบรรพ์',
+        genderEn: 'Male / Primeval Alpha Predator',
+        sizeTh: '2.2 – 3.8 เมตร (สรีระกำยำยามยืนสองขา)',
+        sizeEn: '2.2 – 3.8 m (Bipedal / Quadrupedal stature)',
+        weightTh: '180 – 480 กก.',
+        weightEn: '180 – 480 kg',
+        danger: 5 as const,
+        habitatTh: 'ป่าดึกดำบรรพ์ สันเขา และถ้ำลึกห่างไกลชุมชน',
+        habitatEn: 'Deep wilderness, mountain ridges & secluded caves',
+        hoursTh: 'เที่ยงคืนถึงรุ่งสาง (00:00 – 05:00 น.) ยามออกล่าเหยื่อ',
+        hoursEn: 'Midnight till pre-dawn hunting hours',
+      };
+
+    case 'undead_lord':
+      return {
+        typeTh: 'ผีดิบอมตะและวิญญาณคืนชีพ (Undying Revenant & Cursed Corpse)',
+        typeEn: 'Undying Revenant & Cursed Corpse',
+        genderTh: 'เพศชาย (หรือตามสภาพร่างศพเดิม)',
+        genderEn: 'Male (or variable by host corpse)',
+        sizeTh: '1.75 – 1.95 เมตร',
+        sizeEn: '1.75 – 1.95 m',
+        weightTh: '60 – 85 กก. (ซากศพอาถรรพ์แห้งกรัง)',
+        weightEn: '60 – 85 kg (Preserved corporeal vessel)',
+        danger: 4 as const,
+        habitatTh: 'สุสานโบราณ ปราสาทหิน และเส้นทางแห่วิญญาณ',
+        habitatEn: 'Ancient tombs, stone vaults & spirit paths',
+        hoursTh: 'หลังพระอาทิตย์ตกดินจนถึงก่อนแสงแรก (19:00 – 05:00 น.)',
+        hoursEn: 'Sunset to first dawn rays (19:00 – 05:00)',
+      };
+
+    case 'winged_demon':
+      return {
+        typeTh: 'อสูรมีปีกและปีศาจเวหายามราตรี (Winged Nocturnal Fiend)',
+        typeEn: 'Winged Nocturnal Fiend',
+        genderTh: 'เพศผู้ / เพศหญิง (ตามตำนานประจำถิ่น)',
+        genderEn: 'Variable by cultural folklore',
+        sizeTh: '1.8 – 4.5 เมตร (ระยะกางปีกกว้าง)',
+        sizeEn: '1.8 – 4.5 m (Wingspan)',
+        weightTh: '50 – 160 กก.',
+        weightEn: '50 – 160 kg',
+        danger: 5 as const,
+        habitatTh: 'ยอดไม้สูง ซากปรักหักพัง และเวหาเหนือหลังคาบ้านเรือน',
+        habitatEn: 'High canopies, ruins & night skies over settlements',
+        hoursTh: 'ยามดึกสงัดหลังเที่ยงคืนจนถึงก่อนไก่ขัน',
+        hoursEn: 'Midnight until first crow of dawn',
+      };
+
+    case 'deity_guardian':
+      return {
+        typeTh: 'จิตวิญญาณศักดิ์สิทธิ์และทวยเทพพิทักษ์ (Sacred Deity & Guardian Spirit)',
+        typeEn: 'Sacred Deity & Guardian Spirit',
+        genderTh: 'กายทิพย์ / เทวราช / ฤาษี / มหาเทวี (ตามรูปลักษณ์จำแลง)',
+        genderEn: 'Astral Deity / Divine Guardian / Ancient Ascetic',
+        sizeTh: 'สง่างามเหนือกฎเกณฑ์กายภาพ (ปรากฏตามจิตผู้ศรัทธา)',
+        sizeEn: 'Transcendent ethereal stature',
+        weightTh: 'N/A (กายทิพย์ไร้น้ำหนักเชิงวัตถุ)',
+        weightEn: 'N/A (Pure Ethereal Resonance)',
+        danger: 1 as const,
+        habitatTh: `${pin.province_th} ${pin.district_th ? `(${pin.district_th})` : ''}`,
+        habitatEn: `${pin.province_en} ${pin.district_en ? `(${pin.district_en})` : ''}`,
+        hoursTh: 'สถิตคุ้มครองตลอดกาล ทรงพลานุภาพสูงสุดยามประกอบพิธีกรรม',
+        hoursEn: 'Eternal protection; heightened during sacred rituals',
+      };
+
+    case 'male_specter':
+      return {
+        typeTh: 'วิญญาณอาฆาตและดวงวิญญาณบรรพชน (Malevolent Phantom & Ancient Wraith)',
+        typeEn: 'Malevolent Phantom & Ancient Wraith',
+        genderTh: 'เพศชาย (Male Spirit)',
+        genderEn: 'Male Spirit',
+        sizeTh: pin.title_th.includes('เปรต')
+          ? 'ร่างผอมโซสูงตระหง่าน 15 – 25 เมตร'
+          : '1.70 – 1.88 เมตร',
+        sizeEn: pin.title_th.includes('เปรต')
+          ? '15 – 25 meters tall'
+          : '1.70 – 1.88 m',
+        weightTh: 'N/A (0.0 กก. — กายพลังงานวิญญาณ)',
+        weightEn: 'N/A (0.0 kg — Incorporeal Ectoplasm)',
+        danger: 3 as const,
+        habitatTh: `${pin.province_th} ${pin.district_th ? `(${pin.district_th})` : ''}`,
+        habitatEn: `${pin.province_en} ${pin.district_en ? `(${pin.district_en})` : ''}`,
+        hoursTh: 'ยามดึกสงัดและคืนเดือนมืด (22:00 – 04:00 น.)',
+        hoursEn: 'Deep nocturnal & moonless hours (22:00 – 04:00)',
+      };
+
+    case 'female_specter':
+    default:
+      return {
+        typeTh: 'วิญญาณหญิงสาวและภูตพรายอาถรรพ์ (Spectral Apparition & Vengeful Spirit)',
+        typeEn: 'Spectral Apparition & Vengeful Spirit',
+        genderTh: 'เพศหญิง (Female Spirit)',
+        genderEn: 'Female Spirit',
+        sizeTh: '1.58 – 1.72 เมตร (ยืดขยายสรีระได้ตามอาถรรพ์)',
+        sizeEn: '1.58 – 1.72 m (Variable spectral stature)',
+        weightTh: 'N/A (0.0 กก. — ร่างพลังงานวิญญาณ)',
+        weightEn: 'N/A (0.0 kg — Incorporeal Ectoplasm)',
+        danger: 3 as const,
+        habitatTh: `${pin.province_th} ${pin.district_th ? `(${pin.district_th})` : ''}`,
+        habitatEn: `${pin.province_en} ${pin.district_en ? `(${pin.district_en})` : ''}`,
+        hoursTh: 'ยามค่ำคืนและช่วงหัวค่ำหมอกลง (21:00 – 03:30 น.)',
+        hoursEn: 'Twilight & late night mist (21:00 – 03:30)',
+      };
+  }
+}
+
+/**
+ * Contextual Taboo & Survival Protocol Generator
+ * Accurately tailors omens, taboos, and survival precautions based on the entity's lore,
+ * category, archetype, or admin-configured rules.
+ */
+export function generateContextualTaboos(pin: GhostPin, language: SupportedLanguage): string[] {
+  // 1. If admin custom taboos exist on pin:
+  const adminTaboos = language === 'th' ? pin.taboos_th : pin.taboos_en;
+  if (adminTaboos && adminTaboos.trim()) {
+    const rules = adminTaboos
+      .split(/\r?\n/)
+      .map((r) => r.trim().replace(/^[-•*0-9.]+\s*/, ''))
+      .filter((r) => r.length > 0);
+    if (rules.length > 0) return rules;
+  }
+
+  // 2. If curated bestiary taboos exist in DB:
+  const custom = PIN_BESTIARY_DB[pin.id];
+  const curated = language === 'th' ? custom?.taboosTh : custom?.taboosEn;
+  if (curated && curated.length > 0) return curated;
+
+  // 3. Intelligent Context-Aware Extraction based on Archetype:
+  const archetype = inferArchetype(pin);
+  const isTh = language === 'th';
+
+  switch (archetype) {
+    case 'cursed_relic_monument':
+      return isTh
+        ? [
+            'ห้ามปีนป่าย ขูดขีด สลักชื่อ หรือนั่งทับบนศิลาจารึก ศิวลึงค์ ฐานเทวรูป หรือโบราณวัตถุเด็ดขาด',
+            'ห้ามหยิบเศษหินทราย ศิลาแลง วัตถุมงคล หรือดินออกจากเขตโบราณสถานกลับบ้านโดยเด็ดขาด',
+            'ควรสำรวมกายวาจาและกราบสักการะด้วยความเคารพต่อสิ่งศักดิ์สิทธิ์และดวงวิญญาณบรรพชนผู้สร้าง',
+          ]
+        : [
+            'Never climb, deface, engrave names, or sit upon sacred stone inscriptions, shrines, or ancient altars.',
+            'Never remove stones, relics, laterite fragments, or sacred soil from the sanctuary boundaries.',
+            'Maintain quiet reverent conduct and honor the ancient architects and guardian spirits of the monument.',
+          ];
+
+    case 'cursed_wilderness':
+      return isTh
+        ? [
+            'ห้ามตัดไม้ ยิงสัตว์ หรือสร้างความเสียหายต่อผืนป่าโดยไม่ประกอบพิธีขอขมาเจ้าป่าเจ้าเขา',
+            'หากได้ยินเสียงคนรู้จักเรียกชื่อแว่วมาจากดงทึบ ห้ามขานรับเด็ดขาดเพราะอาจเป็นเสือสมิงแปลงกายมาล่อลวง',
+            'พกเครื่องรางสายพุทธคุณคุ้มกาย และห้ามพูดจาลบหลู่ท้าทายตลอดเส้นทางเดินป่า',
+          ]
+        : [
+            'Never hunt, fell ancient trees, or disturb the flora without making offering rites to forest deities.',
+            'If familiar voices call your name from thick foliage, never answer—it may be a shapeshifting were-tiger.',
+            'Carry blessed protective amulets and refrain from boastful or vulgar words while traversing deep trails.',
+          ];
+
+    case 'haunted_edifice':
+      return isTh
+        ? [
+            'ห้ามบุกรุกเข้าไปในห้องขัง โบสถ์เลือด หรือชั้นใต้ดินเพียงลำพังหลังเที่ยงคืนโดยไม่มีผู้ดูแล',
+            'หากได้กลิ่นกำมะถัน กลิ่นเนื้อเน่า หรืออุณหภูมิดิ่งฮวบผิดธรรมชาติ ให้ก้าวถอยหลังออกทันทีโดยห้ามหันหลังวิ่ง',
+            'ห้ามท้าทาย เคาะผนัง หรือประกอบพิธีสื่อวิญญาณโดยไม่ได้รับอนุญาต',
+          ]
+        : [
+            'Never enter dungeons, sealed chambers, or historic chapels alone after midnight.',
+            'If sudden rotting odors, sulfur, or bone-chilling cold spots manifest, back away slowly facing forward.',
+            'Never knock on historic masonry walls or attempt amateur seances within cursed architectural corridors.',
+          ];
+
+    case 'cosmic_anomaly':
+      return isTh
+        ? [
+            'ห้ามเหยียบย่ำหรือรบกวนลานหินศักดิ์สิทธิ์และโพรงผาที่ใช้ประกอบพิธีกรรมสังเกตการณ์ดวงดาว',
+            'หากพบปรากฏการณ์แสงประหลาดหรือหินสลักสัญลักษณ์โบราณ ห้ามใช้โลหะขูดขีดหรือเคลื่อนย้ายตำแหน่งเด็ดขาด',
+            'ควรแสดงความเคารพต่อผู้อาวุโสของชนเผ่า และห้ามบันทึกภาพพิธีกรรมลับของบรรพบุรุษนอมโมโดยไม่ได้รับอนุญาต',
+          ]
+        : [
+            'Never disturb or step on sacred rock sanctuaries aligned with ancient stellar coordinates.',
+            'If unexplained atmospheric lights or inscribed monoliths appear, do not touch or alter their positioning.',
+            'Show utmost reverence to tribal elders and never photograph private Nommo ancestral rites without permission.',
+          ];
+
+    case 'aquatic_abyss':
+      return isTh
+        ? [
+            'ห้ามพึ่งพาระบบเข็มทิศแม่เหล็กเพียงอย่างเดียว ตรวจสอบอุปกรณ์สำรองและบันทึกพิกัดทุกระยะ',
+            'หากพบหมอกสีขาวประหลาดหรือฟ้าแลบไร้เสียงฟ้าร้อง ให้รีบหันหัวเรือหรืออากาศยานออกจากพิกัดทันที',
+            'แจ้งสัญญาณวิทยุสื่อสารฉุกเฉินต่อสถานีชายฝั่งอย่างต่อเนื่องและห้ามปิดระบบระบุตำแหน่งดาวเทียม',
+          ]
+        : [
+            'Never rely solely on magnetic compass systems; calibrate secondary GPS and celestial backup charts.',
+            'If dense electronic fog or silent lightning flashes appear, alter bearing away from the vortex immediately.',
+            'Maintain continuous emergency radio contact with mainland maritime controllers.',
+          ];
+
+    case 'aquatic_serpent':
+      return isTh
+        ? [
+            'ห้ามลงเล่นน้ำหรือพายเรือคนเดียวในยามที่ผิวน้ำนิ่งสงบผิดปกติ หรือเมื่อมีม่านหมอกหนาลงจัดเหนือลำน้ำ',
+            'หากได้ยินเสียงเพลง เสียงกระซิบ หรือเสียงกรีดร้องก้องจากกลางผืนน้ำ ห้ามชะโงกมองหรือว่ายตามไปเด็ดขาด',
+            'ควรตั้งจิตขอขมาต่อเจ้าที่สายน้ำและหลีกเลี่ยงการสัญจรทางน้ำหลังดวงอาทิตย์ลับขอบฟ้า',
+          ]
+        : [
+            'Never swim or navigate waters alone during unnatural dead calms or sudden creeping river fogs.',
+            'If hypnotic melodies, whispers, or calls echo across the water, do not lean over or steer towards them.',
+            'Offer respect to water deities and refrain from voyaging across deep waters after twilight.',
+          ];
+
+    case 'cryptid_beast':
+      return isTh
+        ? [
+            'ห้ามทิ้งเศษอาหารสดหรือกลิ่นคาวเลือดไว้รอบที่พักยามค่ำคืน เพราะจะกระตุ้นสัญชาตญาณนักล่าข้ามคืน',
+            'หากพบเห็นรอยเท้าขนาดมหึมา หรือรอยกรงเล็บขูดลึกผิดธรรมชาติบนต้นไม้ ให้รีบถอยออกจากพื้นที่ทันที',
+            'ห้ามผิวปากหรือส่งเสียงเลียนแบบเสียงสัตว์ป่าแปลกประหลาดในเขตป่าลึกหลังตะวันตกดิน',
+          ]
+        : [
+            'Never leave raw meat or pungent scents around campfires overnight, as they provoke predatory trackers.',
+            'If you encounter massive fresh tracks or claw gouges on tree trunks, retreat immediately without running.',
+            'Never whistle or imitate strange animal calls in deep wilderness after dusk.',
+          ];
+
+    case 'undead_lord':
+      return isTh
+        ? [
+            'ห้ามหยิบฉวยสิ่งของ เครื่องประดับ หรือดินจากโลงศพและสุสานกลับบ้านเด็ดขาด',
+            'พกเครื่องรางป้องกันตัว เช่น กระเทียม หญ้าเวอร์เวน หรือสายสิญจน์ลงอาคม',
+            'ห้ามเปิดประตูหรือขานรับเมื่อได้ยินเสียงเคาะเบาๆ 3 ครั้งในยามวิกาล',
+          ]
+        : [
+            'Never take objects, jewelry, or earth from ancient sarcophagi or catacombs.',
+            'Carry protective consecrated talismans, vervain, or silver when traversing crypt areas.',
+            'Never unlock entry doors or acknowledge triple rhythmic taps in the darkness of night.',
+          ];
+
+    case 'winged_demon':
+      return isTh
+        ? [
+            'ห้ามตากผ้าอ้อมหรือเสื้อผ้าเปื้อนคาวเลือดค้างคืนนอกชานบ้าน',
+            'หากได้ยินเสียงกระพือปีกหนักๆ คล้ายพัดใบตาลเหนือหลังคา ให้ปิดประตูหน้าต่างและดับตะเกียงทันที',
+            'เสียบหนามพุทราหรือหนามไผ่ไว้รอบชายคาเรือนเพื่อป้องกันการร่อนลงเกาะ',
+          ]
+        : [
+            'Never hang garments stained with blood or scents outside overnight.',
+            'If heavy wingbeats flap against roof shingles, extinguish candles and keep shutters barred.',
+            'Affix thorny bamboo branches along eaves to obstruct nocturnal predator landings.',
+          ];
+
+    case 'deity_guardian':
+      return isTh
+        ? [
+            'แต่งกายสุภาพ สำรวมกิริยาวาจา และห้ามพูดจาลบหลู่ท้าทายสิ่งศักดิ์สิทธิ์ในเขตอารามหรือศาลเจ้า',
+            'ห้ามนำสิ่งมึนเมา ของมลทิน หรือเจตนาชั่วร้ายเข้ามาในอาณาบริเวณลานประกอบพิธีกรรม',
+            'ควรอธิษฐานขอพรด้วยจิตบริสุทธิ์และปฏิบัติตามคำแนะนำของพราหมณ์หรือผู้ดูแลท้องถิ่นอย่างเคร่งครัด',
+          ]
+        : [
+            'Dress modestly, maintain solemn silence, and never speak words of mockery within the sacred shrine sanctuary.',
+            'Never bring intoxicants, corrupt offerings, or malice into the ceremonial sanctuary grounds.',
+            'Pray with pure intent and strictly observe the guidance of local ceremonial keepers and elders.',
+          ];
+
+    case 'female_specter':
+      return isTh
+        ? [
+            'หากได้ยินเสียงเรียกชื่อตนเองแว่วมาจากความมืดหลังเที่ยงคืน ห้ามขานรับหรือหันมองในทันทีเด็ดขาด',
+            'ห้ามส่องกระจกเงาในเงามืดหลังเที่ยงคืน หรือเคาะจานชามเรียกวิญญาณในสถานที่รกร้าง',
+            'ควรพกเครื่องรางประจำตัวและหลีกเลี่ยงการเดินทางสัญจรคนเดียวในเส้นทางเปลี่ยวที่มีประวัติอาถรรพ์',
+          ]
+        : [
+            'If an unseen voice whispers your name from the shadows after midnight, never acknowledge or turn around.',
+            'Never gaze into unlit mirrors in abandoned chambers or tap porcelain dishes in deserted crossroads.',
+            'Carry protective amulets and avoid traversing solitary haunted pathways unescorted at night.',
+          ];
+
+    case 'male_specter':
+    default:
+      return isTh
+        ? [
+            'ห้ามส่งเสียงผิวปากล้อเลียนหรือเลียนแบบเสียงหวีดร้องในยามวิกาล',
+            'หากพบเห็นเงาดำร่างสูงใหญ่ผิดธรรมชาติ ให้ตั้งจิตอธิษฐานแผ่เมตตาและห้ามชี้มือท้าทายเด็ดขาด',
+            'ควรทำบุญตักบาตรกรวดน้ำอุทิศกุศลให้แก่ดวงวิญญาณสัมภเวสีและบรรพบุรุษ',
+          ]
+        : [
+            'Never whistle or mimic hollow wails in lonely night corridors.',
+            'If towering anomalous shadows manifest, recite blessing verses and never point directly.',
+            'Offer merit and prayers for the peaceful release of earthbound spectral travelers.',
+          ];
+  }
 }
 
 /**
@@ -467,136 +905,37 @@ export function getEntityDossier(
 ): EntityDossier {
   const custom = PIN_BESTIARY_DB[pin.id];
   const archetype = inferArchetype(pin);
+  const defaultMeta = getDefaultMetadata(archetype, pin);
 
-  // 1. Portrait URL (Admin uploaded image -> Custom Bestiary Art -> Generated Grimoire SVG)
+  // 1. Portrait URL
   const portraitUrl =
     pin.image_url ||
     custom?.customImage ||
-    (pin.id ? `/entities/${pin.id}.jpg` : buildGrimoirePortraitSvg(pin, archetype));
+    `/entities/${pin.id}.jpg`;
 
   // 2. Codex ID
   const numHash = Math.abs(
     pin.id.split('').reduce((acc, ch) => acc * 31 + ch.charCodeAt(0), 7)
   ) % 900 + 100;
+
   const classCode =
-    pin.category === 'monster'
+    archetype === 'cursed_relic_monument'
+      ? 'MONUMENT-VII'
+      : archetype === 'cursed_wilderness'
+      ? 'BIOSPHERE-VI'
+      : archetype === 'cosmic_anomaly'
+      ? 'CELESTIAL-IX'
+      : archetype === 'aquatic_abyss'
+      ? 'ABYSS-VIII'
+      : archetype === 'cryptid_beast'
       ? 'CRYPTID-IV'
-      : pin.category === 'curse'
+      : archetype === 'undead_lord'
       ? 'HEX-V'
-      : pin.category === 'sacred'
+      : archetype === 'deity_guardian'
       ? 'DEITY-I'
       : 'SPECTER-III';
-  const codexId = `CODEX #${numHash} • ${classCode}`;
 
-  // 3. Default Category-based Physical & Supernatural Attributes if not explicitly overridden
-  const defaultMeta = (() => {
-    switch (archetype) {
-      case 'ape_beast':
-        return {
-          typeTh: 'อสุรกายไพรดึกดำบรรพ์ (Hominid Cryptid)',
-          typeEn: 'Primordial Hominid Cryptid',
-          genderTh: 'พบทั้งเพศผู้และเพศเมีย',
-          genderEn: 'Male & Female specimens',
-          sizeTh: '2.3 – 3.0 เมตร (ยืนสองขา)',
-          sizeEn: '2.3 – 3.0 m (Bipedal)',
-          weightTh: '200 – 380 กก.',
-          weightEn: '200 – 380 kg',
-          danger: 4 as const,
-          habitatTh: 'ป่าดงดิบและเทือกเขาสูงห่างไกลผู้คน',
-          habitatEn: 'Remote mountain peaks & deep wilderness',
-          hoursTh: 'ยามพลบค่ำถึงรุ่งสาง (20:00 – 05:00 น.)',
-          hoursEn: 'Dusk till dawn (20:00 – 05:00)',
-        };
-      case 'aquatic_serpent':
-        return {
-          typeTh: 'อสูรและเทพพิทักษ์แห่งสายน้ำ (Aquatic Leviathan / Naga)',
-          typeEn: 'Abyssal Aquatic Leviathan & River Guardian',
-          genderTh: 'ไม่ระบุแน่ชัด (กายทิพย์/สัตว์โบราณ)',
-          genderEn: 'Unverified / Astral Entity',
-          sizeTh: '8.0 – 25.0 เมตร (ความยาวลำตัว)',
-          sizeEn: '8.0 – 25.0 m (Body length)',
-          weightTh: '900 – 3,000 กก. (หรือ N/A ในร่างทิพย์)',
-          weightEn: '900 – 3,000 kg (or N/A in astral form)',
-          danger: 3 as const,
-          habitatTh: 'ร่องน้ำลึก ทะเลสาบ บึงโบราณ และถ้ำใต้น้ำ',
-          habitatEn: 'Deep river trenches, misty lakes & underwater caves',
-          hoursTh: 'ยามหมอกลงจัดและคืนวันเพ็ญ',
-          hoursEn: 'Dense mist & full-moon nights',
-        };
-      case 'horned_beast':
-        return {
-          typeTh: 'อสูรจำแลงและสัตว์อสุรกายสายล่าเนื้อ (Predatory Mythic Beast)',
-          typeEn: 'Predatory Shapeshifting Beast',
-          genderTh: 'เพศผู้ / แปรผันตามร่างที่จำแลง',
-          genderEn: 'Male / Variable by vessel',
-          sizeTh: '1.8 – 2.8 เมตร',
-          sizeEn: '1.8 – 2.8 m',
-          weightTh: '110 – 260 กก.',
-          weightEn: '110 – 260 kg',
-          danger: 5 as const,
-          habitatTh: 'ป่าลึก หุบเขา และชายขอบหมู่บ้านยามวิกาล',
-          habitatEn: 'Deep forests, canyons & village outskirts at night',
-          hoursTh: 'เที่ยงคืนถึงก่อนรุ่งสาง (00:00 – 04:00 น.)',
-          hoursEn: 'Midnight to pre-dawn (00:00 – 04:00)',
-        };
-      case 'winged_demon':
-        return {
-          typeTh: 'อสูรมีปีกและปีศาจแห่งลมพายุ (Winged Nocturnal Fiend)',
-          typeEn: 'Winged Nocturnal Fiend',
-          genderTh: 'เพศหญิง / เทพอสูรโบราณ',
-          genderEn: 'Female / Ancient Daemonic Entity',
-          sizeTh: '1.7 – 4.2 เมตร (ระยะกางปีก)',
-          sizeEn: '1.7 – 4.2 m (Wingspan)',
-          weightTh: '45 – 180 กก.',
-          weightEn: '45 – 180 kg',
-          danger: 5 as const,
-          habitatTh: 'ยอดไม้สูง ซากปรักหักพัง และเหนือหลังคาบ้านเรือน',
-          habitatEn: 'High canopies, ancient ruins & rooftops at night',
-          hoursTh: 'หลังเที่ยงคืนจนถึงก่อนไก่ขัน',
-          hoursEn: 'After midnight until first crow',
-        };
-      case 'undead_lord':
-        return {
-          typeTh: 'ผีดิบอมตะและขบวนวิญญาณโบราณ (Undying Revenant)',
-          typeEn: 'Undying Revenant & Spectral Host',
-          genderTh: 'เพศชาย / ขบวนดวงวิญญาณ',
-          genderEn: 'Male / Spectral Procession',
-          sizeTh: '1.75 – 1.95 เมตร',
-          sizeEn: '1.75 – 1.95 m',
-          weightTh: 'N/A – 75 กก. (ร่างเนื้อต้องคำสาป)',
-          weightEn: 'N/A – 75 kg (Cursed corporeal vessel)',
-          danger: 4 as const,
-          habitatTh: 'สุสานโบราณ ปราสาทหิน และเส้นทางขบวนแห่วิญญาณ',
-          habitatEn: 'Ancient tombs, stone fortresses & spirit paths',
-          hoursTh: 'ยามวิกาลไร้แสงจันทร์ (23:00 – 03:30 น.)',
-          hoursEn: 'Moonless nights (23:00 – 03:30)',
-        };
-      case 'floating_head':
-      case 'female_specter':
-      default:
-        return {
-          typeTh:
-            pin.category === 'sacred'
-              ? 'จิตวิญญาณศักดิ์สิทธิ์และผู้พิทักษ์แผ่นดิน (Guardian Spirit)'
-              : 'วิญญาณหญิงสาวและภูตพรายอาถรรพ์ (Spectral Apparition)',
-          typeEn:
-            pin.category === 'sacred'
-              ? 'Sacred Guardian Spirit & Local Deity'
-              : 'Spectral Female Apparition & Folklore Entity',
-          genderTh: 'เพศหญิง (หรือ N/A ในร่างจิตวิญญาณ)',
-          genderEn: 'Female (or N/A Ethereal Spirit)',
-          sizeTh: '1.58 – 1.70 เมตร (แปรผันได้ตามอาถรรพ์)',
-          sizeEn: '1.58 – 1.70 m (Variable spectral stature)',
-          weightTh: 'N/A (0.0 กก. — ร่างพลังงานวิญญาณ)',
-          weightEn: 'N/A (0.0 kg — Incorporeal Ectoplasm)',
-          danger: (pin.category === 'sacred' ? 2 : 4) as 1 | 2 | 3 | 4 | 5,
-          habitatTh: `${pin.province_th} ${pin.district_th ? `(${pin.district_th})` : ''}`,
-          habitatEn: `${pin.province_en} ${pin.district_en ? `(${pin.district_en})` : ''}`,
-          hoursTh: 'ยามค่ำคืนและช่วงหัวค่ำหมอกลง (21:00 – 03:00 น.)',
-          hoursEn: 'Twilight & late night hours (21:00 – 03:00)',
-        };
-    }
-  })();
+  const codexId = `CODEX #${numHash} • ${classCode}`;
 
   const dangerLevel = custom?.danger ?? defaultMeta.danger;
   const dangerLabelTh: Record<number, string> = {
@@ -646,177 +985,4 @@ export function getEntityDossier(
     expandedStory: `${baseStory}\n\n${extraLore}`,
     omensAndTaboos,
   };
-}
-
-/**
- * Contextual Taboo & Survival Protocol Generator
- * Accurately tailors omens, taboos, and survival precautions based on the entity's lore,
- * category, archetype, or admin-configured rules.
- */
-export function generateContextualTaboos(pin: GhostPin, language: SupportedLanguage): string[] {
-  // 1. If admin custom taboos exist on pin:
-  const adminTaboos = language === 'th' ? pin.taboos_th : pin.taboos_en;
-  if (adminTaboos && adminTaboos.trim()) {
-    const rules = adminTaboos
-      .split(/\r?\n/)
-      .map((r) => r.trim().replace(/^[-•*0-9.]+\s*/, ''))
-      .filter((r) => r.length > 0);
-    if (rules.length > 0) return rules;
-  }
-
-  // 2. If curated bestiary taboos exist:
-  const custom = PIN_BESTIARY_DB[pin.id];
-  const curated = language === 'th' ? custom?.taboosTh : custom?.taboosEn;
-  if (curated && curated.length > 0) return curated;
-
-  // 3. Intelligent Context-Aware Extraction:
-  const isTh = language === 'th';
-  const text = `${pin.id} ${pin.title_th} ${pin.title_en} ${pin.story_th} ${pin.story_en} ${pin.folklore_history_th} ${pin.folklore_history_en}`.toLowerCase();
-
-  // A. Cosmic / Extraterrestrial / Ancient Astronomical Lore (e.g. Dogon, Sirius, UFO, Alien, Nazca)
-  if (
-    text.includes('dogon') ||
-    text.includes('โดกอน') ||
-    text.includes('sirius') ||
-    text.includes('ซิริอุส') ||
-    text.includes('นอมโม') ||
-    text.includes('nommo') ||
-    text.includes('ufo') ||
-    text.includes('alien') ||
-    text.includes('ดาวตก') ||
-    text.includes('ดาราศาสตร์') ||
-    text.includes('ยานอวกาศ')
-  ) {
-    return isTh
-      ? [
-          'ห้ามเหยียบย่ำหรือรบกวนลานหินศักดิ์สิทธิ์และโพรงผาที่ใช้ประกอบพิธีกรรมสังเกตการณ์ดวงดาว',
-          'หากพบปรากฏการณ์แสงประหลาดหรือหินสลักสัญลักษณ์โบราณ ห้ามใช้โลหะขูดขีดหรือเคลื่อนย้ายตำแหน่งเด็ดขาด',
-          'ควรแสดงความเคารพต่อผู้อาวุโสของชนเผ่า และห้ามบันทึกภาพพิธีกรรมลับของบรรพบุรุษนอมโมโดยไม่ได้รับอนุญาต',
-        ]
-      : [
-          'Never disturb or step on sacred rock sanctuaries aligned with ancient stellar coordinates.',
-          'If unexplained atmospheric lights or inscribed monoliths appear, do not touch or alter their positioning.',
-          'Show utmost reverence to tribal elders and never photograph private Nommo ancestral rites without permission.',
-        ];
-  }
-
-  // B. Aquatic / Water Entities & Serpents (Naga, Loch Ness, Siren, Mermaid, Bunyip, Taniwha, Rhine Lorelei)
-  if (
-    text.includes('loch') ||
-    text.includes('naga') ||
-    text.includes('พญานาค') ||
-    text.includes('bunyip') ||
-    text.includes('taniwha') ||
-    text.includes('siren') ||
-    text.includes('mermaid') ||
-    text.includes('เงือก') ||
-    text.includes('lorelei') ||
-    text.includes('พรายน้ำ') ||
-    text.includes('แม่น้ำ') ||
-    text.includes('บึง') ||
-    text.includes('ทะเลสาบ')
-  ) {
-    return isTh
-      ? [
-          'ห้ามลงเล่นน้ำหรือพายเรือคนเดียวในยามที่ผิวน้ำนิ่งสงบผิดปกติ หรือเมื่อมีม่านหมอกหนาลงจัดเหนือลำน้ำ',
-          'หากได้ยินเสียงเพลง เสียงกระซิบ หรือเสียงกรีดร้องก้องจากกลางผืนน้ำ ห้ามชะโงกมองหรือว่ายตามไปเด็ดขาด',
-          'ควรตั้งจิตขอขมาต่อเจ้าที่สายน้ำและหลีกเลี่ยงการสัญจรทางน้ำหลังดวงอาทิตย์ลับขอบฟ้า',
-        ]
-      : [
-          'Never swim or navigate waters alone during unnatural dead calms or sudden creeping river fogs.',
-          'If hypnotic melodies, whispers, or calls echo across the water, do not lean over or steer towards them.',
-          'Offer respect to water deities and refrain from voyaging across deep waters after twilight.',
-        ];
-  }
-
-  // C. Mountain & Forest Cryptids (Yeti, Sasquatch, Wendigo, Bigfoot, Beast of Gevaudan, Chupacabra, Werewolf)
-  if (
-    text.includes('yeti') ||
-    text.includes('เยติ') ||
-    text.includes('sasquatch') ||
-    text.includes('wendigo') ||
-    text.includes('bigfoot') ||
-    text.includes('chupacabra') ||
-    text.includes('gevaudan') ||
-    text.includes('werewolf') ||
-    text.includes('มนุษย์หมาป่า') ||
-    text.includes('สมิง') ||
-    text.includes('วานร') ||
-    pin.category === 'monster'
-  ) {
-    return isTh
-      ? [
-          'ห้ามทิ้งเศษอาหารสดหรือกลิ่นคาวเลือดไว้รอบที่พักยามค่ำคืน เพราะจะกระตุ้นสัญชาตญาณนักล่าข้ามคืน',
-          'หากพบเห็นรอยเท้าขนาดมหึมา หรือรอยกรงเล็บขูดลึกผิดธรรมชาติบนต้นไม้ ให้รีบถอยออกจากพื้นที่ทันที',
-          'ห้ามผิวปากหรือส่งเสียงเลียนแบบเสียงสัตว์ป่าแปลกประหลาดในเขตป่าลึกหลังตะวันตกดิน',
-        ]
-      : [
-          'Never leave raw meat or pungent scents around campfires overnight, as they provoke predatory trackers.',
-          'If you encounter massive fresh tracks or claw gouges on tree trunks, retreat immediately without running.',
-          'Never whistle or imitate strange animal calls in deep wilderness after dusk.',
-        ];
-  }
-
-  // D. Cursed Relics, Tombs, Mummies & Hexes (Curse category, Tutankhamun, Dracula, Voodoo, Catacombs)
-  if (
-    pin.category === 'curse' ||
-    text.includes('curse') ||
-    text.includes('คำสาป') ||
-    text.includes('คุณไสย') ||
-    text.includes('สุสาน') ||
-    text.includes('tomb') ||
-    text.includes('mummy') ||
-    text.includes('dracula') ||
-    text.includes('catacomb') ||
-    text.includes('voodoo')
-  ) {
-    return isTh
-      ? [
-          'ห้ามหยิบฉวยก้อนหิน วัตถุโบราณ เศษดิน หรือเครื่องรางใดๆ ออกจากเขตสุสานหรือซากปรักหักพังกลับบ้านโดยเด็ดขาด',
-          'หากมีอาการขนลุกชัน ได้ยินเสียงกระซิบข้างหู หรือได้กลิ่นกำมะถัน ให้กล่าวบทสวดขอขมาและเดินถอยหลังออกจากพื้นที่',
-          'ห้ามลบหลู่เครื่องราง ป้ายเตือน หรือเชือกอาถรรพ์ที่ผู้เฒ่าผู้แก่ประกอบพิธีสะกดไว้',
-        ]
-      : [
-          'Never remove stones, relics, soil, or artifacts from ancient tombs or ruined grounds under any circumstance.',
-          'If sudden chills, phantom whispers, or sulfur scents manifest, recite prayers and back away facing forward.',
-          'Never mock protective boundary wards, talismans, or binding seals placed by ancient guardians.',
-        ];
-  }
-
-  // E. Sacred Deities, Shrines & Relic Keepers (Sacred category, Temple, Mount Popa, Sacred trees)
-  if (
-    pin.category === 'sacred' ||
-    text.includes('sacred') ||
-    text.includes('ศักดิ์สิทธิ์') ||
-    text.includes('เทพ') ||
-    text.includes('ศาล') ||
-    text.includes('วัด') ||
-    text.includes('temple') ||
-    text.includes('shrine')
-  ) {
-    return isTh
-      ? [
-          'แต่งกายสุภาพ สำรวมกิริยาวาจา และห้ามพูดจาลบหลู่ท้าทายสิ่งศักดิ์สิทธิ์ในเขตอารามหรือศาลเจ้า',
-          'ห้ามนำสิ่งมึนเมา ของมลทิน หรือเจตนาชั่วร้ายเข้ามาในอาณาบริเวณลานประกอบพิธีกรรม',
-          'ควรอธิษฐานขอพรด้วยจิตบริสุทธิ์และปฏิบัติตามคำแนะนำของพราหมณ์หรือผู้ดูแลท้องถิ่นอย่างเคร่งครัด',
-        ]
-      : [
-          'Dress modestly, maintain solemn silence, and never speak words of mockery within the sacred shrine sanctuary.',
-          'Never bring intoxicants, corrupt offerings, or malice into the ceremonial sanctuary grounds.',
-          'Pray with pure intent and strictly observe the guidance of local ceremonial keepers and elders.',
-        ];
-  }
-
-  // F. Ghosts, Spirits & Apparitions (Default Ghost / Urban Legend)
-  return isTh
-    ? [
-        'หากได้ยินเสียงเรียกชื่อตนเองแว่วมาจากความมืดหลังเที่ยงคืน ห้ามขานรับหรือหันมองในทันทีเด็ดขาด',
-        'ห้ามส่องกระจกเงาในเงามืดหลังเที่ยงคืน หรือเคาะจานชามเรียกวิญญาณในสถานที่รกร้าง',
-        'ควรพกเครื่องรางประจำตัวและหลีกเลี่ยงการเดินทางสัญจรคนเดียวในเส้นทางเปลี่ยวที่มีประวัติอาถรรพ์',
-      ]
-    : [
-        'If an unseen voice whispers your name from the shadows after midnight, never acknowledge or turn around.',
-        'Never gaze into unlit mirrors in abandoned chambers or tap porcelain dishes in deserted crossroads.',
-        'Carry protective amulets and avoid traversing solitary haunted pathways unescorted at night.',
-      ];
 }
