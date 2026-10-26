@@ -2,82 +2,102 @@
 
 [![Cloudflare Pages](https://img.shields.io/badge/Cloudflare-Pages%20%26%20Workers-F38020?logo=cloudflare&logoColor=white)](https://pages.cloudflare.com/)
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-worldofmys.pages.dev-success?logo=cloudflare)](https://worldofmys.pages.dev/)
+[![Stories Count](https://img.shields.io/badge/Folklore%20Stories-600%20Unique%20Pins-emerald)](https://worldofmys.pages.dev/)
 [![MapLibre GL](https://img.shields.io/badge/MapLibre-Globe%20Projection-3b82f6)](https://maplibre.org/)
 [![React](https://img.shields.io/badge/React%2019-Vite-61DAFB?logo=react&logoColor=black)](https://react.dev/)
 [![D1 & R2](https://img.shields.io/badge/Cloudflare-D1%20%26%20R2-orange)](https://developers.cloudflare.com/)
 
-แพลตฟอร์มเว็บแอปพลิเคชัน Interactive Earth สำหรับสำรวจตำนานผี ประวัติศาสตร์ท้องถิ่น และเรื่องเล่าลี้ลับจาก**ทั่วทุกมุมโลก (Global Folklore, Myths & Legends)** สไตล์ **Radio Garden** โดยใช้ **MapLibre GL กับ globe projection** เป็นแกนหลักของประสบการณ์แผนที่ และขับเคลื่อนด้วย **Cloudflare Edge Ecosystem (Pages, Functions, D1, R2)**
+แพลตฟอร์มเว็บแอปพลิเคชัน 3D Interactive Earth สำหรับสำรวจตำนานผี สัตว์ในตำนาน ประวัติศาสตร์ท้องถิ่น และเรื่องเล่าลี้ลับจาก**ทั่วทุกมุมโลก (Global Folklore, Myths & Legends)** ครบ **600 เรื่องไม่ซ้ำกัน** ในสไตล์ **Radio Garden** ผสมผสาน **Antique Parchment Grimoire (คัมภีร์กระดาษโบราณ)** โดยใช้ **MapLibre GL 3D Globe Projection** เป็นแกนหลัก และขับเคลื่อนด้วยสถาปัตยกรรมไร้เซิร์ฟเวอร์ความเร็วสูง **Cloudflare Edge Ecosystem (Pages, Functions, D1 Database, R2 Storage)**
 
-🌐 **Live URL**: [https://worldofmys.pages.dev/](https://worldofmys.pages.dev/)
-
----
-
-## ✨ ไฮไลต์ฟีเจอร์ระดับโลก (Key Global Features)
-
-1. **🌍 ลูกโลกอินเทอร์แอกทีฟแบบ Globe Projection**
-   - สำรวจเรื่องเล่าและตำนานพื้นบ้านข้ามทวีป: เอเชีย, ยุโรป, อเมริกา, แอฟริกา และโอเชียเนีย
-   - ใช้ **MapLibre GL** แบบ **globe projection** เพื่อสร้างประสบการณ์โลกทรงกลมที่หมุน สำรวจ และบินกล้องข้ามทวีปได้ลื่นไหล
-   - แสดงภาพพื้นผิวโลกด้วย satellite raster tiles พร้อมหมุดเรืองแสงสไตล์ Radio Garden กระจายตามพิกัดภูมิภาคทั่วโลก
-   - รองรับแอนิเมชันบินกล้องไปยังหมุดที่เลือก (Fly-to) พร้อม tooltip แสดงชื่อเรื่องและภูมิภาค
-
-2. **🔒 ล็อคระยะซูมระดับจังหวัด/มณฑล (Global PDPA & Privacy Protection)**
-   - ป้องกันการเจาะดูระดับบ้านพักอาศัยหรือเลขที่อยู่จริงในทุกประเทศทั่วโลก ด้วยการกำหนดข้อจำกัดการซูมของแผนที่ให้เน้นการสำรวจในระดับจังหวัด/มณฑล (Province / State / County level) มากกว่าพิกัดบ้านเรือนรายจุด
-
-3. **📻 Radio Garden Atmospheric Sound Engine (Web Audio API)**
-   - สังเคราะห์เสียงคลื่นวิทยุความถี่สั้น (Radio Shortwave Tuning Sweep / Heterodyne Whistle) ขณะหมุนลูกโลกหรือจูนหาสัญญาณเรื่องเล่าข้ามประเทศ
-   - เสียง Ambient ลึกลับคลอเบาๆ ในพื้นหลัง (เปิด/ปิดเสียงได้)
-   - พรีเซ็ตคลื่นเสียงวิญญาณตามประเภทเรื่องเล่า (เสียงลมหนาวหวีดหวิว, ระฆังวิหารโบราณ, สัตว์ประหลาดในสายน้ำ, อาถรรพ์ป่าดงดิบ ฯลฯ)
-
-4. **🇹🇭 🇬🇧 ระบบ 2 ภาษาสำหรับสากล (Global Bilingual Support)**
-   - สลับภาษาไทยและอังกฤษได้ทันที ทั้งเนื้อหา ชื่อเรื่อง ประวัติศาสตร์ท้องถิ่น และส่วนต่อประสานผู้ใช้ (UI)
-   - ใช้ Native Font Stack ที่คมชัด โหลดไว ไม่มีอาการกระตุกหรือดีเลย์
-
-5. **🛡️ ระบบแอดมินหลังบ้าน (Global Admin Backoffice Portal)**
-   - ล็อกอินด้วยระบบ Admin Authentication
-   - Dashboard สถิติยอดการเข้าชมและจำนวนเรื่องเล่ารอบโลก
-   - ฟอร์มเพิ่ม/แก้ไขหมุด พร้อมระบบสุ่มพิกัดปลอดภัย (Jitter Coordinates) และพรีเซ็ตเมือง/จังหวัดสำคัญทั่วโลก
-   - รองรับการเชื่อมต่อกับ **Cloudflare R2** สำหรับอัปโหลดรูปภาพและไฟล์เสียง
+🌐 **เว็บไซต์ทางการ (Live URL)**: [https://worldofmys.pages.dev/](https://worldofmys.pages.dev/)
 
 ---
 
-## 🗺️ ตัวอย่างตำนานและเรื่องเล่ารอบโลกในระบบ (Sample Global Legends)
+## ✨ ไฮไลต์ฟีเจอร์เด่น (Key Features)
 
-| ประเทศ / ภูมิภาค | ชื่อตำนาน / เรื่องเล่า | ประเภท | หมุดพิกัด |
-| :--- | :--- | :--- | :--- |
-| **🇯🇵 ญี่ปุ่น (Tokyo)** | คุชิซาเกะ-อนนะ (Slit-Mouthed Woman) | วิญญาณและผีพราย | 35.6762° N, 139.6503° E |
-| **🏴󠁧󠁢󠁳󠁣󠁴󠁿 สกอตแลนด์ (Loch Ness)** | สัตว์ประหลาดล็อกเนสส์ (Loch Ness Monster - Nessie) | สัตว์ในตำนาน | 57.3229° N, 4.4244° W |
-| **🇷🇴 โรมาเนีย (Transylvania)** | ปราสาทแดร็กคูลา (Count Dracula / Vlad the Impaler) | คำสาปและอาถรรพ์ | 45.5152° N, 25.3672° E |
-| **🇺🇸 สหรัฐอเมริกา (Minnesota)** | เวนดิโก อสูรป่าหิมะ (The Wendigo) | อมนุษย์และสัตว์ร้าย | 46.7296° N, 94.6859° W |
-| **🇲🇽 เม็กซิโก (Jalisco)** | เอล ชูปาคาบรา (El Chupacabra) | สัตว์ในตำนาน | 20.6597° N, 103.3496° W |
-| **🇪🇬 อียิปต์ (Luxor)** | คำสาปฟาโรห์ตุตันคาเมน (Curse of Tutankhamun) | คุณไสยและคำสาป | 25.7402° N, 32.6014° E |
-| **🇦🇺 ออสเตรเลีย (Victoria)** | บันยิป อสูรแห่งบึงน้ำ (The Bunyip) | สัตว์ในตำนาน | 36.5000° S, 145.0000° E |
-| **🇹🇭 ไทย (Bangkok)** | แม่นาคพระโขนง (Mae Nak Phra Khanong) | วิญญาณและผีพราย | 13.7088° N, 100.6015° E |
-| **🇹🇭 ไทย (Nong Khai)** | พญานาคแม่น้ำโขง (Naga of the Mekong) | สิ่งศักดิ์สิทธิ์ | 18.0163° N, 103.0786° E |
-| **🇹🇭 ไทย (Prachinburi)** | ผีกระสือยายสาย (The Krasue) | คุณไสยและคำสาป | 13.9854° N, 101.7164° E |
+### 1. 📜 หน้าต่างอ่านเรื่องเล่าสไตล์คัมภีร์กระดาษโบราณ (Antique Aged Parchment Reader)
+- **เนื้อสัมผัสกระดาษเก่า:** พื้นผิวไล่เฉดสีกระดาษสาและคราบน้ำชา/กาแฟโบราณ (`radial-gradient` tea-stains) พร้อมขอบไหม้เกรียมแบบวินเทจ (`vignette scorched edges`)
+- **กรอบฉลุมุมวิกตอเรียน (Victorian Filigree Borders):** กรอบเส้นคู่ Hairline Frame พร้อมลวดลายฉลุประดับ 4 มุม ([`VintageCorner`](src/components/UI/VintageOrnament.tsx)) และเส้นคั่นกนกโบราณ ([`VintageDivider`](src/components/UI/VintageOrnament.tsx))
+- **ฟอนต์โบราณคลาสสิก:** ตัวอักษรสีหมึกซีเปียเข้ม รองรับภาษาไทยและสากลอย่างงดงามด้วย `Noto Serif Thai` และ `Playfair Display`
+
+### 2. 🔍 ระบบค้นหาแบบม้วนกระดาษคลี่ 2.5D (Ivory Parchment Scroll Unroll Search)
+- **อนิเมชัน 2.5D:** เมื่อพิมพ์ค้นหา รายการผลลัพธ์จะคลี่ม้วนกระดาษสีงาช้างโบราณลงมาอย่างนุ่มนวล (`animate-parchment-unroll`)
+- **เซิสบาร์โปร่งใส 50%:** แถบค้นหาด้านบนใช้สีกระดาษงาช้างโปร่งใส 50% ผสานม่านแก้วเบลอ มองเห็นลูกโลก 3D ด้านหลังได้อย่างลงตัว
+- **Semantic / Contextual Search:** ค้นหาตามบรรยากาศและแนวเรื่องเล่า (เช่น *"วิญญาณในน้ำ"*, *"ป่าหิมะ"*, *"งูยักษ์"*) พร้อมสรุปบริบทอัตโนมัติ
+
+### 3. 🌍 ลูกโลก 3D อินเทอร์แอกทีฟและ 600 เรื่องเล่ารอบโลก (3D Globe Projection)
+- รวบรวมเรื่องเล่าและสิ่งลี้ลับครบ **600 หมุด ไม่ซ้ำกัน** ครอบคลุมทุกทวีปทั่วโลก (เอเชีย, ยุโรป, อเมริกาเหนือ-ใต้, แอฟริกา, โอเชียเนีย)
+- ระบบจัดกลุ่มชุมทางเรื่องเล่า (Nexus Clusters) พร้อมปุ่มสำรวจชุมทางและแอนิเมชันบินกล้อง (Fly-to) ไปยังพิกัดหมุด
+- **ปุ่มลูกโลกเรืองแสงลอยตัว (Floating Circular Globe Button):** ปรับให้กะทัดรัด ไม่เกะกะสายตา แตะเพื่อซูมออกสู่มุมมองภาพรวมโลกได้ทันที
+
+### 4. 🎬 คลังสื่อผสมคุณภาพสูงและวิดีโอสารคดี (Verified Multimedia Carousel)
+- ผู้เล่นสื่อระดับ Steam-style รองรับทั้งภาพถ่ายประวัติศาสตร์และวิดีโอสารคดี YouTube ที่ผ่านการตรวจสอบความถูกต้อง (oEmbed Validated)
+- รองรับโหมดดูภาพขนาดใหญ่เต็มหน้าจอ (Fill-page Lightbox)
+
+### 5. 🔬 สารานุกรมจำแนกประเภทและข้อห้ามโบราณ (Entity Bestiary & Taboos Protocol)
+- ระบบระบุข้อมูลจำเพาะ (Classification Infobox) ขนาด, น้ำหนัก, ถิ่นอาศัย, เวลาออกหากิน และระดับความอันตราย (Omen Level)
+- รองรับประเภทสิ่งมีชีวิตหลากหลาย เช่น เผ่าพันธุ์เงือก/พรายน้ำ (`merfolk_spirit`), อสรพิษน้ำลึก (`aquatic_serpent`), อสูรดึกดำบรรพ์ (`cryptid_beast`), ผีดิบ/ปีศาจปีก
+- ข้อห้ามโบราณและวิธีเอาชีวิตรอด (Ancient Taboos & Survival Protocol) จัดวางในการ์ดตราประทับสีชาดโบราณ
+
+### 6. 💬 กระดานพยานบอกเล่าและลานคอมเมนต์ลอย (Eyewitness Evidence & World Fountain)
+- ผู้ใช้สามารถร่วมบันทึกความคิดเห็นและคำบอกเล่าพยานในแต่ละหมุดเรื่องเล่า พร้อมระบบกดถูกใจ (Likes) และตอบกลับ (Replies)
+- **World Comment Fountain:** เมื่อซูมออกสู่มุมมองโลก จะสามารถส่งข้อความลอยขึ้นสู่ชั้นบรรยากาศลูกโลก 3D ได้แบบเรียลไทม์
+
+### 7. 📻 ระบบเสียงคลื่นวิทยุความถี่สั้น (Web Audio Synthesizer)
+- สังเคราะห์เสียงเสียงจูนคลื่นวิทยุโบราณ (Heterodyne Radio Sweep) ขณะหมุนลูกโลก และเสียงบรรยากาศเฉพาะกลุ่ม (Ambient Soundscapes)
 
 ---
 
-## 🛠️ สถาปัตยกรรมระบบ (Tech Stack)
+## 🗺️ ตัวอย่างหมวดหมู่ตำนานรอบโลก (Sample Folklore Categories)
+
+| หมวดหมู่ | สัญลักษณ์ | ตัวอย่างเรื่องเล่าเด่น | ประเทศ / แหล่งกำเนิด |
+| :--- | :---: | :--- | :--- |
+| **วิญญาณและผีพราย (Ghosts)** | 👻 | แม่นาคพระโขนง, คุชิซาเกะ-อนนะ, ลา โยโรนา (La Llorona) | ไทย, ญี่ปุ่น, เม็กซิโก |
+| **อมนุษย์และสัตว์ในตำนาน (Monsters)** | 🔥 | อาดาโร (Adaro), งูมา-โมเนเน (Nguma-monene), เนสซี (Loch Ness) | หมู่เกาะโซโลมอน, คองโก, สกอตแลนด์ |
+| **คุณไสยและคำสาป (Curses)** | 💀 | คำสาปฟาโรห์ตุตันคาเมน, คำสาปเพชรโฮป, ผีกระสือยายสาย | อียิปต์, สหรัฐฯ, ไทย |
+| **สิ่งศักดิ์สิทธิ์และทวยเทพ (Sacred)** | 👑 | พญานาคแม่น้ำโขง, ภูเขาไฟฟูจิกับโคโนฮานะซากุยะ, ป่าวิหารแอซเท็ก | ไทย/ลาว, ญี่ปุ่น, เม็กซิโก |
+| **ประวัติศาสตร์ลี้ลับ (Folklore)** | 📖 | ปราสาทแดร็กคูลา, นครแอตแลนติส, ทัชมาฮาลสีดำ | โรมาเนีย, กรีซ, อินเดีย |
+
+---
+
+## 🛠️ สถาปัตยกรรมทางเทคนิค (Tech Stack)
+
+```
+[ Frontend Client (React 19 + TypeScript + Vite + Tailwind CSS v4) ]
+                               │
+            ┌──────────────────┴──────────────────┐
+            ▼                                     ▼
+[ MapLibre GL 3D Globe ]              [ Hono Edge API (Cloudflare Pages) ]
+            │                                     │
+            ▼                                     ▼
+[ Web Audio Synth Engine ]            [ Cloudflare D1 (SQLite Database) ]
+                                                  │
+                                                  ▼
+                                      [ Cloudflare R2 (Media Storage) ]
+```
 
 - **Frontend**: React 19, TypeScript, Vite, Tailwind CSS v4, Lucide Icons
-- **Interactive Globe / Map Engine**: MapLibre GL (Globe Projection, Raster Tiles, Navigation Control, Fly-to)
-- **Audio Engine**: Web Audio API (Procedural Shortwave Radio Synthesizer)
-- **Backend API**: Hono Framework บน Cloudflare Pages Functions (`/api/*`)
-- **Database**: Cloudflare D1 (Serverless SQLite) พร้อม Seed Data ตำนานรอบโลก
-- **Object Storage**: Cloudflare R2 (จัดเก็บรูปภาพและไฟล์เสียง)
+- **3D Globe Engine**: MapLibre GL (Globe Projection, Satellite Raster Tiles, Nexus Clustering, Fly-to Cameras)
+- **Typography & Styling**: Noto Serif Thai, Playfair Display, Pure CSS 3D Transforms, Radial Tea-Stain Shaders
+- **Edge Backend**: Hono.js on Cloudflare Pages Functions (`/api/*`)
+- **Database**: Cloudflare D1 (Serverless Distributed SQLite)
+- **Object Storage**: Cloudflare R2 Bucket
+- **Audio Engine**: Web Audio API (Shortwave Heterodyne Sound Synthesizer)
 
 ---
 
 ## 🚀 การติดตั้งและรันในเครื่อง (Local Development)
 
 ```bash
-# 1. ติดตั้ง Dependencies
+# 1. โคลนคลังโค้ดและติดตั้ง Dependencies
+git clone https://github.com/jetz001/WorldOfMis.git
+cd WorldOfMis
 npm install
 
-# 2. เริ่มต้นรัน Dev Server (Vite)
+# 2. เริ่มต้นรัน Local Development Server (Vite)
 npm run dev
 
-# 3. หรือรันแบบ Full-stack ด้วย Cloudflare Wrangler (Pages + Functions + D1)
+# 3. หรือทดสอบแบบ Full-Stack ร่วมกับ Cloudflare Pages Functions & D1 Local
 npx wrangler pages dev
 ```
 
@@ -88,24 +108,24 @@ npx wrangler pages dev
 ## ☁️ การ Deploy ไปยัง Cloudflare Pages & D1
 
 ```bash
-# 1. สร้าง Cloudflare D1 Database
-npx wrangler d1 create worldofmys-db
-
-# 2. ติดตั้ง Schema และ Seed Data รอบโลก
-npx wrangler d1 execute worldofmys-db --remote --file=./schema.sql
-
-# 3. สร้าง Cloudflare R2 Bucket สำหรับรูปภาพและเสียง
-npx wrangler r2 bucket create worldofmys-media
-
-# 4. Build และ Deploy ไปยัง Cloudflare Pages
+# 1. บิลด์โปรเจกต์เป็น Production Bundle
 npm run build
+
+# 2. ตรวจสอบสถานะการเชื่อมต่อ Cloudflare
+npx wrangler whoami
+
+# 3. อัปเดตข้อมูล D1 ฐานข้อมูล (หากมีการปรับปรุง schema หรือ seed)
+npx wrangler d1 execute worldofmys-db --remote --command "SELECT count(*) FROM ghost_pins"
+
+# 4. Deploy ไปยัง Cloudflare Pages
 npx wrangler pages deploy dist --project-name worldofmys
 ```
 
 ---
 
-## 👤 บัญชีแอดมินเริ่มต้นสำหรับการทดสอบ
+## 👤 บัญชีแอดมินสำหรับการทดสอบระบบหลังบ้าน (Admin Backoffice)
 
+- **เข้าสู่ระบบ:** พิมพ์ `/admin` ในช่องค้นหา หรือกดโลโก้หน้าเว็บติดต่อกัน 5 ครั้ง
 - **Username**: `admin`
 - **Password**: `password123`
 
@@ -113,4 +133,4 @@ npx wrangler pages deploy dist --project-name worldofmys
 
 ## 📜 ใบอนุญาต (License)
 
-MIT License - พัฒนาขึ้นสำหรับชุมชนเพื่อการศึกษาและอนุรักษ์มรดกตำนานเรื่องเล่าพื้นบ้านทั่วโลก
+MIT License - พัฒนาขึ้นเพื่อการอนุรักษ์ ศึกษา และเผยแพร่มรดกทางวัฒนธรรมตำนานเรื่องเล่าพื้นบ้านรอบโลก
