@@ -9961,5 +9961,180 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
         "title": "ภูต (วิญญาณไร้เงาเท้ากลับหลังสิงสถิตต้นโพธิ์แห่งอินเดีย) (ภาพประกอบจากวิกิพีเดีย)"
       }
     ]
+  },
+  {
+    "id": "pin-pret-suthat",
+    "title_th": "เปรตวัดสุทัศน์ เสาชิงช้า",
+    "title_en": "Preta of Wat Suthat & The Giant Swing",
+    "category": "ghost",
+    "province_th": "กรุงเทพมหานคร (ไทย)",
+    "province_en": "Bangkok (Thailand)",
+    "district_th": "พระนคร",
+    "district_en": "Phra Nakhon",
+    "lat": 13.7511,
+    "lng": 100.5015,
+    "story_th": "หนึ่งในตำนานผีเปรตที่เลื่องลือที่สุดของสยาม เล่าขานกันมาตั้งแต่สมัยต้นกรุงรัตนโกสินทร์ ในยามดึกสงัดเดือนมืด ชาวบ้านรอบเสาชิงช้าและวัดสุทัศนเทพวรารามมักได้ยินเสียงหวีดร้องโหยหวนแหลมสูงเสียดแก้วหู เมื่อมองขึ้นไปบนฟ้าจะเห็นร่างผอมโซสูงตระหง่านเท่าเสาชิงช้า โครงกระดูกปูดโปน มือเท้าโตเท่าใบพาย และมีปากแหลมเล็กเท่ารูเข็ม ทนทุกข์ทรมานจากความหิวโหยไม่สิ้นสุด ร้องขอส่วนบุญจากผู้คนที่สัญจรผ่านไปมา",
+    "story_en": "One of the most chilling Buddhist folklore specters in Bangkok. Towering as tall as the historic Giant Swing, the Preta (Hungry Ghost) of Wat Suthat is doomed by karmic sins to wander midnight streets in perpetual agony. With a gaunt skeletal frame, hands the size of palm fronds, and a mouth as tiny as a needle's eye, it cannot consume food and emits ear-piercing wails through the misty darkness begging for merit from the living.",
+    "folklore_history_th": "ความเชื่อเรื่องเปรตตามคติพุทธศาสนาไตรภูมิพระร่วง สะท้อนบาปกรรมจากการเนรคุณบิดามารดา การขโมยของสงฆ์ หรือความตระหนี่ถี่เหนียว ต่อมากลายเป็นคำพังเพยคู่เมืองหลวง \"แร้งวัดสระเกศ เปรตวัดสุทัศน์\" ซึ่งวัดสุทัศน์เป็นศูนย์กลางพิธีกรรมทางพราหมณ์และพุทธที่มีความศักดิ์สิทธิ์สูง",
+    "folklore_history_en": "Derived from the Traibhumikatha Buddhist cosmology, warning against greed, disrespect towards parents, and theft of sacred goods. Immortalized in the classic Siamese proverb 'Vultures of Wat Saket, Pretas of Wat Suthat', highlighting this temple as an epicentre of ancient spiritual energies in old Bangkok.",
+    "taboos_th": "ห้ามส่งเสียงผิวปากล้อเลียนหรือเลียนแบบเสียงหวีดร้องในยามวิกาลรอบเสาชิงช้า\nหากได้ยินเสียงขอส่วนบุญ ให้ตั้งจิตอุทิศกุศลและห้ามท้าทายหรือชี้มือขึ้นฟ้าเด็ดขาด\nควรทำบุญตักบาตรกรวดน้ำอุทิศให้แก่บรรพบุรุษและสัมภเวสีผู้ยากไร้",
+    "taboos_en": "Never whistle or mimic piercing cries around the Giant Swing after midnight.\nIf wailing cries for merit echo from above, recite protective prayers and do not point upwards.\nDedicate merit and water-libation rituals to suffering wandering spirits.",
+    "image_url": "/entities/pin-pret.jpg",
+    "sound_preset": "temple_bell",
+    "views_count": 0,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "/entities/pin-pret.jpg",
+        "title": "เปรตวัดสุทัศน์ เสาชิงช้า"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=FjC2bY9jXrw",
+        "title": "ตำนาน เปรตวัดสุทัศน์ เรื่องเล่าสยองขวัญคู่เสาชิงช้า",
+        "thumbnail": "/entities/pin-pret.jpg"
+      }
+    ],
+    "is_published": 1
+  },
+  {
+    "id": "pin-krahang-u-thong",
+    "title_th": "ผีกระหัง บินร่อนเหนือดงตาล",
+    "title_en": "Phi Krahang of the Ancient Palm Forest",
+    "category": "ghost",
+    "province_th": "สุพรรณบุรี (ไทย)",
+    "province_en": "Suphan Buri (Thailand)",
+    "district_th": "อู่ทอง",
+    "district_en": "U Thong",
+    "lat": 14.3789,
+    "lng": 99.8894,
+    "story_th": "ผีพื้นบ้านไทยคู่ปรับชะตากรรมของผีกระสือ เกิดจากชายผู้ร่ำเรียนวิชาไสยศาสตร์มนต์ดำจนของเข้าตัวและรักษากฎข้อห้ามไม่ได้ ในยามค่ำคืนจะเปลือยกายท่อนบน ใช้กระด้งฝัดข้าวสองข้างผูกแขนต่างปีก และขี่สากตำข้าวยาวแทนหาง บินลอยละลิ่วเหนือยอดไม้และทุ่งนา ออกหากินของคาวปฏิกูลสดๆ และสร้างความหวาดกลัวให้แก่ชาวบ้านตามชนบท",
+    "story_en": "The legendary male counterpart to the Krasue in Thai folklore. Originating from sorcerers consumed by corrupted black magic, the Krahang flies through nocturnal rural skies using round woven rice winnowing trays tied to his arms as wings and astride a wooden rice pestle acting as a tail. Driven by dark hunger, he glides over rice paddies seeking filth and raw flesh.",
+    "folklore_history_th": "นิทานพื้นบ้านภาคกลางของไทยที่มีการเล่าขานสืบต่อกันมาหลายร้อยปี มักถูกใช้เป็นเครื่องเตือนใจผู้ที่ลุ่มหลงในศาสตร์มนต์ดำอาถรรพ์ว่าหากไม่สามารถควบคุมจิตตนเองได้จะถูกอำนาจมืดครอบงำจนสูญเสียความเป็นมนุษย์",
+    "folklore_history_en": "A cornerstone of Central Thai folklore representing the grave perils of illicit witchcraft. Tales of the Krahang served as a moral cautionary chronicle warning against practicing forbidden occult arts that consume the soul.",
+    "taboos_th": "ห้ามตากผ้าอ้อมหรือผ้าถุงค้างคืนนอกชานบ้าน เพราะกลิ่นคาวจะดึงดูดผีกระหังบินมาเกาะ\nหากได้ยินเสียงกระพือปีกหนักๆ คล้ายพัดใบตาลเหนือหลังคา ห้ามจุดตะเกียงเปิดประตูออกไปดูเด็ดขาด\nควรนำหนามพุทราหรือหนามไผ่มาเสียบไว้รอบชายคาเรือนเพื่อขัดขวางการร่อนลงเกาะ",
+    "taboos_en": "Never hang wet clothes or garments outdoors overnight, as residual odors attract soaring fiends.\nIf heavy wingbeats flap against roof rafters, keep doors barred and lights subdued.\nLine eaves and verandas with thorny bamboo branches to deter nocturnal landings.",
+    "image_url": "/entities/pin-krahang.jpg",
+    "sound_preset": "creepy_wind",
+    "views_count": 0,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "/entities/pin-krahang.jpg",
+        "title": "ผีกระหัง บินร่อนเหนือดงตาล"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=5rT8sZkYFwE",
+        "title": "ตำนาน ผีกระหัง มนต์ดำปีกกระด้งสากตำข้าว",
+        "thumbnail": "/entities/pin-krahang.jpg"
+      }
+    ],
+    "is_published": 1
+  },
+  {
+    "id": "pin-chiang-dao",
+    "title_th": "อาถรรพ์ถ้ำเชียงดาวและเมืองลับแล",
+    "title_en": "Chiang Dao Mystical Caves & The Hidden Realm",
+    "category": "sacred",
+    "province_th": "เชียงใหม่ (ไทย)",
+    "province_en": "Chiang Mai (Thailand)",
+    "district_th": "เชียงดาว",
+    "district_en": "Chiang Dao",
+    "lat": 19.3957,
+    "lng": 98.9298,
+    "story_th": "ถ้ำศักดิ์สิทธิ์โบราณที่ทอดยาวลึกหลายกิโลเมตรใต้เทือกเขาดอยหลวงเชียงดาว ภายในเต็มไปด้วยหินงอกหินย้อยตระการตารูปช้างเอราวัณ ธารน้ำมรกต และวังพญานาค ตำนานเล่าว่าเป็นดินแดนบำเพ็ญตบะของฤาษีพุทธพรหม และมีประตูมิติเชื่อมต่อสู่ \"เมืองลับแล\" ชุมชนทิพย์ที่มีชาวเมืองถือศีลบริสุทธิ์ ผู้ใดที่มีจิตโลภคิดขโมยหินมงคลหรือสิ่งของในถ้ำจะไม่สามารถหาทางออกจากเขาวงกตใต้พิภพได้",
+    "story_en": "An expansive subterranean labyrinth winding kilometers beneath Doi Luang Chiang Dao. Revered for millennia as a sanctum of enlightened hermits and serpentine Naga guardians. Legend says its deepest unmapped caverns contain portals to the legendary Laplae realm—a hidden paradise of immortal ascetic dwellers. Those who enter with greed or attempt to remove sacred calcite formations are doomed to wander its endless maze forever.",
+    "folklore_history_th": "ตามตำนานล้านนาเล่าขานถึงเจ้าหลวงคำแดง บุตรพญากุนาผู้หลงใหลในความงามของกวางทองจนติดตามเข้าไปในถ้ำเชียงดาวและไม่เคยกลับออกมาอีกเลย ปัจจุบันชาวล้านนาให้ความเคารพศรัทธาเป็นศาลเจ้าศักดิ์สิทธิ์ผู้พิทักษ์ขุนเขา",
+    "folklore_history_en": "Rooted in ancient Lanna chronicles of Prince Kham Daeng, who pursued a golden deer into the caverns and vanished into the spiritual plane. Today it remains one of the most sacred pilgrimage shrines in Northern Thailand.",
+    "taboos_th": "ห้ามเก็บเศษหิน หยดน้ำ หินย้อย หรือสิ่งใดๆ ออกจากเขตถ้ำเด็ดขาด\nแต่งกายสุภาพ สำรวมกายวาจา และห้ามพูดจาหยอกล้อลบหลู่ความศักดิ์สิทธิ์ของเจ้าหลวงคำแดง\nต้องมีผู้นำทางพร้อมตะเกียงก๊าซเสมอ และห้ามเดินแยกออกจากเส้นทางหลักเข้าไปในโพรงถ้ำลึกเพียงลำพัง",
+    "taboos_en": "Never collect minerals, stalactite crystals, or water droplets from inside the cavern.\nDress modestly and speak only in quiet reverence without uttering curses or challenges.\nAlways follow authorized lantern-bearers and never stray into dark unexplored fissures alone.",
+    "image_url": "/entities/pin-chiangdao.jpg",
+    "sound_preset": "water_spirit",
+    "views_count": 0,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "/entities/pin-chiangdao.jpg",
+        "title": "อาถรรพ์ถ้ำเชียงดาวและเมืองลับแล"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=r_r2z8Qk0i4",
+        "title": "ถ้ำเชียงดาว ดินแดนศักดิ์สิทธิ์และตำนานเจ้าหลวงคำแดง",
+        "thumbnail": "/entities/pin-chiangdao.jpg"
+      }
+    ],
+    "is_published": 1
+  },
+  {
+    "id": "pin-overtoun-bridge",
+    "title_th": "สะพานมรณะโอเวอตูน สะพานสุนัขฆ่าตัวตาย",
+    "title_en": "Overtoun Bridge (The Canine Suicide Bridge)",
+    "category": "curse",
+    "province_th": "เวสต์ดันบาร์ตันเชียร์ (สกอตแลนด์)",
+    "province_en": "West Dunbartonshire (Scotland, UK)",
+    "district_th": "ดัมบาร์ตัน",
+    "district_en": "Dumbarton",
+    "lat": 55.9333,
+    "lng": -4.5264,
+    "story_th": "สะพานหินแกรนิตสไตล์โกธิกศตวรรษที่ 19 ใกล้คฤหาสน์โอเวอตูน กลายเป็นสถานที่เกิดปรากฏการณ์ลี้ลับสะเทือนขวัญ เมื่อสุนัขกว่า 600 ตัวพากันกระโดดลงจากจุดเดิมบนขอบสะพาน ดิ่งสู่โขดหินเบื้องล่างสูง 50 ฟุตเสียชีวิตอย่างน่าพิศวง บางตัวที่รอดชีวิตเมื่อถูกพากลับมาก็ยังพยายามกระโดดซ้ำ ผู้มาเยือนมักรายงานว่ารู้สึกถึงความหนาวสะท้านผิดธรรมชาติและพลังงานที่กดดันอย่างรุนแรง",
+    "story_en": "A brooding 19th-century Victorian Gothic stone bridge spanning the Overtoun Burn. Since the 1950s, over 600 dogs have inexplicably leaped from the exact same parapet into the 50-foot gorge below, often falling fatally onto rocks. Even surviving dogs have attempted to jump again upon returning. Locals and investigators describe sudden bone-chilling cold spots and an overwhelming supernatural compulsion hanging over the bridge.",
+    "folklore_history_th": "คติความเชื่อของชาวเคลต์โบราณเชื่อว่าพื้นที่บริเวณสะพานโอเวอตูนเป็นจุด \"ธินเพลส\" (Thin Place) หรือรอยต่อมิติระหว่างโลกคนเป็นและโลกวิญญาณที่บางเบาที่สุด นอกจากนี้ยังมีเรื่องเล่าของหญิงม่ายชุดขาวแห่งคฤหาสน์โอเวอตูนที่คอยล่อลวงวิญญาณ",
+    "folklore_history_en": "Regarded in Celtic tradition as a 'Thin Place' where the veil between the physical realm and the spirit otherworld becomes fragile. Local folklore links the phenomenon to the grieving phantom of the White Lady of Overtoun pacing the estate grounds.",
+    "taboos_th": "จูงสัตว์เลี้ยงด้วยสายจูงอย่างแน่นหนาและห้ามปล่อยสุนัขเดินลำพังบนสะพานโดยเด็ดขาด\nหากสุนัขหยุดชะงัก ขนลุกพอง หรือจ้องมองความว่างเปล่าเหนือขอบสะพาน ให้รีบอุ้มถอยกลับทันที\nห้ามชะโงกมองข้ามขอบสะพานในวันที่หมอกหนาหรือยามพลบค่ำ",
+    "taboos_en": "Keep canine companions tightly leashed and never allow pets to roam freely along the bridge.\nIf a dog freezes, whimpers, or stares into the empty chasm, carry them away immediately.\nDo not peer over the low stone parapet during heavy mist or twilight hours.",
+    "image_url": "/entities/pin-overtoun.jpg",
+    "sound_preset": "creepy_wind",
+    "views_count": 0,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "/entities/pin-overtoun.jpg",
+        "title": "สะพานมรณะโอเวอตูน สะพานสุนัขฆ่าตัวตาย"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=3WnLwVv9_oQ",
+        "title": "The Bizarre Mystery of Scotland's Dog Suicide Bridge (Overtoun Bridge)",
+        "thumbnail": "/entities/pin-overtoun.jpg"
+      }
+    ],
+    "is_published": 1
+  },
+  {
+    "id": "pin-leap-castle",
+    "title_th": "ปราสาทผีสิงลิปส์และดิเอเลเมนทัล",
+    "title_en": "Leap Castle & The Ancient Elemental",
+    "category": "ghost",
+    "province_th": "เทศมณฑลออฟฟาลี (ไอร์แลนด์)",
+    "province_en": "County Offaly (Ireland)",
+    "district_th": "คูรีกิลส์",
+    "district_en": "Coolderry",
+    "lat": 53.0289,
+    "lng": -7.8089,
+    "story_th": "ปราสาทหินโบราณที่ขึ้นชื่อว่ามีวิญญาณสถิตหนาแน่นที่สุดในไอร์แลนด์ สร้างขึ้นบนพื้นที่ศักดิ์สิทธิ์ของดรูอิดโบราณ สถานที่เกิดเหตุการณ์สังหารหมู่สายเลือดใน \"โบสถ์เลือด\" (The Bloody Chapel) ที่นักบวชถูกพี่ชายแทงทะลุหัวใจขณะกำลังทำพิธีมิสซา ทว่าสิ่งที่น่าสะพรึงกลัวที่สุดคือ \"ดิ เอเลเมนทัล\" (The Elemental) สิ่งมีชีวิตลี้ลับโบราณที่ส่งกลิ่นเน่าเปื่อยรุนแรงและมีใบหน้าบิดเบี้ยวไร้ตามนุษย์",
+    "story_en": "Reputed as the most intensely haunted fortress in Ireland, built over an ancient Celtic druidic ceremonial site. Scene of brutal kin-slaying in the 'Bloody Chapel', where a priest was stabbed through the heart by his own brother during mass. The darkest resident is 'The Elemental'—a primitive, non-human entity accompanied by a putrid stench of rotting decay, manifesting as a crouching, disfigured phantom.",
+    "folklore_history_th": "ในระหว่างการบูรณะปราสาท คนงานได้ค้นพบ \"คุกใต้ดินลืมหลุม\" (Oubliette) ลึกลงไปในพื้นหินที่ซ่อนโครงกระดูกมนุษย์มากกว่า 150 ร่างเสียบอยู่บนขวากแหลมคม สะท้อนความโหดเหี้ยมของตระกูลโอแครอลล์ในยุคกลาง",
+    "folklore_history_en": "During 19th-century renovations, workers uncovered an oubliette (dungeon pit) beneath the chapel containing three cartloads of human remains impaled on upward-facing wooden spikes from centuries of O'Carroll treachery.",
+    "taboos_th": "ห้ามเข้าไปในห้องโบสถ์เลือดหลังเที่ยงคืนโดยไม่มีเจ้าของปราสาทนำทาง\nหากได้กลิ่นกำมะถันหรือเนื้อเน่าเปื่อยโชยมาอย่างกะทันหัน ให้ถอยหลังออกจากห้องทันทีโดยห้ามหันหลังวิ่ง\nห้ามลบหลู่ศิลาจารึกหรือพื้นที่คุกใต้ดินโบราณ",
+    "taboos_en": "Never enter the Bloody Chapel chamber past midnight without authorized escort.\nIf a sudden suffocating stench of rotting decay appears, back out immediately without turning your back.\nNever mock the stone memorials or the subterranean oubliette pit.",
+    "image_url": "/entities/pin-leapcastle.jpg",
+    "sound_preset": "creepy_wind",
+    "views_count": 0,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "/entities/pin-leapcastle.jpg",
+        "title": "ปราสาทผีสิงลิปส์และดิเอเลเมนทัล"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=Q4f7f4Y3u-I",
+        "title": "Leap Castle: The Most Haunted Castle in Ireland",
+        "thumbnail": "/entities/pin-leapcastle.jpg"
+      }
+    ],
+    "is_published": 1
   }
 ];
