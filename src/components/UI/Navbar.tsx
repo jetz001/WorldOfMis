@@ -10,14 +10,130 @@ import {
   X,
   MapPin,
   ArrowUpRight,
-  ChevronLeft,
-  ChevronRight,
+  ChevronDown,
+  Check,
+  Layers,
+  Filter,
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import type { GhostCategory, GhostPin, SupportedLanguage } from '../../types/ghost';
 import { getTranslation, LANGUAGE_OPTIONS } from '../../lib/i18n';
 import type { RagSearchResponse } from '../../lib/vectorRagSearch';
 import { SUGGESTED_RAG_QUERIES } from '../../lib/vectorRagSearch';
+
+export interface MarkerStyleDefinition {
+  id: GhostCategory | 'all';
+  color: string;
+  glow: string;
+  bgGradient: string;
+  labelTh: string;
+  labelEn: string;
+  hintTh: string;
+  hintEn: string;
+  iconSvg: string;
+}
+
+export const MARKER_DEFINITIONS: Record<GhostCategory | 'all', MarkerStyleDefinition> = {
+  all: {
+    id: 'all',
+    color: '#34d399',
+    glow: 'rgba(52, 211, 153, 0.85)',
+    bgGradient: 'radial-gradient(circle at 35% 30%, #34d399 0%, #0f766e 65%, #042f2e 100%)',
+    labelTh: 'ทุกหมวดหมู่',
+    labelEn: 'All Categories',
+    hintTh: 'แสดงหมุดทุกสีบนลูกโลก',
+    hintEn: 'Show all markers on globe',
+    iconSvg: `<svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" style="width: 12px; height: 12px;"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>`,
+  },
+  ghost: {
+    id: 'ghost',
+    color: '#38bdf8',
+    glow: 'rgba(56, 189, 248, 0.85)',
+    bgGradient: 'radial-gradient(circle at 35% 30%, #38bdf8 0%, #0284c7 65%, #082f49 100%)',
+    labelTh: 'วิญญาณและผีพราย',
+    labelEn: 'Ghosts & Apparitions',
+    hintTh: 'หมุดสีฟ้า (Spirits & Phantoms)',
+    hintEn: 'Cyan Pins (Spirits)',
+    iconSvg: `<svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" style="width: 12px; height: 12px;"><path d="M12 2a7 7 0 0 0-7 7v9l3-2 3 2 3-2 3 2 2-2V9a7 7 0 0 0-7-7z"/><circle cx="9" cy="9" r="1.2" fill="#ffffff"/><circle cx="15" cy="9" r="1.2" fill="#ffffff"/></svg>`,
+  },
+  monster: {
+    id: 'monster',
+    color: '#ff2a5f',
+    glow: 'rgba(255, 42, 95, 0.85)',
+    bgGradient: 'radial-gradient(circle at 35% 30%, #ff2a5f 0%, #be123c 65%, #4c0519 100%)',
+    labelTh: 'อมนุษย์และสัตว์ประหลาด',
+    labelEn: 'Monsters & Mythical Beasts',
+    hintTh: 'หมุดสีแดง (Beasts & Cryptids)',
+    hintEn: 'Crimson Pins (Beasts)',
+    iconSvg: `<svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" style="width: 12px; height: 12px;"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>`,
+  },
+  curse: {
+    id: 'curse',
+    color: '#c084fc',
+    glow: 'rgba(192, 132, 252, 0.85)',
+    bgGradient: 'radial-gradient(circle at 35% 30%, #c084fc 0%, #7e22ce 65%, #3b0764 100%)',
+    labelTh: 'คุณไสยและคำสาป',
+    labelEn: 'Curses & Occult Lore',
+    hintTh: 'หมุดสีม่วง (Curses & Sorcery)',
+    hintEn: 'Violet Pins (Occult)',
+    iconSvg: `<svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" style="width: 12px; height: 12px;"><circle cx="9" cy="12" r="1.3" fill="#ffffff"/><circle cx="15" cy="12" r="1.3" fill="#ffffff"/><path d="M8 20v2h8v-2"/><path d="M16 20a3 3 0 0 0 1.5-2.6 6 6 0 1 0-11 0A3 3 0 0 0 8 20z"/></svg>`,
+  },
+  sacred: {
+    id: 'sacred',
+    color: '#fbbf24',
+    glow: 'rgba(251, 191, 36, 0.9)',
+    bgGradient: 'radial-gradient(circle at 35% 30%, #fde047 0%, #d97706 65%, #451a03 100%)',
+    labelTh: 'สิ่งศักดิ์สิทธิ์และทวยเทพ',
+    labelEn: 'Sacred Guardians & Deities',
+    hintTh: 'หมุดสีทอง (Deities & Relics)',
+    hintEn: 'Gold Pins (Sacred)',
+    iconSvg: `<svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" style="width: 12px; height: 12px;"><path d="m12 2 2.6 6.2L21 11l-5 4.5 1.5 6.5L12 18.5 6.5 22 8 15.5 3 11l6.4-2.8z"/></svg>`,
+  },
+  legend: {
+    id: 'legend',
+    color: '#00ff88',
+    glow: 'rgba(0, 255, 136, 0.85)',
+    bgGradient: 'radial-gradient(circle at 35% 30%, #34d399 0%, #059669 65%, #022c22 100%)',
+    labelTh: 'ตำนานพื้นบ้านลึกลับ',
+    labelEn: 'Folklore & Ancient Legends',
+    hintTh: 'หมุดสีเขียว (Ancient Lore & Tales)',
+    hintEn: 'Emerald Pins (Legends)',
+    iconSvg: `<svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" style="width: 12px; height: 12px;"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>`,
+  },
+};
+
+export const GlobeDiamondBadge: React.FC<{
+  styleDef: MarkerStyleDefinition;
+  isSelected?: boolean;
+  size?: 'sm' | 'md';
+}> = ({ styleDef, isSelected = false, size = 'md' }) => {
+  const outerSize = size === 'sm' ? 'w-6 h-6' : 'w-7 h-7';
+  const diamondSize = size === 'sm' ? 'w-4 h-4 rounded-[4px]' : 'w-5 h-5 rounded-[5px]';
+
+  return (
+    <div className={`relative flex items-center justify-center shrink-0 ${outerSize}`}>
+      {isSelected && (
+        <span
+          className="absolute inset-0 rounded-full opacity-60 blur-[1px] animate-ping"
+          style={{ backgroundColor: styleDef.color }}
+        />
+      )}
+      <div
+        className={`relative flex items-center justify-center rotate-45 transition-transform duration-200 ${diamondSize}`}
+        style={{
+          background: styleDef.bgGradient,
+          border: `1.8px solid ${isSelected ? '#ffffff' : styleDef.color}`,
+          boxShadow: `0 0 12px ${styleDef.glow}, 0 2px 6px rgba(0,0,0,0.85)`,
+        }}
+      >
+        <div
+          className="-rotate-45 flex items-center justify-center filter drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)]"
+          dangerouslySetInnerHTML={{ __html: styleDef.iconSvg }}
+        />
+      </div>
+    </div>
+  );
+};
 
 interface NavbarProps {
   language: SupportedLanguage;
@@ -31,6 +147,7 @@ interface NavbarProps {
   onZoomOut: () => void;
   ragResponse: RagSearchResponse;
   onSelectPin: (pin: GhostPin) => void;
+  pins?: GhostPin[];
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
@@ -45,13 +162,15 @@ export const Navbar: React.FC<NavbarProps> = ({
   onZoomOut,
   ragResponse,
   onSelectPin,
+  pins = [],
 }) => {
   const t = getTranslation(language);
   const [isSearchFocused, setIsSearchFocused] = useState(false);
   const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
-  const [isFilterExpanded, setIsFilterExpanded] = useState(true);
+  const [isFilterOpen, setIsFilterOpen] = useState(false);
   const langMenuRef = useRef<HTMLDivElement>(null);
   const searchContainerRef = useRef<HTMLDivElement>(null);
+  const filterRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const secretTapCountRef = useRef(0);
   const secretTapTimerRef = useRef<number | null>(null);
@@ -97,19 +216,37 @@ export const Navbar: React.FC<NavbarProps> = ({
       ) {
         setIsLangMenuOpen(false);
       }
+      if (
+        filterRef.current &&
+        !filterRef.current.contains(event.target as Node)
+      ) {
+        setIsFilterOpen(false);
+      }
     };
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  const categories: Array<{ id: GhostCategory | 'all'; label: string }> = [
-    { id: 'all', label: t.allCategories },
-    { id: 'ghost', label: t.categories.ghost },
-    { id: 'curse', label: t.categories.curse },
-    { id: 'legend', label: t.categories.legend },
-    { id: 'sacred', label: t.categories.sacred },
-    { id: 'monster', label: t.categories.monster },
+  const MARKER_LIST: MarkerStyleDefinition[] = [
+    MARKER_DEFINITIONS.all,
+    MARKER_DEFINITIONS.ghost,
+    MARKER_DEFINITIONS.monster,
+    MARKER_DEFINITIONS.curse,
+    MARKER_DEFINITIONS.sacred,
+    MARKER_DEFINITIONS.legend,
   ];
+
+  const currentMarkerDef = MARKER_DEFINITIONS[selectedCategory] || MARKER_DEFINITIONS.all;
+
+  const categoryCounts = React.useMemo(() => {
+    const counts: Record<string, number> = { all: pins?.length || 0 };
+    if (pins && pins.length > 0) {
+      for (const p of pins) {
+        counts[p.category] = (counts[p.category] || 0) + 1;
+      }
+    }
+    return counts;
+  }, [pins]);
 
   const categoryIcons: Record<string, LucideIcon> = {
     all: Compass,
@@ -118,15 +255,6 @@ export const Navbar: React.FC<NavbarProps> = ({
     legend: BookOpen,
     sacred: Sparkles,
     monster: Flame,
-  };
-
-  const categorySigils: Record<string, string> = {
-    all: '/icons/sigil_all.png',
-    ghost: '/icons/sigil_ghost.png',
-    curse: '/icons/sigil_curse.png',
-    legend: '/icons/sigil_legend.png',
-    sacred: '/icons/sigil_sacred.png',
-    monster: '/icons/sigil_monster.png',
   };
 
   const suggestedQueries =
@@ -479,85 +607,104 @@ export const Navbar: React.FC<NavbarProps> = ({
         </div>
       </div>
 
-      {/* Collapsible Categories Filter Strip (Occult Sigil Medallions) */}
-      <div className="flex items-center gap-2 py-1 pointer-events-auto self-start">
-        <div
-          className={`flex items-center gap-2.5 overflow-x-auto no-scrollbar transition-all duration-300 ease-out ${
-            isFilterExpanded
-              ? 'max-w-[92vw] sm:max-w-[520px] opacity-100'
-              : 'max-w-[52px] opacity-100 overflow-hidden'
-          }`}
-        >
-          {(isFilterExpanded
-            ? categories
-            : categories.filter((c) => c.id === selectedCategory)
-          ).map((cat) => {
-            const isSelected = selectedCategory === cat.id;
-            const sigilUrl = categorySigils[cat.id];
-            return (
-              <button
-                key={cat.id}
-                type="button"
-                onClick={() => {
-                  if (!isFilterExpanded) {
-                    setIsFilterExpanded(true);
-                  } else {
-                    onSelectCategory(cat.id);
-                  }
-                }}
-                aria-label={cat.label}
-                title={cat.label}
-                className={`group relative shrink-0 w-12 h-12 rounded-2xl border backdrop-blur-xl transition-all duration-300 flex items-center justify-center cursor-pointer active:scale-95 focus:outline-none ${
-                  isSelected
-                    ? 'bg-gradient-to-b from-emerald-950/95 via-[#071f1b] to-[#041014] border-amber-400/80 shadow-[0_0_24px_rgba(16,185,129,0.55),inset_0_0_12px_rgba(251,191,36,0.25)] scale-105'
-                    : 'bg-[#070c16]/85 border-amber-500/25 hover:border-emerald-400/60 shadow-[0_6px_18px_rgba(0,0,0,0.8)] hover:scale-105'
-                }`}
-              >
-                {/* Subtle corner rune accent */}
-                {isSelected && (
-                  <span className="pointer-events-none absolute -top-0.5 -right-0.5 w-2 h-2 rounded-full bg-[#00ff88] shadow-[0_0_8px_#00ff88] animate-ping" />
-                )}
-                <img
-                  src={sigilUrl}
-                  alt={cat.label}
-                  className={`w-8 h-8 object-contain transition-transform duration-300 group-hover:scale-110 ${
-                    isSelected
-                      ? 'drop-shadow-[0_0_10px_rgba(52,211,153,0.85)]'
-                      : 'opacity-85 group-hover:opacity-100'
-                  }`}
-                />
-              </button>
-            );
-          })}
-        </div>
-
-        {/* Collapse / Expand Toggle Button */}
+      {/* Mystical Category Filter: Vertical Dropdown with Globe Diamond Markers & Descriptive Text */}
+      <div className="relative pointer-events-auto self-start" ref={filterRef}>
+        {/* Trigger Button */}
         <button
           type="button"
-          onClick={() => setIsFilterExpanded((v) => !v)}
-          title={
-            isFilterExpanded
-              ? language === 'th'
-                ? 'ยุบตัวกรองหมวดหมู่'
-                : 'Collapse category filters'
-              : language === 'th'
-              ? 'ขยายตัวกรองหมวดหมู่'
-              : 'Expand category filters'
-          }
-          aria-label="Toggle category filters"
-          className="h-10 px-2.5 rounded-xl bg-[#070c16]/90 border border-amber-500/35 hover:border-emerald-400/70 backdrop-blur-xl text-amber-200/90 hover:text-emerald-300 transition-all shadow-[0_6px_18px_rgba(0,0,0,0.8)] flex items-center gap-1 text-xs font-medium cursor-pointer active:scale-95"
+          onClick={() => setIsFilterOpen((v) => !v)}
+          className={`group px-3 py-2 rounded-2xl border backdrop-blur-2xl transition-all duration-300 flex items-center gap-2.5 cursor-pointer active:scale-95 shadow-[0_8px_24px_rgba(0,0,0,0.85)] ${
+            isFilterOpen
+              ? 'bg-[#071a17]/95 border-emerald-400 shadow-[0_0_24px_rgba(16,185,129,0.35)]'
+              : 'bg-[#070c16]/92 border-amber-500/40 hover:border-emerald-400/80 hover:shadow-[0_0_20px_rgba(16,185,129,0.25)]'
+          }`}
+          title={language === 'th' ? 'เลือกหมวดหมู่ตำนาน (ตัวกรองแนวตั้ง)' : 'Select folklore category'}
+          aria-expanded={isFilterOpen}
         >
-          {isFilterExpanded ? (
-            <ChevronLeft className="w-4 h-4" />
-          ) : (
-            <>
-              <span className="text-[11px] pl-0.5">
-                {language === 'th' ? 'ตัวกรอง' : 'Filter'}
-              </span>
-              <ChevronRight className="w-4 h-4" />
-            </>
-          )}
+          <GlobeDiamondBadge
+            styleDef={currentMarkerDef}
+            isSelected={selectedCategory !== 'all'}
+            size="md"
+          />
+          <div className="flex flex-col text-left pr-1">
+            <span className="text-[9.5px] uppercase font-bold tracking-wider text-amber-300/80 flex items-center gap-1">
+              <Layers className="w-3 h-3 text-emerald-400" />
+              {language === 'th' ? 'ตัวกรองหมวดหมู่' : 'Category Filter'}
+            </span>
+            <span className="text-xs font-bold text-slate-100 group-hover:text-emerald-200 transition-colors">
+              {language === 'th' ? currentMarkerDef.labelTh : currentMarkerDef.labelEn}
+            </span>
+          </div>
+          <ChevronDown
+            className={`w-4 h-4 text-amber-300/90 ml-0.5 transition-transform duration-300 ${
+              isFilterOpen ? 'rotate-180 text-emerald-400' : ''
+            }`}
+          />
         </button>
+
+        {/* Vertical Dropdown Panel */}
+        {isFilterOpen && (
+          <div className="absolute left-0 top-full mt-2 z-[1000] w-72 sm:w-84 p-2.5 rounded-2xl bg-[#070c16]/98 border border-amber-500/45 shadow-[0_20px_50px_rgba(0,0,0,0.95),0_0_30px_rgba(16,185,129,0.25)] backdrop-blur-2xl animate-in fade-in slide-in-from-top-2 duration-150 flex flex-col gap-1.5 max-h-[80vh] overflow-y-auto">
+            {/* Header info explaining symbols */}
+            <div className="px-3 py-1.5 border-b border-slate-800/80 flex items-center justify-between">
+              <span className="text-[11px] font-bold text-amber-300 flex items-center gap-1.5">
+                <Filter className="w-3.5 h-3.5 text-emerald-400" />
+                {language === 'th' ? 'สัญลักษณ์หมุดบนลูกโลก' : 'Globe Marker Legend'}
+              </span>
+              <span className="text-[10px] text-slate-400">
+                {language === 'th' ? 'แตะเพื่อเลือก' : 'Tap to filter'}
+              </span>
+            </div>
+
+            {/* Vertical list of categories */}
+            {MARKER_LIST.map((item) => {
+              const isSelected = selectedCategory === item.id;
+              const count = categoryCounts[item.id] || 0;
+              return (
+                <button
+                  key={item.id}
+                  type="button"
+                  onClick={() => {
+                    onSelectCategory(item.id);
+                    setIsFilterOpen(false);
+                  }}
+                  className={`w-full p-2.5 rounded-xl text-left flex items-center justify-between gap-2.5 transition-all cursor-pointer group ${
+                    isSelected
+                      ? 'bg-gradient-to-r from-emerald-950/90 via-[#07241e] to-slate-900 border border-emerald-400/80 shadow-[0_0_16px_rgba(16,185,129,0.3)]'
+                      : 'hover:bg-slate-900/90 border border-transparent hover:border-slate-800 text-slate-200'
+                  }`}
+                >
+                  <div className="flex items-center gap-3 min-w-0">
+                    <GlobeDiamondBadge styleDef={item} isSelected={isSelected} size="md" />
+                    <div className="min-w-0">
+                      <div className="flex items-center gap-1.5">
+                        <span
+                          className={`text-xs font-bold truncate ${
+                            isSelected ? 'text-emerald-200' : 'text-slate-100 group-hover:text-amber-200'
+                          }`}
+                        >
+                          {language === 'th' ? item.labelTh : item.labelEn}
+                        </span>
+                      </div>
+                      <p className="text-[10.5px] text-slate-400 truncate mt-0.5">
+                        {language === 'th' ? item.hintTh : item.hintEn}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-2 shrink-0">
+                    {count > 0 && (
+                      <span className="px-2 py-0.5 rounded-md text-[10px] font-mono font-bold bg-black/50 text-slate-300 border border-slate-700/60">
+                        {count}
+                      </span>
+                    )}
+                    {isSelected && <Check className="w-4 h-4 text-emerald-400 shrink-0" />}
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+        )}
       </div>
     </header>
   );

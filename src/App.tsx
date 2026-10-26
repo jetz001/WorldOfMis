@@ -147,6 +147,7 @@ export function App() {
         onZoomOut={handleZoomOutToWorld}
         ragResponse={ragResponse}
         onSelectPin={handleSelectPin}
+        pins={pins}
       />
 
       {/* Main 3D Earth Scene */}

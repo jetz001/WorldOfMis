@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
-import { Map, NavigationControl, Marker, setWorkerUrl } from 'maplibre-gl';
+import { Map, NavigationControl, Marker, setWorkerUrl, type GeoJSONSource } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
-import { RotateCw } from 'lucide-react';
+import { RotateCw, X, Sparkles, MapPin } from 'lucide-react';
 
 // Fix: point MapLibre to our bundled worker so Cloudflare Pages
 // returns the correct JS MIME type instead of an HTML 404 page.
@@ -64,6 +64,47 @@ const CATEGORY_MARKER_STYLES: Record<GhostCategory, CategoryMarkerStyle> = {
     iconSvg: `<svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" style="width: 12px; height: 12px;"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>`,
   },
 };
+
+function createPinsGeoJson(pins: GhostPin[]) {
+  return {
+    type: 'FeatureCollection' as const,
+    features: pins.map((p) => {
+      const style = CATEGORY_MARKER_STYLES[p.category] || CATEGORY_MARKER_STYLES.legend;
+      return {
+        type: 'Feature' as const,
+        geometry: {
+          type: 'Point' as const,
+          coordinates: [p.lng, p.lat],
+        },
+        properties: {
+          id: p.id,
+          category: p.category,
+          color: style.color,
+          glow: style.glow,
+          title_th: p.title_th,
+          title_en: p.title_en,
+          province_th: p.province_th,
+          province_en: p.province_en,
+          story_th: p.story_th ? p.story_th.slice(0, 140) : '',
+          story_en: p.story_en ? p.story_en.slice(0, 140) : '',
+        },
+      };
+    }),
+  };
+}
+
+export interface ActiveNexusData {
+  isCluster: boolean;
+  coords: [number, number];
+  title: string;
+  subtitle: string;
+  count?: number;
+  titles?: string[];
+  snippet?: string;
+  color: string;
+  pinId?: string;
+  category?: GhostCategory;
+}
 
 interface GhostGlobeProps {
   pins: GhostPin[];
@@ -130,20 +171,59 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     setIsWorldZoomedOut(zoom <= 3.55 && !selectedPin);
   }, [selectedPin]);
 
+  // Smooth fly-to pin on click
+  const flyToPin = useCallback((pin: GhostPin) => {
+    if (!mapRef.current) return;
+
+    mapRef.current.flyTo({
+      center: [pin.lng, pin.lat],
+      zoom: 7.5,
+      speed: 1.3,
+      curve: 1.4,
+      essential: true,
+    });
+  }, []);
+
+    const [activeNexus, setActiveNexus] = useState<ActiveNexusData | null>(null);
+
+  const handleExploreNexus = useCallback((nexus: ActiveNexusData) => {
+    setActiveNexus(null);
+    const map = mapRef.current;
+    if (!map) return;
+
+    if (nexus.isCluster) {
+      userInteractingRef.current = true;
+      map.easeTo({
+        center: nexus.coords,
+        zoom: 4.85,
+        duration: 900,
+        easing: (t) => 1 - Math.pow(1 - t, 3),
+      });
+      setTimeout(() => {
+        userInteractingRef.current = false;
+      }, 1000);
+    } else if (nexus.pinId) {
+      const targetPin = pinsRef.current.find((p) => p.id === nexus.pinId);
+      if (targetPin) {
+        flyToPin(targetPin);
+        onSelectPin(targetPin);
+      }
+    }
+  }, [flyToPin, onSelectPin]);
+
   const spinGlobe = useCallback(() => {
     const map = mapRef.current;
     if (!map) return;
+    if (userInteractingRef.current) return;
+    if (!isSpinningRef.current) return;
+    if (selectedPinRef.current) return;
+
     const zoom = map.getZoom();
     const maxSpinZoom = 4.2;
     const slowSpinZoom = 2.4;
     const secondsPerRevolution = 160; // Complete revolution every ~2.6 minutes (slow, majestic spin)
 
-    if (
-      isSpinningRef.current &&
-      !userInteractingRef.current &&
-      zoom < maxSpinZoom &&
-      !selectedPinRef.current
-    ) {
+    if (zoom < maxSpinZoom) {
       let distancePerSecond = 360 / secondsPerRevolution;
       if (zoom > slowSpinZoom) {
         const zoomDif = (maxSpinZoom - zoom) / (maxSpinZoom - slowSpinZoom);
@@ -160,8 +240,10 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     if (spinTimeoutRef.current) clearTimeout(spinTimeoutRef.current);
     spinTimeoutRef.current = setTimeout(() => {
       userInteractingRef.current = false;
-      spinGlobe();
-    }, 1200);
+      if (isSpinningRef.current && !selectedPinRef.current) {
+        spinGlobe();
+      }
+    }, 2200);
   }, [spinGlobe]);
 
   useEffect(() => {
@@ -172,12 +254,27 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     }
   }, [selectedPin, resumeSpinAfterDelay]);
 
-    // Occlude markers that rotate onto the backside of the 3D globe (Spherical Horizon Culling)
+  // Occlude markers that rotate onto the backside of the 3D globe (Spherical Horizon Culling)
   const updateMarkerVisibility = useCallback(() => {
     const map = mapRef.current;
     if (!map) return;
-    const center = map.getCenter();
     const zoom = map.getZoom();
+
+    // At overview zoom (< 3.8), hide ALL DOM markers to eliminate lag!
+    // The WebGL "Radio Garden Nexus" layer handles rendering at 60fps!
+    const isOverviewZoom = zoom < 3.8 && !selectedPinRef.current;
+    if (isOverviewZoom) {
+      for (let i = 0; i < markerItemsRef.current.length; i++) {
+        const item = markerItemsRef.current[i];
+        if (item.isVisible) {
+          item.isVisible = false;
+          item.element.style.display = 'none';
+        }
+      }
+      return;
+    }
+
+    const center = map.getCenter();
     const toRad = Math.PI / 180;
     const phi1 = center.lat * toRad;
     const cLngRad = center.lng * toRad;
@@ -211,6 +308,12 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     const map = mapRef.current;
     const container = mapContainerRef.current;
     if (!map || !container) return;
+
+    // Skip magnetic calculations in overview zoom
+    if (map.getZoom() < 3.8) {
+      setMagnetTarget(null);
+      return;
+    }
 
     const rect = container.getBoundingClientRect();
     const cx = rect.width / 2;
@@ -262,18 +365,7 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     setMagnetTarget(closest);
   }, []);
 
-  // Smooth fly-to pin on click
-  const flyToPin = useCallback((pin: GhostPin) => {
-    if (!mapRef.current) return;
 
-    mapRef.current.flyTo({
-      center: [pin.lng, pin.lat],
-      zoom: 7.5,
-      speed: 1.3,
-      curve: 1.4,
-      essential: true,
-    });
-  }, []);
 
   useEffect(() => {
     if (selectedPin) {
@@ -426,48 +518,262 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
       });
     };
 
+    const setupNexusLayers = () => {
+      if (map.getSource('folklore-nexus')) return;
+
+      map.addSource('folklore-nexus', {
+        type: 'geojson',
+        data: createPinsGeoJson(pinsRef.current),
+        cluster: true,
+        clusterMaxZoom: 4,
+        clusterRadius: 36,
+      });
+
+      // 1. Cluster Outer Radiant Aura (Radio Garden Spectral Pulse)
+      map.addLayer({
+        id: 'nexus-cluster-aura',
+        type: 'circle',
+        source: 'folklore-nexus',
+        filter: ['has', 'point_count'],
+        maxzoom: 3.85,
+        paint: {
+          'circle-color': [
+            'step',
+            ['get', 'point_count'],
+            '#00ff88',
+            12,
+            '#38bdf8',
+            25,
+            '#fbbf24',
+          ],
+          'circle-radius': [
+            'step',
+            ['get', 'point_count'],
+            16,
+            12,
+            20,
+            25,
+            24,
+          ],
+          'circle-opacity': 0.45,
+          'circle-blur': 0.75,
+        },
+      });
+
+      // 2. Cluster Middle Core Ring
+      map.addLayer({
+        id: 'nexus-cluster-ring',
+        type: 'circle',
+        source: 'folklore-nexus',
+        filter: ['has', 'point_count'],
+        maxzoom: 3.85,
+        paint: {
+          'circle-color': '#031412',
+          'circle-radius': [
+            'step',
+            ['get', 'point_count'],
+            7.5,
+            12,
+            9.5,
+            25,
+            12.5,
+          ],
+          'circle-stroke-width': 1.8,
+          'circle-stroke-color': [
+            'step',
+            ['get', 'point_count'],
+            '#34d399',
+            12,
+            '#38bdf8',
+            25,
+            '#fde047',
+          ],
+          'circle-opacity': 0.95,
+        },
+      });
+
+      // 3. Cluster Inner Center Dot
+      map.addLayer({
+        id: 'nexus-cluster-core',
+        type: 'circle',
+        source: 'folklore-nexus',
+        filter: ['has', 'point_count'],
+        maxzoom: 3.85,
+        paint: {
+          'circle-color': '#ffffff',
+          'circle-radius': 3,
+          'circle-opacity': 0.9,
+        },
+      });
+
+      // 4. Single unclustered spectral beacon dot
+      map.addLayer({
+        id: 'nexus-single-aura',
+        type: 'circle',
+        source: 'folklore-nexus',
+        filter: ['!', ['has', 'point_count']],
+        maxzoom: 3.85,
+        paint: {
+          'circle-color': ['get', 'color'],
+          'circle-radius': 13,
+          'circle-opacity': 0.45,
+          'circle-blur': 0.65,
+        },
+      });
+
+      map.addLayer({
+        id: 'nexus-single-core',
+        type: 'circle',
+        source: 'folklore-nexus',
+        filter: ['!', ['has', 'point_count']],
+        maxzoom: 3.85,
+        paint: {
+          'circle-color': ['get', 'color'],
+          'circle-radius': 3.5,
+          'circle-stroke-width': 1.5,
+          'circle-stroke-color': '#ffffff',
+          'circle-opacity': 0.95,
+        },
+      });
+
+      // Click on cluster: Fetch cluster leaves & show responsive Occult Nexus Card for Mobile & Desktop!
+      const onClusterClick = async (e: any) => {
+        if (!e.features || !e.features[0]) return;
+        const feat = e.features[0];
+        const clusterId = feat.properties?.cluster_id;
+        const pointCount = feat.properties?.point_count || 0;
+        const geom = feat.geometry as any;
+        const coords = geom.coordinates as [number, number];
+
+        const source = map.getSource('folklore-nexus') as GeoJSONSource | undefined;
+        if (!source || clusterId === undefined) return;
+
+        try {
+          const leaves = await source.getClusterLeaves(clusterId, 6, 0);
+          if (!leaves || !leaves.length) return;
+          const firstProps = (leaves[0].properties || {}) as any;
+          const province = language === 'th' ? firstProps.province_th : firstProps.province_en;
+          const titles = leaves.map((l: any) =>
+            language === 'th' ? l.properties?.title_th : l.properties?.title_en
+          ).filter(Boolean);
+          const color = firstProps.color || '#34d399';
+
+          setActiveNexus({
+            isCluster: true,
+            coords,
+            title: province || (language === 'th' ? 'แหล่งรวมเรื่องเล่า' : 'Folklore Cluster'),
+            subtitle: language === 'th' ? `พบ ${pointCount} ตำนานลี้ลับในบริเวณนี้` : `${pointCount} folklore legends in this area`,
+            count: pointCount,
+            titles,
+            color,
+          });
+        } catch (err) {
+          console.warn('Failed to get cluster leaves:', err);
+        }
+      };
+
+      map.on('click', 'nexus-cluster-ring', onClusterClick);
+      map.on('click', 'nexus-cluster-core', onClusterClick);
+      map.on('click', 'nexus-cluster-aura', onClusterClick);
+
+      // Click on single point: Show single folklore card
+      const onSingleClick = (e: any) => {
+        if (!e.features || !e.features[0]) return;
+        const feat = e.features[0];
+        const geom = feat.geometry as any;
+        const coords = geom.coordinates as [number, number];
+        const props = feat.properties as any;
+
+        setActiveNexus({
+          isCluster: false,
+          coords,
+          title: language === 'th' ? props.title_th : props.title_en,
+          subtitle: language === 'th' ? props.province_th : props.province_en,
+          snippet: language === 'th' ? props.story_th : props.story_en,
+          color: props.color || '#38bdf8',
+          pinId: props.id,
+          category: props.category,
+        });
+      };
+
+      map.on('click', 'nexus-single-core', onSingleClick);
+      map.on('click', 'nexus-single-aura', onSingleClick);
+
+      // Dismiss card when clicking anywhere on the empty globe
+      map.on('click', (e) => {
+        const feats = map.queryRenderedFeatures(e.point, {
+          layers: ['nexus-cluster-ring', 'nexus-cluster-core', 'nexus-single-core', 'nexus-single-aura'],
+        });
+        if (!feats || !feats.length) {
+          setActiveNexus(null);
+        }
+      });
+
+      map.on('mouseenter', 'nexus-cluster-ring', () => {
+        map.getCanvas().style.cursor = 'pointer';
+      });
+      map.on('mouseleave', 'nexus-cluster-ring', () => {
+        map.getCanvas().style.cursor = '';
+      });
+      map.on('mouseenter', 'nexus-single-core', () => {
+        map.getCanvas().style.cursor = 'pointer';
+      });
+      map.on('mouseleave', 'nexus-single-core', () => {
+        map.getCanvas().style.cursor = '';
+      });
+    };
+
     map.on('style.load', () => {
       try {
         map.setProjection({ type: 'globe' });
       } catch (e) {
         console.warn('Globe projection error:', e);
       }
+      setupNexusLayers();
       scheduleThrottledUpdate();
       spinGlobe();
       if (onMapReady) onMapReady();
     });
 
     map.on('load', () => {
+      setupNexusLayers();
       if (onMapReady) onMapReady();
     });
 
     map.on('move', scheduleThrottledUpdate);
     map.on('zoom', () => {
       setHoveredPinInfo(null);
-      setIsWorldZoomedOut(map.getZoom() <= 3.55 && !selectedPinRef.current);
+      setIsWorldZoomedOut(map.getZoom() <= 3.8 && !selectedPinRef.current);
     });
     map.on('render', scheduleThrottledUpdate);
 
-    // Continuously spin globe when animation completes
+    // Continuously spin globe when animation completes (only if user is not dragging/interacting)
     map.on('moveend', () => {
-      setIsWorldZoomedOut(map.getZoom() <= 3.55 && !selectedPinRef.current);
-      if (!selectedPinRef.current && isSpinningRef.current) {
-        userInteractingRef.current = false;
+      setIsWorldZoomedOut(map.getZoom() <= 3.8 && !selectedPinRef.current);
+      if (!selectedPinRef.current && isSpinningRef.current && !userInteractingRef.current) {
+        spinGlobe();
       }
-      spinGlobe();
     });
 
-    // Pause spinning during interaction
+    // Zero-resistance interaction handlers:
+    // When user starts interacting, set userInteractingRef = true so spin pauses.
+    // NEVER call map.stop() inside mousedown/touchstart/dragstart because that aborts MapLibre's dragPan gesture!
     map.on('mousedown', () => {
       userInteractingRef.current = true;
       if (spinTimeoutRef.current) clearTimeout(spinTimeoutRef.current);
+      map.stop();
+    });
+    map.on('touchstart', () => {
+      userInteractingRef.current = true;
+      if (spinTimeoutRef.current) clearTimeout(spinTimeoutRef.current);
+      map.stop();
     });
     map.on('dragstart', () => {
       setHoveredPinInfo(null);
       userInteractingRef.current = true;
       if (spinTimeoutRef.current) clearTimeout(spinTimeoutRef.current);
     });
-    map.on('touchstart', () => {
+    map.on('drag', () => {
       userInteractingRef.current = true;
       if (spinTimeoutRef.current) clearTimeout(spinTimeoutRef.current);
     });
@@ -481,43 +787,9 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     map.on('touchend', () => {
       resumeSpinAfterDelay();
     });
-
-    // Gentle magnetic snap when user finishes dragging near a pin
     map.on('dragend', () => {
+      userInteractingRef.current = true;
       resumeSpinAfterDelay();
-      const container = mapContainerRef.current;
-      if (!container) return;
-      const rect = container.getBoundingClientRect();
-      const cx = rect.width / 2;
-      const cy = rect.height / 2;
-      const centerLngLat = map.getCenter();
-
-      const SNAP_RADIUS = 72; // px soft magnetic snap zone
-      let closestPin: GhostPin | null = null;
-      let minDist = SNAP_RADIUS;
-
-      for (const pin of pinsRef.current) {
-        const dLng = Math.abs(pin.lng - centerLngLat.lng);
-        const normDLng = dLng > 180 ? 360 - dLng : dLng;
-        const dLat = Math.abs(pin.lat - centerLngLat.lat);
-        if (normDLng > 70 || dLat > 70) continue;
-
-        const pt = map.project([pin.lng, pin.lat]);
-        const dist = Math.hypot(pt.x - cx, pt.y - cy);
-        if (dist < minDist) {
-          minDist = dist;
-          closestPin = pin;
-        }
-      }
-
-      if (closestPin && minDist > 2) {
-        map.easeTo({
-          center: [closestPin.lng, closestPin.lat],
-          duration: 520,
-          easing: (t) => 1 - Math.pow(1 - t, 3),
-          essential: true,
-        });
-      }
     });
 
     return () => {
@@ -570,6 +842,14 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     markersRef.current = [];
     markerInnerElsRef.current.clear();
 
+    // Update GeoJSON source for Radio Garden Nexus layer
+    const nexusSource = map.getSource('folklore-nexus') as GeoJSONSource | undefined;
+    if (nexusSource) {
+      nexusSource.setData(createPinsGeoJson(pins));
+    }
+
+    const isOverview = map.getZoom() < 3.8 && !selectedPin;
+
     // Create distinctive, prominent category-specific 3D Occult Diamond Markers (Ultra-lightweight)
     pins.forEach((pin) => {
       const isSelected = selectedPin?.id === pin.id;
@@ -579,7 +859,7 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
       el.className = 'cursor-pointer select-none group relative';
       el.style.width = '36px';
       el.style.height = '36px';
-      el.style.display = 'flex';
+      el.style.display = isOverview ? 'none' : 'flex';
       el.style.alignItems = 'center';
       el.style.justifyContent = 'center';
 
@@ -590,15 +870,16 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
       innerWrap.style.justifyContent = 'center';
       innerWrap.style.transition = 'transform 160ms cubic-bezier(0.2, 1, 0.3, 1)';
       innerWrap.innerHTML = `
-        <span style="
+        <span class="marker-ping-halo" style="
           position: absolute;
-          width: ${isSelected ? '32px' : '22px'};
-          height: ${isSelected ? '32px' : '22px'};
+          width: ${isSelected ? '30px' : '20px'};
+          height: ${isSelected ? '30px' : '20px'};
           border-radius: 9999px;
           background-color: ${catStyle.color};
-          opacity: 0.6;
+          opacity: ${isSelected ? '0.7' : '0.35'};
           filter: blur(1.5px);
-          animation: ping 2.2s cubic-bezier(0, 0, 0.2, 1) infinite;
+          ${isSelected ? 'animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;' : ''}
+          transition: opacity 200ms ease;
         "></span>
         <div style="
           position: relative;
@@ -628,10 +909,15 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
       el.appendChild(innerWrap);
       markerInnerElsRef.current.set(pin.id, innerWrap);
 
-      // Lightweight Hover Trigger: Populates single singleton Hover Card instead of 300 cards in DOM!
+      // Dynamic lightweight hover: Activates ping only when mouse is over this specific marker!
       el.addEventListener('mouseenter', () => {
         userInteractingRef.current = true;
         if (spinTimeoutRef.current) clearTimeout(spinTimeoutRef.current);
+        const halo = innerWrap.querySelector('.marker-ping-halo') as HTMLElement | null;
+        if (halo && !isSelected) {
+          halo.style.animation = 'ping 1.6s cubic-bezier(0, 0, 0.2, 1) infinite';
+          halo.style.opacity = '0.75';
+        }
         const rect = el.getBoundingClientRect();
         setHoveredPinInfo({
           pin,
@@ -642,6 +928,11 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
       });
 
       el.addEventListener('mouseleave', () => {
+        const halo = innerWrap.querySelector('.marker-ping-halo') as HTMLElement | null;
+        if (halo && !isSelected) {
+          halo.style.animation = '';
+          halo.style.opacity = '0.35';
+        }
         setHoveredPinInfo(null);
         resumeSpinAfterDelay();
       });
@@ -659,7 +950,7 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
         .addTo(map);
 
       markersRef.current.push(marker);
-      markerItemsRef.current.push({ marker, pin, element: el, isVisible: true });
+      markerItemsRef.current.push({ marker, pin, element: el, isVisible: !isOverview });
     });
 
     updateMagneticField();
@@ -857,6 +1148,102 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
               <span>{language === 'th' ? '👆 คลิกเพื่อซูมเข้าสู่บันทึก' : '👆 Click to zoom & explore'}</span>
               <span className="text-emerald-400 text-xs">↗</span>
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* Folklore Nexus Details Card (Mobile Touch & Desktop Responsive) */}
+      {activeNexus && (
+        <div
+          className="fixed z-50 pointer-events-auto select-none left-1/2 -translate-x-1/2 w-[92vw] sm:w-[390px] max-w-[420px] animate-in fade-in zoom-in-95 duration-200"
+          style={{
+            bottom: 'max(5.6rem, calc(env(safe-area-inset-bottom, 0px) + 5.2rem))',
+          }}
+        >
+          <div className="relative flex flex-col bg-[#070c16]/95 border border-emerald-500/40 rounded-2xl overflow-hidden backdrop-blur-2xl shadow-[0_16px_40px_rgba(0,0,0,0.85),0_0_28px_rgba(16,185,129,0.28)] p-3.5 sm:p-4 text-slate-200">
+            {/* Header: Category / Nexus Badge + Close Button */}
+            <div className="flex items-center justify-between gap-2 mb-2">
+              <div className="flex items-center gap-2 min-w-0">
+                <span
+                  className="w-2.5 h-2.5 rounded-full shrink-0 animate-ping [animation-duration:2.5s]"
+                  style={{ backgroundColor: activeNexus.color, boxShadow: `0 0 10px ${activeNexus.color}` }}
+                />
+                <span
+                  className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full"
+                  style={{
+                    color: activeNexus.color,
+                    backgroundColor: `${activeNexus.color}20`,
+                    border: `1px solid ${activeNexus.color}45`,
+                  }}
+                >
+                  {activeNexus.isCluster
+                    ? (language === 'th' ? `🌐 ชุมทาง ${activeNexus.count} ตำนาน` : `🌐 Nexus (${activeNexus.count} Legends)`)
+                    : (activeNexus.category || (language === 'th' ? 'เรื่องเล่าลี้ลับ' : 'Folklore'))}
+                </span>
+              </div>
+              <button
+                type="button"
+                onClick={() => setActiveNexus(null)}
+                className="w-7 h-7 flex items-center justify-center rounded-full bg-slate-800/80 hover:bg-slate-700/80 text-slate-400 hover:text-slate-100 transition-colors cursor-pointer"
+                aria-label="Close"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+
+            {/* Title & Location Subtitle */}
+            <h3 className="text-sm sm:text-base font-bold text-slate-100 leading-snug line-clamp-1">
+              {activeNexus.title}
+            </h3>
+            <p className="text-xs text-emerald-300/90 flex items-center gap-1 mt-0.5">
+              <MapPin className="w-3 h-3 shrink-0 text-emerald-400" />
+              <span className="truncate">{activeNexus.subtitle}</span>
+            </p>
+
+            {/* Body: Story Snippet or Cluster Story Titles List */}
+            {activeNexus.isCluster ? (
+              <div className="mt-2.5 space-y-1.5">
+                <p className="text-[11px] text-slate-400 font-medium">
+                  {language === 'th' ? 'ตัวอย่างตำนานในพื้นที่นี้:' : 'Featured legends in this region:'}
+                </p>
+                <div className="flex flex-wrap gap-1.5 max-h-20 overflow-y-auto pr-1">
+                  {activeNexus.titles?.slice(0, 4).map((t, idx) => (
+                    <span
+                      key={idx}
+                      className="text-[11px] bg-slate-900/90 border border-slate-700/60 text-slate-300 px-2 py-0.5 rounded-lg truncate max-w-[200px]"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                  {(activeNexus.titles?.length || 0) > 4 && (
+                    <span className="text-[10px] text-slate-400 px-1.5 py-0.5">
+                      +{((activeNexus.titles?.length || 0) - 4)} {language === 'th' ? 'เรื่องอื่นๆ' : 'more'}
+                    </span>
+                  )}
+                </div>
+              </div>
+            ) : (
+              activeNexus.snippet && (
+                <p className="mt-2 text-xs text-slate-300/85 line-clamp-2 leading-relaxed bg-slate-900/60 p-2 rounded-lg border border-white/5">
+                  {activeNexus.snippet}
+                </p>
+              )
+            )}
+
+            {/* Action Explore Button (Touch friendly, 44px+ height on mobile) */}
+            <button
+              type="button"
+              onClick={() => handleExploreNexus(activeNexus)}
+              className="mt-3 w-full py-2.5 px-4 rounded-xl font-semibold text-xs sm:text-sm flex items-center justify-center gap-2 cursor-pointer transition-all active:scale-[0.98] shadow-lg text-emerald-950 bg-gradient-to-r from-emerald-400 to-teal-300 hover:from-emerald-300 hover:to-teal-200 shadow-[0_0_18px_rgba(16,185,129,0.35)]"
+            >
+              <Sparkles className="w-4 h-4 text-emerald-900" />
+              <span>
+                {activeNexus.isCluster
+                  ? (language === 'th' ? 'ซูมเจาะลึกชุมทางนี้' : 'Zoom into Nexus')
+                  : (language === 'th' ? 'เปิดอ่านบันทึกตำนาน' : 'Read Full Lore')}
+              </span>
+              <span className="text-base leading-none">↗</span>
+            </button>
           </div>
         </div>
       )}
