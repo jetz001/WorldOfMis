@@ -500,7 +500,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           className="relative flex-1 max-w-xs md:max-w-lg hidden md:block"
         >
           <div className="relative flex items-center">
-            <ScrollText className="w-4 h-4 absolute left-3.5 text-[#c4923e] pointer-events-none" />
+            <ScrollText className="w-4 h-4 absolute left-3.5 text-[#7a4618] pointer-events-none" />
             <input
               ref={inputRef}
               type="text"
@@ -523,7 +523,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   ? 'ค้นหาตำนาน ผี หรือบรรยากาศ (เช่น วิญญาณในน้ำ, ป่าหิมะ, คำสาป)...'
                   : 'Search legends, spirits, or themes (e.g. water ghosts, snow forest)...'
               }
-              className="w-full pl-10 pr-20 py-2.5 rounded-2xl bg-slate-950/85 border border-emerald-500/40 backdrop-blur-xl text-sm text-slate-100 placeholder-slate-400 focus:outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-500/30 transition-all shadow-[0_0_25px_rgba(16,185,129,0.15)]"
+              className="w-full pl-10 pr-20 py-2.5 rounded-2xl bg-[#fcf8ee]/50 border-2 border-[#8b5a2b]/70 hover:border-[#8b5a2b] focus:border-[#5a3818] focus:ring-2 focus:ring-[#8b5a2b]/25 backdrop-blur-md text-sm font-parchment font-semibold text-[#1e1005] placeholder-[#7d5635]/80 focus:outline-none transition-all shadow-[0_4px_20px_rgba(40,20,5,0.18)]"
             />
 
             {/* Clear Button & Search Magnifier Button */}
@@ -537,7 +537,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     inputRef.current?.focus();
                   }}
                   aria-label="Clear search"
-                  className="p-1.5 rounded-full hover:bg-slate-800 text-slate-400 hover:text-white transition-colors cursor-pointer"
+                  className="p-1.5 rounded-full hover:bg-[#ebdcc0]/60 text-[#7a4618] hover:text-[#3d2008] transition-colors cursor-pointer"
                 >
                   <X className="w-3.5 h-3.5" />
                 </button>
@@ -550,7 +550,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 }}
                 aria-label={language === 'th' ? 'ค้นหาเรื่องเล่า' : 'Search folklore'}
                 title={language === 'th' ? 'ค้นหาเรื่องเล่า' : 'Search folklore'}
-                className="w-8 h-8 rounded-xl bg-gradient-to-br from-emerald-500/25 to-teal-600/30 hover:from-emerald-500/40 hover:to-teal-500/45 text-emerald-300 hover:text-white border border-emerald-500/40 hover:border-emerald-400 transition-all shadow-[0_0_12px_rgba(16,185,129,0.25)] flex items-center justify-center cursor-pointer active:scale-95"
+                className="w-8 h-8 rounded-xl bg-gradient-to-b from-[#7a4618] to-[#4e2a0c] hover:from-[#6b3c14] hover:to-[#3e2008] text-[#fbf5e8] border border-[#a8743b] shadow-sm flex items-center justify-center cursor-pointer active:scale-95 transition-all"
               >
                 <Search className="w-4 h-4" />
               </button>
@@ -559,18 +559,8 @@ export const Navbar: React.FC<NavbarProps> = ({
 
           {/* Interactive Suggestions & Results Dropdown Panel (2.5D Antique Ivory Scroll) */}
           {showDropdown && (
-            <div className="absolute left-0 right-0 top-full mt-2 rounded-2xl bg-ivory-scroll border-2 border-[#8b5a2b] shadow-[0_22px_55px_rgba(0,0,0,0.6),0_0_30px_rgba(139,90,43,0.2)] overflow-hidden z-50 animate-parchment-unroll">
-              {/* Top Scroll Roller Rod (2.5D Scroll Accent) */}
-              <div className="h-2 bg-gradient-to-r from-[#4a280d] via-[#a36f3c] to-[#4a280d] border-b border-[#5a3818]/60 shadow-inner flex items-center justify-between px-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#f4ebd5]/80" />
-                <span className="w-1.5 h-1.5 rounded-full bg-[#f4ebd5]/80" />
-              </div>
+            <div className="absolute left-0 right-0 top-full mt-2 rounded-2xl bg-ivory-scroll border-2 border-[#8b5a2b] outline outline-1 outline-[#caa772]/60 -outline-offset-3 shadow-[0_22px_55px_rgba(0,0,0,0.5),0_0_30px_rgba(139,90,43,0.15)] overflow-hidden z-50 animate-parchment-unroll">
               {renderDropdownContent(false)}
-              {/* Bottom Scroll Roller Rod */}
-              <div className="h-2 bg-gradient-to-r from-[#4a280d] via-[#a36f3c] to-[#4a280d] border-t border-[#5a3818]/60 shadow-inner flex items-center justify-between px-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#f4ebd5]/80" />
-                <span className="w-1.5 h-1.5 rounded-full bg-[#f4ebd5]/80" />
-              </div>
             </div>
           )}
         </div>
@@ -748,7 +738,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           className="relative w-full md:hidden pointer-events-auto animate-in fade-in slide-in-from-top-1 duration-150"
         >
           <div className="relative flex items-center">
-            <ScrollText className="w-4 h-4 absolute left-3.5 text-[#c4923e] pointer-events-none" />
+            <ScrollText className="w-4 h-4 absolute left-3.5 text-[#7a4618] pointer-events-none" />
             <input
               ref={mobileInputRef}
               type="text"
@@ -772,7 +762,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   ? 'ค้นหาตำนาน ผี หรือบรรยากาศ...'
                   : 'Search legends, spirits, or themes...'
               }
-              className="w-full pl-10 pr-20 py-2.5 rounded-2xl bg-slate-950/95 border border-emerald-500/40 backdrop-blur-xl text-xs sm:text-sm text-slate-100 placeholder-slate-400 focus:outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-500/30 transition-all shadow-[0_0_20px_rgba(16,185,129,0.2)]"
+              className="w-full pl-10 pr-20 py-2.5 rounded-2xl bg-[#fcf8ee]/50 border-2 border-[#8b5a2b]/70 hover:border-[#8b5a2b] focus:border-[#5a3818] focus:ring-2 focus:ring-[#8b5a2b]/25 backdrop-blur-md text-xs sm:text-sm font-parchment font-semibold text-[#1e1005] placeholder-[#7d5635]/80 focus:outline-none transition-all shadow-[0_4px_20px_rgba(40,20,5,0.18)]"
             />
 
             <div className="absolute right-2 flex items-center gap-1.5">
@@ -785,7 +775,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     mobileInputRef.current?.focus();
                   }}
                   aria-label="Clear search"
-                  className="p-1.5 rounded-full hover:bg-slate-800 text-slate-400 hover:text-white transition-colors cursor-pointer"
+                  className="p-1.5 rounded-full hover:bg-[#ebdcc0]/60 text-[#7a4618] hover:text-[#3d2008] transition-colors cursor-pointer"
                 >
                   <X className="w-3.5 h-3.5" />
                 </button>
@@ -796,7 +786,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   setIsMobileSearchFocused(true);
                   mobileInputRef.current?.focus();
                 }}
-                className="w-8 h-8 rounded-xl bg-gradient-to-br from-emerald-500/25 to-teal-600/30 text-emerald-300 border border-emerald-500/40 flex items-center justify-center cursor-pointer active:scale-95"
+                className="w-8 h-8 rounded-xl bg-gradient-to-b from-[#7a4618] to-[#4e2a0c] hover:from-[#6b3c14] hover:to-[#3e2008] text-[#fbf5e8] border border-[#a8743b] shadow-sm flex items-center justify-center cursor-pointer active:scale-95 transition-all"
               >
                 <Search className="w-4 h-4" />
               </button>
@@ -805,18 +795,8 @@ export const Navbar: React.FC<NavbarProps> = ({
 
           {/* Mobile Dropdown Panel (2.5D Antique Ivory Scroll) */}
           {isMobileSearchFocused && (
-            <div className="absolute left-0 right-0 top-full mt-2 rounded-2xl bg-ivory-scroll border-2 border-[#8b5a2b] shadow-[0_25px_60px_rgba(0,0,0,0.65),0_0_30px_rgba(139,90,43,0.2)] overflow-hidden z-[1100] max-h-[65vh] overflow-y-auto animate-parchment-unroll">
-              {/* Top Scroll Roller Rod */}
-              <div className="h-2 bg-gradient-to-r from-[#4a280d] via-[#a36f3c] to-[#4a280d] border-b border-[#5a3818]/60 shadow-inner flex items-center justify-between px-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#f4ebd5]/80" />
-                <span className="w-1.5 h-1.5 rounded-full bg-[#f4ebd5]/80" />
-              </div>
+            <div className="absolute left-0 right-0 top-full mt-2 rounded-2xl bg-ivory-scroll border-2 border-[#8b5a2b] outline outline-1 outline-[#caa772]/60 -outline-offset-3 shadow-[0_25px_60px_rgba(0,0,0,0.65),0_0_30px_rgba(139,90,43,0.2)] overflow-hidden z-[1100] max-h-[65vh] overflow-y-auto animate-parchment-unroll">
               {renderDropdownContent(true)}
-              {/* Bottom Scroll Roller Rod */}
-              <div className="h-2 bg-gradient-to-r from-[#4a280d] via-[#a36f3c] to-[#4a280d] border-t border-[#5a3818]/60 shadow-inner flex items-center justify-between px-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#f4ebd5]/80" />
-                <span className="w-1.5 h-1.5 rounded-full bg-[#f4ebd5]/80" />
-              </div>
             </div>
           )}
         </div>

@@ -13410,21 +13410,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "folklore_history_en": "Sighted in 1961 by missionary Joseph Ellis and subsequent river expeditions, resembling a surviving Spinosaurus or giant primitive snake.",
     "taboos_th": "ห้ามข้ามแม่น้ำดองโกยามบ่ายจัดเมื่อมีแนวสันคลื่นรูปฟันเลื่อยโผล่ขึ้นมาเหนือน้ำ",
     "taboos_en": "Do not cross murky Congo tributaries when a serrated ridge cuts straight through opposing currents.",
-    "image_url": "https://i.ytimg.com/vi/QgaMfMUWcSo/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/deT0MjVlD_Y/hqdefault.jpg",
     "sound_preset": "water_spirit",
     "views_count": 7,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/QgaMfMUWcSo/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/deT0MjVlD_Y/hqdefault.jpg",
         "title": "งูมา-โมเนเน (พญางูยักษ์ครีบสันหลังแห่งแม่น้ำดองโก)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=QgaMfMUWcSo",
-        "title": "A living Spinosaurus in Africa? The Legend of Nguma Monene #legends #dinosaur #mystery",
-        "thumbnail": "https://i.ytimg.com/vi/QgaMfMUWcSo/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=deT0MjVlD_Y",
+        "title": "The Full Story of the Giant Congo Snake Photo (ตำนานพญางูยักษ์แห่งลุ่มน้ำคองโก)",
+        "thumbnail": "https://i.ytimg.com/vi/deT0MjVlD_Y/hqdefault.jpg"
       }
     ],
     "created_at": "2026-10-26T03:56:20.648Z",
