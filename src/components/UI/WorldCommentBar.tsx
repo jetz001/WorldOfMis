@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import { Send, Globe2, Clock, User, Dice5 } from 'lucide-react';
+import { Send, Globe2, Clock, User, Dice5, ChevronUp, ChevronDown, MessageSquare } from 'lucide-react';
 import type { SupportedLanguage } from '../../types/ghost';
 
 export interface WorldCommentItem {
@@ -79,6 +79,24 @@ try {
   // ignore
 }
 
+function formatTimeAgo(dateStr?: string, lang: SupportedLanguage = 'th'): string {
+  if (!dateStr) return lang === 'th' ? 'เมื่อสักครู่' : 'just now';
+  try {
+    let d = dateStr.includes('T') ? new Date(dateStr) : new Date(dateStr.replace(' ', 'T') + 'Z');
+    if (isNaN(d.getTime())) d = new Date(dateStr);
+    const diffSec = Math.max(0, Math.floor((Date.now() - d.getTime()) / 1000));
+    if (diffSec < 60) return lang === 'th' ? 'เมื่อสักครู่' : 'just now';
+    const diffMin = Math.floor(diffSec / 60);
+    if (diffMin < 60) return lang === 'th' ? `${diffMin} นาทีที่แล้ว` : `${diffMin}m ago`;
+    const diffHr = Math.floor(diffMin / 60);
+    if (diffHr < 24) return lang === 'th' ? `${diffHr} ชม.ที่แล้ว` : `${diffHr}h ago`;
+    const diffDay = Math.floor(diffHr / 24);
+    return lang === 'th' ? `${diffDay} วันที่แล้ว` : `${diffDay}d ago`;
+  } catch {
+    return lang === 'th' ? 'เมื่อสักครู่' : 'just now';
+  }
+}
+
 export const WorldCommentBar: React.FC<WorldCommentBarProps> = ({
   isWorldZoomedOut,
   onZoomOut,
@@ -115,6 +133,8 @@ export const WorldCommentBar: React.FC<WorldCommentBarProps> = ({
     return diff < COOLDOWN_MS ? COOLDOWN_MS - diff : 0;
   });
   const [floatingBubbles, setFloatingBubbles] = useState<FloatingBubble[]>([]);
+  const [isRecentOpen, setIsRecentOpen] = useState(false);
+  const [recentComments, setRecentComments] = useState<WorldCommentItem[]>([]);
   const lastDesktopPartRef = useRef<number>(0);
   const seenRemoteIdsRef = useRef<Set<string>>(new Set());
   const initializedRemoteRef = useRef<boolean>(false);
@@ -181,6 +201,7 @@ export const WorldCommentBar: React.FC<WorldCommentBarProps> = ({
         const json = await res.json();
         if (json?.success && Array.isArray(json.data)) {
           const items: WorldCommentItem[] = json.data;
+          setRecentComments(items.slice(0, 5));
           if (!initializedRemoteRef.current) {
             items.forEach((it) => seenRemoteIdsRef.current.add(it.id));
             initializedRemoteRef.current = true;
@@ -252,6 +273,7 @@ export const WorldCommentBar: React.FC<WorldCommentBarProps> = ({
 
     // 1. Immediately fade-in upward to random Desktop Part 2–4 (or Mobile center), hold, then descend & fade out
     spawnFountainBubble(newItem, true);
+    setRecentComments((prev) => [newItem, ...prev.filter((it) => it.id !== newItem.id)].slice(0, 5));
 
     // 2. Persist to Cloudflare D1 backend and record returned ID so polling doesn't duplicate it
     try {
@@ -338,10 +360,82 @@ export const WorldCommentBar: React.FC<WorldCommentBarProps> = ({
             </button>
           </div>
         ) : (
-          <form
-            onSubmit={handleSend}
-            className="flex items-center gap-1.5 sm:gap-2 p-1.5 pl-2 rounded-full bg-[#070c16]/95 border border-emerald-500/50 focus-within:border-amber-400/80 backdrop-blur-2xl shadow-[0_10px_35px_rgba(0,0,0,0.95),0_0_25px_rgba(16,185,129,0.25)] transition-all"
-          >
+          <div className="flex flex-col gap-2">
+            {/* Recent 5 Chats Floating Panel */}
+            {isRecentOpen && (
+              <div className="p-3 sm:p-3.5 rounded-2xl bg-[#070c16]/95 border border-emerald-500/50 backdrop-blur-2xl shadow-[0_12px_36px_rgba(0,0,0,0.95),0_0_25px_rgba(16,185,129,0.2)] animate-in fade-in slide-in-from-bottom-2 duration-200">
+                <div className="flex items-center justify-between pb-2 mb-2 border-b border-slate-800/90 text-xs">
+                  <div className="flex items-center gap-2 font-bold text-emerald-400">
+                    <MessageSquare className="w-3.5 h-3.5 text-emerald-400" />
+                    <span>{language === 'th' ? 'แชท 5 ครั้งล่าสุด' : 'Recent 5 Messages'}</span>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => setIsRecentOpen(false)}
+                    className="p-1 text-slate-400 hover:text-amber-300 rounded-lg hover:bg-slate-800/60 transition-colors cursor-pointer"
+                    title={language === 'th' ? 'ย่อกลับ' : 'Collapse'}
+                    aria-label="Collapse recent chats"
+                  >
+                    <ChevronDown className="w-4 h-4" />
+                  </button>
+                </div>
+
+                <div className="space-y-1.5 max-h-[190px] overflow-y-auto pr-1 scrollbar-thin scrollbar-thumb-emerald-900/40">
+                  {recentComments.length === 0 ? (
+                    <div className="text-center py-4 text-xs text-slate-500">
+                      {language === 'th' ? 'ยังไม่มีข้อความล่าสุด' : 'No recent messages yet'}
+                    </div>
+                  ) : (
+                    recentComments.slice(0, 5).map((cmt, idx) => (
+                      <div
+                        key={cmt.id || idx}
+                        className="p-2 sm:p-2.5 rounded-xl bg-slate-900/70 border border-slate-800/80 hover:border-emerald-500/35 transition-colors flex flex-col gap-0.5 text-xs"
+                      >
+                        <div className="flex items-center justify-between text-[10px]">
+                          <span className="font-bold text-amber-300 truncate max-w-[150px]">
+                            {cmt.author || (language === 'th' ? 'นักสำรวจโลก' : 'World Explorer')}
+                          </span>
+                          <span className="text-slate-400 text-[9px]">
+                            {formatTimeAgo(cmt.created_at, language)}
+                          </span>
+                        </div>
+                        <p className="text-slate-200 text-xs break-words leading-relaxed">
+                          {cmt.content}
+                        </p>
+                      </div>
+                    ))
+                  )}
+                </div>
+              </div>
+            )}
+
+            {/* Input Form Bar */}
+            <form
+              onSubmit={handleSend}
+              className="flex items-center gap-1.5 sm:gap-2 p-1.5 pl-2 rounded-full bg-[#070c16]/95 border border-emerald-500/50 focus-within:border-amber-400/80 backdrop-blur-2xl shadow-[0_10px_35px_rgba(0,0,0,0.95),0_0_25px_rgba(16,185,129,0.25)] transition-all"
+            >
+              {/* Toggle ^ Button for Recent Chats */}
+              <button
+                type="button"
+                onClick={() => setIsRecentOpen((prev) => !prev)}
+                title={
+                  isRecentOpen
+                    ? (language === 'th' ? 'ย่อกลับ' : 'Collapse')
+                    : (language === 'th' ? 'ดูแชท 5 ครั้งล่าสุด (^)' : 'View recent 5 chats (^)')
+                }
+                aria-label={isRecentOpen ? 'Collapse recent chats' : 'View recent 5 chats'}
+                className={`p-1.5 sm:p-2 rounded-full border transition-all cursor-pointer shrink-0 flex items-center justify-center active:scale-90 ${
+                  isRecentOpen
+                    ? 'bg-emerald-950/90 border-emerald-400 text-emerald-200 shadow-[0_0_12px_rgba(16,185,129,0.4)]'
+                    : 'bg-slate-900/90 border-slate-700/80 hover:border-amber-400 text-amber-300 hover:text-amber-200'
+                }`}
+              >
+                {isRecentOpen ? (
+                  <ChevronDown className="w-3.5 h-3.5" />
+                ) : (
+                  <ChevronUp className="w-3.5 h-3.5" />
+                )}
+              </button>
             {/* Author Name Input with Randomize Dice */}
             <div
               className="flex items-center gap-1 px-2.5 py-1 rounded-full bg-slate-900/90 border border-slate-700/70 hover:border-amber-400/60 focus-within:border-amber-400/90 shrink-0 max-w-[125px] sm:max-w-[155px] transition-all group"
@@ -420,6 +514,7 @@ export const WorldCommentBar: React.FC<WorldCommentBarProps> = ({
               )}
             </button>
           </form>
+          </div>
         )}
       </div>
     </>
