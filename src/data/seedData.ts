@@ -16801,5 +16801,3855 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     ],
     "views_count": 0,
     "is_published": 1
+  },
+  {
+    "id": "pin-luang-phor-to-bangphli",
+    "title_th": "หลวงพ่อโต วัดบางพลีใหญ่ใน (พระพุทธรูปทองสัมฤทธิ์ลอยน้ำแห่งคลองสำโรง)",
+    "title_en": "Luang Phor To of Wat Bang Phli Yai Nai (Floating Bronze Buddha)",
+    "category": "sacred",
+    "province_th": "สมุทรปราการ (ไทย)",
+    "province_en": "Samut Prakan (Thailand)",
+    "district_th": "บางพลี",
+    "district_en": "Bang Phli",
+    "lat": 13.6062,
+    "lng": 100.7077,
+    "sound_preset": "temple_bell",
+    "story_th": "หนึ่งในตำนานพระพุทธรูปลอยน้ำสามพี่น้องสมัยอยุธยา ลอยทวนกระแสน้ำมาตามคลองสำโรง ประดิษฐานเป็นมิ่งขวัญคุ้มครองชาวบางพลี",
+    "story_en": "One of Thailand's sacred 'Three Floating Buddha' legends, which floated miraculously against the river current along Samrong Canal.",
+    "folklore_history_th": "ประเพณีรับบัวแห่งบางพลี ประเพณีทางน้ำหนึ่งเดียวในโลกที่จัดขึ้นทุกวันขึ้น 14 ค่ำ เดือน 11 เพื่อสักการะหลวงพ่อโต",
+    "folklore_history_en": "Commemorated in the annual Rub Bua (Lotus Throwing) waterborne festival celebrated every autumn.",
+    "image_url": "https://i.ytimg.com/vi/VVOSfdiUa54/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/VVOSfdiUa54/hqdefault.jpg",
+        "title": "หลวงพ่อโต วัดบางพลีใหญ่ใน (พระพุทธรูปทองสัมฤทธิ์ลอยน้ำแห่งคลองสำโรง)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=VVOSfdiUa54",
+        "title": "อาจารย์ยอด : ปาฏิหาริย์หลวงพ่อโต วัดบางพลีใหญ่ใน [น่ารู้]",
+        "thumbnail": "https://i.ytimg.com/vi/VVOSfdiUa54/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามยืนค้ำหรือเหยียบย่ำบนฐานชุกชี และห้ามลบหลู่ความศักดิ์สิทธิ์ทางสายน้ำ",
+    "taboos_en": "Never step on the sacred altar dais or insult waterborne Buddhist miracles."
+  },
+  {
+    "id": "pin-phra-buddha-chinnarat",
+    "title_th": "พระพุทธชินราช วัดพระศรีรัตนมหาธาตุวรมหาวิหาร (เทวเนรมิตแห่งเมืองสองแคว)",
+    "title_en": "Phra Buddha Chinnarat (Celestial Bronze Masterpiece of Phitsanulok)",
+    "category": "sacred",
+    "province_th": "พิษณุโลก (ไทย)",
+    "province_en": "Phitsanulok (Thailand)",
+    "district_th": "เมืองพิษณุโลก",
+    "district_en": "Mueang Phitsanulok",
+    "lat": 16.8236,
+    "lng": 100.2618,
+    "sound_preset": "temple_bell",
+    "story_th": "พระพุทธรูปสัมฤทธิ์ที่งดงามที่สุดในสยาม หล่อขึ้นโดยมีชีปะขาวลึกลับปรากฏกายช่วยเททองจนสำเร็จก่อนอันตรธานหายไป",
+    "story_en": "Regarded as the most aesthetically sublime Buddha statue in Thailand, cast with the miraculous aid of an enigmatic white-robed ascetic who vanished into the sky.",
+    "folklore_history_th": "พระมหาธรรมราชาที่ 1 (ลิไทย) ทรงหล่อขึ้นในสมัยสุโขทัย มีซุ้มเรือนแก้วไม้จำหลักอันเป็นเอกลักษณ์",
+    "folklore_history_en": "Cast during the Sukhothai kingdom featuring an intricate flaming nimbus archway.",
+    "image_url": "https://i.ytimg.com/vi/P4zc3Ai_uYg/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/P4zc3Ai_uYg/hqdefault.jpg",
+        "title": "พระพุทธชินราช วัดพระศรีรัตนมหาธาตุวรมหาวิหาร (เทวเนรมิตแห่งเมืองสองแคว)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=P4zc3Ai_uYg",
+        "title": "เปิดตำนาน \"พระพุทธชินราช\" ที่หลายคนอาจไม่เคยรู้ | ร้อยเรื่องราว",
+        "thumbnail": "https://i.ytimg.com/vi/P4zc3Ai_uYg/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามแต่งกายไม่สุภาพในพระวิหาร และห้ามส่งเสียงอึกทึก",
+    "taboos_en": "Dress respectfully and maintain reverent silence inside the grand vihara."
+  },
+  {
+    "id": "pin-queen-chamadevi-lamphun",
+    "title_th": "พระนางจามเทวีและอาถรรพ์นครหริภุญชัย (ปฐมกษัตรีย์แห่งล้านนา)",
+    "title_en": "Queen Chamadevi & The Hariphunchai Realm of Lamphun",
+    "category": "legend",
+    "province_th": "ลำพูน (ไทย)",
+    "province_en": "Lamphun (Thailand)",
+    "district_th": "เมืองลำพูน",
+    "district_en": "Mueang Lamphun",
+    "lat": 18.5772,
+    "lng": 99.0084,
+    "sound_preset": "temple_bell",
+    "story_th": "ปฐมกษัตรีย์แห่งนครหริภุญชัย ผู้ทรงปรีชาสามารถทั้งบุ๋นและบู๊ ใช้สติปัญญาและพุทธบารมีปกป้องแผ่นดินจากขุนหลวงวิลังคะ",
+    "story_en": "First monarch of the Mon Kingdom of Hariphunchai, celebrated for her spiritual wisdom and defense against invading hill-tribe chieftains.",
+    "folklore_history_th": "วัดจามเทวี (กู่กุด) เจดีย์ทรงปราสาทศิลาแลงโบราณที่บรรจุพระอัฐิของพระนาง",
+    "folklore_history_en": "Preserved at Wat Chamadevi, a 1,200-year-old stepped pyramidal stupa housing her royal ashes.",
+    "image_url": "https://i.ytimg.com/vi/HCrSBlh6bJk/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/HCrSBlh6bJk/hqdefault.jpg",
+        "title": "พระนางจามเทวีและอาถรรพ์นครหริภุญชัย (ปฐมกษัตรีย์แห่งล้านนา)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=HCrSBlh6bJk",
+        "title": "พระนางจามเทวี วีรสตรีปฐมกษัตริย์ผู้ปกครองนครหริภุญไชย | Point of View",
+        "thumbnail": "https://i.ytimg.com/vi/HCrSBlh6bJk/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามกระทำการลบหลู่พระรูปพระนางจามเทวี",
+    "taboos_en": "Avoid disrespectful actions near her memorial shrine."
+  },
+  {
+    "id": "pin-lim-ko-niew-pattani",
+    "title_th": "เจ้าแม่ลิ้มกอเหนี่ยวและคำสาปมัสยิดกรือเซะ (ปัตตานี)",
+    "title_en": "Chao Mae Lim Ko Niew & The Kru Se Mosque Curse",
+    "category": "curse",
+    "province_th": "ปัตตานี (ไทย)",
+    "province_en": "Pattani (Thailand)",
+    "district_th": "เมืองปัตตานี",
+    "district_en": "Mueang Pattani",
+    "lat": 6.8711,
+    "lng": 101.3031,
+    "sound_preset": "creepy_wind",
+    "story_th": "สตรีจีนผู้ข้ามสมุทรมาตามพี่ชาย แต่ไม่สำเร็จ จึงผูกคอตายใต้ต้นมะม่วงหิมพานต์และสาปแช่งให้มัสยิดกรือเซะไม่มีวันสร้างหลังคาเสร็จ",
+    "story_en": "A Chinese maiden who took her life under a cashew tree after failing to bring her converted brother home, cursing the mosque never to be roofed.",
+    "folklore_history_th": "ศาลเจ้าเล่งจูเกียง และงานประเพณีแห่พระลุยไฟข้ามแม่น้ำปัตตานี",
+    "folklore_history_en": "Enshrined at Leng Chu Kiang Shrine, honored by the annual fire-walking and river-crossing rites.",
+    "image_url": "https://i.ytimg.com/vi/eZCn_WpT4Kc/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/eZCn_WpT4Kc/hqdefault.jpg",
+        "title": "เจ้าแม่ลิ้มกอเหนี่ยวและคำสาปมัสยิดกรือเซะ (ปัตตานี)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=eZCn_WpT4Kc",
+        "title": "มัสยิดกรือเซะ ตำนานคำสาปเจ้าแม่ลิ้มกอเหนี่ยว",
+        "thumbnail": "https://i.ytimg.com/vi/eZCn_WpT4Kc/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามสาบานเรื่องความรักอย่างล้อเล่นที่ศาลเจ้าแม่",
+    "taboos_en": "Never make insincere romantic vows at her sanctuary."
+  },
+  {
+    "id": "pin-thao-wessuwan-chulamanee",
+    "title_th": "ท้าวเวสสุวรรณ วัดจุฬามณี (มหาราชแห่งอสูรและนายแห่งภูตผี)",
+    "title_en": "Thao Wessuwan of Wat Chulamanee (King of Asuras & Master of Spirits)",
+    "category": "sacred",
+    "province_th": "สมุทรสงคราม (ไทย)",
+    "province_en": "Samut Songkhram (Thailand)",
+    "district_th": "อัมพวา",
+    "district_en": "Amphawa",
+    "lat": 13.4158,
+    "lng": 99.9678,
+    "sound_preset": "temple_bell",
+    "story_th": "หนึ่งในท้าวจตุโลกบาลทั้งสี่ อธิบดีแห่งยักษ์และภูตผีปีศาจ ผู้คุ้มครองผู้ศรัทธาจากคุณไสยมนต์ดำและบันดาลโชคลาภทรัพย์สิน",
+    "story_en": "Guardian King of the North in Buddhist lore, venerated at Wat Chulamanee as protector against sorcery and dispenser of prosperity.",
+    "folklore_history_th": "ศูนย์กลางการสักการะท้าวเวสสุวรรณด้วยกุหลาบแดง 9 ดอกและธูปดำ",
+    "folklore_history_en": "Adorned with offerings of nine red roses and black incense sticks to ward off malevolent forces.",
+    "image_url": "https://i.ytimg.com/vi/sm68zv77BFg/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/sm68zv77BFg/hqdefault.jpg",
+        "title": "ท้าวเวสสุวรรณ วัดจุฬามณี (มหาราชแห่งอสูรและนายแห่งภูตผี)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=sm68zv77BFg",
+        "title": "\"กนก\" ย้อนตำนาน วัดจุฬามณี จากเรื่องราว \"หลวงพ่ออิฏฐ์\" และนิมิตท้าวเวสสุวรรณที่กลายเป็นภาพจำของวัด",
+        "thumbnail": "https://i.ytimg.com/vi/sm68zv77BFg/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามถวายสิ่งของมึนเมาเด็ดขาด",
+    "taboos_en": "Never offer alcoholic or illicit substances at the shrine."
+  },
+  {
+    "id": "pin-phraya-tao-ngoi-sakonnakhon",
+    "title_th": "พญาเต่างอย (พญาเต่าหินศักดิ์สิทธิ์แห่งลำน้ำพุง สกลนคร)",
+    "title_en": "Phraya Tao Ngoi (The Sacred Stone Turtle of Sakon Nakhon)",
+    "category": "legend",
+    "province_th": "สกลนคร (ไทย)",
+    "province_en": "Sakon Nakhon (Thailand)",
+    "district_th": "เต่างอย",
+    "district_en": "Tao Ngoi",
+    "lat": 16.9961,
+    "lng": 104.1689,
+    "sound_preset": "water_spirit",
+    "story_th": "พญาเต่าหินศักดิ์สิทธิ์ริมน้ำพุง สัญลักษณ์แห่งความอุดมสมบูรณ์ อายุยืนยาว และโชคลาภที่ชาวภูไทนับถือมากว่า 400 ปี",
+    "story_en": "Revered giant stone turtle guardian symbolizing longevity and abundance discovered by migrating Phu Thai settlers four centuries ago.",
+    "folklore_history_th": "รูปปั้นจำลองพญาเต่าประดิษฐานดอกบัวแปดทิศและพระบรมสารีริกธาตุ",
+    "folklore_history_en": "Inscribed with Buddhist symbols and visited by pilgrims seeking healing and fortune.",
+    "image_url": "https://i.ytimg.com/vi/_c_17LlnfBI/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/_c_17LlnfBI/hqdefault.jpg",
+        "title": "พญาเต่างอย (พญาเต่าหินศักดิ์สิทธิ์แห่งลำน้ำพุง สกลนคร)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=_c_17LlnfBI",
+        "title": "ประวัติพญาเต่างอย ,จ.สกลนคร,ศักสิทธิ์จริงหรือไม่",
+        "thumbnail": "https://i.ytimg.com/vi/_c_17LlnfBI/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามขูดขีดเนื้อหินบนตัวเต่า",
+    "taboos_en": "Do not deface or scratch the stone turtle shell."
+  },
+  {
+    "id": "pin-soi-dok-mak-wat-pananchoeng",
+    "title_th": "เจ้าแม่สร้อยดอกหมาก (ตำนานรักสามเส้าแห่งวัดพนัญเชิง อยุธยา)",
+    "title_en": "Princess Soi Dok Mak (Tragic Chinese Romance of Ayutthaya)",
+    "category": "legend",
+    "province_th": "พระนครศรีอยุธยา (ไทย)",
+    "province_en": "Phra Nakhon Si Ayutthaya (Thailand)",
+    "district_th": "พระนครศรีอยุธยา",
+    "district_en": "Phra Nakhon Si Ayutthaya",
+    "lat": 14.3444,
+    "lng": 100.5786,
+    "sound_preset": "whisper",
+    "story_th": "พระราชธิดาบุญธรรมจักรพรรดิจีนผู้กลั้นใจสิ้นพระชนม์ด้วยความน้อยใจในรักริมแม่น้ำเจ้าพระยา ประดิษฐานศาลเคียงคู่หลวงพ่อโต",
+    "story_en": "Adopted imperial Chinese princess who perished of heartbreak on her royal ship, now enshrined beside Wat Phanan Choeng as patron of faithful love.",
+    "folklore_history_th": "ศาลเจ้าสถาปัตยกรรมจีนโบราณริมน้ำ ผู้คนนิยมมาขอพรเรื่องความรักและคู่ครอง",
+    "folklore_history_en": "A historic Sino-Siamese waterfront pavilion sought by couples seeking blessed marriages and children.",
+    "image_url": "https://i.ytimg.com/vi/zejX4MJ2Yjk/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/zejX4MJ2Yjk/hqdefault.jpg",
+        "title": "เจ้าแม่สร้อยดอกหมาก (ตำนานรักสามเส้าแห่งวัดพนัญเชิง อยุธยา)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=zejX4MJ2Yjk",
+        "title": "เจ้าแม่สร้อยดอกหมาก -ตำนานรักเลือดมังกร ณ วัดพนัญเชิง l ตำนานนี้มีที่มา",
+        "thumbnail": "https://i.ytimg.com/vi/zejX4MJ2Yjk/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามถวายเนื้อสุกรเด็ดขาด",
+    "taboos_en": "Never offer pork within the shrine perimeter."
+  },
+  {
+    "id": "pin-luang-phor-kasem-lampang",
+    "title_th": "หลวงพ่อเกษม เขมโก (พระอริยสงฆ์สรีระไม่เน่าเปื่อยแห่งสุสานไตรลักษณ์)",
+    "title_en": "Luang Phor Kasem of Susarn Trailak (Incorruptible Monk of Lampang)",
+    "category": "sacred",
+    "province_th": "ลำปาง (ไทย)",
+    "province_en": "Lampang (Thailand)",
+    "district_th": "เมืองลำปาง",
+    "district_en": "Mueang Lampang",
+    "lat": 18.3182,
+    "lng": 99.5264,
+    "sound_preset": "temple_bell",
+    "story_th": "พระเถระสายวิปัสสนากรรมฐานผู้ละทิ้งฐานันดรศักดิ์ไปจำพรรษาในป่าช้า สรีระสังขารของท่านไม่เน่าเปื่อยหลังมรณภาพจนถึงปัจจุบัน",
+    "story_en": "Aristocratic monk who renounced royal lineage to meditate in burial grounds; his physical body remains incorruptible decades after passing.",
+    "folklore_history_th": "สุสานไตรลักษณ์ สถานที่พำนักสมถะและศูนย์รวมศรัทธาพระเกจิอาจารย์ผู้มีพลังจิตสูงส่ง",
+    "folklore_history_en": "Susarn Trailak hermitage, revered throughout Thailand for miraculous amulet blessings and spiritual purity.",
+    "image_url": "https://i.ytimg.com/vi/RBb3H9a2fSM/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/RBb3H9a2fSM/hqdefault.jpg",
+        "title": "หลวงพ่อเกษม เขมโก (พระอริยสงฆ์สรีระไม่เน่าเปื่อยแห่งสุสานไตรลักษณ์)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=RBb3H9a2fSM",
+        "title": "หลวงพ่อเกษม เขมโก ประวัติ ปฏิปทา ปาฏิหาริย์พระเครื่อง",
+        "thumbnail": "https://i.ytimg.com/vi/RBb3H9a2fSM/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามส่งเสียงดังในบริเวณสุสานและห้ามลบหลู่สรีระสังขาร",
+    "taboos_en": "Maintain absolute quiet and reverent demeanor around his sacred reliquary glass coffin."
+  },
+  {
+    "id": "pin-wiang-kum-kam-ancient-city",
+    "title_th": "เวียงกุมกาม นครโบราณใต้พิภพแห่งพญามังราย (สารภี เชียงใหม่)",
+    "title_en": "Wiang Kum Kam (The Submerged Ancient Underground Capital)",
+    "category": "legend",
+    "province_th": "เชียงใหม่ (ไทย)",
+    "province_en": "Chiang Mai (Thailand)",
+    "district_th": "สารภี",
+    "district_en": "Saraphi",
+    "lat": 18.7516,
+    "lng": 99.0019,
+    "sound_preset": "creepy_wind",
+    "story_th": "อดีตเมืองหลวงแห่งแรกของล้านนาที่ถูกน้ำท่วมใหญ่และจมอยู่ใต้ดินโคลนนานกว่า 700 ปี ก่อนถูกขุดค้นพบซากวัดโบราณกว่า 40 แห่ง",
+    "story_en": "The lost first capital of King Mangrai, submerged beneath catastrophic Ping River mud floods for over 700 years until modern excavation revealed subterranean brick temples.",
+    "folklore_history_th": "วัดเจดีย์เหลี่ยมและวัดช้างค้ำ ปรากฏการณ์อาถรรพ์และเสียงระฆังโบราณดังก้องจากใต้ดิน",
+    "folklore_history_en": "Noted for ancient Hariphunchai-style stupas where locals recount phantom horse bells echoing through excavated ruins.",
+    "image_url": "https://i.ytimg.com/vi/Tx-kG8eRxFo/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/Tx-kG8eRxFo/hqdefault.jpg",
+        "title": "เวียงกุมกาม นครโบราณใต้พิภพแห่งพญามังราย (สารภี เชียงใหม่)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=Tx-kG8eRxFo",
+        "title": "เปิดปม \"เวียงกุมกาม\" ล่มสลาย กลายเป็นอดีตที่ถูกฝังกลบใต้ผืนปฐพี I ประวัติศาสตร์นอกตำรา EP. 118",
+        "thumbnail": "https://i.ytimg.com/vi/Tx-kG8eRxFo/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามหยิบฉวยก้อนอิฐหรือโบราณวัตถุออกจากบริเวณเมืองเก่า",
+    "taboos_en": "Strictly prohibited to remove ancient bricks or pottery shards from archaeological sites."
+  },
+  {
+    "id": "pin-manohra-southern-shadow",
+    "title_th": "โนราโรงครูและอาถรรพ์ผีมโนราห์ (พิธีผูกผ้าแก้บนและไหว้ครูหมอภาคใต้)",
+    "title_en": "Nora Rong Khru & Ancestral Shamanic Dance Rites",
+    "category": "sacred",
+    "province_th": "พัทลุง (ไทย)",
+    "province_en": "Phatthalung (Thailand)",
+    "district_th": "ควนขนุน",
+    "district_en": "Khuan Khanun",
+    "lat": 7.7347,
+    "lng": 100.0094,
+    "sound_preset": "temple_bell",
+    "story_th": "นาฏศิลป์ศักดิ์สิทธิ์โบราณที่สืบทอดสายเลือดทางจิตวิญญาณ หากลูกหลานไม่จัดพิธีไหว้ครูหมอโนราห์ จะเกิด 'เหยียบเสน' หรือล้มป่วยด้วยโรคประหลาด",
+    "story_en": "Sacred ancestral performance art inscribed by UNESCO. Failure of descendants to pay homage to ancestral teacher spirits results in ancestral affliction cured only through trance possession.",
+    "folklore_history_th": "มรดกภูมิปัญญาทางวัฒนธรรมที่จับต้องไม่ได้ของยูเนสโก และเทริดทรงพญาหงส์อันศักดิ์สิทธิ์",
+    "folklore_history_en": "UNESCO Intangible Cultural Heritage rooted in southern Siamese animism and the divine swan-crowned headdress.",
+    "image_url": "https://i.ytimg.com/vi/Sb5go3gC4fY/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/Sb5go3gC4fY/hqdefault.jpg",
+        "title": "โนราโรงครูและอาถรรพ์ผีมโนราห์ (พิธีผูกผ้าแก้บนและไหว้ครูหมอภาคใต้)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=Sb5go3gC4fY",
+        "title": "ก(ล)างเมือง : โนราโรงครู (4 เม.ย. 60)",
+        "thumbnail": "https://i.ytimg.com/vi/Sb5go3gC4fY/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามก้าวข้ามเทริดหรือเครื่องดนตรีโนราเด็ดขาด",
+    "taboos_en": "Never step across the consecrated swan headdress (Therd) or ritual instruments."
+  },
+  {
+    "id": "pin-naga-ananta-nongkhai-bridge",
+    "title_th": "พญาอนันตนาคราช 7 เศียร สะพานมิตรภาพไทย-ลาว (หนองคาย)",
+    "title_en": "Phraya Ananta Nagaraja of the Mekong River Border",
+    "category": "sacred",
+    "province_th": "หนองคาย (ไทย)",
+    "province_en": "Nong Khai (Thailand)",
+    "district_th": "เมืองหนองคาย",
+    "district_en": "Mueang Nong Khai",
+    "lat": 17.8825,
+    "lng": 102.7303,
+    "sound_preset": "water_spirit",
+    "story_th": "พญานาคราชเจ็ดเศียรกายสีทองอร่าม บัลลังก์แห่งองค์พระนารายณ์ เชื่อว่ามีวังบาดาลอยู่ใต้ร่องน้ำลึกของสะพานมิตรภาพ คอยคุ้มครองสายน้ำโขง",
+    "story_en": "The seven-headed supreme serpent deity whose underwater palace lies within the abyssal trenches of the Mekong border, revered as sovereign of aquatic realms.",
+    "folklore_history_th": "ลานพญานาคคู่ริมฝั่งโขง จุดชมบั้งไฟพญานาคและพิธีลอยประทีปขอขมาพระแม่คงคา",
+    "folklore_history_en": "Grand riverside shrine where locals gather during the Naga Fireball phenomena to offer flower floats to river nagas.",
+    "image_url": "https://i.ytimg.com/vi/3iVlC-b5WBQ/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/3iVlC-b5WBQ/hqdefault.jpg",
+        "title": "พญาอนันตนาคราช 7 เศียร สะพานมิตรภาพไทย-ลาว (หนองคาย)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=3iVlC-b5WBQ",
+        "title": "ปาฏิหาริย์ \"พญาศรีสัตตนาคราช\" ผู้สร้างแม่น้ำโขง | เรื่องเล่าหลังเที่ยงคืน EP.71",
+        "thumbnail": "https://i.ytimg.com/vi/3iVlC-b5WBQ/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามทิ้งสิ่งปฏิกูลลงในลำน้ำโขงบริเวณหน้าศาลพญานาค",
+    "taboos_en": "Never discard trash or profane waste into the Mekong waters facing the shrine."
+  },
+  {
+    "id": "pin-luang-phor-koon-wat-banrai",
+    "title_th": "หลวงพ่อคูณ ปริสุทโธ และปาฏิหาริย์เหรียญเหนียวแคล้วคลาด (วัดบ้านไร่ ด่านขุนทด)",
+    "title_en": "Luang Phor Koon of Wat Ban Rai (The Saint of Dan Khun Thot)",
+    "category": "sacred",
+    "province_th": "นครราชสีมา (ไทย)",
+    "province_en": "Nakhon Ratchasima (Thailand)",
+    "district_th": "ด่านขุนทด",
+    "district_en": "Dan Khun Thot",
+    "lat": 15.2974,
+    "lng": 101.7371,
+    "sound_preset": "temple_bell",
+    "story_th": "พระเกจิอาจารย์ผู้มีบารมีเปี่ยมล้น เจ้าของท่าเคาะหัวประทานพรและวิชาฝังตะกรุดทองคำใต้ท้องแขน วัตถุมงคลของท่านเลื่องลือเรื่องแคล้วคลาดจากอุบัติเหตุรุนแรง",
+    "story_en": "Beloved Isan master monk famed for tapping followers on the head with rolled tobacco and inserting gold protective takrut under forearm skin, creating legends of invulnerability.",
+    "folklore_history_th": "วิหารเทพวิทยาคม (วิหารเซรามิกรูปช้างยักษ์) แหล่งพุทธศิลป์โมเสกเซรามิกที่ใหญ่ที่สุดในเอเชีย",
+    "folklore_history_en": "Home to the colossal elephant-shaped ceramic mosaic shrine, the largest Buddhist mosaic sanctuary in Asia.",
+    "image_url": "https://i.ytimg.com/vi/BLkaIGzf03g/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/BLkaIGzf03g/hqdefault.jpg",
+        "title": "หลวงพ่อคูณ ปริสุทโธ และปาฏิหาริย์เหรียญเหนียวแคล้วคลาด (วัดบ้านไร่ ด่านขุนทด)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=BLkaIGzf03g",
+        "title": "ไอ้เวรนรก!!บังอาจมายิงกู!! ตำนานปาฎิหาริย์เหตุการณ์ออกธุดงค์เดือด! หลวงพ่อคูณ ปริสุทโธ วัดบ้านไร่",
+        "thumbnail": "https://i.ytimg.com/vi/BLkaIGzf03g/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามนำวัตถุมงคลของท่านไปใช้ในการกระทำผิดศีลธรรมหรือรังแกผู้อื่น",
+    "taboos_en": "Never employ blessed amulets for illicit deeds or violence against the innocent."
+  },
+  {
+    "id": "pin-snake-shrine-rama2",
+    "title_th": "ศาลเจ้าพ่องูจงอางและแม่ย่างูอ้น (อาถรรพ์ถนนพระราม 2)",
+    "title_en": "Chao Pho Ngu Chong-ang (The Sacred King Cobra Shrine of Rama 2)",
+    "category": "curse",
+    "province_th": "กรุงเทพมหานคร (ไทย)",
+    "province_en": "Bangkok (Thailand)",
+    "district_th": "บางขุนเทียน",
+    "district_en": "Bang Khun Thian",
+    "lat": 13.6548,
+    "lng": 100.4357,
+    "sound_preset": "creepy_wind",
+    "story_th": "อาถรรพ์เมื่อครั้งตัดถนนพระราม 2 คนงานฝันเห็นพญางูขอเวลาคลอดลูก 7 วัน แต่รถไถเผลอไถทับรังงูตายหมด จนเกิดอุบัติเหตุลึกลับต่อเนื่องจึงต้องสร้างศาลขอขมา",
+    "story_en": "Haunted lore from the construction of Rama 2 Highway. A mother king cobra pleaded in a dream for 7 days to lay eggs, but bulldozers crushed the nest, sparking lethal road accidents until the shrine appeased her spirit.",
+    "folklore_history_th": "ศาลไม้โบราณที่เต็มไปด้วยรูปปั้นงูจงอางนับหมื่นตัวและเสียงล่ำลือเรื่องการให้โชคลาภแก่ผู้รอดชีวิต",
+    "folklore_history_en": "Surrounded by thousands of coiled serpent figurines where drivers honk horns to request safe passage.",
+    "image_url": "https://i.ytimg.com/vi/Vt3XB5IGRB8/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/Vt3XB5IGRB8/hqdefault.jpg",
+        "title": "ศาลเจ้าพ่องูจงอางและแม่ย่างูอ้น (อาถรรพ์ถนนพระราม 2)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=Vt3XB5IGRB8",
+        "title": "เปิดตำนานและความเชื่อ “ศาลเจ้าแม่งูจงอาง”  พระราม2 | TOPUPDATE",
+        "thumbnail": "https://i.ytimg.com/vi/Vt3XB5IGRB8/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามทำร้ายงูทุกชนิดในรัศมีศาล และห้ามผิดคำสาบานเรื่องตัวเลขเด็ดขาด",
+    "taboos_en": "Never harm any reptile near the shrine; always fulfill lottery vows promptly."
+  },
+  {
+    "id": "pin-luang-pu-thuat-sea-miracle",
+    "title_th": "หลวงปู่ทวด วัดช้างให้ (ปาฏิหาริย์เหยียบน้ำทะเลจืดแห่งเกาะนุ้ยนอก)",
+    "title_en": "Luang Pu Thuat (The Sea-Purifying Master of Wat Chang Hai)",
+    "category": "sacred",
+    "province_th": "ปัตตานี (ไทย)",
+    "province_en": "Pattani (Thailand)",
+    "district_th": "โคกโพธิ์",
+    "district_en": "Khok Pho",
+    "lat": 6.6669,
+    "lng": 101.1717,
+    "sound_preset": "temple_bell",
+    "story_th": "มหาเถระแห่งกรุงศรีอยุธยา เมื่อเรือโจรสลัดขาดน้ำกลางทะเล ท่านได้ยื่นเท้าเหยียบลงในน้ำทะเลจนน้ำเค็มกลายเป็นน้ำจืดให้กะลาสีดื่มรอดชีวิต",
+    "story_en": "Venerated 16th-century Siamese saint who saved pirate crews dying of thirst in the Gulf of Thailand by dipping his foot into seawater, miraculously transmuting brine into fresh sweet drinking water.",
+    "folklore_history_th": "บ่อน้ำจืดกลางทะเล ณ เกาะนุ้ยนอก ขนอม และรูปหล่อหลวงปู่ทวดอันศักดิ์สิทธิ์วัดช้างให้",
+    "folklore_history_en": "Marked by an actual freshwater intertidal footprint spring on Koh Nui Nok and celebrated across Buddhist Southeast Asia.",
+    "image_url": "https://i.ytimg.com/vi/BrvnoHaDnsA/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/BrvnoHaDnsA/hqdefault.jpg",
+        "title": "หลวงปู่ทวด วัดช้างให้ (ปาฏิหาริย์เหยียบน้ำทะเลจืดแห่งเกาะนุ้ยนอก)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=BrvnoHaDnsA",
+        "title": "เปิดตำนานศักดิ์สิทธิ์ หลวงปู่ทวด วัดช้างไห้ เหยียบน้ำทะเลจืด (จบในคลิป)(เสียงจริง/ไม่มีโฆษณาแทรก)",
+        "thumbnail": "https://i.ytimg.com/vi/BrvnoHaDnsA/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามสวมพระเครื่องของท่านขณะก่อกรรมชั่วหรือคิดคดทรยศแผ่นดิน",
+    "taboos_en": "Those who commit treachery or malicious harm will lose his miraculous protection."
+  },
+  {
+    "id": "pin-croc-mae-thaptim-canal",
+    "title_th": "จระเข้เจ้าแม่ทับทิม คลองบางกอกใหญ่ (อสูรจระเข้เผือกแห่งคลองหลวง)",
+    "title_en": "The White Crocodile of Chao Mae Thapthim (Bangkok Yai Canal)",
+    "category": "monster",
+    "province_th": "กรุงเทพมหานคร (ไทย)",
+    "province_en": "Bangkok (Thailand)",
+    "district_th": "บางกอกใหญ่",
+    "district_en": "Bangkok Yai",
+    "lat": 13.7258,
+    "lng": 100.4853,
+    "sound_preset": "water_spirit",
+    "story_th": "ตำนานจระเข้เผือกกายสิทธิ์ผู้ภักดีต่อศาลเจ้าแม่ทับทิมริมคลองบางกอกใหญ่ เชื่อว่าเป็นจระเข้บริวารที่คอยปกป้องคุ้มครองคุ้งน้ำและเตือนภัยน้ำท่วม",
+    "story_en": "The sacred white albino crocodile said to guard the water temple of Chao Mae Thapthim along Bangkok Yai canal, surfacing to warn locals before major tidal floods.",
+    "folklore_history_th": "ศาลเจ้าแม่ทับทิมเชิงสะพานอนุทินสวัสดิ์ ศูนย์รวมชาวไทยเชื้อสายจีนและชุมชนริมคลองสายประวัติศาสตร์",
+    "folklore_history_en": "Historic canal-side shrine with carved crocodile totems venerated by local boat operators.",
+    "image_url": "https://i.ytimg.com/vi/M2QG5Jx5ZhE/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/M2QG5Jx5ZhE/hqdefault.jpg",
+        "title": "จระเข้เจ้าแม่ทับทิม คลองบางกอกใหญ่ (อสูรจระเข้เผือกแห่งคลองหลวง)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=M2QG5Jx5ZhE",
+        "title": "เจ้าลุง: ตำนานจระเข้เจ้า..สู่ \"เมืองบาดาล\" แห่งลุ่มน้ำตาปี l ตำนานนี้มีที่มา",
+        "thumbnail": "https://i.ytimg.com/vi/M2QG5Jx5ZhE/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามรับประทานเนื้อจระเข้ในวันพระ และห้ามทิ้งขยะลงหน้าศาลเจ้า",
+    "taboos_en": "Avoid consuming crocodile flesh on holy days; maintain pristine canal waters before the shrine."
+  },
+  {
+    "id": "pin-wat-mahathat-nakhon-shadow",
+    "title_th": "พระบรมธาตุเมืองนคร (เจดีย์ไร้เงาแห่งวัดพระมหาธาตุวรมหาวิหาร)",
+    "title_en": "The Shadowless Pagoda of Wat Phra Mahathat (Nakhon Si Thammarat)",
+    "category": "sacred",
+    "province_th": "นครศรีธรรมราช (ไทย)",
+    "province_en": "Nakhon Si Thammarat (Thailand)",
+    "district_th": "เมืองนครศรีธรรมราช",
+    "district_en": "Mueang Nakhon Si Thammarat",
+    "lat": 8.4117,
+    "lng": 99.9661,
+    "sound_preset": "temple_bell",
+    "story_th": "พระมหาธาตุเจดีย์ทรงระฆังคว่ำยอดหุ้มทองคำแท้กว่า 600 กิโลกรัม มีความอัศจรรย์ตรงที่ 'เงาขององค์พระธาตุไม่เคยทอดลงสู่พื้นดิน' ไม่ว่าดวงอาทิตย์จะส่องทิศทางใด",
+    "story_en": "Ancient 13th-century golden-tipped stupa renowned for the miraculous phenomenon where its spire shadow never falls upon the ground regardless of the sun's position.",
+    "folklore_history_th": "ประเพณีแห่ผ้าขึ้นธาตุ วันมาฆบูชาและวิสาขบูชา ที่พุทธศาสนิกชนนำผ้าพระบฏพันรอบองค์พระบรมธาตุ",
+    "folklore_history_en": "Focal point of the Hae Pha Khuen That tradition where saffron robes are paraded around the shadowless spire.",
+    "image_url": "https://i.ytimg.com/vi/ii3qD_r21Bc/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/ii3qD_r21Bc/hqdefault.jpg",
+        "title": "พระบรมธาตุเมืองนคร (เจดีย์ไร้เงาแห่งวัดพระมหาธาตุวรมหาวิหาร)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=ii3qD_r21Bc",
+        "title": "เยี่ยมชมตำนาน พระธาตุไร้เงา มหัศจรรย์มรดกโลกนครศรีธรรมราช",
+        "thumbnail": "https://i.ytimg.com/vi/ii3qD_r21Bc/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามสวมรองเท้าและห้ามกางร่มภายในลานพระทักษิณรอบองค์พระธาตุ",
+    "taboos_en": "Never wear footwear or open umbrellas within the inner sacred circumambulation courtyard."
+  },
+  {
+    "id": "pin-phi-khomot-nonghan",
+    "title_th": "ผีโขมดแห่งทะเลสาบหนองหาร (ดวงไฟวิญญาณเร่ร่อนกลางบึงน้ำสกลนคร)",
+    "title_en": "The Khomot Willow-the-Wisp of Lake Nong Han",
+    "category": "ghost",
+    "province_th": "สกลนคร (ไทย)",
+    "province_en": "Sakon Nakhon (Thailand)",
+    "district_th": "เมืองสกลนคร",
+    "district_en": "Mueang Sakon Nakhon",
+    "lat": 17.1569,
+    "lng": 104.1853,
+    "sound_preset": "whisper",
+    "story_th": "ดวงไฟสีเขียวอมฟ้าที่ลอยวูบวาบเหนือผิวน้ำและดงกกยามดึก เชื่อว่าเป็นวิญญาณคนจมน้ำตายที่ออกหากินสัตว์น้ำสดๆ และล่อลวงพายเรือให้หลงทิศสู่ร่องน้ำลึก",
+    "story_en": "Spectral pale-blue orbs floating above the expansive freshwater marsh of Nong Han, said to be aquatic spirits luring night fishermen into treacherous abyssal sinkholes.",
+    "folklore_history_th": "ตำนานเมืองหนองหารหลวงและหนองหานน้อยที่พังทลายลงกลายเป็นทะเลสาบจากพิโรธพญานาคในเรื่องผาแดงนางไอ่",
+    "folklore_history_en": "Intertwined with the Phadaeng Nang Ai epic, where an entire ancient kingdom sank beneath floodwaters under nagic wrath.",
+    "image_url": "https://i.ytimg.com/vi/SIitw1_UUqg/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/SIitw1_UUqg/hqdefault.jpg",
+        "title": "ผีโขมดแห่งทะเลสาบหนองหาร (ดวงไฟวิญญาณเร่ร่อนกลางบึงน้ำสกลนคร)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=SIitw1_UUqg",
+        "title": "หนองหาน (จ.สกลนคร) | เรื่องเล่าหลอน Podcast EP.203",
+        "thumbnail": "https://i.ytimg.com/vi/SIitw1_UUqg/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามเป่านกหวีดหรือผิวปากทักดวงไฟกลางบึงยามค่ำคืน",
+    "taboos_en": "Never whistle or point toward floating marsh lights in the dead of night."
+  },
+  {
+    "id": "pin-cave-ghost-man-maehongson",
+    "title_th": "ถ้ำผีแมนและโลงศพไม้ท่อนซุงพันปี (แม่ฮ่องสอน)",
+    "title_en": "Spirit Cave & Log Coffins of the Highland Cave-Dwellers",
+    "category": "legend",
+    "province_th": "แม่ฮ่องสอน (ไทย)",
+    "province_en": "Mae Hong Son (Thailand)",
+    "district_th": "ปางมะผ้า",
+    "district_en": "Pang Mapha",
+    "lat": 19.5244,
+    "lng": 98.2417,
+    "sound_preset": "creepy_wind",
+    "story_th": "ถ้ำหินปูนบนหน้าผาสูงชันที่พบโลงศพไม้สักแกะสลักรูปหัวคนและสัตว์อายุราวกว่า 2,000 ปี ชาวบ้านเชื่อว่าเป็นถ้ำของมนุษย์ยักษ์โบราณและมีวิญญาณผีแมนสถิตคุ้มครอง",
+    "story_en": "Perched high on limestone cliffs, this burial cave houses ancient carved teakwood log coffins dating back over two millennia, guarded by highland ancestor spirits.",
+    "folklore_history_th": "วัฒนธรรมโลงไม้โบราณแห่งลุ่มแม่น้ำของ-แม่น้ำลาง การค้นพบทางโบราณคดีที่สะท้อนความเชื่อเรื่องวิญญาณของมนุษย์ยุคก่อนประวัติศาสตร์",
+    "folklore_history_en": "A prehistoric cliffside necropolis reflecting ancient animistic rituals for the afterlife in northern Thailand.",
+    "image_url": "https://i.ytimg.com/vi/lOcAaW2YDLg/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/lOcAaW2YDLg/hqdefault.jpg",
+        "title": "ถ้ำผีแมนและโลงศพไม้ท่อนซุงพันปี (แม่ฮ่องสอน)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=lOcAaW2YDLg",
+        "title": "สำรวจถ้ำผีแมนโลงลงรัก ถอดรหัสมนุษย์โบราณ | สารคดี รากสุวรรณภูมิ",
+        "thumbnail": "https://i.ytimg.com/vi/lOcAaW2YDLg/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามแตะต้อง แตะเนื้อไม้ หรือเคลื่อนย้ายโลงศพโบราณเด็ดขาด",
+    "taboos_en": "Strictly forbidden to touch, shake, or disturb the prehistoric wooden sarcophagi."
+  },
+  {
+    "id": "pin-nue-chimera-kyoto",
+    "title_th": "นูเอะ (อสูรไคเมร่าหัวลิงตัวทานุกิหางงูแห่งเกียวโต)",
+    "title_en": "Nue (The Black Cloud Chimera of Kyoto)",
+    "category": "monster",
+    "province_th": "เกียวโต (ญี่ปุ่น)",
+    "province_en": "Kyoto (Japan)",
+    "district_th": "พระราชวังเกียวโต",
+    "district_en": "Kyoto Imperial Palace",
+    "lat": 35.0254,
+    "lng": 135.7621,
+    "sound_preset": "creepy_wind",
+    "story_th": "อสูรในตำนานที่มีหัวเป็นลิง ตัวเป็นทานุกิ ขาเป็นเสือ และหางเป็นงูพิษ ส่งเสียงร้องโหยหวนเหมือนนกปรอด ปรากฏในก้อนเมฆดำทำให้องค์จักรพรรดิประชวรจนซามูไรมินาโมโตะ โนะ โยริมาสะยิงธนูสังหาร",
+    "story_en": "A monstrous chimera with a monkey's head, tanuki's torso, tiger's claws, and a venomous serpent tail. It enveloped the Imperial Palace in black thunderclouds until slain by master archer Minamoto no Yorimasa.",
+    "folklore_history_th": "บันทึกในมหากาพย์เฮเกะโมโนงาตาริ และหลุมฝังศพนูเอะ (นูเอะซึกะ) ริมแม่น้ำคาโมะ",
+    "folklore_history_en": "Chronacled in the Tale of the Heike with sacred burial mounds (Nuezuka) preserving arrows from the legendary battle.",
+    "image_url": "https://i.ytimg.com/vi/FzlYpfG6frc/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/FzlYpfG6frc/hqdefault.jpg",
+        "title": "นูเอะ (อสูรไคเมร่าหัวลิงตัวทานุกิหางงูแห่งเกียวโต)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=FzlYpfG6frc",
+        "title": "Nue – The Japanese Chimera – Japanese Folklore",
+        "thumbnail": "https://i.ytimg.com/vi/FzlYpfG6frc/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามเลียนแบบเสียงร้องโหยหวนของนกปรอดยามค่ำคืนในป่าไผ่",
+    "taboos_en": "Never imitate the eerie whistling cry of night thrushes inside Kyoto bamboo groves."
+  },
+  {
+    "id": "pin-ubume-bird-ghost",
+    "title_th": "อุบุเมะ (วิญญาณสตรีตกเลือดคลอดบุตรและนกพรากวิญญาณเด็ก)",
+    "title_en": "Ubume (The Childbirth Ghost of Japanese Lore)",
+    "category": "ghost",
+    "province_th": "นางาซากิ (ญี่ปุ่น)",
+    "province_en": "Nagasaki (Japan)",
+    "district_th": "แม่น้ำชิมาบาระ",
+    "district_en": "Shimabara River",
+    "lat": 32.7894,
+    "lng": 130.3706,
+    "sound_preset": "whisper",
+    "story_th": "วิญญาณหญิงสาวที่เสียชีวิตขณะคลอดบุตร มักปรากฏกายริมสะพานยามพลบค่ำ ร้องไห้ขอให้คนเดินผ่านช่วยอุ้มลูก เมื่อรับเด็กมาอุ้ม เด็กจะค่อยๆ หนักขึ้นจนกลายเป็นก้อนหินถ่วงจมน้ำ",
+    "story_en": "The tragic apparition of a woman who died during childbirth. She wanders dusk crossroads begging travelers to cradle her swaddled infant, which gradually turns into crushing heavy stone.",
+    "folklore_history_th": "ภาพเขียนม้วนโยไกยุคเอโดะของโทริยามะ เซกิเอ็น และความเชื่อเรื่องการปลอบประโลมวิญญาณแม่ลูก",
+    "folklore_history_en": "Illustrated in Toriyama Sekien's compendiums, symbolizing the emotional grief of perinatal loss in feudal Japan.",
+    "image_url": "https://i.ytimg.com/vi/9gXvBelYWqI/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/9gXvBelYWqI/hqdefault.jpg",
+        "title": "อุบุเมะ (วิญญาณสตรีตกเลือดคลอดบุตรและนกพรากวิญญาณเด็ก)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=9gXvBelYWqI",
+        "title": "Yokai Explained: Ubume, Women Who Died in Childbirth",
+        "thumbnail": "https://i.ytimg.com/vi/9gXvBelYWqI/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามรับห่อผ้าเด็กจากหญิงแปลกหน้าหลังพระอาทิตย์ตกดิน",
+    "taboos_en": "Never accept a swaddled bundle from crying solitary women after sundown."
+  },
+  {
+    "id": "pin-enenra-smoke-monster",
+    "title_th": "เอเน็นระ (ปีศาจควันเถ้าถ่านผู้มองเห็นได้เฉพาะคนจิตบริสุทธิ์)",
+    "title_en": "Enenra (The Smoke Specter of Bonfires)",
+    "category": "monster",
+    "province_th": "ฮิโรชิมะ (ญี่ปุ่น)",
+    "province_en": "Hiroshima (Japan)",
+    "district_th": "ฟูกูยามะ",
+    "district_en": "Fukuyama",
+    "lat": 34.4858,
+    "lng": 133.3628,
+    "sound_preset": "whisper",
+    "story_th": "โยไกที่ก่อตัวขึ้นจากกลุ่มควันและเถ้าถ่านของกองไฟยามค่ำคืน ปรากฏเป็นใบหน้ามนุษย์เลือนรางที่ล่องลอยในอากาศ เชื่อกันว่าผู้ที่มีจิตใจบริสุทธิ์เท่านั้นจึงจะมองเห็นใบหน้าของเอเน็นระ",
+    "story_en": "A gaseous yokai composed of swirling bonfire smoke and embers that forms ghostly human silhouettes, said to reveal its spectral visage only to those of pure heart.",
+    "folklore_history_th": "ปรากฏในบันทึก 'คงจาคุ เกียะกุ โยไก ชูอิ' ตำนานพื้นบ้านเกี่ยวกับวิญญาณของควันไฟและการเผาไหม้",
+    "folklore_history_en": "Immortalized in Edo-period yokai scrolls as the ethereal embodiment of bonfire spirits.",
+    "image_url": "https://i.ytimg.com/vi/5jF0akb7aAc/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/5jF0akb7aAc/hqdefault.jpg",
+        "title": "เอเน็นระ (ปีศาจควันเถ้าถ่านผู้มองเห็นได้เฉพาะคนจิตบริสุทธิ์)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=5jF0akb7aAc",
+        "title": "Enenra - The Spirit of Smoke - Japanese Folklore",
+        "thumbnail": "https://i.ytimg.com/vi/5jF0akb7aAc/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามจ้องมองควันไฟกองฟางกลางคืนคนเดียวนานเกินไป",
+    "taboos_en": "Avoid staring directly into outdoor bonfire plumes alone in darkness."
+  },
+  {
+    "id": "pin-wanyudo-fire-wheel",
+    "title_th": "วานิวโดะ (กงล้อเพลิงวิญญาณบาปแห่งเกียวโต)",
+    "title_en": "Wanyudo (The Blazing Wheel of Damnation)",
+    "category": "curse",
+    "province_th": "เกียวโต (ญี่ปุ่น)",
+    "province_en": "Kyoto (Japan)",
+    "district_th": "ถนนซันโจ",
+    "district_en": "Sanjo Dori",
+    "lat": 35.0088,
+    "lng": 135.7681,
+    "sound_preset": "creepy_wind",
+    "story_th": "กงล้อเกวียนวัวที่ลุกเป็นไฟ ตรงกลางมีศีรษะของชายวัยกลางคนหน้าตาดุร้าย คอยกลิ้งตระเวนไปตามถนนในยามวิกาลเพื่อขโมยวิญญาณของผู้คนที่แอบมองผ่านช่องหน้าต่าง",
+    "story_en": "A blazing ox-cart wheel bearing the grimacing head of a condemned tyrant. It roams deserted night lanes dragging the souls of peeping onlookers straight to the underworld.",
+    "folklore_history_th": "ตำนานสตรีที่แอบมองวานิวโดะผ่านประตูบานเลื่อนและพบว่าขาของลูกทารกถูกฉีกขาด สะท้อนคำสอนเรื่องการอย่าสอดรู้สอดเห็น",
+    "folklore_history_en": "Feudal cautionary tale warning villagers against violating domestic curfew and peeping into ghostly processions.",
+    "image_url": "https://i.ytimg.com/vi/C0lkyAGqfo4/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/C0lkyAGqfo4/hqdefault.jpg",
+        "title": "วานิวโดะ (กงล้อเพลิงวิญญาณบาปแห่งเกียวโต)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=C0lkyAGqfo4",
+        "title": "Yokai: Wanyudo & Katawaguruma | 妖怪 - 和入道/片輪車",
+        "thumbnail": "https://i.ytimg.com/vi/C0lkyAGqfo4/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามเปิดบานเกล็ดหรือมองออกไปนอกบ้านเมื่อได้ยินเสียงล้อเกวียนไหม้ไฟ",
+    "taboos_en": "Never peek outside when hearing rumbling cart wheels enveloped in sulfur smoke."
+  },
+  {
+    "id": "pin-futakuchi-onna-mouth",
+    "title_th": "ฟุตะคุจิ-อนนะ (หญิงสาวสองปากและเส้นผมมีชีวิตแห่งฟุกุชิมะ)",
+    "title_en": "Futakuchi-onna (The Two-Mouthed Woman)",
+    "category": "curse",
+    "province_th": "ฟูกูชิมะ (ญี่ปุ่น)",
+    "province_en": "Fukushima (Japan)",
+    "district_th": "ไอซุ",
+    "district_en": "Aizu",
+    "lat": 37.4947,
+    "lng": 139.9297,
+    "sound_preset": "whisper",
+    "story_th": "หญิงสาวที่มีปากปริศนาซ่อนอยู่ใต้เส้นผมด้านหลังศีรษะ เส้นผมจะขยับเหมือนหนวดปลาหมึกคอยหยิบอาหารป้อนปากด้านหลัง เกิดจากคำสาปของแม่เลี้ยงใจร้ายที่ปล่อยให้ลูกเลี้ยงอดอาหารจนตาย",
+    "story_en": "A woman cursed with a second ravenous mouth at the back of her skull concealed beneath long hair, which moves like tentacles feeding itself to avenge a starved stepchild.",
+    "folklore_history_th": "นิทานพื้นบ้านสอนใจเรื่องกรรมและการลงโทษแม่เลี้ยงใจร้ายในสังคมชนบทญี่ปุ่นโบราณ",
+    "folklore_history_en": "A morality folktale illustrating the karmic manifestation of greed and cruelty toward stepchildren.",
+    "image_url": "https://i.ytimg.com/vi/f5V111eCwC0/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/f5V111eCwC0/hqdefault.jpg",
+        "title": "ฟุตะคุจิ-อนนะ (หญิงสาวสองปากและเส้นผมมีชีวิตแห่งฟุกุชิมะ)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=f5V111eCwC0",
+        "title": "FUTAKUCHI-ONNA, THE JAPANESE SPIRIT WITH TWO MOUTHS | Draw My Life",
+        "thumbnail": "https://i.ytimg.com/vi/f5V111eCwC0/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามกักขังหรืออดอาหารเด็กในครอบครัวเด็ดขาด",
+    "taboos_en": "Never withhold sustenance from children in a household."
+  },
+  {
+    "id": "pin-tsuchigumo-earth-spider",
+    "title_th": "สึจิกุโมะ (พญาแมงมุมดินดึกดำบรรพ์แห่งภูเขาคัตสึรางิ)",
+    "title_en": "Tsuchigumo (The Earth Spider Clan of Mount Katsuragi)",
+    "category": "monster",
+    "province_th": "นารา (ญี่ปุ่น)",
+    "province_en": "Nara (Japan)",
+    "district_th": "ภูเขาคัตสึรางิ",
+    "district_en": "Mount Katsuragi",
+    "lat": 34.4608,
+    "lng": 135.6811,
+    "sound_preset": "creepy_wind",
+    "story_th": "อสูรแมงมุมยักษ์แปดขาที่มีพิษร้ายแรง อาศัยอยู่ในถ้ำลึกใต้ดิน สามารถแปลงกายเป็นพระสงฆ์หรือหญิงงามเพื่อลวงซามูไรมินาโมโตะ โนะ ไรโกะ ก่อนถูกดาบคุโมะคิริฟันปราบ",
+    "story_en": "A subterranean giant arachnid demon capable of illusion and toxic silk traps. It attempted to assassinate warrior Minamoto no Raiko disguised as a sick monk before being slain by the legendary sword Kumokiri.",
+    "folklore_history_th": "สะท้อนความขัดแย้งโบราณระหว่างราชสำนักยามาโตะกับชนเผ่าพื้นเมืองที่อาศัยอยู่ในโพรงดิน",
+    "folklore_history_en": "Historical allegory describing Yamato imperial subjugation of indigenous subterranean cave-dwelling clans.",
+    "image_url": "https://i.ytimg.com/vi/aAH_3YXhJkM/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/aAH_3YXhJkM/hqdefault.jpg",
+        "title": "สึจิกุโมะ (พญาแมงมุมดินดึกดำบรรพ์แห่งภูเขาคัตสึรางิ)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=aAH_3YXhJkM",
+        "title": "Yokai Explained: Tsuchigumo, the Giant Spider",
+        "thumbnail": "https://i.ytimg.com/vi/aAH_3YXhJkM/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามตัดใยแมงมุมยักษ์ในถ้ำลึกบนภูเขาคัตสึรางิ",
+    "taboos_en": "Never cut dense black spiderwebs deep within Mount Katsuragi grottos."
+  },
+  {
+    "id": "pin-tenome-hand-eyes",
+    "title_th": "เทโนะเมะ (วิญญาณชายชราตาบนฝ่ามือแห่งสุสานชิจิโจ)",
+    "title_en": "Tenome (The Eye-in-Hand Ghost of Kyoto)",
+    "category": "ghost",
+    "province_th": "เกียวโต (ญี่ปุ่น)",
+    "province_en": "Kyoto (Japan)",
+    "district_th": "ชิจิโจ",
+    "district_en": "Shichijo",
+    "lat": 34.9892,
+    "lng": 135.7597,
+    "sound_preset": "whisper",
+    "story_th": "วิญญาณของชายตาบอดที่ถูกโจรปล้นและฆาตกรรมในสุสาน ด้วยความแค้นที่มองไม่เห็นหน้าคนร้าย จึงเกิดใหม่มีดวงตาเบิกกว้างอยู่บนฝ่ามือทั้งสองข้างเพื่อตามล่าผู้คนในความมืด",
+    "story_en": "The vengeful specter of a blind man murdered by highwaymen. Desiring to see his attackers, his ghost returned with wide unblinking eyes placed in the palms of his outstretched hands.",
+    "folklore_history_th": "บันทึกในวรรณกรรมโยไกเอโดะ 'โชโกกุ เฮียะกุโมโนงาตาริ' ที่บันทึกเรื่องเล่าสยองขวัญในสุสานโบราณ",
+    "folklore_history_en": "Documented in 17th-century ghost anthologies, inspiring international modern horror cinema designs.",
+    "image_url": "https://i.ytimg.com/vi/CW1nbjvSxXU/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/CW1nbjvSxXU/hqdefault.jpg",
+        "title": "เทโนะเมะ (วิญญาณชายชราตาบนฝ่ามือแห่งสุสานชิจิโจ)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=CW1nbjvSxXU",
+        "title": "Tenome – The Yokai with Eyes on the Hands – Japanese Folklore",
+        "thumbnail": "https://i.ytimg.com/vi/CW1nbjvSxXU/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามเดินตัดผ่านป่าช้าชิจิโจเพียงลำพังหลังยามเที่ยงคืน",
+    "taboos_en": "Never traverse deserted historical cemeteries alone after the midnight bell."
+  },
+  {
+    "id": "pin-satori-mind-reader",
+    "title_th": "ซาโตริ (อสูรไพรผู้อ่านใจมนุษย์แห่งเทือกเขาฮิดะ)",
+    "title_en": "Satori (The Mind-Reading Mountain Ape)",
+    "category": "monster",
+    "province_th": "กิฟุ (ญี่ปุ่น)",
+    "province_en": "Gifu (Japan)",
+    "district_th": "เทือกเขาฮิดะ",
+    "district_en": "Hida Mountains",
+    "lat": 36.2575,
+    "lng": 137.5458,
+    "sound_preset": "whisper",
+    "story_th": "อสูรวานรบนภูเขาสูงที่สามารถอ่านความคิดและความกลัวของมนุษย์ได้ทุกขณะจิต เมื่อมนุษย์คิดจะทำร้ายมัน มันจะพูดความในใจออกมาก่อนและหลบหลีกได้เสมอ ทางเดียวที่จะปราบได้คือการกระทำโดยไม่เจตนา",
+    "story_en": "A hairy mountain hominid capable of instant telepathy. It reads every thought and fear of travelers, vocalizing their intentions before dodging attacks—defeated only when hit entirely by accident without thought.",
+    "folklore_history_th": "ปรากฏใน 'วะคัง ซันไซ ซึเอะ' สารานุกรมภาพโบราณของญี่ปุ่น สะท้อนปรัชญาเซนเรื่องจิตว่าง (มุชิน)",
+    "folklore_history_en": "An allegorical creature in Zen philosophy representing the paralyzing nature of overthinking versus spontaneous mindfulness.",
+    "image_url": "https://i.ytimg.com/vi/9p8TOfSn790/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/9p8TOfSn790/hqdefault.jpg",
+        "title": "ซาโตริ (อสูรไพรผู้อ่านใจมนุษย์แห่งเทือกเขาฮิดะ)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=9p8TOfSn790",
+        "title": "Yōkai Are Still Watching You | Full Audiobook | Japanese Folklore & Spirits",
+        "thumbnail": "https://i.ytimg.com/vi/9p8TOfSn790/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามคิดวางแผนทำร้ายสัตว์ป่าในใจเมื่อเดินผ่านช่องเขาฮิดะ",
+    "taboos_en": "Empty your conscious mind of aggression when navigating remote Hida trails."
+  },
+  {
+    "id": "pin-bakeneko-cat-specter",
+    "title_th": "บาเกะเนโกะ (แมวผีหางแยกเต้นระบำแห่งปราสาทนาเบชิมะ)",
+    "title_en": "Bakeneko (The Shapeshifting Ghost Cat of Nabeshima)",
+    "category": "ghost",
+    "province_th": "ซางะ (ญี่ปุ่น)",
+    "province_en": "Saga (Japan)",
+    "district_th": "ซางะ",
+    "district_en": "Saga",
+    "lat": 33.2635,
+    "lng": 130.3009,
+    "sound_preset": "creepy_wind",
+    "story_th": "แมวบ้านที่อายุยืนเกิน 13 ปีจนมีหางแยกออกเป็นสองแฉก สามารถเดินสองขา แปลงกายเป็นมนุษย์ และเลียน้ำมันตะเกียงยามค่ำคืน ตำนานนาเบชิมะเล่าถึงแมวผีที่ปลอมเป็นพระสนมเพื่อแก้แค้นให้เจ้านาย",
+    "story_en": "Elderly cats whose tails bifurcate as they attain supernatural sentience. Famous in the Nabeshima Cat Disturbance where a ghostly feline shapeshifted into a royal concubine to avenge her murdered master.",
+    "folklore_history_th": "ละครคาบูกิ 'นาเบชิมะ โนะ เนโกะ โซโด' และศาลเจ้าแมวผีแห่งจังหวัดซากะ",
+    "folklore_history_en": "Dramatized in classic kabuki plays and honored at feline shrines across Saga prefecture.",
+    "image_url": "https://i.ytimg.com/vi/7HcLJw5hzT8/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/7HcLJw5hzT8/hqdefault.jpg",
+        "title": "บาเกะเนโกะ (แมวผีหางแยกเต้นระบำแห่งปราสาทนาเบชิมะ)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=7HcLJw5hzT8",
+        "title": "🐈 Bakeneko & Nekomata 🐈| Japanese Folk Song",
+        "thumbnail": "https://i.ytimg.com/vi/7HcLJw5hzT8/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามทอดทิ้งแมวสูงวัยในบ้านร้างกลางป่า",
+    "taboos_en": "Never abandon elderly domestic cats in derelict forest cottages."
+  },
+  {
+    "id": "pin-bulgasari-metal-eater",
+    "title_th": "บุลกาซารี (อสูรเหล็กกลืนกินศัสตราวุธแห่งโครยอ)",
+    "title_en": "Bulgasari (The Iron-Eating Monster of Goryeo)",
+    "category": "monster",
+    "province_th": "แคซ็อง (เกาหลีเหนือ)",
+    "province_en": "Kaesong (North Korea)",
+    "district_th": "เมืองเก่าแคซ็อง",
+    "district_en": "Old Kaesong",
+    "lat": 37.9706,
+    "lng": 126.5544,
+    "sound_preset": "creepy_wind",
+    "story_th": "สัตว์ประหลาดที่ปั้นขึ้นจากเมล็ดข้าวสุกและเข็มเย็บผ้าโดยหญิงหม้ายในสมัยโครยอ มันเติบโตขึ้นจากการกินเหล็กและอาวุธทุกชนิด ยิ่งกินยิ่งขยายใหญ่จนฟันดาบและหอกไม่เข้า สามารถกำราบได้ด้วยไฟเท่านั้น",
+    "story_en": "A legendary beast crafted from grains of cooked rice by a Buddhist nun. It grew exponentially by devouring all scrap metal and battlefield weapons, indestructible to blades and arrows until engulfed in raging fire.",
+    "folklore_history_th": "นิทานพื้นบ้านต่อต้านสงครามของเกาหลีโบราณ สัญลักษณ์แห่งการกลืนกินอาวุธสงครามเพื่อความสงบสุข",
+    "folklore_history_en": "A symbolic anti-war folk creature whose insatiable appetite neutralized warring armies by digesting their metallurgy.",
+    "image_url": "https://i.ytimg.com/vi/-4EYi_HXPoQ/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/-4EYi_HXPoQ/hqdefault.jpg",
+        "title": "บุลกาซารี (อสูรเหล็กกลืนกินศัสตราวุธแห่งโครยอ)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=-4EYi_HXPoQ",
+        "title": "Bulgasari, the Iron-eating Monster",
+        "thumbnail": "https://i.ytimg.com/vi/-4EYi_HXPoQ/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามทิ้งเศษศัสตราวุธขึ้นสนิมไว้ใกล้บริเวณพิธีกรรม",
+    "taboos_en": "Never leave rusted spear tips near ceremonial shrines."
+  },
+  {
+    "id": "pin-haetae-justice-lion",
+    "title_th": "แฮแท (สัตว์ศักดิ์สิทธิ์ผู้พิทักษ์ความยุติธรรมและปราบไฟแห่งกวางฮวามุน)",
+    "title_en": "Haetae (The Divine Lion of Justice & Fire Prevention)",
+    "category": "sacred",
+    "province_th": "โซล (เกาหลีใต้)",
+    "province_en": "Seoul (South Korea)",
+    "district_th": "จงโน",
+    "district_en": "Jongno",
+    "lat": 37.5759,
+    "lng": 126.9769,
+    "sound_preset": "temple_bell",
+    "story_th": "สัตว์สวรรค์หน้าตากึ่งสิงโตกึ่งมังกรมีเกล็ดปกคลุมร่างกาย สามารถแยกแยะคนดีคนชั่วและใช้เขาขวิดคนโกง รูปปั้นแฮแทถูกประดิษฐานหน้าประตูควังฮวามุนเพื่อป้องกันไฟบรรลัยกัลป์จากภูเขากวานักซาน",
+    "story_en": "A mythical chimera covered in scales with a lion's mane. Endowed with innate justice discernment, it gores wrongdoers and dispels fire spirits, erected at Gwanghwamun gate to neutralize fire energy from Mount Gwanak.",
+    "folklore_history_th": "สัญลักษณ์นำโชคอย่างเป็นทางการของกรุงโซล และผู้พิทักษ์พระราชวังเคียงบกกุกในสมัยราชวงศ์โชซอน",
+    "folklore_history_en": "The official civic emblem of Seoul and ceremonial protector of Gyeongbokgung Palace throughout the Joseon Dynasty.",
+    "image_url": "https://i.ytimg.com/vi/5UbkKSI1LmQ/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/5UbkKSI1LmQ/hqdefault.jpg",
+        "title": "แฮแท (สัตว์ศักดิ์สิทธิ์ผู้พิทักษ์ความยุติธรรมและปราบไฟแห่งกวางฮวามุน)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=5UbkKSI1LmQ",
+        "title": "What Is Haetae? The Mythical Animal Protecting Gyeongbokgung Palace",
+        "thumbnail": "https://i.ytimg.com/vi/5UbkKSI1LmQ/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามปีนป่ายหรือสัมผัสรูปปั้นหินแฮแทอย่างลบหลู่",
+    "taboos_en": "Never climb or deface the guardian stone lion statues guarding palace gates."
+  },
+  {
+    "id": "pin-imugi-dragon-serpent",
+    "title_th": "อีมูกี (พญางูยักษ์พันปีผู้บำเพ็ญเพียรสู่การเป็นมังกรฟ้าเกาหลี)",
+    "title_en": "Imugi (The Proto-Dragon Serpent of Korean Lakes)",
+    "category": "legend",
+    "province_th": "คังวอน (เกาหลีใต้)",
+    "province_en": "Gangwon (South Korea)",
+    "district_th": "ชุนชอน",
+    "district_en": "Chuncheon",
+    "lat": 37.8813,
+    "lng": 127.7298,
+    "sound_preset": "water_spirit",
+    "story_th": "งูยักษ์ที่อาศัยอยู่ในถ้ำใต้น้ำลึก บำเพ็ญเพียรนานนับพันปีเพื่อรอรับลูกแก้วยออึยจูจากสวรรค์ หากรับได้จะกลายร่างเป็นมังกรฟ้าทะยานสู่เวหา แต่หากถูกมนุษย์เอ่ยทักว่าเป็นงู จะต้องตกลงมาบำเพ็ญใหม่อีกพันปี",
+    "story_en": "Enormous benevolent serpents that spend a millennium in deep alpine lakes awaiting the sacred Yeouiju orb from heaven to transform into a celestial dragon. If called a snake by human sight, the curse resets for a thousand years.",
+    "folklore_history_th": "นิทานพื้นบ้านโบราณที่ฝังรากลึกในวัฒนธรรมเกาหลี และได้รับนำมาดัดแปลงในภาพยนตร์ระดับตำนาน",
+    "folklore_history_en": "A cornerstone of Korean mythology symbolizing patient spiritual ascension and cosmic perseverance.",
+    "image_url": "https://i.ytimg.com/vi/ukhvimYUsXE/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/ukhvimYUsXE/hqdefault.jpg",
+        "title": "อีมูกี (พญางูยักษ์พันปีผู้บำเพ็ญเพียรสู่การเป็นมังกรฟ้าเกาหลี)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=ukhvimYUsXE",
+        "title": "Korean Myth : Imoogi Dragon Lasser Dragon From Korea",
+        "thumbnail": "https://i.ytimg.com/vi/ukhvimYUsXE/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามเรียกงูยักษ์ในทะเลสาบว่า 'งู' ให้เรียกว่า 'มังกร' เพื่อไม่ให้ขัดบุญบารมี",
+    "taboos_en": "Never address an immense water creature as a snake; refer to it reverently as a dragon."
+  },
+  {
+    "id": "pin-cu-sith-scottish-hound",
+    "title_th": "คูชี (สุนัขล่าเนื้อปีศาจสีเขียวแห่งที่ราบสูงสก็อตแลนด์)",
+    "title_en": "Cù-Sìth (The Spectral Green Fairy Hound of the Highlands)",
+    "category": "monster",
+    "province_th": "ไฮแลนด์ (สก็อตแลนด์)",
+    "province_en": "Highlands (Scotland)",
+    "district_th": "เกาะสกาย",
+    "district_en": "Isle of Skye",
+    "lat": 57.2736,
+    "lng": -6.2158,
+    "sound_preset": "creepy_wind",
+    "story_th": "สุนัขปีศาจขนาดเท่าลูกวัวที่มีขนสีเขียวเข้มและหางถักเปีย คอยเดินลาดตระเวนในที่ราบสูงสก็อตแลนด์ ส่งเสียงเห่าดังก้องสามครั้ง หากใครหนีไม่พ้นก่อนเสียงเห่าครั้งที่สามจะถึงแก่ความตาย",
+    "story_en": "A bull-sized hound with shaggy dark-green fur and braided tail that stalks the Scottish Highlands. It bays three booming times across mountain moors; those who fail to reach shelter before the third howl die of terror.",
+    "folklore_history_th": "ตำนานเซลติกโบราณเกี่ยวกับยมทูตสุนัขที่ทำหน้าที่รวบรวมดวงวิญญาณของผู้หญิงให้นมบุตรไปสู่เมืองลับแล",
+    "folklore_history_en": "Celtic folklore herald of the fairy folk (Aos Sí), serving as harbinger of transition to the underworld.",
+    "image_url": "https://i.ytimg.com/vi/UyhFtHo9Xew/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/UyhFtHo9Xew/hqdefault.jpg",
+        "title": "คูชี (สุนัขล่าเนื้อปีศาจสีเขียวแห่งที่ราบสูงสก็อตแลนด์)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=UyhFtHo9Xew",
+        "title": "Cù-sìth: The Faerie Dog of Scotland (Scottish Folklore)",
+        "thumbnail": "https://i.ytimg.com/vi/UyhFtHo9Xew/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามหยุดยืนฟังเมื่อได้ยินเสียงสุนัขเห่าก้องกังวานในสายหมอกบนเกาะสกาย",
+    "taboos_en": "Never pause to listen when an unnatural baying echoes through foggy highland heaths."
+  },
+  {
+    "id": "pin-bodach-shadow-scotland",
+    "title_th": "โบดัค (เงาดำเฒ่าแห่งปล่องไฟผู้เตือนภัยความตาย)",
+    "title_en": "Bodach (The Chimney Shadow Harbinger of Death)",
+    "category": "ghost",
+    "province_th": "อินเวอร์เนสส์ (สก็อตแลนด์)",
+    "province_en": "Inverness (Scotland)",
+    "district_th": "อินเวอร์เนสส์",
+    "district_en": "Inverness",
+    "lat": 57.4778,
+    "lng": -4.2247,
+    "sound_preset": "whisper",
+    "story_th": "เงาดำร่างสูงค่อมที่เลื่อนไหลลงมาจากปล่องไฟยามดึกในกระท่อมสก็อตแลนด์ หากโบดัคปรากฏตัวและเอามือแตะที่หน้าผากของผู้ใดในบ้าน ผู้นั้นจะเสียชีวิตภายในสามวัน",
+    "story_en": "A gaunt shadowy specter that descends stone chimneys in traditional Scottish cottages. If it glides into a bedroom and touches an occupant's brow, their death occurs within three sunsets.",
+    "folklore_history_th": "ความเชื่อของชาวเกลิกสก็อตแลนด์โบราณเกี่ยวกับการบอกเหตุเภทภัยล่วงหน้าของตระกูลสูง",
+    "folklore_history_en": "Gaelic household lore often warning highland clansmen of impending domestic tragedies.",
+    "image_url": "https://i.ytimg.com/vi/ksyz7Qdv4zQ/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/ksyz7Qdv4zQ/hqdefault.jpg",
+        "title": "โบดัค (เงาดำเฒ่าแห่งปล่องไฟผู้เตือนภัยความตาย)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=ksyz7Qdv4zQ",
+        "title": "The Bodach: The Chimney Watcher",
+        "thumbnail": "https://i.ytimg.com/vi/ksyz7Qdv4zQ/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามปล่อยให้ไฟในเตาผิงมอดดับสนิทในคืนพายุฤดูหนาว",
+    "taboos_en": "Never allow hearth fires to burn completely cold during winter gale nights."
+  },
+  {
+    "id": "pin-erlkonig-alder-king",
+    "title_th": "เอิร์ลเคอนิก (พญามารแห่งป่าดำผู้พรากลมหายใจเด็กยามราตรี)",
+    "title_en": "Erlkönig (The Alder King of the Black Forest)",
+    "category": "curse",
+    "province_th": "บาเดิน-เวือร์ทเทิมแบร์ค (เยอรมนี)",
+    "province_en": "Baden-Württemberg (Germany)",
+    "district_th": "ป่าดำ",
+    "district_en": "Black Forest",
+    "lat": 48.1833,
+    "lng": 8.2167,
+    "sound_preset": "creepy_wind",
+    "story_th": "ราชาเอลฟ์ผู้สวมมงกุฎใบอัลเดอร์ ควบม้าเร้นลับล่อลวงเด็กน้อยที่ขี่ม้าผ่านป่าดำกับบิดาด้วยเสียงกระซิบอันแสนหวาน เมื่อถึงปลายทาง เด็กน้อยกลับสิ้นลมหายใจในอ้อมกอดพ่อ",
+    "story_en": "The spectral crowned spirit who stalks the fog-choked Black Forest. He lures travelling children with whispered promises of golden crowns; by the journey's end, the child lies lifeless in his father's arms.",
+    "folklore_history_th": "บทกวีระดับมหากาพย์ของโยฮันน์ วอล์ฟกัง ฟอน เกอเธอ และบทเพลงคลาสสิกของฟรันซ์ ชูเบิร์ต",
+    "folklore_history_en": "Immortalized in Goethe's masterpiece ballad and Franz Schubert's haunting lieder composition.",
+    "image_url": "https://i.ytimg.com/vi/MJAaOeBAR0E/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/MJAaOeBAR0E/hqdefault.jpg",
+        "title": "เอิร์ลเคอนิก (พญามารแห่งป่าดำผู้พรากลมหายใจเด็กยามราตรี)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=MJAaOeBAR0E",
+        "title": "The Black Forest of Germany - Great Places of the World 1/6 - Go Wild",
+        "thumbnail": "https://i.ytimg.com/vi/MJAaOeBAR0E/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามขานตอบเสียงกระซิบเรียกชื่อของบุตรหลานยามขี่ม้าผ่านป่าทึบ",
+    "taboos_en": "Never heed sweet whispering voices calling your child's name in deep woodland mist."
+  },
+  {
+    "id": "pin-kikimora-slavic-hearth",
+    "title_th": "คิกิโมรา (นางภูตหลังเตาไฟผู้ถักทอความวิบัติแห่งสลาวิก)",
+    "title_en": "Kikimora (The Swamp & Hearth Spirit of Slavic Lore)",
+    "category": "ghost",
+    "province_th": "นอฟโกรอด (รัสเซีย)",
+    "province_en": "Novgorod (Russia)",
+    "district_th": "ป่าโบราณนอฟโกรอด",
+    "district_en": "Novgorod Taiga",
+    "lat": 58.5213,
+    "lng": 31.2755,
+    "sound_preset": "whisper",
+    "story_th": "สตรีร่างแคระหลังค่อมจมูกแหลมที่แอบอาศัยอยู่หลังเตาผิงหรือใต้ถุนบ้าน คอยปั่นด้ายและส่งเสียงกรีดร้องยามค่ำคืน หากบ้านใดไม่ดูแลบ้านเรือนให้สะอาด คิกิโมราจะทุบชามและแกล้งสัตว์เลี้ยงจนตาย",
+    "story_en": "A crooked household spirit dwelling behind Russian masonry stoves. She tangles spinning wheels at night, tormenting slovenly homeowners while bringing nightmares to disobedient children.",
+    "folklore_history_th": "ความเชื่อดั้งเดิมของชาวสลาฟโบราณที่เป็นคู่ตรงข้ามกับโดโมวอย และบทประพันธ์ดนตรีของอนาโตลี ลิอาดอฟ",
+    "folklore_history_en": "Rooted in East Slavic domestic paganism, representing the female counterpart and antagonist to the benevolent Domovoy.",
+    "image_url": "https://i.ytimg.com/vi/DtMitxK7I3g/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/DtMitxK7I3g/hqdefault.jpg",
+        "title": "คิกิโมรา (นางภูตหลังเตาไฟผู้ถักทอความวิบัติแห่งสลาวิก)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=DtMitxK7I3g",
+        "title": "Slavic Mythology Horror: Creatures You Don’t Want to Meet",
+        "thumbnail": "https://i.ytimg.com/vi/DtMitxK7I3g/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามทิ้งเส้นด้ายหรือเครื่องปั่นด้ายไว้โดยไม่เก็บเข้าที่ก่อนนอน",
+    "taboos_en": "Never leave spinning wool or sewing scissors uncovered overnight."
+  },
+  {
+    "id": "pin-saci-perere-brazil",
+    "title_th": "ซาซี-เปเรเร (ภูตขาเดียวสวมหมวกแดงคุมลมหมุนแห่งบราซิล)",
+    "title_en": "Saci-Pererê (The One-Legged Whirling Trickster of Brazil)",
+    "category": "legend",
+    "province_th": "เซาเปาลู (บราซิล)",
+    "province_en": "São Paulo (Brazil)",
+    "district_th": "เซาหลุยส์ ดู ปาราอีทิงกา",
+    "district_en": "São Luiz do Paraitinga",
+    "lat": -23.2239,
+    "lng": -45.3117,
+    "sound_preset": "whisper",
+    "story_th": "เด็กหนุ่มผิวดำขาเดียวสวมหมวกสีแดงวิเศษ สูบกล้องยาสูบดินเผา สามารถควบคุมลมหมุนฝุ่น คอยแกล้งชาวไร่ด้วยการซ่อนของ ผูกหางม้า และทำให้นมบูด สามารถจับได้โดยการโยนตะแกรงลงในลมหมุน",
+    "story_en": "A mischievous one-legged forest sprite wearing a magical red cap that grants teleportation inside dust devils. He pranks farmers by tangling horse manes and curdling milk, trapped only by throwing a sieve into whirlwind vortices.",
+    "folklore_history_th": "หนึ่งในตำนานพื้นบ้านที่ได้รับความนิยมสูงสุดในบราซิล ก่อตั้ง 'วันซาซี' แห่งชาติเพื่ออนุรักษ์นิทานพื้นบ้านของประเทศ",
+    "folklore_history_en": "Brazil's most iconic folkloric icon, celebrated with national Saci Day on October 31 to preserve indigenous Tupi-Guarani mythology.",
+    "image_url": "https://i.ytimg.com/vi/um1WHr1ejow/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/um1WHr1ejow/hqdefault.jpg",
+        "title": "ซาซี-เปเรเร (ภูตขาเดียวสวมหมวกแดงคุมลมหมุนแห่งบราซิล)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=um1WHr1ejow",
+        "title": "Turma do Folclore - Lenda do Saci Pererê",
+        "thumbnail": "https://i.ytimg.com/vi/um1WHr1ejow/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามขโมยหมวกสีแดงของซาซีเว้นแต่ต้องการเป็นนายของภูต",
+    "taboos_en": "Never attempt to seize his magical red cap unless prepared for persistent paranormal retaliation."
+  },
+  {
+    "id": "pin-marid-water-djinn",
+    "title_th": "มาริด (มหาญินสายน้ำผู้ทรงอิทธิฤทธิ์สูงสุดแห่งมหาสมุทรอาหรับ)",
+    "title_en": "Marid (The Oceanic Titan of Islamic Lore)",
+    "category": "monster",
+    "province_th": "มุซันดัม (โอมาน)",
+    "province_en": "Musandam (Oman)",
+    "district_th": "ช่องแคบฮอร์มุซ",
+    "district_en": "Strait of Hormuz",
+    "lat": 26.1852,
+    "lng": 56.4089,
+    "sound_preset": "water_spirit",
+    "story_th": "เผ่าพันธุ์ญินที่มีพลังอำนาจและขนาดร่างกายใหญ่โตที่สุดในคัมภีร์อาหรับโบราณ สถิตอยู่ในผืนสมุทรและกระแสน้ำวน สามารถควบคุมพายุคลื่นยักษ์ มีความเย่อหยิ่งและยากที่จะกักขังในตะเกียงเวทมนตร์",
+    "story_en": "The most colossal and aristocratic class of Jinn in Arabic lore, bound to open oceans and marine whirlpools. Capable of raising tempests, they are fiercely rebellious against mortal sorcery.",
+    "folklore_history_th": "ปรากฏในนิทานพันหนึ่งราตรี (อาหรับราตรี) ในฐานะราชาแห่งญินผู้สามารถเนรมิตเกาะและเมืองใต้บาดาล",
+    "folklore_history_en": "Featured extensively in One Thousand and One Nights as titans of oceanic currents who answer only to King Solomon's seal.",
+    "image_url": "https://i.ytimg.com/vi/dFGR1T5JA5k/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/dFGR1T5JA5k/hqdefault.jpg",
+        "title": "มาริด (มหาญินสายน้ำผู้ทรงอิทธิฤทธิ์สูงสุดแห่งมหาสมุทรอาหรับ)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=dFGR1T5JA5k",
+        "title": "The Marid? The Mightiest Jinn & The Rebellious Giant of Arabian Folklore",
+        "thumbnail": "https://i.ytimg.com/vi/dFGR1T5JA5k/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามเทน้ำร้อนลงในทะเลหรือร่องน้ำยามค่ำคืนโดยไม่เอ่ยนามพระผู้เป็นเจ้า",
+    "taboos_en": "Never pour boiling liquids into night sea waves without invoking protective prayers."
+  },
+  {
+    "id": "pin-rokh-giant-bird-sinbad",
+    "title_th": "นกยักษ์ร็อค (พญานกเวหาผู้โฉบยกลูกช้างแห่งอ่าวเปอร์เซีย)",
+    "title_en": "Roc (The Elephant-Lifting Behemoth Bird of Arabian Lore)",
+    "category": "monster",
+    "province_th": "บันดาร์อับบาส (อิหร่าน)",
+    "province_en": "Hormozgan (Iran)",
+    "district_th": "เกาะคิช",
+    "district_en": "Kish Island",
+    "lat": 26.5369,
+    "lng": 53.9786,
+    "sound_preset": "creepy_wind",
+    "story_th": "พญานกสีขาวบริสุทธิ์ขนาดมหึมา ปีกกว้างบดบังแสงอาทิตย์จนท้องฟ้ามืดมิด กรงเล็บแข็งแกร่งขนาดโฉบยกช้างและปลาวาฬขึ้นไปกินบนยอดผา บันทึกโดยมาร์โค โปโลและสินด์แบดกะลาสี",
+    "story_en": "A legendary white raptor of gargantuan proportions whose wingspan eclipsed the midday sun. Powerful enough to snatch full-grown elephants and sea monsters in its talons, documented by Marco Polo.",
+    "folklore_history_th": "การเดินทางของสินด์แบดในอาหรับราตรี และบันทึกของนักเดินทางมุสลิม อิบนุ บัตตูตา",
+    "folklore_history_en": "Celebrated in maritime trade chronicles across the Indian Ocean and Persian Gulf voyages of Sinbad the Sailor.",
+    "image_url": "https://i.ytimg.com/vi/wzE9SRm4AAk/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/wzE9SRm4AAk/hqdefault.jpg",
+        "title": "นกยักษ์ร็อค (พญานกเวหาผู้โฉบยกลูกช้างแห่งอ่าวเปอร์เซีย)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=wzE9SRm4AAk",
+        "title": "“ROC: The Giant Mythical Bird That Could Lift Elephants | Ancient Arabian Legends”",
+        "thumbnail": "https://i.ytimg.com/vi/wzE9SRm4AAk/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามทุบทำลายหรือขโมยไข่ใบยักษ์บนยอดเขาริมทะเลเด็ดขาด",
+    "taboos_en": "Never disturb giant calcified eggs discovered atop coastal sea bluffs."
+  },
+  {
+    "id": "pin-apep-chaos-serpent",
+    "title_th": "อเปป (มหาอสรพิษแห่งความมืดผู้กลืนกินดวงอาทิตย์แห่งอียิปต์โบราณ)",
+    "title_en": "Apep (The Serpent of Cosmic Primordial Chaos)",
+    "category": "monster",
+    "province_th": "ลักซอร์ (อียิปต์)",
+    "province_en": "Luxor (Egypt)",
+    "district_th": "หุบผากษัตริย์",
+    "district_en": "Valley of the Kings",
+    "lat": 25.7402,
+    "lng": 32.6014,
+    "sound_preset": "creepy_wind",
+    "story_th": "อสรพิษยักษ์ผู้เป็นตัวแทนของความโกลาหลและความมืดมิดใต้พิภพดุอัต มันจะดักซุ่มโจมตีเรือสุริยันของเทพราทุกค่ำคืนเพื่อทำให้โลกตกอยู่ในความมืดนิรันดร์ เกิดเป็นสุริยุปราคาเมื่อมันกลืนดวงอาทิตย์ชั่วคราว",
+    "story_en": "The colossal subterranean serpent embodiment of primordial chaos (Isfet). Every night in the Duat underworld, it coils to swallow the Sun God Ra's solar barque, triggering solar eclipses upon brief triumphs.",
+    "folklore_history_th": "คัมภีร์มรณะของอียิปต์โบราณ และพิธีกรรมเผารูปปั้นขี้ผึ้งอเปปในวิหารคาร์นัคเพื่อช่วยให้ดวงอาทิตย์ขึ้นในเช้าวันใหม่",
+    "folklore_history_en": "Inscribed in tombs across the Valley of the Kings, where priests ritually smote wax effigies to preserve universal order (Ma'at).",
+    "image_url": "https://i.ytimg.com/vi/UIAAxdGvlS8/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/UIAAxdGvlS8/hqdefault.jpg",
+        "title": "อเปป (มหาอสรพิษแห่งความมืดผู้กลืนกินดวงอาทิตย์แห่งอียิปต์โบราณ)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=UIAAxdGvlS8",
+        "title": "Apophis God of Chaos and Darkness - (Egyptian Mythology Explained)",
+        "thumbnail": "https://i.ytimg.com/vi/UIAAxdGvlS8/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามเขียนหรือเอ่ยนามของอเปปโดยปราศจากบทสวดปราบมาร",
+    "taboos_en": "Never carve the serpent's name without an accompanying binding glyph."
+  },
+  {
+    "id": "pin-moehau-hairy-giant-nz",
+    "title_th": "โมฮาว (มนุษย์ยักษ์ขนดกแห่งเทือกเขาโคโรแมนเดล นิวซีแลนด์)",
+    "title_en": "Moehau (The Hairy Mountain Ogre of New Zealand)",
+    "category": "monster",
+    "province_th": "ไวกาโต (นิวซีแลนด์)",
+    "province_en": "Waikato (New Zealand)",
+    "district_th": "คาบสมุทรโคโรแมนเดล",
+    "district_en": "Coromandel Peninsula",
+    "lat": -36.5369,
+    "lng": 175.4058,
+    "sound_preset": "creepy_wind",
+    "story_th": "สิ่งมีชีวิตลึกลับกึ่งมนุษย์กึ่งวานรขนาดใหญ่ มีขนสีน้ำตาลแดงปกคลุมทั่วตัวและมีนิ้วยาวแหลมคม อาศัยอยู่ตามป่าทึบและถ้ำบนยอดเขาโมฮาวในตำนานของชาวเมารี",
+    "story_en": "A fearsome cryptid ogre inhabiting the dense temperate rainforests of Mount Moehau. Described in Maori lore as a towering ape-like recluse with long talons that guards sacred ancestral burial ridges.",
+    "folklore_history_th": "บันทึกของนักสำรวจยุโรปในศตวรรษที่ 19 และตำนานชนเผ่าเมารีเกี่ยวกับเผ่านอกกฎหมาย 'มาเอโร'",
+    "folklore_history_en": "Linked to traditional Maori accounts of the Maero, wild forest-dwelling hermits possessing immense strength.",
+    "image_url": "https://i.ytimg.com/vi/GBLuXUeowgI/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/GBLuXUeowgI/hqdefault.jpg",
+        "title": "โมฮาว (มนุษย์ยักษ์ขนดกแห่งเทือกเขาโคโรแมนเดล นิวซีแลนด์)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=GBLuXUeowgI",
+        "title": "Unmasking the Moehau: A Terrifying Tale Revealed | Shiver",
+        "thumbnail": "https://i.ytimg.com/vi/GBLuXUeowgI/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามขึ้นไปเหยียบย่ำบนยอดเขาโมฮาวศักดิ์สิทธิ์โดยไม่ได้รับอนุญาตจากชนเผ่าเมารี",
+    "taboos_en": "Respect sacred Maori tapu boundaries on Mount Moehau summit peaks."
+  },
+  {
+    "id": "pin-luang-phor-ban-laem",
+    "title_th": "หลวงพ่อบ้านแหลม วัดเพชรสมุทรวรวิหาร (พระพุทธรูปอุ้มบาตรลอยน้ำแห่งแม่กลอง)",
+    "title_en": "Luang Phor Ban Laem of Wat Phet Samut (Floating Alms-Bowl Buddha of Mae Klong)",
+    "category": "sacred",
+    "province_th": "สมุทรสงคราม (ไทย)",
+    "province_en": "Samut Songkhram (Thailand)",
+    "district_th": "เมืองสมุทรสงคราม",
+    "district_en": "Mueang Samut Songkhram",
+    "lat": 13.4107,
+    "lng": 99.9986,
+    "sound_preset": "temple_bell",
+    "story_th": "หนึ่งในตำนานเบญจภาคีพระพุทธรูปลอยน้ำห้าพี่น้อง ลอยตามแม่น้ำแม่กลองมาติดอวนชาวประมงบ้านแหลม มีพุทธานุภาพคุ้มครองการเดินทางทางน้ำและรักษาความสงบสุขร่มเย็น",
+    "story_en": "One of Thailand's sacred Five Floating Buddha Brothers, caught in fishermen's nets along the Mae Klong estuary and revered as sovereign protector of seafarers.",
+    "folklore_history_th": "พระพุทธรูปยืนอุ้มบาตรเนื้อทองเหลืองศิลปะสุโขทัย-อยุธยาตอนต้น ศูนย์รวมจิตใจของชาวแม่กลอง",
+    "folklore_history_en": "An ancient brass standing Buddha holding an alms bowl, enshrined in the riverside provincial cathedral.",
+    "image_url": "https://i.ytimg.com/vi/L5SZHPkds5Q/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/L5SZHPkds5Q/hqdefault.jpg",
+        "title": "หลวงพ่อบ้านแหลม วัดเพชรสมุทรวรวิหาร (พระพุทธรูปอุ้มบาตรลอยน้ำแห่งแม่กลอง)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=L5SZHPkds5Q",
+        "title": "พิกัดเฮง EP 3 : ตอน หลวงพ่อบ้านแหลม จ.สมุทรสงคราม | 10-07-65 | ตะลอนข่าวสุดสัปดาห์",
+        "thumbnail": "https://i.ytimg.com/vi/L5SZHPkds5Q/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามยืนค้ำหรือหันหลังถ่ายภาพประชิดองค์พระ และห้ามแต่งกายไม่สุภาพ",
+    "taboos_en": "Refrain from posing irreverently before the holy sanctuary and wear modest clothing."
+  },
+  {
+    "id": "pin-luang-phor-wat-rai-khing",
+    "title_th": "หลวงพ่อวัดไร่ขิง วัดไร่ขิงพระอารามหลวง (ปาฏิหาริย์พระพุทธรูปลอยน้ำแม่น้ำนครชัยศรี)",
+    "title_en": "Luang Phor Wat Rai Khing (The Miraculous River Buddha of Nakhon Chai Si)",
+    "category": "sacred",
+    "province_th": "นครปฐม (ไทย)",
+    "province_en": "Nakhon Pathom (Thailand)",
+    "district_th": "สามพราน",
+    "district_en": "Sam Phran",
+    "lat": 13.7337,
+    "lng": 100.2743,
+    "sound_preset": "temple_bell",
+    "story_th": "พระพุทธรูปศักดิ์สิทธิ์ปางมารวิชัยที่อัญเชิญขึ้นจากแม่น้ำนครชัยศรี เลื่องลือด้านการขจัดปัดเป่าโรคภัยไข้เจ็บและน้ำมนต์ศักดิ์สิทธิ์รักษาโรค",
+    "story_en": "Sacred riverine Buddha retrieved from the Nakhon Chai Si river, renowned throughout central Thailand for miraculous healings and sanctified holy water.",
+    "folklore_history_th": "สมเด็จพระพุฒาจารย์ (พุก) อัญเชิญมาจากวัดศาลาปูน อยุธยา ในสมัยรัชกาลที่ 4",
+    "folklore_history_en": "Relocated from Ayutthaya during King Rama IV's reign and revered across the western Delta.",
+    "image_url": "https://i.ytimg.com/vi/oqtY-mOJybk/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/oqtY-mOJybk/hqdefault.jpg",
+        "title": "หลวงพ่อวัดไร่ขิง วัดไร่ขิงพระอารามหลวง (ปาฏิหาริย์พระพุทธรูปลอยน้ำแม่น้ำนครชัยศรี)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=oqtY-mOJybk",
+        "title": "หลวงพ่อวัดไร่ขิง | เปิดประวัติตํานาน ความศักดิ์สิทธิ์ เรื่องเล่าอัศจรรย์และปาฏิหาริย์",
+        "thumbnail": "https://i.ytimg.com/vi/oqtY-mOJybk/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามนำสิ่งของมัวเมาเข้ามาในเขตพระอารามหลวง",
+    "taboos_en": "Intoxicants and improper conduct are strictly prohibited within monastic boundaries."
+  },
+  {
+    "id": "pin-khao-sam-muk-saen-shrine",
+    "title_th": "ศาลเจ้าแม่สามมุกและตำนานรักอมตะแสนกับมุก (เขาสามมุก บางแสน)",
+    "title_en": "Chao Mae Sam Muk Shrine & The Tragic Romance of Saen and Muk",
+    "category": "legend",
+    "province_th": "ชลบุรี (ไทย)",
+    "province_en": "Chonburi (Thailand)",
+    "district_th": "เมืองชลบุรี",
+    "district_en": "Mueang Chonburi",
+    "lat": 13.3106,
+    "lng": 100.9068,
+    "sound_preset": "creepy_wind",
+    "story_th": "ตำนานความรักแท้ของหญิงสาวชื่อมุกและชายหนุ่มชื่อแสน ผู้สาบานรักต่อหน้าทะเลแต่ถูกกีดกัน จนมุกกระโดดหน้าผาปลิดชีพ และแสนกระโดดตามเพื่อรักษาสัจจะ",
+    "story_en": "A heartbreaking legend of two star-crossed lovers who swore eternal fidelity by the sea cliff, casting themselves into the waves when torn apart by societal status.",
+    "folklore_history_th": "ศาลเจ้าแม่บนยอดผาเขาสามมุก สถานที่ผู้ศรัทธานิยมนำว่าวและผ้าแพรสีมาบนบานเรื่องความรักที่มั่นคง",
+    "folklore_history_en": "Seaside cliff shrine where devotees fly paper kites and tie silk ribbons praying for unyielding love.",
+    "image_url": "https://i.ytimg.com/vi/tNRumH34cNY/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/tNRumH34cNY/hqdefault.jpg",
+        "title": "ศาลเจ้าแม่สามมุกและตำนานรักอมตะแสนกับมุก (เขาสามมุก บางแสน)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=tNRumH34cNY",
+        "title": "ตำนาน ”เขาสามมุก“ ความเชื่อเกี่ยวกับหาดบางแสนและเขาสามมุก|Story of Guide",
+        "thumbnail": "https://i.ytimg.com/vi/tNRumH34cNY/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามสาบานรักหากไม่จริงใจ และห้ามทำร้ายฝูงลิงศักดิ์สิทธิ์บนเขาสามมุก",
+    "taboos_en": "Never make false romantic oaths here, and treat the sacred cliff macaques with kindness."
+  },
+  {
+    "id": "pin-hundred-corpse-curve-ratchada",
+    "title_th": "โค้งร้อยศพและศาลเจ้าแม่ต้นโพธิ์เฮี้ยน (โค้งศาลอาญารัชดาภิเษก)",
+    "title_en": "The Hundred-Corpse Curve & Bodhi Tree Shrine (Ratchadaphisek Criminal Court Curve)",
+    "category": "ghost",
+    "province_th": "กรุงเทพมหานคร (ไทย)",
+    "province_en": "Bangkok (Thailand)",
+    "district_th": "จตุจักร",
+    "district_en": "Chatuchak",
+    "lat": 13.8217,
+    "lng": 100.5752,
+    "sound_preset": "jungle_curse",
+    "story_th": "โค้งถนนสายอาถรรพ์หน้าศาลอาญารัชดา เกิดอุบัติเหตุพรากชีวิตนับร้อยราย ผู้รอดชีวิตมักอ้างว่าเห็นเงาดำตัดหน้าหรือมือลึกลับกระชากพวงมาลัย",
+    "story_en": "Notorious curved avenue where fatal vehicle crashes abound; drivers recount seeing spectral apparitions crossing the lanes and invisible forces jerking the wheel.",
+    "folklore_history_th": "ต้นโพธิ์ใหญ่เกาะกลางถนนที่ชาวบ้านและผู้สัญจรนำม้าลายปูนปั้นและน้ำแดงนับพันมาเซ่นไหว้สะกดวิญญาณเร่ร่อน",
+    "folklore_history_en": "The median Bodhi tree is encircled by thousands of zebra figurines offered by commuters to placate wandering road spirits.",
+    "image_url": "https://i.ytimg.com/vi/gpt53wllHgI/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/gpt53wllHgI/hqdefault.jpg",
+        "title": "โค้งร้อยศพและศาลเจ้าแม่ต้นโพธิ์เฮี้ยน (โค้งศาลอาญารัชดาภิเษก)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=gpt53wllHgI",
+        "title": "โค้งร้อยศพ | คุณเจน | 19 มิถุนายน 2564 | TheGhostRadioOfficial",
+        "thumbnail": "https://i.ytimg.com/vi/gpt53wllHgI/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามบีบแตรล้อเลียนหรือท้าทายอาถรรพ์ยามค่ำคืน",
+    "taboos_en": "Never mock the roadside shrines or speed recklessly through the curve after midnight."
+  },
+  {
+    "id": "pin-wat-don-graveyard-sathon",
+    "title_th": "ป่าช้าวัดดอนและสุสานจีนโพ้นทะเลพันหลุม (สาทร)",
+    "title_en": "Wat Don Cemetery & The 10,000 Chinese Tombs of Sathon",
+    "category": "ghost",
+    "province_th": "กรุงเทพมหานคร (ไทย)",
+    "province_en": "Bangkok (Thailand)",
+    "district_th": "สาทร",
+    "district_en": "Sathon",
+    "lat": 13.7145,
+    "lng": 100.5284,
+    "sound_preset": "whisper",
+    "story_th": "สุสานโบราณใจกลางกรุงเทพฯ ฝังศพไร้ญาตินับหมื่นร่างในอดีต ยุคก่อนเต็มไปด้วยความวังเวงและเรื่องเล่าผีหลอกหลอนจนแท็กซี่ไม่กล้าผ่าน",
+    "story_en": "Sprawling historical Chinese necropolis containing tens of thousands of graves, historically infamous for ghost sightings and taxi driver terrors before its park transformation.",
+    "folklore_history_th": "สร้างขึ้นในสมัยรัชกาลที่ 5 เพื่อรองรับการฝังศพของชาวจีนโพ้นทะเลสมาคมแต้จิ๋ว ปัจจุบันจัดระเบียบเป็นสวนสุขภาพ",
+    "folklore_history_en": "Established in King Chulalongkorn's era by Teochew immigrants, later turned into a public jogging park under spiritual vigilance.",
+    "image_url": "https://i.ytimg.com/vi/9DCMouqMgYQ/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/9DCMouqMgYQ/hqdefault.jpg",
+        "title": "ป่าช้าวัดดอนและสุสานจีนโพ้นทะเลพันหลุม (สาทร)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=9DCMouqMgYQ",
+        "title": "ป่าช้าวัดดอน ยานนาวา - ป่าช้าเฮี้ยนที่สุดกลางกรุง! ทำไมคนสาทรถึงไม่กล้าไปวิ่งตอนกลางคืน |ประวัติหลอน",
+        "thumbnail": "https://i.ytimg.com/vi/9DCMouqMgYQ/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามเหยียบย่ำบนเนินหลุมศพและห้ามเปิดเครื่องเสียงดังยามวิกาล",
+    "taboos_en": "Never walk atop the earth burial mounds or disturb nocturnal peace."
+  },
+  {
+    "id": "pin-phraya-gong-phraya-phan",
+    "title_th": "ตำนานปิตุฆาตพญากง พญาพาน และพระปฐมเจดีย์ (นครปฐม)",
+    "title_en": "Phraya Gong, Phraya Phan & The Stupa of Atonement (Phra Pathommachedi)",
+    "category": "legend",
+    "province_th": "นครปฐม (ไทย)",
+    "province_en": "Nakhon Pathom (Thailand)",
+    "district_th": "เมืองนครปฐม",
+    "district_en": "Mueang Nakhon Pathom",
+    "lat": 13.8196,
+    "lng": 100.0601,
+    "sound_preset": "temple_bell",
+    "story_th": "โศกนาฏกรรมปิตุฆาตเมื่อโอรสถูกทำนายว่าเป็นกาลกิณีจึงถูกนำไปลอยน้ำ ต่อมาเติบใหญ่ทำสงครามชนช้างฆ่าบิดาแท้ๆ โดยไม่รู้ตัว ก่อนสร้างมหาเจดีย์สูงเท่านกเขาเหินเพื่อไถ่บาป",
+    "story_en": "A tragic Greek-like patricide myth where an abandoned prince unknowingly slew his royal father in battle, later erecting the world's tallest stupa 'as high as a dove flies' in remorse.",
+    "folklore_history_th": "พระปฐมเจดีย์ มหาเจดีย์ที่สูงที่สุดในประเทศไทย ประดิษฐานพระบรมสารีริกธาตุคู่บ้านคู่เมืองสยาม",
+    "folklore_history_en": "The towering orange-tiled stupa dominating central Thailand, symbolizing monumental imperial repentance.",
+    "image_url": "https://i.ytimg.com/vi/qlFDakE60z4/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/qlFDakE60z4/hqdefault.jpg",
+        "title": "ตำนานปิตุฆาตพญากง พญาพาน และพระปฐมเจดีย์ (นครปฐม)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=qlFDakE60z4",
+        "title": "พญากงพญาพาน ตำนานนครปฐม | Behind History จังหวัดนี้มีตำนาน EP.15",
+        "thumbnail": "https://i.ytimg.com/vi/qlFDakE60z4/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามกระทำอกตัญญูต่อบิดามารดา และห้ามกล่าวลบหลู่ตำนานผู้สร้างเจดีย์",
+    "taboos_en": "Honor parents above all else; unfilial curses are believed to bring swift karmic retribution here."
+  },
+  {
+    "id": "pin-luang-phor-pak-daeng-nakhon-nayok",
+    "title_th": "หลวงพ่อปากแดง วัดพราหมณี (พระพุทธรูปริมฝีปากสีชาดแห่งนครนายก)",
+    "title_en": "Luang Phor Pak Daeng of Wat Phrammani (The Vermilion-Lipped Buddha)",
+    "category": "sacred",
+    "province_th": "นครนายก (ไทย)",
+    "province_en": "Nakhon Nayok (Thailand)",
+    "district_th": "เมืองนครนายก",
+    "district_en": "Mueang Nakhon Nayok",
+    "lat": 14.2185,
+    "lng": 101.2476,
+    "sound_preset": "temple_bell",
+    "story_th": "พระพุทธรูปโลหะศิลปะล้านช้างอันศักดิ์สิทธิ์ มีเอกลักษณ์ที่ริมฝีปากสีแดงสดคล้ายแต้มชาด เลื่องลือด้านการประทานโชคลาภ คุ้มครองความปลอดภัย และให้โชคลาภการค้า",
+    "story_en": "An ancient Lan Xang Buddha statue distinguished by luminous natural crimson lips, venerated by millions seeking prosperity and financial deliverance.",
+    "folklore_history_th": "อัญเชิญมาจากเวียงจันทน์ในสมัยรัตนโกสินทร์ตอนต้น มีวิหารอนุสรณ์สถานทหารญี่ปุ่นสมัยสงครามโลกครั้งที่ 2 ภายในวัด",
+    "folklore_history_en": "Brought from Vientiane during the early Rattanakosin period; the grounds also host a WWII Japanese memorial.",
+    "image_url": "https://i.ytimg.com/vi/eP9Bn11uuls/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/eP9Bn11uuls/hqdefault.jpg",
+        "title": "หลวงพ่อปากแดง วัดพราหมณี (พระพุทธรูปริมฝีปากสีชาดแห่งนครนายก)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=eP9Bn11uuls",
+        "title": "วัดพราหมณี หลวงพ่อปากแดง นครนายก ที่พึ่งของนักแสวงโชค",
+        "thumbnail": "https://i.ytimg.com/vi/eP9Bn11uuls/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามขอพรในทางทุจริตหรือทำร้ายผู้อื่น และต้องรักษาสัจจะเมื่อสมหวัง",
+    "taboos_en": "Never petition blessings for deceitful gains, and fulfill promised merit offerings diligently."
+  },
+  {
+    "id": "pin-phraya-sri-bhujong-mukdahan",
+    "title_th": "พญาศรีภุชงค์มุกดานาคราช พญานาคกายสีขาวบริสุทธิ์ (แก่งกะเบา มุกดาหาร)",
+    "title_en": "Phraya Sri Bhujong Mukda Nakaraj (The White Naga Deity of Kaeng Kabao)",
+    "category": "sacred",
+    "province_th": "มุกดาหาร (ไทย)",
+    "province_en": "Mukdahan (Thailand)",
+    "district_th": "หว้านใหญ่",
+    "district_en": "Wan Yai",
+    "lat": 16.8122,
+    "lng": 104.7397,
+    "sound_preset": "water_spirit",
+    "story_th": "พญานาคราชกายสีขาวผุดผ่ององค์ใหญ่ริมฝั่งโขง เป็นพญานาคประจำทิศเหนือผู้ประทานความอุดมสมบูรณ์และโชคลาภ เชื่อว่าเป็นผู้เปิดทางรวยและล้างเคราะห์",
+    "story_en": "Majestic immaculate white serpent king coiled along the Mekong rapids of Kaeng Kabao, revered for purifying bad karma and bestowing good fortune.",
+    "folklore_history_th": "ประติมากรรมเกล็ดสีขาวมุกสะท้อนแสงแดดริมแก่งหินธรรมชาติ จุดลอดท้องพญานาคเพื่อรับพลังมงคล",
+    "folklore_history_en": "Devotees perform ritual circumambulations beneath the serpent's spiraling white underbelly for celestial empowerment.",
+    "image_url": "https://i.ytimg.com/vi/zYQKQ7QnGyY/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/zYQKQ7QnGyY/hqdefault.jpg",
+        "title": "พญาศรีภุชงค์มุกดานาคราช พญานาคกายสีขาวบริสุทธิ์ (แก่งกะเบา มุกดาหาร)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=zYQKQ7QnGyY",
+        "title": "พญาศรีภุชงค์มุกดานาคราช  แก่งกะเบา จ.มุกดาหาร | คน-หัว-นาค |ພະຍານາກ",
+        "thumbnail": "https://i.ytimg.com/vi/zYQKQ7QnGyY/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามถ่มน้ำลายหรือส่งเสียงหยาบคายริมแก่งกะเบาหน้าองค์พญานาค",
+    "taboos_en": "Never spit or utter profanities along the sacred riverbanks."
+  },
+  {
+    "id": "pin-bangkok-city-pillar-in-chan",
+    "title_th": "ศาลหลักเมืองกรุงเทพมหานคร และอาถรรพ์เสาหลักเมืองอินทร์จันมั่นคง (พระนคร)",
+    "title_en": "Bangkok City Pillar Shrine & The In-Chan-Mun-Khong Foundation Myth",
+    "category": "sacred",
+    "province_th": "กรุงเทพมหานคร (ไทย)",
+    "province_en": "Bangkok (Thailand)",
+    "district_th": "พระนคร",
+    "district_en": "Phra Nakhon",
+    "lat": 13.7525,
+    "lng": 100.4939,
+    "sound_preset": "temple_bell",
+    "story_th": "ศูนย์กลางจิตวิญญาณแห่งกรุงรัตนโกสินทร์ สถาปนาขึ้นพร้อมการสร้างเมืองหลวง มีตำนานพื้นบ้านเล่าขานถึงพิธีฝังเสาหลักเมืองและเทพอารักษ์ทั้งห้าผู้คุ้มครองสยามประเทศ",
+    "story_en": "The metaphysical nucleus of Bangkok founded by King Rama I in 1782, home to the two historical wooden pillars and the five guardian deities of the realm.",
+    "folklore_history_th": "มีเสาหลักเมือง 2 ต้น ต้นเดิมในสมัย ร.1 และต้นใหม่ในสมัย ร.4 พร้อมหอเทพอารักษ์ประจำเมือง เช่น พระเสื้อเมือง พระทรงเมือง",
+    "folklore_history_en": "Houses the five protective deities including Phra Suea Mueang and Chao Chet Khup ensuring metropolitan security.",
+    "image_url": "https://i.ytimg.com/vi/RQ5p0E7y1G0/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/RQ5p0E7y1G0/hqdefault.jpg",
+        "title": "ศาลหลักเมืองกรุงเทพมหานคร และอาถรรพ์เสาหลักเมืองอินทร์จันมั่นคง (พระนคร)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=RQ5p0E7y1G0",
+        "title": "\"เกิดอวมงคลนิมิตขึ้น\" ตำนานครั้งตั้งศาลหลักเมือง กรุงเทพมหานคร เรื่องการ “ฝังคนทั้งเป็น”",
+        "thumbnail": "https://i.ytimg.com/vi/RQ5p0E7y1G0/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามแต่งกายไม่สุภาพ ห้ามเดินข้ามธรณีประตูศาล และห้ามนำสุราเข้ามาดื่ม",
+    "taboos_en": "Never step on the sanctum threshold timber and dress in respectful attire."
+  },
+  {
+    "id": "pin-bang-pakong-bridge-guardian",
+    "title_th": "อาถรรพ์แม่ย่านางสะพานข้ามแม่น้ำบางปะกง (ฉะเชิงเทรา)",
+    "title_en": "The Spirit Maiden of Bang Pakong Bridge (Chachoengsao)",
+    "category": "ghost",
+    "province_th": "ฉะเชิงเทรา (ไทย)",
+    "province_en": "Chachoengsao (Thailand)",
+    "district_th": "บางปะกง",
+    "district_en": "Bang Pakong",
+    "lat": 13.5434,
+    "lng": 100.9937,
+    "sound_preset": "creepy_wind",
+    "story_th": "สะพานข้ามแม่น้ำสายใหญ่ที่คนขับรถกลางดึกมักพบหญิงสาวชุดขาวกวักมือเรียก หรือกระโดดลงไปในความมืด เมื่อหยุดดูไม่พบสิ่งใด มีเรื่องเล่าตัวตายตัวแทนต่อเนื่อง",
+    "story_en": "Tragic river bridge frequented by spectral encounters where motorists report seeing a woman in white waving frantically before plunging into the murky depths.",
+    "folklore_history_th": "จุดเชื่อมต่อคมนาคมภาคตะวันออกที่เกิดอุบัติเหตุทางน้ำและทางบ่อยครั้ง ชาวเรือจะบีบแตรและจุดประทัดไหว้แม่ย่านางสายน้ำ",
+    "folklore_history_en": "Bargemen and drivers sound horns and offer garlands to propitiate water entities commanding the tides.",
+    "image_url": "https://i.ytimg.com/vi/sX6eNI3HWdo/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/sX6eNI3HWdo/hqdefault.jpg",
+        "title": "อาถรรพ์แม่ย่านางสะพานข้ามแม่น้ำบางปะกง (ฉะเชิงเทรา)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=sX6eNI3HWdo",
+        "title": "\"ถนนสายสยอง\" ชอบขับรถตอนกลางคืนแล้วเปิดเรื่องผีต้องฟัง! | หลอนตามสั่ง EP.291 | nuenglc",
+        "thumbnail": "https://i.ytimg.com/vi/sX6eNI3HWdo/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามจอดรถท้าทายหรือชะโงกหน้าลงไปตะโกนล้อเลียนกลางสะพานยามดึก",
+    "taboos_en": "Do not loiter or shout into the abyss above the bridge at night."
+  },
+  {
+    "id": "pin-wat-phra-non-chaksi-singburi",
+    "title_th": "พระนอนจักรสีห์ วัดพระนอนจักรสีห์วรวิหาร (พุทธไสยาสน์ยักษ์พันปีแห่งสิงห์บุรี)",
+    "title_en": "Phra Non Chaksi of Sing Buri (The Thousand-Year Giant Reclining Buddha)",
+    "category": "sacred",
+    "province_th": "สิงห์บุรี (ไทย)",
+    "province_en": "Sing Buri (Thailand)",
+    "district_th": "เมืองสิงห์บุรี",
+    "district_en": "Mueang Sing Buri",
+    "lat": 14.8698,
+    "lng": 100.3879,
+    "sound_preset": "temple_bell",
+    "story_th": "พระพุทธไสยาสน์ศิลาแลงโบราณขนาดยาวเกือบ 48 เมตร ตำนานเล่าว่าสร้างโดยท้าวโคตรบอง หรือสิงหพาหุ เพื่อไถ่บาปที่ทำร้ายบิดาที่เป็นสิงห์",
+    "story_en": "A mammoth 47-meter ancient laterite reclining Buddha, said in folklore to have been built by a remorseful prince to atone for slaying his lion father.",
+    "folklore_history_th": "พระพุทธรูปปางโปรดอสุรินทราหูศิลปะสุโขทัย พระพุทธรูปคู่บ้านคู่เมืองสิงห์บุรีมาแต่โบราณกาล",
+    "folklore_history_en": "Revered as one of Thailand's most colossal and ancient reclining statues, predating the Ayutthaya period.",
+    "image_url": "https://i.ytimg.com/vi/KutnrK_YetE/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/KutnrK_YetE/hqdefault.jpg",
+        "title": "พระนอนจักรสีห์ วัดพระนอนจักรสีห์วรวิหาร (พุทธไสยาสน์ยักษ์พันปีแห่งสิงห์บุรี)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=KutnrK_YetE",
+        "title": "ตำนานการสร้าง พระนอนจักรสีห์ พระพุทธรูปศักดิ์สิทธิ์เมืองสิงห์บุรี #เล่าเรื่อง #เที่ยววัด #พระพุทธรูป",
+        "thumbnail": "https://i.ytimg.com/vi/KutnrK_YetE/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามส่งเสียงอึกทึกในพระวิหาร และห้ามปีนป่ายฐานแท่นพระไสยาสน์",
+    "taboos_en": "Maintain quiet contemplation and never climb upon the sacred altar base."
+  },
+  {
+    "id": "pin-wihan-mongkhon-bophit-ayutthaya",
+    "title_th": "วิหารพระมงคลบพิตร (มหาพุทธปฏิมาสัมฤทธิ์ผ่านเพลิงสงครามแห่งกรุงศรีอยุธยา)",
+    "title_en": "Vihara Phra Mongkhon Bophit (The War-Enduring Giant Bronze Buddha of Ayutthaya)",
+    "category": "sacred",
+    "province_th": "พระนครศรีอยุธยา (ไทย)",
+    "province_en": "Phra Nakhon Si Ayutthaya (Thailand)",
+    "district_th": "พระนครศรีอยุธยา",
+    "district_en": "Phra Nakhon Si Ayutthaya",
+    "lat": 14.3541,
+    "lng": 100.5574,
+    "sound_preset": "temple_bell",
+    "story_th": "พระพุทธรูปสัมฤทธิ์องค์มหึมาที่รอดพ้นจากการล่มสลายของกรุงศรีอยุธยา แม้วิหารจะถูกเผาทำลายจนเศียรหักพัง แต่ปฏิมายังคงหยัดยืนผ่านกาลเวลา",
+    "story_en": "One of Thailand's largest bronze Buddha images that withstood the fiery sacking of Ayutthaya in 1767, enduring devastation and restoration across four centuries.",
+    "folklore_history_th": "สร้างขึ้นในสมัยอยุธยาตอนต้น เป็นหนึ่งในสัญลักษณ์แห่งความไม่ยอมแพ้และจิตวิญญาณแห่งสยามประเทศ",
+    "folklore_history_en": "Restored in the 20th century, standing adjacent to the ancient royal palace complex.",
+    "image_url": "https://i.ytimg.com/vi/VAQ8KSOhsXk/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/VAQ8KSOhsXk/hqdefault.jpg",
+        "title": "วิหารพระมงคลบพิตร (มหาพุทธปฏิมาสัมฤทธิ์ผ่านเพลิงสงครามแห่งกรุงศรีอยุธยา)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=VAQ8KSOhsXk",
+        "title": "พบพระพุทธรูปโบราณจำนวนมาก ในบ่าซ้ายพระมงคลบพิตร อยุธยา",
+        "thumbnail": "https://i.ytimg.com/vi/VAQ8KSOhsXk/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามส่งเสียงดังหรือกระทำการลบหลู่ต่อดวงวิญญาณบูรพกษัตริย์ในเขตโบราณสถาน",
+    "taboos_en": "Respect the sanctity of the royal ruins and fallen ancestors."
+  },
+  {
+    "id": "pin-chao-pho-khao-yai-sichang",
+    "title_th": "ศาลเจ้าพ่อเขาใหญ่ เกาะสีชัง (ศาลเจ้าจีนโบราณในถ้ำกลางทะเล)",
+    "title_en": "Chao Pho Khao Yai Cliff Shrine (Ancient Island Sea Cave Temple of Ko Sichang)",
+    "category": "sacred",
+    "province_th": "ชลบุรี (ไทย)",
+    "province_en": "Chonburi (Thailand)",
+    "district_th": "เกาะสีชัง",
+    "district_en": "Ko Sichang",
+    "lat": 13.1645,
+    "lng": 100.8122,
+    "sound_preset": "water_spirit",
+    "story_th": "ศาลเจ้าศักดิ์สิทธิ์ที่ผสานหินงอกหินย้อยธรรมชาติเป็นรูปองค์เทพ ตั้งอยู่บนหน้าผาสูงชัน เป็นที่เคารพของกะลาสีและพ่อค้าสำเภาจีนมานับร้อยปี",
+    "story_en": "Sacred cavern shrine built into coastal sea cliffs where natural stalagmites resemble deities, venerated by mariners and merchants sailing the Gulf of Thailand.",
+    "folklore_history_th": "ตามตำนานชาวประมงจีนโบราณเห็นแสงเรืองรองเปล่งออกจากถ้ำ จึงขึ้นไปพบหินลักษณะคล้ายเจ้าพ่อ จึงร่วมกันสร้างศาล",
+    "folklore_history_en": "Discovered by Chinese junk traders who noticed mysterious ethereal lights radiating from the island cliffs.",
+    "image_url": "https://i.ytimg.com/vi/TpYREyntlc4/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/TpYREyntlc4/hqdefault.jpg",
+        "title": "ศาลเจ้าพ่อเขาใหญ่ เกาะสีชัง (ศาลเจ้าจีนโบราณในถ้ำกลางทะเล)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=TpYREyntlc4",
+        "title": "ศาลเจ้าพ่อเขาใหญ่ สิ่งศักดิ์สิทธิ์คู่เกาะสีชัง  | เรื่องนี้ต้องขยาย | ThairathTV",
+        "thumbnail": "https://i.ytimg.com/vi/TpYREyntlc4/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามแต่งกายไม่สุภาพ และห้ามแตะต้องหินศักดิ์สิทธิ์โดยไม่ได้รับอนุญาต",
+    "taboos_en": "Do not touch holy stalactite formations carelessly; dress respectfully."
+  },
+  {
+    "id": "pin-phra-that-kham-kaen-khonkaen",
+    "title_th": "พระธาตุขามแก่น (ตำนานตอมะขามตายพรายคืนชีพแห่งขอนแก่น)",
+    "title_en": "Phra That Kham Kaen (The Resurrected Tamarind Tree Stupa of Khon Kaen)",
+    "category": "sacred",
+    "province_th": "ขอนแก่น (ไทย)",
+    "province_en": "Khon Kaen (Thailand)",
+    "district_th": "น้ำพอง",
+    "district_en": "Nam Phong",
+    "lat": 16.5818,
+    "lng": 102.9392,
+    "sound_preset": "temple_bell",
+    "story_th": "คณะอัญเชิญพระอังคารธาตุได้พักแรมและวางพระธาตุไว้บนตอมะขามที่ตายแล้ว เมื่อกลับมาพบว่าตอมะขามผลิใบเขียวขจีมีชีวิตขึ้นมาใหม่ จึงสร้างเจดีย์ครอบไว้",
+    "story_en": "The ancient origin stupa of Khon Kaen, built where a dead, dry tamarind trunk miraculously blossomed back to life after holy Buddha relics were placed on it.",
+    "folklore_history_th": "ปูชนียสถานคู่บ้านคู่เมืองขอนแก่น และเป็นที่มาของชื่อจังหวัดขอนแก่น (จาก 'ขามแก่น')",
+    "folklore_history_en": "Sacred palladium of Khon Kaen province, giving the city its modern name derived from the resurrected trunk.",
+    "image_url": "https://i.ytimg.com/vi/FJ2pkrinD7I/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/FJ2pkrinD7I/hqdefault.jpg",
+        "title": "พระธาตุขามแก่น (ตำนานตอมะขามตายพรายคืนชีพแห่งขอนแก่น)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=FJ2pkrinD7I",
+        "title": "MV เพลง สักการะพระธาตุขามแก่น -  ต้นกล้าTonkla ดรุฒ เสียงมิวสิค #สักการะพระธาตุขามแก่น",
+        "thumbnail": "https://i.ytimg.com/vi/FJ2pkrinD7I/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามสวมรองเท้าขึ้นบนลานประทักษิณรอบองค์พระธาตุ",
+    "taboos_en": "Remove footwear before stepping onto the stupa's holy terrace circumambulation path."
+  },
+  {
+    "id": "pin-phraya-sri-sattanakharat-nakhon-phanom",
+    "title_th": "พญาศรีสัตตนาคราช แลนด์มาร์กริมฝั่งโขงแห่งศรัทธา (นครพนม)",
+    "title_en": "Phraya Sri Satta Nakharat (The Seven-Headed Mekong Bronze Naga of Nakhon Phanom)",
+    "category": "sacred",
+    "province_th": "นครพนม (ไทย)",
+    "province_en": "Nakhon Phanom (Thailand)",
+    "district_th": "เมืองนครพนม",
+    "district_en": "Mueang Nakhon Phanom",
+    "lat": 17.4069,
+    "lng": 104.7865,
+    "sound_preset": "water_spirit",
+    "story_th": "พญาศรีสัตตนาคราช 7 เศียร หล่อด้วยทองเหลืองขนาดมหึมาพ่นน้ำลงสู่แม่น้ำโขง เชื่อว่าเป็นพญานาคตระกูลเอราปถะผู้คุ้มครองแผ่นดินสองฝั่งไทย-ลาว",
+    "story_en": "Monumental seven-headed bronze Naga spurting water into the Mekong, honored as the chief aquatic sovereign safeguarding peace along the Thai-Lao border.",
+    "folklore_history_th": "ศูนย์รวมความเชื่อและพิธีบวงสรวงใหญ่ในวันเพ็ญเดือน 11 มีลำแสงประหลาดปรากฏขึ้นเหนือน้ำโขงบ่อยครั้ง",
+    "folklore_history_en": "Epicenter of Isan river rites where mysterious lights and naga blessings draw pilgrims from across Southeast Asia.",
+    "image_url": "https://i.ytimg.com/vi/3iVlC-b5WBQ/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/3iVlC-b5WBQ/hqdefault.jpg",
+        "title": "พญาศรีสัตตนาคราช แลนด์มาร์กริมฝั่งโขงแห่งศรัทธา (นครพนม)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=3iVlC-b5WBQ",
+        "title": "ปาฏิหาริย์ \"พญาศรีสัตตนาคราช\" ผู้สร้างแม่น้ำโขง | เรื่องเล่าหลังเที่ยงคืน EP.71",
+        "thumbnail": "https://i.ytimg.com/vi/3iVlC-b5WBQ/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามยืนค้ำหรือเหยียบบนแท่นบูชาดอกไม้หน้าองค์พญานาค",
+    "taboos_en": "Do not step upon the floral offering altars facing the holy serpent."
+  },
+  {
+    "id": "pin-phi-phong-northern-thai",
+    "title_th": "ตำนานผีโพงและว่านผีโพง (ดวงไฟเรืองแสงขึ้นจมูกแห่งไพรพงล้านนา)",
+    "title_en": "Phi Phong & The Glowing Ghost Herbs of Lanna Wilderness",
+    "category": "ghost",
+    "province_th": "เชียงใหม่ (ไทย)",
+    "province_en": "Chiang Mai (Thailand)",
+    "district_th": "แม่ริม",
+    "district_en": "Mae Rim",
+    "lat": 18.9142,
+    "lng": 98.9458,
+    "sound_preset": "jungle_curse",
+    "story_th": "ผีพื้นบ้านภาคเหนือที่เกิดจากผู้เลี้ยงว่านผีโพงแล้วไม่สามารถคุมอาคมได้ ยามค่ำคืนจะมีแสงสว่างวาบพุ่งออกจากจมูก เที่ยวหากบเขียดและของคาวกินตามหนองน้ำ",
+    "story_en": "Lanna supernatural entity arising from enchanted herbs gone wild; at night a bioluminescent beam shines from its nostrils as it scours murky marshes for amphibians.",
+    "folklore_history_th": "ความเชื่อเรื่องว่านโพงและคาถาอาคมในป่าเขาภาคเหนือ หากใครไปทักหรือขัดขวางจะถูกทำร้ายหรือสาปให้ล้มป่วย",
+    "folklore_history_en": "Deep-rooted northern Thai folklore regarding botanical sorcery, nocturnal lights, and forest taboos.",
+    "image_url": "https://i.ytimg.com/vi/zFOIbtJS2jM/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/zFOIbtJS2jM/hqdefault.jpg",
+        "title": "ตำนานผีโพงและว่านผีโพง (ดวงไฟเรืองแสงขึ้นจมูกแห่งไพรพงล้านนา)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=zFOIbtJS2jM",
+        "title": "คำสาปผีโพง สืบทอดร่างผีโพง | หลอนไดอารี่ EP.151",
+        "thumbnail": "https://i.ytimg.com/vi/zFOIbtJS2jM/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "หากเห็นดวงไฟสีแดงลอยเลียดพื้นน้ำในป่ายามดึก ห้ามทักหรือผิวปากเด็ดขาด",
+    "taboos_en": "Never whistle or call out if you spot low-hovering red lights near nocturnal ponds."
+  },
+  {
+    "id": "pin-kwai-thanu-wat-srisa-thong",
+    "title_th": "อาถรรพ์ควายธนูอาคม หลวงพ่อน้อย วัดศีรษะทอง (นครปฐม)",
+    "title_en": "The Magic Arrow-Bull (Kwai Thanu) Occultism of Wat Srisa Thong",
+    "category": "legend",
+    "province_th": "นครปฐม (ไทย)",
+    "province_en": "Nakhon Pathom (Thailand)",
+    "district_th": "นครชัยศรี",
+    "district_en": "Nakhon Chai Si",
+    "lat": 13.8078,
+    "lng": 100.1873,
+    "sound_preset": "jungle_curse",
+    "story_th": "วิชาไสยเวทโบราณ ปลุกเสกหุ่นควายธนูจากดินอาถรรพ์ โลหะสัมฤทธิ์ หรือไม้มงคล เพื่อเฝ้าเคหสถาน ปราบภูตผีปีศาจ และขวิดทำลายคุณไสยมนต์ดำ",
+    "story_en": "Ancient esoteric warding art where enchanted bull effigies are consecrated to guard homes, trample malevolent spirits, and spear demonic black magic with spectral horns.",
+    "folklore_history_th": "สำนักวัดศีรษะทอง ต้นตำรับราหูอมจันทร์และวิชาสร้างควายธนูเขาควายเผือกฟ้าผ่าตายที่มีอิทธิฤทธิ์สูงสุด",
+    "folklore_history_en": "Pioneered by esoteric masters in Nakhon Pathom, celebrated as the premier spiritual guardian in Thai amulet lore.",
+    "image_url": "https://i.ytimg.com/vi/I7Thu6mtA1Q/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/I7Thu6mtA1Q/hqdefault.jpg",
+        "title": "อาถรรพ์ควายธนูอาคม หลวงพ่อน้อย วัดศีรษะทอง (นครปฐม)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=I7Thu6mtA1Q",
+        "title": "\" ครั่งวิเศษ \" วัวธนู หลวงพ่อน้อย วัดศรีษะทอง -- จากนิยายพื้นบ้านปรัมปรา สู่ตำนานตัวจริง !!!",
+        "thumbnail": "https://i.ytimg.com/vi/I7Thu6mtA1Q/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามเลี้ยงควายธนูหากละเลยการเซ่นหญ้าและน้ำ เพราะวิญญาณควายอาจย้อนทำร้ายเจ้าของ",
+    "taboos_en": "Never neglect ritual offerings to bound guardian charms lest their arcane power turn erratic."
+  },
+  {
+    "id": "pin-roopkund-skeleton-lake",
+    "title_th": "ทะเลสาบรูพกุนด์ ทะเลสาบโครงกระดูกมนุษย์ปริศนาแห่งหิมาลัย",
+    "title_en": "Roopkund Skeleton Lake (Mystery of Himalayan Glacial Bones)",
+    "category": "legend",
+    "province_th": "อุตตราขัณฑ์ (อินเดีย)",
+    "province_en": "Uttarakhand (India)",
+    "district_th": "จาโมลี",
+    "district_en": "Chamoli",
+    "lat": 30.2628,
+    "lng": 79.7314,
+    "sound_preset": "creepy_wind",
+    "story_th": "ทะเลสาบน้ำแข็งสูงกว่า 5,000 เมตร เมื่อน้ำแข็งละลายจะเผยให้เห็นโครงกระดูกมนุษย์หลายร้อยร่างจมอยู่ก้นทะเลสาบ กะโหลกมีรอยแตกร้าวจากลูกเห็บยักษ์โบราณ",
+    "story_en": "High-altitude glacial tarn in the Indian Himalayas containing hundreds of ancient human skeletons revealed during summer thaws, killed by cricket-ball-sized hailstones in the 9th century.",
+    "folklore_history_th": "ตำนานการจาริกแสวงบุญของราชันย์แห่งกานาวช์ที่ล่วงละเมิดเทือกเขาศักดิ์สิทธิ์ของเทวีนันทาเทวีจนถูกลงทัณฑ์",
+    "folklore_history_en": "Linked to the goddess Nanda Devi who rained wrath upon a boastful king and his entourage traversing her sacred crest.",
+    "image_url": "https://i.ytimg.com/vi/oDTnQFTOh1Q/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/oDTnQFTOh1Q/hqdefault.jpg",
+        "title": "ทะเลสาบรูพกุนด์ ทะเลสาบโครงกระดูกมนุษย์ปริศนาแห่งหิมาลัย"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=oDTnQFTOh1Q",
+        "title": "ปริศนา #ทะเลสาบโครงกระดูก (Roopkund Lake Skeleton) นับร้อยกลางเทือกเขาหิมาลัย | เล่าเป็นเรื่อง EP.86",
+        "thumbnail": "https://i.ytimg.com/vi/oDTnQFTOh1Q/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามหยิบจับหรือขโมยกระดูกมนุษย์ออกจากบริเวณทะเลสาบเด็ดขาด",
+    "taboos_en": "Never disturb or remove human skeletal remains from the glacial basin."
+  },
+  {
+    "id": "pin-kailasa-temple-ellora",
+    "title_th": "วัดไกรลาส มหาปราสาทสกัดจากภูผาหินก้อนเดียว (ถ้ำเอลโลรา)",
+    "title_en": "Kailasa Temple (The Megalithic Monolithic Wonder of Ellora Caves)",
+    "category": "sacred",
+    "province_th": "มหาราษฏระ (อินเดีย)",
+    "province_en": "Maharashtra (India)",
+    "district_th": "เอารังคาบาด",
+    "district_en": "Aurangabad",
+    "lat": 20.0238,
+    "lng": 75.1793,
+    "sound_preset": "temple_bell",
+    "story_th": "สิ่งมหัศจรรย์ทางวิศวกรรมยุคโบราณ สลักหน้าผาหินบะซอลต์จากบนลงล่างเป็นวิหารขนาดยักษ์โดยไร้การก่ออิฐ เลียนแบบเขาไกรลาสที่ประทับแห่งพระศิวะ",
+    "story_en": "Colossal rock-cut monolithic Hindu temple carved top-down from a single basalt cliff, removing over 200,000 tons of rock to represent Shiva's celestial Mount Kailash.",
+    "folklore_history_th": "สร้างในรัชสมัยกษัตริย์กฤษณะที่ 1 แห่งราชวงศ์ราษฏรกูฏ ในศตวรรษที่ 8 ฝีมือประณีตจนเชื่อว่ามีเทวะช่วยเนรมิต",
+    "folklore_history_en": "8th-century architectural marvel believed by devotees to have been carved with the aid of divine celestial architects.",
+    "image_url": "https://i.ytimg.com/vi/5qXg-H9PMKQ/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/5qXg-H9PMKQ/hqdefault.jpg",
+        "title": "วัดไกรลาส มหาปราสาทสกัดจากภูผาหินก้อนเดียว (ถ้ำเอลโลรา)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=5qXg-H9PMKQ",
+        "title": "วิหาร​อินเดีย​ ที่สร้างจากหินก้อนเดียว​ วิหารไกร​ลา​ศ​ | VLOG",
+        "thumbnail": "https://i.ytimg.com/vi/5qXg-H9PMKQ/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามขีดเขียนบนผนังหินแกะสลักโบราณ และสำรวมกายวาจาในเขตเทวสถาน",
+    "taboos_en": "Do not deface rock engravings and observe holy decorum in the Shiva sanctuary."
+  },
+  {
+    "id": "pin-brihadisvara-temple-shadow",
+    "title_th": "วัดพฤหัทอีศวร ปริศนายอดศิลาโดมไร้เงาแห่งตันจาวูร์",
+    "title_en": "Brihadisvara Temple (The Shadowless Dome Mystery of Thanjavur)",
+    "category": "sacred",
+    "province_th": "ทมิฬนาฑู (อินเดีย)",
+    "province_en": "Tamil Nadu (India)",
+    "district_th": "ตันจาวูร์",
+    "district_en": "Thanjavur",
+    "lat": 10.7828,
+    "lng": 79.1318,
+    "sound_preset": "temple_bell",
+    "story_th": "เทวาลัยหินแกรนิตขนาดยักษ์อายุกว่า 1,000 ปี ยอดปรางค์กุมภัมทำจากหินก้อนเดียวหนัก 80 ตัน มีคำเล่าขานว่ายอดปรางค์ไม่เคยทอดเงาลงพื้นดินในเวลาเที่ยงวัน",
+    "story_en": "Magnificent granite temple over a millennium old capped with an 80-ton monolithic stone dome, famed in folklore for never casting a shadow on the ground at high noon.",
+    "folklore_history_th": "สร้างโดยพระเจ้าราชราชะโจฬะที่ 1 เป็นมรดกโลกที่สะท้อนความรุ่งเรืองสูงสุดของอารยธรรมโจฬะ",
+    "folklore_history_en": "Constructed by Emperor Raja Raja Chola I, showcasing the zenith of South Indian Dravidian sacred architecture.",
+    "image_url": "https://i.ytimg.com/vi/YlAy-nHzsdU/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/YlAy-nHzsdU/hqdefault.jpg",
+        "title": "วัดพฤหัทอีศวร ปริศนายอดศิลาโดมไร้เงาแห่งตันจาวูร์"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=YlAy-nHzsdU",
+        "title": "Mind Boggling Facts About Brihadeeswarar Temple | Peruvudaiyar Temple | Big Temple | Thanjavur",
+        "thumbnail": "https://i.ytimg.com/vi/YlAy-nHzsdU/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามสวมรองเท้าเข้าสู่บริเวณระเบียงวิหารหินแกรนิต",
+    "taboos_en": "Footwear must be deposited before entering the holy granite courtyards."
+  },
+  {
+    "id": "pin-kamakhya-temple-assam",
+    "title_th": "วัดกามัขยา เทวาลัยแห่งพลังศักติและแม่น้ำโลหิต (อัสสัม)",
+    "title_en": "Kamakhya Temple (The Bleeding Goddess Shrine of Nilachal Hill)",
+    "category": "sacred",
+    "province_th": "อัสสัม (อินเดีย)",
+    "province_en": "Assam (India)",
+    "district_th": "กูวาฮาตี",
+    "district_en": "Guwahati",
+    "lat": 26.1664,
+    "lng": 91.7052,
+    "sound_preset": "temple_bell",
+    "story_th": "หนึ่งในศากติปีฐ 51 แห่ง จุดที่โยนีของพระนางสตีตกลงสู่พื้นโลก ทุกปีในเทศกาลอัมพุพาจี น้ำในบ่อน้ำผาหินจะเปลี่ยนเป็นสีแดงดั่งโลหิตศักดิ์สิทธิ์",
+    "story_en": "Premier Tantric Shakta pilgrimage seat where Sati's womb fell to earth. During the annual Ambubachi Mela, the underground spring turns crimson symbolizing creative fertility.",
+    "folklore_history_th": "ศูนย์กลางลัทธิตันตระโบราณ สถานที่บำเพ็ญภาวนาของเหล่ายคินและฤๅษีผู้แสวงหาพลังอำนาจคุนดาลินี",
+    "folklore_history_en": "Epicenter of esoteric Tantrism where yogis meditate upon primordial feminine cosmic creative energy.",
+    "image_url": "https://i.ytimg.com/vi/7kAOq0WWTlo/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/7kAOq0WWTlo/hqdefault.jpg",
+        "title": "วัดกามัขยา เทวาลัยแห่งพลังศักติและแม่น้ำโลหิต (อัสสัม)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=7kAOq0WWTlo",
+        "title": "🇮🇳 ตำนานเทพีแห่งโยนี พระแม่กามขยา - มาหาภารตะ EP.51",
+        "thumbnail": "https://i.ytimg.com/vi/7kAOq0WWTlo/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามรบกวนพิธีกรรมระหว่างช่วงปิดเทวาลัย 3 วันในเทศกาลอัมพุพาจี",
+    "taboos_en": "The temple sanctum is strictly closed for three days during the goddess's sacred purification period."
+  },
+  {
+    "id": "pin-ram-setu-adams-bridge",
+    "title_th": "สะพานพระราม ปริศนาสันดอนหินโบราณเชื่อมมหาสมุทร (ช่องแคบพอร์ก)",
+    "title_en": "Ram Setu / Adam's Bridge (Ancient Oceanic Causeway of the Ramayana)",
+    "category": "legend",
+    "province_th": "ทมิฬนาฑู (อินเดีย / ศรีลังกา)",
+    "province_en": "Tamil Nadu (India / Sri Lanka)",
+    "district_th": "ราเมศวรัง",
+    "district_en": "Rameswaram",
+    "lat": 9.1219,
+    "lng": 79.5294,
+    "sound_preset": "water_spirit",
+    "story_th": "แนวหินปูนและสันดอนทรายความยาว 48 กิโลเมตร เชื่อมอินเดียกับศรีลังกา ตามมหากาพย์รามายณะ พระรามและกองทัพวานรได้สร้างขึ้นเพื่อข้ามไปช่วยนางสีดา",
+    "story_en": "A 48-kilometer chain of limestone shoals between India and Sri Lanka, immortalized in the Ramayana as the cosmic bridge constructed by Lord Rama and the Vanara army.",
+    "folklore_history_th": "ภาพถ่ายดาวเทียมนาซาเผยให้เห็นโครงสร้างแนวเส้นตรงใต้ท้องทะเล จนกลายเป็นข้อถกเถียงว่าเป็นฝีมือธรรมชาติหรือสิ่งปลูกสร้างโบราณ",
+    "folklore_history_en": "Satellite imagery revealing linear geological chains has fueled centuries of debate over ancient human-made maritime causeways.",
+    "image_url": "https://i.ytimg.com/vi/f9XM-NQDQpw/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/f9XM-NQDQpw/hqdefault.jpg",
+        "title": "สะพานพระราม ปริศนาสันดอนหินโบราณเชื่อมมหาสมุทร (ช่องแคบพอร์ก)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=f9XM-NQDQpw",
+        "title": "รามเกียรติ์คือเรื่องจริง: หลักฐานคือสะพานพระรามที่หนุมานสร้าง?",
+        "thumbnail": "https://i.ytimg.com/vi/f9XM-NQDQpw/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามทำลายหรือลักลอบขุดหินลอยน้ำศักดิ์สิทธิ์จากหาดราเมศวรัง",
+    "taboos_en": "Do not disturb marine shoals or desecrate floating sacred stones along the causeway."
+  },
+  {
+    "id": "pin-sigiriya-lion-rock-palace",
+    "title_th": "ปราสาทสิงคีริยะ พระราชวังลอยฟ้าบนยอดผาสิงห์ (ศรีลังกา)",
+    "title_en": "Sigiriya Lion Rock (Ancient Sky Citadel & Fortress of King Kashyapa)",
+    "category": "legend",
+    "province_th": "ภาคกลาง (ศรีลังกา)",
+    "province_en": "Central Province (Sri Lanka)",
+    "district_th": "มาตาเล",
+    "district_en": "Matale",
+    "lat": 7.957,
+    "lng": 80.7603,
+    "sound_preset": "creepy_wind",
+    "story_th": "เสาหินภูเขาไฟสูงตระหง่าน 200 เมตร มีซากพระราชวังโบราณบนยอดผา ทางขึ้นแกะสลักเป็นอุ้งเท้าสิงโตขนาดยักษ์ สร้างโดยกษัตริย์กัสสปะผู้สังหารบิดาชิงบัลลังก์",
+    "story_en": "A towering 200-meter monolith crowned with ancient sky ruins and entered through gargantuan lion paws, built by patricidal King Kashyapa who feared his brother's revenge.",
+    "folklore_history_th": "ภาพจิตรกรรมฝาผนัง 'นางอัปสราแห่งสิงคีริยะ' และกำแพงกระจกโบราณที่สะท้อนความรุ่งเรืองทางศิลปะของลังกาทวีป",
+    "folklore_history_en": "Adorned with world-famous 5th-century celestial maiden frescoes and an ancient polished mirror wall.",
+    "image_url": "https://i.ytimg.com/vi/EMg16Gm4rcE/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/EMg16Gm4rcE/hqdefault.jpg",
+        "title": "ปราสาทสิงคีริยะ พระราชวังลอยฟ้าบนยอดผาสิงห์ (ศรีลังกา)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=EMg16Gm4rcE",
+        "title": "Sigiriya Lion Rock สิกิริยา เมืองลอยฟ้าโบราณแห่งศรีลังกา |สารคดี Mysterious world",
+        "thumbnail": "https://i.ytimg.com/vi/EMg16Gm4rcE/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามส่งเสียงดังรบกวนฝูงต่อแตนยักษ์บนหน้าผา และห้ามสัมผัสภาพจิตรกรรมโบราณ",
+    "taboos_en": "Do not disturb cliff hornet nests or touch the fragile ancient plaster frescoes."
+  },
+  {
+    "id": "pin-temple-of-the-tooth-kandy",
+    "title_th": "วัดพระเขี้ยวแก้ว พระทันตธาตุศักดิ์สิทธิ์แห่งนครแคนดี (ศรีลังกา)",
+    "title_en": "Sri Dalada Maligawa (Temple of the Sacred Tooth Relic of Kandy)",
+    "category": "sacred",
+    "province_th": "ภาคกลาง (ศรีลังกา)",
+    "province_en": "Central Province (Sri Lanka)",
+    "district_th": "แคนดี",
+    "district_en": "Kandy",
+    "lat": 7.2936,
+    "lng": 80.6413,
+    "sound_preset": "temple_bell",
+    "story_th": "ที่ประดิษฐานพระทันตธาตุเบื้องซ้ายขององค์พระสัมมาสัมพุทธเจ้า ศูนย์กลางอำนาจการปกครองแห่งกษัตริย์สิงหล ใครได้ครอบครองพระเขี้ยวแก้วถือว่ามีความชอบธรรมในการครองเมือง",
+    "story_en": "Royal shrine housing the sacred left canine tooth relic of Gautama Buddha, historically revered as the divine palladium conferring sovereignty over Sri Lanka.",
+    "folklore_history_th": "ขบวนแห่เอซาลา เปราเฮรา ขบวนช้างประดับไฟและระบำแคนเดียนที่ยิ่งใหญ่ที่สุดในโลกพุทธศาสนา",
+    "folklore_history_en": "Celebrated annually in the grand Esala Perahera festival featuring decorated royal tuskers and fire dancers.",
+    "image_url": "https://i.ytimg.com/vi/loGy8yv-e38/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/loGy8yv-e38/hqdefault.jpg",
+        "title": "วัดพระเขี้ยวแก้ว พระทันตธาตุศักดิ์สิทธิ์แห่งนครแคนดี (ศรีลังกา)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=loGy8yv-e38",
+        "title": "พระเขี้ยวแก้ว เปิดตำนานทั้ง 4 องค์ได้ถูกอัญเชิญไปยังสวรรค์นาคพิภพและโลกมนุษย์ที่มีความสำคัญอย่างยิ่ง",
+        "thumbnail": "https://i.ytimg.com/vi/loGy8yv-e38/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามสวมหมวก รองเท้า หรือเปิดไหล่เปลือยเข่าในพระวิหารหลวง",
+    "taboos_en": "Strict dress code applies: shoulders and knees must be fully covered, footwear removed."
+  },
+  {
+    "id": "pin-candi-sukuh-pyramid-java",
+    "title_th": "วัดจันทิสุกุห์ มหาปิรามิดตัดยอดปริศนาแห่งชวากลาง (อินโดนีเซีย)",
+    "title_en": "Candi Sukuh (The Enigmatic Truncated Stepped Pyramid of Mount Lawu)",
+    "category": "legend",
+    "province_th": "ชวากลาง (อินโดนีเซีย)",
+    "province_en": "Central Java (Indonesia)",
+    "district_th": "คารังอันยาร์",
+    "district_en": "Karanganyar",
+    "lat": -7.6263,
+    "lng": 111.1315,
+    "sound_preset": "whisper",
+    "story_th": "เทวาลัยฮินดูรูปทรงปิรามิดขั้นบันไดคล้ายอารยธรรมมายาแห่งอเมริกากลาง แตกต่างจากสถาปัตยกรรมชวาทั่วไป ประดับภาพสลักหินเกี่ยวกับพิธีแก้คำสาปและการเกิดใหม่",
+    "story_en": "15th-century stepped pyramid perched on Mount Lawu resembling a Mayan temple rather than typical Javanese shrines, dedicated to spiritual rebirth and liberation from curses.",
+    "folklore_history_th": "สร้างขึ้นในยุคปลายอาณาจักรมัชปาหิต ก่อนที่ศาสนาอิสลามจะเข้ามาแทนที่ มีหินแกะสลักสัญลักษณ์ความอุดมสมบูรณ์",
+    "folklore_history_en": "Erected during the twilight of the Majapahit empire, steeped in esoteric Ruwat purification rituals.",
+    "image_url": "https://i.ytimg.com/vi/Ub2AJhCL6nU/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/Ub2AJhCL6nU/hqdefault.jpg",
+        "title": "วัดจันทิสุกุห์ มหาปิรามิดตัดยอดปริศนาแห่งชวากลาง (อินโดนีเซีย)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=Ub2AJhCL6nU",
+        "title": "ปริศนาพีระมิด...เก่าแก่ที่สุดในโลก..จริงหรือไม่ ? I ประวัติศาสตร์นอกตำรา EP.247",
+        "thumbnail": "https://i.ytimg.com/vi/Ub2AJhCL6nU/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามปีนป่ายบนแท่นบูชายอดปิรามิด และห้ามทำลายงานแกะสลักนูนต่ำ",
+    "taboos_en": "Do not climb onto sacred summit sacrificial altars or deface stone reliefs."
+  },
+  {
+    "id": "pin-mount-bromo-sacrifice-legend",
+    "title_th": "ภูเขาไฟโบรโม และตำนานการบูชายัญแห่งชนเผ่าเต็งเกอร์ (ชวาตะวันออก)",
+    "title_en": "Mount Bromo & The Tenggerese Volcano Sacrifice of Roro Anteng",
+    "category": "legend",
+    "province_th": "ชวาตะวันออก (อินโดนีเซีย)",
+    "province_en": "East Java (Indonesia)",
+    "district_th": "โปรโบลิงโก",
+    "district_en": "Probolinggo",
+    "lat": -7.9425,
+    "lng": 112.953,
+    "sound_preset": "jungle_curse",
+    "story_th": "ภูเขาไฟมีชีวิตกลางทะเลทรายควันกำมะถัน ตำนานเล่าว่าเจ้าหญิงโรโร อันเต็ง และโจโก เซเกร์ บวงสรวงเทพแห่งภูเขาไฟ โดยยอมเสียสละโอรสองค์สุดท้องกระโดดลงสู่ปล่องเพลิงเพื่อปกป้องประชาชน",
+    "story_en": "Active caldera rising from a sea of volcanic sand, home to the legend of Princess Roro Anteng who sacrificed her 25th son to the crater gods to save her kingdom.",
+    "folklore_history_th": "เทศกาลยัจนยา กาโซดา ชนเผ่าเต็งเกอร์จะปีนขอบปล่องภูเขาไฟเพื่อโยนผลผลิตทางการเกษตรและปศุสัตว์ลงสู่ปากปล่องเพลิงทุกปี",
+    "folklore_history_en": "Commemorated annually during the Yadnya Kasada festival where pilgrims throw harvest fruits into fiery depths.",
+    "image_url": "https://i.ytimg.com/vi/noEJZrmbGPU/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/noEJZrmbGPU/hqdefault.jpg",
+        "title": "ภูเขาไฟโบรโม และตำนานการบูชายัญแห่งชนเผ่าเต็งเกอร์ (ชวาตะวันออก)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=noEJZrmbGPU",
+        "title": "ใกล้ตาอาเซียน  : บูชาเทพเจ้าภูเขาไฟโบรโม่ (19 ก.ย. 58)",
+        "thumbnail": "https://i.ytimg.com/vi/noEJZrmbGPU/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามท้าทายพลังแห่งภูเขาไฟ หรือก้าวข้ามแนวกั้นขอบปล่องอย่างประมาท",
+    "taboos_en": "Never mock the smoking abyss or venture beyond marked safety barriers during tremors."
+  },
+  {
+    "id": "pin-wat-xieng-thong-luang-prabang",
+    "title_th": "วัดเชียงทอง มงกุฎแห่งหลวงพระบางและต้นไม้แห่งชีวิต (ลาว)",
+    "title_en": "Wat Xieng Thong (Crown Jewel of Luang Prabang & The Tree of Life)",
+    "category": "sacred",
+    "province_th": "หลวงพระบาง (ลาว)",
+    "province_en": "Luang Prabang (Laos)",
+    "district_th": "หลวงพระบาง",
+    "district_en": "Luang Prabang",
+    "lat": 19.8978,
+    "lng": 102.1432,
+    "sound_preset": "temple_bell",
+    "story_th": "พระอารามหลวงริมแม่น้ำโขง หลังคาซ้อนโค้งลาดต่ำดั่งนกสยายปีก ผนังด้านหลังประดับโมเสกกระจกสีรูปต้นไม้แห่งชีวิตอันงดงาม รอดพ้นจากการเผาทำลายของกองโจรฮ่อ",
+    "story_en": "The supreme royal monastery of Luang Prabang featuring sweeping tiered roofs sweeping down to the earth and a breathtaking colored-glass mosaic of the Tree of Life.",
+    "folklore_history_th": "สร้างโดยพระเจ้าไชยเชษฐาธิราชในปี พ.ศ. 2102-2103 เป็นสถานที่ประกอบพิธีราชาภิเษกของกษัตริย์ล้านช้าง",
+    "folklore_history_en": "Commissioned by King Setthathirath in 1560, serving as the royal coronation site of Lan Xang monarchs.",
+    "image_url": "https://i.ytimg.com/vi/GK7PvgnBLIA/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/GK7PvgnBLIA/hqdefault.jpg",
+        "title": "วัดเชียงทอง มงกุฎแห่งหลวงพระบางและต้นไม้แห่งชีวิต (ลาว)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=GK7PvgnBLIA",
+        "title": "ความลับ 400 ปี วัดเชียงทอง ที่คุณไม่เคยรู้ ศิลปะที่โจรฮ่อยังไม่กล้าเผา! วัดเชียงทองหลวงพระบาง",
+        "thumbnail": "https://i.ytimg.com/vi/GK7PvgnBLIA/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามสวมกระโปรงสั้นหรือกางเกงขาสั้นเข้าชมสิม และสำรวมความเงียบ",
+    "taboos_en": "Traditional Lao sinh (wrap skirt) or modest covering is strictly enforced inside the sim."
+  },
+  {
+    "id": "pin-pak-ou-caves-thousand-buddhas",
+    "title_th": "ถ้ำปากอู ถ้ำผาหินพระพุทธรูปพันองค์ริมแม่น้ำโขง (หลวงพระบาง)",
+    "title_en": "Pak Ou Caves (The Thousand Buddha Cliff Sanctuary of the Mekong)",
+    "category": "sacred",
+    "province_th": "หลวงพระบาง (ลาว)",
+    "province_en": "Luang Prabang (Laos)",
+    "district_th": "ปากอู",
+    "district_en": "Pak Ou",
+    "lat": 20.0489,
+    "lng": 102.2104,
+    "sound_preset": "water_spirit",
+    "story_th": "ถ้ำหินปูนริมหน้าผาสูงชันตรงจุดบรรจบของแม่น้ำอูและแม่น้ำโขง ภายในถ้ำถ้ำติ่งลุ่มและถ้ำติ่งเทิงประดิษฐานพระพุทธรูปไม้นับหมื่นองค์ที่ผู้ศรัทธานำมาถวายตลอดหลายศตวรรษ",
+    "story_en": "Limestone caverns set into towering river cliffs above the churning Mekong, sheltering over 4,000 carved wooden Buddha statues left by pilgrims over centuries.",
+    "folklore_history_th": "เดิมเป็นถ้ำศักดิ์สิทธิ์บูชาผีฟ้าผีแถนและพญานาคประจำสายน้ำ ก่อนเปลี่ยนผ่านสู่ความเชื่อทางพุทธศาสนา",
+    "folklore_history_en": "Originally revered as an animist sanctuary for river naga spirits before royal conversion to Theravada Buddhism.",
+    "image_url": "https://i.ytimg.com/vi/Zlp8mJ5DJSs/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/Zlp8mJ5DJSs/hqdefault.jpg",
+        "title": "ถ้ำปากอู ถ้ำผาหินพระพุทธรูปพันองค์ริมแม่น้ำโขง (หลวงพระบาง)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=Zlp8mJ5DJSs",
+        "title": "แวะเที่ยวถ้ำติ่ง (ปากอู) ก่อนถึงหลวงพระบาง Visit Pak Ou Cave Ep3.แบกเป้เที่ยวหลวงพระบาง",
+        "thumbnail": "https://i.ytimg.com/vi/Zlp8mJ5DJSs/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามหยิบจับหรือเคลื่อนย้ายพระพุทธรูปองค์เล็กออกจากโพรงถ้ำ",
+    "taboos_en": "Never touch or displace ancient miniature Buddha figures inside the grotto recesses."
+  },
+  {
+    "id": "pin-plain-of-jars-xiangkhoang",
+    "title_th": "ทุ่งไหหิน มหาทุ่งหินยักษ์ปริศนาแห่งยุคโลหะ (เชียงขวาง)",
+    "title_en": "Plain of Jars (Megalithic Stone Urns Mystery of Xiangkhoang)",
+    "category": "legend",
+    "province_th": "เชียงขวาง (ลาว)",
+    "province_en": "Xiangkhoang (Laos)",
+    "district_th": "โพนสะหวัน",
+    "district_en": "Phonsavan",
+    "lat": 19.4304,
+    "lng": 103.1534,
+    "sound_preset": "creepy_wind",
+    "story_th": "ทุ่งหญ้ากว้างใหญ่ที่เกลื่อนไปด้วยไหหินขนาดยักษ์นับพันใบ หนักตั้งแต่ 1 ถึง 14 ตัน ตำนานลาวเล่าว่าเป็นไหเหล้าฉลองชัยชนะของพญาขุนเจือง ทว่าทางโบราณคดีเป็นหลุมฝังศพยุคก่อนประวัติศาสตร์",
+    "story_en": "Mysterious archaeological plateau strewn with thousands of hollowed megalithic stone jars up to 14 tons. Folklore names them brew jars for giant chieftain Khun Jeuam's victory.",
+    "folklore_history_th": "แหล่งมรดกโลกที่มีอายุกว่า 2,500 ปี และเป็นพื้นที่ที่ได้รับผลกระทบจากระเบิดตกค้างในสงครามลับ",
+    "folklore_history_en": "Dating back to 500 BC, this ancient mortuary landscape represents one of Southeast Asia's greatest prehistoric enigmas.",
+    "image_url": "https://i.ytimg.com/vi/4U4hjnEe53E/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/4U4hjnEe53E/hqdefault.jpg",
+        "title": "ทุ่งไหหิน มหาทุ่งหินยักษ์ปริศนาแห่งยุคโลหะ (เชียงขวาง)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=4U4hjnEe53E",
+        "title": "ไขปริศนาทุ่งไหหิน..? แหล่งโบราณคดีไหหินทรายของลาว ที่ยังไม่ทราบว่าสร้างขึ้นเพื่ออะไร",
+        "thumbnail": "https://i.ytimg.com/vi/4U4hjnEe53E/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามเดินออกนอกเส้นทางที่เคลียร์พื้นที่ระเบิด (MAG) อย่างเด็ดขาด",
+    "taboos_en": "Stay strictly on demarcated paths due to historic unexploded ordnance risks."
+  },
+  {
+    "id": "pin-shwedagon-pagoda-yangon",
+    "title_th": "พระมหาเจดีย์ชเวดากอง พระเกศาธาตุทองคำแห่งย่างกุ้ง (เมียนมา)",
+    "title_en": "Shwedagon Pagoda (The 2,500-Year Golden Relic Stupa of Yangon)",
+    "category": "sacred",
+    "province_th": "ย่างกุ้ง (เมียนมา)",
+    "province_en": "Yangon (Myanmar)",
+    "district_th": "ดะโกน",
+    "district_en": "Dagon",
+    "lat": 16.7983,
+    "lng": 96.1497,
+    "sound_preset": "temple_bell",
+    "story_th": "มหาเจดีย์ทองคำแท้สูง 99 เมตร หุ้มด้วยแผ่นทองคำนับหมื่นแผ่นและยอดประดับเพชร 76 กะรัต ประดิษฐานพระเกศาธาตุ 8 เส้นของพระพุทธเจ้า ส่องแสงอร่ามคุ้มครองเมืองย่างกุ้ง",
+    "story_en": "The magnificent 99-meter gold-plated pagoda dominating Yangon's skyline, crowned with a 76-carat diamond and enshrining eight sacred hairs of Gautama Buddha.",
+    "folklore_history_th": "ตามตำนานสองวาณิชพี่น้องตปุสสะและภัลลิกะได้รับพระเกศาธาตุจากพระพุทธองค์ก่อนนำมาประดิษฐานบนเนินเขาสิงคุตตระ",
+    "folklore_history_en": "Chronicled to have stood on Singuttara Hill for over 2,500 years as the supreme spiritual pinnacle of Burmese Buddhism.",
+    "image_url": "https://i.ytimg.com/vi/Sghv2U1BROY/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/Sghv2U1BROY/hqdefault.jpg",
+        "title": "พระมหาเจดีย์ชเวดากอง พระเกศาธาตุทองคำแห่งย่างกุ้ง (เมียนมา)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=Sghv2U1BROY",
+        "title": "ชเวดากอง พระมหาเจดีย์ทองคำศูนย์กลางการจาริกแสวงบุญ แดนสวรรค์ผู้มาเยือน",
+        "thumbnail": "https://i.ytimg.com/vi/Sghv2U1BROY/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามสวมถุงเท้าหรือรองเท้าเข้าสู่ลานมหาเจดีย์ และต้องเดินเวียนประทักษิณตามเข็มนาฬิกา",
+    "taboos_en": "All footwear including socks must be removed; circumambulate clock-wise in devout silence."
+  },
+  {
+    "id": "pin-kyaiktiyo-golden-rock-mon",
+    "title_th": "พระธาตุอินทร์แขวน ก้อนหินทองคำลอยริมหน้าผา (รัฐมอญ เมียนมา)",
+    "title_en": "Kyaiktiyo Pagoda (The Gravity-Defying Golden Rock of Mon State)",
+    "category": "sacred",
+    "province_th": "รัฐมอญ (เมียนมา)",
+    "province_en": "Mon State (Myanmar)",
+    "district_th": "ไจก์โท",
+    "district_en": "Kyaikto",
+    "lat": 17.4816,
+    "lng": 97.0982,
+    "sound_preset": "creepy_wind",
+    "story_th": "ก้อนหินแกรนิตมหึมาปิดทองคำเปลว ตั้งหมิ่นเหม่อยู่ริมขอบผาสูงชันกว่า 1,100 เมตรอย่างน่าอัศจรรย์ เชื่อว่าไม่ตกลงมาเพราะมีพระเกศาธาตุของพระพุทธเจ้าค้ำจุนไว้",
+    "story_en": "A massive boulder completely gilded in gold leaf teetering precariously on the brink of a cliff 1,100 meters high, defying gravity through the supernatural weight of Buddha's hair relic.",
+    "folklore_history_th": "ตามตำนานพระอินทร์ได้เสด็จลงมาช่วยฤๅษีนำหินก้อนนี้มาจากก้นสมุทร แล้วนำมาตั้งไว้บนยอดเขา",
+    "folklore_history_en": "Mon folklore tells of Lord Indra descending from celestial realms to place this boulder upon the mountain peak.",
+    "image_url": "https://i.ytimg.com/vi/wc7uOSFiDdo/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/wc7uOSFiDdo/hqdefault.jpg",
+        "title": "พระธาตุอินทร์แขวน ก้อนหินทองคำลอยริมหน้าผา (รัฐมอญ เมียนมา)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=wc7uOSFiDdo",
+        "title": "พระธาตุอินทร์แขวน (Kyaikhtiyo Pagoda) หรือ ไจ้ก์ทิโย  ကျိုက်ထီးရိုးဘုရာ  Myanmar ก้อนหินศักดิ์สิทธิ์",
+        "thumbnail": "https://i.ytimg.com/vi/wc7uOSFiDdo/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามสตรีแตะต้ององค์ก้อนหินทองคำโดยตรง (อนุญาตให้ผู้ชายเข้าไปปิดทองได้)",
+    "taboos_en": "Women are traditionally restricted from directly touching the rock platform; modest offerings allowed."
+  },
+  {
+    "id": "pin-babi-ngepet-demon-boar",
+    "title_th": "บาบีเงเป็ต หมูป่าปีศาจแปลงกายขโมยสมบัติแห่งมนต์ดำชวา",
+    "title_en": "Babi Ngepet (The Black Magic Boar Shapeshifter of Javanese Lore)",
+    "category": "monster",
+    "province_th": "ชวาตะวันตก (อินโดนีเซีย)",
+    "province_en": "West Java (Indonesia)",
+    "district_th": "เดป็อก",
+    "district_en": "Depok",
+    "lat": -6.4025,
+    "lng": 106.7942,
+    "sound_preset": "jungle_curse",
+    "story_th": "มนุษย์ที่ทำสัญญากับปีศาจด้วยวิชาไสยดำ 'เปซูกิฮัน' เพื่อแลกความร่ำรวย โดยแปลงร่างเป็นหมูป่าล่องหนเดินถูข้างฝาบ้านคนเพื่อดูดกลืนเงินทอง โดยมีคู่ครองคอยเฝ้าเปลวเทียนที่บ้าน",
+    "story_en": "A dark sorcery shapeshifter who sacrifices humanity to become a spectral boar, stealing cash by rubbing against village walls while an accomplice tends a floating candle.",
+    "folklore_history_th": "หากเปลวเทียนสั่นไหวแสดงว่าหมูป่ากำลังตกอยู่ในอันตราย และหากเทียนดับหมูป่าจะถูกจับหรือแปลงกลับคืนร่างคนไม่ได้",
+    "folklore_history_en": "If the guardian candle's flame flickers, the boar is in peril; if blown out, the sorcerer is trapped in animal form forever.",
+    "image_url": "https://i.ytimg.com/vi/w_K5CyeQBRo/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/w_K5CyeQBRo/hqdefault.jpg",
+        "title": "บาบีเงเป็ต หมูป่าปีศาจแปลงกายขโมยสมบัติแห่งมนต์ดำชวา"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=w_K5CyeQBRo",
+        "title": "คดีผี ฆาตกรรม มนต์ดำบูชาพ่อ ดื่มน้ำลายศพ 'Ahmad Suradji' สะเทือนอินโด | Mythos Requiem",
+        "thumbnail": "https://i.ytimg.com/vi/w_K5CyeQBRo/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามดับเทียนพิธีเปซูกิฮัน หรือทำร้ายหมูป่าในบ้านโดยไม่มีผู้เชี่ยวชาญไสยเวท",
+    "taboos_en": "Never attempt to capture a suspected occult creature without village spiritual elders."
+  },
+  {
+    "id": "pin-jenglot-vampiric-fetish",
+    "title_th": "เจงกลอต ซากมัมมี่ดูดเลือดลึกลับผมยาวแห่งอินโดนีเซีย",
+    "title_en": "Jenglot (The Blood-Drinking Mummified Homunculus of Java)",
+    "category": "monster",
+    "province_th": "ชวาตะวันออก (อินโดนีเซีย)",
+    "province_en": "East Java (Indonesia)",
+    "district_th": "สุราบายา",
+    "district_en": "Surabaya",
+    "lat": -7.2575,
+    "lng": 112.7521,
+    "sound_preset": "whisper",
+    "story_th": "สิ่งมีชีวิตขนาดจิ๋วคล้ายมัมมี่มนุษย์ ผิวหนังแห้งกรัง มีเขี้ยวแหลมคม เล็บยาว และเส้นผมที่งอกยาวขึ้นเรื่อยๆ เชื่อว่าเป็นร่างของฤๅษีมนต์ดำที่แผ่นดินไม่ยอมรับร่างให้เน่าเปื่อย",
+    "story_en": "Miniature homunculus artifact resembling a dried humanoid with fangs and continuously growing hair, believed to be an immortal sorcerer cursed by the earth to remain unburied.",
+    "folklore_history_th": "ผู้ครอบครองต้องเซ่นไหว้ด้วยเลือดมนุษย์หรือสัตว์หยดลงบนกล่องบรรจุทุกวันเพ็ญเพื่อแลกกับการปกป้องคุ้มภัยและเสน่ห์เมตตา",
+    "folklore_history_en": "Keepers must offer fresh blood droplets during full moons to maintain psychic protection and ward off household misfortunes.",
+    "image_url": "https://i.ytimg.com/vi/f8nzR26-9Ck/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/f8nzR26-9Ck/hqdefault.jpg",
+        "title": "เจงกลอต ซากมัมมี่ดูดเลือดลึกลับผมยาวแห่งอินโดนีเซีย"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=f8nzR26-9Ck",
+        "title": "ตำนานผีดูดเลือด เจงล็อต เรื่องเล่าอินโดนีเซีย | Eager of Know",
+        "thumbnail": "https://i.ytimg.com/vi/f8nzR26-9Ck/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามตัดผมหรือตัดเล็บเจงกลอต และห้ามทอดทิ้งการเซ่นสังเวยเลือด",
+    "taboos_en": "Never cut the entity's hair or neglect ritual blood offerings."
+  },
+  {
+    "id": "pin-con-tinh-banyan-spirit",
+    "title_th": "คอนติญ วิญญาณสาวสิงสู่ต้นไทรโบราณแห่งเวียดนาม",
+    "title_en": "Con Tinh (The Seductive Banyan Tree Ghost of Vietnam)",
+    "category": "ghost",
+    "province_th": "ฮานอย (เวียดนาม)",
+    "province_en": "Hanoi (Vietnam)",
+    "district_th": "ฮว่านเกี๋ยม",
+    "district_en": "Hoan Kiem",
+    "lat": 21.0285,
+    "lng": 105.8542,
+    "sound_preset": "whisper",
+    "story_th": "วิญญาณหญิงสาวสวยหยาดเยิ้มที่สิงสถิตอยู่ตามรากไทรและต้นโพธิ์โบราณ ชอบล่อลวงชายหนุ่มที่สัญจรผ่านยามค่ำคืนด้วยเสียงหัวเราะอันไพเราะและเสน่ห์มารยา",
+    "story_en": "A beautiful, ethereal maiden spirit haunting centuries-old banyan trees, enchanting lonely nighttime travelers with hypnotic melodies and enticing them into deep trances.",
+    "folklore_history_th": "สุภาษิตเวียดนามโบราณเตือนว่า 'เทพสิงสู่ต้นไทร ผีสิงสู่ต้นข่อย' ผู้คนจึงนิยมตั้งศาลบูชาไว้ใต้ต้นไทรใหญ่เพื่อขอขมา",
+    "folklore_history_en": "Stemming from the Vietnamese proverb 'Spirits in banyans, ghosts in streblus', inspiring shrines set at the roots of ancient trees.",
+    "image_url": "https://i.ytimg.com/vi/OALW_ZuBdmA/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/OALW_ZuBdmA/hqdefault.jpg",
+        "title": "คอนติญ วิญญาณสาวสิงสู่ต้นไทรโบราณแห่งเวียดนาม"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=OALW_ZuBdmA",
+        "title": "สปอยหนังตำนานพื้นบ้านสุดเฮี้ยนจากเวียดนาม 😈 | Crimson Snout (2023)「สปอยหนัง」",
+        "thumbnail": "https://i.ytimg.com/vi/OALW_ZuBdmA/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามปัสสาวะหรือปีนป่ายบนต้นไทรโบราณที่มีผ้าแพรผูกไว้",
+    "taboos_en": "Never urinate near sacred banyan trees or cut their aerial roots."
+  },
+  {
+    "id": "pin-mahagiri-nat-bagan",
+    "title_th": "นัตมหาคีรี เทพอารักษ์ผู้พิทักษ์แห่งเมืองพุกาม (เมียนมา)",
+    "title_en": "Min Mahagiri Nat (The Mountain Guardian Spirit of Mount Popa & Bagan)",
+    "category": "sacred",
+    "province_th": "มัณฑะเลย์ (เมียนมา)",
+    "province_en": "Mandalay (Myanmar)",
+    "district_th": "เนปยีดอ / พุกาม",
+    "district_en": "Bagan",
+    "lat": 21.1717,
+    "lng": 94.8585,
+    "sound_preset": "temple_bell",
+    "story_th": "หนึ่งใน 37 มหานัตผู้ทรงอิทธิฤทธิ์สูงสุด เดิมคือ 'งาตินเด' นายช่างตีเหล็กผู้มีพละกำลังมหาศาล ถูกกษัตริย์ผู้ริษยาหลอกเผาทั้งเป็นพร้อมน้องสาว กลายเป็นเทพอารักษ์คุ้มครองเมืองและบ้านเรือน",
+    "story_en": "The foremost among Myanmar's 37 Great Nats; originally a blacksmith of supernatural strength burned alive by a paranoid king, ascending as the supreme guardian of Burmese hearths.",
+    "folklore_history_th": "ชาวพม่าทุกครัวเรือนจะแขวนมะพร้าวใส่ผ้าแดงไว้ที่เสาเอกของบ้านเพื่อสักการะนัตมหาคีรี คุ้มครองไม่ให้ไฟไหม้",
+    "folklore_history_en": "Honored in virtually every traditional Burmese home with a red-turbaned coconut hung from the central pillar to avert house fires.",
+    "image_url": "https://i.ytimg.com/vi/V9qh0gZaGF8/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/V9qh0gZaGF8/hqdefault.jpg",
+        "title": "นัตมหาคีรี เทพอารักษ์ผู้พิทักษ์แห่งเมืองพุกาม (เมียนมา)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=V9qh0gZaGF8",
+        "title": "ตำนานผีนัตตนแรกในดินแดนพม่า",
+        "thumbnail": "https://i.ytimg.com/vi/V9qh0gZaGF8/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามสวมชุดสีแดงหรือสีดำ และห้ามนำเนื้อหมูขึ้นไปยังเขาโปปา",
+    "taboos_en": "Avoid wearing red or black clothing and bringing pork to Mount Popa shrines."
+  },
+  {
+    "id": "pin-akaname-filth-licker",
+    "title_th": "อะคานาเมะ ปีศาจลิ้นยาวเลียคราบสกปรกห้องน้ำ (ญี่ปุ่น)",
+    "title_en": "Akaname (The Filth-Licking Yokai of Edo Bathhouses)",
+    "category": "monster",
+    "province_th": "โตเกียว (ญี่ปุ่น)",
+    "province_en": "Tokyo (Japan)",
+    "district_th": "ไทโตะ (อาซากุสะ)",
+    "district_en": "Taito (Asakusa)",
+    "lat": 35.7148,
+    "lng": 139.7967,
+    "sound_preset": "jungle_curse",
+    "story_th": "โยไคตัวสีแดงผิวหนังตะปุ่มตะป่ำ มีลิ้นยาวเป็นพิเศษ ปรากฏตัวในห้องอาบน้ำหรือโรงอาบน้ำสาธารณะยามค่ำคืน เพื่อเลียคราบไคลและสิ่งสกปรกที่หลงเหลือไว้",
+    "story_en": "A goblin-like yokai with mottled skin and a freakishly long tongue that sneaks into unwashed bathhouses in the dead of night to lick off accumulated grime.",
+    "folklore_history_th": "วาดขึ้นโดยโทริยามะ เซกิเอ็ง ในยุคเอโดะ เป็นกุศโลบายเตือนใจให้ชาวบ้านขัดถูทำความสะอาดห้องน้ำและสุขอนามัยอยู่เสมอ",
+    "folklore_history_en": "Popularized by Toriyama Sekien during the Edo period as a moral reminder to keep domestic baths sanitary.",
+    "image_url": "https://i.ytimg.com/vi/QcRzO4lW1ms/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/QcRzO4lW1ms/hqdefault.jpg",
+        "title": "อะคานาเมะ ปีศาจลิ้นยาวเลียคราบสกปรกห้องน้ำ (ญี่ปุ่น)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=QcRzO4lW1ms",
+        "title": "ตำรา 'ภูตผีปีศาจญี่ปุ่น Yokai' และวิธีเอาตัวรอดเมื่อเจอ (SUB)",
+        "thumbnail": "https://i.ytimg.com/vi/QcRzO4lW1ms/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามปล่อยให้ห้องน้ำสกปรกสะสม หรือแอบส่องห้องอาบน้ำยามดึก",
+    "taboos_en": "Never leave bathhouses grimy or peer into unlit washrooms after hours."
+  },
+  {
+    "id": "pin-hashihime-uji-bridge",
+    "title_th": "ฮาชิฮิเมะ เทวีสะพานอูจิและเพลิงแค้นแห่งสะพานแม่น้ำ (เกียวโต ญี่ปุ่น)",
+    "title_en": "Hashihime of Uji Bridge (The Jealous Bridge Maiden of Kyoto)",
+    "category": "ghost",
+    "province_th": "เกียวโต (ญี่ปุ่น)",
+    "province_en": "Kyoto (Japan)",
+    "district_th": "อูจิ",
+    "district_en": "Uji",
+    "lat": 34.8911,
+    "lng": 135.8083,
+    "sound_preset": "whisper",
+    "story_th": "หญิงสาวผู้ถูกคนรักทอดทิ้ง ได้ทำพิธีแช่น้ำในแม่น้ำอูจิ 21 วันพร้อมสวมมงกุฎเหล็กจุดเทียนสามเล่ม อธิษฐานกลายเป็นอสูรคิชินเพื่อล้างแค้นชายใจคดและคนรักใหม่",
+    "story_en": "A betrayed maiden who submerged herself in the freezing Uji River for 21 days with an iron trivet of candles, transforming into a ferocious demon of jealousy.",
+    "folklore_history_th": "สะพานอูจิสร้างขึ้นในปี ค.ศ. 646 เป็นหนึ่งในสะพานที่เก่าแก่ที่สุดในญี่ปุ่น มีศาลเจ้าฮาชิฮิเมะตั้งอยู่เพื่อสะกดเพลิงแค้น",
+    "folklore_history_en": "Enshrined near Japan's oldest river span, where lovers are warned never to praise other women while crossing.",
+    "image_url": "https://i.ytimg.com/vi/2yovWU8bCnE/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/2yovWU8bCnE/hqdefault.jpg",
+        "title": "ฮาชิฮิเมะ เทวีสะพานอูจิและเพลิงแค้นแห่งสะพานแม่น้ำ (เกียวโต ญี่ปุ่น)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=2yovWU8bCnE",
+        "title": "บุกไร่ชา พาไปโรงงานมัทฉะ Uji เมืองที่ชาเขียวดีที่สุดในญี่ปุ่น | อาสาพาไปหลง",
+        "thumbnail": "https://i.ytimg.com/vi/2yovWU8bCnE/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามคู่รักเดินข้ามสะพานอูจิพร้อมกับเอ่ยชมหญิงอื่น หรือทะเลาะกันบนสะพาน",
+    "taboos_en": "Couples should avoid crossing the bridge together if harboring marital jealousy."
+  },
+  {
+    "id": "pin-baize-hakutaku-divine-beast",
+    "title_th": "ไป่เจ๋อ (ฮาคุตาคุ) สัตว์สวรรค์เก้าตารู้แจ้งนามปีศาจทั้งปวง (จีน / ญี่ปุ่น)",
+    "title_en": "Baize / Hakutaku (The Nine-Eyed Celestial Herald of Monsters)",
+    "category": "legend",
+    "province_th": "มณฑลเหอหนาน (จีน)",
+    "province_en": "Henan Province (China)",
+    "district_th": "ลั่วหยาง",
+    "district_en": "Luoyang",
+    "lat": 34.6197,
+    "lng": 112.454,
+    "sound_preset": "temple_bell",
+    "story_th": "สัตว์ศักดิ์สิทธิ์สีขาวหกเขาเก้าตา สามารถพูดภาษามนุษย์ได้ ปรากฏกายต่อหน้าจักรพรรดิเหลืองหวงตี้ เพื่อมอบสารานุกรมภาพวาดและชื่อของภูตผีปีศาจทั้ง 11,520 ชนิดในใต้หล้า",
+    "story_en": "A mythical bovine-like celestial beast possessing nine eyes and horns, capable of human speech, which dictated the ultimate compendium of 11,520 demons to the Yellow Emperor.",
+    "folklore_history_th": "ภาพวาดของไป่เจ๋อหรือฮาคุตาคุถูกนำมาใช้เป็นยันต์ติดหน้าประตูบ้านเพื่อขับไล่โรคระบาดและสิ่งอัปมงคลในเอเชียตะวันออก",
+    "folklore_history_en": "Talismans bearing its likeness are placed in households across East Asia to ward off contagions and evil spirits.",
+    "image_url": "https://i.ytimg.com/vi/_rN0vKc8df8/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/_rN0vKc8df8/hqdefault.jpg",
+        "title": "ไป่เจ๋อ (ฮาคุตาคุ) สัตว์สวรรค์เก้าตารู้แจ้งนามปีศาจทั้งปวง (จีน / ญี่ปุ่น)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=_rN0vKc8df8",
+        "title": "ปริศนา 9 กระถางศักดิ์สิทธิ์ — วัตถุค้ำบัลลังก์จีน 1,800 ปี ที่หายไปอย่างไร้ร่องรอย",
+        "thumbnail": "https://i.ytimg.com/vi/_rN0vKc8df8/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามลบหลู่ความรู้แห่งสรรพสัตว์ หรือใช้ชื่อปีศาจในทางชั่วร้าย",
+    "taboos_en": "Do not invoke demon names recklessly without protective invocations."
+  },
+  {
+    "id": "pin-mogao-caves-dunhuang-spirits",
+    "title_th": "ถ้ำโม่เกา ปริศนาพุทธศิลป์พันถ้ำแห่งเส้นทางสายไหม (ตุนหวง)",
+    "title_en": "Mogao Caves of Dunhuang (Caves of the Thousand Buddhas on Silk Road)",
+    "category": "sacred",
+    "province_th": "มณฑลกานซู (จีน)",
+    "province_en": "Gansu Province (China)",
+    "district_th": "ตุนหวง",
+    "district_en": "Dunhuang",
+    "lat": 40.0392,
+    "lng": 94.8028,
+    "sound_preset": "creepy_wind",
+    "story_th": "เครือข่ายถ้ำเจาะหน้าผาหินทรายเกือบ 500 ถ้ำกลางทะเลทรายโกบี พระภิกษุเล่อจุนเห็นนิมิตแสงสีทองดั่งพระพุทธรูปพันองค์ส่องประกาย จึงริเริ่มขุดถ้ำปฏิบัติธรรมแห่งแรก",
+    "story_en": "Nearly 500 rock-cut sanctuaries carved into sandstone cliffs along the Silk Road, founded in 366 AD after monk Yuezun envisioned a thousand Buddhas bathed in celestial golden light.",
+    "folklore_history_th": "ที่ค้นพบห้องสมุดลับถ้ำที่ 17 ซึ่งเก็บคัมภีร์และม้วนกระดาษโบราณกว่า 50,000 ชิ้นที่ถูกปิดผนึกไว้เกือบพันปี",
+    "folklore_history_en": "Home to Cave 17 (the Library Cave), sealed for a millennium preserving 50,000 priceless manuscripts.",
+    "image_url": "https://i.ytimg.com/vi/xT-gZ4H7JhA/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/xT-gZ4H7JhA/hqdefault.jpg",
+        "title": "ถ้ำโม่เกา ปริศนาพุทธศิลป์พันถ้ำแห่งเส้นทางสายไหม (ตุนหวง)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=xT-gZ4H7JhA",
+        "title": "เที่ยวถ้ำมั่วเกา(Mogao Caves)หรือที่รู้จักในชื่อ ถ้ำพระพุทธรูปพันองค์ เมืองตุนหวงประเทศจีน",
+        "thumbnail": "https://i.ytimg.com/vi/xT-gZ4H7JhA/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามถ่ายภาพหรือใช้แสงแฟลชในถ้ำเพื่อรักษาจิตรกรรมฝาผนังโบราณ",
+    "taboos_en": "Photography and flash lighting are strictly forbidden to conserve delicate pigments."
+  },
+  {
+    "id": "pin-dianmu-mother-of-lightning",
+    "title_th": "เตียนหมู่ เทวีพระแม่สายฟ้าแลบผู้ส่องกระจกทองสัจธรรม (จีน)",
+    "title_en": "Dianmu (Mother of Lightning & The Golden Mirrors of Truth)",
+    "category": "legend",
+    "province_th": "ปักกิ่ง (จีน)",
+    "province_en": "Beijing (China)",
+    "district_th": "ตงเฉิง",
+    "district_en": "Dongcheng",
+    "lat": 39.9163,
+    "lng": 116.3972,
+    "sound_preset": "jungle_curse",
+    "story_th": "เทพีสายฟ้าผู้ถือกระจกทองเหลืองคู่บนสวรรค์ คอยส่องแสงสะท้อนความจริงลงมาบนพื้นโลกก่อนที่เทพสายฟ้าเหลยซานจะฟาดสายฟ้า เพื่อป้องกันไม่ให้คนบริสุทธิ์ถูกลูกหลง",
+    "story_en": "Taoist goddess who flashes twin brass mirrors across the firmament to illuminate the hearts of mortals before the Thunder God strikes, ensuring justice never strikes the innocent.",
+    "folklore_history_th": "ตามตำนานเดิมนางเป็นภรรยาผู้กตัญญูที่ยอมอดอาหารเพื่อแม่สามี จนเง็กเซียนฮ่องเต้สถาปนาให้เป็นเทวีสายฟ้าคู่สวรรค์",
+    "folklore_history_en": "Celebrated in Taoist liturgy as a celestial protector of filial piety and supreme divine arbiter.",
+    "image_url": "https://i.ytimg.com/vi/sIZ5UGttpBE/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/sIZ5UGttpBE/hqdefault.jpg",
+        "title": "เตียนหมู่ เทวีพระแม่สายฟ้าแลบผู้ส่องกระจกทองสัจธรรม (จีน)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=sIZ5UGttpBE",
+        "title": "ประวัติ เทพเจ้าลุ่ยกง (雷公 ) เทพสายฟ้าจีน ไม่ใช่ครุฑ -เหลยเจิ้นจื่อ 雷震子 คือ?  Creation of The Gods II",
+        "thumbnail": "https://i.ytimg.com/vi/sIZ5UGttpBE/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามชี้มือหรือสบถด่าฟ้าระหว่างเกิดพายุฝนฟ้าคะนอง",
+    "taboos_en": "Never swear or point fingers at thunderclouds during severe lightning storms."
+  },
+  {
+    "id": "pin-xiezhi-beast-of-justice",
+    "title_th": "เสี่ยจื้อ สัตว์ศักดิ์สิทธิ์เขาเดี่ยวผู้พิทักษ์ความยุติธรรม (จีน)",
+    "title_en": "Xiezhi (The Horned Divine Beast of Impartial Justice)",
+    "category": "legend",
+    "province_th": "มณฑลชานซี (จีน)",
+    "province_en": "Shanxi Province (China)",
+    "district_th": "ไท่หยวน",
+    "district_en": "Taiyuan",
+    "lat": 37.8706,
+    "lng": 112.5489,
+    "sound_preset": "temple_bell",
+    "story_th": "สัตว์เทวะคล้ายสิงโตหรือแพะที่มีเขาแหลมคมหนึ่งเขาบนศีรษะ มีสัญชาตญาณหยั่งรู้ความจริง เมื่อพบผู้กระทำผิดจะใช้เขาขวิดคนโกหกและกลืนกินผู้ทุจริต",
+    "story_en": "A mythical single-horned goat-lion possessing innate discernment of right and wrong, ramming the guilty and devouring corrupt officials in ancient imperial courts.",
+    "folklore_history_th": "ในสมัยราชวงศ์ฉินและฮั่น ผู้พิพากษาและตุลาการจะสวมหมวก 'เสี่ยจื้อกวน' เพื่อเป็นสัญลักษณ์แห่งความซื่อสัตย์สุจริต",
+    "folklore_history_en": "Embroidered on imperial censors' robes and sculpted outside judicial courts across Chinese history.",
+    "image_url": "https://i.ytimg.com/vi/0oxeNxg0wh0/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/0oxeNxg0wh0/hqdefault.jpg",
+        "title": "เสี่ยจื้อ สัตว์ศักดิ์สิทธิ์เขาเดี่ยวผู้พิทักษ์ความยุติธรรม (จีน)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=0oxeNxg0wh0",
+        "title": "👂✨️ขอทานหญิงเข้าใจภาษาสัตว์🤴เรียกสัตว์เทพช่วยเจ้าชายติดพิษ เป็นที่รักของราชวงศ์!💖",
+        "thumbnail": "https://i.ytimg.com/vi/0oxeNxg0wh0/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามให้การเท็จหรือเบิกความโกหกหน้าประติมากรรมเสี่ยจื้อ",
+    "taboos_en": "Never utter falsehoods or commit perjury before judicial court totems."
+  },
+  {
+    "id": "pin-hundun-chaos-beast",
+    "title_th": "หุนตุ้น อสูรบรรพกาลไร้หน้าแห่งความโกลาหล (จีน)",
+    "title_en": "Hundun (The Faceless Primordial Beast of Cosmic Chaos)",
+    "category": "monster",
+    "province_th": "มณฑลซานตง (จีน)",
+    "province_en": "Shandong Province (China)",
+    "district_th": "ไท่อัน (เขาไท่ซาน)",
+    "district_en": "Tai'an (Mount Tai)",
+    "lat": 36.2558,
+    "lng": 117.1066,
+    "sound_preset": "jungle_curse",
+    "story_th": "หนึ่งในสี่สัตว์อสูรบรรพกาล มีรูปร่างคล้ายกระสอบสีแดง มีปีกสี่คู่ ขาหกขา ไร้ตา หู จมูก ปาก ใช้ชีวิตท่ามกลางความสับสนอลหม่านและส่งเสริมคนพาล",
+    "story_en": "One of the Four Perils of Chinese mythology, resembling a crimson sack with six legs and four wings, utterly devoid of facial features, embodying primeval formless chaos.",
+    "folklore_history_th": "คัมภีร์จวงจื่อเล่าว่า เจ้าเมืองทะเลใต้และเหนือหวังดีเจาะทวารทั้งเจ็ดให้หุนตุ้นวันละช่อง แต่พอเจาะครบเจ็ดวัน หุนตุ้นก็สิ้นใจ",
+    "folklore_history_en": "Recorded in the Zhuangzi parable where emperors bored seven facial orifices into him, inadvertently causing his death.",
+    "image_url": "https://i.ytimg.com/vi/EQ1zjUd8Jek/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/EQ1zjUd8Jek/hqdefault.jpg",
+        "title": "หุนตุ้น อสูรบรรพกาลไร้หน้าแห่งความโกลาหล (จีน)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=EQ1zjUd8Jek",
+        "title": "พากย์ไทยมาแล้ว! อสูรคู่สัญญาของฉัน วิวัฒนาการไม่จำกัด! #สัตว์อสูร #แฟนตาซี",
+        "thumbnail": "https://i.ytimg.com/vi/EQ1zjUd8Jek/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามพยายามจัดระเบียบสิ่งที่ธรรมชาติกำหนดให้ลึกลับและไร้รูปทรง",
+    "taboos_en": "Do not attempt to impose rigid order upon primordial cosmic enigmas."
+  },
+  {
+    "id": "pin-taowu-stubborn-beast",
+    "title_th": "เถาอู้ อสูรพยัคฆ์บรรพกาลผู้ดื้อรั้นไร้ความปรานี (จีน)",
+    "title_en": "Taowu (The Relentless Block-Headed Fiend of the West)",
+    "category": "monster",
+    "province_th": "มณฑลเสฉวน (จีน)",
+    "province_en": "Sichuan Province (China)",
+    "district_th": "เฉิงตู",
+    "district_en": "Chengdu",
+    "lat": 30.5728,
+    "lng": 104.0668,
+    "sound_preset": "jungle_curse",
+    "story_th": "สัตว์อสูรบรรพกาลสี่ทิศ รูปร่างคล้ายเสือโคร่งขนาดยักษ์ มีขนยาวรุงรัง หน้าคน เขี้ยวหมูป่า หางยาวแปดวา ไม่เคยยอมถอยหนีในการต่อสู้และดื้อรั้นเหนือสิ่งอื่นใด",
+    "story_en": "One of the Four Perils of antiquity, shaped like a gargantuan tiger with human face, wild boar tusks, and an eighteen-foot tail, famed for unyielding ferocity and stubbornness.",
+    "folklore_history_th": "บันทึกในคัมภีร์ซานไห่จิง (คัมภีร์ขุนเขาและท้องทะเล) เป็นสัญลักษณ์ของความดื้อรั้นและผู้ที่ไม่ยอมรับฟังคำสั่งสอน",
+    "folklore_history_en": "Chronicled in the Classic of Mountains and Seas as an archetype of headstrong obstinacy and ruthless malice.",
+    "image_url": "https://i.ytimg.com/vi/8lohwlTZ_hA/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/8lohwlTZ_hA/hqdefault.jpg",
+        "title": "เถาอู้ อสูรพยัคฆ์บรรพกาลผู้ดื้อรั้นไร้ความปรานี (จีน)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=8lohwlTZ_hA",
+        "title": "เถาอู่ (Táo Wù / 梼杌) | สัตว์ปีศาจแห่งความดื้อรั้น – ตำนานสี่หายนะแห่งจีนโบราณ | Chinese Myth Podcast",
+        "thumbnail": "https://i.ytimg.com/vi/8lohwlTZ_hA/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามท้าทายสัตว์ร้ายด้วยความอวดดี หรือยั่วยุผู้มีจิตใจอำมหิต",
+    "taboos_en": "Do not display stubborn arrogance in the face of insurmountable peril."
+  },
+  {
+    "id": "pin-cheonyeo-gwishin-white-maiden",
+    "title_th": "ชอนยอกวีชิน ผีสาวพรหมจารีชุดขาวผมยาวแห่งเกาหลี",
+    "title_en": "Cheonyeo Gwishin (The Virgin Ghost of Joseon Mourning Robes)",
+    "category": "ghost",
+    "province_th": "คย็องกี (เกาหลีใต้)",
+    "province_en": "Gyeonggi-do (South Korea)",
+    "district_th": "ซูวอน",
+    "district_en": "Suwon",
+    "lat": 37.2636,
+    "lng": 127.0286,
+    "sound_preset": "whisper",
+    "story_th": "วิญญาณหญิงสาวที่เสียชีวิตก่อนแต่งงานในยุคโชซอน สวมชุดขาวไว้ทุกข์ 'โซบก' และปล่อยผมยาวสยาย เฝ้าวนเวียนด้วยความเคียดแค้น 'ฮัน' เพราะไม่ได้ทำหน้าที่บุตรีและภรรยา",
+    "story_en": "The quintessential Korean female ghost: an unmarried maiden deceased before wedlock, wandering in white mourning hanbok with disheveled hair fueled by deep karmic sorrow (Han).",
+    "folklore_history_th": "ในอดีตชาวบ้านจะทำพิธี 'แต่งงานผี' ให้แก่ชอนยอกวีชินกับวิญญาณชายโสด (มองทัลกวีชิน) เพื่อปลดเปลื้องความอาฆาต",
+    "folklore_history_en": "Villages historically held post-mortem 'ghost marriages' to appease their tormented spirits and avert droughts.",
+    "image_url": "https://i.ytimg.com/vi/GR6uSWjy_7o/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/GR6uSWjy_7o/hqdefault.jpg",
+        "title": "ชอนยอกวีชิน ผีสาวพรหมจารีชุดขาวผมยาวแห่งเกาหลี"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=GR6uSWjy_7o",
+        "title": "(ตำนานผีเกาหลี) ผีสาวพรหมจารีในชุดขาวที่ยังมีความอาลัย | Cheonyeo gwishin",
+        "thumbnail": "https://i.ytimg.com/vi/GR6uSWjy_7o/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามผิวปากในซอยเปลี่ยวยามดึก หรือจ้องมองใบหน้าหญิงชุดขาวที่ก้มหน้าอยู่",
+    "taboos_en": "Never whistle down dark country alleys or gaze into downcast pale faces."
+  },
+  {
+    "id": "pin-samjok-o-three-legged-crow",
+    "title_th": "ซัมโจกโก อีกาสามขาเทวะแห่งดวงอาทิตย์ (โกคูรยอ เกาหลี)",
+    "title_en": "Samjok-o (The Three-Legged Sun Crow of Ancient Goguryeo)",
+    "category": "legend",
+    "province_th": "พย็องอัน (เกาหลีเหนือ / เกาหลีใต้)",
+    "province_en": "Pyongan (Goguryeo Realm)",
+    "district_th": "เปียงยาง / โกคูรยอ",
+    "district_en": "Pyongyang",
+    "lat": 39.0392,
+    "lng": 125.7625,
+    "sound_preset": "temple_bell",
+    "story_th": "อีกาสามขาในตำนานผู้พำนักอยู่ในใจกลางดวงอาทิตย์ สัญลักษณ์แห่งอำนาจสูงสุดและความกล้าหาญของอาณาจักรโกคูรยอโบราณ ทรงพลังยิ่งกว่ามังกรและหงส์ไฟ",
+    "story_en": "The mythical three-legged solar raven dwelling within the sun, venerated as the supreme imperial emblem of divine kingship during the Goguryeo dynasty.",
+    "folklore_history_th": "ปรากฏในภาพจิตรกรรมฝาผนังสุสานโบราณโกคูรยอ ขาทั้งสามสื่อถึงสวรรค์ มนุษย์ และผืนพิภพ",
+    "folklore_history_en": "Frescoed in ancient royal tomb murals, its three legs representing Heaven, Earth, and Humanity.",
+    "image_url": "https://i.ytimg.com/vi/uP7197_K86o/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/uP7197_K86o/hqdefault.jpg",
+        "title": "ซัมโจกโก อีกาสามขาเทวะแห่งดวงอาทิตย์ (โกคูรยอ เกาหลี)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=uP7197_K86o",
+        "title": "สารคดี สามก๊กเกาหลี | มหาสงครามชิงแผ่นดินเกาหลี",
+        "thumbnail": "https://i.ytimg.com/vi/uP7197_K86o/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามเหยียดหยามสัญลักษณ์นกสุริยัน หรือทำร้ายสัตว์ปีกในเขตอนุสรณ์สถาน",
+    "taboos_en": "Treat ancient solar emblems with dignity and preserve historical tomb murals."
+  },
+  {
+    "id": "pin-hitotsume-kozo-one-eye",
+    "title_th": "ฮิโตะทสึเมะ โคโซ ปีศาจเด็กตาเดียวขี้เล่นแห่งเอโดะ (ญี่ปุ่น)",
+    "title_en": "Hitotsume-kozo (The Mischievous One-Eyed Boy Yokai)",
+    "category": "monster",
+    "province_th": "คานากาวะ (ญี่ปุ่น)",
+    "province_en": "Kanagawa (Japan)",
+    "district_th": "คามากุระ",
+    "district_en": "Kamakura",
+    "lat": 35.3192,
+    "lng": 139.5467,
+    "sound_preset": "jungle_curse",
+    "story_th": "โยไคเด็กหัวโล้นแต่งกายคล้ายเณรน้อย มีดวงตากลมโตดวงเดียวอยู่กึ่งกลางใบหน้า ชอบโผล่ออกมาแลบลิ้นหลอกคนในมุมมืดเวลากลางคืนโดยไม่ทำร้ายใคร",
+    "story_en": "A harmless, playful bald-headed yokai resembling a ten-year-old Buddhist novice with a single colossal eye, surprising evening pedestrians by popping out and sticking out his tongue.",
+    "folklore_history_th": "ชาวบ้านในเขตคันโตะจะนำตะกร้าสานไม้ไผ่ที่มีรูตาถี่ๆ มาแขวนไว้หน้าบ้านในวันส่งท้ายปีเก่า เพราะเชื่อว่าปีศาจตาเดียวจะอับอายที่ตะกร้ามีตามากกว่า",
+    "folklore_history_en": "Warded off during winter solstice by hanging woven bamboo baskets containing hundreds of weave 'eyes'.",
+    "image_url": "https://i.ytimg.com/vi/QpMhxxQR6N0/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/QpMhxxQR6N0/hqdefault.jpg",
+        "title": "ฮิโตะทสึเมะ โคโซ ปีศาจเด็กตาเดียวขี้เล่นแห่งเอโดะ (ญี่ปุ่น)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=QpMhxxQR6N0",
+        "title": "ตำนาน ปีศาจเด็กชายตาเดียว ฮิโตซึเมะ-โคโซ | ผีญี่ปุ่น WOL โลกแห่งตำนาน",
+        "thumbnail": "https://i.ytimg.com/vi/QpMhxxQR6N0/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามแสดงอาการหวาดกลัวจนเกินเหตุ เพราะปีศาจจะยิ่งชอบใจและตามติด",
+    "taboos_en": "Do not display excessive terror; laughter quickly discourages his antics."
+  },
+  {
+    "id": "pin-mitsume-nyudo-three-eyes",
+    "title_th": "มิตสึเมะ นิวโด พระปีศาจสามตาผู้เฝ้าหอระฆัง (ญี่ปุ่น)",
+    "title_en": "Mitsume Nyudo (The Three-Eyed Monk Fiend of Temple Belfries)",
+    "category": "monster",
+    "province_th": "นารา (ญี่ปุ่น)",
+    "province_en": "Nara (Japan)",
+    "district_th": "นารา",
+    "district_en": "Nara",
+    "lat": 34.6851,
+    "lng": 135.8048,
+    "sound_preset": "temple_bell",
+    "story_th": "พระสงฆ์ร่างสูงใหญ่ที่มีดวงตาที่สามเบิกกว้างอยู่กลางหน้าผาก ปรากฏตัวในวัดร้างหรือสะพานเปลี่ยว มักล่อลวงผู้สัญจรด้วยปริศนาธรรมอันวกวน",
+    "story_en": "A towering Buddhist monk apparition possessing a third vertical eye upon his forehead, appearing near abandoned bell towers to test travelers with paradoxical koans.",
+    "folklore_history_th": "บันทึกในวรรณกรรมโยไคสมัยเอโดะ เชื่อว่าเป็นวิญญาณของนักบวชที่หมกมุ่นในญาณวิเศษจนจิตวิปริตกลายเป็นอสูร",
+    "folklore_history_en": "Depicted in Edo scroll paintings as an ascetic whose obsession with psychic clairvoyance mutated his form.",
+    "image_url": "https://i.ytimg.com/vi/QcRzO4lW1ms/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/QcRzO4lW1ms/hqdefault.jpg",
+        "title": "มิตสึเมะ นิวโด พระปีศาจสามตาผู้เฝ้าหอระฆัง (ญี่ปุ่น)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=QcRzO4lW1ms",
+        "title": "ตำรา 'ภูตผีปีศาจญี่ปุ่น Yokai' และวิธีเอาตัวรอดเมื่อเจอ (SUB)",
+        "thumbnail": "https://i.ytimg.com/vi/QcRzO4lW1ms/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามสบดวงตาที่สามกลางหน้าผากโดยตรง มิฉะนั้นจะตกอยู่ในภวังค์สะกดจิต",
+    "taboos_en": "Never gaze directly into the vertical third eye lest you fall into trance."
+  },
+  {
+    "id": "pin-houska-castle-gate-to-hell",
+    "title_th": "ปราสาทฮุสกา ประตูสู่ขุมนรกและโบสถ์สะกดหลุมไร้ก้น (เช็กเกีย)",
+    "title_en": "Houska Castle (The Fortress Built Over the Gate to Hell)",
+    "category": "ghost",
+    "province_th": "โบฮีเมียตอนเหนือ (เช็กเกีย)",
+    "province_en": "Liberec Region (Czech Republic)",
+    "district_th": "เชสกา ลีปา",
+    "district_en": "Česká Lípa",
+    "lat": 50.4908,
+    "lng": 14.6242,
+    "sound_preset": "jungle_curse",
+    "story_th": "ปราสาทโกธิกยุคศตวรรษที่ 13 ที่ไม่ได้สร้างเพื่อป้องกันข้าศึกจากภายนอก แต่สร้างขึ้นเพื่อปิดทับ 'หลุมไร้ก้น' ซึ่งเชื่อว่าเป็นปากทางสู่ขุมนรกที่มีสัตว์ประหลาดปีกปีศาจปีนขึ้นมา",
+    "story_en": "A 13th-century fortress devoid of water sources or outer fortifications, built solely to seal a bottomless pit from which winged demonic beasts reportedly crawled into our world.",
+    "folklore_history_th": "โบสถ์น้อยของปราสาทถูกสร้างคร่อมทับรอยแยกหินโดยตรง ผนังประดับภาพเขียนปีศาจครึ่งคนครึ่งสัตว์ถือคันธนูอันแปลกประหลาด",
+    "folklore_history_en": "The castle chapel was erected directly atop the fissure, adorned with sinister frescoes of archer centaurs.",
+    "image_url": "https://i.ytimg.com/vi/Ej8CdANg54Q/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/Ej8CdANg54Q/hqdefault.jpg",
+        "title": "ปราสาทฮุสกา ประตูสู่ขุมนรกและโบสถ์สะกดหลุมไร้ก้น (เช็กเกีย)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=Ej8CdANg54Q",
+        "title": "ตำนานคดีผี Houska Castle ปราสาท ประตูนรก | Mythos Requiem",
+        "thumbnail": "https://i.ytimg.com/vi/Ej8CdANg54Q/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามอยู่ในห้องโบสถ์น้อยคนเดียวในความมืดสนิท หรือเคาะแผ่นหินใต้พื้น",
+    "taboos_en": "Do not remain alone in the chapel after dark or strike floor flagstones."
+  },
+  {
+    "id": "pin-sedlec-ossuary-bone-church",
+    "title_th": "สุสานโบสถ์กระดูกเซดเลก โคมระย้ากระดูกมนุษย์ 40,000 ร่าง (คุดนาฮอรา เช็กเกีย)",
+    "title_en": "Sedlec Ossuary (The Bone Church of 40,000 Souls in Kutná Hora)",
+    "category": "sacred",
+    "province_th": "โบฮีเมียกลาง (เช็กเกีย)",
+    "province_en": "Central Bohemian Region (Czech Republic)",
+    "district_th": "คุดนาฮอรา",
+    "district_en": "Kutná Hora",
+    "lat": 49.9618,
+    "lng": 15.2881,
+    "sound_preset": "whisper",
+    "story_th": "โบสถ์น้อยโรมันคาทอลิกที่ตกแต่งอย่างวิจิตรด้วยกระดูกมนุษย์กว่า 40,000 โครง มีทั้งโคมระย้ากระดูกขนาดยักษ์ ตราอาร์มประจำตระกูล และปิรามิดกะโหลกเตือนใจเรื่องมรณานุสติ",
+    "story_en": "A gothic chapel elaborately adorned with the skeletal remains of over 40,000 plague victims and war dead, featuring a colossal bone chandelier containing every bone in the human body.",
+    "folklore_history_th": "ดินศักดิ์สิทธิ์จากเนินเขากอลกอธาถูกนำมาโปรยที่นี่ในปี 1278 ทำให้ผู้คนทั่วยุโรปปรารถนาจะถูกฝังในสุสานนี้",
+    "folklore_history_en": "Consecrated with holy earth brought from Golgotha in 1278, creating an irresistible sanctuary of eternal rest.",
+    "image_url": "https://i.ytimg.com/vi/JYNpZivZbKw/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/JYNpZivZbKw/hqdefault.jpg",
+        "title": "สุสานโบสถ์กระดูกเซดเลก โคมระย้ากระดูกมนุษย์ 40,000 ร่าง (คุดนาฮอรา เช็กเกีย)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=JYNpZivZbKw",
+        "title": "โบสถ์โครงกระดูก Sedlec Ossuary โบสถ์สวยแห่งกรุงปราก สร้างจากศพ 70,000 ศพ | ไทยบันเทิง |",
+        "thumbnail": "https://i.ytimg.com/vi/JYNpZivZbKw/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามสัมผัสหรือแตะต้องโครงกระดูก และห้ามทำท่าตลกขบขันถ่ายรูป",
+    "taboos_en": "Never touch bone displays or strike comical poses in this sacred resting place."
+  },
+  {
+    "id": "pin-lukova-ghost-church-st-george",
+    "title_th": "โบสถ์ผีสิงเซนต์จอร์จแห่งลูโควา ประติมากรรมวิญญาณปูนปลาสเตอร์ (เช็กเกีย)",
+    "title_en": "St. George's Church of Luková (The Ghost Church of Plaster Spirits)",
+    "category": "ghost",
+    "province_th": "เปิลเซน (เช็กเกีย)",
+    "province_en": "Plzeň Region (Czech Republic)",
+    "district_th": "ลูโควา",
+    "district_en": "Luková",
+    "lat": 50.0169,
+    "lng": 13.1601,
+    "sound_preset": "jungle_curse",
+    "story_th": "โบสถ์โบราณสร้างขึ้นในศตวรรษที่ 14 หลังคาถล่มลงมากลางพิธีศพในปี 1968 จนถูกทิ้งร้าง ต่อมาศิลปินได้สร้างหุ่นวิญญาณสีขาวคลุมผ้านั่งประจำม้านั่งโบสถ์ สร้างบรรยากาศหลอนจับขั้วหัวใจ",
+    "story_en": "14th-century church abandoned after its roof collapsed during a funeral in 1968. Artist Jakub Hadrava installed 32 hooded plaster ghosts seated quietly in the wooden pews.",
+    "folklore_history_th": "หุ่นวิญญาณสื่อถึงชาวเยอรมันซูเดเทินที่เคยอาศัยอยู่ในหมู่บ้านแห่งนี้ก่อนสงครามโลกครั้งที่ 2",
+    "folklore_history_en": "Representing Sudeten German parishioners who lived here before post-war expulsions.",
+    "image_url": "https://i.ytimg.com/vi/5HQK1N63y3g/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/5HQK1N63y3g/hqdefault.jpg",
+        "title": "โบสถ์ผีสิงเซนต์จอร์จแห่งลูโควา ประติมากรรมวิญญาณปูนปลาสเตอร์ (เช็กเกีย)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=5HQK1N63y3g",
+        "title": "The Mystery of Saint George Church in Luková: Abandoned and Forgotten",
+        "thumbnail": "https://i.ytimg.com/vi/5HQK1N63y3g/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามขยับหรือทำลายหุ่นวิญญาณปูนปลาสเตอร์ และห้ามส่งเสียงอึกทึก",
+    "taboos_en": "Do not disturb or move the plaster phantom sculptures."
+  },
+  {
+    "id": "pin-chillon-castle-lake-geneva",
+    "title_th": "ปราสาทชิลยง ปราการคุกน้ำแห่งทะเลสาบเจนีวา (สวิตเซอร์แลนด์)",
+    "title_en": "Chillon Castle (The Island Water Fortress & Dungeon of Lake Geneva)",
+    "category": "legend",
+    "province_th": "โว (สวิตเซอร์แลนด์)",
+    "province_en": "Vaud (Switzerland)",
+    "district_th": "มองเทรอ",
+    "district_en": "Montreux",
+    "lat": 46.4142,
+    "lng": 6.9275,
+    "sound_preset": "water_spirit",
+    "story_th": "ปราสาทหินยุคกลางบนเกาะหินริมทะเลสาบเจนีวา คุกใต้ดินขุดลึกลงไปใต้ระดับน้ำ ที่ซึ่งฟร็องซัวส์ เดอ บอนีวาร์ ถูกล่ามโซ่ตรวนไว้กับเสาหินนานถึง 4 ปีจนกลายเป็นตำนานอมตะของลอร์ดไบรอน",
+    "story_en": "Medieval island castle jutting into Lake Geneva whose vaulted subterranean dungeons held François de Bonivard chained to a stone pillar, inspiring Lord Byron's famous poem.",
+    "folklore_history_th": "ควบคุมเส้นทางยุทธศาสตร์ช่องเขาแอลป์มาตั้งแต่ยุคโรมัน มีเสียงกระซิบของนักโทษดังสะท้อนตามทางเดินหินยามค่ำ",
+    "folklore_history_en": "Guarding alpine passes since Roman antiquity, whispered to harbor phantom footsteps in its vaulted cellars.",
+    "image_url": "https://i.ytimg.com/vi/_6mIGIOC68s/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/_6mIGIOC68s/hqdefault.jpg",
+        "title": "ปราสาทชิลยง ปราการคุกน้ำแห่งทะเลสาบเจนีวา (สวิตเซอร์แลนด์)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=_6mIGIOC68s",
+        "title": "Chillon Castle🇨🇭ปราสาทริมน้ำที่โด่งดังที่สุดในสวิส ต้นแบบปราสาทเจ้าหญิงเงือกน้อยของดิสนีย์🧜🏻‍♀️",
+        "thumbnail": "https://i.ytimg.com/vi/_6mIGIOC68s/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามขูดขีดชื่อลงบนเสาหินโบราณในห้องคุกใต้ดิน",
+    "taboos_en": "Do not engrave graffiti upon the historic dungeon pillars."
+  },
+  {
+    "id": "pin-iona-abbey-burial-kings",
+    "title_th": "อารามไอโอนา สุสานศักดิ์สิทธิ์แห่งกษัตริย์โบราณ 48 พระองค์ (สก็อตแลนด์)",
+    "title_en": "Iona Abbey (Sacred Cradle of Scottish Christianity & Royal Sepulcher)",
+    "category": "sacred",
+    "province_th": "ไฮแลนด์และหมู่เกาะ (สก็อตแลนด์ สหราชอาณาจักร)",
+    "province_en": "Argyll and Bute (Scotland, UK)",
+    "district_th": "เกาะไอโอนา",
+    "district_en": "Isle of Iona",
+    "lat": 56.3348,
+    "lng": -6.3917,
+    "sound_preset": "temple_bell",
+    "story_th": "อารามบนเกาะศักดิ์สิทธิ์ที่นักบุญโคลัมบาขึ้นฝั่งในปี 563 เพื่อเผยแผ่ศาสนาคริสต์ เป็นสุสานฝังพระศพกษัตริย์สก็อตแลนด์ กษัตริย์ไอร์แลนด์ และกษัตริย์ไวกิ้งนอร์เวย์กว่า 48 พระองค์ รวมทั้งกษัตริย์แม็คเบ็ธ",
+    "story_en": "Remote holy isle founded by Saint Columba in 563 AD; the burial ground of 48 Scottish, Irish, and Norse kings including the real-life King Macbeth.",
+    "folklore_history_th": "แหล่งกำเนิดคัมภีร์แห่งเคลส์ (Book of Kells) ผลงานมาสเตอร์พีซศิลปะเซลติกก่อนการรุกรานของชาวไวกิ้ง",
+    "folklore_history_en": "Birthplace of the Book of Kells, surviving multiple brutal Viking raids through divine perseverance.",
+    "image_url": "https://i.ytimg.com/vi/ec6zztgxR04/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/ec6zztgxR04/hqdefault.jpg",
+        "title": "อารามไอโอนา สุสานศักดิ์สิทธิ์แห่งกษัตริย์โบราณ 48 พระองค์ (สก็อตแลนด์)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=ec6zztgxR04",
+        "title": "Scotland’s Most Sacred Isle: A  Guide to Iona & Iona Abbey",
+        "thumbnail": "https://i.ytimg.com/vi/ec6zztgxR04/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามส่งเสียงดังบริเวณสุสานเรอิลลิก โอดราน และสำรวมกายในโบสถ์",
+    "taboos_en": "Maintain reverent silence around the Reilig Odhrán royal cemetery."
+  },
+  {
+    "id": "pin-chartres-cathedral-labyrinth",
+    "title_th": "มหาวิหารชาทร์ และวงกตปริศนาแห่งเรขาคณิตศักดิ์สิทธิ์ (ฝรั่งเศส)",
+    "title_en": "Chartres Cathedral (The Sacred Geometry Labyrinth & Veil of the Virgin)",
+    "category": "sacred",
+    "province_th": "เออร์-เอ-ลัวร์ (ฝรั่งเศส)",
+    "province_en": "Eure-et-Loir (France)",
+    "district_th": "ชาทร์",
+    "district_en": "Chartres",
+    "lat": 48.4472,
+    "lng": 1.4875,
+    "sound_preset": "temple_bell",
+    "story_th": "ยอดสถาปัตยกรรมโกธิกของโลก ประดิษฐานผืนผ้าคลุมศักดิ์สิทธิ์ของพระแม่มารี บนพื้นหินมีวงกตเดินสมาธิโบราณปี 1200 ที่เชื่อว่าปลดปล่อยพลังงานสนามแม่เหล็กโลก",
+    "story_en": "Gothic masterpiece housing the Sancta Camisia (tunic of the Virgin Mary), paved with a famous 1200 AD floor labyrinth walking path for inner pilgrimage.",
+    "folklore_history_th": "สร้างขึ้นบนบ่อน้ำศักดิ์สิทธิ์โบราณของดรูอิด มีหน้าต่างกระจกสีสีน้ำเงินเข้มชาทร์บลูอันเป็นความลับที่ไม่มีใครลอกเลียนแบบได้",
+    "folklore_history_en": "Erected above an ancient Druidic well, celebrated for its inimitable cobalt 'Chartres blue' stained glass.",
+    "image_url": "https://i.ytimg.com/vi/yo5f1G-b0F0/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/yo5f1G-b0F0/hqdefault.jpg",
+        "title": "มหาวิหารชาทร์ และวงกตปริศนาแห่งเรขาคณิตศักดิ์สิทธิ์ (ฝรั่งเศส)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=yo5f1G-b0F0",
+        "title": "เที่ยวฝรั่งเศสด้วยตัวเอง 🇫🇷 ที่ Chartres เมืองมรดกโลกและมุมลับที่คุณอาจยังไม่รู้",
+        "thumbnail": "https://i.ytimg.com/vi/yo5f1G-b0F0/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามวิ่งหรือเหยียบย่ำตัดเส้นทางวงกตระหว่างผู้แสวงบุญกำลังเดินสมาธิ",
+    "taboos_en": "Do not cut across the circular labyrinth during meditative walking vigils."
+  },
+  {
+    "id": "pin-mont-saint-michel-abbey",
+    "title_th": "ปราสาทมงแซ็งมีแชล อารามลอยน้ำแห่งเทวทูตมีคาเอล (นอร์มังดี ฝรั่งเศส)",
+    "title_en": "Mont-Saint-Michel (The Tidal Island Abbey of Archangel Michael)",
+    "category": "sacred",
+    "province_th": "นอร์มังดี (ฝรั่งเศส)",
+    "province_en": "Normandy (France)",
+    "district_th": "ม็องช์",
+    "district_en": "Manche",
+    "lat": 48.636,
+    "lng": -1.5115,
+    "sound_preset": "water_spirit",
+    "story_th": "อารามหินแกรนิตบนเกาะหินกลางอ่าวชายฝั่งนอร์มังดี ตำนานเล่าว่าอัครเทวทูตมีคาเอลปรากฏกายในนิมิตและชี้นิ้วเจาะกะโหลกของบิชอปโอแบร์เพื่อสั่งให้สร้างอารามแห่งนี้",
+    "story_en": "A gravity-defying tidal island abbey founded after Archangel Michael pressed his celestial finger through Bishop Aubert's skull in a dream to command its construction.",
+    "folklore_history_th": "เมื่อน้ำขึ้น เกาะจะถูกตัดขาดจากแผ่นดินด้วยกระแสน้ำเชี่ยวที่สุดในยุโรป รอดพ้นจากการล้อมโจมตีในสงครามร้อยปี",
+    "folklore_history_en": "Surrounded by treacherous quicksands and Europe's fastest tides, never conquered during the Hundred Years' War.",
+    "image_url": "https://i.ytimg.com/vi/eupJFHY7kMU/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/eupJFHY7kMU/hqdefault.jpg",
+        "title": "ปราสาทมงแซ็งมีแชล อารามลอยน้ำแห่งเทวทูตมีคาเอล (นอร์มังดี ฝรั่งเศส)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=eupJFHY7kMU",
+        "title": "อย่ามาที่นี่! เมืองกับดักนักท่องเที่ยว",
+        "thumbnail": "https://i.ytimg.com/vi/eupJFHY7kMU/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามเดินลุยหาดทรายดูดรอบเกาะโดยไม่มีไกด์ผู้เชี่ยวชาญนำทาง",
+    "taboos_en": "Never attempt walking across tidal mudflats unescorted due to deadly quicksand."
+  },
+  {
+    "id": "pin-quinta-da-regaleira-well",
+    "title_th": "กวึนตา ดา รีกาเลย์รา บ่อน้ำประกอบพิธีลับแห่งอัศวินเทมพลาร์ (ซินทรา โปรตุเกส)",
+    "title_en": "Quinta da Regaleira (The Subterranean Initiation Well of Sintra)",
+    "category": "legend",
+    "province_th": "ลิสบอน (โปรตุเกส)",
+    "province_en": "Lisbon District (Portugal)",
+    "district_th": "ซินทรา",
+    "district_en": "Sintra",
+    "lat": 38.7963,
+    "lng": -9.396,
+    "sound_preset": "whisper",
+    "story_th": "บ่อน้ำเกลียวลึกลงไปใต้ดิน 27 เมตร มีบันไดเวียน 9 ชั้นตามวงกลมแห่งนรกของดันเต้ ใช้เป็นสถานที่ประกอบพิธีชำระบาปและรับสมาชิกใหม่ของกลุ่มภราดรภาพลับและเทมพลาร์",
+    "story_en": "A 27-meter subterranean inverted tower featuring nine spiraling stone tiers symbolizing Dante's Nine Circles of Hell, used for mystical Knights Templar and Masonic initiation rites.",
+    "folklore_history_th": "ออกแบบโดยคาร์วัลโญ มอนเตโร ผู้หลงใหลในศาสตร์เร้นลับ เชื่อมต่อด้วยอุโมงค์หินใต้ดินสู่สระน้ำและถ้ำลับ",
+    "folklore_history_en": "Created by an eccentric millionaire occultist, connected to an intricate labyrinth of underground grottoes.",
+    "image_url": "https://i.ytimg.com/vi/iEukNhu8wPQ/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/iEukNhu8wPQ/hqdefault.jpg",
+        "title": "กวึนตา ดา รีกาเลย์รา บ่อน้ำประกอบพิธีลับแห่งอัศวินเทมพลาร์ (ซินทรา โปรตุเกส)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=iEukNhu8wPQ",
+        "title": "Where horses lived better than most people! #travel #Lisbon #sintra #quintadaregaleira",
+        "thumbnail": "https://i.ytimg.com/vi/iEukNhu8wPQ/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามปีนป่ายบนขอบบันไดเวียนหิน หรือส่องไฟรบกวนถ้ำค้างคาวใต้ดิน",
+    "taboos_en": "Exercise extreme care on slippery spiral stairs; do not venture off tunnel paths."
+  },
+  {
+    "id": "pin-belem-tower-lisbon",
+    "title_th": "ป้อมปราการเบเล็ง หอคอยพิทักษ์น่านน้ำและจิตวิญญาณแห่งการเดินเรือ (โปรตุเกส)",
+    "title_en": "Belém Tower (The Manueline Guardian Bastion of Lisbon Harbor)",
+    "category": "legend",
+    "province_th": "ลิสบอน (โปรตุเกส)",
+    "province_en": "Lisbon (Portugal)",
+    "district_th": "เบเล็ง",
+    "district_en": "Belém",
+    "lat": 38.6916,
+    "lng": -9.216,
+    "sound_preset": "water_spirit",
+    "story_th": "ป้อมปราการหินสไตล์มานูเอลลีนริมแม่น้ำเทกัส จุดอำลาและต้อนรับเหล่านักเดินเรือผู้กล้าแห่งยุคสำรวจ เช่น วาสโก ดา กามา มีเรื่องเล่าเกี่ยวกับวิญญาณกะลาสีที่คอยเฝ้าหอคอย",
+    "story_en": "A 16th-century fortress on the Tagus River estuary serving as the ceremonial departure point for world explorers like Vasco da Gama, whispered to hold spectral sentinels keeping maritime watch.",
+    "folklore_history_th": "สถาปัตยกรรมประดับด้วยเชือกหินแกะสลักและรูปปั้นสัตว์แปลกใหม่ เช่น แรด สัญลักษณ์แห่งยุคทองของโปรตุเกส",
+    "folklore_history_en": "Adorned with intricate stonework ropes and the earliest European stone carving of an African rhinoceros.",
+    "image_url": "https://i.ytimg.com/vi/_6BWceknesw/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/_6BWceknesw/hqdefault.jpg",
+        "title": "ป้อมปราการเบเล็ง หอคอยพิทักษ์น่านน้ำและจิตวิญญาณแห่งการเดินเรือ (โปรตุเกส)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=_6BWceknesw",
+        "title": "The best historical tower in Lisbon: Unesco world heritage site. Belém Tower",
+        "thumbnail": "https://i.ytimg.com/vi/_6BWceknesw/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามขว้างปาสิ่งของลงสู่แม่น้ำเทกัสจากระเบียงปืนใหญ่",
+    "taboos_en": "Respect maritime heritage; do not throw debris from bastion embrasures."
+  },
+  {
+    "id": "pin-callanish-standing-stones",
+    "title_th": "เสาหินดึกดำบรรพ์คัลลานิช กากบาทหินยักษ์แห่งเกาะลูอิส (สก็อตแลนด์)",
+    "title_en": "Callanish Standing Stones (The Megalithic Stone Cross of Lewis)",
+    "category": "legend",
+    "province_th": "หมู่เกาะเอาเตอร์เฮบริดีส (สก็อตแลนด์)",
+    "province_en": "Outer Hebrides (Scotland, UK)",
+    "district_th": "เกาะลูอิส",
+    "district_en": "Isle of Lewis",
+    "lat": 58.1978,
+    "lng": -6.7453,
+    "sound_preset": "creepy_wind",
+    "story_th": "วงกลมเสาหินไนส์เก่าแก่กว่า 5,000 ปี เรียงตัวเป็นรูปกากบาทเซลติก ตำนานท้องถิ่นเล่าว่าหินยักษ์เหล่านี้คือร่างของยักษ์โบราณที่ไม่ยอมเข้ารีตคริสต์ จึงถูกนักบุญสาปให้กลายเป็นหิน",
+    "story_en": "A 5,000-year-old cruciform stone circle predating Stonehenge; local Gaelic folklore tells of ancient giants turned to stone by Saint Kieran for refusing baptism.",
+    "folklore_history_th": "จัดวางอย่างแม่นยำตามปรากฏการณ์ 'การหยุดดวงจันทร์' (Lunar Standstill) ที่เกิดขึ้นทุก 18.6 ปี",
+    "folklore_history_en": "Engineered to track the major lunar standstill occurring once every 18.6 years across the moorland horizons.",
+    "image_url": "https://i.ytimg.com/vi/G0vYCPHMGd8/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/G0vYCPHMGd8/hqdefault.jpg",
+        "title": "เสาหินดึกดำบรรพ์คัลลานิช กากบาทหินยักษ์แห่งเกาะลูอิส (สก็อตแลนด์)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=G0vYCPHMGd8",
+        "title": "Callanish Standing Stones, Ancient Wonders",
+        "thumbnail": "https://i.ytimg.com/vi/G0vYCPHMGd8/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามขีดเขียนบนเนื้อหินดึกดำบรรพ์ และห้ามเคลื่อนย้ายก้อนหินออกจากวงกลม",
+    "taboos_en": "Never scratch stone surfaces or displace megalithic markers."
+  },
+  {
+    "id": "pin-newgrange-passage-tomb",
+    "title_th": "สุสานสุริยันนิวเกรนจ์ มหาหลุมศพพันปีก่อนพีระมิดอียิปต์ (ไอร์แลนด์)",
+    "title_en": "Newgrange (The 5,200-Year Winter Solstice Passage Tomb of Boyne)",
+    "category": "sacred",
+    "province_th": "มีท (ไอร์แลนด์)",
+    "province_en": "County Meath (Ireland)",
+    "district_th": "หุบเขาแม่น้ำบอยน์",
+    "district_en": "Boyne Valley",
+    "lat": 53.6947,
+    "lng": -6.4756,
+    "sound_preset": "jungle_curse",
+    "story_th": "เนินสุสานหินยุคหินใหม่อายุกว่า 5,200 ปี เก่าแก่กว่าสโตนเฮนจ์และพีระมิดกิซา ในวันเหมายัน (21 ธันวาคม) แสงอาทิตย์แรกของปีจะส่องทะลุช่องหลังคาเข้าไปสว่างจ้าถึงห้องศพส่วนลึกสุด",
+    "story_en": "A Neolithic circular mound over 5,200 years old where the rising sun of the Winter Solstice perfectly pierces a roofbox to illuminate the central chamber floor for 17 minutes.",
+    "folklore_history_th": "ในตำนานเซลติกเป็นที่พำนักของ 'ทูฮา เด ดานันน์' เผ่าพันธุ์ทวยเทพแห่งเวทมนตร์ของไอร์แลนด์",
+    "folklore_history_en": "Revered in Celtic mythology as the dwelling mound (Sí) of the god Dagda and the Tuatha Dé Danann.",
+    "image_url": "https://i.ytimg.com/vi/p8ARHp43RF8/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/p8ARHp43RF8/hqdefault.jpg",
+        "title": "สุสานสุริยันนิวเกรนจ์ มหาหลุมศพพันปีก่อนพีระมิดอียิปต์ (ไอร์แลนด์)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=p8ARHp43RF8",
+        "title": "Newgrange มหัศจรรย์สุสานหินที่เก่าแก่กว่าพีระมิดแห่งกิซ่าและสโตนเฮนจ์",
+        "thumbnail": "https://i.ytimg.com/vi/p8ARHp43RF8/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามแตะต้องภาพสลักวงก้นหอยสามชั้น (Triskele) โบราณบนก้อนหินหน้าทางเข้า",
+    "taboos_en": "Do not touch the delicate megalithic spiral engravings lining the inner stones."
+  },
+  {
+    "id": "pin-hill-of-tara-lia-fail",
+    "title_th": "เนินเขาทารา บัลลังก์ศิลาแห่งจอมกษัตริย์ไอร์แลนด์ (ไอร์แลนด์)",
+    "title_en": "Hill of Tara & Lia Fáil (The Screaming Stone of Destiny)",
+    "category": "legend",
+    "province_th": "มีท (ไอร์แลนด์)",
+    "province_en": "County Meath (Ireland)",
+    "district_th": "ทารา",
+    "district_en": "Tara",
+    "lat": 53.5786,
+    "lng": -6.6128,
+    "sound_preset": "creepy_wind",
+    "story_th": "ศูนย์กลางอำนาจจิตวิญญาณแห่งไอร์แลนด์โบราณ สถานที่ราชาภิเษกของจอมกษัตริย์ มีเสาหิน 'เลีย ฟาอิล' (Lia Fáil) หินแห่งโชคชะตาที่จะส่งเสียงกรีดร้องกึกก้องเมื่อกษัตริย์ที่แท้จริงแตะต้อง",
+    "story_en": "The ancient seat of the High Kings of Ireland, crowned by the Lia Fáil (Stone of Destiny), an inauguration phallic monolith that roared aloud when the rightful monarch placed his foot upon it.",
+    "folklore_history_th": "เนินดินโบราณที่มีโครงสร้างสุสานย้อนกลับไปถึง 4,000 ปีก่อนคริสตกาล และเป็นจุดเริ่มต้นของกฎหมายเบรฮอน",
+    "folklore_history_en": "Sacred landscape holding over 30 visible monuments spanning five millennia of Celtic sovereignty.",
+    "image_url": "https://i.ytimg.com/vi/VfhhrQ5OrFw/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/VfhhrQ5OrFw/hqdefault.jpg",
+        "title": "เนินเขาทารา บัลลังก์ศิลาแห่งจอมกษัตริย์ไอร์แลนด์ (ไอร์แลนด์)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=VfhhrQ5OrFw",
+        "title": "Queen of the Hill of Tara | Epic Celtic Folk Song",
+        "thumbnail": "https://i.ytimg.com/vi/VfhhrQ5OrFw/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามปีนป่ายบนเสาหินเลีย ฟาอิล หรือทำลายคันดินวงกลมโบราณ",
+    "taboos_en": "Do not climb the Lia Fáil monument or damage earthwork ringforts."
+  },
+  {
+    "id": "pin-mycenae-lion-gate-curse",
+    "title_th": "ประตูปราการสิงโตแห่งไมซีนี และคำสาปเลือดราชวงศ์อะทรีอุส (กรีซ)",
+    "title_en": "Lion Gate of Mycenae & The Blood Curse of the House of Atreus",
+    "category": "legend",
+    "province_th": "เพโลพอนนีส (กรีซ)",
+    "province_en": "Peloponnese (Greece)",
+    "district_th": "อาร์โกลิส",
+    "district_en": "Argolis",
+    "lat": 37.7308,
+    "lng": 22.7561,
+    "sound_preset": "jungle_curse",
+    "story_th": "ป้อมปราการหินไซคลอเปียนยุคบรอนซ์ ทางเข้าประดับแผ่นหินสลักสิงโตคู่ ตำนานเล่าถึงกษัตริย์อกาเมมนอนผู้นำทัพกรีกในสงครามโทรจัน ผู้ถูกภรรยาสังหารในอ่างอาบน้ำเมื่อกลับถึงวัง",
+    "story_en": "Monumental Bronze Age megalithic gate crowned by twin relief lionesses; home of King Agamemnon who led the Greeks to Troy before meeting a bloody fate in his own bathhouse.",
+    "folklore_history_th": "สุสานทองคำแห่งไมซีนี ที่ไฮน์ริช ชลีมานน์ ค้นพบ 'หน้ากากทองคำแห่งอกาเมมนอน' อันเลื่องชื่อ",
+    "folklore_history_en": "Excavated in 1876 yielding the fabled solid gold 'Mask of Agamemnon' from royal shaft graves.",
+    "image_url": "https://i.ytimg.com/vi/QEIgU-oAecU/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/QEIgU-oAecU/hqdefault.jpg",
+        "title": "ประตูปราการสิงโตแห่งไมซีนี และคำสาปเลือดราชวงศ์อะทรีอุส (กรีซ)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=QEIgU-oAecU",
+        "title": "The Citadel of Mycenae | Mycenaean Civilization History | Lion Gate | 4K",
+        "thumbnail": "https://i.ytimg.com/vi/QEIgU-oAecU/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามขยับก้อนหินไซคลอเปียนโบราณ หรือปีนขึ้นบนคานประตูสิงโต",
+    "taboos_en": "Do not scale the Cyclopean lintels or disturb structural masonry."
+  },
+  {
+    "id": "pin-delos-sacred-island-apollo",
+    "title_th": "เกาะศักดิ์สิทธิ์เดลอส กำเนิดสุริยเทพอะพอลโลและเทวีอาร์เทมิส (กรีซ)",
+    "title_en": "Delos Sacred Island (Birthplace of Apollo & Sanctuary of the Aegean)",
+    "category": "sacred",
+    "province_th": "เซาท์อีเจียน (กรีซ)",
+    "province_en": "South Aegean (Greece)",
+    "district_th": "มิโคนอส",
+    "district_en": "Mykonos",
+    "lat": 37.3994,
+    "lng": 25.2683,
+    "sound_preset": "creepy_wind",
+    "story_th": "เกาะลอยน้ำที่เทพโพไซดอนตรึงให้อยู่กับที่เพื่อให้เทวีเลโตให้กำเนิดสุริยเทพอะพอลโลและเทพีอาร์เทมิส กลายเป็นเกาะศักดิ์สิทธิ์สูงสุดในยุคกรีกโบราณที่ห้ามผู้ใดเกิดหรือตายบนเกาะ",
+    "story_en": "The mythical floating island anchored by Poseidon so Titaness Leto could birth twins Apollo and Artemis. It was declared so sacred that no mortal was allowed to be born or die on its soil.",
+    "folklore_history_th": "ระเบียงสิงโตหินอ่อน (Terrace of the Lions) ผู้พิทักษ์ทะเลสาบศักดิ์สิทธิ์ และศูนย์กลางสันนิบาตเดเลียน",
+    "folklore_history_en": "Features the iconic Naxian marble lion terrace guarding the sacred lake and the Delian treasury.",
+    "image_url": "https://i.ytimg.com/vi/ppl0ymHXUkg/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/ppl0ymHXUkg/hqdefault.jpg",
+        "title": "เกาะศักดิ์สิทธิ์เดลอส กำเนิดสุริยเทพอะพอลโลและเทวีอาร์เทมิส (กรีซ)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=ppl0ymHXUkg",
+        "title": "สรุปอารยธรรมกรีก คลิปเดียวจบ | Point of View",
+        "thumbnail": "https://i.ytimg.com/vi/ppl0ymHXUkg/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามพักค้างคืนบนเกาะเดลอสเด็ดขาด และห้ามเก็บเศษหินอ่อนโบราณกลับไป",
+    "taboos_en": "Overnight stays are strictly forbidden; never collect stone fragments from archaeological grounds."
+  },
+  {
+    "id": "pin-mount-etna-forge-hephaestus",
+    "title_th": "ภูเขาไฟเอตนา โรงตีเหล็กใต้พิภพของเฮฟเฟสทัสและอสูรไทฟอน (ซิซิลี อิตาลี)",
+    "title_en": "Mount Etna (The Underworld Forge of Hephaestus & Prison of Typhon)",
+    "category": "legend",
+    "province_th": "ซิซิลี (อิตาลี)",
+    "province_en": "Sicily (Italy)",
+    "district_th": "กาตาเนีย",
+    "district_en": "Catania",
+    "lat": 37.751,
+    "lng": 14.9934,
+    "sound_preset": "jungle_curse",
+    "story_th": "ภูเขาไฟมีพลังที่ใหญ่ที่สุดในยุโรป ตำนานกรีกระบุว่าเป็นโรงตีเหล็กศัสตราวุธของเทพเฮฟเฟสทัสและเหล่าไซคลอปส์ และเป็นที่คุมขังอสูรยักษ์ร้อยหัวไทฟอนที่พ่นลาวาและแผ่นดินไหว",
+    "story_en": "Europe's most active stratovolcano, mythologized as the subterranean forge where Hephaestus hammered Zeus's thunderbolts and trapped the hundred-headed monster Typhon beneath its weight.",
+    "folklore_history_th": "นักปราชญ์เอมเพโดคลีสกระโดดลงสู่ปล่องเพลิงเอตนาเพื่อพิสูจน์ความเป็นอมตะของตน ทิ้งไว้เพียงรองเท้าแตะทองสัมฤทธิ์",
+    "folklore_history_en": "Philosopher Empedocles famously leaped into its fiery maw to prove his divinity, leaving behind a bronze sandal.",
+    "image_url": "https://i.ytimg.com/vi/_ZI5aGlNAIw/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/_ZI5aGlNAIw/hqdefault.jpg",
+        "title": "ภูเขาไฟเอตนา โรงตีเหล็กใต้พิภพของเฮฟเฟสทัสและอสูรไทฟอน (ซิซิลี อิตาลี)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=_ZI5aGlNAIw",
+        "title": "ซิซิลี เกาะที่ใหญ่ที่สุดในเมดิเตอร์เรเนียนและเสน่ห์ที่ไม่เหมือนใคร",
+        "thumbnail": "https://i.ytimg.com/vi/_ZI5aGlNAIw/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามเข้าใกล้ปากปล่องภูเขาไฟในระหว่างการปะทุ และห้ามท้าทายพลังแห่งเปลวเพลิง",
+    "taboos_en": "Adhere to vulcanological exclusion zones during summit volcanic activity."
+  },
+  {
+    "id": "pin-cumaean-sibyl-cave",
+    "title_th": "ถ้ำพยากรณ์คูเม ถ้ำแห่งเทพีซีบิลและทางสู่ยมโลกแห่งแอเนียส (อิตาลี)",
+    "title_en": "Cave of the Cumaean Sibyl (The Oracular Grotto of Apollo's Prophetess)",
+    "category": "legend",
+    "province_th": "คัมปาเนีย (อิตาลี)",
+    "province_en": "Campania (Italy)",
+    "district_th": "เนเปิลส์ (ปอซซูโอลี)",
+    "district_en": "Naples",
+    "lat": 40.8492,
+    "lng": 14.0539,
+    "sound_preset": "whisper",
+    "story_th": "อุโมงค์หินทราเวอร์ทีนเจาะลึกเข้าไปในหน้าผา มีช่องหน้าต่าง 100 บาน ที่ซึ่งนางพยากรณ์ซีบิลขับขานคำทำนายชะตากรรมของจักรวรรดิโรมัน และนำทางอีเนียสลงสู่นรกเพื่อพบดวงวิญญาณบิดา",
+    "story_en": "A mysterious trapezoidal gallery carved through volcanic rock with 100 openings where the priestess Sibyl uttered Apollo's prophecies on oak leaves and guided Aeneas into the Underworld.",
+    "folklore_history_th": "อาณานิคมกรีกที่เก่าแก่ที่สุดบนแผ่นดินใหญ่อิตาลี มีคัมภีร์ซีบิลลีน (Sibylline Books) อันเป็นสมบัติศักดิ์สิทธิ์ของสาธารณรัฐโรมัน",
+    "folklore_history_en": "Home to the sacred Sibylline Books which guided Roman consuls through existential crises for centuries.",
+    "image_url": "https://i.ytimg.com/vi/khJelfj0BNQ/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/khJelfj0BNQ/hqdefault.jpg",
+        "title": "ถ้ำพยากรณ์คูเม ถ้ำแห่งเทพีซีบิลและทางสู่ยมโลกแห่งแอเนียส (อิตาลี)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=khJelfj0BNQ",
+        "title": "Inside the Ancient Oracle Cave Where the Sibyl Gave Her Prophecies | Cumae, Italy",
+        "thumbnail": "https://i.ytimg.com/vi/khJelfj0BNQ/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามทิ้งขยะหรือส่งเสียงตะโกนในอุโมงค์สะท้อนเสียงโบราณ",
+    "taboos_en": "Do not shout or disrupt acoustic resonance inside the oracular gallery."
+  },
+  {
+    "id": "pin-brocken-hexentanzplatz-witches",
+    "title_th": "ยอดเขาบร็อคเคินและลานเต้นรำแม่มดคืนวัลเพอร์กิส (เทือกเขาฮารซ์ เยอรมนี)",
+    "title_en": "Brocken & Hexentanzplatz (The Witches' Dance on Walpurgis Night)",
+    "category": "legend",
+    "province_th": "ซัคเซิน-อันฮัลท์ (เยอรมนี)",
+    "province_en": "Saxony-Anhalt (Germany)",
+    "district_th": "เทือกเขาฮารซ์",
+    "district_en": "Harz Mountains",
+    "lat": 51.7992,
+    "lng": 10.6156,
+    "sound_preset": "creepy_wind",
+    "story_th": "ยอดเขาที่สูงที่สุดในเทือกเขาฮารซ์ ปกคลุมด้วยหมอกหนาทึบและปรากฏการณ์ 'เงาปีศาจบร็อคเคิน' ตำนานเล่าว่าเป็นจุดชุมนุมของเหล่าแม่มดทั่วสารทิศในคืนวัลเพอร์กิส (30 เมษายน) เพื่อเต้นรำกับซาตาน",
+    "story_en": "Misty northern German peak immortalized in Goethe's Faust; famous for the eerie 'Brocken Spectre' optical illusion and the annual Walpurgis Night gathering of witches.",
+    "folklore_history_th": "ปรากฏการณ์หมอกหักเหแสงแดดจนทำให้เงาของมนุษย์ขยายใหญ่มีรัศมีสีรุ้งลอยอยู่บนเมฆ สร้างความหวาดกลัวให้นักเดินทางโบราณ",
+    "folklore_history_en": "The optical phenomenon casts a gigantic shadow surrounded by rainbow halos onto low fog banks.",
+    "image_url": "https://i.ytimg.com/vi/1hvJoSy1AOU/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/1hvJoSy1AOU/hqdefault.jpg",
+        "title": "ยอดเขาบร็อคเคินและลานเต้นรำแม่มดคืนวัลเพอร์กิส (เทือกเขาฮารซ์ เยอรมนี)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=1hvJoSy1AOU",
+        "title": "วิธีลงดัน Shattered Arkanis สำหรับมือใหม่ ไปหาการ์ดมาใส่เพิ่ม GS ตึงๆ | Aion 2",
+        "thumbnail": "https://i.ytimg.com/vi/1hvJoSy1AOU/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ระวังการหลงป่าในม่านหมอกบร็อคเคิน และห้ามลบหลู่ความเชื่อโบราณ",
+    "taboos_en": "Never stray from mountain trails during dense pea-soup fog conditions."
+  },
+  {
+    "id": "pin-fafnir-curse-dragon-norse",
+    "title_th": "ฟาฟเนียร์ มังกรคนบาปผู้เฝ้าขุมทองคำต้องคำสาปอันดวารานาวต์ (นอร์ส)",
+    "title_en": "Fafnir the Dragon (The Cursed Golden Hoard of Gnitaheath)",
+    "category": "monster",
+    "province_th": "นอร์ดลันด์ (นอร์เวย์)",
+    "province_en": "Nordland (Norway)",
+    "district_th": "โม อิ รานา",
+    "district_en": "Mo i Rana",
+    "lat": 66.3138,
+    "lng": 14.1428,
+    "sound_preset": "jungle_curse",
+    "story_th": "คนแคระผู้ถูกพิษแห่งความโลภครอบงำ สังหารบิดาแท้ๆ เพื่อชิงทองคำต้องคำสาปของอันดวารี ก่อนจะกลายร่างเป็นมังกรยักษ์นอนทับสมบัติ พ่นพิษมรณะ จนถูกซิกูร์ดใช้ดาบสังหาร",
+    "story_en": "A dwarven prince transformed by greed into a venom-spewing dragon lying atop the cursed gold hoard of Andvari, eventually slain from below by hero Sigurd's forged blade.",
+    "folklore_history_th": "มหากาพย์โวลซุงกะ (Völsunga saga) ตำนานต้นกำเนิดของแหวนแห่งนิเบอลุงเกน และแรงบันดาลใจแห่งเรื่องเดอะลอร์ดออฟเดอะริงส์",
+    "folklore_history_en": "Central Norse epic in the Poetic Edda that directly inspired Wagner's Ring Cycle and Tolkien's Smaug.",
+    "image_url": "https://i.ytimg.com/vi/TcNHdnRfM8s/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/TcNHdnRfM8s/hqdefault.jpg",
+        "title": "ฟาฟเนียร์ มังกรคนบาปผู้เฝ้าขุมทองคำต้องคำสาปอันดวารานาวต์ (นอร์ส)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=TcNHdnRfM8s",
+        "title": "How To Train Your Dragon อภินิหารไวกิ้งพิชิตมังกร - Official Trailer [พากย์ไทย]",
+        "thumbnail": "https://i.ytimg.com/vi/TcNHdnRfM8s/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามโลภในทรัพย์สินที่ไม่ใช่ของตน และระวังคำสาปแห่งความโลภ",
+    "taboos_en": "Heed the ancient warning: ill-gotten gold bears the seeds of ruin."
+  },
+  {
+    "id": "pin-nidhogg-corpse-eater-yggdrasil",
+    "title_th": "นิดฮ็อกก์ มังกรแทะรากต้นพิภพอิกดราซิลในขุมนรกนิฟล์ไฮม์ (นอร์ส)",
+    "title_en": "Nidhogg (The Corpse-Eater Gnawing the Roots of Yggdrasil)",
+    "category": "monster",
+    "province_th": "ฟินน์มาร์ก (นอร์เวย์ / อาร์กติก)",
+    "province_en": "Finnmark (Norway / Arctic)",
+    "district_th": "อัลตา",
+    "district_en": "Alta",
+    "lat": 69.9689,
+    "lng": 23.2717,
+    "sound_preset": "jungle_curse",
+    "story_th": "มังกรอสรพิษยักษ์ใต้พิภพที่อาศัยอยู่ริมธารน้ำแข็งแห่งความตาย คอยแทะรากต้นอิกดราซิลและกลืนกินดวงวิญญาณคนบาป รอคอยวันแร็กนาร็อกเพื่อบินขึ้นสู่ท้องฟ้าพร้อมซากศพบนปีก",
+    "story_en": "The monstrous serpent-dragon dwelling in the frozen depths of Niflheim beneath the spring Hvergelmir, endlessly gnawing Yggdrasil's roots and chewing upon oath-breakers and murderers.",
+    "folklore_history_th": "ในคัมภีร์เอ็ดดา นิดฮ็อกก์สื่อถึงพลังแห่งการย่อยสลายและความเสื่อมสลายของจักรวาลที่ไม่มีวันหยุดนิ่ง",
+    "folklore_history_en": "Chronicled in the Völuspá as the harbinger of cosmic decay heralding the twilight of the gods.",
+    "image_url": "https://i.ytimg.com/vi/v7lwUj6Rr40/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/v7lwUj6Rr40/hqdefault.jpg",
+        "title": "นิดฮ็อกก์ มังกรแทะรากต้นพิภพอิกดราซิลในขุมนรกนิฟล์ไฮม์ (นอร์ส)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=v7lwUj6Rr40",
+        "title": "ประวัติ นิดฮอกก์ (Níðhöggr) มังกร โคตรแย้ยักษ์ Ratatoskr กวางสี่ฤดู | Codex ใน God of War Ragnarök",
+        "thumbnail": "https://i.ytimg.com/vi/v7lwUj6Rr40/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามผิดคำสาบานหรือทำลายธรรมชาติอันเป็นรากฐานแห่งชีวิต",
+    "taboos_en": "Oath-breaking is described in Norse mythology as food for the serpent's malice."
+  },
+  {
+    "id": "pin-sobek-crocodile-god-nile",
+    "title_th": "โซเบก เทพเจ้าจระเข้ผู้บันดาลความอุดมสมบูรณ์และแม่น้ำไนล์ (อียิปต์)",
+    "title_en": "Sobek (The Crocodile Lord of Kom Ombo & Father of the Nile)",
+    "category": "sacred",
+    "province_th": "อัสวาน (อียิปต์)",
+    "province_en": "Aswan Governorate (Egypt)",
+    "district_th": "กอม ออมโบ",
+    "district_en": "Kom Ombo",
+    "lat": 24.4528,
+    "lng": 32.9283,
+    "sound_preset": "water_spirit",
+    "story_th": "เทพเศียรจระเข้แห่งอียิปต์โบราณ ผู้ควบคุมกระแสน้ำไนล์และสร้างความอุดมสมบูรณ์ เชื่อว่าหยาดเหงื่อของพระองค์คือแม่น้ำไนล์ และเป็นเทพผู้พิทักษ์ฟาโรห์จากภยันตรายทางน้ำ",
+    "story_en": "The ancient Egyptian crocodile deity revered as sovereign of water and fertility whose sweat created the Nile; venerated at the dual temple of Kom Ombo with mummified sacred reptiles.",
+    "folklore_history_th": "วิหารกอม ออมโบ มีการค้นพบสุสานมัมมี่จระเข้นับร้อยตัวที่ได้รับการทำมัมมี่อย่างสมเกียรติเทียบเท่ามนุษย์",
+    "folklore_history_en": "Excavations revealed an adjacent crocodile necropolis preserving hundreds of mummified reptiles.",
+    "image_url": "https://i.ytimg.com/vi/ry9ySIfWRrE/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/ry9ySIfWRrE/hqdefault.jpg",
+        "title": "โซเบก เทพเจ้าจระเข้ผู้บันดาลความอุดมสมบูรณ์และแม่น้ำไนล์ (อียิปต์)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=ry9ySIfWRrE",
+        "title": "เทพเจ้าจระเข้ โซเบก  SOBEK #อียิปต์โบราณ #whispering #เทพเจ้า",
+        "thumbnail": "https://i.ytimg.com/vi/ry9ySIfWRrE/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามทำร้ายหรือลบหลู่จระเข้ในแม่น้ำศักดิ์สิทธิ์ของอียิปต์โบราณ",
+    "taboos_en": "Respect the ancient sacred reptile sanctuaries along the Upper Nile."
+  },
+  {
+    "id": "pin-ammit-devourer-of-the-dead",
+    "title_th": "อัมมิต อสูรกลืนวิญญาณหัวจระเข้ตัวสิงโตสะโพกฮิปโป (อียิปต์)",
+    "title_en": "Ammit (The Soul Devourer at the Weighing of the Heart)",
+    "category": "monster",
+    "province_th": "ลักซอร์ (อียิปต์)",
+    "province_en": "Luxor Governorate (Egypt)",
+    "district_th": "ธีบส์ / หุบผากษัตริย์",
+    "district_en": "Thebes",
+    "lat": 25.7402,
+    "lng": 32.6014,
+    "sound_preset": "jungle_curse",
+    "story_th": "สัตว์อสูรน่าสะพรึงกลัวผู้เฝ้าข้างตาชั่งแห่งความจริงของเทวีมะอัตในยมโลก หากหัวใจของผู้ตายหนักกว่าขนนกเพราะความบาป อัมมิตจะกลืนกินหัวใจทันที ทำให้วิญญาณดับสูญตลอดกาล",
+    "story_en": "The terrifying chimera of ancient Egypt (crocodile head, lion torso, hippopotamus hindquarters) waiting beside Ma'at's scales to devour hearts heavier than truth, inflicting eternal non-existence.",
+    "folklore_history_th": "ปรากฏในคัมภีร์มรณะ (Book of the Dead) บนแผ่นพาไพรัสของอาเน็ต ไม่ได้รับการบูชาในฐานะเทพ แต่เป็นเครื่องเตือนใจถึงผลกรรม",
+    "folklore_history_en": "Illustrated in the Papyrus of Ani; feared rather than worshipped as the terrifying executor of cosmic justice.",
+    "image_url": "https://i.ytimg.com/vi/abblvn-A_EY/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/abblvn-A_EY/hqdefault.jpg",
+        "title": "อัมมิต อสูรกลืนวิญญาณหัวจระเข้ตัวสิงโตสะโพกฮิปโป (อียิปต์)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=abblvn-A_EY",
+        "title": "EP10 : อาเมมิต: อสูรผู้กลืนกินหัวใจ | เทพเจ้าอียิปต์ I AMMIT",
+        "thumbnail": "https://i.ytimg.com/vi/abblvn-A_EY/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามกระทำความอยุติธรรมหรือพูดโกหกต่อตาชั่งแห่งความจริง",
+    "taboos_en": "Cultivate truth in word and deed; false declarations seal spiritual oblivion."
+  },
+  {
+    "id": "pin-impundulu-lightning-bird",
+    "title_th": "อิมพุนดูลู นกสายฟ้าดูดเลือดแห่งตำนานเผ่าซูลูและโคซา (แอฟริกาใต้)",
+    "title_en": "Impundulu / The Lightning Bird (Vampiric Avian Demon of Zulu Lore)",
+    "category": "monster",
+    "province_th": "อีสเทิร์นเคป (แอฟริกาใต้)",
+    "province_en": "Eastern Cape (South Africa)",
+    "district_th": "ทรานสไก",
+    "district_en": "Transkei",
+    "lat": -31.5892,
+    "lng": 28.7844,
+    "sound_preset": "jungle_curse",
+    "story_th": "นกปีศาจขนาดเท่ามนุษย์ที่มีขนสีขาวดำ สามารถเรียกลมพายุและสายฟ้าจากปีกและกรงเล็บ ชื่นชอบการดูดเลือดมนุษย์ และแปลงร่างเป็นชายหนุ่มรูปงามล่อลวงหญิงสาว",
+    "story_en": "A fearsome human-sized supernatural bird of Southern African tribal lore that summons thunderbolts from its wings, drinks blood, and shapeshifts into handsome men to seduce women.",
+    "folklore_history_th": "หมอผีมักใช้ไขมันของนกสายฟ้าในพิธีกรรมทางไสยเวท และเชื่อว่ามันสืบทอดจากแม่มดสู่บุตรสาวจากรุ่นสู่รุ่น",
+    "folklore_history_en": "Considered an inherited familiar of witches passed down from mother to daughter across generations.",
+    "image_url": "https://i.ytimg.com/vi/56pZz_uPk58/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/56pZz_uPk58/hqdefault.jpg",
+        "title": "อิมพุนดูลู นกสายฟ้าดูดเลือดแห่งตำนานเผ่าซูลูและโคซา (แอฟริกาใต้)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=56pZz_uPk58",
+        "title": "Episode 63: The Impundulu",
+        "thumbnail": "https://i.ytimg.com/vi/56pZz_uPk58/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามออกไปยืนกลางทุ่งโล่งระหว่างพายุฟ้าคะนองรุนแรง หรือขโมยไข่ของนกสายฟ้า",
+    "taboos_en": "Never search for lightning strike sites where the beast is believed to lay eggs underground."
+  },
+  {
+    "id": "pin-adaro-solomon-flying-fish",
+    "title_th": "อาดาโร มนุษย์เงือกปลาบินแห่งหมู่เกาะโซโลมอน (แปซิฟิก)",
+    "title_en": "Adaro (The Flying-Fish Merfolk Specter of Solomon Islands)",
+    "category": "monster",
+    "province_th": "มาคิรา-อูลวา (หมู่เกาะโซโลมอน)",
+    "province_en": "Makira-Ulawa Province (Solomon Islands)",
+    "district_th": "เกาะมาคิรา",
+    "district_en": "Makira Island",
+    "lat": -10.5739,
+    "lng": 161.8106,
+    "sound_preset": "water_spirit",
+    "story_th": "วิญญาณพรายน้ำชั่วร้ายครึ่งมนุษย์ครึ่งปลาดาบ มีเขาแหลมคมบนศีรษะและเหงือกหลังหู เคลื่อนที่ไปตามสายรุ้งและพวยพ่นปลาบินมีพิษเข้าใส่กะลาสีเรือจนหมดสติ",
+    "story_en": "Malicious amphibious ocean spirits of Melanesian folklore shaped like humanoids with swordfish snouts and shark fins, travelling along rainbows and hurling flying fish at mariners.",
+    "folklore_history_th": "ชาวเกาะโซโลมอนเชื่อว่าอาดาโรเกิดจากส่วนที่ชั่วร้ายของวิญญาณมนุษย์ที่แยกตัวออกมาหลังความตาย",
+    "folklore_history_en": "Rooted in Melanesian animism as the malignant essence of departed souls haunting coastal shoals.",
+    "image_url": "https://i.ytimg.com/vi/cJkdw-AmCFw/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/cJkdw-AmCFw/hqdefault.jpg",
+        "title": "อาดาโร มนุษย์เงือกปลาบินแห่งหมู่เกาะโซโลมอน (แปซิฟิก)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=cJkdw-AmCFw",
+        "title": "นักวิทยาศาสตร์ไม่ได้แสดงสิ่งมีชีวิตใต้ทะเลลึกชนิดใหม่ที่พวกเขาค้นพบให้เราเห็น แต่ทำไมล่ะ?",
+        "thumbnail": "https://i.ytimg.com/vi/cJkdw-AmCFw/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามจ้องมองปลายสายรุ้งที่แตะลงสู่ผิวน้ำทะเลในวันที่แดดออกกลางฝน",
+    "taboos_en": "Never gaze fixedly at ocean rainbows descending into coastal waters."
+  },
+  {
+    "id": "pin-piasa-bird-bluffs-illinois",
+    "title_th": "พญานกไพอาซา อสูรหน้าคนเขากวางริมผาแม่น้ำมิสซิสซิปปี (อิลลินอยส์ สหรัฐฯ)",
+    "title_en": "The Piasa Bird (The Man-Devouring Cliff Monster of Alton, Illinois)",
+    "category": "monster",
+    "province_th": "อิลลินอยส์ (สหรัฐอเมริกา)",
+    "province_en": "Illinois (USA)",
+    "district_th": "อัลตัน",
+    "district_en": "Alton",
+    "lat": 38.8967,
+    "lng": -90.1984,
+    "sound_preset": "jungle_curse",
+    "story_th": "อสูรมีปีกโบราณในตำนานชนเผ่าอินเดียนแดงอิลลินีเวก มีหน้าคล้ายมนุษย์ มีเขากวาง เคราเหมือนเสือ ลำตัวเกล็ดสีเขียวแดง และหางยาวพันรอบตัว ชอบโฉบจับนักรบไปกินบนหน้าผา",
+    "story_en": "A legendary Native American winged cryptid painted on limestone bluffs above the Mississippi River, featuring a human face, stag horns, tiger beard, scaly body, and barbed serpent tail.",
+    "folklore_history_th": "บันทึกครั้งแรกโดยนักบวชฌาคส์ มาร์เก็ตต์ ในปี 1673 หัวหน้าเผ่าอวาโตกาได้เสียสละตนเป็นเหยื่อล่อให้นักรบระดมยิงธนูพิษจนสังหารอสูรได้",
+    "folklore_history_en": "First recorded by French missionary Jacques Marquette in 1673; slain when Chief Ouatoga used himself as bait.",
+    "image_url": "https://i.ytimg.com/vi/6Pu6lpnMVKA/hqdefault.jpg",
+    "views_count": 0,
+    "is_published": 1,
+    "gallery_media": [
+      {
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/6Pu6lpnMVKA/hqdefault.jpg",
+        "title": "พญานกไพอาซา อสูรหน้าคนเขากวางริมผาแม่น้ำมิสซิสซิปปี (อิลลินอยส์ สหรัฐฯ)"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=6Pu6lpnMVKA",
+        "title": "ประวัติศาสตร์ชนพื้นเมืองอเมริกัน (ไม่ใช่อินเดียนแดง!) | Point of View",
+        "thumbnail": "https://i.ytimg.com/vi/6Pu6lpnMVKA/hqdefault.jpg"
+      }
+    ],
+    "taboos_th": "ห้ามลบหลู่ภาพวาดอสูรบนหน้าผาหินปูนริมแม่น้ำมิสซิสซิปปี",
+    "taboos_en": "Do not deface cliff paintings commemorating tribal encounters."
   }
 ];
