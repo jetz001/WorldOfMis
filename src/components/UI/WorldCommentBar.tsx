@@ -389,19 +389,19 @@ export const WorldCommentBar: React.FC<WorldCommentBarProps> = ({
                     recentComments.slice(0, 5).map((cmt, idx) => (
                       <div
                         key={cmt.id || idx}
-                        className="p-2 sm:p-2.5 rounded-xl bg-slate-900/70 border border-slate-800/80 hover:border-emerald-500/35 transition-colors flex flex-col gap-0.5 text-xs"
+                        className="py-1.5 px-2.5 rounded-lg bg-slate-900/70 border border-slate-800/80 hover:border-emerald-500/35 transition-colors flex items-baseline justify-between gap-2 text-xs"
                       >
-                        <div className="flex items-center justify-between text-[10px]">
-                          <span className="font-bold text-amber-300 truncate max-w-[150px]">
-                            {cmt.author || (language === 'th' ? 'นักสำรวจโลก' : 'World Explorer')}
-                          </span>
-                          <span className="text-slate-400 text-[9px]">
-                            {formatTimeAgo(cmt.created_at, language)}
+                        <div className="min-w-0 flex-1 leading-snug break-words">
+                          <span className="font-semibold text-amber-300">
+                            {cmt.author || (language === 'th' ? 'นักสำรวจโลก' : 'World Explorer')}:
+                          </span>{' '}
+                          <span className="text-slate-200">
+                            {cmt.content}
                           </span>
                         </div>
-                        <p className="text-slate-200 text-xs break-words leading-relaxed">
-                          {cmt.content}
-                        </p>
+                        <span className="text-slate-400 text-[9px] shrink-0 whitespace-nowrap self-start pt-0.5">
+                          {formatTimeAgo(cmt.created_at, language)}
+                        </span>
                       </div>
                     ))
                   )}
