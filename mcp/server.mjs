@@ -4,6 +4,7 @@ import path from 'path';
 import readline from 'readline';
 import https from 'https';
 import { fileURLToPath } from 'url';
+import { performVectorRagSearch } from './ragSearch.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -331,10 +332,60 @@ const TOOLS = [
       },
       required: ['query']
     }
+  },
+  {
+    name: 'worldofmys_search_folklore',
+    description: 'Semantic RAG & Vector Search for folklore, ghosts, monsters, curses, and sacred mysteries across World of Mystery. Matches themes (e.g. water ghosts, snow beasts, vampire curses, ancient temples, extraterrestrial, tragic love) and returns ranked pins with match percentages, snippets, and synthesized RAG summary.',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        query: {
+          type: 'string',
+          description: 'Search phrase, theme, or question in Thai or English (e.g. "ผีในน้ำ", "ป่าหิมะ", "คำสาปเขมร", "alien sightings")'
+        },
+        language: {
+          type: 'string',
+          enum: ['th', 'en'],
+          description: 'Response language ("th" or "en", default "th")'
+        },
+        limit: {
+          type: 'number',
+          description: 'Number of top matching legends to return (default 5, max 20)'
+        }
+      },
+      required: ['query']
+    }
   }
 ];
 
 async function handleToolCall(name, args) {
+  if (name === 'worldofmys_search_folklore') {
+    if (!args.query) {
+      throw new Error('Missing required argument: query');
+    }
+    const pins = loadPins();
+    const lang = args.language === 'en' ? 'en' : 'th';
+    const limit = Math.min(Number(args.limit) || 5, 20);
+    const searchRes = performVectorRagSearch(args.query, pins, lang, limit);
+    return {
+      query: searchRes.query,
+      ragSummary: searchRes.ragSummary,
+      count: searchRes.results.length,
+      matches: searchRes.results.map(r => ({
+        id: r.pin.id,
+        title: lang === 'th' ? r.pin.title_th : r.pin.title_en,
+        category: r.pin.category,
+        location: `${lang === 'th' ? r.pin.province_th : r.pin.province_en}${r.pin.district_th ? ` (${lang === 'th' ? r.pin.district_th : r.pin.district_en})` : ''}`,
+        coordinates: { lat: r.pin.lat, lng: r.pin.lng },
+        score: `${(r.score * 100).toFixed(0)}%`,
+        snippet: r.matchedSnippet ? r.matchedSnippet.slice(0, 180) + '...' : '',
+        conceptTags: r.matchedConceptTags,
+        hasImage: Boolean(r.pin.image_url),
+        hasYoutube: Boolean(r.pin.gallery_media?.some(m => m.type === 'youtube'))
+      }))
+    };
+  }
+
   if (name === 'worldofmys_search_youtube') {
     if (!args.query) {
       throw new Error('Missing required argument: query');
