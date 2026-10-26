@@ -5,7 +5,6 @@ import {
   Clock,
   Heart,
   Send,
-  Sparkles,
   CornerDownRight,
 } from 'lucide-react';
 import type { GhostPin, SupportedLanguage } from '../../types/ghost';
@@ -465,7 +464,7 @@ export const CommentsPanel: React.FC<CommentsPanelProps> = ({
         className="relative px-4 py-3.5 border-t-2 border-[#6d411b]/40 bg-[#eedbb8]/90 space-y-2.5 shrink-0"
       >
         <div className="flex items-center gap-1.5 text-[11px] text-amber-950 font-medium">
-          <Sparkles className="w-3 h-3 text-amber-800" />
+          <MessageSquare className="w-3 h-3 text-amber-800" />
           <span>{language === 'th' ? 'ร่วมบันทึกคำบอกเล่า' : 'Add Eyewitness Report'}</span>
         </div>
 

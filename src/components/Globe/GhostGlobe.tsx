@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 import { Map, NavigationControl, Marker, setWorkerUrl, type GeoJSONSource } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
-import { RotateCw, X, Sparkles, MapPin } from 'lucide-react';
+import { RotateCw, X, Compass, BookOpen, MapPin } from 'lucide-react';
 
 // Fix: point MapLibre to our bundled worker so Cloudflare Pages
 // returns the correct JS MIME type instead of an HTML 404 page.
@@ -1240,7 +1240,11 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
               onClick={() => handleExploreNexus(activeNexus)}
               className="mt-3 w-full py-2.5 px-4 rounded-xl font-semibold text-xs sm:text-sm flex items-center justify-center gap-2 cursor-pointer transition-all active:scale-[0.98] shadow-lg text-emerald-950 bg-gradient-to-r from-emerald-400 to-teal-300 hover:from-emerald-300 hover:to-teal-200 shadow-[0_0_18px_rgba(16,185,129,0.35)]"
             >
-              <Sparkles className="w-4 h-4 text-emerald-900" />
+              {activeNexus.isCluster ? (
+                <Compass className="w-4 h-4 text-emerald-900" />
+              ) : (
+                <BookOpen className="w-4 h-4 text-emerald-900" />
+              )}
               <span>
                 {activeNexus.isCluster
                   ? (language === 'th' ? 'ซูมเจาะลึกชุมทางนี้' : 'Zoom into Nexus')

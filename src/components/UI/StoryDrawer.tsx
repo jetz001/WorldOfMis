@@ -3,7 +3,6 @@ import {
   X,
   MapPin,
   Eye,
-  Sparkles,
   Skull,
   Scale,
   Ruler,
@@ -374,7 +373,7 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
           <div className="flex items-center justify-between gap-2 mb-2.5">
             <div className="flex items-center gap-2 flex-wrap">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-semibold uppercase tracking-wider bg-[#e6d5b8] text-[#4a280d] border border-[#9e6f3b] font-serif shadow-[0_1px_3px_rgba(0,0,0,0.08)]">
-                <Sparkles className="w-3 h-3 text-[#7a4618]" />
+                <Compass className="w-3 h-3 text-[#7a4618]" />
                 {categoryLabel}
               </span>
               <span className="text-[10.5px] font-mono tracking-widest uppercase px-2.5 py-1 rounded bg-[#dfcaa8] text-[#3d2008] border border-[#8f5d2c] font-bold shadow-sm">
