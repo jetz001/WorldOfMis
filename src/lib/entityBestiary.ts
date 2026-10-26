@@ -629,18 +629,7 @@ export function getEntityDossier(
       : custom?.extraLoreEn ||
         `According to regional occult archives, elders of ${pin.province_en} maintain that "${pin.title_en}" is far more than mere fable—it stands as an enduring cautionary chronicle woven into the geography and spiritual memory of the land.`;
 
-  const omensAndTaboos =
-    language === 'th'
-      ? custom?.taboosTh || [
-          'ห้ามเอ่ยชื่อเรียกหรือท้าทายสิ่งลี้ลับในยามวิกาลหลังเที่ยงคืน',
-          'หากได้ยินเสียงเรียกชื่อตนเองจากความมืดโดยไม่เห็นตัวตน ห้ามขานรับเด็ดขาด',
-          'ควรเคารพสถานที่ศักดิ์สิทธิ์และปฏิบัติตามธรรมเนียมความเชื่อของคนในท้องถิ่น',
-        ]
-      : custom?.taboosEn || [
-          'Never speak the entity’s name aloud as a challenge after midnight.',
-          'If an unseen voice calls your name from the dark, never answer or look back.',
-          'Respect local shrines, boundary markers, and traditional protective customs.',
-        ];
+  const omensAndTaboos = generateContextualTaboos(pin, language);
 
   return {
     codexId,
@@ -657,4 +646,177 @@ export function getEntityDossier(
     expandedStory: `${baseStory}\n\n${extraLore}`,
     omensAndTaboos,
   };
+}
+
+/**
+ * Contextual Taboo & Survival Protocol Generator
+ * Accurately tailors omens, taboos, and survival precautions based on the entity's lore,
+ * category, archetype, or admin-configured rules.
+ */
+export function generateContextualTaboos(pin: GhostPin, language: SupportedLanguage): string[] {
+  // 1. If admin custom taboos exist on pin:
+  const adminTaboos = language === 'th' ? pin.taboos_th : pin.taboos_en;
+  if (adminTaboos && adminTaboos.trim()) {
+    const rules = adminTaboos
+      .split(/\r?\n/)
+      .map((r) => r.trim().replace(/^[-•*0-9.]+\s*/, ''))
+      .filter((r) => r.length > 0);
+    if (rules.length > 0) return rules;
+  }
+
+  // 2. If curated bestiary taboos exist:
+  const custom = PIN_BESTIARY_DB[pin.id];
+  const curated = language === 'th' ? custom?.taboosTh : custom?.taboosEn;
+  if (curated && curated.length > 0) return curated;
+
+  // 3. Intelligent Context-Aware Extraction:
+  const isTh = language === 'th';
+  const text = `${pin.id} ${pin.title_th} ${pin.title_en} ${pin.story_th} ${pin.story_en} ${pin.folklore_history_th} ${pin.folklore_history_en}`.toLowerCase();
+
+  // A. Cosmic / Extraterrestrial / Ancient Astronomical Lore (e.g. Dogon, Sirius, UFO, Alien, Nazca)
+  if (
+    text.includes('dogon') ||
+    text.includes('โดกอน') ||
+    text.includes('sirius') ||
+    text.includes('ซิริอุส') ||
+    text.includes('นอมโม') ||
+    text.includes('nommo') ||
+    text.includes('ufo') ||
+    text.includes('alien') ||
+    text.includes('ดาวตก') ||
+    text.includes('ดาราศาสตร์') ||
+    text.includes('ยานอวกาศ')
+  ) {
+    return isTh
+      ? [
+          'ห้ามเหยียบย่ำหรือรบกวนลานหินศักดิ์สิทธิ์และโพรงผาที่ใช้ประกอบพิธีกรรมสังเกตการณ์ดวงดาว',
+          'หากพบปรากฏการณ์แสงประหลาดหรือหินสลักสัญลักษณ์โบราณ ห้ามใช้โลหะขูดขีดหรือเคลื่อนย้ายตำแหน่งเด็ดขาด',
+          'ควรแสดงความเคารพต่อผู้อาวุโสของชนเผ่า และห้ามบันทึกภาพพิธีกรรมลับของบรรพบุรุษนอมโมโดยไม่ได้รับอนุญาต',
+        ]
+      : [
+          'Never disturb or step on sacred rock sanctuaries aligned with ancient stellar coordinates.',
+          'If unexplained atmospheric lights or inscribed monoliths appear, do not touch or alter their positioning.',
+          'Show utmost reverence to tribal elders and never photograph private Nommo ancestral rites without permission.',
+        ];
+  }
+
+  // B. Aquatic / Water Entities & Serpents (Naga, Loch Ness, Siren, Mermaid, Bunyip, Taniwha, Rhine Lorelei)
+  if (
+    text.includes('loch') ||
+    text.includes('naga') ||
+    text.includes('พญานาค') ||
+    text.includes('bunyip') ||
+    text.includes('taniwha') ||
+    text.includes('siren') ||
+    text.includes('mermaid') ||
+    text.includes('เงือก') ||
+    text.includes('lorelei') ||
+    text.includes('พรายน้ำ') ||
+    text.includes('แม่น้ำ') ||
+    text.includes('บึง') ||
+    text.includes('ทะเลสาบ')
+  ) {
+    return isTh
+      ? [
+          'ห้ามลงเล่นน้ำหรือพายเรือคนเดียวในยามที่ผิวน้ำนิ่งสงบผิดปกติ หรือเมื่อมีม่านหมอกหนาลงจัดเหนือลำน้ำ',
+          'หากได้ยินเสียงเพลง เสียงกระซิบ หรือเสียงกรีดร้องก้องจากกลางผืนน้ำ ห้ามชะโงกมองหรือว่ายตามไปเด็ดขาด',
+          'ควรตั้งจิตขอขมาต่อเจ้าที่สายน้ำและหลีกเลี่ยงการสัญจรทางน้ำหลังดวงอาทิตย์ลับขอบฟ้า',
+        ]
+      : [
+          'Never swim or navigate waters alone during unnatural dead calms or sudden creeping river fogs.',
+          'If hypnotic melodies, whispers, or calls echo across the water, do not lean over or steer towards them.',
+          'Offer respect to water deities and refrain from voyaging across deep waters after twilight.',
+        ];
+  }
+
+  // C. Mountain & Forest Cryptids (Yeti, Sasquatch, Wendigo, Bigfoot, Beast of Gevaudan, Chupacabra, Werewolf)
+  if (
+    text.includes('yeti') ||
+    text.includes('เยติ') ||
+    text.includes('sasquatch') ||
+    text.includes('wendigo') ||
+    text.includes('bigfoot') ||
+    text.includes('chupacabra') ||
+    text.includes('gevaudan') ||
+    text.includes('werewolf') ||
+    text.includes('มนุษย์หมาป่า') ||
+    text.includes('สมิง') ||
+    text.includes('วานร') ||
+    pin.category === 'monster'
+  ) {
+    return isTh
+      ? [
+          'ห้ามทิ้งเศษอาหารสดหรือกลิ่นคาวเลือดไว้รอบที่พักยามค่ำคืน เพราะจะกระตุ้นสัญชาตญาณนักล่าข้ามคืน',
+          'หากพบเห็นรอยเท้าขนาดมหึมา หรือรอยกรงเล็บขูดลึกผิดธรรมชาติบนต้นไม้ ให้รีบถอยออกจากพื้นที่ทันที',
+          'ห้ามผิวปากหรือส่งเสียงเลียนแบบเสียงสัตว์ป่าแปลกประหลาดในเขตป่าลึกหลังตะวันตกดิน',
+        ]
+      : [
+          'Never leave raw meat or pungent scents around campfires overnight, as they provoke predatory trackers.',
+          'If you encounter massive fresh tracks or claw gouges on tree trunks, retreat immediately without running.',
+          'Never whistle or imitate strange animal calls in deep wilderness after dusk.',
+        ];
+  }
+
+  // D. Cursed Relics, Tombs, Mummies & Hexes (Curse category, Tutankhamun, Dracula, Voodoo, Catacombs)
+  if (
+    pin.category === 'curse' ||
+    text.includes('curse') ||
+    text.includes('คำสาป') ||
+    text.includes('คุณไสย') ||
+    text.includes('สุสาน') ||
+    text.includes('tomb') ||
+    text.includes('mummy') ||
+    text.includes('dracula') ||
+    text.includes('catacomb') ||
+    text.includes('voodoo')
+  ) {
+    return isTh
+      ? [
+          'ห้ามหยิบฉวยก้อนหิน วัตถุโบราณ เศษดิน หรือเครื่องรางใดๆ ออกจากเขตสุสานหรือซากปรักหักพังกลับบ้านโดยเด็ดขาด',
+          'หากมีอาการขนลุกชัน ได้ยินเสียงกระซิบข้างหู หรือได้กลิ่นกำมะถัน ให้กล่าวบทสวดขอขมาและเดินถอยหลังออกจากพื้นที่',
+          'ห้ามลบหลู่เครื่องราง ป้ายเตือน หรือเชือกอาถรรพ์ที่ผู้เฒ่าผู้แก่ประกอบพิธีสะกดไว้',
+        ]
+      : [
+          'Never remove stones, relics, soil, or artifacts from ancient tombs or ruined grounds under any circumstance.',
+          'If sudden chills, phantom whispers, or sulfur scents manifest, recite prayers and back away facing forward.',
+          'Never mock protective boundary wards, talismans, or binding seals placed by ancient guardians.',
+        ];
+  }
+
+  // E. Sacred Deities, Shrines & Relic Keepers (Sacred category, Temple, Mount Popa, Sacred trees)
+  if (
+    pin.category === 'sacred' ||
+    text.includes('sacred') ||
+    text.includes('ศักดิ์สิทธิ์') ||
+    text.includes('เทพ') ||
+    text.includes('ศาล') ||
+    text.includes('วัด') ||
+    text.includes('temple') ||
+    text.includes('shrine')
+  ) {
+    return isTh
+      ? [
+          'แต่งกายสุภาพ สำรวมกิริยาวาจา และห้ามพูดจาลบหลู่ท้าทายสิ่งศักดิ์สิทธิ์ในเขตอารามหรือศาลเจ้า',
+          'ห้ามนำสิ่งมึนเมา ของมลทิน หรือเจตนาชั่วร้ายเข้ามาในอาณาบริเวณลานประกอบพิธีกรรม',
+          'ควรอธิษฐานขอพรด้วยจิตบริสุทธิ์และปฏิบัติตามคำแนะนำของพราหมณ์หรือผู้ดูแลท้องถิ่นอย่างเคร่งครัด',
+        ]
+      : [
+          'Dress modestly, maintain solemn silence, and never speak words of mockery within the sacred shrine sanctuary.',
+          'Never bring intoxicants, corrupt offerings, or malice into the ceremonial sanctuary grounds.',
+          'Pray with pure intent and strictly observe the guidance of local ceremonial keepers and elders.',
+        ];
+  }
+
+  // F. Ghosts, Spirits & Apparitions (Default Ghost / Urban Legend)
+  return isTh
+    ? [
+        'หากได้ยินเสียงเรียกชื่อตนเองแว่วมาจากความมืดหลังเที่ยงคืน ห้ามขานรับหรือหันมองในทันทีเด็ดขาด',
+        'ห้ามส่องกระจกเงาในเงามืดหลังเที่ยงคืน หรือเคาะจานชามเรียกวิญญาณในสถานที่รกร้าง',
+        'ควรพกเครื่องรางประจำตัวและหลีกเลี่ยงการเดินทางสัญจรคนเดียวในเส้นทางเปลี่ยวที่มีประวัติอาถรรพ์',
+      ]
+    : [
+        'If an unseen voice whispers your name from the shadows after midnight, never acknowledge or turn around.',
+        'Never gaze into unlit mirrors in abandoned chambers or tap porcelain dishes in deserted crossroads.',
+        'Carry protective amulets and avoid traversing solitary haunted pathways unescorted at night.',
+      ];
 }

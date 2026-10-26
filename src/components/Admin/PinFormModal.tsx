@@ -101,6 +101,8 @@ const DEFAULT_PIN_DATA: Partial<GhostPin> = {
   story_en: '',
   folklore_history_th: '',
   folklore_history_en: '',
+  taboos_th: '',
+  taboos_en: '',
   image_url: '',
   sound_preset: 'whisper',
   views_count: 0,
@@ -216,6 +218,8 @@ export const PinFormModal: React.FC<PinFormModalProps> = ({
       story_en: formData.story_en || '',
       folklore_history_th: formData.folklore_history_th || '',
       folklore_history_en: formData.folklore_history_en || '',
+      taboos_th: formData.taboos_th?.trim() || '',
+      taboos_en: formData.taboos_en?.trim() || '',
       image_url: formData.image_url?.trim() || '',
       audio_url: formData.audio_url?.trim() || '',
       gallery_media: formData.gallery_media || [],
@@ -523,11 +527,50 @@ export const PinFormModal: React.FC<PinFormModalProps> = ({
           </div>
         </div>
 
-        {/* Section 5: Main Image & Media Gallery (with YouTube) */}
+        {/* Section 5: Ancient Taboos & Survival Rules */}
+        <div className="p-4 rounded-2xl bg-slate-900/70 border border-rose-500/30 space-y-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2 text-xs font-bold text-rose-300 uppercase tracking-wider">
+              <span>5. ข้อห้ามโบราณและวิธีเอาชีวิตรอด (Taboos & Survival Rules)</span>
+            </div>
+            <span className="text-[11px] text-slate-400">1 ข้อต่อ 1 บรรทัด</span>
+          </div>
+          <p className="text-xs text-slate-400 leading-relaxed">
+            ระบุข้อห้ามหรือวิธีเอาชีวิตรอดเมื่อเผชิญหน้า โดยพิมพ์แยก 1 ข้อต่อ 1 บรรทัด (หากไม่ระบุ ระบบจะสร้างข้อห้ามให้อัตโนมัติตามบริบทของสิ่งลี้ลับ)
+          </p>
+
+          <div>
+            <label className="block text-xs font-semibold text-slate-300 mb-1.5">
+              ข้อห้ามโบราณและวิธีเอาชีวิตรอด (ภาษาไทย)
+            </label>
+            <textarea
+              rows={3}
+              value={formData.taboos_th || ''}
+              onChange={(e) => setFormData({ ...formData, taboos_th: e.target.value })}
+              placeholder={'ห้ามเอ่ยชื่อเรียกหรือท้าทายสิ่งลี้ลับในยามวิกาลหลังเที่ยงคืน\nหากได้ยินเสียงเรียกชื่อตนเองจากความมืด ห้ามขานรับเด็ดขาด\nควรเคารพสถานที่ศักดิ์สิทธิ์และปฏิบัติตามธรรมเนียมความเชื่อท้องถิ่น'}
+              className="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-sm text-white focus:outline-none focus:border-rose-500 leading-relaxed"
+            />
+          </div>
+
+          <div>
+            <label className="block text-xs font-semibold text-slate-300 mb-1.5">
+              Ancient Taboos & Survival Protocol (English)
+            </label>
+            <textarea
+              rows={3}
+              value={formData.taboos_en || ''}
+              onChange={(e) => setFormData({ ...formData, taboos_en: e.target.value })}
+              placeholder={'Never speak the entity name aloud as a challenge after midnight.\nIf an unseen voice calls your name from the dark, never answer.\nRespect local shrines, boundary markers, and traditional protective customs.'}
+              className="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-sm text-white focus:outline-none focus:border-rose-500 leading-relaxed"
+            />
+          </div>
+        </div>
+
+        {/* Section 6: Main Image & Media Gallery (with YouTube) */}
         <div className="p-4 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-4">
           <div className="flex items-center gap-2 text-xs font-bold text-amber-400 uppercase tracking-wider">
             <Film className="w-4 h-4" />
-            <span>5. ภาพหลักและแกลเลอรีสื่อมัลติมีเดีย (Main Visual & Media Gallery)</span>
+            <span>6. ภาพหลักและแกลเลอรีสื่อมัลติมีเดีย (Main Visual & Media Gallery)</span>
           </div>
 
           {/* Main Cover Image */}

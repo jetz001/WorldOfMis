@@ -3,7 +3,6 @@ import {
   X,
   MapPin,
   Eye,
-  BookOpen,
   Sparkles,
   Skull,
   Scale,
@@ -11,7 +10,6 @@ import {
   UserCheck,
   Compass,
   Clock,
-  ShieldAlert,
   ScrollText,
   Maximize2,
   ChevronLeft,
@@ -702,60 +700,69 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
           </div>
 
           {/* 3. Physical Description & Manifestation Signs */}
-          <div className="space-y-2.5">
-            <div className="flex items-center gap-2 text-sm font-bold text-amber-300 font-sans tracking-wide">
-              <Eye className="w-4 h-4 text-amber-400" />
+          <div className="space-y-2">
+            <div className="border-l-2 border-amber-400/80 pl-3 py-0.5 text-xs sm:text-sm font-bold tracking-wide uppercase text-amber-300/95 font-sans">
               <span>
                 {language === 'th'
                   ? 'รูปลักษณ์และอัตลักษณ์ที่พบเห็น (Description & Appearance)'
                   : 'Physical Description & Manifestation Signs'}
               </span>
             </div>
-            <div className="p-4 rounded-2xl bg-[#09111c]/85 border border-amber-500/20 text-sm leading-relaxed text-slate-100 font-sans">
+            <div className="p-4 sm:p-5 rounded-2xl bg-slate-900/50 border border-slate-800/80 text-[14.5px] sm:text-[15.5px] leading-[1.95] sm:leading-[2.1] text-slate-200 font-sans shadow-inner">
               {displayAppearance}
             </div>
           </div>
 
           {/* 4. Expanded Story Narrative */}
-          <div className="space-y-2.5">
-            <div className="flex items-center gap-2 text-sm font-bold text-emerald-300 font-sans tracking-wide">
-              <BookOpen className="w-4 h-4 text-emerald-400" />
+          <div className="space-y-2">
+            <div className="border-l-2 border-emerald-400/80 pl-3 py-0.5 text-xs sm:text-sm font-bold tracking-wide uppercase text-emerald-300/95 font-sans">
               <span>{t.storyDetail}</span>
             </div>
-            <div className="p-5 rounded-2xl bg-[#08121a]/90 border border-emerald-500/25 text-sm sm:text-base leading-relaxed sm:leading-8 text-slate-100 font-sans whitespace-pre-line">
-              {displayExpandedStory}
+            <div className="p-4 sm:p-5 rounded-2xl bg-slate-900/50 border border-slate-800/80 text-[14.5px] sm:text-[15.5px] leading-[1.95] sm:leading-[2.15] text-slate-100 font-sans shadow-inner">
+              {displayExpandedStory.split(/\n\n+/).map((paragraph, pIdx) => (
+                <p key={pIdx} className="mb-3.5 last:mb-0">
+                  {paragraph}
+                </p>
+              ))}
             </div>
           </div>
 
           {/* 5. Folklore & Historical Context */}
-          <div className="space-y-2.5">
-            <div className="flex items-center gap-2 text-sm font-bold text-amber-300 font-sans tracking-wide">
-              <Sparkles className="w-4 h-4 text-amber-400" />
+          <div className="space-y-2">
+            <div className="border-l-2 border-teal-400/80 pl-3 py-0.5 text-xs sm:text-sm font-bold tracking-wide uppercase text-teal-300/95 font-sans">
               <span>{t.folkloreHistory}</span>
             </div>
-            <div className="p-4 rounded-2xl bg-slate-900/70 border border-slate-800/90 text-sm sm:text-base leading-relaxed sm:leading-8 text-slate-200 font-sans whitespace-pre-line">
-              {history}
+            <div className="p-4 sm:p-5 rounded-2xl bg-slate-900/50 border border-slate-800/80 text-[14.5px] sm:text-[15.5px] leading-[1.95] sm:leading-[2.15] text-slate-200 font-sans shadow-inner">
+              {history.split(/\n\n+/).map((paragraph, pIdx) => (
+                <p key={pIdx} className="mb-3.5 last:mb-0">
+                  {paragraph}
+                </p>
+              ))}
             </div>
           </div>
 
           {/* 6. Ancient Taboos & Survival Warnings */}
-          <div className="rounded-2xl bg-rose-950/20 border border-rose-500/30 p-4 space-y-2.5">
-            <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-rose-300 font-sans">
-              <ShieldAlert className="w-4 h-4 text-rose-400" />
+          <div className="space-y-2">
+            <div className="border-l-2 border-rose-500/90 pl-3 py-0.5 text-xs sm:text-sm font-bold tracking-wide uppercase text-rose-300/95 font-sans">
               <span>
                 {language === 'th'
                   ? 'ข้อห้ามโบราณและวิธีเอาชีวิตรอด (Taboos & Survival Rules)'
                   : 'Ancient Taboos & Survival Protocol'}
               </span>
             </div>
-            <ul className="space-y-1.5 text-xs text-slate-300">
+            <div className="space-y-2">
               {displayTaboos.map((rule, idx) => (
-                <li key={idx} className="flex items-start gap-2">
-                  <span className="text-rose-400 font-bold mt-0.5">•</span>
-                  <span>{rule}</span>
-                </li>
+                <div
+                  key={idx}
+                  className="flex items-start gap-3 p-3 sm:p-3.5 rounded-xl bg-rose-950/20 border border-rose-500/25 text-xs sm:text-[13.5px] text-rose-100/90 leading-relaxed sm:leading-[1.8]"
+                >
+                  <span className="font-mono text-rose-400 font-bold text-xs bg-rose-950/60 px-2 py-0.5 rounded border border-rose-500/30 shrink-0 mt-0.5">
+                    0{idx + 1}
+                  </span>
+                  <span className="flex-1">{rule}</span>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
         </div>
 

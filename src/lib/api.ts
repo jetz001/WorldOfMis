@@ -20,6 +20,8 @@ function reconcileWithSeed(cachedPins: GhostPin[]): GhostPin[] {
       ...cached,
       image_url: resolvedImg,
       gallery_media: resolvedGallery,
+      taboos_th: cached.taboos_th || seed?.taboos_th,
+      taboos_en: cached.taboos_en || seed?.taboos_en,
     };
   });
   const cachedIds = new Set(cachedPins.map((p) => p.id));

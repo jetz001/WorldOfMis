@@ -28,6 +28,8 @@ export interface GhostPin {
   image_url?: string;
   audio_url?: string;
   gallery_media?: MediaItem[];
+  taboos_th?: string;
+  taboos_en?: string;
   sound_preset: SoundPreset;
   views_count: number;
   is_published: number;

@@ -1,3 +1,12 @@
+
+async function ensurePinColumns(db: D1Database) {
+  try {
+    await db.prepare('ALTER TABLE ghost_pins ADD COLUMN taboos_th TEXT').run();
+  } catch {}
+  try {
+    await db.prepare('ALTER TABLE ghost_pins ADD COLUMN taboos_en TEXT').run();
+  } catch {}
+}
 import { Hono } from 'hono';
 import { handle } from 'hono/cloudflare-pages';
 
@@ -231,14 +240,15 @@ app.post('/pins', async (c) => {
     const body = await c.req.json();
     const id = body.id || `pin-${Date.now()}`;
 
+    await ensurePinColumns(db);
     await db
       .prepare(`
         INSERT OR REPLACE INTO ghost_pins (
           id, title_th, title_en, category, province_th, province_en,
           district_th, district_en, lat, lng, story_th, story_en,
           folklore_history_th, folklore_history_en, image_url, audio_url, gallery_media,
-          sound_preset, is_published
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+          sound_preset, is_published, taboos_th, taboos_en
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
       `)
       .bind(
         id,
@@ -259,7 +269,9 @@ app.post('/pins', async (c) => {
         body.audio_url || '',
         body.gallery_media ? JSON.stringify(body.gallery_media) : '[]',
         body.sound_preset || 'whisper',
-        body.is_published ?? 1
+        body.is_published ?? 1,
+        body.taboos_th || '',
+        body.taboos_en || ''
       )
       .run();
 
@@ -278,13 +290,14 @@ app.put('/pins/:id', async (c) => {
 
   try {
     const body = await c.req.json();
+    await ensurePinColumns(db);
     await db
       .prepare(`
         UPDATE ghost_pins SET
           title_th = ?, title_en = ?, category = ?, province_th = ?, province_en = ?,
           district_th = ?, district_en = ?, lat = ?, lng = ?, story_th = ?, story_en = ?,
           folklore_history_th = ?, folklore_history_en = ?, image_url = ?, audio_url = ?, gallery_media = ?,
-          sound_preset = ?, is_published = ?, updated_at = CURRENT_TIMESTAMP
+          sound_preset = ?, is_published = ?, taboos_th = ?, taboos_en = ?, updated_at = CURRENT_TIMESTAMP
         WHERE id = ?
       `)
       .bind(
@@ -306,6 +319,8 @@ app.put('/pins/:id', async (c) => {
         body.gallery_media ? JSON.stringify(body.gallery_media) : '[]',
         body.sound_preset || 'whisper',
         body.is_published ?? 1,
+        body.taboos_th || '',
+        body.taboos_en || '',
         id
       )
       .run();
