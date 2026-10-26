@@ -15,6 +15,7 @@ import {
   Check,
   Layers,
   Filter,
+  RotateCcw,
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import type { GhostCategory, GhostPin, SupportedLanguage } from '../../types/ghost';
@@ -658,18 +659,14 @@ export const Navbar: React.FC<NavbarProps> = ({
             )}
           </div>
 
-          {/* Zoom-Out To World View */}
+          {/* Zoom-Out / Reset View */}
           <button
             onClick={onZoomOut}
             aria-label={t.zoomOutWorld}
             title={t.zoomOutWorld}
             className="group px-2.5 py-1.5 sm:px-3.5 sm:py-2 rounded-xl sm:rounded-2xl bg-[#070c16]/90 border border-amber-500/35 hover:border-emerald-400/70 backdrop-blur-xl text-amber-100/90 hover:text-emerald-200 transition-all shadow-[0_6px_20px_rgba(0,0,0,0.85),0_0_15px_rgba(16,185,129,0.12)] hover:shadow-[0_0_22px_rgba(16,185,129,0.35)] flex items-center gap-1.5 sm:gap-2 text-xs font-sans tracking-wide cursor-pointer active:scale-95"
           >
-            <img
-              src="/icons/sigil_world.png"
-              alt=""
-              className="w-5 h-5 sm:w-6 sm:h-6 object-contain group-hover:rotate-12 group-hover:scale-110 transition-transform duration-300"
-            />
+            <RotateCcw className="w-4 h-4 sm:w-4.5 sm:h-4.5 text-amber-300 group-hover:text-emerald-300 group-hover:-rotate-90 transition-transform duration-300" />
             <span className="hidden sm:inline font-semibold">{t.zoomOutWorld}</span>
           </button>
 
