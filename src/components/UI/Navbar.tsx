@@ -16,6 +16,7 @@ import {
   Layers,
   Filter,
   RotateCcw,
+  ShieldAlert,
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import type { GhostCategory, GhostPin, SupportedLanguage } from '../../types/ghost';
@@ -895,6 +896,16 @@ export const Navbar: React.FC<NavbarProps> = ({
                 </button>
               );
             })}
+
+            {/* Privacy coordinate offset disclaimer */}
+            <div className="mt-1 pt-2 border-t border-slate-800/80 px-2.5 py-1.5 flex items-start gap-2 rounded-lg bg-slate-900/60 text-[10px] text-slate-400 leading-snug">
+              <ShieldAlert className="w-3.5 h-3.5 text-amber-400 shrink-0 mt-0.5" />
+              <span>
+                {language === 'th'
+                  ? 'หมุดไม่ได้ปักลงบนพื้นที่จริง มีการปรับเยื้องเล็กน้อยเพื่อป้องกันข้อมูลส่วนบุคคล'
+                  : 'Pins are not placed on exact physical properties; coordinates are slightly offset to protect privacy.'}
+              </span>
+            </div>
           </div>
         )}
       </div>

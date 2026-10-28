@@ -16,6 +16,7 @@ import {
   Play,
   Image as ImageIcon,
   MessageSquare,
+  ShieldAlert,
 } from 'lucide-react';
 import type { GhostPin, SupportedLanguage, MediaItem } from '../../types/ghost';
 import { getTranslation } from '../../lib/i18n';
@@ -416,6 +417,16 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
               </span>
             </div>
           </div>
+
+          {/* Privacy Coordinate Offset Notice */}
+          <div className="mt-2.5 flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#533519]/10 border border-[#8b5a2b]/35 text-xs text-[#4a2e16] font-medium shadow-[inset_0_1px_2px_rgba(0,0,0,0.03)]">
+            <ShieldAlert className="w-4 h-4 text-[#8b4513] shrink-0" />
+            <span className="leading-tight">
+              {language === 'th'
+                ? 'หมุดไม่ได้ปักลงบนพื้นที่จริง มีการปรับเยื้องเล็กน้อยเพื่อป้องกันข้อมูลส่วนบุคคล'
+                : 'Pins are not placed on exact physical properties; minor coordinate offsets have been applied to protect privacy.'}
+            </span>
+          </div>
         </div>
 
         {/* Scrollable Grimoire Body */}
@@ -710,11 +721,19 @@ export const StoryDrawer: React.FC<StoryDrawerProps> = ({
               {/* ถิ่นอาศัย (Habitat) */}
               <div className="col-span-2 p-3 rounded-lg bg-[#fffdf8] border border-[#cfb68a] flex items-start gap-2.5 shadow-[0_1px_3px_rgba(0,0,0,0.04)]">
                 <MapPin className="w-4 h-4 text-[#8b4513] shrink-0 mt-0.5" />
-                <div>
+                <div className="min-w-0 flex-1">
                   <p className="text-[10px] uppercase tracking-wider text-[#6b4728] font-sans font-medium">
                     {language === 'th' ? 'ถิ่นอาศัยและจุดพบบ่อย (Habitat)' : 'Primary Habitat & Haunting Ground'}
                   </p>
                   <p className="font-medium text-[#2a1608] mt-0.5">{displayHabitat}</p>
+                  <p className="text-[10.5px] text-[#7a4618] mt-1.5 flex items-center gap-1 font-sans">
+                    <ShieldAlert className="w-3.5 h-3.5 text-[#8b4513] shrink-0" />
+                    <span>
+                      {language === 'th'
+                        ? 'หมุดไม่ได้ปักลงบนพื้นที่จริง มีการปรับเยื้องเล็กน้อยเพื่อป้องกันข้อมูลส่วนบุคคล'
+                        : 'Coordinates are slightly offset to protect privacy'}
+                    </span>
+                  </p>
                 </div>
               </div>
             </div>

@@ -573,7 +573,43 @@ function getDefaultMetadata(archetype: ArchetypeKey, pin: GhostPin) {
         hoursEn: 'The Witching Hours (23:00 – 04:00)',
       };
 
-    case 'cursed_artifact':
+    case 'cursed_artifact': {
+      const combinedText = (
+        pin.title_th + ' ' + pin.title_en + ' ' +
+        pin.story_th + ' ' + pin.story_en
+      ).toLowerCase();
+      const isAbstract =
+        combinedText.includes('คลับ 27') ||
+        combinedText.includes('27 club') ||
+        combinedText.includes('ดนตรี') ||
+        combinedText.includes('music') ||
+        combinedText.includes('เพลง') ||
+        combinedText.includes('superman') ||
+        combinedText.includes('ภาพยนตร์') ||
+        combinedText.includes('movie') ||
+        combinedText.includes('ชะตากรรม') ||
+        combinedText.includes('สัญญาปีศาจ') ||
+        combinedText.includes('faustian') ||
+        combinedText.includes('สายเลือด') ||
+        combinedText.includes('คำสาปตระกูล');
+
+      if (isAbstract) {
+        return {
+          typeTh: 'คำสาปอาถรรพ์และปรากฏการณ์ชะตากรรมลี้ลับ (Metaphysical Hex & Tragic Fate)',
+          typeEn: 'Metaphysical Hex & Tragic Fate Phenomenon',
+          genderTh: 'N/A (สนามพลังงานคำสาปและชะตากรรมมืดมน)',
+          genderEn: 'N/A (Metaphysical Hex / Karmic Field)',
+          sizeTh: 'ไม่จำกัดขนาดกายภาพ (ครอบคลุมบุคคลและเหตุการณ์ตามชะตากรรม)',
+          sizeEn: 'Non-corporeal (Spans individuals and fatal events)',
+          weightTh: 'N/A (มวลพลังงานสนามกรรมและแรงอาถรรพ์จิตวิญญาณ)',
+          weightEn: 'N/A (Karmic & Metaphysical Resonance)',
+          danger: 4 as const,
+          habitatTh: `${pin.province_th} ${pin.district_th ? `(${pin.district_th})` : ''}`,
+          habitatEn: `${pin.province_en} ${pin.district_en ? `(${pin.district_en})` : ''}`,
+          hoursTh: 'ตลอดกาล (สำแดงผลรุนแรงยามอายุครบกำหนดหรือช่วงวิกฤตชะตาชีวิต)',
+          hoursEn: 'Perpetual (Peak manifestation at fateful milestones or critical thresholds)',
+        };
+      }
       return {
         typeTh: 'วัตถุอาถรรพ์และเครื่องรางต้องคำสาป (Cursed Artifact & Occult Relic)',
         typeEn: 'Cursed Artifact & Occult Relic',
@@ -589,6 +625,7 @@ function getDefaultMetadata(archetype: ArchetypeKey, pin: GhostPin) {
         hoursTh: 'ยามถูกสัมผัส จ้องมอง หรือเมื่อมีผู้ล่วงละเมิดข้อห้าม',
         hoursEn: 'Upon physical contact, observation or boundary breach',
       };
+    }
 
     case 'aquatic_abyss':
       return {
@@ -951,12 +988,203 @@ export function generateContextualTaboos(pin: GhostPin, language: SupportedLangu
 /**
  * Returns the complete Paranormal Bestiary Dossier for any GhostPin.
  */
+/**
+ * Contextual Entity Appearance Generator
+ * Generates rich, highly specific physical and metaphysical manifestations for each pin
+ * based on its archetype, category, unique story lore, and environmental characteristics,
+ * eliminating generic repetitive fallback boilerplate.
+ */
+export function generateContextualAppearance(
+  pin: GhostPin,
+  archetype: ArchetypeKey,
+  defaultMeta: ReturnType<typeof getDefaultMetadata>,
+  language: SupportedLanguage
+): string {
+  const isTh = language === 'th';
+  const custom = PIN_BESTIARY_DB[pin.id];
+  if (isTh && custom?.descTh) return custom.descTh;
+  if (!isTh && custom?.descEn) return custom.descEn;
+
+  const titleTh = pin.title_th;
+  const titleEn = pin.title_en;
+  const provinceTh = pin.province_th;
+  const provinceEn = pin.province_en;
+  const districtTh = pin.district_th || pin.province_th;
+  const districtEn = pin.district_en || pin.province_en;
+  const combinedText = (
+    pin.title_th + ' ' + pin.title_en + ' ' +
+    pin.story_th + ' ' + pin.story_en
+  ).toLowerCase();
+
+  // 1. Special check for abstract musical/artistic/conceptual curses (e.g., Club 27, Curse of Superman, cursed dates)
+  const isAbstractCurse =
+    pin.category === 'curse' &&
+    (combinedText.includes('คลับ 27') ||
+      combinedText.includes('27 club') ||
+      combinedText.includes('ดนตรี') ||
+      combinedText.includes('music') ||
+      combinedText.includes('เพลง') ||
+      combinedText.includes('superman') ||
+      combinedText.includes('ภาพยนตร์') ||
+      combinedText.includes('movie') ||
+      combinedText.includes('ชะตากรรม') ||
+      combinedText.includes('สัญญาปีศาจ') ||
+      combinedText.includes('faustian') ||
+      combinedText.includes('คำสาปตระกูล') ||
+      combinedText.includes('สายเลือด') ||
+      combinedText.includes('crossroads'));
+
+  if (isAbstractCurse) {
+    return isTh
+      ? `ไม่ได้ปรากฏเป็นตัวตนเนื้อหนังหรืออมนุษย์ทางกายภาพ แต่สำแดงอัตลักษณ์ผ่าน "สนามพลังงานชะตากรรมและลางบอกเหตุลี้ลับ" ที่แผ่ปกคลุมรอบผู้เกี่ยวข้อง บทเพลง หรือสถานที่ทางประวัติศาสตร์ใน ${provinceTh} ผู้ที่ก้าวเข้าสู่วงจรอันดำมืดนี้มักรายงานถึงความรู้สึกกดดันหนักอึ้งในอก คลื่นเสียงดนตรีหรือเสียงกระซิบแว่วจากความเงียบงัน และการเผชิญกับชุดเหตุการณ์พิลึกพิลั่นที่ดึงดูดโศกนาฏกรรมอย่างไม่อาจหลีกเลี่ยง`
+      : `Does not manifest as a biological or corporeal entity, but rather as an ominous metaphysical resonance and fatal karmic pattern woven around associated artists, recordings, and historical venues across ${provinceEn}. Those caught within its trajectory recount severe atmospheric heaviness, phantom acoustic frequencies echoing from silence, and an uncanny convergence of lethal synchronicities.`;
+  }
+
+  // 2. Archetype-driven descriptive manifestation
+  switch (archetype) {
+    case 'cursed_artifact': {
+      return isTh
+        ? `วัตถุโบราณหรือเครื่องรางต้องสาปที่มีมวลสารทางกายภาพ (${defaultMeta.sizeTh}) กักเก็บประจุพลังงานด้านลบและมนต์ดำเข้มข้น พยานและผู้ครอบครองใน ${districtTh} มักสังเกตเห็นการเปลี่ยนตำแหน่งเองอย่างน่าฉงน ไอเย็นเยือกที่แผ่ออกมารอบตัววัตถุจนรู้สึกหนาวสั่น รวมถึงรอยแตกร้าวและประกายตาวับวับจากรูปจำลองที่ดูเหมือนกะพริบหรือจ้องมองตามผู้คน`
+        : `An occult relic or consecrated cursed artifact (${defaultMeta.sizeEn}) harboring dense negative psychic resonance. Witnesses and caretakers across ${districtEn} consistently report unassisted spatial displacements, localized cryogenic drops in ambient temperature, and eyes or reflective surfaces that appear to track onlookers.`;
+    }
+
+    case 'haunted_edifice': {
+      return isTh
+        ? `โครงสร้างสถาปัตยกรรมโบราณใน ${districtTh} ที่กักเก็บมวลพลังงานความทรงจำและแรงอาฆาตไว้ตามซอกกำแพง พยานมักพบเห็นเงาร่างตะคุ่มไร้หน้าที่บานหน้าต่างชั้นบน ไฟฟ้าติดๆ ดับๆ ประตูที่ลงกลอนไว้กลับเปิดออกเองอย่างเงียบกริบ พร้อมรอยคราบประหลาดบนกำแพง และเสียงฝีเท้าหนักๆ ก้องไปตามระเบียงทางเดินยามดึกสงัด`
+        : `A historic architectural structure in ${districtEn} retaining heavy residual psychometric imprints of tragedy. Observers regularly document translucent silhouettes peering from upper casements, rhythmic electrical flickering, heavy latched doors opening soundlessly, and echoing phantom footsteps pacing timber floorboards in the dead of night.`;
+    }
+
+    case 'cursed_wilderness': {
+      return isTh
+        ? `ผืนป่าดึกดำบรรพ์หรือแนวเขาลี้ลับแห่ง ${districtTh} ที่มีลักษณะทางพฤกษศาสตร์บิดเบี้ยวผิดธรรมชาติ ม่านหมอกสีขาวหนาทึบปกคลุมตลอดวัน และความเงียบงันผิดธรรมชาติไร้เสียงนกหรือแมลง ผู้สัญจรผ่านมักพบเห็นลูกไฟวิญญาณลอยนำทางไปสู่ความลึกของผืนป่า เสียงกระซิบเรียกชื่อที่เลียนแบบคนคุ้นเคย และสนามแม่เหล็กที่ทำให้เข็มทิศหมุนเคว้ง`
+        : `A primeval wilderness in ${districtEn} characterized by contorted arborial growth, perpetual low-hanging vapor, and an eerie absence of avian or insect sounds. Travelers recount dancing ghost lights that lure wanderers off marked tracks, disembodied whispers mimicking familiar companions, and severe geomagnetic deviations.`;
+    }
+
+    case 'cursed_relic_monument': {
+      return isTh
+        ? `มหาเทวสถานหรือกลุ่มเสาศิลาโบราณ (${defaultMeta.sizeTh}) สลักเสลาด้วยอักขระและสัญลักษณ์เทวะโบราณ ทรงคุณค่าทางประวัติศาสตร์และเปี่ยมด้วยมนต์ขลังเร้นลับ ในช่วงวันเปลี่ยนฤดูหรือคืนวันเพ็ญ พยานมักพบเห็นแสงเรืองรองสีครามหรือประกายทองฉาบทาบนยอดปรางค์ พร้อมคลื่นพลังงานความถี่ต่ำที่ทำให้เครื่องมือวัดพิกัดดาวเทียมเกิดความคลาดเคลื่อน`
+        : `A colossal megalithic complex or ancient stone prang sanctuary (${defaultMeta.sizeEn}) adorned with sacred archaic reliefs and celestial alignments. Observers during equinoxes and full moons record faint azure or amber auroras crowning the spires, accompanied by low-frequency electromagnetic hums that disrupt GPS and electronic recording equipment.`;
+    }
+
+    case 'cosmic_anomaly': {
+      return isTh
+        ? `ปรากฏการณ์วัตถุบินหรือลำแสงปริศนาเหนือท้องฟ้า ${districtTh} มีรูปทรงเรขาคณิตไร้รอยต่อ เช่น ทรงกลม จานโลหะ หรือสามเหลี่ยมสีดำขลับ เปล่งแสงเรืองรองเปลี่ยนสีเป็นจังหวะ สามารถเร่งความเร็วและหักเลี้ยวฉับพลันในมุมฉากโดยไร้เสียงกระทบของคลื่นเสียง พร้อมส่งคลื่นรบกวนสัญญาณวิทยุและระบบโทรคมนาคมในรัศมีโดยรอบ`
+        : `An unexplainable aerospace or transdimensional phenomenon over ${districtEn} exhibiting geometric, seamless hulls—glowing discs, silent spheres, or matte-black craft. Demonstrates instantaneous acceleration and sharp right-angle maneuvers without sonic displacement, accompanied by electromagnetic pulses that incapacitate terrestrial transmitters.`;
+    }
+
+    case 'aquatic_abyss': {
+      return isTh
+        ? `ห้วงน้ำลึกและวังน้ำวนมหาสมุทรที่ปกคลุมด้วยหมอกควันสีขาวหนาแน่นและฟองคลื่นเรืองแสงสีเขียวมรกต ลูกเรือและนักบินใน ${districtTh} มักพบเห็นเงายักษ์ทะมึนลอยอยู่ใต้ผิวน้ำ พร้อมกับปรากฏการณ์ท้องฟ้าและผิวน้ำที่กลืนเป็นสีเดียวกันจนสูญเสียทัศนวิสัย และเข็มทิศหมุนวนอย่างไร้ทิศทาง`
+        : `An oceanic void and deep-water trench enveloped in thick luminescent mist and phosphorescent green seafoam. Navigators in ${districtEn} document enormous displacement masses drifting beneath hulls, sudden spatial disorientation where horizon and ocean merge, and catastrophic compass gyration.`;
+    }
+
+    case 'aquatic_serpent': {
+      return isTh
+        ? `อสุรกายหรือเทพพญานาคราชแห่งสายน้ำ ลำตัวทรงพลังขนาดยักษ์ (${defaultMeta.sizeTh}) ปกคลุมด้วยเกล็ดเงาวับสะท้อนประกายน้ำสีเขียวมรกตหรือนิลกาฬ มีสันหลังหยักฟันเลื่อยหรือหงอนสีเพลิง ดวงตากลมโตสีอำพันเรืองรอง แหวกว่ายด้วยความเร็วสูงตัดผืนน้ำของ ${districtTh} จนเกิดคลื่นระลอกใหญ่และละอองหมอกฟุ้งกระจาย`
+        : `A colossal serpentine aquatic leviathan (${defaultMeta.sizeEn}) armored in iridescent scales that repel sediment and glint emerald or obsidian under moonlight. Features a jagged dorsal ridge or fiery crest, piercing amber eyes that break through water surfaces of ${districtEn}, and rapid swimming undulations creating distinctive rolling bow wakes.`;
+    }
+
+    case 'merfolk_spirit': {
+      return isTh
+        ? `อมนุษย์พรายน้ำสรีระกึ่งมนุษย์กึ่งสัตว์น้ำ ลำตัวท่อนบนเป็นมนุษย์ที่มีผิวพรรณซีดเผือดหรือเหลือบเงาเกล็ด มีเหงือกข้างคอและพังผืดระหว่างนิ้วมือ ท่อนล่างเป็นหางปลาแหวกว่ายได้คล่องแคล่ว พยานแถบ ${districtTh} มักได้ยินเสียงครวญเพลงหวานปนเศร้าแว่วเหนือน้ำในยามสนธยา`
+        : `An amphibious aquatic humanoid possessing a pale or scaled torso, lateral cervical gills, and webbed phalanges tapering into a powerful caudal fin. Eyewitnesses across ${districtEn} note oversized luminous pupils adapted for the lightless depths and haunting vocal sirens that carry over water surfaces at twilight.`;
+    }
+
+    case 'cryptid_beast': {
+      return isTh
+        ? `อสุรกายกายภาพสรีระกำยำสูงใหญ่ (${defaultMeta.sizeTh}) ยืนสองขาหรือสี่ขาอย่างคล่องแคล่ว ขนดกหนาปกคลุมทั่วร่าง กล้ามเนื้อบึกบึน แขนยาว ดวงตาสะท้อนแสงสีแดงหรือเหลืองกร้าวในความมืด กรงเล็บและเขี้ยวแหลมคม กลิ่นสาบสัตว์ป่ารุนแรง และทิ้งรอยเท้าขนาดใหญ่ลึกบนพื้นดินแถบ ${districtTh}`
+        : `A primeval bipedal or quadrupedal beast (${defaultMeta.sizeEn}) possessing immense physical musculature, dense shaggy pelage, and elongated limbs with formidable claws. Witnesses in ${districtEn} recount tapetal-reflective glowing eyes, heavy thudding footsteps, a pungent feral musk, and deep stride impressions left in hard terrain.`;
+    }
+
+    case 'winged_demon': {
+      return isTh
+        ? `อสูรมีปีกขนาดยักษ์ (${defaultMeta.sizeTh}) ลำตัวสีเขม่าหรือดำมะเมื่อม มีปีกพังผืดคล้ายค้างคาวหรือปีกขนนกขนาดใหญ่ ดวงตากลมโตคู่โตเรืองแสงสีแดงเพลิงโดดเด่นในความมืด บินโฉบร่อนลงจากเวหาเหนือ ${districtTh} ด้วยความเร็วสูงพร้อมเสียงลมกรีดผ่านขนปีกและเสียงร้องแหลมสูง`
+        : `An aerial cryptid with a formidable wingspan (${defaultMeta.sizeEn}), cloaked in obsidian shadow with expansive leathery or feathered wings. Its most striking feature is a pair of hypnotic crimson eyes that project intense luminescence, swooping across ${districtEn} in near-absolute silence before emitting high-pitched acoustic shrieks.`;
+    }
+
+    case 'undead_lord': {
+      return isTh
+        ? `ร่างกายมนุษย์คืนชีพที่ยังคงสภาพเนื้อหนังแห้งกรัง ผิวพรรณซีดเผือดแตกลายงา สวมใส่เครื่องแต่งกายโบราณหรือผ้าพันศพที่เปื่อยยุ่ย ดวงตาลึกกลวง ก้าวเดินอย่างเงียบงันแต่เปี่ยมด้วยพละกำลังมหาศาล แผ่กลิ่นอายความเย็นเยือกและกลิ่นดินสุสานโบราณในแถบ ${districtTh}`
+        : `An ambulatory revenant or desiccated corporeal vessel wrapped in rotted ceremonial robes or shroud bindings. Displays sunken hollow sockets, parchment-dry skin, unyielding physical strength, and an exhalation of grave-chilled air carrying traces of damp earth and funerary incense across ${districtEn}.`;
+    }
+
+    case 'deity_guardian': {
+      return isTh
+        ? `รูปลักษณ์เปี่ยมด้วยบารมีและสง่าราศีขององค์เทพ พระพุทธรูป หรือกายทิพย์ศักดิ์สิทธิ์ (${defaultMeta.sizeTh}) เปล่งรัศมีเรืองรองสีทองนวลตาหรือประกายมุก พระพักตร์สงบเยือกเย็นเปี่ยมด้วยความเมตตา มักสัมผัสได้ถึงกลิ่นหอมของดอกไม้ทิพย์ ธูปหอม และสายลมอุ่นพัดผ่าน ให้ความรู้สึกอบอุ่น สงบร่มเย็น และคุ้มครองผู้มีจิตศรัทธาใน ${districtTh}`
+        : `A transcendent divine manifestation or consecrated holy icon (${defaultMeta.sizeEn}) emanating warm golden or pearlescent luminescence. Exudes profound serene grace and the celestial scent of lotus blossoms and sacred incense, imparting comforting spiritual tranquility, balance, and benevolent protection across ${districtEn}.`;
+    }
+
+    case 'male_specter': {
+      const isPreta = titleTh.includes('เปรต') || titleEn.toLowerCase().includes('preta');
+      return isTh
+        ? isPreta
+          ? `ร่างวิญญาณเปรตอสุรกายผอมโซสูงตระหง่านเสียดฟ้า (${defaultMeta.sizeTh}) ผิวหนังแห้งติดกระดูก แขนขายาวเก้งก้าง ปากเล็กเท่ารูเข็มส่งเสียงหวีดหวิวโหยหวนขอส่วนบุญก้องไปทั่วบริเวณ ${districtTh} ในคืนเดือนมืด`
+          : `ร่างวิญญาณโปร่งแสงของบุรุษ (${defaultMeta.sizeTh}) ลอยขนานเหนือพื้นหรือก้าวเดินโดยไร้เสียงฝีเท้า สวมใส่เครื่องแต่งกายประจำยุคสมัย ใบหน้าซีดขาวไร้โลหิต แววตาเศร้าหมองหรือฉายแววอาฆาต มักปรากฏตัวพร้อมไอหมอกจางและอุณหภูมิที่ลดฮวบลงอย่างรวดเร็วใน ${districtTh}`
+        : isPreta
+        ? `A towering, emaciated spectral hunger shade (${defaultMeta.sizeEn}) with needle-thin mouth and skeletal limbs, projecting high-pitched whistling wails across ${districtEn} on moonless nights.`
+        : `A translucent spectral male silhouette (${defaultMeta.sizeEn}) hovering inches above ground level or gliding soundlessly along historical pathways in ${districtEn}. Draped in period-accurate garments with a hollow, bloodless countenance and piercing gaze, accompanied by sudden micro-drops in room temperature.`;
+    }
+
+    case 'female_specter':
+    default: {
+      return isTh
+        ? `ดวงวิญญาณสตรีชุดขาวหรือชุดโบราณ ลอยเด่นเหนือพื้น เส้นผมยาวสลวยสีดำสนิทแผ่คลุมไหล่ ใบหน้างดงามแต่ซีดเผือดไร้ชีวิตชีวา หรือแปรเปลี่ยนเป็นใบหน้าสยดสยองยามโกรธเกรี้ยว ปรากฏตัวพร้อมเสียงสะอื้นไห้หรือบทเพลงกล่อมเด็กแว่วตามสายลมหนาวของ ${districtTh}`
+        : `A diaphanous apparition of a female figure in trailing white or traditional drapery, hovering weightlessly with cascading midnight-black hair framing a mournful, ivory-pale visage. Manifests alongside phantom weeping, cold air vortices, and the distant cadence of eerie folk melodies across ${districtEn}.`;
+    }
+  }
+}
+
+/**
+ * Contextual Archival Extra Lore Generator
+ * Replaces repetitive single-sentence boilerplate with category-appropriate archival notes.
+ */
+export function generateContextualExtraLore(
+  pin: GhostPin,
+  _archetype: ArchetypeKey,
+  language: SupportedLanguage
+): string {
+  const isTh = language === 'th';
+  const custom = PIN_BESTIARY_DB[pin.id];
+  if (isTh && custom?.extraLoreTh) return custom.extraLoreTh;
+  if (!isTh && custom?.extraLoreEn) return custom.extraLoreEn;
+
+  const titleTh = pin.title_th;
+  const titleEn = pin.title_en;
+  const provinceTh = pin.province_th;
+  const provinceEn = pin.province_en;
+
+  if (pin.category === 'curse') {
+    return isTh
+      ? `บันทึกคำเตือนในแฟ้มคดีอาถรรพ์ประจำภูมิภาค ${provinceTh} ระบุว่า "${titleTh}" เป็นหนึ่งในบทเรียนเตือนสติว่าอำนาจมืดหรือชะตากรรมต้องคำสาปไม่ใช่สิ่งที่จะท้าทายได้ ผู้ที่พยายามละเมิดหรือลบหลู่มักต้องเผชิญกับผลลัพธ์อันไม่อาจแก้ไข`
+      : `Regional occult archives in ${provinceEn} document "${titleEn}" as a grim cautionary chronicle against tampering with cursed forces beyond mortal comprehension.`;
+  }
+  if (pin.category === 'sacred') {
+    return isTh
+      ? `ความเชื่อและความศรัทธาต่อ "${titleTh}" ใน ${provinceTh} ได้รับการสืบทอดจากรุ่นสู่รุ่น ถือเป็นมรดกทางจิตวิญญาณที่คอยปกป้องคุ้มครองและเป็นที่ยึดเหนี่ยวจิตใจของสาธุชนผู้ประพฤติชอบ`
+      : `Veneration of "${titleEn}" across ${provinceEn} has been transmitted across centuries, enduring as a sacred pillar of communal spiritual protection and moral guidance.`;
+  }
+  if (pin.category === 'monster') {
+    return isTh
+      ? `บันทึกการสำรวจและคำให้การของพรานป่าใน ${provinceTh} ยังคงย้ำเตือนถึงการคงอยู่ของ "${titleTh}" ในฐานะสัตว์ร้ายดึกดำบรรพ์ที่ธรรมชาติยังคงซุกซ่อนไว้จากสายตาของโลกสมัยใหม่`
+      : `Expedition chronicles and eyewitness testimonies from ${provinceEn} preserve "${titleEn}" as an enduring testament to ancient apex predators that slip through the margins of modern zoology.`;
+  }
+  if (pin.category === 'legend') {
+    return isTh
+      ? `ตำนานเล่าขานของ "${titleTh}" แห่งดินแดน ${provinceTh} เป็นมรดกมุขปาฐะอันล้ำค่าที่ผูกโยงประวัติศาสตร์ ภูมิศาสตร์ และวิถีชีวิตโบราณเข้าด้วยกันอย่างแยกไม่ออก`
+      : `The legendary folklore of "${titleEn}" in ${provinceEn} remains an indelible cultural legacy bridging oral history, landscape, and ancestral memory.`;
+  }
+  // ghost
+  return isTh
+    ? `เรื่องราวของ "${titleTh}" ใน ${provinceTh} ยังคงถูกเล่าขานผ่านผู้คนที่สัญจรผ่านพื้นที่ เป็นประจักษ์พยานถึงความทรงจำ ความผูกพัน หรือความอาฆาตที่กาลเวลาก็ไม่อาจลบล้างไปได้`
+    : `The spectral accounts of "${titleEn}" in ${provinceEn} persist through generations of eyewitnesses, bearing witness to emotional imprints and unresolved fates that time cannot erase.`;
+}
+
 export function getEntityDossier(
   pin: GhostPin,
   language: SupportedLanguage
 ): EntityDossier {
   const custom = PIN_BESTIARY_DB[pin.id];
-  const archetype = inferArchetype(pin);
+  const archetype = custom?.archetype || inferArchetype(pin);
   const defaultMeta = getDefaultMetadata(archetype, pin);
 
   // 1. Portrait URL
@@ -975,17 +1203,27 @@ export function getEntityDossier(
       ? 'MONUMENT-VII'
       : archetype === 'cursed_wilderness'
       ? 'BIOSPHERE-VI'
+      : archetype === 'cursed_artifact'
+      ? 'CURSE-V'
       : archetype === 'cosmic_anomaly'
       ? 'CELESTIAL-IX'
       : archetype === 'aquatic_abyss'
       ? 'ABYSS-VIII'
+      : archetype === 'aquatic_serpent'
+      ? 'LEVIATHAN-II'
+      : archetype === 'merfolk_spirit'
+      ? 'MERFOLK-III'
       : archetype === 'cryptid_beast'
       ? 'CRYPTID-IV'
       : archetype === 'undead_lord'
       ? 'HEX-V'
+      : archetype === 'winged_demon'
+      ? 'AERIAL-VI'
       : archetype === 'deity_guardian'
       ? 'DEITY-I'
-      : 'SPECTER-III';
+      : archetype === 'male_specter'
+      ? 'SPECTER-M'
+      : 'SPECTER-F';
 
   const codexId = `CODEX #${numHash} • ${classCode}`;
 
@@ -1006,19 +1244,8 @@ export function getEntityDossier(
   };
 
   const baseStory = language === 'th' ? pin.story_th : pin.story_en;
-  const appearanceDesc =
-    language === 'th'
-      ? custom?.descTh ||
-        `สิ่งลี้ลับประจำถิ่น ${pin.province_th} ที่มีรูปลักษณ์โดดเด่นตามคำบอกเล่าของพยานท้องถิ่น มักปรากฏตัวพร้อมบรรยากาศเย็นยะเยือกผิดธรรมชาติ เสียงกระซิบแว่วตามสายลม หรือเงาตะคุ่มท่ามกลางความมืดมิดของ ${pin.district_th || pin.province_th}`
-      : custom?.descEn ||
-        `A renowned paranormal entity of ${pin.province_en}, documented through generations of eyewitness testimony. Manifestations are accompanied by a sudden drop in ambient temperature, eerie acoustic whispers, and unmistakable visual omens across ${pin.district_en || pin.province_en}.`;
-
-  const extraLore =
-    language === 'th'
-      ? custom?.extraLoreTh ||
-        `ตามบันทึกแฟ้มข้อมูลสิ่งลี้ลับท้องถิ่น ผู้เฒ่าผู้แก่ในพื้นที่ ${pin.province_th} ต่างยืนยันว่าเรื่องราวของ "${pin.title_th}" ไม่ใช่เพียงนิทานหลอกเด็ก แต่เป็นร่องรอยความเชื่อโบราณที่ผูกพันกับภูมิประเทศและวิถีชีวิตของผู้คนมาอย่างยาวนาน`
-      : custom?.extraLoreEn ||
-        `According to regional occult archives, elders of ${pin.province_en} maintain that "${pin.title_en}" is far more than mere fable—it stands as an enduring cautionary chronicle woven into the geography and spiritual memory of the land.`;
+  const appearanceDesc = generateContextualAppearance(pin, archetype, defaultMeta, language);
+  const extraLore = generateContextualExtraLore(pin, archetype, language);
 
   const omensAndTaboos = generateContextualTaboos(pin, language);
 

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 import { Map, NavigationControl, Marker, setWorkerUrl, type GeoJSONSource } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
-import { RotateCw, X, Compass, BookOpen, MapPin } from 'lucide-react';
+import { RotateCw, X, Compass, BookOpen, MapPin, ShieldAlert } from 'lucide-react';
 
 // Fix: point MapLibre to our bundled worker so Cloudflare Pages
 // returns the correct JS MIME type instead of an HTML 404 page.
@@ -1148,6 +1148,14 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
             <p className="px-2.5 pb-2 text-[11px] text-slate-400 line-clamp-2 leading-relaxed">
               {language === 'th' ? hoveredPinInfo.pin.story_th : hoveredPinInfo.pin.story_en}
             </p>
+            <div className="px-2.5 py-1 text-[9.5px] text-slate-400 flex items-center gap-1.5 bg-black/50 border-t border-white/10">
+              <ShieldAlert className="w-3 h-3 text-amber-400/80 shrink-0" />
+              <span className="truncate">
+                {language === 'th'
+                  ? 'หมุดไม่ได้ปักลงบนพื้นที่จริง มีการปรับเยื้องเล็กน้อยเพื่อป้องกันข้อมูลส่วนบุคคล'
+                  : 'Coordinates are slightly offset to protect privacy'}
+              </span>
+            </div>
             <div className="flex items-center justify-between px-2.5 py-1.5 bg-slate-900/80 border-t border-white/10 text-[10px] text-amber-400 font-semibold">
               <span>{language === 'th' ? '👆 คลิกเพื่อซูมเข้าสู่บันทึก' : '👆 Click to zoom & explore'}</span>
               <span className="text-emerald-400 text-xs">↗</span>
@@ -1233,6 +1241,16 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
                 </p>
               )
             )}
+
+            {/* Privacy coordinate offset notice */}
+            <p className="mt-2 text-[10.5px] text-slate-400 flex items-center gap-1.5 bg-slate-900/60 p-1.5 rounded-lg border border-slate-800">
+              <ShieldAlert className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+              <span>
+                {language === 'th'
+                  ? 'หมุดไม่ได้ปักลงบนพื้นที่จริง มีการปรับเยื้องเล็กน้อยเพื่อป้องกันข้อมูลส่วนบุคคล'
+                  : 'Pins are not placed on exact properties; coordinates are slightly offset to protect privacy.'}
+              </span>
+            </p>
 
             {/* Action Explore Button (Touch friendly, 44px+ height on mobile) */}
             <button
