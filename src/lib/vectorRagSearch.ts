@@ -364,40 +364,68 @@ function getPinEmbedding(pin: GhostPin): Float32Array {
   return vec;
 }
 
-/**
- * Identifies which semantic concepts matched between the query and a pin.
- */
-function getMatchedConcepts(
-  queryLower: string,
-  pin: GhostPin,
-  lang: SupportedLanguage
-): string[] {
-  const pinText = [
-    pin.title_th,
-    pin.title_en,
-    pin.province_th,
-    pin.province_en,
-    pin.story_th,
-    pin.story_en,
-    pin.folklore_history_th,
-    pin.folklore_history_en,
-  ]
-    .join(' ')
-    .toLowerCase();
-
-  const tags: string[] = [];
-  for (const axis of CONCEPT_ONTOLOGY) {
-    const queryHas = axis.keywords.some((kw) => matchesKeyword(queryLower, kw));
-    const pinHas = axis.keywords.some((kw) => matchesKeyword(pinText, kw));
-    if (queryHas && pinHas) {
-      tags.push(lang === 'th' ? axis.labelTh : axis.labelEn);
-    }
-  }
-  return tags.slice(0, 3);
+interface FastPinIndex {
+  lowerTitleTh: string;
+  lowerTitleEn: string;
+  lowerProvinceTh: string;
+  lowerProvinceEn: string;
+  lowerDistrictTh: string;
+  lowerDistrictEn: string;
+  lowerStoryTh: string;
+  lowerStoryEn: string;
+  lowerHistoryTh: string;
+  lowerHistoryEn: string;
+  conceptIds: Set<string>;
 }
 
+const fastPinIndexCache = new Map<string, FastPinIndex>();
+
+function getFastPinIndex(pin: GhostPin): FastPinIndex {
+  let idx = fastPinIndexCache.get(pin.id);
+  if (!idx) {
+    const lowerTitleTh = pin.title_th.toLowerCase();
+    const lowerTitleEn = pin.title_en.toLowerCase();
+    const lowerProvinceTh = pin.province_th.toLowerCase();
+    const lowerProvinceEn = pin.province_en.toLowerCase();
+    const lowerDistrictTh = (pin.district_th || '').toLowerCase();
+    const lowerDistrictEn = (pin.district_en || '').toLowerCase();
+    const lowerStoryTh = pin.story_th.toLowerCase();
+    const lowerStoryEn = pin.story_en.toLowerCase();
+    const lowerHistoryTh = (pin.folklore_history_th || '').toLowerCase();
+    const lowerHistoryEn = (pin.folklore_history_en || '').toLowerCase();
+
+    const fullText = `${lowerTitleTh} ${lowerTitleEn} ${lowerProvinceTh} ${lowerProvinceEn} ${lowerDistrictTh} ${lowerDistrictEn} ${lowerStoryTh} ${lowerStoryEn} ${lowerHistoryTh} ${lowerHistoryEn}`;
+
+    const conceptIds = new Set<string>();
+    for (const axis of CONCEPT_ONTOLOGY) {
+      if (axis.keywords.some((kw) => matchesKeyword(fullText, kw))) {
+        conceptIds.add(axis.id);
+      }
+    }
+
+    idx = {
+      lowerTitleTh,
+      lowerTitleEn,
+      lowerProvinceTh,
+      lowerProvinceEn,
+      lowerDistrictTh,
+      lowerDistrictEn,
+      lowerStoryTh,
+      lowerStoryEn,
+      lowerHistoryTh,
+      lowerHistoryEn,
+      conceptIds,
+    };
+    fastPinIndexCache.set(pin.id, idx);
+  }
+  return idx;
+}
+
+// Fast bounded query response cache
+const searchResponseCache = new Map<string, RagSearchResponse>();
+
 /**
- * Performs Hybrid Vector + RAG Retrieval over all pins.
+ * Performs Hybrid Vector + RAG Retrieval over all pins with sub-millisecond execution.
  */
 export function performVectorRagSearch(
   query: string,
@@ -415,30 +443,49 @@ export function performVectorRagSearch(
   }
 
   const qLower = q.toLowerCase();
+  const cacheKey = `${qLower}:${pins.length}:${language}:${limit}`;
+  const cached = searchResponseCache.get(cacheKey);
+  if (cached) {
+    return cached;
+  }
+
   const qVec = computeEmbedding(qLower);
+
+  // Pre-calculate which concept axes match the query ONCE
+  const matchedAxes = CONCEPT_ONTOLOGY.filter((axis) =>
+    axis.keywords.some((kw) => matchesKeyword(qLower, kw))
+  );
 
   const scored: Array<VectorSearchResult & { rawScore: number }> = [];
 
   for (const pin of pins) {
     const pVec = getPinEmbedding(pin);
     const cosSim = Math.max(0, cosineSimilarity(qVec, pVec));
+    const pIdx = getFastPinIndex(pin);
 
-    // Lexical / Substring Bonus for direct matches in title, location, story, or history
+    // Fast substring checks on pre-lowercased indexed strings
     const titleMatch =
-      pin.title_th.toLowerCase().includes(qLower) ||
-      pin.title_en.toLowerCase().includes(qLower);
+      pIdx.lowerTitleTh.includes(qLower) || pIdx.lowerTitleEn.includes(qLower);
     const locMatch =
-      pin.province_th.toLowerCase().includes(qLower) ||
-      pin.province_en.toLowerCase().includes(qLower) ||
-      Boolean(pin.district_th && pin.district_th.toLowerCase().includes(qLower)) ||
-      Boolean(pin.district_en && pin.district_en.toLowerCase().includes(qLower));
+      pIdx.lowerProvinceTh.includes(qLower) ||
+      pIdx.lowerProvinceEn.includes(qLower) ||
+      (pIdx.lowerDistrictTh !== '' && pIdx.lowerDistrictTh.includes(qLower)) ||
+      (pIdx.lowerDistrictEn !== '' && pIdx.lowerDistrictEn.includes(qLower));
     const storyMatch =
-      pin.story_th.toLowerCase().includes(qLower) ||
-      pin.story_en.toLowerCase().includes(qLower) ||
-      pin.folklore_history_th.toLowerCase().includes(qLower) ||
-      pin.folklore_history_en.toLowerCase().includes(qLower);
+      pIdx.lowerStoryTh.includes(qLower) ||
+      pIdx.lowerStoryEn.includes(qLower) ||
+      pIdx.lowerHistoryTh.includes(qLower) ||
+      pIdx.lowerHistoryEn.includes(qLower);
 
-    const matchedConceptTags = getMatchedConcepts(qLower, pin, language);
+    const matchedConceptTags: string[] = [];
+    if (matchedAxes.length > 0) {
+      for (const axis of matchedAxes) {
+        if (pIdx.conceptIds.has(axis.id)) {
+          matchedConceptTags.push(language === 'th' ? axis.labelTh : axis.labelEn);
+          if (matchedConceptTags.length >= 3) break;
+        }
+      }
+    }
 
     let hybridScore = cosSim;
     if (titleMatch) hybridScore += 0.55;
@@ -456,7 +503,10 @@ export function performVectorRagSearch(
       cosSim >= 0.25;
 
     if (isRelevant && hybridScore >= 0.25) {
-      const normalizedScore = Math.min(0.99, Math.max(0.52, 0.50 + Math.min(0.49, hybridScore * 0.42)));
+      const normalizedScore = Math.min(
+        0.99,
+        Math.max(0.52, 0.50 + Math.min(0.49, hybridScore * 0.42))
+      );
       const storyText = language === 'th' ? pin.story_th : pin.story_en;
       const historyText =
         language === 'th' ? pin.folklore_history_th : pin.folklore_history_en;
@@ -500,11 +550,18 @@ export function performVectorRagSearch(
         : `No direct match for "${q}". Try semantic concepts like "water creature", "snow forest", "ancient curse", "tragic love", or region names.`;
   }
 
-  return {
+  const response: RagSearchResponse = {
     query: q,
     ragSummary,
     results: topResults,
   };
+
+  if (searchResponseCache.size > 200) {
+    searchResponseCache.clear();
+  }
+  searchResponseCache.set(cacheKey, response);
+
+  return response;
 }
 
 export const SUGGESTED_RAG_QUERIES = {

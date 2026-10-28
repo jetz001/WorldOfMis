@@ -173,6 +173,39 @@ export const Navbar: React.FC<NavbarProps> = ({
   const [isMobileSearchOpen, setIsMobileSearchOpen] = useState(false);
   const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
+  const [localQuery, setLocalQuery] = useState(searchQuery);
+  const debounceTimerRef = useRef<number | null>(null);
+
+  useEffect(() => {
+    setLocalQuery(searchQuery);
+  }, [searchQuery]);
+
+  const handleSearchInput = (val: string) => {
+    setLocalQuery(val);
+    if (debounceTimerRef.current) {
+      window.clearTimeout(debounceTimerRef.current);
+    }
+    // 150ms debounce: provides instant responsiveness while preventing main-thread lag
+    debounceTimerRef.current = window.setTimeout(() => {
+      onSearchChange(val);
+    }, 150);
+  };
+
+  const handleSearchCommit = (val: string) => {
+    if (debounceTimerRef.current) {
+      window.clearTimeout(debounceTimerRef.current);
+    }
+    setLocalQuery(val);
+    onSearchChange(val);
+  };
+
+  const handleSearchClear = () => {
+    if (debounceTimerRef.current) {
+      window.clearTimeout(debounceTimerRef.current);
+    }
+    setLocalQuery('');
+    onSearchChange('');
+  };
   const langMenuRef = useRef<HTMLDivElement>(null);
   const searchContainerRef = useRef<HTMLDivElement>(null);
   const mobileSearchContainerRef = useRef<HTMLDivElement>(null);
@@ -332,7 +365,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   const showDropdown = isSearchFocused;
 
   const renderDropdownContent = (isMobile: boolean = false) => {
-    if (!searchQuery.trim()) {
+    if (!localQuery.trim()) {
       return (
         <div className="p-3.5 sm:p-4 text-xs font-parchment select-none">
           <div className="flex items-center justify-between mb-2.5 pb-2 border-b border-[#dfcfad]">
@@ -358,7 +391,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   key={prompt}
                   type="button"
                   onClick={() => {
-                    onSearchChange(text);
+                    handleSearchCommit(text);
                     if (isMobile) {
                       setIsMobileSearchFocused(true);
                       mobileInputRef.current?.focus();
@@ -506,18 +539,22 @@ export const Navbar: React.FC<NavbarProps> = ({
             <input
               ref={inputRef}
               type="text"
-              value={searchQuery}
+              value={localQuery}
               onFocus={() => setIsSearchFocused(true)}
               onChange={(e) => {
-                onSearchChange(e.target.value);
+                handleSearchInput(e.target.value);
                 setIsSearchFocused(true);
               }}
               onKeyDown={(e) => {
-                if (e.key === 'Enter' && searchQuery.trim().toLowerCase() === '/admin') {
-                  e.preventDefault();
-                  onSearchChange('');
-                  setIsSearchFocused(false);
-                  onOpenAdmin();
+                if (e.key === 'Enter') {
+                  if (localQuery.trim().toLowerCase() === '/admin') {
+                    e.preventDefault();
+                    handleSearchClear();
+                    setIsSearchFocused(false);
+                    onOpenAdmin();
+                  } else {
+                    handleSearchCommit(localQuery);
+                  }
                 }
               }}
               placeholder={
@@ -530,11 +567,11 @@ export const Navbar: React.FC<NavbarProps> = ({
 
             {/* Clear Button & Search Magnifier Button */}
             <div className="absolute right-2 flex items-center gap-1.5">
-              {searchQuery.trim() && (
+              {localQuery.trim() && (
                 <button
                   type="button"
                   onClick={() => {
-                    onSearchChange('');
+                    handleSearchClear();
                     setIsSearchFocused(true);
                     inputRef.current?.focus();
                   }}
@@ -584,7 +621,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             aria-label={language === 'th' ? 'ค้นหา' : 'Search'}
             title={language === 'th' ? 'ค้นหาเรื่องเล่า' : 'Search folklore'}
             className={`md:hidden px-2.5 py-1.5 sm:px-3 sm:py-2 rounded-xl sm:rounded-2xl bg-[#070c16]/90 border backdrop-blur-xl text-xs font-semibold flex items-center gap-1.5 transition-all cursor-pointer active:scale-95 ${
-              isMobileSearchOpen || searchQuery.trim()
+              isMobileSearchOpen || localQuery.trim()
                 ? 'border-emerald-400 text-emerald-300 shadow-[0_0_15px_rgba(16,185,129,0.35)]'
                 : 'border-amber-500/35 text-amber-200 hover:border-emerald-400/70 hover:text-white'
             }`}
@@ -740,19 +777,23 @@ export const Navbar: React.FC<NavbarProps> = ({
             <input
               ref={mobileInputRef}
               type="text"
-              value={searchQuery}
+              value={localQuery}
               onFocus={() => setIsMobileSearchFocused(true)}
               onChange={(e) => {
-                onSearchChange(e.target.value);
+                handleSearchInput(e.target.value);
                 setIsMobileSearchFocused(true);
               }}
               onKeyDown={(e) => {
-                if (e.key === 'Enter' && searchQuery.trim().toLowerCase() === '/admin') {
-                  e.preventDefault();
-                  onSearchChange('');
-                  setIsMobileSearchFocused(false);
-                  setIsMobileSearchOpen(false);
-                  onOpenAdmin();
+                if (e.key === 'Enter') {
+                  if (localQuery.trim().toLowerCase() === '/admin') {
+                    e.preventDefault();
+                    handleSearchClear();
+                    setIsMobileSearchFocused(false);
+                    setIsMobileSearchOpen(false);
+                    onOpenAdmin();
+                  } else {
+                    handleSearchCommit(localQuery);
+                  }
                 }
               }}
               placeholder={
@@ -764,11 +805,11 @@ export const Navbar: React.FC<NavbarProps> = ({
             />
 
             <div className="absolute right-2 flex items-center gap-1.5">
-              {searchQuery.trim() && (
+              {localQuery.trim() && (
                 <button
                   type="button"
                   onClick={() => {
-                    onSearchChange('');
+                    handleSearchClear();
                     setIsMobileSearchFocused(true);
                     mobileInputRef.current?.focus();
                   }}

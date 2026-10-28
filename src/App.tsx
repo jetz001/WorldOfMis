@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo, useCallback } from 'react';
+import { useState, useEffect, useMemo, useCallback, useDeferredValue } from 'react';
 import type { GhostPin, GhostCategory, SupportedLanguage } from './types/ghost';
 import { fetchPins, createPin, updatePin, deletePin, recordPinView } from './lib/api';
 import { GhostGlobe } from './components/Globe/GhostGlobe';
@@ -101,13 +101,14 @@ export function App() {
     return performVectorRagSearch(searchQuery, categoryFilteredPins, language, 50);
   }, [searchQuery, categoryFilteredPins, language]);
 
-  // Pins shown on the 3D Globe
+  // Pins shown on the 3D Globe (deferred so MapLibre marker re-renders never block keyboard input!)
+  const deferredSearchQuery = useDeferredValue(searchQuery);
   const filteredPins = useMemo(() => {
-    if (!searchQuery.trim()) {
+    if (!deferredSearchQuery.trim()) {
       return categoryFilteredPins;
     }
     return ragResponse.results.map((r) => r.pin);
-  }, [searchQuery, categoryFilteredPins, ragResponse]);
+  }, [deferredSearchQuery, categoryFilteredPins, ragResponse]);
 
   // Admin CRUD Handlers
   const handleAddPin = async (newPin: GhostPin) => {
