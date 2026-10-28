@@ -1,4 +1,7 @@
 import type { GhostPin, SupportedLanguage } from '../types/ghost';
+import pinAppearancesData from '../data/pinAppearances.json';
+
+const PIN_APPEARANCES: Record<string, { descTh: string; descEn: string }> = pinAppearancesData;
 
 export interface EntityDossier {
   codexId: string;
@@ -1004,6 +1007,11 @@ export function generateContextualAppearance(
   const custom = PIN_BESTIARY_DB[pin.id];
   if (isTh && custom?.descTh) return custom.descTh;
   if (!isTh && custom?.descEn) return custom.descEn;
+
+  // 1. Direct curated appearance for each specific entity (all 1,000 pins!)
+  const curatedAppearance = PIN_APPEARANCES[pin.id];
+  if (isTh && curatedAppearance?.descTh) return curatedAppearance.descTh;
+  if (!isTh && curatedAppearance?.descEn) return curatedAppearance.descEn;
 
   const titleTh = pin.title_th;
   const titleEn = pin.title_en;
