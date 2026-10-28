@@ -2,12 +2,12 @@
 
 [![Cloudflare Pages](https://img.shields.io/badge/Cloudflare-Pages%20%26%20Workers-F38020?logo=cloudflare&logoColor=white)](https://pages.cloudflare.com/)
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-worldofmys.pages.dev-success?logo=cloudflare)](https://worldofmys.pages.dev/)
-[![Stories Count](https://img.shields.io/badge/Folklore%20Stories-700%20Unique%20Pins-emerald)](https://worldofmys.pages.dev/)
+[![Stories Count](https://img.shields.io/badge/Folklore%20Stories-800%20Unique%20Pins-emerald)](https://worldofmys.pages.dev/)
 [![MapLibre GL](https://img.shields.io/badge/MapLibre-Globe%20Projection-3b82f6)](https://maplibre.org/)
 [![React](https://img.shields.io/badge/React%2019-Vite-61DAFB?logo=react&logoColor=black)](https://react.dev/)
 [![D1 & R2](https://img.shields.io/badge/Cloudflare-D1%20%26%20R2-orange)](https://developers.cloudflare.com/)
 
-แพลตฟอร์มเว็บแอปพลิเคชัน 3D Interactive Earth สำหรับสำรวจตำนานผี สัตว์ในตำนาน ประวัติศาสตร์ท้องถิ่น และเรื่องเล่าลี้ลับจาก**ทั่วทุกมุมโลก (Global Folklore, Myths & Legends)** ครบ **700 เรื่องไม่ซ้ำกัน** ในสไตล์ **Radio Garden** ผสมผสาน **Antique Parchment Grimoire (คัมภีร์กระดาษโบราณ)** โดยใช้ **MapLibre GL 3D Globe Projection** เป็นแกนหลัก และขับเคลื่อนด้วยสถาปัตยกรรมไร้เซิร์ฟเวอร์ความเร็วสูง **Cloudflare Edge Ecosystem (Pages, Functions, D1 Database, R2 Storage)**
+แพลตฟอร์มเว็บแอปพลิเคชัน 3D Interactive Earth สำหรับสำรวจตำนานผี สัตว์ในตำนาน ประวัติศาสตร์ท้องถิ่น และเรื่องเล่าลี้ลับจาก**ทั่วทุกมุมโลก (Global Folklore, Myths & Legends)** ครบ **800 เรื่องไม่ซ้ำกัน** ในสไตล์ **Radio Garden** ผสมผสาน **Antique Parchment Grimoire (คัมภีร์กระดาษโบราณ)** โดยใช้ **MapLibre GL 3D Globe Projection** เป็นแกนหลัก และขับเคลื่อนด้วยสถาปัตยกรรมไร้เซิร์ฟเวอร์ความเร็วสูง **Cloudflare Edge Ecosystem (Pages, Functions, D1 Database, R2 Storage)**
 
 🌐 **เว็บไซต์ทางการ (Live URL)**: [https://worldofmys.pages.dev/](https://worldofmys.pages.dev/)
 
@@ -25,8 +25,8 @@
 - **เซิสบาร์โปร่งใส 50%:** แถบค้นหาด้านบนใช้สีกระดาษงาช้างโปร่งใส 50% ผสานม่านแก้วเบลอ มองเห็นลูกโลก 3D ด้านหลังได้อย่างลงตัว
 - **Semantic / Contextual Search:** ค้นหาตามบรรยากาศและแนวเรื่องเล่า (เช่น *"วิญญาณในน้ำ"*, *"ป่าหิมะ"*, *"งูยักษ์"*) พร้อมสรุปบริบทอัตโนมัติ
 
-### 3. 🌍 ลูกโลก 3D อินเทอร์แอกทีฟและ 700 เรื่องเล่ารอบโลก (3D Globe Projection)
-- รวบรวมเรื่องเล่าและสิ่งลี้ลับครบ **700 หมุด ไม่ซ้ำกัน** ครอบคลุมทุกทวีปทั่วโลก (เอเชีย, ยุโรป, อเมริกาเหนือ-ใต้, แอฟริกา, โอเชียเนีย)
+### 3. 🌍 ลูกโลก 3D อินเทอร์แอกทีฟและ 800 เรื่องเล่ารอบโลก (3D Globe Projection)
+- รวบรวมเรื่องเล่าและสิ่งลี้ลับครบ **800 หมุด ไม่ซ้ำกัน** ครอบคลุมทุกทวีปทั่วโลก (เอเชีย, ยุโรป, อเมริกาเหนือ-ใต้, แอฟริกา, โอเชียเนีย)
 - ระบบจัดกลุ่มชุมทางเรื่องเล่า (Nexus Clusters) พร้อมปุ่มสำรวจชุมทางและแอนิเมชันบินกล้อง (Fly-to) ไปยังพิกัดหมุด
 - **ปุ่มลูกโลกเรืองแสงลอยตัว (Floating Circular Globe Button):** ปรับให้กะทัดรัด ไม่เกะกะสายตา แตะเพื่อซูมออกสู่มุมมองภาพรวมโลกได้ทันที
 
