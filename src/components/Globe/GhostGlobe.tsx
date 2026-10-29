@@ -193,9 +193,13 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
 
     if (nexus.isCluster) {
       userInteractingRef.current = true;
+      const currentZoom = map.getZoom();
+      // Tiered zoom: Macro level zooms to intermediate regional cluster (5.3),
+      // Medium level zooms deeper (7.4) where clusters gracefully split into individual pins
+      const targetZoom = currentZoom < 4.2 ? 5.3 : 7.4;
       map.easeTo({
         center: nexus.coords,
-        zoom: 4.85,
+        zoom: targetZoom,
         duration: 900,
         easing: (t) => 1 - Math.pow(1 - t, 3),
       });
@@ -260,9 +264,9 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     if (!map) return;
     const zoom = map.getZoom();
 
-    // At overview zoom (< 3.8), hide ALL DOM markers to eliminate lag!
-    // The WebGL "Radio Garden Nexus" layer handles rendering at 60fps!
-    const isOverviewZoom = zoom < 3.8 && !selectedPinRef.current;
+    // At overview and intermediate zoom (< 7.0), hide DOM markers to eliminate lag
+    // and preserve sleek multi-tier WebGL clusters! Only reveal individual markers at deep zoom (>= 7.0).
+    const isOverviewZoom = zoom < 7.0 && !selectedPinRef.current;
     if (isOverviewZoom) {
       for (let i = 0; i < markerItemsRef.current.length; i++) {
         const item = markerItemsRef.current[i];
@@ -309,8 +313,8 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     const container = mapContainerRef.current;
     if (!map || !container) return;
 
-    // Skip magnetic calculations in overview zoom
-    if (map.getZoom() < 3.8) {
+    // Skip magnetic calculations in overview & cluster zoom
+    if (map.getZoom() < 7.0) {
       setMagnetTarget(null);
       return;
     }
@@ -525,35 +529,40 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
         type: 'geojson',
         data: createPinsGeoJson(pinsRef.current),
         cluster: true,
-        clusterMaxZoom: 4,
-        clusterRadius: 36,
+        clusterMaxZoom: 7,
+        clusterRadius: 38,
       });
 
       // 1. Cluster Outer Radiant Aura (Radio Garden Spectral Pulse)
+      // Tiered: 2-6 (Green), 7-19 (Cyan Intermediate), 20-49 (Amber Major), 50+ (Rose Macro)
       map.addLayer({
         id: 'nexus-cluster-aura',
         type: 'circle',
         source: 'folklore-nexus',
         filter: ['has', 'point_count'],
-        maxzoom: 3.85,
+        maxzoom: 7.05,
         paint: {
           'circle-color': [
             'step',
             ['get', 'point_count'],
-            '#00ff88',
-            12,
-            '#38bdf8',
-            25,
-            '#fbbf24',
+            '#10b981',
+            7,
+            '#06b6d4',
+            20,
+            '#f59e0b',
+            50,
+            '#f43f5e',
           ],
           'circle-radius': [
             'step',
             ['get', 'point_count'],
-            16,
-            12,
+            13,
+            7,
+            17,
             20,
-            25,
-            24,
+            22,
+            50,
+            27,
           ],
           'circle-opacity': 0.45,
           'circle-blur': 0.75,
@@ -566,27 +575,31 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
         type: 'circle',
         source: 'folklore-nexus',
         filter: ['has', 'point_count'],
-        maxzoom: 3.85,
+        maxzoom: 7.05,
         paint: {
           'circle-color': '#031412',
           'circle-radius': [
             'step',
             ['get', 'point_count'],
-            7.5,
-            12,
-            9.5,
-            25,
-            12.5,
+            6.5,
+            7,
+            8.5,
+            20,
+            11.5,
+            50,
+            14.5,
           ],
           'circle-stroke-width': 1.8,
           'circle-stroke-color': [
             'step',
             ['get', 'point_count'],
             '#34d399',
-            12,
-            '#38bdf8',
-            25,
+            7,
+            '#67e8f9',
+            20,
             '#fde047',
+            50,
+            '#fb7185',
           ],
           'circle-opacity': 0.95,
         },
@@ -598,11 +611,21 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
         type: 'circle',
         source: 'folklore-nexus',
         filter: ['has', 'point_count'],
-        maxzoom: 3.85,
+        maxzoom: 7.05,
         paint: {
           'circle-color': '#ffffff',
-          'circle-radius': 3,
-          'circle-opacity': 0.9,
+          'circle-radius': [
+            'step',
+            ['get', 'point_count'],
+            2.5,
+            7,
+            3,
+            20,
+            3.8,
+            50,
+            4.8,
+          ],
+          'circle-opacity': 0.95,
         },
       });
 
@@ -612,7 +635,7 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
         type: 'circle',
         source: 'folklore-nexus',
         filter: ['!', ['has', 'point_count']],
-        maxzoom: 3.85,
+        maxzoom: 7.05,
         paint: {
           'circle-color': ['get', 'color'],
           'circle-radius': 13,
@@ -626,7 +649,7 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
         type: 'circle',
         source: 'folklore-nexus',
         filter: ['!', ['has', 'point_count']],
-        maxzoom: 3.85,
+        maxzoom: 7.05,
         paint: {
           'circle-color': ['get', 'color'],
           'circle-radius': 3.5,
@@ -656,7 +679,14 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
           const titles = leaves.map((l: any) =>
             language === 'th' ? l.properties?.title_th : l.properties?.title_en
           ).filter(Boolean);
-          const color = firstProps.color || '#34d399';
+          const color =
+            pointCount >= 50
+              ? '#f43f5e'
+              : pointCount >= 20
+              ? '#f59e0b'
+              : pointCount >= 7
+              ? '#06b6d4'
+              : '#10b981';
 
           setActiveNexus({
             isCluster: true,
@@ -848,7 +878,7 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
       nexusSource.setData(createPinsGeoJson(pins));
     }
 
-    const isOverview = map.getZoom() < 3.8 && !selectedPin;
+    const isOverview = map.getZoom() < 7.0 && !selectedPin;
 
     // Create distinctive, prominent category-specific 3D Occult Diamond Markers (Ultra-lightweight)
     pins.forEach((pin) => {
@@ -1189,7 +1219,24 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
                   }}
                 >
                   {activeNexus.isCluster
-                    ? (language === 'th' ? `🌐 ชุมทาง ${activeNexus.count} ตำนาน` : `🌐 Nexus (${activeNexus.count} Legends)`)
+                    ? (() => {
+                        const count = activeNexus.count || 0;
+                        return language === 'th'
+                          ? count >= 50
+                            ? `🌐 ชุมทางมหภาค (${count} ตำนาน)`
+                            : count >= 20
+                            ? `🗺️ ชุมทางระดับภาค (${count} ตำนาน)`
+                            : count >= 7
+                            ? `🔮 ชุมทางระดับกลาง (${count} ตำนาน)`
+                            : `📍 กลุ่มหมุดท้องถิ่น (${count} ตำนาน)`
+                          : count >= 50
+                            ? `🌐 Macro Nexus (${count} Legends)`
+                            : count >= 20
+                            ? `🗺️ Major Nexus (${count} Legends)`
+                            : count >= 7
+                            ? `🔮 Regional Cluster (${count} Legends)`
+                            : `📍 Local Cluster (${count} Legends)`;
+                      })()
                     : (activeNexus.category || (language === 'th' ? 'เรื่องเล่าลี้ลับ' : 'Folklore'))}
                 </span>
               </div>
