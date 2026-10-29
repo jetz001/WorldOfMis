@@ -10,7 +10,7 @@ import { performVectorRagSearch } from './lib/vectorRagSearch';
 import { MysticalLoadingScreen } from './components/UI/MysticalLoadingScreen';
 
 export function App() {
-  const [pins, setPins] = useState<GhostPin[]>([]);
+  const [pins, setPins] = useState<GhostPin[]>(INITIAL_GHOST_PINS);
   const [selectedPin, setSelectedPin] = useState<GhostPin | null>(null);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [isAdminOpen, setIsAdminOpen] = useState(false);
@@ -18,7 +18,7 @@ export function App() {
   const [selectedCategory, setSelectedCategory] = useState<GhostCategory | 'all'>('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [worldViewSignal, setWorldViewSignal] = useState(0);
-  const [isPinsLoaded, setIsPinsLoaded] = useState(false);
+  const [isPinsLoaded, setIsPinsLoaded] = useState(true);
   const [isMapReady, setIsMapReady] = useState(false);
 
   // Load pins & attach secret Admin Portal triggers (Ctrl+Shift+A or #admin)
