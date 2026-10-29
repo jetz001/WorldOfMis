@@ -1,0 +1,4202 @@
+[
+  {
+    "id": "pin-kuchisake",
+    "title_th": "คุชิซาเกะ-อนนะ (สาวปากฉีก)",
+    "title_en": "Kuchisake-onna (Slit-Mouthed Woman)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-lochness",
+    "title_th": "สัตว์ประหลาดล็อกเนสส์ (เนสซี)",
+    "title_en": "Loch Ness Monster (Nessie)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-dracula",
+    "title_th": "เคานต์แดร็กคูลาแห่งทรานซิลเวเนีย",
+    "title_en": "Count Dracula & Vlad the Impaler",
+    "category": "curse"
+  },
+  {
+    "id": "pin-wendigo",
+    "title_th": "เวนดิโก อสูรป่าหิมะกินคน",
+    "title_en": "The Wendigo of the Great Lakes",
+    "category": "monster"
+  },
+  {
+    "id": "pin-chupacabra",
+    "title_th": "เอล ชูปาคาบรา อสูรสูบเลือดสัตว์",
+    "title_en": "El Chupacabra (Goat-Sucker)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-tutankhamun",
+    "title_th": "คำสาปฟาโรห์ตุตันคาเมน",
+    "title_en": "Curse of the Pharaohs (King Tut)",
+    "category": "curse"
+  },
+  {
+    "id": "pin-bunyip",
+    "title_th": "บันยิป อสูรแห่งบึงน้ำออสเตรเลีย",
+    "title_en": "The Bunyip of the Murray Swamps",
+    "category": "monster"
+  },
+  {
+    "id": "pin-maenak",
+    "title_th": "แม่นาคพระโขนง",
+    "title_en": "Mae Nak Phra Khanong",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-krasue",
+    "title_th": "กระสือยายสาย",
+    "title_en": "The Krasue of Kabin Buri",
+    "category": "curse"
+  },
+  {
+    "id": "pin-pop",
+    "title_th": "ผีปอบหยิบแห่งลุ่มน้ำปาว",
+    "title_en": "Phi Pop of Pao Basin",
+    "category": "curse"
+  },
+  {
+    "id": "pin-naga",
+    "title_th": "พญานาคแม่น้ำโขงและบั้งไฟพญานาค",
+    "title_en": "Naga Serpent of the Mekong",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-saming",
+    "title_th": "สมิงเขาหลวง",
+    "title_en": "The Were-Tiger of Khao Luang",
+    "category": "monster"
+  },
+  {
+    "id": "pin-jiangshi",
+    "title_th": "เจียงซือ (ผีดิบจีนกระโดด)",
+    "title_en": "Jiangshi (The Hopping Corpse)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-baba-iva",
+    "title_th": "บาบายากา (แม่มดกระดูกแห่งสลาฟ)",
+    "title_en": "Baba Yaga (The Bone Witch)",
+    "category": "curse"
+  },
+  {
+    "id": "pin-chudail",
+    "title_th": "ชูเดล (วิญญาณหญิงคร่ำครวญแห่งเอเชียใต้)",
+    "title_en": "The Chudail (Wailing Witch)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-gevaudan",
+    "title_th": "สัตว์ร้ายแห่งเฌโวด็อง (อสูรหมาป่า)",
+    "title_en": "The Beast of Gevaudan (Werewolf)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-curupira",
+    "title_th": "กูรูปิรา (ภูตผู้พิทักษ์ผืนป่าแอมะซอน)",
+    "title_en": "Curupira (Protective Forest Spirit)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-draugr",
+    "title_th": "ดราวก์ (ผีดิบไวกิ้งโบราณ)",
+    "title_en": "The Draugr (Ancient Undead)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-minotaur",
+    "title_th": "มิโนทอร์แห่งเขาวงกตครีต",
+    "title_en": "The Minotaur of the Labyrinth",
+    "category": "monster"
+  },
+  {
+    "id": "pin-lorelei",
+    "title_th": "ลอเรไล ไซเรนสาวแห่งแม่น้ำไรน์",
+    "title_en": "The Lorelei of the Rhine",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-banshee",
+    "title_th": "แบนชี (วิญญาณหวีดร้องแห่งความตาย)",
+    "title_en": "The Banshee of the Old Families",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-blackshuck",
+    "title_th": "แบล็ค ชัค สุนัขปีศาจแห่งซัฟฟอล์ก",
+    "title_en": "Black Shuck, the Demon Dog of Suffolk",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-gumiho",
+    "title_th": "กุมิโฮะ จิ้งจอกเก้าหาง",
+    "title_en": "Gumiho, the Nine-Tailed Fox",
+    "category": "monster"
+  },
+  {
+    "id": "pin-manananggal",
+    "title_th": "มานันนังกัล ผู้ฉีกร่างกลางคืน",
+    "title_en": "The Manananggal of Capiz",
+    "category": "monster"
+  },
+  {
+    "id": "pin-kuntilanak",
+    "title_th": "กุนตีลานัค ผีสาวชุดขาว",
+    "title_en": "Kuntilanak, the White-Dress Spirit",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-yeti",
+    "title_th": "เยติ สัตว์ประหลาดหิมะ",
+    "title_en": "The Yeti of the Himalayas",
+    "category": "monster"
+  },
+  {
+    "id": "pin-ghul",
+    "title_th": "กูล ปีศาจทะเลทรายอาหรับ",
+    "title_en": "The Ghul of the Arabian Sands",
+    "category": "curse"
+  },
+  {
+    "id": "pin-nightmarchers",
+    "title_th": "ไนท์ มาร์เชอร์ส ขบวนวิญญาณฮาวาย",
+    "title_en": "Night Marchers (Huakai po)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-anansi",
+    "title_th": "อนันซี แมงมุมปราชญ์แห่งเรื่องเล่า",
+    "title_en": "Anansi, the Trickster Spider",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-tokoloshe",
+    "title_th": "โทโคโลชี ผีเตี้ยแห่งแม่น้ำ",
+    "title_en": "The Tokoloshe of the Eastern Cape",
+    "category": "curse"
+  },
+  {
+    "id": "pin-taniwha",
+    "title_th": "ตานีฟา อสูรเฝ้าน้ำของมาโอริ",
+    "title_en": "The Taniwha of the Waikato",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-wawel",
+    "title_th": "มังกรเวเวลแห่งกรากุฟ",
+    "title_en": "The Wawel Dragon of Krakow",
+    "category": "monster"
+  },
+  {
+    "id": "pin-mada",
+    "title_th": "แม่ดา ผีน้ำเสื้อแดงแห่งสายธาร",
+    "title_en": "Ma Da, the Red-Dressed Water Ghost",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-neakta",
+    "title_th": "แนกตา เจ้าที่ผู้พิทักษ์หมู่บ้าน",
+    "title_en": "Neak Ta, the Guardian of the Land",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-natpopa",
+    "title_th": "เจ้าแม่ป้อปะมะเดาะแห่งภูเขาโปปา",
+    "title_en": "The Popa Nat of Mount Popa",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-mosina",
+    "title_th": "โมซินอา ภูติน้อยแห่งขุนเขาไต้หวัน",
+    "title_en": "Mô-sîn-á, the Mountain Sprite",
+    "category": "legend"
+  },
+  {
+    "id": "pin-mahasona",
+    "title_th": "มหาโสณา (ยักษ์อสูรแห่งป่าช้าศรีลังกา)",
+    "title_en": "Mahasona, the Graveyard Giantess",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-deathworm",
+    "title_th": "หนอนมรณะแห่งโกบี",
+    "title_en": "The Mongolian Death Worm",
+    "category": "monster"
+  },
+  {
+    "id": "pin-shahmaran",
+    "title_th": "ชาฮ์มาราน ราชินีนาคครึ่งคนครึ่งงู",
+    "title_en": "Shahmaran, the Serpent Queen",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-azzurrina",
+    "title_th": "อัซซูร์รีนา เด็กหญิงผมสีน้ำเงิน",
+    "title_en": "Azzurrina, the Little Blue Girl",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-santacompana",
+    "title_th": "ซานตากอมปันยา ขบวนวิญญาณแห่งกาลิเซีย",
+    "title_en": "Santa Compaña, the Ghostly Procession",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-sasquatch",
+    "title_th": "แซสควัทช์ มนุษย์ป่ายักษ์แห่งชายฝั่งแปซิฟิก",
+    "title_en": "Sasquatch, the Wild Man of the Pacific Northwest",
+    "category": "monster"
+  },
+  {
+    "id": "pin-trauco",
+    "title_th": "เทราโก ภูตจอมเสน่ห์แห่งเกาะชิโลเอ",
+    "title_en": "El Trauco, the Bewitching Goblin of Chiloe",
+    "category": "legend"
+  },
+  {
+    "id": "pin-pishtaco",
+    "title_th": "พิชตาโก (ปีศาจสูบไขมันมนุษย์แห่งแอนดีส)",
+    "title_en": "El Pishtaco, the Fat-Collecting Bandit",
+    "category": "monster"
+  },
+  {
+    "id": "pin-patasola",
+    "title_th": "ปาตาโซลา ปีศาจขาเดียวแห่งป่าโคลอมเบีย",
+    "title_en": "La Patasola, the One-Footed Woman of the Jungle",
+    "category": "monster"
+  },
+  {
+    "id": "pin-pazuzu",
+    "title_th": "ปาซูซู ปีศาจลมพายุแห่งบาบิโลน",
+    "title_en": "Pazuzu, the Demon of the Babylonian Wind",
+    "category": "monster"
+  },
+  {
+    "id": "pin-manticore",
+    "title_th": "แมนทิคอร์ สัตว์ประหลาดหน้ามนุษย์ของเปอร์เซีย",
+    "title_en": "The Manticore, Man-Faced Beast of Persia",
+    "category": "monster"
+  },
+  {
+    "id": "pin-madamkoi",
+    "title_th": "มาดามคอยคอย (ผีส้นสูงสีแดงแห่งแอฟริกา)",
+    "title_en": "Madam Koi Koi, the High-Heel Ghost",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-skogsra",
+    "title_th": "สกอกรา สาวป่าที่หลังว่างเป็นโพรงไม้",
+    "title_en": "Skogsrået, the Forest Woman with a Hollow Back",
+    "category": "legend"
+  },
+  {
+    "id": "pin-huldra",
+    "title_th": "ฮุลดรา สาวหางวัวแห่งป่านอร์เวย์",
+    "title_en": "Huldra, the Cow-Tail Maiden of Norway",
+    "category": "legend"
+  },
+  {
+    "id": "pin-bermuda",
+    "title_th": "สามเหลี่ยมเบอร์มิวดา (สามเหลี่ยมปีศาจ)",
+    "title_en": "The Bermuda Triangle (Devil's Triangle)",
+    "category": "curse"
+  },
+  {
+    "id": "pin-mothman",
+    "title_th": "มอธแมน มนุษย์ผีเสื้อราตรีแห่งพอยต์เพลแซนต์",
+    "title_en": "The Mothman of Point Pleasant",
+    "category": "monster"
+  },
+  {
+    "id": "pin-skinwalker",
+    "title_th": "สกินวอล์กเกอร์ พ่อมดแปลงกายแห่งชนเผ่านาวาโฮ",
+    "title_en": "The Navajo Skinwalker (Yenaldooshi)",
+    "category": "curse"
+  },
+  {
+    "id": "pin-flyingdutchman",
+    "title_th": "ฟลายอิงดัตช์แมน เรือผีสิงแห่งแหลมกู๊ดโฮป",
+    "title_en": "The Flying Dutchman",
+    "category": "legend"
+  },
+  {
+    "id": "pin-kraken",
+    "title_th": "คราเคน อสูรหมึกยักษ์ใต้สมุทรนอร์ส",
+    "title_en": "The Kraken of the Abyssal Depths",
+    "category": "monster"
+  },
+  {
+    "id": "pin-kappa",
+    "title_th": "กัปปะ ปีศาจพรายน้ำแห่งสายธารญี่ปุ่น",
+    "title_en": "Kappa, the River Imp of Japan",
+    "category": "monster"
+  },
+  {
+    "id": "pin-pret",
+    "title_th": "เปรตวัดสุทัศน์ เสาชิงช้าแห่งพระนคร",
+    "title_en": "The Pret Hungry Ghost of Wat Suthat",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-aokigahara",
+    "title_th": "ป่าอาโอกิกาฮาระ ทะเลต้นไม้แห่งวิญญาณ",
+    "title_en": "Aokigahara, Sea of Trees (Jukai)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-moai",
+    "title_th": "ปริศนาโมไอแห่งราปานุย (เกาะอีสเตอร์)",
+    "title_en": "The Moai of Rapa Nui (Easter Island)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-nazca",
+    "title_th": "ลายเส้นปริศนานัซกา ธรณีศิลป์แห่งแอนดีส",
+    "title_en": "The Nazca Lines Geoglyphs",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-phitakhon",
+    "title_th": "ผีตาโขน ด่านซ้าย บุญหลวงแห่งเมืองเลย",
+    "title_en": "Phi Ta Khon Festival of Dan Sai",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-dyatlov",
+    "title_th": "ปริศนาช่องเขาดยัตลอฟ มรณะลี้ลับบนเทือกเขาอูราล",
+    "title_en": "The Dyatlov Pass Incident",
+    "category": "legend"
+  },
+  {
+    "id": "pin-maryceleste",
+    "title_th": "มาเรีย ซีเลสเต เรือผีสิงลอยลำไร้ลูกเรือ",
+    "title_en": "The Mystery of the Mary Celeste",
+    "category": "legend"
+  },
+  {
+    "id": "pin-atlantis",
+    "title_th": "แอตแลนติส มหานครอารยธรรมสาบสูญ",
+    "title_en": "The Lost City of Atlantis",
+    "category": "legend"
+  },
+  {
+    "id": "pin-jerseydevil",
+    "title_th": "ปีศาจเจอร์ซีย์แห่งไพน์บาร์เรนส์",
+    "title_en": "The Jersey Devil of Pine Barrens",
+    "category": "monster"
+  },
+  {
+    "id": "pin-stonehenge",
+    "title_th": "สโตนเฮนจ์ อนุสรณ์สถานหินปริศนาแห่งบริเตน",
+    "title_en": "Stonehenge, Megalithic Wonder of Britain",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-sphinx",
+    "title_th": "มหาสฟิงซ์และมหาพีระมิดแห่งกิซา",
+    "title_en": "The Great Sphinx & Pyramids of Giza",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-ourangmedan",
+    "title_th": "เรือมรณะเอสเอส อูรังเมดัน",
+    "title_en": "The Mystery of SS Ourang Medan",
+    "category": "curse"
+  },
+  {
+    "id": "pin-islandofdolls",
+    "title_th": "เกาะตุ๊กตาผีสิงแห่งโซชิมิลโก",
+    "title_en": "Isla de las Muñecas (Island of the Dolls)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-nangtani",
+    "title_th": "นางตานี พรายกล้วยตานีแห่งสยาม",
+    "title_en": "Nang Tani, the Banana Tree Spirit",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-laplae",
+    "title_th": "เมืองลับแล ดินแดนสนธยาแห่งสัจจะวาจา",
+    "title_en": "Muang Lap Lae, the Hidden Realm of Truth",
+    "category": "legend"
+  },
+  {
+    "id": "pin-dragonstriangle",
+    "title_th": "สามเหลี่ยมมังกร ทะเลปีศาจแห่งแดนอาทิตย์อุทัย",
+    "title_en": "The Dragon's Triangle (Devil's Sea / Ma-no Umi)",
+    "category": "curse"
+  },
+  {
+    "id": "pin-toweroflondon",
+    "title_th": "วิญญาณแอนน์ โบลีน แห่งหอคอยแห่งลอนดอน",
+    "title_en": "Anne Boleyn's Ghost at the Tower of London",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-roswell",
+    "title_th": "ปริศนาวัตถุบินลึกลับและจานบินตกโรสเวลล์",
+    "title_en": "The Roswell Incident (UFO Crash of 1947)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-ogopogo",
+    "title_th": "โอโกโปโก สัตว์ประหลาดแห่งทะเลสาบโอคานากัน",
+    "title_en": "Ogopogo, the Monster of Lake Okanagan",
+    "category": "monster"
+  },
+  {
+    "id": "pin-machupicchu",
+    "title_th": "มาชูปิกชู นครสาบสูญแห่งอินคา",
+    "title_en": "Machu Picchu, Lost City of the Incas",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-derinkuyu",
+    "title_th": "นครใต้ดินเดรินกูยูแห่งแคปพาโดเชีย",
+    "title_en": "Derinkuyu Underground City",
+    "category": "legend"
+  },
+  {
+    "id": "pin-mokelembembe",
+    "title_th": "โมเคเล-เอ็มเบมเบ ไดโนเสาร์มีชีวิตแห่งคองโก",
+    "title_en": "Mokele-mbembe, Living Dinosaur of the Congo",
+    "category": "monster"
+  },
+  {
+    "id": "pin-hopediamond",
+    "title_th": "คำสาปเพชรโฮป มณีมรณะแห่งราชวงศ์",
+    "title_en": "The Hope Diamond Curse",
+    "category": "curse"
+  },
+  {
+    "id": "pin-hoiabaciu",
+    "title_th": "ป่าอาถรรพ์ฮอยา-บาชู สามเหลี่ยมเบอร์มิวดาแห่งทรานซิลเวเนีย",
+    "title_en": "Hoia-Baciu Forest, The Bermuda Triangle of Romania",
+    "category": "curse"
+  },
+  {
+    "id": "pin-lallorona",
+    "title_th": "ลาโยโรนา หญิงคร่ำครวญแห่งสายน้ำ",
+    "title_en": "La Llorona, The Weeping Woman",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-terracotta",
+    "title_th": "สุสานจิ๋นซีฮ่องเต้และกองทัพทหารดินเผา",
+    "title_en": "Terracotta Army & Qin Shi Huang's Tomb",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-jacktheripper",
+    "title_th": "แจ็กเดอะริปเปอร์ ฆาตกรเงาหมอกแห่งไวต์แชเปล",
+    "title_en": "Jack the Ripper of Whitechapel",
+    "category": "curse"
+  },
+  {
+    "id": "pin-flatwoods",
+    "title_th": "สัตว์ประหลาดแฟลตวูดส์ อสูรเขียวจากต่างดาว",
+    "title_en": "The Flatwoods Monster (Braxton County Monster)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-cerberus",
+    "title_th": "เซอร์เบอรัส สุนัขสามหัวเฝ้าประตูนรกฮาเดส",
+    "title_en": "Cerberus, Hound of the Underworld",
+    "category": "monster"
+  },
+  {
+    "id": "pin-baalbek",
+    "title_th": "มหาศิลาบาอัลเบค แท่นหินยักษ์พันตัน",
+    "title_en": "Megaliths of Baalbek (The Trilithon)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-chillingham",
+    "title_th": "ปราสาทชิลลิงแฮม ปราสาทผีสิงที่สุดในเกาะอังกฤษ",
+    "title_en": "Chillingham Castle, Britain’s Most Haunted",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-earhart",
+    "title_th": "ปริศนาเที่ยวบินสุดท้ายของอมีเลีย เอียร์ฮาร์ต",
+    "title_en": "Amelia Earhart's Final Flight",
+    "category": "legend"
+  },
+  {
+    "id": "pin-sailingstones",
+    "title_th": "หินแล่นปริศนาแห่งเดธวัลเลย์",
+    "title_en": "The Sailing Stones of Racetrack Playa",
+    "category": "legend"
+  },
+  {
+    "id": "pin-kelpie",
+    "title_th": "เคลพี ม้าพรายน้ำจำแลงแห่งสกอตแลนด์",
+    "title_en": "The Kelpie of Scottish Lochs",
+    "category": "monster"
+  },
+  {
+    "id": "pin-stanleyhotel",
+    "title_th": "โรงแรมสแตนลีย์ ต้นกำเนิดเรื่องเล่า The Shining",
+    "title_en": "The Stanley Hotel, Inspiration for The Shining",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-darvaza",
+    "title_th": "ประตูสู่นรก หลุมก๊าซเพลิงลุกไหม้นิรันดร์ดาร์วาซา",
+    "title_en": "The Door to Hell (Darvaza Gas Crater)",
+    "category": "curse"
+  },
+  {
+    "id": "pin-gunungpadang",
+    "title_th": "ปิรามิดกูนุงปาดัง เมกะลิธหมื่นปีแห่งชวา",
+    "title_en": "Gunung Padang Megalithic Site",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-highgate",
+    "title_th": "แวมไพร์ไฮเกทแห่งสุสานวิกตอเรียน",
+    "title_en": "The Highgate Vampire",
+    "category": "monster"
+  },
+  {
+    "id": "pin-richat",
+    "title_th": "ดวงตาแห่งซาฮารา โครงสร้างริชาต",
+    "title_en": "The Eye of the Sahara (Richat Structure)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-tunguska",
+    "title_th": "ปริศนาระเบิดอวกาศตุงกุสกา",
+    "title_en": "The Tunguska Cosmic Impact Event",
+    "category": "legend"
+  },
+  {
+    "id": "pin-sedonavortex",
+    "title_th": "ขุมพลังงานสนามแม่เหล็กโลกเซโดนา",
+    "title_en": "The Sedona Red Rock Energy Vortexes",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-dongphayayen",
+    "title_th": "ดงพญาเย็น ป่าดงดิบอาถรรพ์และไข้ป่าสยาม",
+    "title_en": "Dong Phaya Yen, The Primeval Wilderness",
+    "category": "curse"
+  },
+  {
+    "id": "pin-phisueasamut",
+    "title_th": "ผีเสื้อสมุทร นางยักษ์แห่งเกาะแก้วพิสดาร",
+    "title_en": "Phi Suea Samut, The Sea Ogress of Samet",
+    "category": "monster"
+  },
+  {
+    "id": "pin-erawanshrine",
+    "title_th": "ท้าวมหาพรหมเอราวัณ เทพผู้ประทานพรแห่งสี่แยกราชประสงค์",
+    "title_en": "The Erawan Shrine (Thao Maha Brahma)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-areafiftyone",
+    "title_th": "แอเรีย 51 (ฐานทัพลับกรูมเลก)",
+    "title_en": "Area 51 (Groom Lake Top Secret Facility)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-shambala",
+    "title_th": "ชัมบาลา (ดินแดนเร้นลับใต้พิภพหิมาลัย)",
+    "title_en": "Shambhala (The Hidden Kingdom of the Himalayas)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-medusa",
+    "title_th": "เมดูซา (นางอสูรกอร์กอนแห่งทะเลอีเจียน)",
+    "title_en": "Medusa, The Gorgon of the Aegean Sea",
+    "category": "monster"
+  },
+  {
+    "id": "pin-babylon",
+    "title_th": "หอคอยบาเบลและสวนลอยบาบิโลน",
+    "title_en": "The Tower of Babel & Babylon Megaliths",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-valkyrie",
+    "title_th": "วาลคิรี (ผู้นำพาวิญญาณนักรบสู่วัลฮัลลา)",
+    "title_en": "The Valkyrie (Choosers of the Slain)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-jackalope",
+    "title_th": "แจ็กคาโลป (กระต่ายมีเขาแห่งทุ่งหญ้าตะวันตก)",
+    "title_en": "The Jackalope (Antlered Hare of Wyoming)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-chichenitza",
+    "title_th": "เอล กัสติโย (ปิรามิดงูยักษ์แห่งชิเชนอิตซา)",
+    "title_en": "El Castillo, Chichen Itza (The Serpent of Light)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-roanoke",
+    "title_th": "เกาะโรอาโนกและคำสาปปริศนา CROATOAN",
+    "title_en": "The Lost Colony of Roanoke (The CROATOAN Mystery)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-fenrir",
+    "title_th": "เฟนริร์ (พญามหาหมาป่าผู้กลืนสุริยะ)",
+    "title_en": "Fenrir, The Cataclysmic Wolf of Norse Myth",
+    "category": "monster"
+  },
+  {
+    "id": "pin-delphi",
+    "title_th": "วิหารเดลฟี (เทพพยากรณ์และไอระเหยลึกลับ)",
+    "title_en": "The Oracle of Delphi (Pythia's Prophetic Trance)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-leprechaun",
+    "title_th": "เลปราคอนและเนินดินภูตแฟรี่",
+    "title_en": "The Leprechaun & Ancient Fairy Raths",
+    "category": "legend"
+  },
+  {
+    "id": "pin-nuckelavee",
+    "title_th": "นักคลาวี (อสูรม้าไร้ผิวหนังแห่งหมู่เกาะออร์คนีย์)",
+    "title_en": "Nuckelavee, Skinless Nightmare of Orkney",
+    "category": "monster"
+  },
+  {
+    "id": "pin-teotihuacan",
+    "title_th": "เตโอติอัวกาน (นครแห่งทวยเทพและปิรามิดสุริยัน)",
+    "title_en": "Teotihuacan (City of the Gods & Pyramid of the Sun)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-salem",
+    "title_th": "การล่าแม่มดแห่งเซเลม (วิญญาณแห่งกิลส์ คอรีย์)",
+    "title_en": "The Salem Witch Trials (Curse of Giles Corey)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-gargoyle",
+    "title_th": "การ์กอยล์แห่งน็อทร์-ดาม (ผู้พิทักษ์หินมีชีวิต)",
+    "title_en": "The Gargoyles of Notre-Dame (Living Stone Sentinels)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-alexandria",
+    "title_th": "หอสมุดและประภาคารฟาโรสแห่งอเล็กซานเดรีย",
+    "title_en": "The Lost Library & Lighthouse of Alexandria",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-gobeklitepe",
+    "title_th": "เกอเบกลี เทเป (วิหารหินมนุษย์ยุคแรกเริ่มแห่งอนาโตเลีย)",
+    "title_en": "Göbekli Tepe, The World's Oldest Megalithic Temple",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-dbcooper",
+    "title_th": "ดี.บี. คูเปอร์ (จอมโจรกระโดดร่มล่องหนกลางพายุ)",
+    "title_en": "The Mystery of D.B. Cooper (The Vanishing Skyjacker)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-yowie",
+    "title_th": "โยวี (อสูรวานรยักษ์แห่งเทือกเขาบลูเมาน์เทนส์)",
+    "title_en": "The Yowie, Australia’s Bigfoot of the Blue Mountains",
+    "category": "monster"
+  },
+  {
+    "id": "pin-kumanthong",
+    "title_th": "กุมารทอง (ไสยศาสตร์วิญญาณเด็กทองคำ)",
+    "title_en": "Kuman Thong (The Golden Infant Necromancy)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-garuda",
+    "title_th": "พญาครุฑ (มหาเวนไตยผู้ครองนภากาศ)",
+    "title_en": "Garuda, King of Birds & Master of the Skies",
+    "category": "monster"
+  },
+  {
+    "id": "pin-ouija",
+    "title_th": "กระดานอุยจา (ประตูสื่อวิญญาณแห่งโลกมืด)",
+    "title_en": "The Ouija Board (The Talking Spirit Portal)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-phoenix",
+    "title_th": "นกฟีนิกซ์ (วิหคเพลิงผู้ฟื้นคืนชีพจากเถ้าถ่าน)",
+    "title_en": "The Phoenix (Bennu, The Immortal Firebird)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-petra",
+    "title_th": "นครศิลาเพตราและหินวิญญาณแห่งญิน",
+    "title_en": "Petra & The Djinn Blocks of Edom",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-bathory",
+    "title_th": "เคาน์เตสเอลิซาเบธ บาโธรี (ปราสาทชาคติเซ)",
+    "title_en": "Countess Elizabeth Báthory (Čachtice Castle)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-grendel",
+    "title_th": "เกรนเดล (อสูรกายหนองน้ำบุตรแห่งคาอิน)",
+    "title_en": "Grendel, The Mere Monster of Beowulf",
+    "category": "monster"
+  },
+  {
+    "id": "pin-thunderbird",
+    "title_th": "วิหคสายฟ้าทันเดอร์เบิร์ด (แบล็กฮิลส์)",
+    "title_en": "The Thunderbird of the Sacred Black Hills",
+    "category": "monster"
+  },
+  {
+    "id": "pin-catacombs",
+    "title_th": "สุสานใต้ดินปารีส (เขาวงกต 6 ล้านโครงกระดูก)",
+    "title_en": "The Catacombs of Paris (The Labyrinth of 6 Million Skulls)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-champ",
+    "title_th": "แชมป์ (อสูรคอยาวแห่งทะเลสาบแชมเพลน)",
+    "title_en": "Champ, The Lake Champlain Monster",
+    "category": "monster"
+  },
+  {
+    "id": "pin-oakisland",
+    "title_th": "หลุมสมบัติอาถรรพ์แห่งเกาะโอ๊ก",
+    "title_en": "The Oak Island Money Pit & The Templar Curse",
+    "category": "curse"
+  },
+  {
+    "id": "pin-klerksdorp",
+    "title_th": "ทรงกลมโลหะเคลิร์กสดอร์ป (วัตถุโบราณ 3 พันล้านปี)",
+    "title_en": "The Klerksdorp Spheres (The 3-Billion-Year Enigma)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-antikythera",
+    "title_th": "กลไกแอนติคิเธียรา (คอมพิวเตอร์ดาราศาสตร์เครื่องแรก)",
+    "title_en": "The Antikythera Mechanism (First Astronomical Computer)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-bloop",
+    "title_th": "เดอะ บลูป (เสียงลึกลับจากห้วงสมุทรลึกแปซิฟิกใต้)",
+    "title_en": "The Bloop (The Abyssal Ultra-Low Frequency Sound)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-gilgamesh",
+    "title_th": "มหากาพย์กิลกาเมชและนครโบราณอูรุก",
+    "title_en": "The Epic of Gilgamesh & Ancient Uruk",
+    "category": "legend"
+  },
+  {
+    "id": "pin-khamchanod",
+    "title_th": "วังนาคินทร์คำชะโนด (ป่าต้นชะโนดลอยน้ำ)",
+    "title_en": "Wang Nakin Kham Chanod (The Floating Naga Isle)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-dogon",
+    "title_th": "ชนเผ่าโดกอนกับปริศนาดาวซิริอุส บี",
+    "title_en": "The Dogon Tribe & The Sirius B Mystery",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-rendlesham",
+    "title_th": "เหตุการณ์ป่าเรนเดิลแชม (รอสเวลล์แห่งเกาะอังกฤษ)",
+    "title_en": "The Rendlesham Forest UFO Incident",
+    "category": "legend"
+  },
+  {
+    "id": "pin-colossus",
+    "title_th": "มหาเทวรูปโคโลสซัสแห่งโรดส์ (สิ่งมหัศจรรย์โบราณ)",
+    "title_en": "The Colossus of Rhodes (The Sun God Titan)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-anubis",
+    "title_th": "อนูบิสและสุสานใต้ดินซักคารา (เทพผู้พิทักษ์ความตาย)",
+    "title_en": "Anubis & The Subterranean Necropolis of Saqqara",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-sirens",
+    "title_th": "เสียงเพลงไซเรนแห่งเกาะคาปรี (บทเพลงมรณะสะกดจิต)",
+    "title_en": "The Sirens of Capri (The Lethal Melodic Sirens)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-brayroad",
+    "title_th": "อสูรร้ายแห่งถนนเบรย์โรด (มนุษย์หมาป่าวิสคอนซิน)",
+    "title_en": "The Beast of Bray Road (Wisconsin Werewolf)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-maryking",
+    "title_th": "ตรอกแมรี่ คิงส์ โคลส (เมืองใต้ดินแห่งกาฬโรค)",
+    "title_en": "Mary King's Close (The Subterranean Plague Streets)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-taoshum",
+    "title_th": "เสียงหึ่งปริศนาแห่งเมืองทาอส (คลื่นเสียงไร้ที่มา)",
+    "title_en": "The Taos Hum (The Infrasonic Sonic Anomaly)",
+    "category": "curse"
+  },
+  {
+    "id": "pin-pegasus",
+    "title_th": "เพกาซัส (อาชาสวรรค์ผู้ให้กำเนิดตาน้ำพุศักดิ์สิทธิ์)",
+    "title_en": "Pegasus & The Sacred Spring of Mount Helicon",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-kitsune",
+    "title_th": "จิ้งจอกเก้าหางคิตสึเนะและหินมรณะเซ็ชโชเซกิ",
+    "title_en": "The Nine-Tailed Kitsune & The Sessho-seki Killing Stone",
+    "category": "monster"
+  },
+  {
+    "id": "pin-poveglia",
+    "title_th": "เกาะโปเวเกลีย (เกาะต้องสาปแห่งกาฬโรคและคนบ้า)",
+    "title_en": "Poveglia Island, The Cursed Quarantine Asylum",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-phiam",
+    "title_th": "ผีอำ (เงามืดทับอกและภาวะอัมพาตยามนิทรา)",
+    "title_en": "Phi Am (The Shadow Hag & Sleep Paralysis)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-krahang",
+    "title_th": "ผีกระหัง (ชายสากตำข้าวบินยามราตรี)",
+    "title_en": "Krahang, The Night-Flying Mortar Demon",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-phipokang",
+    "title_th": "ผีโป่งค่าง (อสูรดูดเลือดหัวแม่เท้าแห่งป่าดิบ)",
+    "title_en": "Phi Pong Khang, The Jungle Toe-Blood Spirit",
+    "category": "monster"
+  },
+  {
+    "id": "pin-nangtakian",
+    "title_th": "นางตะเคียน (รุกขเทวีแห่งไม้ใหญ่โบราณ)",
+    "title_en": "Nang Takian, Spirit of the Ancient Hopea Tree",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-phraya-phichai",
+    "title_th": "พระยาพิชัยดาบหักและดวงวิญญาณนักรบผู้พิทักษ์เมืองท่าเหนือ",
+    "title_en": "Phraya Phichai Dap Hak & The Broken-Sword Spirit",
+    "category": "legend"
+  },
+  {
+    "id": "pin-wiangkalong",
+    "title_th": "เวียงกาหลง (นครโบราณและอาถรรพ์เตาเผาพันปี)",
+    "title_en": "Wiang Kalong, The Cursed Kiln City of Lanna",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-toyol",
+    "title_th": "ตุยูล (ผีทารกมนต์ดำแห่งคาบสมุทรมลายู)",
+    "title_en": "Toyol, The Necromantic Infant Spirit of Malaya",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-orangminyak",
+    "title_th": "โอรังมินยัก (มนุษย์น้ำมันอาถรรพ์ยามวิกาล)",
+    "title_en": "Orang Minyak, The Cursed Oily Man of Perak",
+    "category": "monster"
+  },
+  {
+    "id": "pin-barong",
+    "title_th": "บารองและรังดา (ศึกนิรันดร์แห่งวิญญาณเกาะบาหลี)",
+    "title_en": "Barong & Rangda, The Eternal Spirit Duel of Bali",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-tikbalang",
+    "title_th": "ติกบาลัง (ปีศาจครึ่งคนครึ่งม้าแห่งพงไพรตากาล็อก)",
+    "title_en": "Tikbalang, The Were-Stallion of the Sierra Madre",
+    "category": "monster"
+  },
+  {
+    "id": "pin-rokurokubi",
+    "title_th": "โรคุโรคุบิ (ปีศาจสาวคอยาวแห่งยุคเอโดะ)",
+    "title_en": "Rokurokubi, The Long-Necked Yokai of Kyoto",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-yuki-onna",
+    "title_th": "ยูกิอนนะ (สตรีหิมะผู้พรากลมหายใจกลางพายุน้ำแข็ง)",
+    "title_en": "Yuki-onna, The Snow Woman of the Northern Alps",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-tengu",
+    "title_th": "เทนงุแห่งหุบเขาคุรามะ (จ้าวแห่งสายลมและดาบปีศาจ)",
+    "title_en": "Sojobo & The Tengu of Mount Kurama",
+    "category": "monster"
+  },
+  {
+    "id": "pin-dokkaebi",
+    "title_th": "ท็อกแกบี (ภูตกระบองวิเศษแห่งคาบสมุทรเกาหลี)",
+    "title_en": "Dokkaebi, The Goblin of the Enchanted Bangmangi",
+    "category": "legend"
+  },
+  {
+    "id": "pin-rakshasa",
+    "title_th": "รากษสแห่งกรุงลงกา (อสูรจำแลงกายในมหากาพย์โบราณ)",
+    "title_en": "The Rakshasa Citadels of Ancient Lanka",
+    "category": "monster"
+  },
+  {
+    "id": "pin-golem",
+    "title_th": "โกเลมแห่งปราก (ยักษ์ดินเหนียวผู้พิทักษ์สุสานยิวโบราณ)",
+    "title_en": "The Golem of Prague (Old New Synagogue)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-piedpiper",
+    "title_th": "นักเป่าปี่แห่งฮาเมิลน์ (การหายสาบสูญของเด็ก 130 คน)",
+    "title_en": "The Pied Piper of Hamelin's Vanished Children",
+    "category": "legend"
+  },
+  {
+    "id": "pin-krampus",
+    "title_th": "แครมปัส (อสูรเขายาวผู้ลงทัณฑ์แห่งเทือกเขาแอลป์)",
+    "title_en": "Krampus, The Horned Shadow of the Eastern Alps",
+    "category": "monster"
+  },
+  {
+    "id": "pin-vodyanoy",
+    "title_th": "โวเดียอย (จ้าวแห่งวังน้ำวนและวิญญาณจมน้ำสลาฟ)",
+    "title_en": "Vodyanoy, Slavic Master of the Dark Millponds",
+    "category": "monster"
+  },
+  {
+    "id": "pin-strigoi",
+    "title_th": "สตริกอย (ผีดิบสองหัวใจแห่งโรมาเนีย)",
+    "title_en": "Strigoi, The Twin-Hearted Undead of Wallachia",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-headlesshorseman",
+    "title_th": "ผีทหารม้าหัวขาดแห่งหุบเขาสลีปปี้ฮอลโลว์",
+    "title_en": "The Headless Horseman of Sleepy Hollow",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-winchester",
+    "title_th": "คฤหาสน์วินเชสเตอร์ (เขาวงกตพันห้องลวงวิญญาณอาฆาต)",
+    "title_en": "The Winchester Mystery House of San Jose",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-alcatraz",
+    "title_th": "เกาะอัลคาแทรซ (คุกกลางน้ำและเสียงแบนโจจากห้องขัง 14D)",
+    "title_en": "Alcatraz Island & The Ghosts of Cellblock D",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-bellwitch",
+    "title_th": "แม่มดเบลล์แห่งเทนเนสซี (วิญญาณอาฆาตผู้สังหารเจ้าบ้าน)",
+    "title_en": "The Bell Witch Haunting of Red River",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-el-silbon",
+    "title_th": "เอลซิลบอน (ผีคนผิวปากแบกกระดูกแห่งทุ่งหญ้าลานอส)",
+    "title_en": "El Silbón, The Whistling Bone-Carrier of Los Llanos",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-mapinguari",
+    "title_th": "มาปิงกัวรี (อสูรตาเดียวปากอยู่กลางท้องแห่งป่าแอมะซอน)",
+    "title_en": "Mapinguari, The Cyclops Sloth-Beast of Amazonia",
+    "category": "monster"
+  },
+  {
+    "id": "pin-encantado",
+    "title_th": "โบโต เอ็นกันตาโด (โลมาสีชมพูจำแลงกายแห่งลุ่มน้ำแอมะซอน)",
+    "title_en": "Boto Encantado, The Shape-Shifting Pink River Dolphin",
+    "category": "legend"
+  },
+  {
+    "id": "pin-adlet",
+    "title_th": "อัดเล็ต (อมนุษย์ครึ่งคนครึ่งหมาป่าหิมะแห่งอาร์กติก)",
+    "title_en": "The Adlet, Wolf-Human Hybrids of Baffin Island",
+    "category": "monster"
+  },
+  {
+    "id": "pin-rainbowserpent",
+    "title_th": "งูสายรุ้งแห่งดรีมไทม์และศิลาศักดิ์สิทธิ์อูลูรู",
+    "title_en": "The Rainbow Serpent & Sacred Uluru of the Dreamtime",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-phibong",
+    "title_th": "ผีกองกอย (ภูตป่าขาเดียวผู้ส่งเสียงร้องกอยๆ ยามค่ำคืน)",
+    "title_en": "Phi Kong Koi, The One-Legged Jungle Hopper of Loei",
+    "category": "monster"
+  },
+  {
+    "id": "pin-maeyanang",
+    "title_th": "แม่ย่านางเรือ (เทวีผู้คุ้มครองนาวาและนักเดินเรือสยาม)",
+    "title_en": "Mae Yanang, Sacred Guardian Spirit of Siamese Vessels",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-wiangyonok",
+    "title_th": "เวียงหนองล่มและอาถรรพ์ปลาไหลเผือกแห่งโยนกนคร",
+    "title_en": "Wiang Nong Lom & The White Eel Curse of Yonok Nakhon",
+    "category": "curse"
+  },
+  {
+    "id": "pin-khao-kitchakut",
+    "title_th": "เขาคิชฌกูฏและตำนานหินลูกพระบาทลอยฟ้า",
+    "title_en": "Khao Khitchakut & The Defying Gravity Sacred Boulder",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-prasat-hin-phanom-rung",
+    "title_th": "ปราสาทหินพนมรุ้ง (เทวสถานหินทรายสีชมพูบนปากปล่องภูเขาไฟ)",
+    "title_en": "Phanom Rung Sanctuary Atop the Extinct Volcano",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-bakekujira",
+    "title_th": "บาเกะคุจิระ (โครงกระดูกวาฬผีแห่งทะเลญี่ปุ่น)",
+    "title_en": "Bake-kujira, The Phantom Whale Skeleton of Shimane",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-nurarihyon",
+    "title_th": "นูราริเฮียง (จอมทัพสูงสุดแห่งขบวนร้อยอสูรยามราตรี)",
+    "title_en": "Nurarihyon, Supreme Lord of the Yokai Night Parade",
+    "category": "legend"
+  },
+  {
+    "id": "pin-nian",
+    "title_th": "อสูรเหนียน (สัตว์ร้ายโบราณผู้กลัวสีแดงและเสียงประทัด)",
+    "title_en": "Nian, The Horned New Year Beast of Mount Tai",
+    "category": "monster"
+  },
+  {
+    "id": "pin-white-snake",
+    "title_th": "ตำนานนางพญางูขาวและเจดีย์เหลยเฟิงแห่งทะเลสาบซีหู",
+    "title_en": "Madame White Snake & Leifeng Pagoda of West Lake",
+    "category": "legend"
+  },
+  {
+    "id": "pin-baekdu-heaven-lake",
+    "title_th": "อสูรกายแห่งทะเลสาบสวรรค์บนปากปล่องภูเขาไฟแพ็กดู",
+    "title_en": "The Monster of Heaven Lake on Sacred Mount Paektu",
+    "category": "monster"
+  },
+  {
+    "id": "pin-bhangarh",
+    "title_th": "ป้อมภานครห์ (นครต้องคำสาปที่ทางการอินเดียห้ามเข้ายามวิกาล)",
+    "title_en": "Bhangarh Fort, India's Officially Forbidden Cursed City",
+    "category": "curse"
+  },
+  {
+    "id": "pin-aghartha",
+    "title_th": "นครใต้พิภพไคมัคลีแห่งคัปปาโดเกีย",
+    "title_en": "Kaymakli Subterranean Labyrinth of Cappadocia",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-wildhunt",
+    "title_th": "กองทัพวิญญาณนักล่าแห่งรัตติกาล (เดอะไวลด์ฮันต์)",
+    "title_en": "The Wild Hunt (Åsgårdsreien) Across the Winter Sky",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-trollstigen",
+    "title_th": "โทรลล์ศิลาแห่งฟยอร์ดนอร์เวย์ (หุบผาโทรลล์สติเกน)",
+    "title_en": "The Petrified Trolls of Trollstigen & Trollveggen",
+    "category": "monster"
+  },
+  {
+    "id": "pin-melusine",
+    "title_th": "เมลูซีน (ภูตสาวครึ่งงูผู้สร้างปราสาทลูซิญองแห่งฝรั่งเศส)",
+    "title_en": "Melusine, The Twin-Tailed Serpent Fairy of Lusignan",
+    "category": "legend"
+  },
+  {
+    "id": "pin-dullahan",
+    "title_th": "ดูลาฮาน (อัศวินม้ามืดถือศีรษะตัวเองผู้เรียกความตายแห่งไอร์แลนด์)",
+    "title_en": "The Dullahan, Headless Death-Rider of County Sligo",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-edgarallanpoe",
+    "title_th": "ปริศนาการเสียชีวิตและผู้มาเยือนยามวิกาลที่หลุมศพ เอ็ดการ์ แอลแลน โพ",
+    "title_en": "The Mysterious Death of Edgar Allan Poe & The Poe Toaster",
+    "category": "legend"
+  },
+  {
+    "id": "pin-villisca",
+    "title_th": "บ้านพักอาถรรพ์วิลลิสกา (โศกนาฏกรรมปริศนาปี 1912 ที่ไร้ผู้ต้องหา)",
+    "title_en": "The Villisca Axe Murder House Haunting of Iowa",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-ciguapa",
+    "title_th": "ซีกัวปา (ภูตสาวป่าผู้มีเท้ากลับหลังแห่งเทือกเขาแคริบเบียน)",
+    "title_en": "La Ciguapa, The Backward-Footed Siren of Hispaniola",
+    "category": "monster"
+  },
+  {
+    "id": "pin-luang-phor-sothon",
+    "title_th": "หลวงพ่อโสธรและปาฏิหาริย์พระลอยน้ำสามพี่น้อง",
+    "title_en": "Luang Phor Sothon & The Three Floating Buddhas Miracle",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-khao-sam-muk",
+    "title_th": "ศาลเจ้าแม่เขาสามมุขและตำนานรักอมตะแหลมสามมุข",
+    "title_en": "Chao Mae Khao Sam Muk & The Tragic Sea Lovers Legend",
+    "category": "legend"
+  },
+  {
+    "id": "pin-phaya-khan-khak",
+    "title_th": "พญาคันคากและมหาศึกพญาแถนบันดาลฝน",
+    "title_en": "Phaya Khan Khak, The Giant Toad King & The Sky God Battle",
+    "category": "legend"
+  },
+  {
+    "id": "pin-khun-phaen",
+    "title_th": "ขุนแผน ดาบฟ้าฟื้น และกุมารทองแห่งเมืองกาญจน์",
+    "title_en": "Khun Phaen, The Blade of Thunderbolts & Necromantic Arts",
+    "category": "legend"
+  },
+  {
+    "id": "pin-tam-luang",
+    "title_th": "ถ้ำหลวงขุนน้ำนางนอนและอาถรรพ์เจ้าหญิงเชียงรุ้ง",
+    "title_en": "Tham Luang & The Sleeping Lady Mountain Legend",
+    "category": "legend"
+  },
+  {
+    "id": "pin-jorogumo",
+    "title_th": "โจโรกุโมะ (ปีศาจแมงมุมสาวล่อเหยื่อแห่งน้ำตกโจเรน)",
+    "title_en": "Jorogumo, The Enchantress Spider Yokai of Joren Falls",
+    "category": "monster"
+  },
+  {
+    "id": "pin-kamaitachi",
+    "title_th": "คาไมทาจิ (สามพายุเคียวปีศาจแห่งโคชินเอ็ตสึ)",
+    "title_en": "Kamaitachi, The Sickle-Clawed Wind Weasel Trio",
+    "category": "monster"
+  },
+  {
+    "id": "pin-gashadokuro",
+    "title_th": "กาชาโดคุโระ (อสูรโครงกระดูกยักษ์พันศพแห่งสมรภูมิ)",
+    "title_en": "Gashadokuro, The Giant Starving Skeleton of the Battlefields",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-nurikabe",
+    "title_th": "นูริคาเบะ (กำแพงผีล่องหนขวางทางนักเดินทางยามค่ำคืน)",
+    "title_en": "Nurikabe, The Impassable Phantom Wall of Fukuoka",
+    "category": "monster"
+  },
+  {
+    "id": "pin-huli-jing",
+    "title_th": "หูหลี่จิง (จิ้งจอกเก้าหางศักดิ์สิทธิ์แห่งเทือกเขาคุนหลุน)",
+    "title_en": "Huli Jing, The Nine-Tailed Spirit Fox of Mount Kunlun",
+    "category": "legend"
+  },
+  {
+    "id": "pin-fenghuang",
+    "title_th": "เฟิ่งหวง (พญาหงส์อมตะห้าสีแห่งแดนมังกร)",
+    "title_en": "Fenghuang, The Five-Colored Immortal Vermilion Phoenix",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-pocong",
+    "title_th": "โปจง (ผีมัดผ้าห่อศพกระโดดแห่งชวา)",
+    "title_en": "Pocong, The Shrouded Leaping Corpse of Java",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-tiyanak",
+    "title_th": "ติยานัค (ปีศาจทารกลวงตาแห่งเกาะเซบู)",
+    "title_en": "Tiyanak, The Deceptive Crying Forest Demon of Cebu",
+    "category": "monster"
+  },
+  {
+    "id": "pin-penanggalan",
+    "title_th": "ปีนังกาลัน (ผีหัวบินลากไส้แห่งคาบสมุทรมลายู)",
+    "title_en": "Penanggalan, The Flying Disembodied Head of Malaya",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-springheeled-jack",
+    "title_th": "สปริงฮีลแจ็ก (ปีศาจส้นเท้าสปริงพ่นไฟแห่งลอนดอน)",
+    "title_en": "Spring-heeled Jack, The Phantom Leaper of Victorian London",
+    "category": "legend"
+  },
+  {
+    "id": "pin-morgawr",
+    "title_th": "มอร์กอร์ (อสูรกายทะเลคอร์นวอลล์แห่งอ่าวฟัลมัท)",
+    "title_en": "Morgawr, The Cornish Sea Monster of Falmouth Bay",
+    "category": "monster"
+  },
+  {
+    "id": "pin-selkie",
+    "title_th": "เซลกี (พรายแมวน้ำจำแลงกายแห่งหมู่เกาะออร์กนีย์)",
+    "title_en": "The Selkies, Shape-Shifting Seal Folk of Orkney",
+    "category": "legend"
+  },
+  {
+    "id": "pin-tatzelwurm",
+    "title_th": "ทัตเซลเวิร์ม (กิ้งก่ามังกรหน้าแมวแห่งเทือกเขาแอลป์สวิส)",
+    "title_en": "Tatzelwurm, The Cat-Headed Clawed Dragon of the Alps",
+    "category": "monster"
+  },
+  {
+    "id": "pin-tarasque",
+    "title_th": "ทาราสก์ (อสูรมังกรกระดองเต่าแห่งลุ่มแม่น้ำโรน)",
+    "title_en": "The Tarasque, Spiked Dragon of Provence & Saint Martha",
+    "category": "monster"
+  },
+  {
+    "id": "pin-skunk-ape",
+    "title_th": "สคังค์เอป (บิ๊กฟุตกลิ่นสาบแห่งหนองน้ำเอเวอร์เกลดส์)",
+    "title_en": "The Florida Skunk Ape of the Everglades Swamps",
+    "category": "monster"
+  },
+  {
+    "id": "pin-hopkinsville",
+    "title_th": "ก็อบลินอวกาศแห่งฮอปกินส์วิลล์ (การปะทะด้วยปืนปี 1955)",
+    "title_en": "The Kelly-Hopkinsville Goblin Encounter of 1955",
+    "category": "monster"
+  },
+  {
+    "id": "pin-snallygaster",
+    "title_th": "สแนลลีแกสเตอร์ (อสูรปีกสัตว์เลื้อยคลานแห่งเทือกเขาบลูริดจ์)",
+    "title_en": "The Snallygaster of South Mountain & Blue Ridge",
+    "category": "monster"
+  },
+  {
+    "id": "pin-la-cegua",
+    "title_th": "ลาเซกัว (หญิงงามหัวม้าแห่งทางเปลี่ยวยามราตรี)",
+    "title_en": "La Cegua, The Horse-Faced Siren of Central America",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-madremonte",
+    "title_th": "มาเดรเดมอนเต (เทวีเจ้าป่าผมมอสแห่งเทือกเขาแอนดีส)",
+    "title_en": "Madremonte, The Moss-Crowned Forest Mother of the Andes",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-grootslang",
+    "title_th": "กรูตสแลง (พญาช้างอสรพิษดึกดำบรรพ์แห่งถ้ำริชเตอร์สเฟลด์)",
+    "title_en": "Grootslang, The Primal Elephant-Serpent of the Wonder Hole",
+    "category": "monster"
+  },
+  {
+    "id": "pin-popobawa",
+    "title_th": "โปโปบาวา (ปีศาจค้างคาวตาเดียวแห่งแซนซิบาร์)",
+    "title_en": "Popobawa: The One-Eyed Shapeshifting Bat Demon of Zanzibar",
+    "category": "curse"
+  },
+  {
+    "id": "pin-inkanyamba",
+    "title_th": "อินคันยัมบา (พญางูยักษ์เจ้าพายุแห่งน้ำตกฮาวิค)",
+    "title_en": "Inkanyamba: The Giant Storm Serpent of Howick Falls",
+    "category": "monster"
+  },
+  {
+    "id": "pin-asanbosam",
+    "title_th": "อัสซานโบซัม (อสูรต้นไม้เท้าขอเหล็กแห่งป่าดงดิบกานา)",
+    "title_en": "Asanbosam: Iron-Toothed Tree Vampire of Ghana",
+    "category": "legend"
+  },
+  {
+    "id": "pin-kongamato",
+    "title_th": "กองกามาโต (อสูรปีกดึกดำบรรพ์แห่งหนองน้ำจิวุนดู)",
+    "title_en": "Kongamato: The Pterosaur Cryptid of the Jiwundu Swamps",
+    "category": "monster"
+  },
+  {
+    "id": "pin-mamlambo",
+    "title_th": "มัมลัมโบ (เทพีมารแห่งสายน้ำและอสูรกลืนวิญญาณแห่งแม่น้ำเอ็มซินทลา)",
+    "title_en": "Mamlambo: The Brain-Draining River Goddess of Mzintlava",
+    "category": "legend"
+  },
+  {
+    "id": "pin-yakshini",
+    "title_th": "ยักษิณี (เทพีพฤกษานารีและผู้เฝ้าขุมทรัพย์แห่งถ้ำเอลโลรา)",
+    "title_en": "Yakshini: The Tree Dryad and Treasure Guardian of Ellora Caves",
+    "category": "legend"
+  },
+  {
+    "id": "pin-churel",
+    "title_th": "ชูเรล (วิญญาณแม่มดเท้ากลับหลังแห่งลุ่มน้ำคงคา)",
+    "title_en": "Churel: The Backward-Footed Witch Ghost of North India",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-brahmarakshasa",
+    "title_th": "พรหมรากษส (อสูรวิญญาณพราหมณ์ผู้ทรงเวทแห่งเมืองพาราณสี)",
+    "title_en": "Brahmarakshasa: The Cursed Scholar-Demon of Varanasi",
+    "category": "curse"
+  },
+  {
+    "id": "pin-vetala",
+    "title_th": "เวตาล (อมนุษย์ค้างคาวผีสิงศพและปริศนาพระวิกรมาทิตย์)",
+    "title_en": "Vetala: The Corpse-Haunting Vampire Spirit of Ujjain",
+    "category": "legend"
+  },
+  {
+    "id": "pin-pichal-peri",
+    "title_th": "พิชาล เปรี (นางพรายหิมะเท้ากลับหลังแห่งเทือกเขาหิมาลัย)",
+    "title_en": "Pichal Peri: The Backward-Footed Siren of the Himalayas",
+    "category": "legend"
+  },
+  {
+    "id": "pin-baigujing",
+    "title_th": "ปีศาจกระดูกขาว ไป๋กู่จิง (จอมมารจำแลงสามภพแห่งเขาไป๋กู่)",
+    "title_en": "Baigujing: The White Bone Demon of Mount Baigu",
+    "category": "curse"
+  },
+  {
+    "id": "pin-qilin",
+    "title_th": "กิเลน (สัตว์สวรรค์เบญจธาตุและมงคลพิทักษ์แห่งเขาไท่ซาน)",
+    "title_en": "Qilin: The Chimeric Auspicious Beast of Mount Tai",
+    "category": "legend"
+  },
+  {
+    "id": "pin-niutou-mamian",
+    "title_th": "หนิวโถว-หม่าเมี่ยน (ยมทูตหัววัวหน้าม้าแห่งเมืองผีเฟิงตู)",
+    "title_en": "Ox-Head and Horse-Face: The Underworld Guardians of Fengdu Ghost City",
+    "category": "curse"
+  },
+  {
+    "id": "pin-pixiu",
+    "title_th": "ปี่เซียะ (สัตว์สวรรค์กลืนกินทรัพย์แห่งกำแพงเมืองซีอาน)",
+    "title_en": "Pixiu: The Gold-Devouring Celestial Guardian of Xi'an",
+    "category": "legend"
+  },
+  {
+    "id": "pin-xuanwu",
+    "title_th": "เต่าดำเสวียนอู่ (เทพพิทักษ์ทิศอุดรและอสูรเต่างูแห่งเขาอู่ตัง)",
+    "title_en": "Xuanwu: The Black Tortoise & Snake God of Wudang Mountains",
+    "category": "legend"
+  },
+  {
+    "id": "pin-mongolian-death-worm",
+    "title_th": "หนอนมรณะแห่งมองโกเลีย (อสูรทรายพ่นกรดโอโลกอย-คอร์คอยแห่งโกบี)",
+    "title_en": "Mongolian Death Worm: The Acid-Spitting Sand Monster of the Gobi",
+    "category": "monster"
+  },
+  {
+    "id": "pin-almas",
+    "title_th": "อัลมาส (มนุษย์วานรป่าหิมะดึกดำบรรพ์แห่งเทือกเขาอัลไต)",
+    "title_en": "Almas: The Relic Wild Hominid of the Altai Mountains",
+    "category": "monster"
+  },
+  {
+    "id": "pin-burte-chino",
+    "title_th": "เบอร์เต ชิโน และโกอา มารัล (หมาป่าสีน้ำเงินบรรพบุรุษชาวมองโกลแห่งยอดเขาเบอร์คาน)",
+    "title_en": "Burte Chino & Goa Maral: The Celestial Blue Wolf of Burkhan Khaldun",
+    "category": "legend"
+  },
+  {
+    "id": "pin-tsagaan-ebugen",
+    "title_th": "ซากาน เอวูเกน (ผู้เฒ่าขาว เทพเจ้าแห่งผืนแผ่นดินและอายุวัฒนะ)",
+    "title_en": "Tsagaan Ebugen: The White Old Man of the Steppe",
+    "category": "legend"
+  },
+  {
+    "id": "pin-erlik-khan",
+    "title_th": "เออร์ลิก ข่าน (พญายมราชและเจ้าแห่งความมืดใต้พิภพตามคติเต็งกรี)",
+    "title_en": "Erlik Khan: The Underworld Sovereign of Siberian & Mongolian Shamanism",
+    "category": "curse"
+  },
+  {
+    "id": "pin-domovoy",
+    "title_th": "โดโมวอย (ผีผู้พิทักษ์เตาผิงและเคหาสน์แห่งสลาฟโบราณ)",
+    "title_en": "Domovoy: The Hearth and Household Spirit of Russian Lore",
+    "category": "legend"
+  },
+  {
+    "id": "pin-rusalka",
+    "title_th": "รูซัลกา (พรายน้ำเสน่หาและวิญญาณแห่งทะเลสาบไบคัล)",
+    "title_en": "Rusalka: The Tragic Water Siren of Lake Baikal",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-leshy",
+    "title_th": "เลชี (เจ้าป่าไทกาจำแลงร่างแห่งไซบีเรีย)",
+    "title_en": "Leshy: The Shapeshifting Forest Lord of the Siberian Taiga",
+    "category": "legend"
+  },
+  {
+    "id": "pin-koschei",
+    "title_th": "คอสเช ผู้ไม่มีวันตาย (จอมเวทย์อมตะแห่งเกาะลึกลับบูยาน)",
+    "title_en": "Koschei the Deathless: The Undying Sorcerer of Buyan Island",
+    "category": "legend"
+  },
+  {
+    "id": "pin-zmey-gorynych",
+    "title_th": "ซเมย์ โกรือนึช (พญามังกรสามหัวพ่นไฟแห่งเทือกเขาคอเคซัส)",
+    "title_en": "Zmey Gorynych: The Three-Headed Fire Dragon of the Caucasus",
+    "category": "legend"
+  },
+  {
+    "id": "pin-ninki-nanka",
+    "title_th": "นินกินันคา (มังกรมรณะแห่งลุ่มแม่น้ำแกมเบีย)",
+    "title_en": "Ninki Nanka: The Deadly Swamp Dragon of the River Gambia",
+    "category": "monster"
+  },
+  {
+    "id": "pin-nishi-dak",
+    "title_th": "นิชิดัก (วิญญาณเสียงเพรียกแห่งความตายในเบงกอล)",
+    "title_en": "Nishi Dak: The Deadly Night-Caller Ghost of Bengal",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-guiche",
+    "title_th": "กุ่ยเช่อ (วิหคปีศาจเก้าหัวแห่งแคว้นฉู่โบราณ)",
+    "title_en": "Guiche: The Nine-Headed Ghost Bird of Ancient Chu",
+    "category": "curse"
+  },
+  {
+    "id": "pin-shambhala-gate",
+    "title_th": "ประตูลี้ลับแห่งชัมบาลา (แดนพุทธทิพย์และพลังสนามแม่เหล็กแห่งโกบี)",
+    "title_en": "The Secret Gate of Shambhala: The Energy Nexus of the Eastern Gobi",
+    "category": "legend"
+  },
+  {
+    "id": "pin-baba-yaga",
+    "title_th": "บาบายากา (แม่มดเฒ่าแห่งกระท่อมขาไก่และสากบินในป่ารัสเซีย)",
+    "title_en": "Baba Yaga: The Hut on Chicken Legs and Mortar-Riding Witch",
+    "category": "legend"
+  },
+  {
+    "id": "pin-gamayun",
+    "title_th": "กามะยุน (วิหคพยากรณ์หน้าสตรีผู้ล่วงรู้ความลับแห่งจักรวาล)",
+    "title_en": "Gamayun: The Prophetic Bird of Slavic Divine Wisdom",
+    "category": "legend"
+  },
+  {
+    "id": "pin-kuyang",
+    "title_th": "กุยยัง (ผีกระสือลอยหัวลากไส้แห่งเกาะบอร์เนียว)",
+    "title_en": "Kuyang: The Floating Detached Head Vampire of Borneo",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-suanggi",
+    "title_th": "ซวงกี (หมอผีดำกินวิญญาณแห่งป่าดึกดำบรรพ์ปาปัว)",
+    "title_en": "Suanggi: The Flesh-Eating Shadow Sorcerer of Papua",
+    "category": "curse"
+  },
+  {
+    "id": "pin-kapre",
+    "title_th": "คาเปร (อสูรต้นไม้ร่างยักษ์สูบซิการ์แห่งป่าฟิลิปปินส์)",
+    "title_en": "Kapre: The Giant Tree-Dwelling Cigar Demon of the Philippines",
+    "category": "monster"
+  },
+  {
+    "id": "pin-bakunawa",
+    "title_th": "บาคูนากวา (พญานาคมังกรทะเลผู้กลืนดวงจันทร์แห่งวิซายาส)",
+    "title_en": "Bakunawa: The Colossal Moon-Swallowing Sea Dragon of Visayas",
+    "category": "monster"
+  },
+  {
+    "id": "pin-rangda-barong",
+    "title_th": "รางดาและบารอง (มหาศึกราชินีแม่มดและพญาอสูรผู้พิทักษ์แห่งบาหลี)",
+    "title_en": "Rangda & Barong: The Eternal Cosmic Battle of Bali",
+    "category": "legend"
+  },
+  {
+    "id": "pin-toraja-tau-tau",
+    "title_th": "หุ่นผาศพเตาเตาและพิธีกรรมเดินศพมะเนเนแห่งโทราจา",
+    "title_en": "Toraja Tau-Tau & Ma'nene: The Cliff Crypts of Sulawesi",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-rainbow-serpent",
+    "title_th": "พญางูสายรุ้ง (มหาเทพผู้สร้างแม่น้ำและขุนเขาแห่งดรีมไทม์)",
+    "title_en": "The Rainbow Serpent: The Dreamtime Creator of Rivers and Gorges",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-drop-bear",
+    "title_th": "ดรอปแบร์ (อสูรโคอาล่ากินเนื้อแห่งพุ่มไม้ออสเตรเลีย)",
+    "title_en": "Drop Bear: The Carnivorous Ambush Predator of the Aussie Bush",
+    "category": "monster"
+  },
+  {
+    "id": "pin-min-min-light",
+    "title_th": "ดวงไฟมินมิน (ลูกไฟปริศนาลอยไล่ตามคนกลางทะเลทรายเอาต์แบ็ก)",
+    "title_en": "Min Min Light: The Phantom Ghost Lights of the Outback",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-dirawong",
+    "title_th": "ดิราวง (พญาเหี้ยยักษ์ผู้พิทักษ์แห่งชาวบันดาลุง)",
+    "title_en": "Dirawong: The Giant Goanna Protector of the Bundjalung Nation",
+    "category": "legend"
+  },
+  {
+    "id": "pin-yara-ma-yha-who",
+    "title_th": "ยารา-มา-ยา-ฮู (ผีแคระแดงดูดเลือดกระโดดจากต้นมะเดื่อแห่งเอาต์แบ็ก)",
+    "title_en": "Yara-ma-yha-who: The Red Fig-Tree Vampire of Aboriginal Lore",
+    "category": "monster"
+  },
+  {
+    "id": "pin-patupaiarehe",
+    "title_th": "ปาตุไปอาเรเฮ (ชนเผ่าภูตผมทองผิวเผือกแห่งสายหมอกนิวซีแลนด์)",
+    "title_en": "Patupaiarehe: The Pale Fairy Folk of the New Zealand Mists",
+    "category": "legend"
+  },
+  {
+    "id": "pin-pouakai-eagle",
+    "title_th": "พัวไก (พญาอินทรียักษ์ฮาสต์ล่ามนุษย์แห่งตำนานเมารี)",
+    "title_en": "Pouakai: The Man-Eating Giant Haast's Eagle of the Southern Alps",
+    "category": "monster"
+  },
+  {
+    "id": "pin-darvaza-crater",
+    "title_th": "ประตูนรกดาร์วาซา (หลุมไฟลุกโชนตลอดกาลแห่งทะเลทรายคาราคุม)",
+    "title_en": "Gates of Hell: The Blazing Gas Crater of Darvaza",
+    "category": "curse"
+  },
+  {
+    "id": "pin-simurgh",
+    "title_th": "วิหคเพลิงสิเมิร์ก (พญานกปราชญ์อมตะแห่งเทือกเขาแอลบอร์ซ)",
+    "title_en": "Simurgh: The Immortal Benevolent Phoenix of Persian Lore",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-div-e-sepid",
+    "title_th": "ดีฟเซปิด (พญาอสูรยักษ์ขาวแห่งแคว้นมาซานดารัน)",
+    "title_en": "Div-e Sepid: The White Demon Chieftain of Mazandaran",
+    "category": "monster"
+  },
+  {
+    "id": "pin-aral-sea-ghost",
+    "title_th": "สุสานเรือผีแห่งทะเลอารัล (อาถรรพ์ผืนน้ำที่สาบสูญแห่งมูยนัค)",
+    "title_en": "Ghost Ships of the Aral Sea: The Desert Ship Cemetery of Muynak",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-samarkand-timur-tomb",
+    "title_th": "คำสาปสุสานติมูร์ (คำเตือนสงครามโลกจากกูร์เอมีร์แห่งซามาร์คันด์)",
+    "title_en": "The Curse of Timur's Tomb: The Doom Prophecy of Gur-e-Amir",
+    "category": "curse"
+  },
+  {
+    "id": "pin-charyn-witch-valley",
+    "title_th": "หุบผาแม่มดแห่งชาริน (เสาหินปราสาทปีศาจกลางสเตปป์คาซัค)",
+    "title_en": "Valley of Castles: The Witch Gorge of Charyn Canyon",
+    "category": "legend"
+  },
+  {
+    "id": "pin-mokele-mbembe",
+    "title_th": "โมเคเล-เอ็มเบมเบ (ไดโนเสาร์ซอโรพอดผู้ยังมีชีวิตแห่งบึงทะเลสาบเตเล)",
+    "title_en": "Mokele-mbembe: The Living Sauropod Dinosaur of Lake Tele",
+    "category": "monster"
+  },
+  {
+    "id": "pin-kalanoro",
+    "title_th": "คาลานอโร (มนุษย์แคระป่าดงหนามหินปูนแห่งมาดากัสการ์)",
+    "title_en": "Kalanoro: The Telepathic Dwarf Spirits of Madagascar's Tsingy",
+    "category": "monster"
+  },
+  {
+    "id": "pin-skeleton-coast-ghosts",
+    "title_th": "ชายฝั่งโครงกระดูก (ประตูนรกและสุสานเรืออับปางแห่งนามิเบีย)",
+    "title_en": "The Skeleton Coast: The Gates of Hell and Shipwreck Graveyard",
+    "category": "curse"
+  },
+  {
+    "id": "pin-nyaminyami",
+    "title_th": "นยามินยามิ (เทพเจ้าพญางูสายน้ำซัมเบซีผู้พิโรธต่อเขื่อนคาริบา)",
+    "title_en": "Nyaminyami: The Zambezi River God's Wrath at Kariba Dam",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-maasai-enkayi",
+    "title_th": "โอลดอยนโยเลงไก (ภูเขาไฟแห่งพระเจ้าและลาวาภูตสีดำของชาวมาไซ)",
+    "title_en": "Ol Doinyo Lengai: The Mountain of God and Black Carbonatite Lava",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-vazimba",
+    "title_th": "วาซิมบา (วิญญาณชนเผ่าปฐมกาลผู้สถิตในหินและต้นไม้ศักดิ์สิทธิ์)",
+    "title_en": "Vazimba: The Primordial Ancestral Spirits of the Central Highlands",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-pele-volcano",
+    "title_th": "เปเล่ (เทพีแห่งไฟและภูเขาไฟคิลาเวอา)",
+    "title_en": "Pele: The Goddess of Fire & Volcanoes of Kīlauea",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-dakuwaqa",
+    "title_th": "ดาคูวากา (เทพเจ้าฉลามผู้พิทักษ์แห่งแนวปะการังฟิจิ)",
+    "title_en": "Dakuwaqa: The Shark God Guardian of the Fijian Reefs",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-moai-mana",
+    "title_th": "พลังมานาแห่งโมไอ (รูปสลักหินบรรพบุรุษเดินได้แห่งเกาะอีสเตอร์)",
+    "title_en": "Mana of the Moai: The Walking Stone Ancestors of Rapa Nui",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-nan-madol-ruins",
+    "title_th": "นครลอยน้ำนันมาดอล (อาถรรพ์เมืองหินบะซอลต์และมนต์สะกดแห่งโพห์นเปย์)",
+    "title_en": "Nan Madol: The Venice of the Pacific and The Magicians' Sinking City",
+    "category": "legend"
+  },
+  {
+    "id": "pin-menehune",
+    "title_th": "เมเนฮูเน (มนุษย์แคระผู้สร้างสิ่งมหัศจรรย์ข้ามคืนแห่งฮาวาย)",
+    "title_en": "Menehune: The Mythical Master Stonemason Dwarfs of Kauai",
+    "category": "legend"
+  },
+  {
+    "id": "pin-majlis-al-jinn",
+    "title_th": "มัจลิส อัล-ญินน์ (สภาแห่งญินในถ้ำยักษ์ใต้พิภพแห่งโอมาน)",
+    "title_en": "Majlis al Jinn: The Subterranean Council Chamber of the Spirits",
+    "category": "legend"
+  },
+  {
+    "id": "pin-ghoul-arabia",
+    "title_th": "กูล (อสูรทะเลทรายจำแลงกินศพแห่งผืนทรายเวิ้งว้างรูบอัลคาลี)",
+    "title_en": "The Ghoul: The Shape-Shifting Flesh-Eater of the Rub' al Khali",
+    "category": "monster"
+  },
+  {
+    "id": "pin-hegra-thamud",
+    "title_th": "สุสานหินเฮกราและอาถรรพ์สายฟ้าชนเผ่าธามุดแห่งอัลอูลา",
+    "title_en": "Hegra: The Rock Tombs and The Thunderous Doom of the Thamud",
+    "category": "curse"
+  },
+  {
+    "id": "pin-zar-spirit",
+    "title_th": "พิธีกรรมซาร์ (มนต์สะกดขับวิญญาณแห่งลุ่มแม่น้ำไนล์)",
+    "title_en": "The Zār: Trance Rites and Spirit Possession of the Nile",
+    "category": "curse"
+  },
+  {
+    "id": "pin-boto-encantado",
+    "title_th": "โบโต เอนคันตาโด (โลมาสีชมพูแปลงกายล่อลวงสาวแห่งแอมะซอน)",
+    "title_en": "Boto Encantado: The Pink River Dolphin Shapeshifter of the Amazon",
+    "category": "legend"
+  },
+  {
+    "id": "pin-boitata",
+    "title_th": "บอยตาตา (พญางูเพลิงร้อยเนตรผู้พิทักษ์ป่าปังตานัล)",
+    "title_en": "Boitatá: The Fiery Serpent with a Hundred Glowing Eyes",
+    "category": "monster"
+  },
+  {
+    "id": "pin-cuca-alligator",
+    "title_th": "คูกา (แม่มดจระเข้ลักพาตัวเด็กแห่งนิทานพื้นบ้านบราซิล)",
+    "title_en": "Cuca: The Alligator-Headed Hag of Brazilian Lore",
+    "category": "monster"
+  },
+  {
+    "id": "pin-caleuche",
+    "title_th": "เอล กาเลอูเช (เรือผีเรืองแสงแห่งหมู่เกาะชิโลเอ)",
+    "title_en": "El Caleuche: The Phantom Party Ship of Chiloé Archipelago",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-camazotz",
+    "title_th": "คามาซอตซ์ (เทพค้างคาวแห่งความตายและราตรีแห่งชนเผ่ามายา)",
+    "title_en": "Camazotz: The Death Bat God of the Mayan Popol Vuh",
+    "category": "monster"
+  },
+  {
+    "id": "pin-cadejo",
+    "title_th": "คาเดโฮ (สุนัขวิญญาณขาวดำผู้พิทักษ์และล่าวิญญาณแห่งอเมริกากลาง)",
+    "title_en": "El Cadejo: The White Protector & Black Phantom Hounds of Central America",
+    "category": "legend"
+  },
+  {
+    "id": "pin-huldufolk",
+    "title_th": "ฮุลดูโฟล์ก (ชนเผ่าเร้นลับในโขดหินลาวาแห่งไอซ์แลนด์)",
+    "title_en": "Huldufólk: The Hidden People of the Icelandic Lava Rocks",
+    "category": "legend"
+  },
+  {
+    "id": "pin-kraken-lofoten",
+    "title_th": "คราเคน (พญาสัตว์ประหลาดหมึกยักษ์กลืนเรือแห่งหมู่เกาะโลโฟเทน)",
+    "title_en": "The Kraken: The Colossal Ship-Crushing Cephalopod of Lofoten",
+    "category": "monster"
+  },
+  {
+    "id": "pin-nokken-neck",
+    "title_th": "เนกเค่น (พรายน้ำไวโอลินสะกดจิตแห่งน้ำตกสแกนดิเนเวีย)",
+    "title_en": "Nøkken: The Shapeshifting Water Violinist of Scandinavian Waterfalls",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-black-shuck",
+    "title_th": "แบล็คชัค (สุนัขปีศาจตาไฟแห่งโบสถ์บลิตเบิร์กและมรณะเตือน)",
+    "title_en": "Black Shuck: The Red-Eyed Hellhound of Blythburgh Church",
+    "category": "monster"
+  },
+  {
+    "id": "pin-redcap",
+    "title_th": "เรดแคป (ก็อบลินย้อมหมวกเลือดแห่งปราสาทเฮอร์มิเทจ)",
+    "title_en": "Redcap: The Blood-Dyeing Murderous Goblin of Hermitage Castle",
+    "category": "monster"
+  },
+  {
+    "id": "pin-qiongqi-beast",
+    "title_th": "ฉงฉี (หนึ่งในสี่อสูรร้ายโบราณ เสือมีปีกผู้กินคนชอบธรรม)",
+    "title_en": "Qiongqi: The Winged Tiger Monster of the Four Perils",
+    "category": "monster"
+  },
+  {
+    "id": "pin-taotie-beast",
+    "title_th": "เถาเที่ย (อสูรตะกละจอมเขมือบแห่งเครื่องสำริดโบราณราชวงศ์ซาง)",
+    "title_en": "Taotie: The Insatiable Gluttonous Monster of Shang Bronzes",
+    "category": "monster"
+  },
+  {
+    "id": "pin-korean-gumiho",
+    "title_th": "คูมิโฮ (จิ้งจอกเก้าหางกินตับมนุษย์แห่งเทือกเขาจีรีซาน)",
+    "title_en": "Kumiho: The Liver-Devouring Nine-Tailed Fox of Mount Jiri",
+    "category": "monster"
+  },
+  {
+    "id": "pin-jangsan-tiger",
+    "title_th": "พญาเสือชังซาน (อสูรเสือขาวเลียนเสียงเรียกคนแห่งปูซาน)",
+    "title_en": "Jangsan Tiger: The Voice-Mimicking White Phantom of Busan",
+    "category": "monster"
+  },
+  {
+    "id": "pin-bhoot-tree",
+    "title_th": "ภูต (วิญญาณไร้เงาเท้ากลับหลังสิงสถิตต้นโพธิ์แห่งอินเดีย)",
+    "title_en": "The Bhoot: The Shadowless Tree-Haunting Wraith of Northern India",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-pret-suthat",
+    "title_th": "เปรตวัดสุทัศน์ เสาชิงช้า",
+    "title_en": "Preta of Wat Suthat & The Giant Swing",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-krahang-u-thong",
+    "title_th": "ผีกระหัง บินร่อนเหนือดงตาล",
+    "title_en": "Phi Krahang of the Ancient Palm Forest",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-chiang-dao",
+    "title_th": "อาถรรพ์ถ้ำเชียงดาวและเมืองลับแล",
+    "title_en": "Chiang Dao Mystical Caves & The Hidden Realm",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-overtoun-bridge",
+    "title_th": "สะพานมรณะโอเวอตูน สะพานสุนัขฆ่าตัวตาย",
+    "title_en": "Overtoun Bridge (The Canine Suicide Bridge)",
+    "category": "curse"
+  },
+  {
+    "id": "pin-leap-castle",
+    "title_th": "ปราสาทผีสิงลิปส์และดิเอเลเมนทัล",
+    "title_en": "Leap Castle & The Ancient Elemental",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-loveland-frogman",
+    "title_th": "มนุษย์กบแห่งเลิฟแลนด์ (อมนุษย์สะเทินน้ำสะเทินบกแห่งโอไฮโอ)",
+    "title_en": "The Loveland Frogman of Ohio",
+    "category": "monster"
+  },
+  {
+    "id": "pin-lizard-man-sc",
+    "title_th": "มนุษย์กิ้งก่าแห่งหนองน้ำสเคปออร์ (อสูรเล็บยักษ์แห่งลีเคาน์ตี)",
+    "title_en": "The Lizard Man of Scape Ore Swamp",
+    "category": "monster"
+  },
+  {
+    "id": "pin-pope-lick-monster",
+    "title_th": "อสูรแพะแห่งทางรถไฟโปปลิค (ปีศาจสะกดจิตแห่งสะพานสูง)",
+    "title_en": "The Pope Lick Monster (Goatman of the Trestle)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-fresno-nightcrawlers",
+    "title_th": "ไนท์ครอว์เลอร์แห่งเฟรสโน (อมนุษย์ขากางเกงขาวเร่ร่อน)",
+    "title_en": "The Fresno Nightcrawlers of California",
+    "category": "legend"
+  },
+  {
+    "id": "pin-dover-demon",
+    "title_th": "โดเวอร์เดมอน (อสูรไร้ขนตาโตแห่งแมสซาชูเซตส์)",
+    "title_en": "The Dover Demon of Massachusetts",
+    "category": "monster"
+  },
+  {
+    "id": "pin-altamaha-ha",
+    "title_th": "อัลตามฮา-ฮา (อสูรน้ำปากจระเข้แห่งแม่น้ำอัลตามฮา)",
+    "title_en": "Altamaha-ha (Altie River Monster of Georgia)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-ozark-howler",
+    "title_th": "โอซาร์กฮาวเลอร์ (อสูรคำรามขนดกเขางุ้มแห่งอาร์คันซอ)",
+    "title_en": "The Ozark Howler of the Arkansas Wilderness",
+    "category": "monster"
+  },
+  {
+    "id": "pin-van-meter-visitor",
+    "title_th": "แวนมิเตอร์วิสิเตอร์ (อสูรมีปีกปล่อยลำแสงแห่งไอโอวา)",
+    "title_en": "The Van Meter Visitor of Iowa",
+    "category": "monster"
+  },
+  {
+    "id": "pin-rougarou-swamp",
+    "title_th": "รูการู (มนุษย์หมาป่าแห่งบึงเคจุนและหนองน้ำหลุยเซียน่า)",
+    "title_en": "The Rougarou of the Louisiana Bayou",
+    "category": "monster"
+  },
+  {
+    "id": "pin-manipogo",
+    "title_th": "มานิโปโก (อสูรน้ำคอยาวแห่งทะเลสาบแมนิโทบา)",
+    "title_en": "Manipogo (The Lake Monster of Manitoba)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-waheela-nahanni",
+    "title_th": "วาฮีลา (หมาป่ายักษ์สีขาวแห่งหุบเขาไร้หัว)",
+    "title_en": "Waheela (The White Ghost Wolf of Nahanni Valley)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-melon-heads-ohio",
+    "title_th": "มนุษย์หัวแตงโมแห่งเคิร์ตแลนด์ (ตำนานเด็กต้องสาปในป่าลึก)",
+    "title_en": "The Melon Heads of Kirtland",
+    "category": "legend"
+  },
+  {
+    "id": "pin-glawackus-connecticut",
+    "title_th": "กลาวาคัส (อสูรแมวยักษ์กรีดร้องแห่งกลาสตันเบอรี)",
+    "title_en": "The Glawackus of Glastonbury",
+    "category": "monster"
+  },
+  {
+    "id": "pin-beast-of-bladenboro",
+    "title_th": "สัตว์ร้ายแห่งเบลดเดนโบโร (แวมไพร์ลึกลับดูดเลือดสัตว์)",
+    "title_en": "The Beast of Bladenboro",
+    "category": "monster"
+  },
+  {
+    "id": "pin-squonk-pennsylvania",
+    "title_th": "สควองค์ (อสูรขี้แยผู้อัปลักษณ์แห่งป่าเพนซิลเวเนีย)",
+    "title_en": "The Squonk of Pennsylvania Hemlock Forests",
+    "category": "monster"
+  },
+  {
+    "id": "pin-hodag-rhinelander",
+    "title_th": "โฮแดก (อสูรมีเขาหนามและกลิ่นกำมะถันแห่งวิสคอนซิน)",
+    "title_en": "The Hodag of Rhinelander",
+    "category": "monster"
+  },
+  {
+    "id": "pin-ogua-monongahela",
+    "title_th": "โอกัว (อสูรเต่ายักษ์หุ้มเกราะแห่งแม่น้ำโมนอนกาฮีลา)",
+    "title_en": "The Ogua of Monongahela River",
+    "category": "monster"
+  },
+  {
+    "id": "pin-sheepsquatch-wv",
+    "title_th": "ชีปสควอตช์ (อสูรขนแกะขาวสองขาแห่งเวสต์เวอร์จิเนีย)",
+    "title_en": "The Sheepsquatch of Boone County",
+    "category": "monster"
+  },
+  {
+    "id": "pin-beast-of-busco",
+    "title_th": "ออสการ์ อสูรเต่ายักษ์แห่งชูรูบัสโก (บีสต์ออฟบุสโก)",
+    "title_en": "The Beast of Busco (Oscar the Giant Snapping Turtle)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-red-ghost-arizona",
+    "title_th": "เรดโกสต์แห่งแอริโซนา (อูฐผีสิงและโครงกระดูกบนหลัง)",
+    "title_en": "The Red Ghost (Arizona's Phantom Camel)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-la-sayona-venezuela",
+    "title_th": "ลาซาโยนา (วิญญาณสตรีชุดขาวผู้แก้แค้นคนนอกใจ)",
+    "title_en": "La Sayona (The Vengeful Apparition of Venezuela)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-siguanaba-central-america",
+    "title_th": "ลาซิกวานาบา (นางพรายแปลงกายใบหน้าม้าแห่งอเมริกากลาง)",
+    "title_en": "La Siguanaba of Central America",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-yasy-yatere",
+    "title_th": "ยาซี ยาเตเร (ภูตจิ๋วผมทองเป่านกหวีดล่อลวงเด็กแห่งปารากวัย)",
+    "title_en": "Yasy Yatere (The Golden Child of Guarani Lore)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-peuchen-chile",
+    "title_th": "เปวเชน (อสรพิษมีปีกดูดเลือดแห่งป่าชิลี)",
+    "title_en": "Peuchen (The Winged Blood-Drinker of Chile)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-cuero-lake-chile",
+    "title_th": "เอลกูเอโร (ปีศาจหนังวัวดูดเหยื่อใต้ทะเลสาบชิลี)",
+    "title_en": "El Cuero (The Lake Cowhide Monster)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-luison-paraguay",
+    "title_th": "ลุยซอน (อสูรหมาป่าเฝ้าสุสานและกินซากศพแห่งปารากวัย)",
+    "title_en": "Luison (The Lord of Graves and Death)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-mohan-colombia",
+    "title_th": "เอลโมฮัน (พรายน้ำเคราดกสูบยาเส้นแห่งแม่น้ำมักดาเลนา)",
+    "title_en": "El Mohan (The River Sorcerer of Colombia)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-sombreron-guatemala",
+    "title_th": "เอลซอมเบรรอน (ภูตแคระสวมหมวกปีกกว้างผู้ถักเปียยามราตรี)",
+    "title_en": "El Sombreron (The Night Braider of Guatemala)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-maricoxi-amazon",
+    "title_th": "มาริโคซี (มนุษย์วานรยักษ์ติดธนูแห่งแอมะซอน)",
+    "title_en": "The Maricoxi of the Amazon Rainforest",
+    "category": "monster"
+  },
+  {
+    "id": "pin-minhocao-brazil",
+    "title_th": "มินโฮเกา (อสูรไส้เดือนยักษ์เกล็ดดำขุดโพรงใต้พิภพ)",
+    "title_en": "Minhocao (The Subterranean Earthworm Behemoth)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-caboclo-d-agua",
+    "title_th": "คาโบกลูดากวา (พรายน้ำทองแดงตาเดียวแห่งแม่น้ำเซาฟรังซีสกู)",
+    "title_en": "Caboclo d'Agua (The River Guardian of Sao Francisco)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-capelobo-brazil",
+    "title_th": "คาเปโลโบ (อสูรหน้าตัวกินมดกึ่งมนุษย์ดูดสมอง)",
+    "title_en": "Capelobo (The Anteater-Headed Werebeast)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-pombero-guarani",
+    "title_th": "เอลปอมเบโร (ภูตแคระขนดกผู้พิทักษ์ป่าแห่งชาวกวารานี)",
+    "title_en": "El Pombero (The Forest Guardian of Guarani Lore)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-hombre-caiman",
+    "title_th": "อมนุษย์จระเข้แห่งเพลาโต (โฮมเบรไกมันแห่งแม่น้ำมักดาเลนา)",
+    "title_en": "The Alligator Man of Plato (El Hombre Caiman)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-black-monk-pontefract",
+    "title_th": "แบล็กมองค์แห่งพอนเตแฟรกต์ (โพลเตอร์ไกสต์บ้านเลขที่ 30)",
+    "title_en": "The Black Monk of Pontefract (30 East Drive)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-grey-man-ben-macdui",
+    "title_th": "บุรุษสีเทาแห่งยอดเขาเบนแมคดูอี (อสูรหมอกแห่งสก็อตแลนด์)",
+    "title_en": "Am Fear Liath Mor (The Big Grey Man of Ben Macdui)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-morag-loch-morar",
+    "title_th": "มอแร็ก (อสูรน้ำแห่งทะเลสาบมอราร์ ทะเลสาบน้ำจืดที่ลึกที่สุด)",
+    "title_en": "Morag (The Lake Monster of Loch Morar)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-trow-orkney",
+    "title_th": "เดอะโทรว (ภูตแคระนักดนตรีใต้ดินแห่งหมู่เกาะออร์คนีย์)",
+    "title_en": "The Trows of Orkney and Shetland",
+    "category": "legend"
+  },
+  {
+    "id": "pin-brown-lady-raynham",
+    "title_th": "เดอะบราวน์เลดี้แห่งเรย์นแฮมฮอลล์ (ภาพถ่ายวิญญาณบันไดไม้โอ๊ค)",
+    "title_en": "The Brown Lady of Raynham Hall",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-green-man-celtic",
+    "title_th": "เดอะกรีนแมน (บุรุษใบไม้สีเขียวแห่งวิหารยุคกลาง)",
+    "title_en": "The Green Man of Ancient Cathedrals",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-jenny-greenteeth",
+    "title_th": "เจนนี่ฟันเขียว (พรายน้ำฟันแหลมจอมลากเด็กลงบึงน้ำ)",
+    "title_en": "Jenny Greenteeth (The River Hag of Lancashire)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-black-dog-bouley",
+    "title_th": "หมาปีศาจแห่งอ่าวบูเลย์ (แบล็กด็อกเฝ้าชายฝั่งเกาะเจอร์ซีย์)",
+    "title_en": "The Black Dog of Bouley Bay",
+    "category": "monster"
+  },
+  {
+    "id": "pin-morbach-monster",
+    "title_th": "อสูรแห่งมอร์บาค (มนุษย์หมาป่าตัวสุดท้ายแห่งเยอรมนี)",
+    "title_en": "The Morbach Monster (Germany's Last Werewolf)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-dahu-alps",
+    "title_th": "ดายู (สัตว์ปริศนาขาไม่เท่ากันแห่งเทือกเขาแอลป์)",
+    "title_en": "The Dahu of the French and Swiss Alps",
+    "category": "legend"
+  },
+  {
+    "id": "pin-blue-men-minch",
+    "title_th": "บลูเมนออฟเดอะมินช์ (พรายน้ำมนุษย์ตัวสีฟ้าแห่งสก็อตแลนด์)",
+    "title_en": "The Blue Men of the Minch",
+    "category": "monster"
+  },
+  {
+    "id": "pin-each-uisge",
+    "title_th": "เอคอิชเก (ม้าพรายน้ำจอมสังหารแห่งที่ราบสูงสก็อตแลนด์)",
+    "title_en": "Each-Uisge (The Scottish Highland Water Horse)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-peg-powler",
+    "title_th": "เพกพาวเลอร์ (นางพรายผมเขียวแห่งแม่น้ำทีส์)",
+    "title_en": "Peg Powler (The Green Hag of River Tees)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-grindylow",
+    "title_th": "กรินไดโลว์ (ปีศาจนิ้วยาวซุ่มจับเหยื่อใต้บึงยอร์กเชียร์)",
+    "title_en": "The Grindylow of Yorkshire Bogs",
+    "category": "monster"
+  },
+  {
+    "id": "pin-gloucester-sea-serpent",
+    "title_th": "งูทะเลยักษ์แห่งกลอสเตอร์ (อสูรทะเลบันทึกประวัติศาสตร์ปี 1817)",
+    "title_en": "The Gloucester Sea Serpent of 1817",
+    "category": "monster"
+  },
+  {
+    "id": "pin-raystown-ray",
+    "title_th": "เรย์สทาวน์เรย์ (อสูรน้ำคอยาวแห่งทะเลสาบเรย์สทาวน์)",
+    "title_en": "Raystown Ray of Pennsylvania",
+    "category": "monster"
+  },
+  {
+    "id": "pin-mishipeshu-superior",
+    "title_th": "มิชิเปชู (พญาสิงห์เสือแพนเธอร์ใต้พิภพแห่งทะเลสาบซูพีเรียร์)",
+    "title_en": "Mishipeshu (The Great Lynx of Lake Superior)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-kushtaka-alaska",
+    "title_th": "คุชทากา (อมนุษย์นากแปลงกายแห่งอลาสกา)",
+    "title_en": "Kushtaka (The Otter-Man of Tlingit Lore)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-pukwudgie-massachusetts",
+    "title_th": "ปุกวุดจี (คนแคระขนดกผู้ใช้ลูกศรพิษแห่งบริดจ์วอเตอร์)",
+    "title_en": "The Pukwudgie of the Bridgewater Triangle",
+    "category": "monster"
+  },
+  {
+    "id": "pin-wolpertinger-bavaria",
+    "title_th": "โวลเพอร์ทิงเกอร์ (สัตว์ลูกผสมมีเขาและปีกแห่งป่าบาวาเรีย)",
+    "title_en": "The Wolpertinger of the Bavarian Alps",
+    "category": "legend"
+  },
+  {
+    "id": "pin-lindworm-austria",
+    "title_th": "ลินด์วอร์ม (มังกรไร้ปีกสองขาแห่งคลาเกนฟวร์ท)",
+    "title_en": "The Lindworm of Klagenfurt",
+    "category": "monster"
+  },
+  {
+    "id": "pin-basilisk-basel",
+    "title_th": "บาซิลิสก์แห่งบาเซิล (ราชาอสรพิษผู้พิทักษ์แห่งสวิตเซอร์แลนด์)",
+    "title_en": "The Basilisk of Basel",
+    "category": "monster"
+  },
+  {
+    "id": "pin-knockers-cornwall",
+    "title_th": "น็อกเกอร์ส (ภูตเคาะหินเตือนภัยแห่งเหมืองดีบุกคอร์นวอลล์)",
+    "title_en": "The Knockers of Cornish Tin Mines",
+    "category": "legend"
+  },
+  {
+    "id": "pin-buggane-manx",
+    "title_th": "บักเกน (อสูรยักษ์พังหลังคาโบสถ์แห่งเกาะแมน)",
+    "title_en": "The Buggane of St Trinian's Church",
+    "category": "monster"
+  },
+  {
+    "id": "pin-sleipnir-norse",
+    "title_th": "สเลปนีร์ (ม้าแปดขาแห่งโอดินและหุบผาแอสเบอร์กี)",
+    "title_en": "Sleipnir (Odin's Eight-Legged Steed of Asbyrgi)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-gjenganger-nordic",
+    "title_th": "เยนกันเกอร์ (ผีดิบคืนชีพแพร่พิษร้ายแห่งสแกนดิเนเวีย)",
+    "title_en": "Gjenganger (The Scandinavian Walking Revenant)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-ahool-mount-salak",
+    "title_th": "อาฮูล (อสูรวานรปีกค้างคาวแห่งยอดเขาซาลัก)",
+    "title_en": "The Ahool of Mount Salak",
+    "category": "monster"
+  },
+  {
+    "id": "pin-berbalang-cagayan",
+    "title_th": "เบอร์บาลัง (เผ่าพันธุ์กินศพมีปีกแห่งเกาะซูลู)",
+    "title_en": "The Berbalangs of Cagayan de Sulu",
+    "category": "monster"
+  },
+  {
+    "id": "pin-sigbin-philippines",
+    "title_th": "ซิกบิน (สัตว์ประหลาดเงาเดินถอยหลังแห่งฟิลิปปินส์)",
+    "title_en": "The Sigbin of the Visayas",
+    "category": "monster"
+  },
+  {
+    "id": "pin-baak-assam",
+    "title_th": "บาค (ผีน้ำสถิตบึงจับมนุษย์ขังใต้โคลนแห่งรัฐอัสสัม)",
+    "title_en": "The Baak of Assam Wetlands",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-mu-onna-japan",
+    "title_th": "มุอนนะ (วิญญาณสตรีไร้หน้าผู้พิทักษ์เด็กแห่งญี่ปุ่น)",
+    "title_en": "Mu-onna (The Faceless Mother Spirit of Japan)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-betobeto-san-japan",
+    "title_th": "เบโตะเบโตะซัง (ภูตเสียงฝีเท้าตามหลังยามค่ำคืน)",
+    "title_en": "Betobeto-san (The Footstep Yokai of Nara)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-shirime-japan",
+    "title_th": "ชิริเมะ (โยไกตาเดียวที่ทวารหนักแห่งเกียวโต)",
+    "title_en": "Shirime (The Eye-in-the-Anus Yokai)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-ittan-momen-japan",
+    "title_th": "อิตตันโมเมน (ผีผ้าขาวลอยฟ้าแห่งคาโกชิมะ)",
+    "title_en": "Ittan-momen (The Flying Cloth Yokai)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-noppera-bo-japan",
+    "title_th": "นพเพระโบ (ผีหน้าเนียนไร้เครื่องหน้าแห่งเนินมืด)",
+    "title_en": "Noppera-bo (The Faceless Shapeshifter of Edo)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-bake-danuki-shikoku",
+    "title_th": "บาเกะดานุกิ (ดันซาบุโร่ ทานุกิแปลงกายมหาอำนาจแห่งเกาะซาโดะ)",
+    "title_en": "Bake-danuki (Danzaburo-danuki of Sado Island)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-chouchin-obake",
+    "title_th": "โชจินโอบาเกะ (ผีโคมกระดาษตาเดียวแลบลิ้นยาว)",
+    "title_en": "Chochin-obake (The Paper Lantern Yokai)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-kasa-obake",
+    "title_th": "คาซะโอบาเกะ (ผีร่มขาเดียวตาเดียวแลบลิ้นกระโดด)",
+    "title_en": "Kasa-obake (The One-Legged Umbrella Yokai)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-mokumokuren",
+    "title_th": "โมคุโมคุเรน (ดวงตาปริศนาในช่องประตูบานเลื่อนโชจิ)",
+    "title_en": "Mokumokuren (The Eyes on the Paper Screen)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-ashiarai-yashiki",
+    "title_th": "อาชิอะไรยาชิกิ (คฤหาสน์เท้าปีศาจขอยืมล้างเท้าแห่งเอโดะ)",
+    "title_en": "Ashiarai Yashiki (The Foot-Washing Mansion of Edo)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-umibozu-sea-monk",
+    "title_th": "อุมิโบซุ (พระสงฆ์ยักษ์แห่งท้องทะเลลึกผู้คว่ำเรือ)",
+    "title_en": "Umibozu (The Giant Sea Monk of the Pacific)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-baku-dream-eater",
+    "title_th": "บาคุ (อสูรศักดิ์สิทธิ์กลืนกินฝันร้ายแห่งญี่ปุ่น)",
+    "title_en": "Baku (The Sacred Nightmare-Devouring Chimera)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-penghou-tree-spirit",
+    "title_th": "เผิงโหว (ภูตสุนัขสีดำไร้หางสิงสถิตในต้นการบูรพันปี)",
+    "title_en": "Peng Hou (The Ancient Camphor Tree Spirit)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-tiangou-celestial-dog",
+    "title_th": "เทียนโก่ว (สุนัขสวรรค์ผู้กลืนกินดวงจันทร์และดวงอาทิตย์)",
+    "title_en": "Tiangou (The Celestial Dog of Chinese Astronomy)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-dijiang-chaos-beast",
+    "title_th": "ตี้เจียง (เทพอสูรหกขาปีกสี่ไร้หน้าแห่งความโกลาหล)",
+    "title_en": "Dijiang (The Faceless Deity of Primal Chaos)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-bai-ze-kunlun",
+    "title_th": "ไป่เจ๋อ (สัตว์สวรรค์สีขาวผู้รู้แจ้งภูตผีปีศาจทั้งปวง)",
+    "title_en": "Bai Ze (The Omniscient Beast of Mount Kunlun)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-nian-beast-china",
+    "title_th": "เหนียน (สัตว์ร้ายโบราณผู้เกลียดเสียงประทัดและสีแดง)",
+    "title_en": "The Nian Beast of Lunar New Year",
+    "category": "monster"
+  },
+  {
+    "id": "pin-dalgyal-gwisin-korea",
+    "title_th": "ทัลกยัลกวิชิน (ผีไข่ไร้หน้ามรณะแห่งเกาหลี)",
+    "title_en": "Dalgyal Gwisin (The Egg Ghost of Korean Lore)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-mul-gwisin-korea",
+    "title_th": "มุลกวิชิน (ผีพรายน้ำจับขาแห่งแม่น้ำฮัน)",
+    "title_en": "Mul Gwisin (The Water Ghost of the Han River)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-cheuksin-toilet-goddess",
+    "title_th": "ช็อกชิน (เทวีผู้ดุร้ายแห่งห้องส้วมโบราณเกาหลี)",
+    "title_en": "Cheuksin (The Toilet Goddess of Korean Lore)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-chollima-winged-steed",
+    "title_th": "ชอลลีมา (ม้าพันลี้มีปีกผู้ทะยานเหนือห้วงเมฆ)",
+    "title_en": "Chollima (The Thousand-Li Winged Steed)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-jayuro-ghost-korea",
+    "title_th": "ผีสาวแห่งทางหลวงจายูโร (วิญญาณแว่นกันแดดหลุมตาดำ)",
+    "title_en": "The Jayu-ro Highway Ghost of Goyang",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-kikiyaon-west-africa",
+    "title_th": "คิกิยาออน (นกฮูกยักษ์ล่าวิญญาณแห่งป่าเซเนกัล)",
+    "title_en": "The Kikiyaon (Giant Soul-Eating Owl of Senegal)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-emela-ntouka-congo",
+    "title_th": "เอเมลา-เอ็นทูคา (อสูรแรดนอเดียวผู้สังหารช้างแห่งคองโก)",
+    "title_en": "Emela-ntouka (The Killer of Elephants)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-nguma-monene-congo",
+    "title_th": "งูมา-โมเนเน (พญางูยักษ์ครีบสันหลังแห่งแม่น้ำดองโก)",
+    "title_en": "Nguma-monene (The Crested Giant Serpent of the Congo)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-adze-togo",
+    "title_th": "แอดเซ (ปีศาจหิ่งห้อยดูดเลือดแปลงกายแห่งกานาและโตโก)",
+    "title_en": "The Adze (The Firefly Vampire of West Africa)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-bahamut-arabian",
+    "title_th": "บาฮามุต (มหาปลาวาฬยักษ์ผู้รองรับผืนพิภพและจักรวาล)",
+    "title_en": "Bahamut (The Cosmic Leviathan of the Abyss)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-nasnas-yemen",
+    "title_th": "นาสนัส (อสุรกายครึ่งซีกกระโดดขาเดียวแห่งเยเมน)",
+    "title_en": "Nasnas (The Half-Human Jinn of Yemen)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-karkadann-persia",
+    "title_th": "คาร์คาดันน์ (ยูนิคอร์นเขาเดียวดุร้ายแห่งเปอร์เซียโบราณ)",
+    "title_en": "Karkadann (The Fierce Horned Beast of Persia)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-al-miraaj-arabian",
+    "title_th": "อัล-มิราช (กระต่ายเหลืองมีเขาดำแห่งเกาะมังกร)",
+    "title_en": "Al-Mi'raj (The Horned Golden Hare of Dragon Island)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-kallikantzaros-greece",
+    "title_th": "กัลลิคันซารอส (ปีศาจก๊อบลินใต้พิภพแห่งเทศกาลคริสต์มาส)",
+    "title_en": "Kallikantzaros (The Subterranean Goblins of Greece)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-spring-heeled-jack",
+    "title_th": "สปริงฮีลด์แจ็ก (มนุษย์กระโดดสูงแห่งลอนดอนวิกตอเรียน)",
+    "title_en": "Spring-heeled Jack (The Leaping Phantom of Victorian London)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-kaspar-hauser",
+    "title_th": "คาสปาร์ เฮาเซอร์ (เด็กหนุ่มปริศนาผู้ปรากฏตัวจากความว่างเปล่า)",
+    "title_en": "Kaspar Hauser (The Enigmatic Foundling of Nuremberg)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-mary-king-close",
+    "title_th": "แมรีคิงส์โคลส (ถนนใต้ดินผีสิงแห่งเอดินบะระ)",
+    "title_en": "Mary King's Close (The Haunted Subterranean City of Edinburgh)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-plague-island-poveglia",
+    "title_th": "เกาะโพเวเกลีย (เกาะกักกันกาฬโรคและวิญญาณแห่งเวนิส)",
+    "title_en": "Poveglia Island (The Plague Quarantine Island of Venice)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-catacombs-paris",
+    "title_th": "คาตาคอมส์ปารีส (สุสานใต้ดินโครงกระดูก 6 ล้านศพ)",
+    "title_en": "The Catacombs of Paris (The Empire of the Dead)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-chateau-de-brissac",
+    "title_th": "ชาโตเดอบรีซัค (คฤหาสน์สตรีชุดเขียวแห่งลุ่มน้ำลัวร์)",
+    "title_en": "Château de Brissac (The Green Lady of Loire Valley)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-bhangarh-fort",
+    "title_th": "ป้อมปราการภานการ์ห (เมืองต้องคำสาปแห่งราชสถาน)",
+    "title_en": "Bhangarh Fort (The Cursed Fortress of Rajasthan)",
+    "category": "curse"
+  },
+  {
+    "id": "pin-kuldhara",
+    "title_th": "หมู่บ้านคูลดารา (หมู่บ้านร้างข้ามคืนของพราหมณ์ปาลีวัล)",
+    "title_en": "Kuldhara (The Abandoned Ghost Village of Jaisalmer)",
+    "category": "curse"
+  },
+  {
+    "id": "pin-pontianak",
+    "title_th": "ผีปอนเตียนัค (แวมไพร์สาวกลิ่นจำปีแห่งคาบสมุทรมลายู)",
+    "title_en": "Pontianak (The Vengeful Blood Maiden of Southeast Asia)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-sundel-bolong",
+    "title_th": "ซุนเดลโบลอง (ผีสาวผมยาวหลังกลวงแห่งชวา)",
+    "title_en": "Sundel Bolong (The Hollow-Backed Revenant of Java)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-white-lady-balete",
+    "title_th": "ไวท์เลดี้แห่งถนนบาเลเตไดรฟ์ (วิญญาณสตรีชุดขาว)",
+    "title_en": "The White Lady of Balete Drive (Quezon City Ghost)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-aka-manto",
+    "title_th": "อาคาแมนโตะ (ผีเสื้อคลุมแดงแห่งห้องน้ำ)",
+    "title_en": "Aka Manto (The Red Cloak Spirit of School Restrooms)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-hanako-san",
+    "title_th": "ฮานาโกะซัง (วิญญาณเด็กหญิงห้องน้ำห้องที่สาม)",
+    "title_en": "Hanako-san (Toire no Hanako-san of School Bathrooms)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-kitsune-inari",
+    "title_th": "จิ้งจอกขาวแห่งศาลเจ้าฟูชิมิอินาริ",
+    "title_en": "The Sacred White Kitsune of Fushimi Inari-Taisha",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-baba-yaga-hut",
+    "title_th": "กระท่อมขาไก่ของบาบายากา (แม่มดไทกาโบราณ)",
+    "title_en": "Baba Yaga's Mortar & Chicken-Legged Hut",
+    "category": "monster"
+  },
+  {
+    "id": "pin-tsukumogami",
+    "title_th": "สึคุโมะงามิ (วิญญาณสิ่งของ 100 ปีคืนชีพ)",
+    "title_en": "Tsukumogami (The Living Artifact Spirits of Japan)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-kage-onna",
+    "title_th": "คาเงะอนนะ (เงาสตรีอาถรรพ์ทาบบนฉากโชจิ)",
+    "title_en": "Kage-onna (The Shadow Woman on Paper Screens)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-yaksha",
+    "title_th": "ยักษาและยักษิณีแห่งเทือกเขาหิมาลัย",
+    "title_en": "Yaksha & Yakshini (The Divine Earth Keepers of Himachal)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-draugr-haugr",
+    "title_th": "ดราวก์ (ผีดิบเฝ้าสุสานหินไวกิ้ง)",
+    "title_en": "Draugr (The Barrow-Dweller Revenant of Norway)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-clurichaun-cellars",
+    "title_th": "คลูริคอน (ภูตจิ๋วขี้เมาเฝ้าถังไวน์ใต้ดิน)",
+    "title_en": "Clurichaun (The Cellar-Dwelling Sprite of Ireland)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-beast-of-bodmin",
+    "title_th": "สัตว์ร้ายแห่งบ็อดมินมัวร์ (เสือดำลี้ลับแห่งทุ่งคอร์นวอลล์)",
+    "title_en": "The Beast of Bodmin Moor (The Phantom Cat of Cornwall)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-highgate-vampire",
+    "title_th": "แวมไพร์แห่งสุสานไฮเกต (เงามืดสุสานวิกตอเรียน)",
+    "title_en": "The Highgate Vampire (The Spectral Entity of Highgate Cemetery)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-borley-rectory",
+    "title_th": "บอร์ลีย์เร็กทอรี (บ้านพักนักบวชที่ผีสิงที่สุดในอังกฤษ)",
+    "title_en": "Borley Rectory (The Most Haunted House in England)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-ghoul-arabian",
+    "title_th": "อสูรกูลทะเลทราย (ปีศาจกินศพแห่งคาบสมุทรอาหรับ)",
+    "title_en": "The Arabian Ghul (The Flesh-Eating Desert Fiend)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-mothman-pointpleasant",
+    "title_th": "มอธแมนแห่งสะพานซิลเวอร์บริดจ์ (ลางบอกเหตุมรณะ)",
+    "title_en": "The Mothman of Point Pleasant (The Harbinger of Disaster)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-bell-witch-cave",
+    "title_th": "ถ้ำแม่มดเบลล์และคำสาปตระกูลเบลล์",
+    "title_en": "The Bell Witch Cave & Cursed Homestead",
+    "category": "curse"
+  },
+  {
+    "id": "pin-jersey-devil-pines",
+    "title_th": "ปีศาจแห่งเจอร์ซีย์และป่าไพน์แบร์เรนส์",
+    "title_en": "The Jersey Devil of the Pine Barrens",
+    "category": "monster"
+  },
+  {
+    "id": "pin-skinwalker-ranch",
+    "title_th": "ไร่สกินวอล์คเกอร์ (จุดนัดพบมิติลี้ลับและยูเอฟโอ)",
+    "title_en": "Skinwalker Ranch (The Epicenter of Paranormal Anomalies)",
+    "category": "curse"
+  },
+  {
+    "id": "pin-queen-mary-ghost",
+    "title_th": "เรือควีนแมรี (เรือสำราญผีสิงแห่งลองบีช)",
+    "title_en": "The RMS Queen Mary (The Haunted Ocean Liner of Long Beach)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-stanley-hotel",
+    "title_th": "โรงแรมสแตนลีย์ (ต้นกำเนิด The Shining และห้อง 217)",
+    "title_en": "The Stanley Hotel (Inspiration for The Shining & Room 217)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-la-llorona-rio",
+    "title_th": "ลาโยโรนา (เสียงสะอื้นของสตรีชุดขาวริมแม่น้ำ)",
+    "title_en": "La Llorona (The Weeping Woman of Rio Grande)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-el-silbon-llanos",
+    "title_th": "เอลซิลบอน (คนผิวปากแบกกระดูกแห่งทุ่งยาโนส)",
+    "title_en": "El Silbón (The Whistling Bone-Bearer of Los Llanos)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-el-cadejo",
+    "title_th": "เอลคาเดโฮ (หมาป่าทิพย์ดำและขาวแห่งอเมริกากลาง)",
+    "title_en": "El Cadejo (The Spectral Dual Wolves of Central America)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-chupacabra-canovanas",
+    "title_th": "ชูปาคาบราแห่งคาโนวานาส (สัตว์ประหลาดสูบเลือด)",
+    "title_en": "The Chupacabra of Canóvanas (The Goat Sucker Cryptid)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-encantado-dolphin",
+    "title_th": "โลมาสีชมพูแปลงกายเอนคานทาโด",
+    "title_en": "The Encantado (The Shapeshifting Pink River Dolphin)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-boitata-fire",
+    "title_th": "บอยตาตา (งูยักษ์เปลวเพลิงคุ้มครองผืนป่า)",
+    "title_en": "Boitatá (The Flaming Serpent of Brazilian Forests)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-camazotz-maya",
+    "title_th": "คามาซอตซ์ (เทพค้างคาวมรณะแห่งปิรามิดมายา)",
+    "title_en": "Camazotz (The Bat God of the Maya Underworld)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-djinn-ifrits",
+    "title_th": "ญินและอิฟรีตแห่งซากนครเพตรา",
+    "title_en": "The Djinn & Ifrits of Ancient Petra",
+    "category": "monster"
+  },
+  {
+    "id": "pin-hopkinsville-goblins",
+    "title_th": "ก็อบลินแห่งฮอปกินส์วิลล์ (การบุกรุกของสิ่งมีชีวิตลึกลับ)",
+    "title_en": "The Hopkinsville Goblins (Kelly-Hopkinsville Encounter)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-flatwoods-monster",
+    "title_th": "สัตว์ประหลาดแฟลตวูดส์ (สิ่งมีชีวิตดวงตาเรืองแสงสีเขียว)",
+    "title_en": "The Flatwoods Monster (The Green Phantom of Braxton County)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-cuchivilu",
+    "title_th": "กูชิบิลู (อสูรครึ่งหมูครึ่งงูแห่งเกาะชิโลเอ)",
+    "title_en": "The Cuchivilu (The Swine-Serpent Fiend of Chiloé)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-yacumama",
+    "title_th": "ยาคูมามา (มารดาแห่งสายน้ำและงูยักษ์แอมะซอน)",
+    "title_en": "Yacumama (Mother of the Waters of the Amazon)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-pishtaco-andes",
+    "title_th": "ปิชทาโก (นักล่าไขมันมนุษย์แห่งเทือกเขาแอนดีส)",
+    "title_en": "The Pishtaco (The Fat-Snatching Ghoul of the Andes)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-luison-guarani",
+    "title_th": "ลุยซอน (ลอร์ดแห่งความตายและสุนัขกินศพกัวรานี)",
+    "title_en": "Luison (The Lord of Death of Guaraní Myth)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-chullachaqui",
+    "title_th": "ชุลลาชากี (คนแคระเท้าเบี้ยวผู้พิทักษ์พงไพร)",
+    "title_en": "Chullachaqui (The Shapeshifting Forest Dwarf of the Amazon)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-headless-horseman-sleepy",
+    "title_th": "อัศวินหัวขาดแห่งสลีปปีฮอลโลว์",
+    "title_en": "The Headless Horseman of Sleepy Hollow",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-nasnas",
+    "title_th": "นัสนัส (อสูรครึ่งร่างแห่งตำนานเยเมน)",
+    "title_en": "The Nasnas (The Half-Bodied Demon of Yemen)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-nuckelavee-orkney",
+    "title_th": "นักคลาวี (อสูรม้าไร้ผิวหนังแห่งหมู่เกาะออร์คนีย์)",
+    "title_en": "The Nuckelavee (The Skinless Horse-Demon of Orkney)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-selkie-orkney",
+    "title_th": "เซลกี (พรายแมวน้ำถอดคราบผิวหนังแห่งสกอตแลนด์)",
+    "title_en": "Selkies (The Seal-Folk of the Northern Isles)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-banshee-connacht",
+    "title_th": "แบนชี (เสียงหวีดร้องบอกความตายแห่งคอนน็อต)",
+    "title_en": "The Banshee (The Keening Death Harbinger of Ireland)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-huldra-norway",
+    "title_th": "ฮูลดรา (นางพรายไพรหางวัวแห่งฟยอร์ด)",
+    "title_en": "The Huldra (The Seductive Forest Nymph of the Fjords)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-kraken-norwegian-sea",
+    "title_th": "มหาอสุรกายคราเคนแห่งทะเลนอร์วีเจียน",
+    "title_en": "The Kraken (The Colossal Leviathan of the North Sea)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-troll-jotunheimen",
+    "title_th": "โทรลล์หินยักษ์แห่งโยตุนไฮเมน",
+    "title_en": "The Mountain Trolls of Jotunheimen",
+    "category": "monster"
+  },
+  {
+    "id": "pin-maret-nightmare",
+    "title_th": "มาร่า (วิญญาณนั่งทับอกและฝันร้ายแห่งนอร์ดิก)",
+    "title_en": "The Mara (The Nightmare-Riding Incubus of Sweden)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-nacken-violin",
+    "title_th": "เน็กเคิน (ชายหนุ่มเปลือยกายสีไวโอลินสะกดริมน้ำตก)",
+    "title_en": "The Näcken (The Melancholic Violinist of Swedish Brooks)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-tokoloshe-zulu",
+    "title_th": "โทโคโลเช (คนแคระผีสิงมีเขาแห่งแอฟริกาใต้)",
+    "title_en": "The Tokoloshe (The Mischievous Imp of Zulu Mythology)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-grootslang-cave",
+    "title_th": "กรูทสแลง (พญางูยักษ์ครึ่งช้างเฝ้าขุมเพชร)",
+    "title_en": "Grootslang (The Primal Elephant-Serpent of the Wonder Hole)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-kelpie-loch-coruisk",
+    "title_th": "ม้าพรายน้ำเคลปีแห่งเกาะสกาย",
+    "title_en": "The Kelpie of Loch Coruisk (The Shape-Shifting Water Horse)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-black-shuck-suffolk",
+    "title_th": "แบล็กชัค (หมาปิศาจตาไฟแห่งโบสถ์บลายธ์เบิร์ก)",
+    "title_en": "Black Shuck (The Hellhound of Blythburgh Church)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-greyfriars-bobby-mackenzie",
+    "title_th": "สุสานเกรย์ไฟรเออร์สและวิญญาณแมคเคนซี",
+    "title_en": "Greyfriars Kirkyard & The Mackenzie Poltergeist",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-mamlambo-goddess",
+    "title_th": "มัมลัมโบ (เทพีแม่น้ำผู้บันดาลโชคและดูดสมอง)",
+    "title_en": "Mamlambo (The Brain-Devouring River Goddess)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-adze-mosquito",
+    "title_th": "แอ็ดเซ (แวมไพร์หิ่งห้อยจำแลงแห่งชนเผ่าเอเว)",
+    "title_en": "The Adze (The Firefly Vampire of the Ewe Tribe)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-bahamut-abyss",
+    "title_th": "บาฮามุต (ปลายักษ์ผู้แบกพิภพใต้สมุทร)",
+    "title_en": "Bahamut (The Vast Leviathan of Arabian Cosmogony)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-zar-possession",
+    "title_th": "พิธีซาร์ (การขับไล่วิญญาณสิงสู่แห่งลุ่มน้ำไนล์)",
+    "title_en": "The Zār Ritual (The Trance Exorcism of the Nile)",
+    "category": "curse"
+  },
+  {
+    "id": "pin-anansi-spider-ashanti",
+    "title_th": "อานันซี (เทพแมงมุมเจ้าปัญญาแห่งอาชานตี)",
+    "title_en": "Anansi the Spider (The Trickster God of Ashanti)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-bunyip-murray",
+    "title_th": "บันยิป (อสูรบึงมฤตยูแห่งลุ่มน้ำเมอร์เรย์)",
+    "title_en": "The Bunyip (The Billabong Terror of the Murray River)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-yowie-blue-mountains",
+    "title_th": "โยวี (มนุษย์วานรยักษ์แห่งบลูเมาน์เทนส์)",
+    "title_en": "The Yowie (The Wild Hominid of the Blue Mountains)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-rainbow-serpent-arnhem",
+    "title_th": "พญางูสีรุ้งแห่งผืนแผ่นดินดรีมไทม์",
+    "title_en": "The Rainbow Serpent (The Creator Deity of Arnhem Land)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-taniwha-rotorua",
+    "title_th": "ทานิวา (ผู้พิทักษ์สายน้ำแห่งทะเลสาบโรโตรัว)",
+    "title_en": "The Taniwha (The Ocean Guardian of Lake Rotorua)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-menhune-hawaii",
+    "title_th": "เมเนฮูเน (คนแคระช่างก่อสร้างแห่งคาไว)",
+    "title_en": "The Menehune (The Ancient Dwarf Builders of Kauai)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-wat-pa-kham-chanod",
+    "title_th": "ป่าคำชะโนด (วังพญานาคราชปู่ศรีสุทโธและย่าศรีปทุมมา)",
+    "title_en": "Kham Chanod Forest (The Subterranean Naga Realm)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-krasue-ban-dong",
+    "title_th": "กระสือสายันต์แห่งบ้านดง (ดวงไฟวาบยามพลบค่ำ)",
+    "title_en": "Krasue of Ban Dong (The Nocturnal Floating Viscera)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-suea-saming-khao-soi-dao",
+    "title_th": "เสือสมิงแห่งเขาสอยดาว (พรานป่าจำแลง)",
+    "title_en": "Suea Saming of Khao Soi Dao (The Weretiger of Chanthaburi)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-phi-tai-hong-sathorn",
+    "title_th": "ผีตายโหงและตึกร้างสาทรยูนีค (ตึกผีสิงกลางกรุง)",
+    "title_en": "The Sathorn Unique Ghost Tower (The Cursed Bangkok Skyscraper)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-phi-song-nang-mekong",
+    "title_th": "ศาลเจ้าแม่สองนางแห่งแก่งสะพือ (ผู้พิทักษ์แก่งหินลำน้ำมูล)",
+    "title_en": "The Two River Maidens of Kaeng Saphue (Mun River Guardians)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-phi-am-bed",
+    "title_th": "ผีอำ (เงามืดทับร่างยามนิทราแห่งกรุงเก่า)",
+    "title_en": "Phi Am (The Shadowy Sleep-Paralysis Entity of Ayutthaya)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-nang-tani-banana",
+    "title_th": "ผีนางตานี (วิญญาณสาวชุดเขียวแห่งดงกล้วยตานี)",
+    "title_en": "Nang Tani (The Banana Tree Maiden Spirit of Ang Thong)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-kuman-thong-wat-sam-ngam",
+    "title_th": "กุมารทองตำรับหลวงพ่อเต๋วัดสามง่าม",
+    "title_en": "Kuman Thong of Wat Sam Ngam (The Golden Child Spirit)",
+    "category": "curse"
+  },
+  {
+    "id": "pin-palad-khik-amulet",
+    "title_th": "ปลัดขิกอาถรรพ์และวิชาแคล้วคลาดแห่งระยอง",
+    "title_en": "The Sacred Palad Khik of Rayong (Ancient Phallic Amulet)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-nang-kwak-shrine",
+    "title_th": "แม่นางกวัก (เทวีแห่งเมตตามหานิยมและการค้า)",
+    "title_en": "Mae Nang Kwak (The Beckoning Goddess of Prosperity)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-phra-siam-devadhiraj",
+    "title_th": "พระสยามเทวาธิราช (เทวดาผู้ปกป้องคุ้มครองแผ่นดินสยาม)",
+    "title_en": "Phra Siam Devadhiraj (The Guardian Divinity of the Siamese Realm)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-wat-arun-yaksha",
+    "title_th": "ยักษ์วัดแจ้งและยักษ์วัดโพธิ์ (ศึกยักษ์ท่าเตียน)",
+    "title_en": "The Giants of Wat Arun & Wat Pho (The Battle of Tha Tien)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-chalawan-cave-phichit",
+    "title_th": "ถ้ำชาละวันและพญาจระเข้ยักษ์แห่งเมืองพิจิตร",
+    "title_en": "Chalawan's Underwater Crystal Cavern of Phichit",
+    "category": "monster"
+  },
+  {
+    "id": "pin-ma-bong-lanna",
+    "title_th": "ม้าบ้อง (อสูรม้าหัวคนยามวิกาลแห่งล้านนา)",
+    "title_en": "Ma Bong (The Cursed Centaur-Wraith of Lanna)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-suwannamaccha-gulf",
+    "title_th": "นางสุพรรณมัจฉา (นางเงือกทองแห่งอ่าวไทย)",
+    "title_en": "Suvannamaccha (The Golden Mermaid of the Gulf of Siam)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-phra-mae-thorani",
+    "title_th": "พระแม่ธรณีบีบมวยผม (ผู้ปราบพญามาร)",
+    "title_en": "Phra Mae Thorani (The Earth Mother Washing the Demon Hordes)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-phi-mot-phi-meng",
+    "title_th": "ผีมดผีเม็ง (ฟ้อนผีบรรพบุรุษล้านนาโบราณ)",
+    "title_en": "Phi Mot Phi Meng (The Ancestral Trance Dance of Lanna)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-khao-kho-fog-specters",
+    "title_th": "ทุ่งหมอกอาถรรพ์และสมรภูมิเขาค้อ",
+    "title_en": "The Fog Specters of Khao Kho Battleground",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-phra-that-phanom-relic",
+    "title_th": "พระธาตุพนม (เทวสถานพุทธศักดิ์สิทธิ์ริมฝั่งโขง)",
+    "title_en": "Phra That Phanom (The Sacred Stupa of the Mekong)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-kaeng-kud-ku-naga",
+    "title_th": "แก่งคุดคู้และตำนานพรานจังกึด",
+    "title_en": "Kaeng Khut Khu & The Giant Hunter Legend",
+    "category": "legend"
+  },
+  {
+    "id": "pin-luang-phor-to-bangphli",
+    "title_th": "หลวงพ่อโต วัดบางพลีใหญ่ใน (พระพุทธรูปทองสัมฤทธิ์ลอยน้ำแห่งคลองสำโรง)",
+    "title_en": "Luang Phor To of Wat Bang Phli Yai Nai (Floating Bronze Buddha)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-phra-buddha-chinnarat",
+    "title_th": "พระพุทธชินราช วัดพระศรีรัตนมหาธาตุวรมหาวิหาร (เทวเนรมิตแห่งเมืองสองแคว)",
+    "title_en": "Phra Buddha Chinnarat (Celestial Bronze Masterpiece of Phitsanulok)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-queen-chamadevi-lamphun",
+    "title_th": "พระนางจามเทวีและอาถรรพ์นครหริภุญชัย (ปฐมกษัตรีย์แห่งล้านนา)",
+    "title_en": "Queen Chamadevi & The Hariphunchai Realm of Lamphun",
+    "category": "legend"
+  },
+  {
+    "id": "pin-lim-ko-niew-pattani",
+    "title_th": "เจ้าแม่ลิ้มกอเหนี่ยวและคำสาปมัสยิดกรือเซะ (ปัตตานี)",
+    "title_en": "Chao Mae Lim Ko Niew & The Kru Se Mosque Curse",
+    "category": "curse"
+  },
+  {
+    "id": "pin-thao-wessuwan-chulamanee",
+    "title_th": "ท้าวเวสสุวรรณ วัดจุฬามณี (มหาราชแห่งอสูรและนายแห่งภูตผี)",
+    "title_en": "Thao Wessuwan of Wat Chulamanee (King of Asuras & Master of Spirits)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-phraya-tao-ngoi-sakonnakhon",
+    "title_th": "พญาเต่างอย (พญาเต่าหินศักดิ์สิทธิ์แห่งลำน้ำพุง สกลนคร)",
+    "title_en": "Phraya Tao Ngoi (The Sacred Stone Turtle of Sakon Nakhon)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-soi-dok-mak-wat-pananchoeng",
+    "title_th": "เจ้าแม่สร้อยดอกหมาก (ตำนานรักสามเส้าแห่งวัดพนัญเชิง อยุธยา)",
+    "title_en": "Princess Soi Dok Mak (Tragic Chinese Romance of Ayutthaya)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-luang-phor-kasem-lampang",
+    "title_th": "หลวงพ่อเกษม เขมโก (พระอริยสงฆ์สรีระไม่เน่าเปื่อยแห่งสุสานไตรลักษณ์)",
+    "title_en": "Luang Phor Kasem of Susarn Trailak (Incorruptible Monk of Lampang)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-wiang-kum-kam-ancient-city",
+    "title_th": "เวียงกุมกาม นครโบราณใต้พิภพแห่งพญามังราย (สารภี เชียงใหม่)",
+    "title_en": "Wiang Kum Kam (The Submerged Ancient Underground Capital)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-manohra-southern-shadow",
+    "title_th": "โนราโรงครูและอาถรรพ์ผีมโนราห์ (พิธีผูกผ้าแก้บนและไหว้ครูหมอภาคใต้)",
+    "title_en": "Nora Rong Khru & Ancestral Shamanic Dance Rites",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-naga-ananta-nongkhai-bridge",
+    "title_th": "พญาอนันตนาคราช 7 เศียร สะพานมิตรภาพไทย-ลาว (หนองคาย)",
+    "title_en": "Phraya Ananta Nagaraja of the Mekong River Border",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-luang-phor-koon-wat-banrai",
+    "title_th": "หลวงพ่อคูณ ปริสุทโธ และปาฏิหาริย์เหรียญเหนียวแคล้วคลาด (วัดบ้านไร่ ด่านขุนทด)",
+    "title_en": "Luang Phor Koon of Wat Ban Rai (The Saint of Dan Khun Thot)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-snake-shrine-rama2",
+    "title_th": "ศาลเจ้าพ่องูจงอางและแม่ย่างูอ้น (อาถรรพ์ถนนพระราม 2)",
+    "title_en": "Chao Pho Ngu Chong-ang (The Sacred King Cobra Shrine of Rama 2)",
+    "category": "curse"
+  },
+  {
+    "id": "pin-luang-pu-thuat-sea-miracle",
+    "title_th": "หลวงปู่ทวด วัดช้างให้ (ปาฏิหาริย์เหยียบน้ำทะเลจืดแห่งเกาะนุ้ยนอก)",
+    "title_en": "Luang Pu Thuat (The Sea-Purifying Master of Wat Chang Hai)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-croc-mae-thaptim-canal",
+    "title_th": "จระเข้เจ้าแม่ทับทิม คลองบางกอกใหญ่ (อสูรจระเข้เผือกแห่งคลองหลวง)",
+    "title_en": "The White Crocodile of Chao Mae Thapthim (Bangkok Yai Canal)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-wat-mahathat-nakhon-shadow",
+    "title_th": "พระบรมธาตุเมืองนคร (เจดีย์ไร้เงาแห่งวัดพระมหาธาตุวรมหาวิหาร)",
+    "title_en": "The Shadowless Pagoda of Wat Phra Mahathat (Nakhon Si Thammarat)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-phi-khomot-nonghan",
+    "title_th": "ผีโขมดแห่งทะเลสาบหนองหาร (ดวงไฟวิญญาณเร่ร่อนกลางบึงน้ำสกลนคร)",
+    "title_en": "The Khomot Willow-the-Wisp of Lake Nong Han",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-cave-ghost-man-maehongson",
+    "title_th": "ถ้ำผีแมนและโลงศพไม้ท่อนซุงพันปี (แม่ฮ่องสอน)",
+    "title_en": "Spirit Cave & Log Coffins of the Highland Cave-Dwellers",
+    "category": "legend"
+  },
+  {
+    "id": "pin-nue-chimera-kyoto",
+    "title_th": "นูเอะ (อสูรไคเมร่าหัวลิงตัวทานุกิหางงูแห่งเกียวโต)",
+    "title_en": "Nue (The Black Cloud Chimera of Kyoto)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-ubume-bird-ghost",
+    "title_th": "อุบุเมะ (วิญญาณสตรีตกเลือดคลอดบุตรและนกพรากวิญญาณเด็ก)",
+    "title_en": "Ubume (The Childbirth Ghost of Japanese Lore)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-enenra-smoke-monster",
+    "title_th": "เอเน็นระ (ปีศาจควันเถ้าถ่านผู้มองเห็นได้เฉพาะคนจิตบริสุทธิ์)",
+    "title_en": "Enenra (The Smoke Specter of Bonfires)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-wanyudo-fire-wheel",
+    "title_th": "วานิวโดะ (กงล้อเพลิงวิญญาณบาปแห่งเกียวโต)",
+    "title_en": "Wanyudo (The Blazing Wheel of Damnation)",
+    "category": "curse"
+  },
+  {
+    "id": "pin-futakuchi-onna-mouth",
+    "title_th": "ฟุตะคุจิ-อนนะ (หญิงสาวสองปากและเส้นผมมีชีวิตแห่งฟุกุชิมะ)",
+    "title_en": "Futakuchi-onna (The Two-Mouthed Woman)",
+    "category": "curse"
+  },
+  {
+    "id": "pin-tsuchigumo-earth-spider",
+    "title_th": "สึจิกุโมะ (พญาแมงมุมดินดึกดำบรรพ์แห่งภูเขาคัตสึรางิ)",
+    "title_en": "Tsuchigumo (The Earth Spider Clan of Mount Katsuragi)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-tenome-hand-eyes",
+    "title_th": "เทโนะเมะ (วิญญาณชายชราตาบนฝ่ามือแห่งสุสานชิจิโจ)",
+    "title_en": "Tenome (The Eye-in-Hand Ghost of Kyoto)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-satori-mind-reader",
+    "title_th": "ซาโตริ (อสูรไพรผู้อ่านใจมนุษย์แห่งเทือกเขาฮิดะ)",
+    "title_en": "Satori (The Mind-Reading Mountain Ape)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-bakeneko-cat-specter",
+    "title_th": "บาเกะเนโกะ (แมวผีหางแยกเต้นระบำแห่งปราสาทนาเบชิมะ)",
+    "title_en": "Bakeneko (The Shapeshifting Ghost Cat of Nabeshima)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-bulgasari-metal-eater",
+    "title_th": "บุลกาซารี (อสูรเหล็กกลืนกินศัสตราวุธแห่งโครยอ)",
+    "title_en": "Bulgasari (The Iron-Eating Monster of Goryeo)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-haetae-justice-lion",
+    "title_th": "แฮแท (สัตว์ศักดิ์สิทธิ์ผู้พิทักษ์ความยุติธรรมและปราบไฟแห่งกวางฮวามุน)",
+    "title_en": "Haetae (The Divine Lion of Justice & Fire Prevention)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-imugi-dragon-serpent",
+    "title_th": "อีมูกี (พญางูยักษ์พันปีผู้บำเพ็ญเพียรสู่การเป็นมังกรฟ้าเกาหลี)",
+    "title_en": "Imugi (The Proto-Dragon Serpent of Korean Lakes)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-cu-sith-scottish-hound",
+    "title_th": "คูชี (สุนัขล่าเนื้อปีศาจสีเขียวแห่งที่ราบสูงสก็อตแลนด์)",
+    "title_en": "Cù-Sìth (The Spectral Green Fairy Hound of the Highlands)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-bodach-shadow-scotland",
+    "title_th": "โบดัค (เงาดำเฒ่าแห่งปล่องไฟผู้เตือนภัยความตาย)",
+    "title_en": "Bodach (The Chimney Shadow Harbinger of Death)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-erlkonig-alder-king",
+    "title_th": "เอิร์ลเคอนิก (พญามารแห่งป่าดำผู้พรากลมหายใจเด็กยามราตรี)",
+    "title_en": "Erlkönig (The Alder King of the Black Forest)",
+    "category": "curse"
+  },
+  {
+    "id": "pin-kikimora-slavic-hearth",
+    "title_th": "คิกิโมรา (นางภูตหลังเตาไฟผู้ถักทอความวิบัติแห่งสลาวิก)",
+    "title_en": "Kikimora (The Swamp & Hearth Spirit of Slavic Lore)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-saci-perere-brazil",
+    "title_th": "ซาซี-เปเรเร (ภูตขาเดียวสวมหมวกแดงคุมลมหมุนแห่งบราซิล)",
+    "title_en": "Saci-Pererê (The One-Legged Whirling Trickster of Brazil)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-marid-water-djinn",
+    "title_th": "มาริด (มหาญินสายน้ำผู้ทรงอิทธิฤทธิ์สูงสุดแห่งมหาสมุทรอาหรับ)",
+    "title_en": "Marid (The Oceanic Titan of Islamic Lore)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-rokh-giant-bird-sinbad",
+    "title_th": "นกยักษ์ร็อค (พญานกเวหาผู้โฉบยกลูกช้างแห่งอ่าวเปอร์เซีย)",
+    "title_en": "Roc (The Elephant-Lifting Behemoth Bird of Arabian Lore)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-apep-chaos-serpent",
+    "title_th": "อเปป (มหาอสรพิษแห่งความมืดผู้กลืนกินดวงอาทิตย์แห่งอียิปต์โบราณ)",
+    "title_en": "Apep (The Serpent of Cosmic Primordial Chaos)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-moehau-hairy-giant-nz",
+    "title_th": "โมฮาว (มนุษย์ยักษ์ขนดกแห่งเทือกเขาโคโรแมนเดล นิวซีแลนด์)",
+    "title_en": "Moehau (The Hairy Mountain Ogre of New Zealand)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-luang-phor-ban-laem",
+    "title_th": "หลวงพ่อบ้านแหลม วัดเพชรสมุทรวรวิหาร (พระพุทธรูปอุ้มบาตรลอยน้ำแห่งแม่กลอง)",
+    "title_en": "Luang Phor Ban Laem of Wat Phet Samut (Floating Alms-Bowl Buddha of Mae Klong)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-luang-phor-wat-rai-khing",
+    "title_th": "หลวงพ่อวัดไร่ขิง วัดไร่ขิงพระอารามหลวง (ปาฏิหาริย์พระพุทธรูปลอยน้ำแม่น้ำนครชัยศรี)",
+    "title_en": "Luang Phor Wat Rai Khing (The Miraculous River Buddha of Nakhon Chai Si)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-khao-sam-muk-saen-shrine",
+    "title_th": "ศาลเจ้าแม่สามมุกและตำนานรักอมตะแสนกับมุก (เขาสามมุก บางแสน)",
+    "title_en": "Chao Mae Sam Muk Shrine & The Tragic Romance of Saen and Muk",
+    "category": "legend"
+  },
+  {
+    "id": "pin-hundred-corpse-curve-ratchada",
+    "title_th": "โค้งร้อยศพและศาลเจ้าแม่ต้นโพธิ์เฮี้ยน (โค้งศาลอาญารัชดาภิเษก)",
+    "title_en": "The Hundred-Corpse Curve & Bodhi Tree Shrine (Ratchadaphisek Criminal Court Curve)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-wat-don-graveyard-sathon",
+    "title_th": "ป่าช้าวัดดอนและสุสานจีนโพ้นทะเลพันหลุม (สาทร)",
+    "title_en": "Wat Don Cemetery & The 10,000 Chinese Tombs of Sathon",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-phraya-gong-phraya-phan",
+    "title_th": "ตำนานปิตุฆาตพญากง พญาพาน และพระปฐมเจดีย์ (นครปฐม)",
+    "title_en": "Phraya Gong, Phraya Phan & The Stupa of Atonement (Phra Pathommachedi)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-luang-phor-pak-daeng-nakhon-nayok",
+    "title_th": "หลวงพ่อปากแดง วัดพราหมณี (พระพุทธรูปริมฝีปากสีชาดแห่งนครนายก)",
+    "title_en": "Luang Phor Pak Daeng of Wat Phrammani (The Vermilion-Lipped Buddha)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-phraya-sri-bhujong-mukdahan",
+    "title_th": "พญาศรีภุชงค์มุกดานาคราช พญานาคกายสีขาวบริสุทธิ์ (แก่งกะเบา มุกดาหาร)",
+    "title_en": "Phraya Sri Bhujong Mukda Nakaraj (The White Naga Deity of Kaeng Kabao)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-bangkok-city-pillar-in-chan",
+    "title_th": "ศาลหลักเมืองกรุงเทพมหานคร และอาถรรพ์เสาหลักเมืองอินทร์จันมั่นคง (พระนคร)",
+    "title_en": "Bangkok City Pillar Shrine & The In-Chan-Mun-Khong Foundation Myth",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-bang-pakong-bridge-guardian",
+    "title_th": "อาถรรพ์แม่ย่านางสะพานข้ามแม่น้ำบางปะกง (ฉะเชิงเทรา)",
+    "title_en": "The Spirit Maiden of Bang Pakong Bridge (Chachoengsao)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-wat-phra-non-chaksi-singburi",
+    "title_th": "พระนอนจักรสีห์ วัดพระนอนจักรสีห์วรวิหาร (พุทธไสยาสน์ยักษ์พันปีแห่งสิงห์บุรี)",
+    "title_en": "Phra Non Chaksi of Sing Buri (The Thousand-Year Giant Reclining Buddha)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-wihan-mongkhon-bophit-ayutthaya",
+    "title_th": "วิหารพระมงคลบพิตร (มหาพุทธปฏิมาสัมฤทธิ์ผ่านเพลิงสงครามแห่งกรุงศรีอยุธยา)",
+    "title_en": "Vihara Phra Mongkhon Bophit (The War-Enduring Giant Bronze Buddha of Ayutthaya)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-chao-pho-khao-yai-sichang",
+    "title_th": "ศาลเจ้าพ่อเขาใหญ่ เกาะสีชัง (ศาลเจ้าจีนโบราณในถ้ำกลางทะเล)",
+    "title_en": "Chao Pho Khao Yai Cliff Shrine (Ancient Island Sea Cave Temple of Ko Sichang)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-phra-that-kham-kaen-khonkaen",
+    "title_th": "พระธาตุขามแก่น (ตำนานตอมะขามตายพรายคืนชีพแห่งขอนแก่น)",
+    "title_en": "Phra That Kham Kaen (The Resurrected Tamarind Tree Stupa of Khon Kaen)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-phraya-sri-sattanakharat-nakhon-phanom",
+    "title_th": "พญาศรีสัตตนาคราช แลนด์มาร์กริมฝั่งโขงแห่งศรัทธา (นครพนม)",
+    "title_en": "Phraya Sri Satta Nakharat (The Seven-Headed Mekong Bronze Naga of Nakhon Phanom)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-phi-phong-northern-thai",
+    "title_th": "ตำนานผีโพงและว่านผีโพง (ดวงไฟเรืองแสงขึ้นจมูกแห่งไพรพงล้านนา)",
+    "title_en": "Phi Phong & The Glowing Ghost Herbs of Lanna Wilderness",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-kwai-thanu-wat-srisa-thong",
+    "title_th": "อาถรรพ์ควายธนูอาคม หลวงพ่อน้อย วัดศีรษะทอง (นครปฐม)",
+    "title_en": "The Magic Arrow-Bull (Kwai Thanu) Occultism of Wat Srisa Thong",
+    "category": "legend"
+  },
+  {
+    "id": "pin-roopkund-skeleton-lake",
+    "title_th": "ทะเลสาบรูพกุนด์ ทะเลสาบโครงกระดูกมนุษย์ปริศนาแห่งหิมาลัย",
+    "title_en": "Roopkund Skeleton Lake (Mystery of Himalayan Glacial Bones)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-kailasa-temple-ellora",
+    "title_th": "วัดไกรลาส มหาปราสาทสกัดจากภูผาหินก้อนเดียว (ถ้ำเอลโลรา)",
+    "title_en": "Kailasa Temple (The Megalithic Monolithic Wonder of Ellora Caves)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-brihadisvara-temple-shadow",
+    "title_th": "วัดพฤหัทอีศวร ปริศนายอดศิลาโดมไร้เงาแห่งตันจาวูร์",
+    "title_en": "Brihadisvara Temple (The Shadowless Dome Mystery of Thanjavur)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-kamakhya-temple-assam",
+    "title_th": "วัดกามัขยา เทวาลัยแห่งพลังศักติและแม่น้ำโลหิต (อัสสัม)",
+    "title_en": "Kamakhya Temple (The Bleeding Goddess Shrine of Nilachal Hill)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-ram-setu-adams-bridge",
+    "title_th": "สะพานพระราม ปริศนาสันดอนหินโบราณเชื่อมมหาสมุทร (ช่องแคบพอร์ก)",
+    "title_en": "Ram Setu / Adam's Bridge (Ancient Oceanic Causeway of the Ramayana)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-sigiriya-lion-rock-palace",
+    "title_th": "ปราสาทสิงคีริยะ พระราชวังลอยฟ้าบนยอดผาสิงห์ (ศรีลังกา)",
+    "title_en": "Sigiriya Lion Rock (Ancient Sky Citadel & Fortress of King Kashyapa)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-temple-of-the-tooth-kandy",
+    "title_th": "วัดพระเขี้ยวแก้ว พระทันตธาตุศักดิ์สิทธิ์แห่งนครแคนดี (ศรีลังกา)",
+    "title_en": "Sri Dalada Maligawa (Temple of the Sacred Tooth Relic of Kandy)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-candi-sukuh-pyramid-java",
+    "title_th": "วัดจันทิสุกุห์ มหาปิรามิดตัดยอดปริศนาแห่งชวากลาง (อินโดนีเซีย)",
+    "title_en": "Candi Sukuh (The Enigmatic Truncated Stepped Pyramid of Mount Lawu)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-mount-bromo-sacrifice-legend",
+    "title_th": "ภูเขาไฟโบรโม และตำนานการบูชายัญแห่งชนเผ่าเต็งเกอร์ (ชวาตะวันออก)",
+    "title_en": "Mount Bromo & The Tenggerese Volcano Sacrifice of Roro Anteng",
+    "category": "legend"
+  },
+  {
+    "id": "pin-wat-xieng-thong-luang-prabang",
+    "title_th": "วัดเชียงทอง มงกุฎแห่งหลวงพระบางและต้นไม้แห่งชีวิต (ลาว)",
+    "title_en": "Wat Xieng Thong (Crown Jewel of Luang Prabang & The Tree of Life)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-pak-ou-caves-thousand-buddhas",
+    "title_th": "ถ้ำปากอู ถ้ำผาหินพระพุทธรูปพันองค์ริมแม่น้ำโขง (หลวงพระบาง)",
+    "title_en": "Pak Ou Caves (The Thousand Buddha Cliff Sanctuary of the Mekong)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-plain-of-jars-xiangkhoang",
+    "title_th": "ทุ่งไหหิน มหาทุ่งหินยักษ์ปริศนาแห่งยุคโลหะ (เชียงขวาง)",
+    "title_en": "Plain of Jars (Megalithic Stone Urns Mystery of Xiangkhoang)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-shwedagon-pagoda-yangon",
+    "title_th": "พระมหาเจดีย์ชเวดากอง พระเกศาธาตุทองคำแห่งย่างกุ้ง (เมียนมา)",
+    "title_en": "Shwedagon Pagoda (The 2,500-Year Golden Relic Stupa of Yangon)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-kyaiktiyo-golden-rock-mon",
+    "title_th": "พระธาตุอินทร์แขวน ก้อนหินทองคำลอยริมหน้าผา (รัฐมอญ เมียนมา)",
+    "title_en": "Kyaiktiyo Pagoda (The Gravity-Defying Golden Rock of Mon State)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-babi-ngepet-demon-boar",
+    "title_th": "บาบีเงเป็ต หมูป่าปีศาจแปลงกายขโมยสมบัติแห่งมนต์ดำชวา",
+    "title_en": "Babi Ngepet (The Black Magic Boar Shapeshifter of Javanese Lore)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-jenglot-vampiric-fetish",
+    "title_th": "เจงกลอต ซากมัมมี่ดูดเลือดลึกลับผมยาวแห่งอินโดนีเซีย",
+    "title_en": "Jenglot (The Blood-Drinking Mummified Homunculus of Java)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-con-tinh-banyan-spirit",
+    "title_th": "คอนติญ วิญญาณสาวสิงสู่ต้นไทรโบราณแห่งเวียดนาม",
+    "title_en": "Con Tinh (The Seductive Banyan Tree Ghost of Vietnam)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-mahagiri-nat-bagan",
+    "title_th": "นัตมหาคีรี เทพอารักษ์ผู้พิทักษ์แห่งเมืองพุกาม (เมียนมา)",
+    "title_en": "Min Mahagiri Nat (The Mountain Guardian Spirit of Mount Popa & Bagan)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-akaname-filth-licker",
+    "title_th": "อะคานาเมะ ปีศาจลิ้นยาวเลียคราบสกปรกห้องน้ำ (ญี่ปุ่น)",
+    "title_en": "Akaname (The Filth-Licking Yokai of Edo Bathhouses)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-hashihime-uji-bridge",
+    "title_th": "ฮาชิฮิเมะ เทวีสะพานอูจิและเพลิงแค้นแห่งสะพานแม่น้ำ (เกียวโต ญี่ปุ่น)",
+    "title_en": "Hashihime of Uji Bridge (The Jealous Bridge Maiden of Kyoto)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-baize-hakutaku-divine-beast",
+    "title_th": "ไป่เจ๋อ (ฮาคุตาคุ) สัตว์สวรรค์เก้าตารู้แจ้งนามปีศาจทั้งปวง (จีน / ญี่ปุ่น)",
+    "title_en": "Baize / Hakutaku (The Nine-Eyed Celestial Herald of Monsters)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-mogao-caves-dunhuang-spirits",
+    "title_th": "ถ้ำโม่เกา ปริศนาพุทธศิลป์พันถ้ำแห่งเส้นทางสายไหม (ตุนหวง)",
+    "title_en": "Mogao Caves of Dunhuang (Caves of the Thousand Buddhas on Silk Road)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-dianmu-mother-of-lightning",
+    "title_th": "เตียนหมู่ เทวีพระแม่สายฟ้าแลบผู้ส่องกระจกทองสัจธรรม (จีน)",
+    "title_en": "Dianmu (Mother of Lightning & The Golden Mirrors of Truth)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-xiezhi-beast-of-justice",
+    "title_th": "เสี่ยจื้อ สัตว์ศักดิ์สิทธิ์เขาเดี่ยวผู้พิทักษ์ความยุติธรรม (จีน)",
+    "title_en": "Xiezhi (The Horned Divine Beast of Impartial Justice)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-hundun-chaos-beast",
+    "title_th": "หุนตุ้น อสูรบรรพกาลไร้หน้าแห่งความโกลาหล (จีน)",
+    "title_en": "Hundun (The Faceless Primordial Beast of Cosmic Chaos)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-taowu-stubborn-beast",
+    "title_th": "เถาอู้ อสูรพยัคฆ์บรรพกาลผู้ดื้อรั้นไร้ความปรานี (จีน)",
+    "title_en": "Taowu (The Relentless Block-Headed Fiend of the West)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-cheonyeo-gwishin-white-maiden",
+    "title_th": "ชอนยอกวีชิน ผีสาวพรหมจารีชุดขาวผมยาวแห่งเกาหลี",
+    "title_en": "Cheonyeo Gwishin (The Virgin Ghost of Joseon Mourning Robes)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-samjok-o-three-legged-crow",
+    "title_th": "ซัมโจกโก อีกาสามขาเทวะแห่งดวงอาทิตย์ (โกคูรยอ เกาหลี)",
+    "title_en": "Samjok-o (The Three-Legged Sun Crow of Ancient Goguryeo)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-hitotsume-kozo-one-eye",
+    "title_th": "ฮิโตะทสึเมะ โคโซ ปีศาจเด็กตาเดียวขี้เล่นแห่งเอโดะ (ญี่ปุ่น)",
+    "title_en": "Hitotsume-kozo (The Mischievous One-Eyed Boy Yokai)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-mitsume-nyudo-three-eyes",
+    "title_th": "มิตสึเมะ นิวโด พระปีศาจสามตาผู้เฝ้าหอระฆัง (ญี่ปุ่น)",
+    "title_en": "Mitsume Nyudo (The Three-Eyed Monk Fiend of Temple Belfries)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-houska-castle-gate-to-hell",
+    "title_th": "ปราสาทฮุสกา ประตูสู่ขุมนรกและโบสถ์สะกดหลุมไร้ก้น (เช็กเกีย)",
+    "title_en": "Houska Castle (The Fortress Built Over the Gate to Hell)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-sedlec-ossuary-bone-church",
+    "title_th": "สุสานโบสถ์กระดูกเซดเลก โคมระย้ากระดูกมนุษย์ 40,000 ร่าง (คุดนาฮอรา เช็กเกีย)",
+    "title_en": "Sedlec Ossuary (The Bone Church of 40,000 Souls in Kutná Hora)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-lukova-ghost-church-st-george",
+    "title_th": "โบสถ์ผีสิงเซนต์จอร์จแห่งลูโควา ประติมากรรมวิญญาณปูนปลาสเตอร์ (เช็กเกีย)",
+    "title_en": "St. George's Church of Luková (The Ghost Church of Plaster Spirits)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-chillon-castle-lake-geneva",
+    "title_th": "ปราสาทชิลยง ปราการคุกน้ำแห่งทะเลสาบเจนีวา (สวิตเซอร์แลนด์)",
+    "title_en": "Chillon Castle (The Island Water Fortress & Dungeon of Lake Geneva)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-iona-abbey-burial-kings",
+    "title_th": "อารามไอโอนา สุสานศักดิ์สิทธิ์แห่งกษัตริย์โบราณ 48 พระองค์ (สก็อตแลนด์)",
+    "title_en": "Iona Abbey (Sacred Cradle of Scottish Christianity & Royal Sepulcher)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-chartres-cathedral-labyrinth",
+    "title_th": "มหาวิหารชาทร์ และวงกตปริศนาแห่งเรขาคณิตศักดิ์สิทธิ์ (ฝรั่งเศส)",
+    "title_en": "Chartres Cathedral (The Sacred Geometry Labyrinth & Veil of the Virgin)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-mont-saint-michel-abbey",
+    "title_th": "ปราสาทมงแซ็งมีแชล อารามลอยน้ำแห่งเทวทูตมีคาเอล (นอร์มังดี ฝรั่งเศส)",
+    "title_en": "Mont-Saint-Michel (The Tidal Island Abbey of Archangel Michael)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-quinta-da-regaleira-well",
+    "title_th": "กวึนตา ดา รีกาเลย์รา บ่อน้ำประกอบพิธีลับแห่งอัศวินเทมพลาร์ (ซินทรา โปรตุเกส)",
+    "title_en": "Quinta da Regaleira (The Subterranean Initiation Well of Sintra)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-belem-tower-lisbon",
+    "title_th": "ป้อมปราการเบเล็ง หอคอยพิทักษ์น่านน้ำและจิตวิญญาณแห่งการเดินเรือ (โปรตุเกส)",
+    "title_en": "Belém Tower (The Manueline Guardian Bastion of Lisbon Harbor)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-callanish-standing-stones",
+    "title_th": "เสาหินดึกดำบรรพ์คัลลานิช กากบาทหินยักษ์แห่งเกาะลูอิส (สก็อตแลนด์)",
+    "title_en": "Callanish Standing Stones (The Megalithic Stone Cross of Lewis)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-newgrange-passage-tomb",
+    "title_th": "สุสานสุริยันนิวเกรนจ์ มหาหลุมศพพันปีก่อนพีระมิดอียิปต์ (ไอร์แลนด์)",
+    "title_en": "Newgrange (The 5,200-Year Winter Solstice Passage Tomb of Boyne)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-hill-of-tara-lia-fail",
+    "title_th": "เนินเขาทารา บัลลังก์ศิลาแห่งจอมกษัตริย์ไอร์แลนด์ (ไอร์แลนด์)",
+    "title_en": "Hill of Tara & Lia Fáil (The Screaming Stone of Destiny)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-mycenae-lion-gate-curse",
+    "title_th": "ประตูปราการสิงโตแห่งไมซีนี และคำสาปเลือดราชวงศ์อะทรีอุส (กรีซ)",
+    "title_en": "Lion Gate of Mycenae & The Blood Curse of the House of Atreus",
+    "category": "legend"
+  },
+  {
+    "id": "pin-delos-sacred-island-apollo",
+    "title_th": "เกาะศักดิ์สิทธิ์เดลอส กำเนิดสุริยเทพอะพอลโลและเทวีอาร์เทมิส (กรีซ)",
+    "title_en": "Delos Sacred Island (Birthplace of Apollo & Sanctuary of the Aegean)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-mount-etna-forge-hephaestus",
+    "title_th": "ภูเขาไฟเอตนา โรงตีเหล็กใต้พิภพของเฮฟเฟสทัสและอสูรไทฟอน (ซิซิลี อิตาลี)",
+    "title_en": "Mount Etna (The Underworld Forge of Hephaestus & Prison of Typhon)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-cumaean-sibyl-cave",
+    "title_th": "ถ้ำพยากรณ์คูเม ถ้ำแห่งเทพีซีบิลและทางสู่ยมโลกแห่งแอเนียส (อิตาลี)",
+    "title_en": "Cave of the Cumaean Sibyl (The Oracular Grotto of Apollo's Prophetess)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-brocken-hexentanzplatz-witches",
+    "title_th": "ยอดเขาบร็อคเคินและลานเต้นรำแม่มดคืนวัลเพอร์กิส (เทือกเขาฮารซ์ เยอรมนี)",
+    "title_en": "Brocken & Hexentanzplatz (The Witches' Dance on Walpurgis Night)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-fafnir-curse-dragon-norse",
+    "title_th": "ฟาฟเนียร์ มังกรคนบาปผู้เฝ้าขุมทองคำต้องคำสาปอันดวารานาวต์ (นอร์ส)",
+    "title_en": "Fafnir the Dragon (The Cursed Golden Hoard of Gnitaheath)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-nidhogg-corpse-eater-yggdrasil",
+    "title_th": "นิดฮ็อกก์ มังกรแทะรากต้นพิภพอิกดราซิลในขุมนรกนิฟล์ไฮม์ (นอร์ส)",
+    "title_en": "Nidhogg (The Corpse-Eater Gnawing the Roots of Yggdrasil)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-sobek-crocodile-god-nile",
+    "title_th": "โซเบก เทพเจ้าจระเข้ผู้บันดาลความอุดมสมบูรณ์และแม่น้ำไนล์ (อียิปต์)",
+    "title_en": "Sobek (The Crocodile Lord of Kom Ombo & Father of the Nile)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-ammit-devourer-of-the-dead",
+    "title_th": "อัมมิต อสูรกลืนวิญญาณหัวจระเข้ตัวสิงโตสะโพกฮิปโป (อียิปต์)",
+    "title_en": "Ammit (The Soul Devourer at the Weighing of the Heart)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-impundulu-lightning-bird",
+    "title_th": "อิมพุนดูลู นกสายฟ้าดูดเลือดแห่งตำนานเผ่าซูลูและโคซา (แอฟริกาใต้)",
+    "title_en": "Impundulu / The Lightning Bird (Vampiric Avian Demon of Zulu Lore)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-adaro-solomon-flying-fish",
+    "title_th": "อาดาโร มนุษย์เงือกปลาบินแห่งหมู่เกาะโซโลมอน (แปซิฟิก)",
+    "title_en": "Adaro (The Flying-Fish Merfolk Specter of Solomon Islands)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-piasa-bird-bluffs-illinois",
+    "title_th": "พญานกไพอาซา อสูรหน้าคนเขากวางริมผาแม่น้ำมิสซิสซิปปี (อิลลินอยส์ สหรัฐฯ)",
+    "title_en": "The Piasa Bird (The Man-Devouring Cliff Monster of Alton, Illinois)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-koh-i-noor-diamond-curse",
+    "title_th": "คำสาปเพชรโคอินัวร์ (อัญมณีแห่งความพินาศของบุรุษผู้ครอบครอง)",
+    "title_en": "Curse of the Koh-i-Noor Diamond (Mountain of Light Malevolent Gem)",
+    "category": "curse"
+  },
+  {
+    "id": "pin-curse-of-the-billy-goat",
+    "title_th": "คำสาปแพะบิลลี่แห่งริกลีย์ฟิลด์ (อาถรรพ์ 71 ปีของทีมชิคาโกคับส์)",
+    "title_en": "Curse of the Billy Goat at Wrigley Field (Chicago Cubs 71-Year Hex)",
+    "category": "curse"
+  },
+  {
+    "id": "pin-basano-vase-curse-italy",
+    "title_th": "แจกันบาซาโน (แจกันเงินมรณะแห่งศตวรรษที่ 15)",
+    "title_en": "The Basano Vase (15th Century Silver Death Vase of Italy)",
+    "category": "curse"
+  },
+  {
+    "id": "pin-crying-boy-painting-curse",
+    "title_th": "ภาพวาดเด็กชายร้องไห้ (ภาพอาถรรพ์ไฟไหม้บ้านแห่งเกาะอังกฤษ)",
+    "title_en": "The Crying Boy Painting (The Fireproof Hex of Giovanni Bragolin)",
+    "category": "curse"
+  },
+  {
+    "id": "pin-annabelle-raggedy-doll-curse",
+    "title_th": "ตุ๊กตาแอนนาเบลล์ (ตุ๊กตาผีสิงอาถรรพ์แห่งพิพิธภัณฑ์วอร์เรน)",
+    "title_en": "Annabelle the Haunted Doll (The Occult Museum Raggedy Ann)",
+    "category": "curse"
+  },
+  {
+    "id": "pin-black-aggie-statue-curse",
+    "title_th": "รูปปั้นแบล็กแอกกี้ (อาถรรพ์ดวงตาสีดำแห่งสุสานดรูอิดฮิลล์)",
+    "title_en": "Black Aggie Statue (The Cursed Bronze Mourner of Druid Ridge)",
+    "category": "curse"
+  },
+  {
+    "id": "pin-little-bastard-james-dean-curse",
+    "title_th": "รถลิตเติลบาสตาร์ดของเจมส์ ดีน (รถแข่งปอร์เช่ 550 ต้องคำสาปมรณะ)",
+    "title_en": "James Dean's Little Bastard (The Cursed Porsche 550 Spyder)",
+    "category": "curse"
+  },
+  {
+    "id": "pin-curse-of-tecumseh-presidents",
+    "title_th": "คำสาปเทคัมเซห์ (อาถรรพ์การสูญเสียประธานาธิบดีสหรัฐฯ ทุก 20 ปี)",
+    "title_en": "Curse of Tippecanoe / Tecumseh's Hex (US Presidential 20-Year Curse)",
+    "category": "curse"
+  },
+  {
+    "id": "pin-burton-agnes-screaming-skull",
+    "title_th": "กะโหลกกรีดร้องแห่งคฤหาสน์เบอร์ตัน แอกเนส (อาถรรพ์กระดูกที่ไม่ยอมจากบ้าน)",
+    "title_en": "The Screaming Skull of Burton Agnes Hall (The Unburied Heiress)",
+    "category": "curse"
+  },
+  {
+    "id": "pin-the-anguished-man-painting",
+    "title_th": "ภาพวาดชายผู้ทุกข์ทรมาน (ภาพเขียนผสมเลือดมนุษย์สุดหลอน)",
+    "title_en": "The Anguished Man (Painting Mixed with the Artist's Own Blood)",
+    "category": "curse"
+  },
+  {
+    "id": "pin-the-hands-resist-him-ebay",
+    "title_th": "ภาพวาดมือที่ต่อต้านเขา (ภาพวาดต้องสาปที่มีชีวิตยามราตรีแห่งอีเบย์)",
+    "title_en": "The Hands Resist Him (The Infamous Haunted eBay Painting)",
+    "category": "curse"
+  },
+  {
+    "id": "pin-sessho-seki-killing-stone-nasu",
+    "title_th": "ศิลาสังหารเซ็ทโชเซกิ (หินสะกดวิญญาณจิ้งจอกเก้าหางทามาโมะ โนะ มาเอะ)",
+    "title_en": "Sessho-seki Killing Stone of Nasu (The Split Nine-Tailed Fox Rock)",
+    "category": "curse"
+  },
+  {
+    "id": "pin-king-casimir-tomb-curse-poland",
+    "title_th": "คำสาปสุสานกษัตริย์คาซิเมียร์ที่ 4 (อาถรรพ์ฟอสิลมรณะแห่งกรากุฟ)",
+    "title_en": "Curse of King Casimir IV Jagiellon's Tomb (Wawel Cathedral Curse)",
+    "category": "curse"
+  },
+  {
+    "id": "pin-hoia-baciu-cursed-forest",
+    "title_th": "ป่าอาถรรพ์โฮยา บาชู (สามเหลี่ยมเบอร์มิวดาแห่งทรานซิลเวเนีย)",
+    "title_en": "Hoia Baciu Cursed Forest (The Bermuda Triangle of Transylvania)",
+    "category": "curse"
+  },
+  {
+    "id": "pin-lemp-mansion-suicide-curse",
+    "title_th": "คฤหาสน์ตระกูลเลมป์ (อาถรรพ์การฆ่าตัวตาย 4 รุ่นแห่งเซนต์หลุยส์)",
+    "title_en": "The Lemp Mansion (The Four-Generation Tragedy of St. Louis)",
+    "category": "curse"
+  },
+  {
+    "id": "pin-delhi-purple-sapphire-curse",
+    "title_th": "ไพลินสีม่วงเดลฮี (อัญมณีอาถรรพ์แห่งวิหารพระอินทร์)",
+    "title_en": "The Delhi Purple Sapphire (The Plundered Temple of Indra Curse)",
+    "category": "curse"
+  },
+  {
+    "id": "pin-teke-teke-japan-station",
+    "title_th": "เทเกะ เทเกะ (วิญญาณสาวไร้ท่อนล่างลากศอกไล่ล่าแห่งสถานีรถไฟ)",
+    "title_en": "Teke Teke (The Scythe-Clawing Ghost of Japanese Train Stations)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-hone-onna-skeleton-woman",
+    "title_th": "โฮเนะ อนนะ (ผีโครงกระดูกหญิงสาวในเงามืดแห่งญี่ปุ่น)",
+    "title_en": "Hone-onna (The Skeleton Woman Yokai of Japanese Folklore)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-ubume-birthing-ghost",
+    "title_th": "อุบุเมะ (วิญญาณแม่คลอดบุตรอุ้มทารกหินแห่งสะพานญี่ปุ่น)",
+    "title_en": "Ubume (The Birthing Mother Ghost of Japanese Bridges)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-funayurei-shipwreck-phantom",
+    "title_th": "ฟุนะยูเร (ผีพรายเรือขอทัพพีตักน้ำล่มเรือแห่งทะเลญี่ปุ่น)",
+    "title_en": "Funayurei (Shipwreck Phantoms of the Japanese Coastal Seas)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-sundel-bolong-indonesia",
+    "title_th": "ซุนเดล โบลง (ผีหญิงสาวหลังกลวงแห่งเกาะชวา)",
+    "title_en": "Sundel Bolong (The Hollow-Backed Vengeful Maiden of Java)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-wewe-gombel-indonesia",
+    "title_th": "เวเว กอมเบล (วิญญาณหญิงอุ้มเด็กหลงป่าแห่งชวา)",
+    "title_en": "Wewe Gombel (Javanese Tree Spirit of Neglected Children)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-tiyanak-philippines",
+    "title_th": "ทียานัก (ปีศาจทารกจำแลงลวงกินคนแห่งฟิลิปปินส์)",
+    "title_en": "Tiyanak (Vampiric Demon Infant of Philippine Forests)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-manananggal-visayas",
+    "title_th": "มานานังกัล (ผีถอดท่อนบนสยายปีกดูดเลือดแห่งวิซายัส)",
+    "title_en": "Manananggal (Visayan Winged Torso Flesh-Eater of the Philippines)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-ame-onna-rain-spirit",
+    "title_th": "อาเมะ อนนะ (ภูตสตรีนำพาพิรุณหยาดฝนแห่งญี่ปุ่น)",
+    "title_en": "Ame Onna (The Rain Woman Yokai of Japanese Folklore)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-mul-gwisin-water-ghost",
+    "title_th": "มุล กวิชิน (ผีพรายน้ำฉุดร่างลงสู่ก้นบึงแห่งเกาหลี)",
+    "title_en": "Mul Gwisin (The Drowned Water Phantoms of Korean Rivers)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-moroi-romanian-phantom",
+    "title_th": "โมรอย (วิญญาณภูตผีดูดพลังชีวิตแห่งโรมาเนีย)",
+    "title_en": "Moroi (The Phantom Life-Draining Revenant of Romania)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-iele-forest-sirens",
+    "title_th": "อีเอเล (วิญญาณภูตสาวเต้นรำลวงชายหนุ่มแห่งโรมาเนีย)",
+    "title_en": "Iele (The Seductive Forest Nymph Sirens of Romania)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-poludnitsa-lady-midday",
+    "title_th": "โพลุดนิตซา (เทพีเที่ยงวันเคียวตัดคอแห่งทุ่งข้าวสลาวิก)",
+    "title_en": "Poludnitsa / Lady Midday (The Noon Heatstroke Reaper of Slavic Fields)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-nattramn-night-raven",
+    "title_th": "นัตตรัมน (นกกาเพลิงวิญญาณคนบาปแห่งสแกนดิเนเวีย)",
+    "title_en": "Nattramn (The Night Raven of Unbaptized Sins Scandinavia)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-myling-wandering-child",
+    "title_th": "มิวลิง (วิญญาณทารกไร้ชื่อขี่คอบนทางเปลี่ยวแห่งสวีเดน)",
+    "title_en": "Myling (The Unbaptized Child Revenant of Swedish Woods)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-pesta-norwegian-crone",
+    "title_th": "เปสต้า (ยายเฒ่ากาฬโรคผู้ถือคราดและไม้กวาดแห่งนอร์เวย์)",
+    "title_en": "Pesta (The Black Plague Crone of Norwegian Fables)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-abiku-yoruba-spirit-child",
+    "title_th": "อบิกู (วิญญาณเด็กเร่ร่อนเกิดซ้ำแห่งชนเผ่ายูรูบา)",
+    "title_en": "Abiku (The Wandering Spirit Children Born to Die Yoruba)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-egbere-mat-crying-spirit",
+    "title_th": "เอกเบเร (วิญญาณแคระแบกเสื่อร่ำไห้ยามราตรีแห่งแอฟริกาตะวันตก)",
+    "title_en": "Egbere (The Weeping Mat-Bearing Sprite of West Africa)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-eastern-state-cellblock-ghosts",
+    "title_th": "วิญญาณห้องขังคุกอีสเทิร์นสเตท (แดนขังเดี่ยวอาถรรพ์ฟิลาเดลเฟีย)",
+    "title_en": "Eastern State Penitentiary (Haunted Solitary Cells of Philadelphia)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-hachishakusama-eight-feet-tall",
+    "title_th": "ฮาจิชาคุซามะ (สตรีร่างยักษ์แปดฟุตในชุดกระโปรงขาวแห่งหมู่บ้านชนบทญี่ปุ่น)",
+    "title_en": "Hachishakusama / Eight Feet Tall (The White-Dress Giantess of Japanese Lore)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-phi-tai-ha-epidemic-ghost",
+    "title_th": "ผีตายห่า (วิญญาณผู้ล่วงลับจากโรคระบาดป่าช้าโบราณ)",
+    "title_en": "Phi Tai Ha (Epidemic Plague Spirits of Old Siam)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-phi-tai-thang-klom-cemetery",
+    "title_th": "ผีตายทั้งกลม (อาถรรพ์มารดาผู้ล่วงลับพร้อมทารกในครรภ์)",
+    "title_en": "Phi Tai Thang Klom (The Sorrowful Maternal Phantom of Siam)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-phi-ta-moy-forest-spirit",
+    "title_th": "ผีตามอย (วิญญาณพิทักษ์ไพรดงดิบแห่งเทือกเขาดงพญาเย็น)",
+    "title_en": "Phi Ta Moy (Forest Guardian Spectre of Dong Phaya Yen)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-phi-phrai-khong-river",
+    "title_th": "ผีพรายน้ำโขง (วิญญาณพรายสายน้ำแห่งคุ้งน้ำวนแม่น้ำโขง)",
+    "title_en": "Phi Phrai Khong (The Siren Phantoms of the Mekong Rapids)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-chao-mae-takhian-chumphon",
+    "title_th": "เจ้าแม่ตะเคียนทองบางหมาก (ดวงวิญญาณนางไม้โบราณแห่งลุ่มน้ำชุมพร)",
+    "title_en": "Chao Mae Takhian Thong Bang Mak (Ancient Sacred Tree Spirit of Chumphon)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-krasue-ban-dong-flying-head",
+    "title_th": "ผีกระสือบ้านดง (ตำนานดวงไฟลอยฟ้าถอดหัวหากินยามราตรี)",
+    "title_en": "Krasue of Ban Dong (The Nocturnal Visceral Glow of the Floating Head)",
+    "category": "ghost"
+  },
+  {
+    "id": "pin-hanging-gardens-of-babylon",
+    "title_th": "สวนลอยบาบิโลน (หนึ่งในเจ็ดสิ่งมหัศจรรย์โลกยุคโบราณแห่งกษัตริย์เนบูคัดเนซซาร์)",
+    "title_en": "Hanging Gardens of Babylon (Wondrous Terraced Oasis of Mesopotamia)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-jason-golden-fleece-colchis",
+    "title_th": "เจสันและขนแกะทองคำ (มหากาพย์เรืออาร์โกสู่อาณาจักรโคลคิส)",
+    "title_en": "Jason and the Golden Fleece of Colchis (The Argonaut Epic)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-trojan-horse-of-troy",
+    "title_th": "ม้าไม้เมืองทรอย (กลศึกสะท้านโลกแห่งมหากาพย์สงครามกรุงทรอย)",
+    "title_en": "The Trojan Horse of Troy (The Homeric Siege Stratagem)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-daedalus-and-icarus-flight",
+    "title_th": "เดดาลัสและอิคารัส (ปีกขี้ผึ้งและชายผู้บินท้าทายดวงอาทิตย์)",
+    "title_en": "Daedalus and Icarus (The Wax Wings of the Aegean Sea)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-pandoras-box-myth",
+    "title_th": "กล่องแพนดอร่า (กล่องบรรจุหายนะและความหวังสุดท้ายของมนุษยชาติ)",
+    "title_en": "Pandora's Box (The Vessel of Evils and Sacred Hope)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-ragnarok-vigrid-plain",
+    "title_th": "มหาสงครามแร็กนาร็อก (อวสานทวยเทพนอร์ส ณ ทุ่งวิกริด)",
+    "title_en": "Ragnarok at Vigrid Plain (The Twilight of the Norse Gods)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-lady-of-the-lake-nimue",
+    "title_th": "สตรีแห่งทะเลสาบนิมูเอ้ (ผู้พิทักษ์และมอบดาบเอ็กซ์คาลิเบอร์)",
+    "title_en": "The Lady of the Lake Nimue (Guardian of Excalibur)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-isle-of-avalon-king-arthur",
+    "title_th": "เกาะศักดิ์สิทธิ์อาวาลอน (ดินแดนแอปเปิลสุขาวดีที่พำนักสุดท้ายของกษัตริย์อาเธอร์)",
+    "title_en": "Isle of Avalon (The Mystical Resting Sanctuary of King Arthur)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-holy-grail-montsegur",
+    "title_th": "จอกศักดิ์สิทธิ์แห่งมงต์เซกูร์ (ปราสาทสุดท้ายของกลุ่มคาธาร์บนยอดเขาพิเรนีส)",
+    "title_en": "The Holy Grail of Montsegur (The Cathar Pyrenean Stronghold)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-kumari-kandam-lost-continent",
+    "title_th": "กุมารีกัณฑัม (มหาทวีปทมิฬที่สาบสูญใต้ก้นมหาสมุทรอินเดีย)",
+    "title_en": "Kumari Kandam (The Lost Cradle Continent of Tamil Legend)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-seven-cities-of-cibola",
+    "title_th": "นครทั้งเจ็ดแห่งซิโบลา (ตำนานเมืองทองคำแห่งทะเลทรายแอริโซนา)",
+    "title_en": "Seven Cities of Cibola (The Mythical Golden Pueblos of the Southwest)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-city-of-the-caesars-patagonia",
+    "title_th": "นครแห่งซีซาร์ (อาณาจักรทองคำเร้นลับใต้เทือกเขาแอนดีสแห่งพาตาโกเนีย)",
+    "title_en": "City of the Caesars (The Enchanted Lost Metropolis of Patagonia)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-fountain-of-youth-bimini",
+    "title_th": "น้ำพุแห่งความเยาว์วัย (สายน้ำชุบชีวิตอมตะแห่งเกาะบิมินี)",
+    "title_en": "Fountain of Youth of Bimini (Ponce de Leon's Elixir Spring)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-flying-dutchman-cape-good-hope",
+    "title_th": "ฟลายอิงดัตช์แมน (เรือผีโจรสลัดต้องสาปแห่งแหลมกู๊ดโฮป)",
+    "title_en": "The Flying Dutchman (The Ghost Galleon of the Cape of Good Hope)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-banshee-irish-death-wail",
+    "title_th": "แบนชี (ภูตสาวกรีดร้องบอกลางมรณะแห่งไอร์แลนด์)",
+    "title_en": "The Banshee (The Irish Fairy of Mourning Screams)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-dullahan-headless-horseman",
+    "title_th": "ดุลลาฮาน (อัศวินหัวขาดควบม้าดำแห่งไอร์แลนด์)",
+    "title_en": "Dullahan (The Headless Horseman of Irish Lore)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-kelpie-scottish-lochs",
+    "title_th": "เคลพี (ภูตม้าน้ำลวงกินคนแห่งทะเลสาบสก็อตแลนด์)",
+    "title_en": "Kelpie (The Shape-Shifting Water Horse of Scottish Lochs)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-black-shuck-norfolk-coast",
+    "title_th": "แบล็กชัค (สุนัขปีศาจตาสีเพลิงแห่งชายฝั่งนอร์ฟอล์ก)",
+    "title_en": "Black Shuck (The Hellhound Phantom of East Anglia)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-krampus-alpine-punisher",
+    "title_th": "ครามปุส (อสูรลงทัณฑ์เด็กดื้อแห่งเทือกเขาแอลป์)",
+    "title_en": "Krampus (The Horned Yule Punisher of the Austrian Alps)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-erlking-german-forest",
+    "title_th": "เอิร์ลคิง (ราชาแห่งภูตพรายลวงวิญญาณแห่งป่าดำเยอรมัน)",
+    "title_en": "Der Erlkönig / The Erlking (Phantom Monarch of the Black Forest)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-rubezahl-giant-krkonose",
+    "title_th": "รือเบซาล (ยักษ์ใหญ่ผู้พิทักษ์แห่งเทือกเขาเคอร์โคโนเช)",
+    "title_en": "Rübezahl (The Mountain Lord of Krkonoše / Giant Mountains)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-dames-blanches-french-bridge",
+    "title_th": "สตรีสีขาวแห่งสะพานฝรั่งเศส (วิญญาณนางฟ้าขอเต้นรำแห่งหุบเหว)",
+    "title_en": "Dames Blanches (The White Ladies of Normandy Ravines)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-phadaeng-nang-ai-nong-han",
+    "title_th": "ตำนานผาแดงนางไอ่ (โศกนาฏกรรมกระรอกเผือกถล่มเมืองหนองหาน)",
+    "title_en": "Legend of Phadaeng Nang Ai (The White Squirrel Flood of Nong Han)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-tham-pha-nang-khoi-phrae",
+    "title_th": "ถ้ำผานางคอย (อนุสรณ์แห่งความรักและการรอคอยนิรันดร์แห่งเมืองแพร่)",
+    "title_en": "Tham Pha Nang Khoi (The Cavern of the Eternal Waiting Maiden of Phrae)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-mueang-lablae-ancient-city",
+    "title_th": "เมืองลับแล (อาณาจักรต้องห้ามแห่งสัจจะวาจาและม่านหมอกอุตรดิตถ์)",
+    "title_en": "Mueang Lablae (The Enchanted Mist Realm of Truth Uttaradit)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-bang-rachan-heroic-camp",
+    "title_th": "ค่ายบางระจัน (ตำนานวีรชนคนกล้าแห่งเมืองสิงห์บุรี)",
+    "title_en": "Bang Rachan Heroic Encampment (Legendary Defenders of Sing Buri)",
+    "category": "legend"
+  },
+  {
+    "id": "pin-luang-phor-ngern-wat-bang-khlan",
+    "title_th": "หลวงพ่อเงิน วัดบางคลาน (เทพเจ้าแห่งโพทะเล พุทธคุณมหาลาภพิจิตร)",
+    "title_en": "Luang Phor Ngern of Wat Bang Khlan (Holy Saint of Phichit)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-wat-khun-inthapramun-ang-thong",
+    "title_th": "พระพุทธไสยาสน์วัดขุนอินทประมูล (มหาพุทธไสยาสน์ศิลาโบราณแห่งอ่างทอง)",
+    "title_en": "Wat Khun Inthapramun (Ancient Great Reclining Buddha of Ang Thong)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-wat-tako-luang-phor-ruay",
+    "title_th": "หลวงพ่อรวย วัดตะโก (พระมหาเกจิแห่งโชคลาภและความมั่งคั่งอยุธยา)",
+    "title_en": "Luang Phor Ruay of Wat Tako (Saint of Fortune Ayutthaya)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-wat-pak-khlong-makham-thao",
+    "title_th": "หลวงปู่ศุข วัดปากคลองมะขามเฒ่า (ปรมาจารย์แห่งพุทธาคมลุ่มน้ำเจ้าพระยาชัยนาท)",
+    "title_en": "Luang Pu Suk of Wat Pak Khlong Makham Thao (Grand Sorcerer Monk of Chai Nat)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-tham-khao-luang-phetchaburi",
+    "title_th": "ถ้ำเขาหลวง (ถ้ำโบราณสถานศักดิ์สิทธิ์และแสงสวรรค์แห่งเพชรบุรี)",
+    "title_en": "Tham Khao Luang Cave Sanctuary (Celestial Light Chamber of Phetchaburi)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-naphamethanidon-doi-inthanon",
+    "title_th": "พระมหาธาตุนภเมทนีดลและนภพลภูมิสิริ (มหาเจดีย์คู่บนยอดดอยอินทนนท์สูงสุดแดนสยาม)",
+    "title_en": "Naphamethanidon and Naphaphonphumisiri Stupas (Highest Peak of Doi Inthanon)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-chao-mae-song-phi-nong-mukdahan",
+    "title_th": "ศาลเจ้าแม่สองพี่น้อง (ศาลเทพารักษ์คู่บารมีริมฝั่งแม่น้ำโขงมุกดาหาร)",
+    "title_en": "Chao Mae Song Phi Nong Shrine (Sacred Twin Sisters of the Mekong Mukdahan)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-wat-chalong-luang-por-cham-phuket",
+    "title_th": "หลวงพ่อแช่ม วัดฉลอง (บารมีเหรียญยันต์คุ้มภัยชาวภูเก็ต)",
+    "title_en": "Luang Phor Cham of Wat Chalong (Protector of the Tin Miners Phuket)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-ananda-temple-bagan",
+    "title_th": "วัดอนันดา (เพชรน้ำเอกแห่งพุทธศิลป์มหาเจดีย์พุกาม)",
+    "title_en": "Ananda Temple of Bagan (Masterpiece of Mon and Burmese Stupa Art)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-wat-phou-champasak-laos",
+    "title_th": "ปราสาทวัดพู (เทวสถานปราสาทหินขอมโบราณมรดกโลกแห่งจำปาสัก)",
+    "title_en": "Wat Phou Khmer Sanctuary (Mountain Temple of Champasak Laos)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-tikal-mayan-pyramids",
+    "title_th": "มหานครติคาล (มหาพีระมิดมายากลางป่าดงดิบแห่งกัวเตมาลา)",
+    "title_en": "Tikal Mayan Metropolic Ruins (Great Plaza Pyramids of Peten Guatemala)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-karnak-temple-luxor-egypt",
+    "title_th": "มหาวิหารคาร์นัก (มหาเทวาลัยเสายักษ์ไฮโปสไตล์แห่งเทพเจ้าอามุน-รา)",
+    "title_en": "Karnak Great Temple of Luxor (Hypostyle Hall of Amun-Ra Egypt)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-meenakshi-amman-temple-madurai",
+    "title_th": "วัดมีนากชีอัมมัน (มหาเทวาลัยสลักเสลาหลากสีพันยอดแห่งทมิฬนาฑู)",
+    "title_en": "Meenakshi Amman Temple of Madurai (Towering Gopuram Citadel of India)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-pashupatinath-temple-nepal",
+    "title_th": "วัดปศุปฏินาถ (มหาเทวสถานพระศิวะศักดิ์สิทธิ์ริมฝั่งแม่น้ำพาคมตี)",
+    "title_en": "Pashupatinath Temple of Kathmandu (Sacred Shiva Abode of Nepal)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-paro-taktsang-tigers-nest",
+    "title_th": "พาโรทักซัง (อารามรังเสือศักดิ์สิทธิ์ริมหน้าผาสูงชันแห่งภูฏาน)",
+    "title_en": "Paro Taktsang Tiger's Nest (Himalayan Cliffside Monastery of Bhutan)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-uluwatu-cliff-temple-bali",
+    "title_th": "วัดอูลูวาตู (มหาเทวสถานศักดิ์สิทธิ์บนหน้าผาสูงชันแห่งบาหลี)",
+    "title_en": "Pura Luhur Uluwatu (Cliffside Ocean Temple of Bali Indonesia)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-tanah-lot-sea-temple-bali",
+    "title_th": "วัดทานาห์ลอต (เทวสถานเกาะหินกลางเกลียวคลื่นทะเลบาหลี)",
+    "title_en": "Pura Tanah Lot (Sacred Sea Sanctuary on the Waves of Bali)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-itsukushima-floating-torii",
+    "title_th": "เสาโทริอิสีชาดลอยน้ำแห่งศาลเจ้าอิสึกุชิมะ (ประตูสวรรค์กลางทะเลมิยาจิมะ)",
+    "title_en": "Itsukushima Floating Torii Shrine (Gate of the Gods on Miyajima Island)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-ise-jingu-grand-shrine-mie",
+    "title_th": "มหาศาลเจ้าใหญ่แห่งอิเสะ (วิหารสูงสุดแห่งสุริยเทวีอามาเทราสึแห่งญี่ปุ่น)",
+    "title_en": "Ise Jingu Grand Shrine (The Soul of Sun Goddess Amaterasu Mie)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-mami-wata-ocean-altar",
+    "title_th": "แท่นบูชาเจ้าแม่มามิ วาตา (เทวีแห่งสายน้ำ มหาสมุทรและความมั่งคั่งแห่งแอฟริกาตะวันตก)",
+    "title_en": "Mami Wata Ocean Altar (Deity of Waters and Fortune of West Africa)",
+    "category": "sacred"
+  },
+  {
+    "id": "pin-cat-sith-fairy-feline",
+    "title_th": "แคต ชี (แมวภูตวิญญาณสีดำแต้มขาวแห่งที่ราบสูงสก็อตแลนด์)",
+    "title_en": "Cat Sìth (The Fairy Cat of the Scottish Highlands)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-cu-sith-fairy-hound",
+    "title_th": "คู ชี (สุนัขล่าเนื้อภูตสีเขียวเงียบกริบแห่งไฮแลนด์)",
+    "title_en": "Cù Sìth (The Silent Fairy Hound of Scottish Moors)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-black-annis-dane-hills",
+    "title_th": "แบล็ก แอนนิส (ยายเฒ่ากรงเล็บเหล็กกินมนุษย์แห่งถ้ำเลสเตอร์เชียร์)",
+    "title_en": "Black Annis (The Iron-Clawed Cave Hag of Leicestershire)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-beast-of-exmoor-phantom-cat",
+    "title_th": "สัตว์ร้ายแห่งเอ็กซ์มัวร์ (เสือดำเงาลึกลับแห่งทุ่งเดวอน)",
+    "title_en": "Beast of Exmoor (Phantom Big Cat of the Devon Moors)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-owlman-of-mawnan-cornwall",
+    "title_th": "มนุษย์นกเค้าแมวแห่งมอว์แนน (อสูรปีกขนนกตาสีเพลิงแห่งคอร์นวอลล์)",
+    "title_en": "Owlman of Mawnan (Feathered Winged Cryptid of Cornwall)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-la-velue-peluda-porcupine-dragon",
+    "title_th": "ลา เวลู หรือ เปรูดา (มังกรขนเม่นหนามพิษพ่นไฟแห่งฝรั่งเศส)",
+    "title_en": "La Velue / Peluda (The Shaggy Spiked Dragon of the Huisne River)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-la-gargouille-rouen-water-dragon",
+    "title_th": "ลา กากูย์ (มังกรพ่นน้ำแห่งแม่น้ำแซนเมืองรูอ็อง)",
+    "title_en": "La Gargouille (The River Dragon of Rouen and St. Romanus)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-qalupalik-inuit-sea-creature",
+    "title_th": "คาลูปาลิก (อสูรทะเลเกล็ดเขียวจับเด็กแห่งชาวอินูอิต)",
+    "title_en": "Qalupalik (The Amautik-Wearing Sea Beast of the Arctic)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-tahoe-tessie-lake-monster",
+    "title_th": "ทาโฮ เทสซี (สัตว์ประหลาดดึกดำบรรพ์ใต้ก้นทะเลสาบทาโฮ)",
+    "title_en": "Tahoe Tessie (The Prehistoric Serpent of Lake Tahoe)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-ahuizotl-aztec-water-beast",
+    "title_th": "อาฮุยซอทล์ (อสูรน้ำหางมือมนุษย์แห่งตำนานแอซเท็ก)",
+    "title_en": "Ahuizotl (The Hand-Tailed Water Beast of Aztec Lore)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-dingonek-lake-victoria-beast",
+    "title_th": "ดินโกเน็ก (สัตว์ร้ายเกล็ดเกราะเขี้ยวดาบแห่งลุ่มน้ำคองโก)",
+    "title_en": "Dingonek (The Scaled Walrus Beast of the Congo River)",
+    "category": "monster"
+  },
+  {
+    "id": "pin-mahamba-giant-crocodile-congo",
+    "title_th": "มาฮัมบา (จระเข้ยักษ์ดึกดำบรรพ์ 50 ฟุตแห่งทะเลสาบไม-ดอมเบ)",
+    "title_en": "Mahamba (The 50-Foot Prehistoric Croc of Lake Mai-Ndombe)",
+    "category": "monster"
+  }
+]
