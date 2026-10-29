@@ -195,6 +195,7 @@ export const WorldCommentBar: React.FC<WorldCommentBarProps> = ({
     if (!isWorldZoomedOut) return;
 
     const checkLiveComments = async () => {
+      if (document.hidden) return; // Pause polling when tab is hidden to save memory and network
       try {
         const res = await fetch('/api/world-comments');
         if (!res.ok) return;
@@ -220,7 +221,7 @@ export const WorldCommentBar: React.FC<WorldCommentBarProps> = ({
     };
 
     checkLiveComments();
-    const timer = window.setInterval(checkLiveComments, 5000);
+    const timer = window.setInterval(checkLiveComments, 30000); // 30s sensible live poll
     return () => window.clearInterval(timer);
   }, [isWorldZoomedOut, spawnFountainBubble]);
 

@@ -134,8 +134,7 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
 }) => {
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<Map | null>(null);
-  const markersRef = useRef<Marker[]>([]);
-  const markerItemsRef = useRef<MarkerItem[]>([]);
+  const activeMarkersRef = useRef<globalThis.Map<string, MarkerItem>>(new globalThis.Map());
   const markerInnerElsRef = useRef<globalThis.Map<string, HTMLDivElement>>(new globalThis.Map());
   const pinsRef = useRef<GhostPin[]>(pins);
   const [hoveredPinInfo, setHoveredPinInfo] = useState<{
@@ -150,6 +149,12 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     pinsRef.current = pins;
   }, [pins]);
 
+  const magnetTargetRef = useRef<{
+    pin: GhostPin;
+    dx: number;
+    dy: number;
+    dist: number;
+  } | null>(null);
   const [magnetTarget, setMagnetTarget] = useState<{
     pin: GhostPin;
     dx: number;
@@ -258,65 +263,181 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     }
   }, [selectedPin, resumeSpinAfterDelay]);
 
-  // Viewport Bounding Box & Occlusion Culling
-  // Eliminates DOM lag by strictly keeping only in-viewport markers active at deep zoom (>= 7.0)
+  // Factory: Mount an individual lightweight Occult Diamond Marker onto the map
+  const createMarkerForPin = useCallback(
+    (pin: GhostPin, isSelected: boolean): MarkerItem => {
+      const catStyle = CATEGORY_MARKER_STYLES[pin.category] || CATEGORY_MARKER_STYLES.legend;
+
+      const el = document.createElement('div');
+      el.className = 'cursor-pointer select-none group relative';
+      el.style.width = '36px';
+      el.style.height = '36px';
+      el.style.display = 'flex';
+      el.style.alignItems = 'center';
+      el.style.justifyContent = 'center';
+
+      const innerWrap = document.createElement('div');
+      innerWrap.style.position = 'relative';
+      innerWrap.style.display = 'flex';
+      innerWrap.style.alignItems = 'center';
+      innerWrap.style.justifyContent = 'center';
+      innerWrap.style.transition = 'transform 160ms cubic-bezier(0.2, 1, 0.3, 1)';
+      innerWrap.innerHTML = `
+        <span class="marker-ping-halo" style="
+          position: absolute;
+          width: ${isSelected ? '30px' : '20px'};
+          height: ${isSelected ? '30px' : '20px'};
+          border-radius: 9999px;
+          background-color: ${catStyle.color};
+          opacity: ${isSelected ? '0.7' : '0.35'};
+          filter: blur(1.5px);
+          ${isSelected ? 'animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;' : ''}
+          transition: opacity 200ms ease;
+        "></span>
+        <div style="
+          position: relative;
+          width: ${isSelected ? '26px' : '20px'};
+          height: ${isSelected ? '26px' : '20px'};
+          border-radius: ${isSelected ? '9px' : '7px'};
+          background: ${catStyle.bgGradient};
+          border: 1.8px solid ${isSelected ? '#ffffff' : catStyle.color};
+          box-shadow: 0 0 14px ${catStyle.glow}, 0 3px 8px rgba(0, 0, 0, 0.9);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transform: rotate(45deg);
+        ">
+          <div style="
+            transform: rotate(-45deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            filter: drop-shadow(0 1px 2px rgba(0,0,0,0.85));
+          ">
+            ${catStyle.iconSvg}
+          </div>
+        </div>
+      `;
+
+      el.appendChild(innerWrap);
+      markerInnerElsRef.current.set(pin.id, innerWrap);
+
+      el.addEventListener('mouseenter', () => {
+        userInteractingRef.current = true;
+        if (spinTimeoutRef.current) clearTimeout(spinTimeoutRef.current);
+        const halo = innerWrap.querySelector('.marker-ping-halo') as HTMLElement | null;
+        if (halo && !isSelected) {
+          halo.style.animation = 'ping 1.6s cubic-bezier(0, 0, 0.2, 1) infinite';
+          halo.style.opacity = '0.75';
+        }
+        const rect = el.getBoundingClientRect();
+        setHoveredPinInfo({
+          pin,
+          x: rect.left + rect.width / 2,
+          y: rect.top,
+          color: catStyle.color,
+        });
+      });
+
+      el.addEventListener('mouseleave', () => {
+        const halo = innerWrap.querySelector('.marker-ping-halo') as HTMLElement | null;
+        if (halo && !isSelected) {
+          halo.style.animation = '';
+          halo.style.opacity = '0.35';
+        }
+        setHoveredPinInfo(null);
+        resumeSpinAfterDelay();
+      });
+
+      el.addEventListener('click', (e) => {
+        e.stopPropagation();
+        setHoveredPinInfo(null);
+        flyToPin(pin);
+        onSelectPin(pin);
+      });
+
+      const marker = new Marker({ element: el, anchor: 'center' })
+        .setLngLat([pin.lng, pin.lat])
+        .addTo(mapRef.current!);
+
+      return { marker, pin, element: el, isVisible: true };
+    },
+    [flyToPin, onSelectPin, resumeSpinAfterDelay]
+  );
+
+  // Viewport Bounding Box Virtualization:
+  // Instead of attaching 3,000 DOM markers to MapLibre (which wastes ~600MB heap and allocates 30MB/s),
+  // we ONLY mount the ~10-25 markers that are currently inside the screen viewport at zoom >= 7.0!
+  // At overview (< 7.0), GPU WebGL shaders render all clusters/beacons with 0 DOM overhead.
   const updateMarkerVisibility = useCallback(() => {
     const map = mapRef.current;
     if (!map) return;
     const zoom = map.getZoom();
 
-    // At overview and intermediate zoom (< 7.0), hide DOM markers to eliminate lag
-    // and preserve sleek multi-tier WebGL clusters! Only reveal individual markers at deep zoom (>= 7.0).
-    const isOverviewZoom = zoom < 7.0 && !selectedPinRef.current;
+    const isOverviewZoom = zoom < 7.0;
     if (isOverviewZoom) {
-      for (let i = 0; i < markerItemsRef.current.length; i++) {
-        const item = markerItemsRef.current[i];
-        if (item.isVisible) {
-          item.isVisible = false;
-          item.element.style.display = 'none';
+      const selPin = selectedPinRef.current;
+      for (const [id, item] of activeMarkersRef.current.entries()) {
+        if (!selPin || id !== selPin.id) {
+          item.marker.remove();
+          markerInnerElsRef.current.delete(id);
+          activeMarkersRef.current.delete(id);
         }
+      }
+      if (selPin && !activeMarkersRef.current.has(selPin.id)) {
+        const item = createMarkerForPin(selPin, true);
+        activeMarkersRef.current.set(selPin.id, item);
       }
       return;
     }
 
-    // High performance Viewport Bounding Box Culling at deep zoom (>= 7.0):
-    // Only markers within the screen viewport (+ 25% safety buffer) are visible.
-    // Reduces active DOM nodes from 2,000 down to 5-15, eliminating zoom stutter completely!
     const bounds = map.getBounds();
     const sw = bounds.getSouthWest();
     const ne = bounds.getNorthEast();
     const latSpan = Math.abs(ne.lat - sw.lat);
     const lngSpan = Math.abs(ne.lng - sw.lng);
-    const latBuffer = latSpan * 0.25;
-    const lngBuffer = lngSpan * 0.25;
+    const latBuffer = latSpan * 0.15;
+    const lngBuffer = lngSpan * 0.15;
     const minLat = sw.lat - latBuffer;
     const maxLat = ne.lat + latBuffer;
     const minLng = sw.lng - lngBuffer;
     const maxLng = ne.lng + lngBuffer;
 
-    for (let i = 0; i < markerItemsRef.current.length; i++) {
-      const item = markerItemsRef.current[i];
-      const pin = item.pin;
-      const isSelected = selectedPinRef.current?.id === pin.id;
+    const visiblePinsMap = new globalThis.Map<string, GhostPin>();
+    const selPin = selectedPinRef.current;
+    if (selPin) visiblePinsMap.set(selPin.id, selPin);
 
-      let isNowVisible = false;
-      if (isSelected) {
-        isNowVisible = true;
-      } else {
-        const inLat = pin.lat >= minLat && pin.lat <= maxLat;
+    for (let i = 0; i < pinsRef.current.length; i++) {
+      const p = pinsRef.current[i];
+      if (p.lat >= minLat && p.lat <= maxLat) {
         const inLng =
           minLng <= maxLng
-            ? pin.lng >= minLng && pin.lng <= maxLng
-            : pin.lng >= minLng || pin.lng <= maxLng;
-        isNowVisible = inLat && inLng;
-      }
-
-      if (item.isVisible !== isNowVisible) {
-        item.isVisible = isNowVisible;
-        item.element.style.display = isNowVisible ? 'flex' : 'none';
+            ? p.lng >= minLng && p.lng <= maxLng
+            : p.lng >= minLng || p.lng <= maxLng;
+        if (inLng) {
+          visiblePinsMap.set(p.id, p);
+        }
       }
     }
-  }, []);
+
+    // 1. Unmount markers that exited the viewport
+    for (const [id, item] of activeMarkersRef.current.entries()) {
+      if (!visiblePinsMap.has(id)) {
+        item.marker.remove();
+        markerInnerElsRef.current.delete(id);
+        activeMarkersRef.current.delete(id);
+      }
+    }
+
+    // 2. Mount markers for newly visible pins
+    for (const [id, pin] of visiblePinsMap.entries()) {
+      if (!activeMarkersRef.current.has(id)) {
+        const isSelected = selPin?.id === id;
+        const item = createMarkerForPin(pin, isSelected);
+        activeMarkersRef.current.set(id, item);
+      }
+    }
+  }, [createMarkerForPin]);
 
   // Compute closest pin to screen center and apply gentle magnetic pull on markers
   const updateMagneticField = useCallback(() => {
@@ -326,29 +447,22 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
 
     // Skip magnetic calculations in overview & cluster zoom
     if (map.getZoom() < 7.0) {
-      setMagnetTarget(null);
+      if (magnetTargetRef.current !== null) {
+        magnetTargetRef.current = null;
+        setMagnetTarget(null);
+      }
       return;
     }
 
     const rect = container.getBoundingClientRect();
     const cx = rect.width / 2;
     const cy = rect.height / 2;
-    const centerLngLat = map.getCenter();
 
     const MAGNET_RADIUS = 105; // px radius for magnetic field pull
     let closest: { pin: GhostPin; dx: number; dy: number; dist: number } | null = null;
 
-    for (const pin of pinsRef.current) {
-      // Ensure pin is on the front hemisphere of the globe
-      const dLng = Math.abs(pin.lng - centerLngLat.lng);
-      const normDLng = dLng > 180 ? 360 - dLng : dLng;
-      const dLat = Math.abs(pin.lat - centerLngLat.lat);
-      if (normDLng > 75 || dLat > 75) {
-        const innerEl = markerInnerElsRef.current.get(pin.id);
-        if (innerEl) innerEl.style.transform = 'translate3d(0px, 0px, 0) scale(1)';
-        continue;
-      }
-
+    // ONLY iterate over active visible markers (~10-25 pins), NOT 3,000 pins!
+    for (const { pin } of activeMarkersRef.current.values()) {
       const pt = map.project([pin.lng, pin.lat]);
       const dx = pt.x - cx;
       const dy = pt.y - cy;
@@ -362,11 +476,9 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
       }
     }
 
-    // Reset non-closest pins and gently pull the closest pin toward the center reticle
     if (closest) {
       for (const [id, innerEl] of markerInnerElsRef.current.entries()) {
         if (id === closest.pin.id) {
-          // Gentle magnetic attraction toward center (pulls up to 38% closer + slight scale boost)
           const strength = Math.pow(1 - closest.dist / MAGNET_RADIUS, 1.15) * 0.38;
           const pullX = -closest.dx * strength;
           const pullY = -closest.dy * strength;
@@ -377,7 +489,14 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
       }
     }
 
-    setMagnetTarget(closest);
+    // Only update React state when target pin changes or distance delta is significant (prevents 60fps re-renders!)
+    const prev = magnetTargetRef.current;
+    const pinChanged = prev?.pin.id !== closest?.pin.id;
+    const distDelta = prev && closest ? Math.abs(prev.dist - closest.dist) > 5 : prev !== closest;
+    if (pinChanged || distDelta) {
+      magnetTargetRef.current = closest;
+      setMagnetTarget(closest);
+    }
   }, []);
 
 
@@ -786,7 +905,6 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
       setHoveredPinInfo(null);
       setIsWorldZoomedOut(map.getZoom() <= 3.8 && !selectedPinRef.current);
     });
-    map.on('render', scheduleThrottledUpdate);
 
     // Continuously spin globe when animation completes (only if user is not dragging/interacting)
     map.on('moveend', () => {
@@ -835,11 +953,12 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
 
     return () => {
       if (spinTimeoutRef.current) clearTimeout(spinTimeoutRef.current);
-      // Clear markers
-      markersRef.current.forEach((m) => m.remove());
-      markersRef.current = [];
+      // Clean up all active virtualized markers
+      for (const item of activeMarkersRef.current.values()) {
+        item.marker.remove();
+      }
+      activeMarkersRef.current.clear();
       markerInnerElsRef.current.clear();
-    markerItemsRef.current = [];
       map.remove();
       mapRef.current = null;
     };
@@ -873,130 +992,20 @@ export const GhostGlobe: React.FC<GhostGlobeProps> = ({
     }
   }, [worldViewSignal, flyToWorldView, spinGlobe]);
 
-  // 2. Render Markers reliably whenever `pins` or `selectedPin` changes
+  // 2. Synchronize GPU WebGL Cluster Layer & Viewport Virtualized Markers
   useEffect(() => {
     if (!mapRef.current) return;
     const map = mapRef.current;
 
-    // Remove existing markers
-    markersRef.current.forEach((m) => m.remove());
-    markersRef.current = [];
-    markerInnerElsRef.current.clear();
-
-    // Update GeoJSON source for Radio Garden Nexus layer
+    // Update GeoJSON source for Radio Garden Nexus GPU cluster layer
     const nexusSource = map.getSource('folklore-nexus') as GeoJSONSource | undefined;
     if (nexusSource) {
       nexusSource.setData(createPinsGeoJson(pins));
     }
 
-    const isOverview = map.getZoom() < 7.0 && !selectedPin;
-
-    // Create distinctive, prominent category-specific 3D Occult Diamond Markers (Ultra-lightweight)
-    pins.forEach((pin) => {
-      const isSelected = selectedPin?.id === pin.id;
-      const catStyle = CATEGORY_MARKER_STYLES[pin.category] || CATEGORY_MARKER_STYLES.legend;
-
-      const el = document.createElement('div');
-      el.className = 'cursor-pointer select-none group relative';
-      el.style.width = '36px';
-      el.style.height = '36px';
-      el.style.display = isOverview ? 'none' : 'flex';
-      el.style.alignItems = 'center';
-      el.style.justifyContent = 'center';
-
-      const innerWrap = document.createElement('div');
-      innerWrap.style.position = 'relative';
-      innerWrap.style.display = 'flex';
-      innerWrap.style.alignItems = 'center';
-      innerWrap.style.justifyContent = 'center';
-      innerWrap.style.transition = 'transform 160ms cubic-bezier(0.2, 1, 0.3, 1)';
-      innerWrap.innerHTML = `
-        <span class="marker-ping-halo" style="
-          position: absolute;
-          width: ${isSelected ? '30px' : '20px'};
-          height: ${isSelected ? '30px' : '20px'};
-          border-radius: 9999px;
-          background-color: ${catStyle.color};
-          opacity: ${isSelected ? '0.7' : '0.35'};
-          filter: blur(1.5px);
-          ${isSelected ? 'animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;' : ''}
-          transition: opacity 200ms ease;
-        "></span>
-        <div style="
-          position: relative;
-          width: ${isSelected ? '26px' : '20px'};
-          height: ${isSelected ? '26px' : '20px'};
-          border-radius: ${isSelected ? '9px' : '7px'};
-          background: ${catStyle.bgGradient};
-          border: 1.8px solid ${isSelected ? '#ffffff' : catStyle.color};
-          box-shadow: 0 0 14px ${catStyle.glow}, 0 3px 8px rgba(0, 0, 0, 0.9);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          transform: rotate(45deg);
-        ">
-          <div style="
-            transform: rotate(-45deg);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            filter: drop-shadow(0 1px 2px rgba(0,0,0,0.85));
-          ">
-            ${catStyle.iconSvg}
-          </div>
-        </div>
-      `;
-
-      el.appendChild(innerWrap);
-      markerInnerElsRef.current.set(pin.id, innerWrap);
-
-      // Dynamic lightweight hover: Activates ping only when mouse is over this specific marker!
-      el.addEventListener('mouseenter', () => {
-        userInteractingRef.current = true;
-        if (spinTimeoutRef.current) clearTimeout(spinTimeoutRef.current);
-        const halo = innerWrap.querySelector('.marker-ping-halo') as HTMLElement | null;
-        if (halo && !isSelected) {
-          halo.style.animation = 'ping 1.6s cubic-bezier(0, 0, 0.2, 1) infinite';
-          halo.style.opacity = '0.75';
-        }
-        const rect = el.getBoundingClientRect();
-        setHoveredPinInfo({
-          pin,
-          x: rect.left + rect.width / 2,
-          y: rect.top,
-          color: catStyle.color,
-        });
-      });
-
-      el.addEventListener('mouseleave', () => {
-        const halo = innerWrap.querySelector('.marker-ping-halo') as HTMLElement | null;
-        if (halo && !isSelected) {
-          halo.style.animation = '';
-          halo.style.opacity = '0.35';
-        }
-        setHoveredPinInfo(null);
-        resumeSpinAfterDelay();
-      });
-
-      // Click Interaction: zooms in and opens full StoryDrawer
-      el.addEventListener('click', (e) => {
-        e.stopPropagation();
-        setHoveredPinInfo(null);
-        flyToPin(pin);
-        onSelectPin(pin);
-      });
-
-      const marker = new Marker({ element: el, anchor: 'center' })
-        .setLngLat([pin.lng, pin.lat])
-        .addTo(map);
-
-      markersRef.current.push(marker);
-      markerItemsRef.current.push({ marker, pin, element: el, isVisible: !isOverview });
-    });
-
     updateMarkerVisibility();
     updateMagneticField();
-  }, [pins, selectedPin, onSelectPin, language, flyToPin, updateMagneticField, updateMarkerVisibility]);
+  }, [pins, selectedPin, updateMarkerVisibility, updateMagneticField]);
 
   const isLocked = Boolean(magnetTarget && magnetTarget.dist < 22);
 
