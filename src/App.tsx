@@ -1,6 +1,7 @@
 import { useState, useEffect, useMemo, useCallback, useDeferredValue } from 'react';
 import type { GhostPin, GhostCategory, SupportedLanguage } from './types/ghost';
 import { fetchPins, createPin, updatePin, deletePin, recordPinView } from './lib/api';
+import { INITIAL_GHOST_PINS } from './data/seedData';
 import { GhostGlobe } from './components/Globe/GhostGlobe';
 import { Navbar } from './components/UI/Navbar';
 import { StoryDrawer } from './components/UI/StoryDrawer';
@@ -22,10 +23,16 @@ export function App() {
 
   // Load pins & attach secret Admin Portal triggers (Ctrl+Shift+A or #admin)
   useEffect(() => {
-    fetchPins().then((data) => {
-      setPins(data);
-      setIsPinsLoaded(true);
-    });
+    fetchPins()
+      .then((data) => {
+        setPins(data);
+        setIsPinsLoaded(true);
+      })
+      .catch((err) => {
+        console.warn('Error loading pins from api, using local baseline:', err);
+        setPins(INITIAL_GHOST_PINS);
+        setIsPinsLoaded(true);
+      });
 
     const safetyTimer = setTimeout(() => {
       setIsPinsLoaded(true);
