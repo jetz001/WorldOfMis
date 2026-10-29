@@ -1,0 +1,15 @@
+# World of Mystery (Worldofmys)
+
+> An interactive 3D WebGL cartography experience mapping 2,000 folklore legends, mythical cryptids, sacred relics, and paranormal phenomena across Thailand and the world.
+
+## Project Overview
+- **Name**: World of Mystery
+- **URL**: https://worldofmys.pages.dev
+- **Core Technology**: React 19, Vite, Tailwind CSS, MapLibre GL 3D Globe, Cloudflare D1 Database, Cloudflare Pages Edge Functions.
+- **Dataset Size**: Exactly 2,000 verified folklore dossiers with multimedia archives (YouTube embeds, high-resolution imagery).
+
+## Major Features
+- **Interactive 3D Globe**: Spherical 3D celestial navigation with multi-tier cluster hierarchy (Macro, Regional, Local).
+- **Paranormal Bestiary**: Detailed codex entries classifying entities by danger level, archetype, physical characteristics, and ancient survival taboos.
+- **Bilingual Interface**: Full localization support in Thai and English.
+- **Real-time Live Presence**: Anonymous live explorer count.

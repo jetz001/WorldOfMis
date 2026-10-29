@@ -417,6 +417,9 @@ export const CommentsPanel: React.FC<CommentsPanelProps> = ({
                     </div>
 
                     <input
+                      id={`reply-author-${item.id}`}
+                      name="reply_author"
+                      aria-label={language === 'th' ? 'ชื่อของคุณ หรือ นามแฝง' : 'Your name or alias'}
                       type="text"
                       value={replyAuthor}
                       onChange={(e) => setReplyAuthor(e.target.value)}
@@ -429,6 +432,9 @@ export const CommentsPanel: React.FC<CommentsPanelProps> = ({
 
                     <div className="relative">
                       <textarea
+                        id={`reply-content-${item.id}`}
+                        name="reply_content"
+                        aria-label={language === 'th' ? 'ข้อความตอบกลับ' : 'Reply content'}
                         value={replyContent}
                         onChange={(e) => setReplyContent(e.target.value)}
                         placeholder={
@@ -470,6 +476,9 @@ export const CommentsPanel: React.FC<CommentsPanelProps> = ({
 
         <div>
           <input
+            id="new-comment-author"
+            name="comment_author"
+            aria-label={language === 'th' ? 'ชื่อของคุณ หรือ นามแฝง' : 'Your name or alias'}
             type="text"
             value={authorName}
             onChange={(e) => setAuthorName(e.target.value)}
@@ -481,6 +490,9 @@ export const CommentsPanel: React.FC<CommentsPanelProps> = ({
 
         <div className="relative">
           <textarea
+            id="new-comment-text"
+            name="comment_text"
+            aria-label={language === 'th' ? 'ข้อความบอกเล่าประสบการณ์' : 'Eyewitness testimony content'}
             value={commentText}
             onChange={(e) => setCommentText(e.target.value)}
             placeholder={

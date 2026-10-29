@@ -443,6 +443,9 @@ export const WorldCommentBar: React.FC<WorldCommentBarProps> = ({
             >
               <User className="w-3 h-3 text-amber-300 shrink-0" />
               <input
+                id="world-chat-author"
+                name="author_name"
+                aria-label={language === 'th' ? 'ชื่อผู้ส่ง' : 'Your name'}
                 type="text"
                 value={authorName}
                 maxLength={24}
@@ -472,6 +475,9 @@ export const WorldCommentBar: React.FC<WorldCommentBarProps> = ({
             {/* Comment Text Input */}
             <div className="flex-1 min-w-0 flex items-center pl-0.5">
               <input
+                id="world-chat-text"
+                name="comment_text"
+                aria-label={language === 'th' ? 'พิมพ์ข้อความแสดงความคิดเห็น' : 'Type your comment'}
                 type="text"
                 value={text}
                 maxLength={120}

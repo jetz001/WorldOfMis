@@ -538,6 +538,9 @@ export const Navbar: React.FC<NavbarProps> = ({
             <ScrollText className="w-4 h-4 absolute left-3.5 text-[#7a4618] pointer-events-none" />
             <input
               ref={inputRef}
+              id="search-input-desktop"
+              name="search_desktop"
+              aria-label={language === 'th' ? 'ค้นหาตำนานและเรื่องลี้ลับ' : 'Search folklore and mysteries'}
               type="text"
               value={localQuery}
               onFocus={() => setIsSearchFocused(true)}
@@ -776,6 +779,9 @@ export const Navbar: React.FC<NavbarProps> = ({
             <ScrollText className="w-4 h-4 absolute left-3.5 text-[#7a4618] pointer-events-none" />
             <input
               ref={mobileInputRef}
+              id="search-input-mobile"
+              name="search_mobile"
+              aria-label={language === 'th' ? 'ค้นหาตำนานและเรื่องลี้ลับบนมือถือ' : 'Search folklore on mobile'}
               type="text"
               value={localQuery}
               onFocus={() => setIsMobileSearchFocused(true)}
