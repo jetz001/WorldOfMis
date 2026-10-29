@@ -261,8 +261,8 @@ export const Navbar: React.FC<NavbarProps> = ({
     // Initial heartbeat
     sendHeartbeat();
 
-    // Heartbeat every 20 seconds to renew active presence in D1
-    const interval = window.setInterval(sendHeartbeat, 20000);
+    // Heartbeat every 60 seconds to renew active presence in D1 (conserves daily write quota)
+    const interval = window.setInterval(sendHeartbeat, 60000);
 
     const handleLeave = () => {
       try {

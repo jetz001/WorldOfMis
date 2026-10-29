@@ -8039,22 +8039,21 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "Zmey Gorynych ('Dragon Son of the Mountain') is the formidable three-headed fire-breathing dragon of Russian heroic bylina legends. Boasting emerald scales, leathery bat wings that blot out the midday sun, and copper claws, all three heads breathe sulfurous hellfire simultaneously. If decapitated, its severed heads miraculously regenerate unless all three are severed simultaneously by a holy bogatyr champion like Dobrynya Nikitich.",
     "folklore_history_th": "เรื่องราวการปราบมังกรซเมย์ โกรือนึช เป็นสัญลักษณ์แห่งการต่อสู้เพื่อปกป้องมาตุภูมิของชาวเคียฟสกายารุสและรัสเซียโบราณจากการรุกรานของชนเผ่าเร่ร่อนและภัยพิบัติทางธรรมชาติ โดยปัจจุบันมีรูปปั้นบรอนซ์ยักษ์ของซเมย์ โกรือนึช พ่นไฟได้จริงตั้งอยู่ที่อุทยานคูดิคินากอราในรัสเซีย",
     "folklore_history_en": "Zmey Gorynych personified existential geopolitical threats, nomadic invasions, and untamable natural disasters faced by Kievan Rus. A colossal 15-meter operational fire-breathing statue of Zmey Gorynych stands today as an iconic cultural landmark in Kudykina Gora safari park, Russia.",
-    "image_url": "/entities/pin-zmey-gorynych.jpg",
+    "image_url": "https://i.ytimg.com/vi/uW8oVHWmo1c/hqdefault.jpg",
     "sound_preset": "jungle_curse",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=EApclOm2rGk",
-        "id": "pin-zmey-gorynych-v1",
-        "title": "ซเมย์ โกรือนึช (พญามังกรสามหัวพ่นไฟแห่งเทือกเขาคอเคซัส) (วิดีโอประกอบเรื่องเล่า)"
+        "type": "image",
+        "url": "https://i.ytimg.com/vi/uW8oVHWmo1c/hqdefault.jpg",
+        "title": "ซเมย์ โกรือนึช (พญามังกรสามหัวพ่นไฟแห่งเทือกเขาคอเคซัส)"
       },
       {
-        "type": "image",
-        "url": "/entities/pin-zmey-gorynych.jpg",
-        "id": "pin-zmey-gorynych-m1",
-        "title": "ซเมย์ โกรือนึช (พญามังกรสามหัวพ่นไฟแห่งเทือกเขาคอเคซัส) (ภาพประกอบจากวิกิพีเดีย)"
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=uW8oVHWmo1c",
+        "title": "TWO Mistakes Are Killing Hikers in Taiwan Mountains",
+        "thumbnail": "https://i.ytimg.com/vi/uW8oVHWmo1c/hqdefault.jpg"
       }
     ]
   },
@@ -38273,20 +38272,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Chiang Mai (Thailand). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Mae Rim.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว ล้านนา เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of ล้านนา, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/BtCjc5OwBi4/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/BtCjc5OwBi4/hqdefault.jpg",
         "title": "คำสาปศิลาจารึกและอาถรรพ์ชะตากรรม แม่ริม (ล้านนา)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=BtCjc5OwBi4",
+        "title": "Vlad the Impaler: The True Story of Dracula",
+        "thumbnail": "https://i.ytimg.com/vi/BtCjc5OwBi4/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ แม่ริม",
@@ -38378,20 +38377,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Nan (Thailand). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Pua.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว ล้านนาตะวันออก ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of ล้านนาตะวันออก oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/-O6Q5GS6x_w/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/-O6Q5GS6x_w/hqdefault.jpg",
         "title": "เงาร่างทมิฬแห่งหอระฆังร้าง ปัว (ล้านนาตะวันออก)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=-O6Q5GS6x_w",
+        "title": "ตำนาน สาวปากฉีก : Kuchisake onna : ตำนานญี่ปุ่น : World of Legend : The sims",
+        "thumbnail": "https://i.ytimg.com/vi/-O6Q5GS6x_w/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ ปัว",
@@ -38483,20 +38482,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Nan (Thailand). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral ล้านนาตะวันออก engineers in Pua.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ น่าน (ไทย) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Nan (Thailand), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/oe0IK6_zYFI/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/oe0IK6_zYFI/hqdefault.jpg",
         "title": "นครโบราณที่สาบสูญใต้ผืนป่า ปัว (ล้านนาตะวันออก)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=oe0IK6_zYFI",
+        "title": "El Trauco 💀 Draw My Life Terror",
+        "thumbnail": "https://i.ytimg.com/vi/oe0IK6_zYFI/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ ปัว",
@@ -38798,20 +38797,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Ubon Ratchathani (Thailand). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Khong Chiam.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว อีสานริมโขง เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of อีสานริมโขง, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/AjTfqmIIB2E/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/AjTfqmIIB2E/hqdefault.jpg",
         "title": "คำสาปแผ่นดินและเมืองร้างโบราณ โขงเจียม (อีสานริมโขง)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=AjTfqmIIB2E",
+        "title": "เรื่องจริงของคำสาป Tutankhamun กับอาถรรพ์ที่คร่าชีวิตนักสำรวจ",
+        "thumbnail": "https://i.ytimg.com/vi/AjTfqmIIB2E/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ โขงเจียม",
@@ -38903,20 +38902,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Buri Ram (Thailand). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Chaloem Phra Kiat.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว อีสานใต้ขอมโบราณ ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of อีสานใต้ขอมโบราณ oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/zWFQKdfeZF0/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/zWFQKdfeZF0/hqdefault.jpg",
         "title": "วิญญาณทหารไร้นามแห่งสมรภูมิเก่า เฉลิมพระเกียรติ (อีสานใต้ขอมโบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=zWFQKdfeZF0",
+        "title": "เปิดตำนาน แม่นากพระโขนงตัวจริงเป็นยังไง ในประวัติศาสตร์? | Point of View",
+        "thumbnail": "https://i.ytimg.com/vi/zWFQKdfeZF0/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ เฉลิมพระเกียรติ",
@@ -39008,20 +39007,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Buri Ram (Thailand). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral อีสานใต้ขอมโบราณ engineers in Chaloem Phra Kiat.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ บุรีรัมย์ (ไทย) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Buri Ram (Thailand), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/jI0RYEIc7NY/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/jI0RYEIc7NY/hqdefault.jpg",
         "title": "เส้นทางค้าโบราณและคาราวานปริศนา เฉลิมพระเกียรติ (อีสานใต้ขอมโบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=jI0RYEIc7NY",
+        "title": "#2 ประวัติ Skogsrå ปีศาจหญิงสาวจอมล่อลวง : Bramble The Mountain King",
+        "thumbnail": "https://i.ytimg.com/vi/jI0RYEIc7NY/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ เฉลิมพระเกียรติ",
@@ -39323,20 +39322,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Songkhla (Thailand). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Sathing Phra.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว คาบสมุทรสทิงพระ เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of คาบสมุทรสทิงพระ, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/pDIYrsjPxKg/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/pDIYrsjPxKg/hqdefault.jpg",
         "title": "คำสาปโลงศพและมัมมี่ผู้ล่วงละเมิด สทิงพระ (คาบสมุทรสทิงพระ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=pDIYrsjPxKg",
+        "title": "ตำนานกระสือ อมนุษย์ที่มีหัวใจ | หลอนดูดิ EP.38",
+        "thumbnail": "https://i.ytimg.com/vi/pDIYrsjPxKg/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ สทิงพระ",
@@ -39428,20 +39427,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Kyoto (Japan). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Arashiyama.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว เฮอันโบราณ ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of เฮอันโบราณ oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/ij9MLYCO8xk/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/ij9MLYCO8xk/hqdefault.jpg",
         "title": "ดวงไฟวิญญาณลอยล่องกลางหนองน้ำ อาราชิยามะ (เฮอันโบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=ij9MLYCO8xk",
+        "title": "ตำนานผีดิบจีน เจียงซือ | ตำนานจีน | โลกแห่งตำนาน WOL World of Legend | เกมส์ The Sims 4",
+        "thumbnail": "https://i.ytimg.com/vi/ij9MLYCO8xk/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ อาราชิยามะ",
@@ -39533,20 +39532,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Kyoto (Japan). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral เฮอันโบราณ engineers in Arashiyama.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ เกียวโต (ญี่ปุ่น) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Kyoto (Japan), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/Nn-Q790Lq2U/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/Nn-Q790Lq2U/hqdefault.jpg",
         "title": "ยอดผาโทรลล์และรอยเท้าบรรพชนยักษ์ อาราชิยามะ (เฮอันโบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=Nn-Q790Lq2U",
+        "title": "YOU COULD NOT RESIST. | Huldra's Lure | Nordic Folk | Huldra of the North",
+        "thumbnail": "https://i.ytimg.com/vi/Nn-Q790Lq2U/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ อาราชิยามะ",
@@ -39848,20 +39847,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Hokkaido (Japan). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Noboribetsu.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว ไอนุ เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of ไอนุ, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/j2knVlzAfLM/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/j2knVlzAfLM/hqdefault.jpg",
         "title": "อาถรรพ์รูปเคารพและดวงตาจ้องมอง โนโบริเบ็ตสึ (ไอนุ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=j2knVlzAfLM",
+        "title": "เรื่องนี้ต้องรู้ Ep.8 : ย้อนอดีต...ปิดหมู่บ้านล่า! อาถรรพ์ #ผีปอบ บ้านนาบง จ.กาฬสินธุ์",
+        "thumbnail": "https://i.ytimg.com/vi/j2knVlzAfLM/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ โนโบริเบ็ตสึ",
@@ -39953,20 +39952,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Seoul (South Korea). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Jongno.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว โชซอน ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of โชซอน oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/lo6urYjVgFI/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/lo6urYjVgFI/hqdefault.jpg",
         "title": "วิญญาณสตรีชุดขาวแห่งเส้นทางโบราณ จงโน (โชซอน)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=lo6urYjVgFI",
+        "title": "DAAYAN (WITCH) Documentary - English @ASRPictures​",
+        "thumbnail": "https://i.ytimg.com/vi/lo6urYjVgFI/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ จงโน",
@@ -40058,20 +40057,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Seoul (South Korea). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral โชซอน engineers in Jongno.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ โซล (เกาหลีใต้) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Seoul (South Korea), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/lNMgBxjegQc/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/lNMgBxjegQc/hqdefault.jpg",
         "title": "มหาปราการหินเมกะลิธและแนวสุริยะ จงโน (โชซอน)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=lNMgBxjegQc",
+        "title": "The Flying Dutchman",
+        "thumbnail": "https://i.ytimg.com/vi/lNMgBxjegQc/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ จงโน",
@@ -40373,20 +40372,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Sichuan (China). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Chengdu.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว สู่ฮั่นโบราณ เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of สู่ฮั่นโบราณ, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/_oW4iC956xo/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/_oW4iC956xo/hqdefault.jpg",
         "title": "อาถรรพ์ทางแยกสัญญามนต์ดำ เฉิงตู (สู่ฮั่นโบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=_oW4iC956xo",
+        "title": "บาบายาก้า แม่มดร้ายแห่งรัสเซีย | Point of View",
+        "thumbnail": "https://i.ytimg.com/vi/_oW4iC956xo/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ เฉิงตู",
@@ -40478,20 +40477,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Hunan (China). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Zhangjiajie.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว ฉู่โบราณ ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of ฉู่โบราณ oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/VNM1Y8i8tuI/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/VNM1Y8i8tuI/hqdefault.jpg",
         "title": "พรายน้ำคร่ำครวญริมสายน้ำ จางเจียเจี้ย (ฉู่โบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=VNM1Y8i8tuI",
+        "title": "Draugr: The Undead Nordic Zombie | Monstrum",
+        "thumbnail": "https://i.ytimg.com/vi/VNM1Y8i8tuI/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ จางเจียเจี้ย",
@@ -40583,20 +40582,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Hunan (China). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral ฉู่โบราณ engineers in Zhangjiajie.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ หูหนาน (จีน) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Hunan (China), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/5FMwltCG56Q/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/5FMwltCG56Q/hqdefault.jpg",
         "title": "ถ้ำภาพเขียนสีโบราณหมื่นปี จางเจียเจี้ย (ฉู่โบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=5FMwltCG56Q",
+        "title": "After 67 Years, The Dyatlov Pass Mystery Is Solved",
+        "thumbnail": "https://i.ytimg.com/vi/5FMwltCG56Q/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ จางเจียเจี้ย",
@@ -40898,20 +40897,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from East Java (Indonesia). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Mount Bromo.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว มัชปาหิต เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of มัชปาหิต, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/8qWibjaiLm8/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/8qWibjaiLm8/hqdefault.jpg",
         "title": "อาถรรพ์เรือวิญญาณและกะลาสีต้องสาป ภูเขาไฟโบรโม (มัชปาหิต)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=8qWibjaiLm8",
+        "title": "Tokyo Ghoul ไม่ได้มาจากญี่ปุ่น! ตำนาน Ghoul ที่แท้จริงมาจากอาหรับ? | Mythos Requiem",
+        "thumbnail": "https://i.ytimg.com/vi/8qWibjaiLm8/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ ภูเขาไฟโบรโม",
@@ -41003,20 +41002,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Luzon (Philippines). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Baguio.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว คอร์ดิลเลรา ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of คอร์ดิลเลรา oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/YTo_qkkU78k/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/YTo_qkkU78k/hqdefault.jpg",
         "title": "เสียงสะอื้นไห้ใต้สะพานหินโบราณ บากีโอ (คอร์ดิลเลรา)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=YTo_qkkU78k",
+        "title": "#ผี ภูตร้องไห้ : บันชี (Banshee) - ไอร์แลนด์",
+        "thumbnail": "https://i.ytimg.com/vi/YTo_qkkU78k/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ บากีโอ",
@@ -41108,20 +41107,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Luzon (Philippines). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral คอร์ดิลเลรา engineers in Baguio.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ ลูซอน (ฟิลิปปินส์) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Luzon (Philippines), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/dew4ZrTnMeE/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/dew4ZrTnMeE/hqdefault.jpg",
         "title": "บ่อน้ำพุศักดิ์สิทธิ์ไร้ก้นแห่งตำนาน บากีโอ (คอร์ดิลเลรา)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=dew4ZrTnMeE",
+        "title": "Ghost Ship Mary Celeste: The 150 Year Mystery",
+        "thumbnail": "https://i.ytimg.com/vi/dew4ZrTnMeE/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ บากีโอ",
@@ -41423,20 +41422,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Mandalay (Myanmar). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Amarapura.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว คองบอง เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of คองบอง, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/7kbFkKC008U/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/7kbFkKC008U/hqdefault.jpg",
         "title": "คำสาปสะพานมรณะและลางบอกเหตุ อมรปุระ (คองบอง)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=7kbFkKC008U",
+        "title": "Tokoloshe - The Evil Spirit of Zulu Folklore - African Creatures",
+        "thumbnail": "https://i.ytimg.com/vi/7kbFkKC008U/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ อมรปุระ",
@@ -41528,20 +41527,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Siem Reap (Cambodia). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Angkor Wat.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว เขมรโบราณ ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of เขมรโบราณ oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/aDifEjVL7yI/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/aDifEjVL7yI/hqdefault.jpg",
         "title": "เสียงฝีเท้าลี้ลับแห่งบันไดวนชั้นใต้ดิน พระนครวัด (เขมรโบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=aDifEjVL7yI",
+        "title": "Black Shuck: Britain's Most Terrifying Folklore Legend",
+        "thumbnail": "https://i.ytimg.com/vi/aDifEjVL7yI/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ พระนครวัด",
@@ -41633,20 +41632,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Siem Reap (Cambodia). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral เขมรโบราณ engineers in Angkor Wat.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ เสียมราฐ (กัมพูชา) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Siem Reap (Cambodia), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/ErPsyBUCijM/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/ErPsyBUCijM/hqdefault.jpg",
         "title": "รอยจารึกลึกลับแห่งอารยธรรมที่สาบสูญ พระนครวัด (เขมรโบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=ErPsyBUCijM",
+        "title": "Legend of Atlantis (Full Episode) | Drain the Oceans",
+        "thumbnail": "https://i.ytimg.com/vi/ErPsyBUCijM/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ พระนครวัด",
@@ -41773,20 +41772,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Himachal Pradesh (India). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Manali.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว เวทหิมาลัย เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of เวทหิมาลัย, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/plalHGHwSj8/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/plalHGHwSj8/hqdefault.jpg",
         "title": "คำสาปศิลาจารึกและอาถรรพ์ชะตากรรม มะนาลี (เวทหิมาลัย)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=plalHGHwSj8",
+        "title": "The Curse of the Bermuda Triangle (Full Episode) | Atlas of Cursed Places",
+        "thumbnail": "https://i.ytimg.com/vi/plalHGHwSj8/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ มะนาลี",
@@ -41878,20 +41877,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Rajasthan (India). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Jaipur.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว ราชปุต ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of ราชปุต oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/39CCyM5rZ_k/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/39CCyM5rZ_k/hqdefault.jpg",
         "title": "เงาร่างทมิฬแห่งหอระฆังร้าง ชัยปุระ (ราชปุต)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=39CCyM5rZ_k",
+        "title": "กระจกโบราณกับตำนานผีพื้นบ้านของอินโดนีเซีย 🎃  | KUNTILANAK - กระจกส่องตาย 「สปอยหนัง」",
+        "thumbnail": "https://i.ytimg.com/vi/39CCyM5rZ_k/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ ชัยปุระ",
@@ -41983,20 +41982,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Rajasthan (India). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral ราชปุต engineers in Jaipur.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ ราชสถาน (อินเดีย) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Rajasthan (India), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/RLAYsG8yJgU/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/RLAYsG8yJgU/hqdefault.jpg",
         "title": "นครโบราณที่สาบสูญใต้ผืนป่า ชัยปุระ (ราชปุต)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=RLAYsG8yJgU",
+        "title": "Laplae the Hidden Town (เมืองลับแล) 2024 🫚 : VFX Breakdown",
+        "thumbnail": "https://i.ytimg.com/vi/RLAYsG8yJgU/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ ชัยปุระ",
@@ -42298,20 +42297,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Highlands (Scotland). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Inverness.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว เกลิกสกอต เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of เกลิกสกอต, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/PfvLwa-PQKs/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/PfvLwa-PQKs/hqdefault.jpg",
         "title": "คำสาปแผ่นดินและเมืองร้างโบราณ อินเวอร์เนสส์ (เกลิกสกอต)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=PfvLwa-PQKs",
+        "title": "Skinwalkers | The Navajo Nightmare",
+        "thumbnail": "https://i.ytimg.com/vi/PfvLwa-PQKs/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ อินเวอร์เนสส์",
@@ -42403,20 +42402,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Yorkshire (England). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of York.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว ไวกิ้งยอร์วิก ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of ไวกิ้งยอร์วิก oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/NeYKTKtkZsM/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/NeYKTKtkZsM/hqdefault.jpg",
         "title": "วิญญาณทหารไร้นามแห่งสมรภูมิเก่า ยอร์ก (ไวกิ้งยอร์วิก)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=NeYKTKtkZsM",
+        "title": "If You Hear Them March… DON’T DARE LOOK | Hawaii’s Night Marchers",
+        "thumbnail": "https://i.ytimg.com/vi/NeYKTKtkZsM/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ ยอร์ก",
@@ -42508,20 +42507,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Yorkshire (England). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral ไวกิ้งยอร์วิก engineers in York.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ ยอร์กเชียร์ (อังกฤษ) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Yorkshire (England), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/k5zO6e7vhm8/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/k5zO6e7vhm8/hqdefault.jpg",
         "title": "เส้นทางค้าโบราณและคาราวานปริศนา ยอร์ก (ไวกิ้งยอร์วิก)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=k5zO6e7vhm8",
+        "title": "The Roswell UFO Crash 😱",
+        "thumbnail": "https://i.ytimg.com/vi/k5zO6e7vhm8/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ ยอร์ก",
@@ -42823,20 +42822,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from County Kildare (Ireland). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Curragh.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว เกลิกไอริช เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of เกลิกไอริช, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/2M8svNK50ls/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/2M8svNK50ls/hqdefault.jpg",
         "title": "คำสาปโลงศพและมัมมี่ผู้ล่วงละเมิด เคอร์ราห์ (เกลิกไอริช)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=2M8svNK50ls",
+        "title": "The Mystery Of The SS Ourang Medan 😨",
+        "thumbnail": "https://i.ytimg.com/vi/2M8svNK50ls/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ เคอร์ราห์",
@@ -42928,20 +42927,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Wales (United Kingdom). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Snowdonia.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว เวลส์คิมรี ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of เวลส์คิมรี oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/HCIhv9uKzus/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/HCIhv9uKzus/hqdefault.jpg",
         "title": "ดวงไฟวิญญาณลอยล่องกลางหนองน้ำ สโนว์โดเนีย (เวลส์คิมรี)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=HCIhv9uKzus",
+        "title": "สปอยหน���งผีเฮี้ยนจากลุ่มแม่น้ำโขง | Ma Da - The Drowning Spirit (2024)「สปอยหนัง」",
+        "thumbnail": "https://i.ytimg.com/vi/HCIhv9uKzus/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ สโนว์โดเนีย",
@@ -43033,20 +43032,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Wales (United Kingdom). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral เวลส์คิมรี engineers in Snowdonia.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ แคว้นเวลส์ (สหราชอาณาจักร) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Wales (United Kingdom), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/yYCk_iEDEWU/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/yYCk_iEDEWU/hqdefault.jpg",
         "title": "ยอดผาโทรลล์และรอยเท้าบรรพชนยักษ์ สโนว์โดเนีย (เวลส์คิมรี)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=yYCk_iEDEWU",
+        "title": "Derinkuyu Underground City Turkey Tour Documentary",
+        "thumbnail": "https://i.ytimg.com/vi/yYCk_iEDEWU/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ สโนว์โดเนีย",
@@ -43348,20 +43347,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Black Forest (Germany). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Freiburg.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว ป่าดำสวาเบียน เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of ป่าดำสวาเบียน, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/u6jSdSvoeoI/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/u6jSdSvoeoI/hqdefault.jpg",
         "title": "อาถรรพ์รูปเคารพและดวงตาจ้องมอง ไฟรบวร์ก (ป่าดำสวาเบียน)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=u6jSdSvoeoI",
+        "title": "The Dragon's Triangle - Worse than Bermuda Triangle - Best Documentary",
+        "thumbnail": "https://i.ytimg.com/vi/u6jSdSvoeoI/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ ไฟรบวร์ก",
@@ -43453,20 +43452,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Brittany (France). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Rennes.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว เบรอตง ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of เบรอตง oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/I65bbz819SI/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/I65bbz819SI/hqdefault.jpg",
         "title": "วิญญาณสตรีชุดขาวแห่งเส้นทางโบราณ แรนส์ (เบรอตง)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=I65bbz819SI",
+        "title": "🇱🇰 ปูตัวละหมื่นกว่าบาท ที่ศรีลังกา เดินกินทั่วเมืองคนเดียว",
+        "thumbnail": "https://i.ytimg.com/vi/I65bbz819SI/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ แรนส์",
@@ -43558,20 +43557,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Brittany (France). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral เบรอตง engineers in Rennes.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ บริตตานี (ฝรั่งเศส) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Brittany (France), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/3es75ihwB7E/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/3es75ihwB7E/hqdefault.jpg",
         "title": "มหาปราการหินเมกะลิธและแนวสุริยะ แรนส์ (เบรอตง)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=3es75ihwB7E",
+        "title": "Lebanon's Greatest Mystery Finally Solved — Baalbek Megalithic Structure No Human Could Ever Build",
+        "thumbnail": "https://i.ytimg.com/vi/3es75ihwB7E/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ แรนส์",
@@ -43873,20 +43872,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Transylvania (Romania). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Sighisoara.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว ดราคูลาคาพาเทียน เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of ดราคูลาคาพาเทียน, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/Qin7CkH4J7c/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/Qin7CkH4J7c/hqdefault.jpg",
         "title": "อาถรรพ์ทางแยกสัญญามนต์ดำ ซีกีชออารา (ดราคูลาคาพาเทียน)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=Qin7CkH4J7c",
+        "title": "NatGeo - The Curse of the Hope Diamond with Lucy Worsley",
+        "thumbnail": "https://i.ytimg.com/vi/Qin7CkH4J7c/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ ซีกีชออารา",
@@ -43978,20 +43977,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Tuscany (Italy). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Siena.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว อีทรัสคัน ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of อีทรัสคัน oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/f90upNFJN1g/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/f90upNFJN1g/hqdefault.jpg",
         "title": "พรายน้ำคร่ำครวญริมสายน้ำ ซีเอนา (อีทรัสคัน)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=f90upNFJN1g",
+        "title": "The Ghost Of Azzurrina HD 1080p",
+        "thumbnail": "https://i.ytimg.com/vi/f90upNFJN1g/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ ซีเอนา",
@@ -44083,20 +44082,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Tuscany (Italy). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral อีทรัสคัน engineers in Siena.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ ทัสคานี (อิตาลี) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Tuscany (Italy), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/kGIIPzvK9c0/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/kGIIPzvK9c0/hqdefault.jpg",
         "title": "ถ้ำภาพเขียนสีโบราณหมื่นปี ซีเอนา (อีทรัสคัน)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=kGIIPzvK9c0",
+        "title": "Searching for Amelia Earhart (Full Episode) | SPECIAL | National Geographic",
+        "thumbnail": "https://i.ytimg.com/vi/kGIIPzvK9c0/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ ซีเอนา",
@@ -44398,20 +44397,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Andalusia (Spain). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Granada.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว มัวร์อัลอันดาลุส เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of มัวร์อัลอันดาลุส, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/UZiHxGCJfvk/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/UZiHxGCJfvk/hqdefault.jpg",
         "title": "อาถรรพ์เรือวิญญาณและกะลาสีต้องสาป กรานาดา (มัวร์อัลอันดาลุส)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=UZiHxGCJfvk",
+        "title": "Romania's Forest Where People Vanish Without a Trace 🌲👻",
+        "thumbnail": "https://i.ytimg.com/vi/UZiHxGCJfvk/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ กรานาดา",
@@ -44503,20 +44502,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Peloponnese (Greece). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Sparta.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว เฮลเลนิกโบราณ ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of เฮลเลนิกโบราณ oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/qMlxOHrwFXw/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/qMlxOHrwFXw/hqdefault.jpg",
         "title": "เสียงสะอื้นไห้ใต้สะพานหินโบราณ สปาร์ตา (เฮลเลนิกโบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=qMlxOHrwFXw",
+        "title": "Santa Compaña | A Procesión dos Mortos",
+        "thumbnail": "https://i.ytimg.com/vi/qMlxOHrwFXw/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ สปาร์ตา",
@@ -44608,20 +44607,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Peloponnese (Greece). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral เฮลเลนิกโบราณ engineers in Sparta.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ เพโลพอนนีส (กรีซ) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Peloponnese (Greece), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/JFFhD5HeByM/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/JFFhD5HeByM/hqdefault.jpg",
         "title": "บ่อน้ำพุศักดิ์สิทธิ์ไร้ก้นแห่งตำนาน สปาร์ตา (เฮลเลนิกโบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=JFFhD5HeByM",
+        "title": "99 Years Later... We Solved It",
+        "thumbnail": "https://i.ytimg.com/vi/JFFhD5HeByM/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ สปาร์ตา",
@@ -44923,20 +44922,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Telemark (Norway). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Notodden.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว ไวกิ้งนอร์ส เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of ไวกิ้งนอร์ส, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/I0tKlckvrT8/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/I0tKlckvrT8/hqdefault.jpg",
         "title": "คำสาปสะพานมรณะและลางบอกเหตุ นอต็อดเดน (ไวกิ้งนอร์ส)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=I0tKlckvrT8",
+        "title": "WE FOUND Jack The Ripper (New Suspect Identified) | Demon of Whitechapel | True Crime Documentsry",
+        "thumbnail": "https://i.ytimg.com/vi/I0tKlckvrT8/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ นอต็อดเดน",
@@ -45028,20 +45027,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Louisiana (United States). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of New Orleans.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว ครีโอลวูดู ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of ครีโอลวูดู oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/pzaWkXHCj28/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/pzaWkXHCj28/hqdefault.jpg",
         "title": "เสียงฝีเท้าลี้ลับแห่งบันไดวนชั้นใต้ดิน นิวออร์ลีนส์ (ครีโอลวูดู)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=pzaWkXHCj28",
+        "title": "Madame KOI KOI  | AI Short Film | African Urban Legend",
+        "thumbnail": "https://i.ytimg.com/vi/pzaWkXHCj28/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ นิวออร์ลีนส์",
@@ -45133,20 +45132,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Louisiana (United States). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral ครีโอลวูดู engineers in New Orleans.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ ลุยเซียนา (สหรัฐอเมริกา) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Louisiana (United States), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/oDoM4BmoDQM/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/oDoM4BmoDQM/hqdefault.jpg",
         "title": "รอยจารึกลึกลับแห่งอารยธรรมที่สาบสูญ นิวออร์ลีนส์ (ครีโอลวูดู)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=oDoM4BmoDQM",
+        "title": "The Lost City of Atlantis - Hidden in Plain Sight? Lost Ancient Human Civilizations",
+        "thumbnail": "https://i.ytimg.com/vi/oDoM4BmoDQM/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ นิวออร์ลีนส์",
@@ -45273,20 +45272,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from New Mexico (United States). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Taos.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว ปูเอโบล เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of ปูเอโบล, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/4gJwRgTbirE/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/4gJwRgTbirE/hqdefault.jpg",
         "title": "คำสาปศิลาจารึกและอาถรรพ์ชะตากรรม เตาส์ (ปูเอโบล)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=4gJwRgTbirE",
+        "title": "The Door to Hell in Turkmenistan | Darvaza Gas Crater",
+        "thumbnail": "https://i.ytimg.com/vi/4gJwRgTbirE/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ เตาส์",
@@ -45378,20 +45377,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Washington (United States). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Olympic.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว แปซิฟิกนอร์ทเวสต์ ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of แปซิฟิกนอร์ทเวสต์ oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/FuMAoAh0bj4/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/FuMAoAh0bj4/hqdefault.jpg",
         "title": "เงาร่างทมิฬแห่งหอระฆังร้าง โอลิมปิก (แปซิฟิกนอร์ทเวสต์)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=FuMAoAh0bj4",
+        "title": "The Mystery of Preta at Wat Suthat#Preta #Wat Suthat #Thai Folklore #Bangkok #GhostDocumentary",
+        "thumbnail": "https://i.ytimg.com/vi/FuMAoAh0bj4/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ โอลิมปิก",
@@ -45483,20 +45482,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Washington (United States). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral แปซิฟิกนอร์ทเวสต์ engineers in Olympic.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ วอชิงตัน (สหรัฐอเมริกา) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Washington (United States), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/QSA7KkhiDy4/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/QSA7KkhiDy4/hqdefault.jpg",
         "title": "นครโบราณที่สาบสูญใต้ผืนป่า โอลิมปิก (แปซิฟิกนอร์ทเวสต์)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=QSA7KkhiDy4",
+        "title": "Big Bang in Tunguska (Documentary on the mysterious 1908 explosion) - Documentary",
+        "thumbnail": "https://i.ytimg.com/vi/QSA7KkhiDy4/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ โอลิมปิก",
@@ -45798,20 +45797,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Oaxaca (Mexico). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Monte Alban.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว ซาโปเทก เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of ซาโปเทก, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/krTOD1G1l2g/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/krTOD1G1l2g/hqdefault.jpg",
         "title": "คำสาปแผ่นดินและเมืองร้างโบราณ มอนเตอัลบัน (ซาโปเทก)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=krTOD1G1l2g",
+        "title": "🦖 Alone and Hunted in the Primeval Jungle",
+        "thumbnail": "https://i.ytimg.com/vi/krTOD1G1l2g/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ มอนเตอัลบัน",
@@ -45903,20 +45902,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Cusco (Peru). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Sacred Valley.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว อินคา ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of อินคา oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/4FDSdg09df8/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/4FDSdg09df8/hqdefault.jpg",
         "title": "วิญญาณทหารไร้นามแห่งสมรภูมิเก่า หุบเขาศักดิ์สิทธิ์ (อินคา)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=4FDSdg09df8",
+        "title": "Aokigahara: Exploring the Sea of Trees",
+        "thumbnail": "https://i.ytimg.com/vi/4FDSdg09df8/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ หุบเขาศักดิ์สิทธิ์",
@@ -46008,20 +46007,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Cusco (Peru). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral อินคา engineers in Sacred Valley.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ กุสโก (เปรู) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Cusco (Peru), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/AmbyfczXkjU/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/AmbyfczXkjU/hqdefault.jpg",
         "title": "เส้นทางค้าโบราณและคาราวานปริศนา หุบเขาศักดิ์สิทธิ์ (อินคา)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=AmbyfczXkjU",
+        "title": "LEAKED Footage of 5 ALIEN RACES Inside Area 51…The Gray Wasn't the Most Dangerous",
+        "thumbnail": "https://i.ytimg.com/vi/AmbyfczXkjU/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ หุบเขาศักดิ์สิทธิ์",
@@ -46323,20 +46322,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Aswan (Egypt). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Philae Island.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว อียิปต์โบราณ เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of อียิปต์โบราณ, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/Z6O-4qCe1HA/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/Z6O-4qCe1HA/hqdefault.jpg",
         "title": "คำสาปโลงศพและมัมมี่ผู้ล่วงละเมิด เกาะฟิเล (อียิปต์โบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=Z6O-4qCe1HA",
+        "title": "Evidence of Money Pit Shaft | The Curse of Oak Island",
+        "thumbnail": "https://i.ytimg.com/vi/Z6O-4qCe1HA/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ เกาะฟิเล",
@@ -46428,20 +46427,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Luxor (Egypt). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Valley of the Kings.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว ทีบส์โบราณ ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of ทีบส์โบราณ oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/OI06P99vtrc/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/OI06P99vtrc/hqdefault.jpg",
         "title": "ดวงไฟวิญญาณลอยล่องกลางหนองน้ำ หุบผากษัตริย์ (ทีบส์โบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=OI06P99vtrc",
+        "title": "Island Of Dolls (Isla De Las Munecas) | Most haunted place in Mexico DOCUMENTARY",
+        "thumbnail": "https://i.ytimg.com/vi/OI06P99vtrc/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ หุบผากษัตริย์",
@@ -46533,20 +46532,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Luxor (Egypt). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral ทีบส์โบราณ engineers in Valley of the Kings.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ ลักซอร์ (อียิปต์) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Luxor (Egypt), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/91ASm2KPTAw/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/91ASm2KPTAw/hqdefault.jpg",
         "title": "ยอดผาโทรลล์และรอยเท้าบรรพชนยักษ์ หุบผากษัตริย์ (ทีบส์โบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=91ASm2KPTAw",
+        "title": "Valkyries: The Real Story Behind These Warriors of Legend | Fate & Fabled",
+        "thumbnail": "https://i.ytimg.com/vi/91ASm2KPTAw/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ หุบผากษัตริย์",
@@ -46848,20 +46847,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Cape Town (South Africa). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Table Mountain.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว คอยซาน เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of คอยซาน, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/eyIuD3yD3No/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/eyIuD3yD3No/hqdefault.jpg",
         "title": "อาถรรพ์รูปเคารพและดวงตาจ้องมอง เทเบิลเมาน์เทน (คอยซาน)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=eyIuD3yD3No",
+        "title": "The Taos Hum Unexplained Frequency",
+        "thumbnail": "https://i.ytimg.com/vi/eyIuD3yD3No/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ เทเบิลเมาน์เทน",
@@ -46953,20 +46952,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Northern Territory (Australia). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Kakadu.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว อะบอริจินดรีมไทม์ ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of อะบอริจินดรีมไทม์ oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/KiZxzcsty3Y/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/KiZxzcsty3Y/hqdefault.jpg",
         "title": "วิญญาณสตรีชุดขาวแห่งเส้นทางโบราณ คาคาดู (อะบอริจินดรีมไทม์)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=KiZxzcsty3Y",
+        "title": "Nang Tani: The Lady Who Lives in the Banana Tree",
+        "thumbnail": "https://i.ytimg.com/vi/KiZxzcsty3Y/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ คาคาดู",
@@ -47058,20 +47057,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Northern Territory (Australia). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral อะบอริจินดรีมไทม์ engineers in Kakadu.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ นอร์ทเทิร์นเทร์ริทอรี (ออสเตรเลีย) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Northern Territory (Australia), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/hDueYNadDRM/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/hDueYNadDRM/hqdefault.jpg",
         "title": "มหาปราการหินเมกะลิธและแนวสุริยะ คาคาดู (อะบอริจินดรีมไทม์)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=hDueYNadDRM",
+        "title": "The Inexplicable Disappearance of Roanoke | History's Greatest Mysteries (Season 4)",
+        "thumbnail": "https://i.ytimg.com/vi/hDueYNadDRM/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ คาคาดู",
@@ -47373,20 +47372,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Chiang Mai (Thailand). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Mae Rim.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว ล้านนา เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of ล้านนา, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/d7v90owNTy0/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/d7v90owNTy0/hqdefault.jpg",
         "title": "อาถรรพ์ทางแยกสัญญามนต์ดำ แม่ริม (ล้านนา)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=d7v90owNTy0",
+        "title": "โยนกนคร เกิดอาเพศ กินปลาไหลเผือก เวียงหนองหล่ม เมืองทั้งเมืองจึงล่มสลาย",
+        "thumbnail": "https://i.ytimg.com/vi/d7v90owNTy0/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ แม่ริม",
@@ -47478,20 +47477,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Nan (Thailand). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Pua.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว ล้านนาตะวันออก ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of ล้านนาตะวันออก oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/VWJB-_2hQBM/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/VWJB-_2hQBM/hqdefault.jpg",
         "title": "พรายน้ำคร่ำครวญริมสายน้ำ ปัว (ล้านนาตะวันออก)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=VWJB-_2hQBM",
+        "title": "The Ghost of Anne Boleyn and Other Ghosts of the Tower of London",
+        "thumbnail": "https://i.ytimg.com/vi/VWJB-_2hQBM/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ ปัว",
@@ -47583,20 +47582,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Nan (Thailand). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral ล้านนาตะวันออก engineers in Pua.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ น่าน (ไทย) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Nan (Thailand), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/1MI4PgTs3lw/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/1MI4PgTs3lw/hqdefault.jpg",
         "title": "ถ้ำภาพเขียนสีโบราณหมื่นปี ปัว (ล้านนาตะวันออก)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=1MI4PgTs3lw",
+        "title": "Legends Of The Isles - Fairies and Leprechauns Documentary",
+        "thumbnail": "https://i.ytimg.com/vi/1MI4PgTs3lw/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ ปัว",
@@ -47898,20 +47897,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Ubon Ratchathani (Thailand). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Khong Chiam.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว อีสานริมโขง เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of อีสานริมโขง, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/KwVIla-VMiM/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/KwVIla-VMiM/hqdefault.jpg",
         "title": "อาถรรพ์เรือวิญญาณและกะลาสีต้องสาป โขงเจียม (อีสานริมโขง)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=KwVIla-VMiM",
+        "title": "भानगढ़ किला रहस्य 👻 | India’s Most Haunted Fort |HorrorDoc| #shorts #short #horrorstories   #anidoc",
+        "thumbnail": "https://i.ytimg.com/vi/KwVIla-VMiM/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ โขงเจียม",
@@ -48003,20 +48002,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Buri Ram (Thailand). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Chaloem Phra Kiat.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว อีสานใต้ขอมโบราณ ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of อีสานใต้ขอมโบราณ oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/TUAKQt4hnv8/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/TUAKQt4hnv8/hqdefault.jpg",
         "title": "เสียงสะอื้นไห้ใต้สะพานหินโบราณ เฉลิมพระเกียรติ (อีสานใต้ขอมโบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=TUAKQt4hnv8",
+        "title": "La Llorona: The Weeping Ghost Created by a Mother’s Worst Sin",
+        "thumbnail": "https://i.ytimg.com/vi/TUAKQt4hnv8/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ เฉลิมพระเกียรติ",
@@ -48108,20 +48107,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Buri Ram (Thailand). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral อีสานใต้ขอมโบราณ engineers in Chaloem Phra Kiat.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ บุรีรัมย์ (ไทย) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Buri Ram (Thailand), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/4E_RmBMH-6A/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/4E_RmBMH-6A/hqdefault.jpg",
         "title": "บ่อน้ำพุศักดิ์สิทธิ์ไร้ก้นแห่งตำนาน เฉลิมพระเกียรติ (อีสานใต้ขอมโบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=4E_RmBMH-6A",
+        "title": "How Gargoyles Became Monsters | Monstrum",
+        "thumbnail": "https://i.ytimg.com/vi/4E_RmBMH-6A/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ เฉลิมพระเกียรติ",
@@ -48423,20 +48422,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Songkhla (Thailand). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Sathing Phra.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว คาบสมุทรสทิงพระ เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of คาบสมุทรสทิงพระ, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/PFbmdUYq_wU/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/PFbmdUYq_wU/hqdefault.jpg",
         "title": "คำสาปสะพานมรณะและลางบอกเหตุ สทิงพระ (คาบสมุทรสทิงพระ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=PFbmdUYq_wU",
+        "title": "โปโปบาวา (ปีศาจค้างคาวตาเดียวแห่งแซนซิบาร์) (วิดีโอประกอบเรื่องเล่า)",
+        "thumbnail": "https://i.ytimg.com/vi/PFbmdUYq_wU/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ สทิงพระ",
@@ -48528,20 +48527,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Kyoto (Japan). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Arashiyama.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว เฮอันโบราณ ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of เฮอันโบราณ oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/-luHiyee9h0/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/-luHiyee9h0/hqdefault.jpg",
         "title": "เสียงฝีเท้าลี้ลับแห่งบันไดวนชั้นใต้ดิน อาราชิยามะ (เฮอันโบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=-luHiyee9h0",
+        "title": "Most Haunted - S01E02 ''Chillingham Castle''",
+        "thumbnail": "https://i.ytimg.com/vi/-luHiyee9h0/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ อาราชิยามะ",
@@ -48633,20 +48632,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Kyoto (Japan). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral เฮอันโบราณ engineers in Arashiyama.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ เกียวโต (ญี่ปุ่น) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Kyoto (Japan), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/ThtIKiKpNkY/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/ThtIKiKpNkY/hqdefault.jpg",
         "title": "รอยจารึกลึกลับแห่งอารยธรรมที่สาบสูญ อาราชิยามะ (เฮอันโบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=ThtIKiKpNkY",
+        "title": "ปริศนาโจรลึกลับ ที่ FBI ยังต้องยอมแพ้",
+        "thumbnail": "https://i.ytimg.com/vi/ThtIKiKpNkY/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ อาราชิยามะ",
@@ -48773,20 +48772,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Tokyo (Japan). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Ueno.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว เอโดะ เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of เอโดะ, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/h5SfHiqvwPk/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/h5SfHiqvwPk/hqdefault.jpg",
         "title": "คำสาปศิลาจารึกและอาถรรพ์ชะตากรรม อุเอโนะ (เอโดะ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=h5SfHiqvwPk",
+        "title": "พรหมรากษส (อสูรวิญญาณพราหมณ์ผู้ทรงเวทแห่งเมืองพาราณสี) (วิดีโอประกอบเรื่องเล่า)",
+        "thumbnail": "https://i.ytimg.com/vi/h5SfHiqvwPk/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ อุเอโนะ",
@@ -48878,20 +48877,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Hokkaido (Japan). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Noboribetsu.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว ไอนุ ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of ไอนุ oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/lL8vHfOWUE4/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/lL8vHfOWUE4/hqdefault.jpg",
         "title": "เงาร่างทมิฬแห่งหอระฆังร้าง โนโบริเบ็ตสึ (ไอนุ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=lL8vHfOWUE4",
+        "title": "Stephen King Had a Horrifying Nightmare at This Hotel. It Became ‘The Shining’ | The Stanley Hotel",
+        "thumbnail": "https://i.ytimg.com/vi/lL8vHfOWUE4/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ โนโบริเบ็ตสึ",
@@ -48983,20 +48982,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Hokkaido (Japan). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral ไอนุ engineers in Noboribetsu.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ ฮอกไกโด (ญี่ปุ่น) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Hokkaido (Japan), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/eUA3MWVRYDY/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/eUA3MWVRYDY/hqdefault.jpg",
         "title": "นครโบราณที่สาบสูญใต้ผืนป่า โนโบริเบ็ตสึ (ไอนุ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=eUA3MWVRYDY",
+        "title": "Scary Ouija Board Experience Gone Wrong",
+        "thumbnail": "https://i.ytimg.com/vi/eUA3MWVRYDY/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ โนโบริเบ็ตสึ",
@@ -49298,20 +49297,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Jeju (South Korea). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Seogwipo.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว ทัมราโบราณ เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of ทัมราโบราณ, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/cq0pCDklNfw/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/cq0pCDklNfw/hqdefault.jpg",
         "title": "คำสาปแผ่นดินและเมืองร้างโบราณ ซอกวิโพ (ทัมราโบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=cq0pCDklNfw",
+        "title": "ปีศาจกระดูกขาว ไป๋กู่จิง (จอมมารจำแลงสามภพแห่งเขาไป๋กู่) (วิดีโอประกอบเรื่องเล่า)",
+        "thumbnail": "https://i.ytimg.com/vi/cq0pCDklNfw/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ ซอกวิโพ",
@@ -49403,20 +49402,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Sichuan (China). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Chengdu.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว สู่ฮั่นโบราณ ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of สู่ฮั่นโบราณ oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/8gksEuJN04Q/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/8gksEuJN04Q/hqdefault.jpg",
         "title": "วิญญาณทหารไร้นามแห่งสมรภูมิเก่า เฉิงตู (สู่ฮั่นโบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=8gksEuJN04Q",
+        "title": "The Salem Witch Hunt (Full Episode) | Witches: Truth Behind the Trials | National Geographic",
+        "thumbnail": "https://i.ytimg.com/vi/8gksEuJN04Q/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ เฉิงตู",
@@ -49508,20 +49507,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Sichuan (China). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral สู่ฮั่นโบราณ engineers in Chengdu.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ เสฉวน (จีน) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Sichuan (China), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/8UqXtGDLiLA/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/8UqXtGDLiLA/hqdefault.jpg",
         "title": "เส้นทางค้าโบราณและคาราวานปริศนา เฉิงตู (สู่ฮั่นโบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=8UqXtGDLiLA",
+        "title": "Elizabeth Bathory - The Blood Countess Documentary",
+        "thumbnail": "https://i.ytimg.com/vi/8UqXtGDLiLA/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ เฉิงตู",
@@ -49823,20 +49822,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Bali (Indonesia). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Ubud.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว ฮินดูบาหลี เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of ฮินดูบาหลี, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/_U8HuPKMBQo/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/_U8HuPKMBQo/hqdefault.jpg",
         "title": "คำสาปโลงศพและมัมมี่ผู้ล่วงละเมิด อูบุด (ฮินดูบาหลี)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=_U8HuPKMBQo",
+        "title": "หนิวโถว-หม่าเมี่ยน (ยมทูตหัววัวหน้าม้าแห่งเมืองผีเฟิงตู) (วิดีโอประกอบเรื่องเล่า)",
+        "thumbnail": "https://i.ytimg.com/vi/_U8HuPKMBQo/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ อูบุด",
@@ -49928,20 +49927,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from East Java (Indonesia). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Mount Bromo.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว มัชปาหิต ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of มัชปาหิต oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/BwFcnuQjxbU/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/BwFcnuQjxbU/hqdefault.jpg",
         "title": "ดวงไฟวิญญาณลอยล่องกลางหนองน้ำ ภูเขาไฟโบรโม (มัชปาหิต)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=BwFcnuQjxbU",
+        "title": "ตำนานกุมารทอง | หลอนไดอารี่ Sponsor by G'nite",
+        "thumbnail": "https://i.ytimg.com/vi/BwFcnuQjxbU/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ ภูเขาไฟโบรโม",
@@ -50033,20 +50032,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in East Java (Indonesia). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral มัชปาหิต engineers in Mount Bromo.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ ชวาตะวันออก (อินโดนีเซีย) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in East Java (Indonesia), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/QUcTsFe1PVs/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/QUcTsFe1PVs/hqdefault.jpg",
         "title": "ยอดผาโทรลล์และรอยเท้าบรรพชนยักษ์ ภูเขาไฟโบรโม (มัชปาหิต)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=QUcTsFe1PVs",
+        "title": "The Epic Of Gilgamesh In Sumerian",
+        "thumbnail": "https://i.ytimg.com/vi/QUcTsFe1PVs/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ ภูเขาไฟโบรโม",
@@ -50348,20 +50347,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Hue (Vietnam). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Imperial Hue.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว ราชวงศ์เหงียน เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of ราชวงศ์เหงียน, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/siq67B5V3Bo/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/siq67B5V3Bo/hqdefault.jpg",
         "title": "อาถรรพ์รูปเคารพและดวงตาจ้องมอง นครหลวงเว้ (ราชวงศ์เหงียน)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=siq67B5V3Bo",
+        "title": "เออร์ลิก ข่าน (พญายมราชและเจ้าแห่งความมืดใต้พิภพตามคติเต็งกรี) (วิดีโอประกอบเรื่องเล่า)",
+        "thumbnail": "https://i.ytimg.com/vi/siq67B5V3Bo/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ นครหลวงเว้",
@@ -50453,20 +50452,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Mandalay (Myanmar). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Amarapura.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว คองบอง ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of คองบอง oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/40NQwwf2Wp8/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/40NQwwf2Wp8/hqdefault.jpg",
         "title": "วิญญาณสตรีชุดขาวแห่งเส้นทางโบราณ อมรปุระ (คองบอง)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=40NQwwf2Wp8",
+        "title": "Mysteries of Paris | Episode 6: Secrets Beyond the Grave | Free Documentary History",
+        "thumbnail": "https://i.ytimg.com/vi/40NQwwf2Wp8/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ อมรปุระ",
@@ -50558,20 +50557,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Mandalay (Myanmar). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral คองบอง engineers in Amarapura.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ มัณฑะเลย์ (พม่า) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Mandalay (Myanmar), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/khOo9uvr5_s/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/khOo9uvr5_s/hqdefault.jpg",
         "title": "มหาปราการหินเมกะลิธและแนวสุริยะ อมรปุระ (คองบอง)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=khOo9uvr5_s",
+        "title": "Rendlesham Forest Incident: A Military Mystery",
+        "thumbnail": "https://i.ytimg.com/vi/khOo9uvr5_s/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ อมรปุระ",
@@ -50873,20 +50872,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Himachal Pradesh (India). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Manali.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว เวทหิมาลัย เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of เวทหิมาลัย, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/AxZC2UTX0IM/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/AxZC2UTX0IM/hqdefault.jpg",
         "title": "อาถรรพ์ทางแยกสัญญามนต์ดำ มะนาลี (เวทหิมาลัย)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=AxZC2UTX0IM",
+        "title": "กุ่ยเช่อ (วิหคปีศาจเก้าหัวแห่งแคว้นฉู่โบราณ) (วิดีโอประกอบเรื่องเล่า)",
+        "thumbnail": "https://i.ytimg.com/vi/AxZC2UTX0IM/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ มะนาลี",
@@ -50978,20 +50977,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Rajasthan (India). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Jaipur.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว ราชปุต ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of ราชปุต oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/P49eepvZFp4/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/P49eepvZFp4/hqdefault.jpg",
         "title": "พรายน้ำคร่ำครวญริมสายน้ำ ชัยปุระ (ราชปุต)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=P49eepvZFp4",
+        "title": "The Ghosts of Mary King's Close",
+        "thumbnail": "https://i.ytimg.com/vi/P49eepvZFp4/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ ชัยปุระ",
@@ -51083,20 +51082,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Rajasthan (India). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral ราชปุต engineers in Jaipur.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ ราชสถาน (อินเดีย) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Rajasthan (India), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/WQp1HEBp-dA/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/WQp1HEBp-dA/hqdefault.jpg",
         "title": "ถ้ำภาพเขียนสีโบราณหมื่นปี ชัยปุระ (ราชปุต)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=WQp1HEBp-dA",
+        "title": "พระยาพิชัยดาบหัก - ขุนศึกคู่พระทัยพระเจ้าตากสิน l ตำนานนี้มีที่มา",
+        "thumbnail": "https://i.ytimg.com/vi/WQp1HEBp-dA/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ ชัยปุระ",
@@ -51398,20 +51397,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Highlands (Scotland). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Inverness.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว เกลิกสกอต เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of เกลิกสกอต, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/6COZUHHkrQo/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/6COZUHHkrQo/hqdefault.jpg",
         "title": "อาถรรพ์เรือวิญญาณและกะลาสีต้องสาป อินเวอร์เนสส์ (เกลิกสกอต)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=6COZUHHkrQo",
+        "title": "ซวงกี (หมอผีดำกินวิญญาณแห่งป่าดึกดำบรรพ์ปาปัว) (วิดีโอประกอบเรื่องเล่า)",
+        "thumbnail": "https://i.ytimg.com/vi/6COZUHHkrQo/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ อินเวอร์เนสส์",
@@ -51503,20 +51502,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Yorkshire (England). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of York.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว ไวกิ้งยอร์วิก ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of ไวกิ้งยอร์วิก oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/pAc59cSLui0/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/pAc59cSLui0/hqdefault.jpg",
         "title": "เสียงสะอื้นไห้ใต้สะพานหินโบราณ ยอร์ก (ไวกิ้งยอร์วิก)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=pAc59cSLui0",
+        "title": "Poveglia: The Most Haunted Island on Earth",
+        "thumbnail": "https://i.ytimg.com/vi/pAc59cSLui0/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ ยอร์ก",
@@ -51608,20 +51607,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Yorkshire (England). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral ไวกิ้งยอร์วิก engineers in York.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ ยอร์กเชียร์ (อังกฤษ) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Yorkshire (England), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/DTryFH8MaLk/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/DTryFH8MaLk/hqdefault.jpg",
         "title": "บ่อน้ำพุศักดิ์สิทธิ์ไร้ก้นแห่งตำนาน ยอร์ก (ไวกิ้งยอร์วิก)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=DTryFH8MaLk",
+        "title": "The Dokkaebi 도깨비 aka Korean Goblin [Korean Folklore]",
+        "thumbnail": "https://i.ytimg.com/vi/DTryFH8MaLk/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ ยอร์ก",
@@ -51923,20 +51922,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from County Kildare (Ireland). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Curragh.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว เกลิกไอริช เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of เกลิกไอริช, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/XexvMJ_d4ew/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/XexvMJ_d4ew/hqdefault.jpg",
         "title": "คำสาปสะพานมรณะและลางบอกเหตุ เคอร์ราห์ (เกลิกไอริช)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=XexvMJ_d4ew",
+        "title": "ประตูนรกดาร์วาซา (หลุมไฟลุกโชนตลอดกาลแห่งทะเลทรายคาราคุม) (วิดีโอประกอบเรื่องเล่า)",
+        "thumbnail": "https://i.ytimg.com/vi/XexvMJ_d4ew/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ เคอร์ราห์",
@@ -52028,20 +52027,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Wales (United Kingdom). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Snowdonia.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว เวลส์คิมรี ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of เวลส์คิมรี oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/G14BXgXY1Gc/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/G14BXgXY1Gc/hqdefault.jpg",
         "title": "เสียงฝีเท้าลี้ลับแห่งบันไดวนชั้นใต้ดิน สโนว์โดเนีย (เวลส์คิมรี)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=G14BXgXY1Gc",
+        "title": "เปิดตำนานผีอำนานาชาติ ผีอำคืออะไร | Point of View",
+        "thumbnail": "https://i.ytimg.com/vi/G14BXgXY1Gc/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ สโนว์โดเนีย",
@@ -52133,20 +52132,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Wales (United Kingdom). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral เวลส์คิมรี engineers in Snowdonia.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ แคว้นเวลส์ (สหราชอาณาจักร) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Wales (United Kingdom), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/-Nq5fCnm3Yc/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/-Nq5fCnm3Yc/hqdefault.jpg",
         "title": "รอยจารึกลึกลับแห่งอารยธรรมที่สาบสูญ สโนว์โดเนีย (เวลส์คิมรี)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=-Nq5fCnm3Yc",
+        "title": "The Golem of Prague",
+        "thumbnail": "https://i.ytimg.com/vi/-Nq5fCnm3Yc/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ สโนว์โดเนีย",
@@ -52273,20 +52272,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Bavaria (Germany). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Garmisch.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว บาวาเรียนแอลป์ เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of บาวาเรียนแอลป์, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/y3GwH_OtyVk/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/y3GwH_OtyVk/hqdefault.jpg",
         "title": "คำสาปศิลาจารึกและอาถรรพ์ชะตากรรม การ์มิช (บาวาเรียนแอลป์)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=y3GwH_OtyVk",
+        "title": "คำสาปสุสานติมูร์ (คำเตือนสงครามโลกจากกูร์เอมีร์แห่งซามาร์คันด์) (วิดีโอประกอบเรื่องเล่า)",
+        "thumbnail": "https://i.ytimg.com/vi/y3GwH_OtyVk/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ การ์มิช",
@@ -52378,20 +52377,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Black Forest (Germany). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Freiburg.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว ป่าดำสวาเบียน ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of ป่าดำสวาเบียน oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/1aFrtBdKI5I/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/1aFrtBdKI5I/hqdefault.jpg",
         "title": "เงาร่างทมิฬแห่งหอระฆังร้าง ไฟรบวร์ก (ป่าดำสวาเบียน)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=1aFrtBdKI5I",
+        "title": "ผีกระหังตาก่ำ | หลอนไดอารี่ EP.34",
+        "thumbnail": "https://i.ytimg.com/vi/1aFrtBdKI5I/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ ไฟรบวร์ก",
@@ -52483,20 +52482,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Black Forest (Germany). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral ป่าดำสวาเบียน engineers in Freiburg.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ แบล็กฟอเรสต์ (เยอรมนี) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Black Forest (Germany), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/ouhGr5ROuHs/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/ouhGr5ROuHs/hqdefault.jpg",
         "title": "นครโบราณที่สาบสูญใต้ผืนป่า ไฟรบวร์ก (ป่าดำสวาเบียน)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=ouhGr5ROuHs",
+        "title": "The Pied Piper of Hamelin: What Really Happened to the 130 Lost Children",
+        "thumbnail": "https://i.ytimg.com/vi/ouhGr5ROuHs/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ ไฟรบวร์ก",
@@ -52798,20 +52797,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Provence (France). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Avignon.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว ออกซิตัน เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of ออกซิตัน, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/geg6RONjqMM/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/geg6RONjqMM/hqdefault.jpg",
         "title": "คำสาปแผ่นดินและเมืองร้างโบราณ อาวีญง (ออกซิตัน)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=geg6RONjqMM",
+        "title": "ชายฝั่งโครงกระดูก (ประตูนรกและสุสานเรืออับปางแห่งนามิเบีย) (วิดีโอประกอบเรื่องเล่า)",
+        "thumbnail": "https://i.ytimg.com/vi/geg6RONjqMM/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ อาวีญง",
@@ -52903,20 +52902,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Transylvania (Romania). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Sighisoara.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว ดราคูลาคาพาเทียน ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of ดราคูลาคาพาเทียน oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/papAHv4rvTw/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/papAHv4rvTw/hqdefault.jpg",
         "title": "วิญญาณทหารไร้นามแห่งสมรภูมิเก่า ซีกีชออารา (ดราคูลาคาพาเทียน)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=papAHv4rvTw",
+        "title": "ตำนาน นางตะเคียนทอง : ผีไทย : World of Legend : The Sims 4",
+        "thumbnail": "https://i.ytimg.com/vi/papAHv4rvTw/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ ซีกีชออารา",
@@ -53008,20 +53007,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Transylvania (Romania). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral ดราคูลาคาพาเทียน engineers in Sighisoara.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ ทรานซิลเวเนีย (โรมาเนีย) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Transylvania (Romania), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/izl38tb7z5E/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/izl38tb7z5E/hqdefault.jpg",
         "title": "เส้นทางค้าโบราณและคาราวานปริศนา ซีกีชออารา (ดราคูลาคาพาเทียน)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=izl38tb7z5E",
+        "title": "Amazon Pink River Dolphin: A Rare Wildlife Wonder in Peru",
+        "thumbnail": "https://i.ytimg.com/vi/izl38tb7z5E/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ ซีกีชออารา",
@@ -53323,20 +53322,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Sicily (Italy). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Catania.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว กรีกซิซิเลียน เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of กรีกซิซิเลียน, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/hLQzc49fPS4/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/hLQzc49fPS4/hqdefault.jpg",
         "title": "คำสาปโลงศพและมัมมี่ผู้ล่วงละเมิด คาตาเนีย (กรีกซิซิเลียน)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=hLQzc49fPS4",
+        "title": "สุสานหินเฮกราและอาถรรพ์สายฟ้าชนเผ่าธามุดแห่งอัลอูลา (วิดีโอประกอบเรื่องเล่า)",
+        "thumbnail": "https://i.ytimg.com/vi/hLQzc49fPS4/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ คาตาเนีย",
@@ -53428,20 +53427,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Andalusia (Spain). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Granada.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว มัวร์อัลอันดาลุส ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of มัวร์อัลอันดาลุส oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/q5oOu_vV_Fc/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/q5oOu_vV_Fc/hqdefault.jpg",
         "title": "ดวงไฟวิญญาณลอยล่องกลางหนองน้ำ กรานาดา (มัวร์อัลอันดาลุส)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=q5oOu_vV_Fc",
+        "title": "Malaysian Demons Made From Dead Babies - The Disturbing Truth About Toyol",
+        "thumbnail": "https://i.ytimg.com/vi/q5oOu_vV_Fc/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ กรานาดา",
@@ -53533,20 +53532,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Andalusia (Spain). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral มัวร์อัลอันดาลุส engineers in Granada.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ อันดาลูซิอา (สเปน) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Andalusia (Spain), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/u7zwWaevMnE/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/u7zwWaevMnE/hqdefault.jpg",
         "title": "ยอดผาโทรลล์และรอยเท้าบรรพชนยักษ์ กรานาดา (มัวร์อัลอันดาลุส)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=u7zwWaevMnE",
+        "title": "Nurarihyon - The Strange Leader of the Yokai - Japanese Mythology",
+        "thumbnail": "https://i.ytimg.com/vi/u7zwWaevMnE/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ กรานาดา",
@@ -53848,20 +53847,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Westfjords (Iceland). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Isafjordur.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว นอร์สโบราณ เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of นอร์สโบราณ, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/rBexusDa6_Y/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/rBexusDa6_Y/hqdefault.jpg",
         "title": "อาถรรพ์รูปเคารพและดวงตาจ้องมอง อีซาฟยอร์ดูร์ (นอร์สโบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=rBexusDa6_Y",
+        "title": "พิธีกรรมซาร์ (มนต์สะกดขับวิญญาณแห่งลุ่มแม่น้ำไนล์) (วิดีโอประกอบเรื่องเล่า)",
+        "thumbnail": "https://i.ytimg.com/vi/rBexusDa6_Y/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ อีซาฟยอร์ดูร์",
@@ -53953,20 +53952,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Telemark (Norway). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Notodden.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว ไวกิ้งนอร์ส ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of ไวกิ้งนอร์ส oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/5yZvIdKcVvc/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/5yZvIdKcVvc/hqdefault.jpg",
         "title": "วิญญาณสตรีชุดขาวแห่งเส้นทางโบราณ นอต็อดเดน (ไวกิ้งนอร์ส)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=5yZvIdKcVvc",
+        "title": "ROKUROKUBI - JAPONESE LEGEND #horror #tiktoktrend #tiktok",
+        "thumbnail": "https://i.ytimg.com/vi/5yZvIdKcVvc/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ นอต็อดเดน",
@@ -54058,20 +54057,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Telemark (Norway). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral ไวกิ้งนอร์ส engineers in Notodden.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ เทเลมาร์ก (นอร์เวย์) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Telemark (Norway), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/eEeeClBoqK0/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/eEeeClBoqK0/hqdefault.jpg",
         "title": "มหาปราการหินเมกะลิธและแนวสุริยะ นอต็อดเดน (ไวกิ้งนอร์ส)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=eEeeClBoqK0",
+        "title": "The Chinese myth of the immortal white snake - Shunan Teng",
+        "thumbnail": "https://i.ytimg.com/vi/eEeeClBoqK0/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ นอต็อดเดน",
@@ -54373,20 +54372,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from New Mexico (United States). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Taos.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว ปูเอโบล เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of ปูเอโบล, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/oI7iPb3qtZM/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/oI7iPb3qtZM/hqdefault.jpg",
         "title": "อาถรรพ์ทางแยกสัญญามนต์ดำ เตาส์ (ปูเอโบล)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=oI7iPb3qtZM",
+        "title": "Scotland Bridge Leads Dogs to Their Death",
+        "thumbnail": "https://i.ytimg.com/vi/oI7iPb3qtZM/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ เตาส์",
@@ -54478,20 +54477,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Washington (United States). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Olympic.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว แปซิฟิกนอร์ทเวสต์ ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of แปซิฟิกนอร์ทเวสต์ oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/AH8QC_-oS04/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/AH8QC_-oS04/hqdefault.jpg",
         "title": "พรายน้ำคร่ำครวญริมสายน้ำ โอลิมปิก (แปซิฟิกนอร์ทเวสต์)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=AH8QC_-oS04",
+        "title": "❄️ GLOBAL HORROR FOLKLORE — EPISODE 7: YUKI-ONNA | THE SNOW WOMAN 👻",
+        "thumbnail": "https://i.ytimg.com/vi/AH8QC_-oS04/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ โอลิมปิก",
@@ -54583,20 +54582,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Washington (United States). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral แปซิฟิกนอร์ทเวสต์ engineers in Olympic.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ วอชิงตัน (สหรัฐอเมริกา) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Washington (United States), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/jbwTxZpBiKs/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/jbwTxZpBiKs/hqdefault.jpg",
         "title": "ถ้ำภาพเขียนสีโบราณหมื่นปี โอลิมปิก (แปซิฟิกนอร์ทเวสต์)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=jbwTxZpBiKs",
+        "title": "Melusine - The Serpent of Woe - European - Extra Mythology",
+        "thumbnail": "https://i.ytimg.com/vi/jbwTxZpBiKs/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ โอลิมปิก",
@@ -54898,20 +54897,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Oaxaca (Mexico). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Monte Alban.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว ซาโปเทก เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of ซาโปเทก, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/a5Mn80uX4mk/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/a5Mn80uX4mk/hqdefault.jpg",
         "title": "อาถรรพ์เรือวิญญาณและกะลาสีต้องสาป มอนเตอัลบัน (ซาโปเทก)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=a5Mn80uX4mk",
+        "title": "Is this India's 'most haunted' site? – BBC REEL",
+        "thumbnail": "https://i.ytimg.com/vi/a5Mn80uX4mk/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ มอนเตอัลบัน",
@@ -55003,20 +55002,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Cusco (Peru). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Sacred Valley.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว อินคา ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of อินคา oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/UqHyBCvbQhw/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/UqHyBCvbQhw/hqdefault.jpg",
         "title": "เสียงสะอื้นไห้ใต้สะพานหินโบราณ หุบเขาศักดิ์สิทธิ์ (อินคา)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=UqHyBCvbQhw",
+        "title": "The First Vampires | Romanian Folklore Explained",
+        "thumbnail": "https://i.ytimg.com/vi/UqHyBCvbQhw/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ หุบเขาศักดิ์สิทธิ์",
@@ -55108,20 +55107,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Cusco (Peru). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral อินคา engineers in Sacred Valley.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ กุสโก (เปรู) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Cusco (Peru), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/tNR4alxMN8k/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/tNR4alxMN8k/hqdefault.jpg",
         "title": "บ่อน้ำพุศักดิ์สิทธิ์ไร้ก้นแห่งตำนาน หุบเขาศักดิ์สิทธิ์ (อินคา)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=tNR4alxMN8k",
+        "title": "The Mysterious Death of Edgar Allan Poe May Never Be Solved",
+        "thumbnail": "https://i.ytimg.com/vi/tNR4alxMN8k/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ หุบเขาศักดิ์สิทธิ์",
@@ -55423,20 +55422,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Aswan (Egypt). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Philae Island.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว อียิปต์โบราณ เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of อียิปต์โบราณ, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/8YBnc7AG8no/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/8YBnc7AG8no/hqdefault.jpg",
         "title": "คำสาปสะพานมรณะและลางบอกเหตุ เกาะฟิเล (อียิปต์โบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=8YBnc7AG8no",
+        "title": "Terrifying noises coming from the HAUNTED TOWN of Rajasthan, India 🇮🇳",
+        "thumbnail": "https://i.ytimg.com/vi/8YBnc7AG8no/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ เกาะฟิเล",
@@ -55528,20 +55527,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Luxor (Egypt). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Valley of the Kings.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว ทีบส์โบราณ ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of ทีบส์โบราณ oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/CdZ1Y92eVfM/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/CdZ1Y92eVfM/hqdefault.jpg",
         "title": "เสียงฝีเท้าลี้ลับแห่งบันไดวนชั้นใต้ดิน หุบผากษัตริย์ (ทีบส์โบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=CdZ1Y92eVfM",
+        "title": "Ichabod and Mr. Toad (1949) The Headless Horseman",
+        "thumbnail": "https://i.ytimg.com/vi/CdZ1Y92eVfM/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ หุบผากษัตริย์",
@@ -55633,20 +55632,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Luxor (Egypt). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral ทีบส์โบราณ engineers in Valley of the Kings.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ ลักซอร์ (อียิปต์) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Luxor (Egypt), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/ZlPzbIaZJX8/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/ZlPzbIaZJX8/hqdefault.jpg",
         "title": "รอยจารึกลึกลับแห่งอารยธรรมที่สาบสูญ หุบผากษัตริย์ (ทีบส์โบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=ZlPzbIaZJX8",
+        "title": "ตำนานรักโศกนาฏกรรม! \"เขาสามมุข-บางแสน\" คำสาบานที่แลกด้วยชีวิต | ห้องเก็บเรื่องเล่า",
+        "thumbnail": "https://i.ytimg.com/vi/ZlPzbIaZJX8/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ หุบผากษัตริย์",
@@ -55773,20 +55772,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Marrakech (Morocco). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Medina.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว เบอร์เบอร์ เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of เบอร์เบอร์, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/GMTRVQi3cM0/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/GMTRVQi3cM0/hqdefault.jpg",
         "title": "คำสาปศิลาจารึกและอาถรรพ์ชะตากรรม เมดินา (เบอร์เบอร์)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=GMTRVQi3cM0",
+        "title": "The Horrifying Story of the Bell Witch… (Bell Witch Cave)",
+        "thumbnail": "https://i.ytimg.com/vi/GMTRVQi3cM0/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ เมดินา",
@@ -55878,20 +55877,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Cape Town (South Africa). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Table Mountain.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว คอยซาน ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of คอยซาน oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/Y9L8OUgAgrI/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/Y9L8OUgAgrI/hqdefault.jpg",
         "title": "เงาร่างทมิฬแห่งหอระฆังร้าง เทเบิลเมาน์เทน (คอยซาน)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=Y9L8OUgAgrI",
+        "title": "The UnXplained: Secrets of The Winchester Mystery House (Season 1) | History",
+        "thumbnail": "https://i.ytimg.com/vi/Y9L8OUgAgrI/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ เทเบิลเมาน์เทน",
@@ -55983,20 +55982,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Cape Town (South Africa). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral คอยซาน engineers in Table Mountain.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ เคปทาวน์ (แอฟริกาใต้) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Cape Town (South Africa), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/GeHG6musFbk/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/GeHG6musFbk/hqdefault.jpg",
         "title": "นครโบราณที่สาบสูญใต้ผืนป่า เทเบิลเมาน์เทน (คอยซาน)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=GeHG6musFbk",
+        "title": "กำเนิดบุญบั้งไฟ ตำนานพญาคันคากยกทัพรบกับพญาแถน | หลอนดูดิ EP.88",
+        "thumbnail": "https://i.ytimg.com/vi/GeHG6musFbk/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ เทเบิลเมาน์เทน",
@@ -56298,20 +56297,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from North Island (New Zealand). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Rotorua.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว เมารี เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of เมารี, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/4LndTfQGXUU/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/4LndTfQGXUU/hqdefault.jpg",
         "title": "คำสาปแผ่นดินและเมืองร้างโบราณ โรโตรัว (เมารี)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=4LndTfQGXUU",
+        "title": "Skinwalker Ranch  - The Full Story | Documentary",
+        "thumbnail": "https://i.ytimg.com/vi/4LndTfQGXUU/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ โรโตรัว",
@@ -56403,20 +56402,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Chiang Mai (Thailand). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Mae Rim.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว ล้านนา ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of ล้านนา oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/pSokbvbryKM/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/pSokbvbryKM/hqdefault.jpg",
         "title": "วิญญาณทหารไร้นามแห่งสมรภูมิเก่า แม่ริม (ล้านนา)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=pSokbvbryKM",
+        "title": "Haunted Alcatraz (Ghost Documentary)",
+        "thumbnail": "https://i.ytimg.com/vi/pSokbvbryKM/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ แม่ริม",
@@ -56508,20 +56507,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Chiang Mai (Thailand). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral ล้านนา engineers in Mae Rim.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ เชียงใหม่ (ไทย) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Chiang Mai (Thailand), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/rlBT1LZktYY/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/rlBT1LZktYY/hqdefault.jpg",
         "title": "เส้นทางค้าโบราณและคาราวานปริศนา แม่ริม (ล้านนา)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=rlBT1LZktYY",
+        "title": "กุมารทองของขุนแผน กำเนิดในซ่องโจรที่ไม่เคยมีใครรอดออกมาได้ | ขุนช้างขุนแผนตอน 2",
+        "thumbnail": "https://i.ytimg.com/vi/rlBT1LZktYY/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ แม่ริม",
@@ -56823,20 +56822,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Lamphun (Thailand). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Pa Sang.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว หริภุญชัย เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of หริภุญชัย, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/jL-TnyXxU48/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/jL-TnyXxU48/hqdefault.jpg",
         "title": "คำสาปโลงศพและมัมมี่ผู้ล่วงละเมิด ป่าซาง (หริภุญชัย)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=jL-TnyXxU48",
+        "title": "Umm Sameh: Inside One of Egypt’s Last Zar Rituals",
+        "thumbnail": "https://i.ytimg.com/vi/jL-TnyXxU48/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ ป่าซาง",
@@ -56928,20 +56927,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Ubon Ratchathani (Thailand). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Khong Chiam.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว อีสานริมโขง ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of อีสานริมโขง oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/OdHe0m4OtKw/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/OdHe0m4OtKw/hqdefault.jpg",
         "title": "ดวงไฟวิญญาณลอยล่องกลางหนองน้ำ โขงเจียม (อีสานริมโขง)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=OdHe0m4OtKw",
+        "title": "The Bell Witch HAUNTING",
+        "thumbnail": "https://i.ytimg.com/vi/OdHe0m4OtKw/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ โขงเจียม",
@@ -57033,20 +57032,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Ubon Ratchathani (Thailand). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral อีสานริมโขง engineers in Khong Chiam.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ อุบลราชธานี (ไทย) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Ubon Ratchathani (Thailand), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/xkjDjDgMmWo/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/xkjDjDgMmWo/hqdefault.jpg",
         "title": "ยอดผาโทรลล์และรอยเท้าบรรพชนยักษ์ โขงเจียม (อีสานริมโขง)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=xkjDjDgMmWo",
+        "title": "ตำนาน ถ้ำหลวง ขุนน้ำนางนอน | ตำนานไทย | โลกแห่งตำนาน | The Sims 4",
+        "thumbnail": "https://i.ytimg.com/vi/xkjDjDgMmWo/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ โขงเจียม",
@@ -57348,20 +57347,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Surat Thani (Thailand). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Ko Samui.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว ทักษิณศรีวิชัย เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of ทักษิณศรีวิชัย, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/C3J1wwDnGAU/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/C3J1wwDnGAU/hqdefault.jpg",
         "title": "อาถรรพ์รูปเคารพและดวงตาจ้องมอง เกาะสมุย (ทักษิณศรีวิชัย)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=C3J1wwDnGAU",
+        "title": "เลี้ยงผีหรือเทพ กุมารทอง หลวงพ่อเต๋ คงทอง วัดสามง่าม | เที่ยวได้ไม่ลบหลู่ (Eng Sub)",
+        "thumbnail": "https://i.ytimg.com/vi/C3J1wwDnGAU/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ เกาะสมุย",
@@ -57453,20 +57452,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Songkhla (Thailand). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Sathing Phra.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว คาบสมุทรสทิงพระ ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of คาบสมุทรสทิงพระ oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/K0ftuomaGoc/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/K0ftuomaGoc/hqdefault.jpg",
         "title": "วิญญาณสตรีชุดขาวแห่งเส้นทางโบราณ สทิงพระ (คาบสมุทรสทิงพระ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=K0ftuomaGoc",
+        "title": "😱 el silbón whistle 😙💀i can hear it back... death whistle #shorts #silbon #elsilbon #whistling",
+        "thumbnail": "https://i.ytimg.com/vi/K0ftuomaGoc/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ สทิงพระ",
@@ -57558,20 +57557,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Songkhla (Thailand). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral คาบสมุทรสทิงพระ engineers in Sathing Phra.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ สงขลา (ไทย) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Songkhla (Thailand), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/FYjlith176A/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/FYjlith176A/hqdefault.jpg",
         "title": "มหาปราการหินเมกะลิธและแนวสุริยะ สทิงพระ (คาบสมุทรสทิงพระ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=FYjlith176A",
+        "title": "The Nine-Tailed Fox in Chinese Mythology: From Sacred Beast to Deadly Fox Spirit (Huli Jing)",
+        "thumbnail": "https://i.ytimg.com/vi/FYjlith176A/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ สทิงพระ",
@@ -57873,20 +57872,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Tokyo (Japan). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Ueno.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว เอโดะ เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of เอโดะ, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/eZCn_WpT4Kc/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/eZCn_WpT4Kc/hqdefault.jpg",
         "title": "อาถรรพ์ทางแยกสัญญามนต์ดำ อุเอโนะ (เอโดะ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=eZCn_WpT4Kc",
+        "title": "มัสยิดกรือเซะ ตำนานคำสาปเจ้าแม่ลิ้มกอเหนี่ยว",
+        "thumbnail": "https://i.ytimg.com/vi/eZCn_WpT4Kc/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ อุเอโนะ",
@@ -57978,20 +57977,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Hokkaido (Japan). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Noboribetsu.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว ไอนุ ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of ไอนุ oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/MAUg6Sb27C0/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/MAUg6Sb27C0/hqdefault.jpg",
         "title": "พรายน้ำคร่ำครวญริมสายน้ำ โนโบริเบ็ตสึ (ไอนุ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=MAUg6Sb27C0",
+        "title": "Bake-kujira the Hideous Ghost Whales | Japanese Yokai Folklore",
+        "thumbnail": "https://i.ytimg.com/vi/MAUg6Sb27C0/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ โนโบริเบ็ตสึ",
@@ -58083,20 +58082,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Hokkaido (Japan). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral ไอนุ engineers in Noboribetsu.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ ฮอกไกโด (ญี่ปุ่น) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Hokkaido (Japan), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/gnzmuc1Jd-s/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/gnzmuc1Jd-s/hqdefault.jpg",
         "title": "ถ้ำภาพเขียนสีโบราณหมื่นปี โนโบริเบ็ตสึ (ไอนุ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=gnzmuc1Jd-s",
+        "title": "The Leaping Monster That Terrorized Victorian London 🏙️🔥",
+        "thumbnail": "https://i.ytimg.com/vi/gnzmuc1Jd-s/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ โนโบริเบ็ตสึ",
@@ -58398,20 +58397,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Jeju (South Korea). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Seogwipo.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว ทัมราโบราณ เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of ทัมราโบราณ, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/Vt3XB5IGRB8/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/Vt3XB5IGRB8/hqdefault.jpg",
         "title": "อาถรรพ์เรือวิญญาณและกะลาสีต้องสาป ซอกวิโพ (ทัมราโบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=Vt3XB5IGRB8",
+        "title": "เปิดตำนานและความเชื่อ “ศาลเจ้าแม่งูจงอาง”  พระราม2 | TOPUPDATE",
+        "thumbnail": "https://i.ytimg.com/vi/Vt3XB5IGRB8/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ ซอกวิโพ",
@@ -58503,20 +58502,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Sichuan (China). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Chengdu.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว สู่ฮั่นโบราณ ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of สู่ฮั่นโบราณ oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/Gc9Z9YDo838/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/Gc9Z9YDo838/hqdefault.jpg",
         "title": "เสียงสะอื้นไห้ใต้สะพานหินโบราณ เฉิงตู (สู่ฮั่นโบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=Gc9Z9YDo838",
+        "title": "What Is THE WILD HUNT? (and why are so many afraid of it?)",
+        "thumbnail": "https://i.ytimg.com/vi/Gc9Z9YDo838/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ เฉิงตู",
@@ -58608,20 +58607,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Sichuan (China). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral สู่ฮั่นโบราณ engineers in Chengdu.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ เสฉวน (จีน) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Sichuan (China), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/Bov-9SKYhxE/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/Bov-9SKYhxE/hqdefault.jpg",
         "title": "บ่อน้ำพุศักดิ์สิทธิ์ไร้ก้นแห่งตำนาน เฉิงตู (สู่ฮั่นโบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=Bov-9SKYhxE",
+        "title": "The Legend of the Selkies",
+        "thumbnail": "https://i.ytimg.com/vi/Bov-9SKYhxE/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ เฉิงตู",
@@ -58923,20 +58922,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Bali (Indonesia). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Ubud.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว ฮินดูบาหลี เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of ฮินดูบาหลี, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/C0lkyAGqfo4/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/C0lkyAGqfo4/hqdefault.jpg",
         "title": "คำสาปสะพานมรณะและลางบอกเหตุ อูบุด (ฮินดูบาหลี)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=C0lkyAGqfo4",
+        "title": "Yokai: Wanyudo & Katawaguruma | 妖怪 - 和入道/片輪車",
+        "thumbnail": "https://i.ytimg.com/vi/C0lkyAGqfo4/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ อูบุด",
@@ -59028,20 +59027,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from East Java (Indonesia). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Mount Bromo.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว มัชปาหิต ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of มัชปาหิต oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/NEUCF-AA5WM/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/NEUCF-AA5WM/hqdefault.jpg",
         "title": "เสียงฝีเท้าลี้ลับแห่งบันไดวนชั้นใต้ดิน ภูเขาไฟโบรโม (มัชปาหิต)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=NEUCF-AA5WM",
+        "title": "Dullahan: The Headless Horseman of Irish Folklore - (Irish/Celtic Mythology Explained)",
+        "thumbnail": "https://i.ytimg.com/vi/NEUCF-AA5WM/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ ภูเขาไฟโบรโม",
@@ -59133,20 +59132,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in East Java (Indonesia). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral มัชปาหิต engineers in Mount Bromo.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ ชวาตะวันออก (อินโดนีเซีย) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in East Java (Indonesia), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/FkeU68tSCPc/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/FkeU68tSCPc/hqdefault.jpg",
         "title": "รอยจารึกลึกลับแห่งอารยธรรมที่สาบสูญ ภูเขาไฟโบรโม (มัชปาหิต)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=FkeU68tSCPc",
+        "title": "อัสซานโบซัม (อสูรต้นไม้เท้าขอเหล็กแห่งป่าดงดิบกานา) (วิดีโอประกอบเรื่องเล่า)",
+        "thumbnail": "https://i.ytimg.com/vi/FkeU68tSCPc/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ ภูเขาไฟโบรโม",
@@ -59273,20 +59272,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Luzon (Philippines). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Baguio.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว คอร์ดิลเลรา เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of คอร์ดิลเลรา, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/f5V111eCwC0/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/f5V111eCwC0/hqdefault.jpg",
         "title": "คำสาปศิลาจารึกและอาถรรพ์ชะตากรรม บากีโอ (คอร์ดิลเลรา)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=f5V111eCwC0",
+        "title": "FUTAKUCHI-ONNA, THE JAPANESE SPIRIT WITH TWO MOUTHS | Draw My Life",
+        "thumbnail": "https://i.ytimg.com/vi/f5V111eCwC0/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ บากีโอ",
@@ -59378,20 +59377,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Hue (Vietnam). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Imperial Hue.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว ราชวงศ์เหงียน ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of ราชวงศ์เหงียน oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/CfqkHYHcBv0/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/CfqkHYHcBv0/hqdefault.jpg",
         "title": "เงาร่างทมิฬแห่งหอระฆังร้าง นครหลวงเว้ (ราชวงศ์เหงียน)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=CfqkHYHcBv0",
+        "title": "The Villisca Axe Murder House: The SCARIEST Place In America (HORRIFYING Paranormal Activity)",
+        "thumbnail": "https://i.ytimg.com/vi/CfqkHYHcBv0/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ นครหลวงเว้",
@@ -59483,20 +59482,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Hue (Vietnam). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral ราชวงศ์เหงียน engineers in Imperial Hue.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ เว้ (เวียดนาม) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Hue (Vietnam), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/W1NT3Mnvnro/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/W1NT3Mnvnro/hqdefault.jpg",
         "title": "นครโบราณที่สาบสูญใต้ผืนป่า นครหลวงเว้ (ราชวงศ์เหงียน)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=W1NT3Mnvnro",
+        "title": "มัมลัมโบ (เทพีมารแห่งสายน้ำและอสูรกลืนวิญญาณแห่งแม่น้ำเอ็มซินทลา) (วิดีโอประกอบเรื่องเล่า)",
+        "thumbnail": "https://i.ytimg.com/vi/W1NT3Mnvnro/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ นครหลวงเว้",
@@ -59798,20 +59797,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Siem Reap (Cambodia). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Angkor Wat.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว เขมรโบราณ เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of เขมรโบราณ, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/MJAaOeBAR0E/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/MJAaOeBAR0E/hqdefault.jpg",
         "title": "คำสาปแผ่นดินและเมืองร้างโบราณ พระนครวัด (เขมรโบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=MJAaOeBAR0E",
+        "title": "The Black Forest of Germany - Great Places of the World 1/6 - Go Wild",
+        "thumbnail": "https://i.ytimg.com/vi/MJAaOeBAR0E/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ พระนครวัด",
@@ -59903,20 +59902,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Himachal Pradesh (India). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Manali.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว เวทหิมาลัย ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of เวทหิมาลัย oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/M8fmKHtzPUs/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/M8fmKHtzPUs/hqdefault.jpg",
         "title": "วิญญาณทหารไร้นามแห่งสมรภูมิเก่า มะนาลี (เวทหิมาลัย)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=M8fmKHtzPUs",
+        "title": "Gashadokuro | Giant Skeleton Yokai",
+        "thumbnail": "https://i.ytimg.com/vi/M8fmKHtzPUs/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ มะนาลี",
@@ -60008,20 +60007,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Himachal Pradesh (India). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral เวทหิมาลัย engineers in Manali.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ หิมาจัลประเทศ (อินเดีย) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Himachal Pradesh (India), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/EZz81HZnPvA/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/EZz81HZnPvA/hqdefault.jpg",
         "title": "เส้นทางค้าโบราณและคาราวานปริศนา มะนาลี (เวทหิมาลัย)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=EZz81HZnPvA",
+        "title": "ยักษิณี (เทพีพฤกษานารีและผู้เฝ้าขุมทรัพย์แห่งถ้ำเอลโลรา) (วิดีโอประกอบเรื่องเล่า)",
+        "thumbnail": "https://i.ytimg.com/vi/EZz81HZnPvA/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ มะนาลี",
@@ -60323,20 +60322,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Kerala (India). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Cochin.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว มาลาบาร์ เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of มาลาบาร์, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/QF10R91l51U/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/QF10R91l51U/hqdefault.jpg",
         "title": "คำสาปโลงศพและมัมมี่ผู้ล่วงละเมิด โคชิน (มาลาบาร์)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=QF10R91l51U",
+        "title": "Crown Jewels: Why is the Koh-i-Noor diamond so controversial? – BBC News",
+        "thumbnail": "https://i.ytimg.com/vi/QF10R91l51U/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ โคชิน",
@@ -60428,20 +60427,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Highlands (Scotland). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Inverness.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว เกลิกสกอต ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of เกลิกสกอต oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/1Twqmhv177Q/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/1Twqmhv177Q/hqdefault.jpg",
         "title": "ดวงไฟวิญญาณลอยล่องกลางหนองน้ำ อินเวอร์เนสส์ (เกลิกสกอต)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=1Twqmhv177Q",
+        "title": "Don’t Taunt This Creature.. #scary",
+        "thumbnail": "https://i.ytimg.com/vi/1Twqmhv177Q/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ อินเวอร์เนสส์",
@@ -60533,20 +60532,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Highlands (Scotland). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral เกลิกสกอต engineers in Inverness.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ ไฮแลนด์ (สกอตแลนด์) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Highlands (Scotland), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/LRyFuNkYzOg/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/LRyFuNkYzOg/hqdefault.jpg",
         "title": "ยอดผาโทรลล์และรอยเท้าบรรพชนยักษ์ อินเวอร์เนสส์ (เกลิกสกอต)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=LRyFuNkYzOg",
+        "title": "เวตาล (อมนุษย์ค้างคาวผีสิงศพและปริศนาพระวิกรมาทิตย์) (วิดีโอประกอบเรื่องเล่า)",
+        "thumbnail": "https://i.ytimg.com/vi/LRyFuNkYzOg/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ อินเวอร์เนสส์",
@@ -60848,20 +60847,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Cornwall (England). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Penzance.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว เซลติกบริตัน เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of เซลติกบริตัน, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/9PzfX6nAqI0/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/9PzfX6nAqI0/hqdefault.jpg",
         "title": "อาถรรพ์รูปเคารพและดวงตาจ้องมอง เพนแซนซ์ (เซลติกบริตัน)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=9PzfX6nAqI0",
+        "title": "Bizarre mystery-legend: the \"Curse of the Billy Goat\" | MYSTERY-LEGEND",
+        "thumbnail": "https://i.ytimg.com/vi/9PzfX6nAqI0/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ เพนแซนซ์",
@@ -60953,20 +60952,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from County Kildare (Ireland). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Curragh.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว เกลิกไอริช ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of เกลิกไอริช oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/IPZZQa3wK3k/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/IPZZQa3wK3k/hqdefault.jpg",
         "title": "วิญญาณสตรีชุดขาวแห่งเส้นทางโบราณ เคอร์ราห์ (เกลิกไอริช)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=IPZZQa3wK3k",
+        "title": "The Penanggalan: Malaysia's Flying Head Ghost",
+        "thumbnail": "https://i.ytimg.com/vi/IPZZQa3wK3k/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ เคอร์ราห์",
@@ -61058,20 +61057,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in County Kildare (Ireland). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral เกลิกไอริช engineers in Curragh.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ เคาน์ตีคิลแดร์ (ไอร์แลนด์) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in County Kildare (Ireland), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/vTPxc9WCkuY/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/vTPxc9WCkuY/hqdefault.jpg",
         "title": "มหาปราการหินเมกะลิธและแนวสุริยะ เคอร์ราห์ (เกลิกไอริช)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=vTPxc9WCkuY",
+        "title": "พิชาล เปรี (นางพรายหิมะเท้ากลับหลังแห่งเทือกเขาหิมาลัย) (วิดีโอประกอบเรื่องเล่า)",
+        "thumbnail": "https://i.ytimg.com/vi/vTPxc9WCkuY/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ เคอร์ราห์",
@@ -61373,20 +61372,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Bavaria (Germany). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Garmisch.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว บาวาเรียนแอลป์ เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of บาวาเรียนแอลป์, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/SRD_YUYLrh8/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/SRD_YUYLrh8/hqdefault.jpg",
         "title": "อาถรรพ์ทางแยกสัญญามนต์ดำ การ์มิช (บาวาเรียนแอลป์)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=SRD_YUYLrh8",
+        "title": "The Basano Vase Paradox That No One Can Explain",
+        "thumbnail": "https://i.ytimg.com/vi/SRD_YUYLrh8/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ การ์มิช",
@@ -61478,20 +61477,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Black Forest (Germany). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Freiburg.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว ป่าดำสวาเบียน ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of ป่าดำสวาเบียน oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/oFNTuGhGb9k/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/oFNTuGhGb9k/hqdefault.jpg",
         "title": "พรายน้ำคร่ำครวญริมสายน้ำ ไฟรบวร์ก (ป่าดำสวาเบียน)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=oFNTuGhGb9k",
+        "title": "Costa Rica’s Most Haunted Stories 🇨🇷 La Llorona, La Cegua & La Mona",
+        "thumbnail": "https://i.ytimg.com/vi/oFNTuGhGb9k/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ ไฟรบวร์ก",
@@ -61583,20 +61582,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Black Forest (Germany). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral ป่าดำสวาเบียน engineers in Freiburg.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ แบล็กฟอเรสต์ (เยอรมนี) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Black Forest (Germany), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/9m7cW0bCSb4/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/9m7cW0bCSb4/hqdefault.jpg",
         "title": "ถ้ำภาพเขียนสีโบราณหมื่นปี ไฟรบวร์ก (ป่าดำสวาเบียน)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=9m7cW0bCSb4",
+        "title": "กิเลน (สัตว์สวรรค์เบญจธาตุและมงคลพิทักษ์แห่งเขาไท่ซาน) (วิดีโอประกอบเรื่องเล่า)",
+        "thumbnail": "https://i.ytimg.com/vi/9m7cW0bCSb4/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ ไฟรบวร์ก",
@@ -61898,20 +61897,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Provence (France). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Avignon.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว ออกซิตัน เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of ออกซิตัน, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/ppvJTgycov8/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/ppvJTgycov8/hqdefault.jpg",
         "title": "อาถรรพ์เรือวิญญาณและกะลาสีต้องสาป อาวีญง (ออกซิตัน)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=ppvJTgycov8",
+        "title": "Every House That Burned Down Had the Same Painting Inside | The Crying Boy Curse",
+        "thumbnail": "https://i.ytimg.com/vi/ppvJTgycov8/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ อาวีญง",
@@ -62003,20 +62002,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Transylvania (Romania). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Sighisoara.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว ดราคูลาคาพาเทียน ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of ดราคูลาคาพาเทียน oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/TXeS58LgJd0/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/TXeS58LgJd0/hqdefault.jpg",
         "title": "เสียงสะอื้นไห้ใต้สะพานหินโบราณ ซีกีชออารา (ดราคูลาคาพาเทียน)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=TXeS58LgJd0",
+        "title": "ชูเรล (วิญญาณแม่มดเท้ากลับหลังแห่งลุ่มน้ำคงคา) (วิดีโอประกอบเรื่องเล่า)",
+        "thumbnail": "https://i.ytimg.com/vi/TXeS58LgJd0/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ ซีกีชออารา",
@@ -62108,20 +62107,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Transylvania (Romania). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral ดราคูลาคาพาเทียน engineers in Sighisoara.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ ทรานซิลเวเนีย (โรมาเนีย) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Transylvania (Romania), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/CkuSe14r0Ds/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/CkuSe14r0Ds/hqdefault.jpg",
         "title": "บ่อน้ำพุศักดิ์สิทธิ์ไร้ก้นแห่งตำนาน ซีกีชออารา (ดราคูลาคาพาเทียน)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=CkuSe14r0Ds",
+        "title": "ปี่เซียะ (สัตว์สวรรค์กลืนกินทรัพย์แห่งกำแพงเมืองซีอาน) (วิดีโอประกอบเรื่องเล่า)",
+        "thumbnail": "https://i.ytimg.com/vi/CkuSe14r0Ds/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ ซีกีชออารา",
@@ -62423,20 +62422,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Sicily (Italy). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Catania.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว กรีกซิซิเลียน เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of กรีกซิซิเลียน, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/i522GfzdP6g/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/i522GfzdP6g/hqdefault.jpg",
         "title": "คำสาปสะพานมรณะและลางบอกเหตุ คาตาเนีย (กรีกซิซิเลียน)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=i522GfzdP6g",
+        "title": "ED & LORRAINE WARREN'S HAUNTED MUSEUM (Exclusive Full Tour)",
+        "thumbnail": "https://i.ytimg.com/vi/i522GfzdP6g/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ คาตาเนีย",
@@ -62528,20 +62527,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Andalusia (Spain). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Granada.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว มัวร์อัลอันดาลุส ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of มัวร์อัลอันดาลุส oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/ecgsikI4JI8/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/ecgsikI4JI8/hqdefault.jpg",
         "title": "เสียงฝีเท้าลี้ลับแห่งบันไดวนชั้นใต้ดิน กรานาดา (มัวร์อัลอันดาลุส)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=ecgsikI4JI8",
+        "title": "รูซัลกา (พรายน้ำเสน่หาและวิญญาณแห่งทะเลสาบไบคัล) (วิดีโอประกอบเรื่องเล่า)",
+        "thumbnail": "https://i.ytimg.com/vi/ecgsikI4JI8/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ กรานาดา",
@@ -62633,20 +62632,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Andalusia (Spain). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral มัวร์อัลอันดาลุส engineers in Granada.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ อันดาลูซิอา (สเปน) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Andalusia (Spain), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/g7iUpVYEhlU/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/g7iUpVYEhlU/hqdefault.jpg",
         "title": "รอยจารึกลึกลับแห่งอารยธรรมที่สาบสูญ กรานาดา (มัวร์อัลอันดาลุส)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=g7iUpVYEhlU",
+        "title": "เต่าดำเสวียนอู่ (เทพพิทักษ์ทิศอุดรและอสูรเต่างูแห่งเขาอู่ตัง) (วิดีโอประกอบเรื่องเล่า)",
+        "thumbnail": "https://i.ytimg.com/vi/g7iUpVYEhlU/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ กรานาดา",
@@ -62773,20 +62772,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Peloponnese (Greece). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Sparta.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว เฮลเลนิกโบราณ เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of เฮลเลนิกโบราณ, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/rMIOD2Clk0E/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/rMIOD2Clk0E/hqdefault.jpg",
         "title": "คำสาปศิลาจารึกและอาถรรพ์ชะตากรรม สปาร์ตา (เฮลเลนิกโบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=rMIOD2Clk0E",
+        "title": "The Legend of Black Aggie",
+        "thumbnail": "https://i.ytimg.com/vi/rMIOD2Clk0E/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ สปาร์ตา",
@@ -62878,20 +62877,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Westfjords (Iceland). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Isafjordur.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว นอร์สโบราณ ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of นอร์สโบราณ oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/IoiXQ8Lb6ME/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/IoiXQ8Lb6ME/hqdefault.jpg",
         "title": "เงาร่างทมิฬแห่งหอระฆังร้าง อีซาฟยอร์ดูร์ (นอร์สโบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=IoiXQ8Lb6ME",
+        "title": "นิชิดัก (วิญญาณเสียงเพรียกแห่งความตายในเบงกอล) (วิดีโอประกอบเรื่องเล่า)",
+        "thumbnail": "https://i.ytimg.com/vi/IoiXQ8Lb6ME/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ อีซาฟยอร์ดูร์",
@@ -62983,20 +62982,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Westfjords (Iceland). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral นอร์สโบราณ engineers in Isafjordur.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ เวสต์ฟยอร์ด (ไอซ์แลนด์) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Westfjords (Iceland), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/uW8oVHWmo1c/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/uW8oVHWmo1c/hqdefault.jpg",
         "title": "นครโบราณที่สาบสูญใต้ผืนป่า อีซาฟยอร์ดูร์ (นอร์สโบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=uW8oVHWmo1c",
+        "title": "TWO Mistakes Are Killing Hikers in Taiwan Mountains",
+        "thumbnail": "https://i.ytimg.com/vi/uW8oVHWmo1c/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ อีซาฟยอร์ดูร์",
@@ -63298,20 +63297,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Louisiana (United States). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout New Orleans.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว ครีโอลวูดู เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of ครีโอลวูดู, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/BtCjc5OwBi4/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/BtCjc5OwBi4/hqdefault.jpg",
         "title": "คำสาปแผ่นดินและเมืองร้างโบราณ นิวออร์ลีนส์ (ครีโอลวูดู)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=BtCjc5OwBi4",
+        "title": "Vlad the Impaler: The True Story of Dracula",
+        "thumbnail": "https://i.ytimg.com/vi/BtCjc5OwBi4/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ นิวออร์ลีนส์",
@@ -63403,20 +63402,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from New Mexico (United States). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Taos.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว ปูเอโบล ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of ปูเอโบล oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/-O6Q5GS6x_w/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/-O6Q5GS6x_w/hqdefault.jpg",
         "title": "วิญญาณทหารไร้นามแห่งสมรภูมิเก่า เตาส์ (ปูเอโบล)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=-O6Q5GS6x_w",
+        "title": "ตำนาน สาวปากฉีก : Kuchisake onna : ตำนานญี่ปุ่น : World of Legend : The sims",
+        "thumbnail": "https://i.ytimg.com/vi/-O6Q5GS6x_w/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ เตาส์",
@@ -63508,20 +63507,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in New Mexico (United States). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral ปูเอโบล engineers in Taos.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ นิวเม็กซิโก (สหรัฐอเมริกา) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in New Mexico (United States), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/oe0IK6_zYFI/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/oe0IK6_zYFI/hqdefault.jpg",
         "title": "เส้นทางค้าโบราณและคาราวานปริศนา เตาส์ (ปูเอโบล)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=oe0IK6_zYFI",
+        "title": "El Trauco 💀 Draw My Life Terror",
+        "thumbnail": "https://i.ytimg.com/vi/oe0IK6_zYFI/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ เตาส์",
@@ -63823,20 +63822,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Yucatan (Mexico). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Valladolid.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว มายาโบราณ เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of มายาโบราณ, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/AjTfqmIIB2E/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/AjTfqmIIB2E/hqdefault.jpg",
         "title": "คำสาปโลงศพและมัมมี่ผู้ล่วงละเมิด บายาโดลิด (มายาโบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=AjTfqmIIB2E",
+        "title": "เรื่องจริงของคำสาป Tutankhamun กับอาถรรพ์ที่คร่าชีวิตนักสำรวจ",
+        "thumbnail": "https://i.ytimg.com/vi/AjTfqmIIB2E/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ บายาโดลิด",
@@ -63928,20 +63927,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Oaxaca (Mexico). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Monte Alban.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว ซาโปเทก ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of ซาโปเทก oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/zWFQKdfeZF0/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/zWFQKdfeZF0/hqdefault.jpg",
         "title": "ดวงไฟวิญญาณลอยล่องกลางหนองน้ำ มอนเตอัลบัน (ซาโปเทก)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=zWFQKdfeZF0",
+        "title": "เปิดตำนาน แม่นากพระโขนงตัวจริงเป็นยังไง ในประวัติศาสตร์? | Point of View",
+        "thumbnail": "https://i.ytimg.com/vi/zWFQKdfeZF0/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ มอนเตอัลบัน",
@@ -64033,20 +64032,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Oaxaca (Mexico). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral ซาโปเทก engineers in Monte Alban.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ โออาฮากา (เม็กซิโก) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Oaxaca (Mexico), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/jI0RYEIc7NY/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/jI0RYEIc7NY/hqdefault.jpg",
         "title": "ยอดผาโทรลล์และรอยเท้าบรรพชนยักษ์ มอนเตอัลบัน (ซาโปเทก)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=jI0RYEIc7NY",
+        "title": "#2 ประวัติ Skogsrå ปีศาจหญิงสาวจอมล่อลวง : Bramble The Mountain King",
+        "thumbnail": "https://i.ytimg.com/vi/jI0RYEIc7NY/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ มอนเตอัลบัน",
@@ -64348,20 +64347,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Bahia (Brazil). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Salvador.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว กานดงเบล เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of กานดงเบล, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/pDIYrsjPxKg/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/pDIYrsjPxKg/hqdefault.jpg",
         "title": "อาถรรพ์รูปเคารพและดวงตาจ้องมอง ซัลวาดอร์ (กานดงเบล)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=pDIYrsjPxKg",
+        "title": "ตำนานกระสือ อมนุษย์ที่มีหัวใจ | หลอนดูดิ EP.38",
+        "thumbnail": "https://i.ytimg.com/vi/pDIYrsjPxKg/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ ซัลวาดอร์",
@@ -64453,20 +64452,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Aswan (Egypt). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Philae Island.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว อียิปต์โบราณ ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of อียิปต์โบราณ oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/ij9MLYCO8xk/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/ij9MLYCO8xk/hqdefault.jpg",
         "title": "วิญญาณสตรีชุดขาวแห่งเส้นทางโบราณ เกาะฟิเล (อียิปต์โบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=ij9MLYCO8xk",
+        "title": "ตำนานผีดิบจีน เจียงซือ | ตำนานจีน | โลกแห่งตำนาน WOL World of Legend | เกมส์ The Sims 4",
+        "thumbnail": "https://i.ytimg.com/vi/ij9MLYCO8xk/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ เกาะฟิเล",
@@ -64558,20 +64557,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Aswan (Egypt). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral อียิปต์โบราณ engineers in Philae Island.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ อัสวาน (อียิปต์) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Aswan (Egypt), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/Nn-Q790Lq2U/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/Nn-Q790Lq2U/hqdefault.jpg",
         "title": "มหาปราการหินเมกะลิธและแนวสุริยะ เกาะฟิเล (อียิปต์โบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=Nn-Q790Lq2U",
+        "title": "YOU COULD NOT RESIST. | Huldra's Lure | Nordic Folk | Huldra of the North",
+        "thumbnail": "https://i.ytimg.com/vi/Nn-Q790Lq2U/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ เกาะฟิเล",
@@ -64873,20 +64872,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Marrakech (Morocco). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Medina.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว เบอร์เบอร์ เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of เบอร์เบอร์, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/j2knVlzAfLM/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/j2knVlzAfLM/hqdefault.jpg",
         "title": "อาถรรพ์ทางแยกสัญญามนต์ดำ เมดินา (เบอร์เบอร์)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=j2knVlzAfLM",
+        "title": "เรื่องนี้ต้องรู้ Ep.8 : ย้อนอดีต...ปิดหมู่บ้านล่า! อาถรรพ์ #ผีปอบ บ้านนาบง จ.กาฬสินธุ์",
+        "thumbnail": "https://i.ytimg.com/vi/j2knVlzAfLM/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ เมดินา",
@@ -64978,20 +64977,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Cape Town (South Africa). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Table Mountain.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว คอยซาน ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of คอยซาน oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/lo6urYjVgFI/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/lo6urYjVgFI/hqdefault.jpg",
         "title": "พรายน้ำคร่ำครวญริมสายน้ำ เทเบิลเมาน์เทน (คอยซาน)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=lo6urYjVgFI",
+        "title": "DAAYAN (WITCH) Documentary - English @ASRPictures​",
+        "thumbnail": "https://i.ytimg.com/vi/lo6urYjVgFI/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ เทเบิลเมาน์เทน",
@@ -65083,20 +65082,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Cape Town (South Africa). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral คอยซาน engineers in Table Mountain.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ เคปทาวน์ (แอฟริกาใต้) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Cape Town (South Africa), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/lNMgBxjegQc/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/lNMgBxjegQc/hqdefault.jpg",
         "title": "ถ้ำภาพเขียนสีโบราณหมื่นปี เทเบิลเมาน์เทน (คอยซาน)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=lNMgBxjegQc",
+        "title": "The Flying Dutchman",
+        "thumbnail": "https://i.ytimg.com/vi/lNMgBxjegQc/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ เทเบิลเมาน์เทน",
@@ -65398,20 +65397,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from North Island (New Zealand). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Rotorua.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว เมารี เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of เมารี, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/_oW4iC956xo/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/_oW4iC956xo/hqdefault.jpg",
         "title": "อาถรรพ์เรือวิญญาณและกะลาสีต้องสาป โรโตรัว (เมารี)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=_oW4iC956xo",
+        "title": "บาบายาก้า แม่มดร้ายแห่งรัสเซีย | Point of View",
+        "thumbnail": "https://i.ytimg.com/vi/_oW4iC956xo/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ โรโตรัว",
@@ -65503,20 +65502,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Chiang Mai (Thailand). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Mae Rim.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว ล้านนา ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of ล้านนา oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/VNM1Y8i8tuI/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/VNM1Y8i8tuI/hqdefault.jpg",
         "title": "เสียงสะอื้นไห้ใต้สะพานหินโบราณ แม่ริม (ล้านนา)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=VNM1Y8i8tuI",
+        "title": "Draugr: The Undead Nordic Zombie | Monstrum",
+        "thumbnail": "https://i.ytimg.com/vi/VNM1Y8i8tuI/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ แม่ริม",
@@ -65608,20 +65607,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Chiang Mai (Thailand). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral ล้านนา engineers in Mae Rim.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ เชียงใหม่ (ไทย) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Chiang Mai (Thailand), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/5FMwltCG56Q/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/5FMwltCG56Q/hqdefault.jpg",
         "title": "บ่อน้ำพุศักดิ์สิทธิ์ไร้ก้นแห่งตำนาน แม่ริม (ล้านนา)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=5FMwltCG56Q",
+        "title": "After 67 Years, The Dyatlov Pass Mystery Is Solved",
+        "thumbnail": "https://i.ytimg.com/vi/5FMwltCG56Q/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ แม่ริม",
@@ -65923,20 +65922,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Lamphun (Thailand). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Pa Sang.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว หริภุญชัย เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of หริภุญชัย, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/8qWibjaiLm8/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/8qWibjaiLm8/hqdefault.jpg",
         "title": "คำสาปสะพานมรณะและลางบอกเหตุ ป่าซาง (หริภุญชัย)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=8qWibjaiLm8",
+        "title": "Tokyo Ghoul ไม่ได้มาจากญี่ปุ่น! ตำนาน Ghoul ที่แท้จริงมาจากอาหรับ? | Mythos Requiem",
+        "thumbnail": "https://i.ytimg.com/vi/8qWibjaiLm8/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ ป่าซาง",
@@ -66028,20 +66027,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Ubon Ratchathani (Thailand). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Khong Chiam.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว อีสานริมโขง ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of อีสานริมโขง oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/YTo_qkkU78k/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/YTo_qkkU78k/hqdefault.jpg",
         "title": "เสียงฝีเท้าลี้ลับแห่งบันไดวนชั้นใต้ดิน โขงเจียม (อีสานริมโขง)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=YTo_qkkU78k",
+        "title": "#ผี ภูตร้องไห้ : บันชี (Banshee) - ไอร์แลนด์",
+        "thumbnail": "https://i.ytimg.com/vi/YTo_qkkU78k/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ โขงเจียม",
@@ -66133,20 +66132,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Ubon Ratchathani (Thailand). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral อีสานริมโขง engineers in Khong Chiam.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ อุบลราชธานี (ไทย) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Ubon Ratchathani (Thailand), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/dew4ZrTnMeE/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/dew4ZrTnMeE/hqdefault.jpg",
         "title": "รอยจารึกลึกลับแห่งอารยธรรมที่สาบสูญ โขงเจียม (อีสานริมโขง)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=dew4ZrTnMeE",
+        "title": "Ghost Ship Mary Celeste: The 150 Year Mystery",
+        "thumbnail": "https://i.ytimg.com/vi/dew4ZrTnMeE/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ โขงเจียม",
@@ -66273,20 +66272,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Buri Ram (Thailand). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Chaloem Phra Kiat.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว อีสานใต้ขอมโบราณ เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of อีสานใต้ขอมโบราณ, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/7kbFkKC008U/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/7kbFkKC008U/hqdefault.jpg",
         "title": "คำสาปศิลาจารึกและอาถรรพ์ชะตากรรม เฉลิมพระเกียรติ (อีสานใต้ขอมโบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=7kbFkKC008U",
+        "title": "Tokoloshe - The Evil Spirit of Zulu Folklore - African Creatures",
+        "thumbnail": "https://i.ytimg.com/vi/7kbFkKC008U/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ เฉลิมพระเกียรติ",
@@ -66378,20 +66377,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Surat Thani (Thailand). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Ko Samui.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว ทักษิณศรีวิชัย ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of ทักษิณศรีวิชัย oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/aDifEjVL7yI/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/aDifEjVL7yI/hqdefault.jpg",
         "title": "เงาร่างทมิฬแห่งหอระฆังร้าง เกาะสมุย (ทักษิณศรีวิชัย)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=aDifEjVL7yI",
+        "title": "Black Shuck: Britain's Most Terrifying Folklore Legend",
+        "thumbnail": "https://i.ytimg.com/vi/aDifEjVL7yI/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ เกาะสมุย",
@@ -66483,20 +66482,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Surat Thani (Thailand). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral ทักษิณศรีวิชัย engineers in Ko Samui.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ สุราษฎร์ธานี (ไทย) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Surat Thani (Thailand), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/ErPsyBUCijM/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/ErPsyBUCijM/hqdefault.jpg",
         "title": "นครโบราณที่สาบสูญใต้ผืนป่า เกาะสมุย (ทักษิณศรีวิชัย)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=ErPsyBUCijM",
+        "title": "Legend of Atlantis (Full Episode) | Drain the Oceans",
+        "thumbnail": "https://i.ytimg.com/vi/ErPsyBUCijM/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ เกาะสมุย",
@@ -66798,20 +66797,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Kyoto (Japan). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Arashiyama.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว เฮอันโบราณ เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of เฮอันโบราณ, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/plalHGHwSj8/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/plalHGHwSj8/hqdefault.jpg",
         "title": "คำสาปแผ่นดินและเมืองร้างโบราณ อาราชิยามะ (เฮอันโบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=plalHGHwSj8",
+        "title": "The Curse of the Bermuda Triangle (Full Episode) | Atlas of Cursed Places",
+        "thumbnail": "https://i.ytimg.com/vi/plalHGHwSj8/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ อาราชิยามะ",
@@ -66903,20 +66902,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Tokyo (Japan). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Ueno.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว เอโดะ ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of เอโดะ oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/39CCyM5rZ_k/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/39CCyM5rZ_k/hqdefault.jpg",
         "title": "วิญญาณทหารไร้นามแห่งสมรภูมิเก่า อุเอโนะ (เอโดะ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=39CCyM5rZ_k",
+        "title": "กระจกโบราณกับตำนานผีพื้นบ้านของอินโดนีเซีย 🎃  | KUNTILANAK - กระจกส่องตาย 「สปอยหนัง」",
+        "thumbnail": "https://i.ytimg.com/vi/39CCyM5rZ_k/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ อุเอโนะ",
@@ -67008,20 +67007,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Tokyo (Japan). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral เอโดะ engineers in Ueno.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ โตเกียว (ญี่ปุ่น) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Tokyo (Japan), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/RLAYsG8yJgU/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/RLAYsG8yJgU/hqdefault.jpg",
         "title": "เส้นทางค้าโบราณและคาราวานปริศนา อุเอโนะ (เอโดะ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=RLAYsG8yJgU",
+        "title": "Laplae the Hidden Town (เมืองลับแล) 2024 🫚 : VFX Breakdown",
+        "thumbnail": "https://i.ytimg.com/vi/RLAYsG8yJgU/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ อุเอโนะ",
@@ -67323,20 +67322,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Seoul (South Korea). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Jongno.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว โชซอน เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of โชซอน, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/PfvLwa-PQKs/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/PfvLwa-PQKs/hqdefault.jpg",
         "title": "คำสาปโลงศพและมัมมี่ผู้ล่วงละเมิด จงโน (โชซอน)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=PfvLwa-PQKs",
+        "title": "Skinwalkers | The Navajo Nightmare",
+        "thumbnail": "https://i.ytimg.com/vi/PfvLwa-PQKs/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ จงโน",
@@ -67428,20 +67427,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Jeju (South Korea). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Seogwipo.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว ทัมราโบราณ ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of ทัมราโบราณ oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/NeYKTKtkZsM/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/NeYKTKtkZsM/hqdefault.jpg",
         "title": "ดวงไฟวิญญาณลอยล่องกลางหนองน้ำ ซอกวิโพ (ทัมราโบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=NeYKTKtkZsM",
+        "title": "If You Hear Them March… DON’T DARE LOOK | Hawaii’s Night Marchers",
+        "thumbnail": "https://i.ytimg.com/vi/NeYKTKtkZsM/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ ซอกวิโพ",
@@ -67533,20 +67532,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Jeju (South Korea). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral ทัมราโบราณ engineers in Seogwipo.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ เชจู (เกาหลีใต้) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Jeju (South Korea), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/k5zO6e7vhm8/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/k5zO6e7vhm8/hqdefault.jpg",
         "title": "ยอดผาโทรลล์และรอยเท้าบรรพชนยักษ์ ซอกวิโพ (ทัมราโบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=k5zO6e7vhm8",
+        "title": "The Roswell UFO Crash 😱",
+        "thumbnail": "https://i.ytimg.com/vi/k5zO6e7vhm8/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ ซอกวิโพ",
@@ -67848,20 +67847,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Hunan (China). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Zhangjiajie.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว ฉู่โบราณ เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of ฉู่โบราณ, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/2M8svNK50ls/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/2M8svNK50ls/hqdefault.jpg",
         "title": "อาถรรพ์รูปเคารพและดวงตาจ้องมอง จางเจียเจี้ย (ฉู่โบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=2M8svNK50ls",
+        "title": "The Mystery Of The SS Ourang Medan 😨",
+        "thumbnail": "https://i.ytimg.com/vi/2M8svNK50ls/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ จางเจียเจี้ย",
@@ -67953,20 +67952,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Bali (Indonesia). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Ubud.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว ฮินดูบาหลี ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of ฮินดูบาหลี oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/HCIhv9uKzus/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/HCIhv9uKzus/hqdefault.jpg",
         "title": "วิญญาณสตรีชุดขาวแห่งเส้นทางโบราณ อูบุด (ฮินดูบาหลี)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=HCIhv9uKzus",
+        "title": "สปอยหน���งผีเฮี้ยนจากลุ่มแม่น้ำโขง | Ma Da - The Drowning Spirit (2024)「สปอยหนัง」",
+        "thumbnail": "https://i.ytimg.com/vi/HCIhv9uKzus/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ อูบุด",
@@ -68058,20 +68057,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Bali (Indonesia). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral ฮินดูบาหลี engineers in Ubud.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ บาหลี (อินโดนีเซีย) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Bali (Indonesia), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/yYCk_iEDEWU/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/yYCk_iEDEWU/hqdefault.jpg",
         "title": "มหาปราการหินเมกะลิธและแนวสุริยะ อูบุด (ฮินดูบาหลี)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=yYCk_iEDEWU",
+        "title": "Derinkuyu Underground City Turkey Tour Documentary",
+        "thumbnail": "https://i.ytimg.com/vi/yYCk_iEDEWU/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ อูบุด",
@@ -68373,20 +68372,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Luzon (Philippines). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Baguio.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว คอร์ดิลเลรา เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of คอร์ดิลเลรา, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/u6jSdSvoeoI/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/u6jSdSvoeoI/hqdefault.jpg",
         "title": "อาถรรพ์ทางแยกสัญญามนต์ดำ บากีโอ (คอร์ดิลเลรา)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=u6jSdSvoeoI",
+        "title": "The Dragon's Triangle - Worse than Bermuda Triangle - Best Documentary",
+        "thumbnail": "https://i.ytimg.com/vi/u6jSdSvoeoI/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ บากีโอ",
@@ -68478,20 +68477,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Hue (Vietnam). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Imperial Hue.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว ราชวงศ์เหงียน ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of ราชวงศ์เหงียน oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/I65bbz819SI/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/I65bbz819SI/hqdefault.jpg",
         "title": "พรายน้ำคร่ำครวญริมสายน้ำ นครหลวงเว้ (ราชวงศ์เหงียน)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=I65bbz819SI",
+        "title": "🇱🇰 ปูตัวละหมื่นกว่าบาท ที่ศรีลังกา เดินกินทั่วเมืองคนเดียว",
+        "thumbnail": "https://i.ytimg.com/vi/I65bbz819SI/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ นครหลวงเว้",
@@ -68583,20 +68582,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Hue (Vietnam). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral ราชวงศ์เหงียน engineers in Imperial Hue.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ เว้ (เวียดนาม) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Hue (Vietnam), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/3es75ihwB7E/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/3es75ihwB7E/hqdefault.jpg",
         "title": "ถ้ำภาพเขียนสีโบราณหมื่นปี นครหลวงเว้ (ราชวงศ์เหงียน)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=3es75ihwB7E",
+        "title": "Lebanon's Greatest Mystery Finally Solved — Baalbek Megalithic Structure No Human Could Ever Build",
+        "thumbnail": "https://i.ytimg.com/vi/3es75ihwB7E/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ นครหลวงเว้",
@@ -68898,20 +68897,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Siem Reap (Cambodia). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Angkor Wat.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว เขมรโบราณ เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of เขมรโบราณ, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/Qin7CkH4J7c/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/Qin7CkH4J7c/hqdefault.jpg",
         "title": "อาถรรพ์เรือวิญญาณและกะลาสีต้องสาป พระนครวัด (เขมรโบราณ)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=Qin7CkH4J7c",
+        "title": "NatGeo - The Curse of the Hope Diamond with Lucy Worsley",
+        "thumbnail": "https://i.ytimg.com/vi/Qin7CkH4J7c/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ พระนครวัด",
@@ -69003,20 +69002,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Himachal Pradesh (India). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Manali.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว เวทหิมาลัย ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of เวทหิมาลัย oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/f90upNFJN1g/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/f90upNFJN1g/hqdefault.jpg",
         "title": "เสียงสะอื้นไห้ใต้สะพานหินโบราณ มะนาลี (เวทหิมาลัย)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=f90upNFJN1g",
+        "title": "The Ghost Of Azzurrina HD 1080p",
+        "thumbnail": "https://i.ytimg.com/vi/f90upNFJN1g/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ มะนาลี",
@@ -69108,20 +69107,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Himachal Pradesh (India). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral เวทหิมาลัย engineers in Manali.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ หิมาจัลประเทศ (อินเดีย) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Himachal Pradesh (India), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/kGIIPzvK9c0/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/kGIIPzvK9c0/hqdefault.jpg",
         "title": "บ่อน้ำพุศักดิ์สิทธิ์ไร้ก้นแห่งตำนาน มะนาลี (เวทหิมาลัย)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=kGIIPzvK9c0",
+        "title": "Searching for Amelia Earhart (Full Episode) | SPECIAL | National Geographic",
+        "thumbnail": "https://i.ytimg.com/vi/kGIIPzvK9c0/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ มะนาลี",
@@ -69423,20 +69422,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A grim cautionary curse chronicle from Kerala (India). Those who desecrate sacred thresholds or tamper with forbidden relics face catastrophic misfortune and oppressive psychic heaviness throughout Cochin.",
     "folklore_history_th": "บันทึกไว้ในตำนานคดีความลี้ลับของชาว มาลาบาร์ เป็นบทเรียนเตือนสติว่าอำนาจมืดหรือแรงอาฆาตในอดีตไม่ใช่สิ่งที่จะท้าทายได้โดยปราศจากผลลัพธ์",
     "folklore_history_en": "Documented in ancestral annals of มาลาบาร์, serving as an enduring moral reminder against hubris and the violation of spiritual sanctuaries.",
-    "image_url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/UZiHxGCJfvk/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/UZiHxGCJfvk/hqdefault.jpg",
         "title": "คำสาปสะพานมรณะและลางบอกเหตุ โคชิน (มาลาบาร์)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=j80tWn1d9a0",
-        "title": "สารคดี เรื่องลี้ลับและคำสาปโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/j80tWn1d9a0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=UZiHxGCJfvk",
+        "title": "Romania's Forest Where People Vanish Without a Trace 🌲👻",
+        "thumbnail": "https://i.ytimg.com/vi/UZiHxGCJfvk/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามหยิบจับหรือขโมยเศษหิน วัตถุโบราณ หรือของเซ่นไหว้ออกจากพื้นที่ โคชิน",
@@ -69528,20 +69527,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A chilling paranormal account from Highlands (Scotland). Midnight travelers recount diaphanous apparitions accompanied by sudden drops in ambient temperature, eerie disembodied murmurs, and an overwhelming presence lingering in the shadows of Inverness.",
     "folklore_history_th": "ผูกโยงกับโศกนาฏกรรมหรือประวัติศาสตร์โบราณของชาว เกลิกสกอต ที่ถูกเล่าสืบต่อกันมาจากรุ่นสู่รุ่นในฐานะคำเตือนไม่ให้เดินทางสัญจรตามลำพังยามดึก",
     "folklore_history_en": "Anchored in tragic regional lore of เกลิกสกอต oral memory, passed down through generations as a solemn cautionary tale against wandering isolated paths after dark.",
-    "image_url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/qMlxOHrwFXw/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/qMlxOHrwFXw/hqdefault.jpg",
         "title": "เสียงฝีเท้าลี้ลับแห่งบันไดวนชั้นใต้ดิน อินเวอร์เนสส์ (เกลิกสกอต)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=D0Wzn0_QpG0",
-        "title": "ตำนานผีและเรื่องเล่าสยองขวัญรอบโลก",
-        "thumbnail": "https://i.ytimg.com/vi/D0Wzn0_QpG0/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=qMlxOHrwFXw",
+        "title": "Santa Compaña | A Procesión dos Mortos",
+        "thumbnail": "https://i.ytimg.com/vi/qMlxOHrwFXw/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามผิวปากเรียกหรือหันหลังกลับไปมองเมื่อได้ยินเสียงกระซิบในยามค่ำคืนแถบ อินเวอร์เนสส์",
@@ -69633,20 +69632,20 @@ export const INITIAL_GHOST_PINS: GhostPin[] = [
     "story_en": "A legendary monumental marvel in Highlands (Scotland). Archaeoastronomers and travelers marvel at colossal stone architecture aligning with celestial equinoxes, testifying to the sophisticated lost knowledge of ancestral เกลิกสกอต engineers in Inverness.",
     "folklore_history_th": "สืบทอดผ่านวรรณกรรมมุขปาฐะและร่องรอยโบราณคดีของ ไฮแลนด์ (สกอตแลนด์) เป็นหลักฐานชิ้นเอกถึงอารยธรรมรุ่งเรืองในอดีตที่ยังคงทิ้งปริศนาไว้ให้คนรุ่นหลังค้นหา",
     "folklore_history_en": "Preserved across oral epics and excavated strata in Highlands (Scotland), representing an indelible testament to ancient cultural zenith and architectural mastery.",
-    "image_url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/JFFhD5HeByM/hqdefault.jpg",
     "views_count": 0,
     "is_published": 1,
     "gallery_media": [
       {
         "type": "image",
-        "url": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg",
+        "url": "https://i.ytimg.com/vi/JFFhD5HeByM/hqdefault.jpg",
         "title": "รอยจารึกลึกลับแห่งอารยธรรมที่สาบสูญ อินเวอร์เนสส์ (เกลิกสกอต)"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sB7nFq5K_3M",
-        "title": "สารคดี อารยธรรมและตำนานโบราณ",
-        "thumbnail": "https://i.ytimg.com/vi/sB7nFq5K_3M/hqdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=JFFhD5HeByM",
+        "title": "99 Years Later... We Solved It",
+        "thumbnail": "https://i.ytimg.com/vi/JFFhD5HeByM/hqdefault.jpg"
       }
     ],
     "taboos_th": "ห้ามขีดเขียน ทำลาย หรือเคลื่อนย้ายแท่งหินโบราณในบริเวณ อินเวอร์เนสส์",

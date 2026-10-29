@@ -121,6 +121,7 @@ app.get('/pins', async (c) => {
       }
       return { ...r, gallery_media };
     });
+    c.header('Cache-Control', 'public, max-age=60, s-maxage=180, stale-while-revalidate=600');
     return c.json({ success: true, data: formatted });
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : String(err);
